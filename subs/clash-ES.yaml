@@ -1,0 +1,32 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- name: 🇪🇸 | @WhiteDNS | ES18|5.6MB/s|DNSOK|GPT⁺-ES
+  password: ''
+  port: 443
+  server: 130.195.250.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+proxy-groups:
+- name: ES-Auto
+  type: url-test
+  proxies:
+  - 🇪🇸 | @WhiteDNS | ES18|5.6MB/s|DNSOK|GPT⁺-ES
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,ES-Auto

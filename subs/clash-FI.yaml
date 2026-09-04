@@ -1,0 +1,110 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI137|13.7MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 7333
+  reality-opts:
+    public-key: isO0qF2Xg6UI1GKARgfg9UHZSrrUBcOazkz04mTl-kE
+    short-id: 0f62cf6250eb31c0
+  server: www.e.mobilesari.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2ae5a5a5-49ba-448c-b8a5-551ed547ff65
+  xudp: true
+  servername: amp-api-edge.apps.apple.com
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI138|13.0MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 7333
+  reality-opts:
+    public-key: isO0qF2Xg6UI1GKARgfg9UHZSrrUBcOazkz04mTl-kE
+    short-id: 0f62cf6250eb31c0
+  server: www.e.mobilesari.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 60f95d63-10c8-4103-a23e-6eac345b3f32
+  xudp: true
+  servername: amp-api-edge.apps.apple.com
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI139|3.3MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 1443
+  reality-opts:
+    public-key: HNjZe5pYUhcuE8sASYVVrVSMW_jFfekgLnrnO4xXIyQ
+    short-id: a1b2c3d4
+  server: 31.77.220.183
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5a92a9d2-3067-49cd-bfc5-989bbdfc5d52
+  xudp: true
+  servername: fi.aeternavpn.space
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI140|3.0MB/s|DNSOK|GPT⁺-FI
+  port: 5011
+  reality-opts:
+    public-key: HNjZe5pYUhcuE8sASYVVrVSMW_jFfekgLnrnO4xXIyQ
+    short-id: a1b2c3d4
+  server: 80.253.249.193
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5a92a9d2-3067-49cd-bfc5-989bbdfc5d52
+  network: tcp
+  servername: fi.aeternavpn.space
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI141|1.3MB/s|DNSOK|GPT⁺-FI
+  port: 1443
+  reality-opts:
+    public-key: HNjZe5pYUhcuE8sASYVVrVSMW_jFfekgLnrnO4xXIyQ
+    short-id: a1b2c3d4
+  server: 31.77.220.183
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5a92a9d2-3067-49cd-bfc5-989bbdfc5d52
+  network: tcp
+  servername: fi.aeternavpn.space
+proxy-groups:
+- name: FI-Auto
+  type: url-test
+  proxies:
+  - 🇫🇮 | @WhiteDNS | FI137|13.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI138|13.0MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI139|3.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI140|3.0MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI141|1.3MB/s|DNSOK|GPT⁺-FI
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,FI-Auto
