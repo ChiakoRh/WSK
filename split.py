@@ -67,6 +67,15 @@ dns:
 """
 
 
+def flag(cc: str) -> str:
+    """Country code -> flag emoji (🇩🇪 for DE). OT/unknown -> ❓."""
+    if cc == "OT":
+        return "❓"
+    if len(cc) == 2 and cc.isalpha() and cc.isupper():
+        return "".join(chr(0x1F1E6 + ord(c) - 65) for c in cc)
+    return "🏳️"
+
+
 def extract_country(name: str) -> str:
     if not name:
         return "OT"
@@ -183,14 +192,15 @@ def main() -> None:
     # regenerate README country table
     readme = ROOT / "README.md"
     if readme.exists():
-        table = ["| کشور | mihomo (WhiteVPN/Clash) | clash کامل | base64 (v2rayNG) | raw | پروکسی / لینک |",
-                 "|---|---|---|---|---|---|"]
+        table = ["| 🏳️ | کشور | mihomo (WhiteVPN/Clash) | clash کامل | base64 (v2rayNG) | raw | پروکسی / لینک |",
+                 "|---|---|---|---|---|---|---|"]
         for cc in countries:
             n = index["countries"][cc]
             cnt = f"{n['mihomo_proxies']} / {n['links']}"
             b64cell = f"[base64-{cc}.txt](subs/base64/base64-{cc}.txt)" if n["links"] > 0 else "— (فقط mihomo)"
             rawcell = f"[raw-{cc}.txt](subs/raw/raw-{cc}.txt)" if n["links"] > 0 else "—"
             table.append(
+                f"| {flag(cc)} "
                 f"| `{cc}` "
                 f"| [mihomo-{cc}.yaml](subs/mihomo/mihomo-{cc}.yaml) "
                 f"| [clash-{cc}.yaml](subs/clash/clash-{cc}.yaml) "
@@ -207,18 +217,28 @@ def main() -> None:
         else:
             print("[4/4] README markers not found, skipped")
 
-        # direct-links section (copy-paste raw URLs, grouped by format)
+        # direct-links section: mihomo links one-by-one with flags (easy copy),
+        # other formats tucked into collapsible boxes to stay tidy
         link_countries = [cc for cc in countries if index["countries"][cc]["links"] > 0]
-        sections = []
-        sections.append("### 🟣 mihomo (WhiteVPN / Clash / Mihomo)\n\n```\n" + "\n".join(
-            f"{RAW_BASE}/subs/mihomo/mihomo-{cc}.yaml" for cc in countries) + "\n```")
-        sections.append("### 🟠 clash کامل (Clash / Streisand / NekoBox)\n\n```\n" + "\n".join(
-            f"{RAW_BASE}/subs/clash/clash-{cc}.yaml" for cc in countries) + "\n```")
+        sections = ["\n".join(
+            f"{flag(cc)} `{cc}` — `{RAW_BASE}/subs/mihomo/mihomo-{cc}.yaml`"
+            for cc in countries)]
+        sections.append(
+            "<details>\n<summary>🟠 لینک‌های clash کامل "
+            f"({len(countries)} کشور)</summary>\n\n```\n"
+            + "\n".join(f"{RAW_BASE}/subs/clash/clash-{cc}.yaml" for cc in countries)
+            + "\n```\n\n</details>")
         if link_countries:
-            sections.append("### 🔵 base64 (v2rayNG / NekoBox / FoXray)\n\n```\n" + "\n".join(
-                f"{RAW_BASE}/subs/base64/base64-{cc}.txt" for cc in link_countries) + "\n```")
-            sections.append("### ⚪ raw (لینک متنی)\n\n```\n" + "\n".join(
-                f"{RAW_BASE}/subs/raw/raw-{cc}.txt" for cc in link_countries) + "\n```")
+            sections.append(
+                "<details>\n<summary>🔵 لینک‌های base64 "
+                f"({len(link_countries)} کشور)</summary>\n\n```\n"
+                + "\n".join(f"{RAW_BASE}/subs/base64/base64-{cc}.txt" for cc in link_countries)
+                + "\n```\n\n</details>")
+            sections.append(
+                "<details>\n<summary>⚪ لینک‌های raw "
+                f"({len(link_countries)} کشور)</summary>\n\n```\n"
+                + "\n".join(f"{RAW_BASE}/subs/raw/raw-{cc}.txt" for cc in link_countries)
+                + "\n```\n\n</details>")
         lstart, lend = "<!-- DIRECT-LINKS-START -->", "<!-- DIRECT-LINKS-END -->"
         lblock = lstart + "\n" + "\n\n".join(sections) + "\n" + lend
         if lstart in text and lend in text:
