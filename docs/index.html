@@ -1,75 +1,96 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa" dir="rtl" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WSK — ساب تفکیک‌شده WhiteDNS بر اساس کشور</title>
 <meta name="description" content="Per-country WhiteDNS subscription links: mihomo, clash, base64, raw.">
+<meta name="theme-color" content="#141c23">
+<script>document.documentElement.setAttribute("data-theme", localStorage.getItem("wsk-theme") || "dark");</script>
 <style>
-:root{
-  --bg:#0f1420; --card:#1a2233; --card2:#222d44; --text:#e8edf5;
-  --muted:#9aa7bd; --accent:#4f8cff; --accent2:#22c55e; --border:#2c3a55;
+:root, [data-theme="dark"]{
+  --bg:#141c23; --card:#1c2632; --card2:#243040; --text:#e6edf3;
+  --muted:#8b98a9; --accent:#2f81f7; --green:#3fb950; --border:#2d3a48;
+  --input:#10161d; --shadow:0 4px 18px rgba(0,0,0,.35);
+}
+[data-theme="light"]{
+  --bg:#eef1f6; --card:#ffffff; --card2:#e6ebf2; --text:#1c2733;
+  --muted:#5d6b7a; --accent:#0969da; --green:#1a7f37; --border:#d3dce6;
+  --input:#ffffff; --shadow:0 2px 10px rgba(20,40,70,.12);
 }
 *{box-sizing:border-box}
-body{margin:0;font-family:"Vazirmatn","Segoe UI",Tahoma,Arial,sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+body{margin:0;font-family:"Vazirmatn","Segoe UI",Tahoma,Arial,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column}
 [dir="ltr"] body{font-family:"Segoe UI",Arial,sans-serif}
-header{position:sticky;top:0;z-index:10;background:rgba(15,20,32,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);padding:14px 16px}
-.wrap{max-width:1000px;margin:0 auto;padding:0 16px}
-h1{font-size:1.25rem;margin:0 0 2px}
-.sub{color:var(--muted);font-size:.85rem;margin:0}
-.topbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.topbar .spacer{flex:1}
 button{cursor:pointer;font-family:inherit}
-.langbtn{background:var(--card2);color:var(--text);border:1px solid var(--border);border-radius:10px;padding:7px 14px;font-size:.85rem}
-.langbtn:hover{border-color:var(--accent)}
-.updated{font-size:.75rem;color:var(--muted);background:var(--card);border:1px solid var(--border);border-radius:20px;padding:5px 12px}
+/* navbar */
+.navbar{border-bottom:1px solid var(--border);background:var(--card);padding:0}
+.nav-inner{max-width:1000px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:8px}
+.brand{display:flex;align-items:center;gap:8px;font-weight:800;font-size:1.05rem;color:var(--text);text-decoration:none}
+.brand .logo{font-size:1.4rem}
+.nav-actions{margin-inline-start:auto;display:flex;gap:8px;align-items:center}
+.navbtn{display:inline-flex;align-items:center;gap:6px;background:var(--card2);color:var(--text);border:1px solid var(--border);border-radius:8px;padding:6px 12px;font-size:.82rem;text-decoration:none}
+.navbtn:hover{border-color:var(--accent)}
+.iconbtn{background:var(--card2);color:var(--text);border:1px solid var(--border);border-radius:8px;padding:6px 10px;font-size:.9rem;line-height:1}
+.iconbtn:hover{border-color:var(--accent)}
+/* workbench */
+.wrap{max-width:1000px;margin:0 auto;padding:0 16px;width:100%}
+.workbench{background:var(--card);border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow);margin:18px 0;padding:18px}
+h1{font-size:1.2rem;margin:0 0 2px}
+.sub{color:var(--muted);font-size:.85rem;margin:0 0 4px}
+.updated{display:inline-block;font-size:.75rem;color:var(--muted);background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:4px 12px;margin-top:8px}
 .tabs{display:flex;gap:8px;margin:16px 0 12px;flex-wrap:wrap}
-.tab{background:var(--card);color:var(--muted);border:1px solid var(--border);border-radius:12px;padding:9px 18px;font-size:.9rem}
+.tab{background:var(--card2);color:var(--muted);border:1px solid var(--border);border-radius:9px;padding:9px 18px;font-size:.9rem}
 .tab.active{background:var(--accent);color:#fff;border-color:var(--accent)}
-.search{width:100%;background:var(--card);border:1px solid var(--border);border-radius:12px;color:var(--text);padding:11px 14px;font-size:.95rem;font-family:inherit;margin-bottom:14px}
+.search{width:100%;background:var(--input);border:1px solid var(--border);border-radius:9px;color:var(--text);padding:11px 14px;font-size:.95rem;font-family:inherit;margin-bottom:14px}
 .search:focus{outline:none;border-color:var(--accent)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;padding-bottom:30px}
-.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.card{background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:14px}
 .card .row1{display:flex;align-items:center;gap:10px}
-.flag{font-size:1.9rem;line-height:1}
+.flagimg{width:46px;height:34px;object-fit:cover;border-radius:6px;border:1px solid var(--border);background:var(--input)}
+.flag-emoji{font-size:1.9rem;line-height:1}
 .name{font-weight:700}
-.code{font-size:.72rem;color:var(--muted);border:1px solid var(--border);border-radius:6px;padding:1px 7px;margin-inline-start:auto}
+.code{font-size:.72rem;color:var(--muted);border:1px solid var(--border);border-radius:6px;padding:1px 7px;margin-inline-start:auto;background:var(--card)}
 .count{font-size:.78rem;color:var(--muted);margin:8px 0 10px}
 .actions{display:flex;gap:8px}
-.copy{flex:1;background:var(--accent2);color:#06230f;border:none;border-radius:10px;padding:9px;font-weight:700;font-size:.88rem}
-.copy:hover{filter:brightness(1.1)}
-.open{background:var(--card2);color:var(--text);border:1px solid var(--border);border-radius:10px;padding:9px 14px;font-size:.85rem;text-decoration:none}
+.copy{flex:1;background:var(--green);color:#fff;border:none;border-radius:8px;padding:9px;font-weight:700;font-size:.88rem}
+.copy:hover{filter:brightness(1.12)}
+.open{background:transparent;color:var(--text);border:1px solid var(--border);border-radius:8px;padding:9px 14px;font-size:.85rem;text-decoration:none}
+.open:hover{border-color:var(--accent)}
 .status{text-align:center;color:var(--muted);padding:40px 10px}
-.status.err{color:#f87171}
-.retry{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:9px 20px;margin-top:10px}
-footer{text-align:center;color:var(--muted);font-size:.8rem;padding:18px;border-top:1px solid var(--border)}
+.status.err{color:#f47070}
+.retry{background:var(--accent);color:#fff;border:none;border-radius:8px;padding:9px 20px;margin-top:10px}
+footer{text-align:center;color:var(--muted);font-size:.8rem;padding:18px;border-top:1px solid var(--border);margin-top:auto}
 footer a{color:var(--accent)}
-.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--accent2);color:#06230f;font-weight:700;padding:10px 22px;border-radius:12px;display:none;z-index:50}
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--green);color:#fff;font-weight:700;padding:10px 22px;border-radius:10px;display:none;z-index:50;box-shadow:var(--shadow)}
 </style>
 </head>
 <body>
-<header>
-  <div class="wrap topbar">
-    <div>
-      <h1 data-i18n="title">📡 ساب‌های WhiteDNS بر اساس کشور</h1>
-      <p class="sub" data-i18n="subtitle">لینک مستقیم هر کشور، آماده کپی برای برنامه‌ات</p>
+<nav class="navbar">
+  <div class="nav-inner">
+    <a class="brand" href="https://chiakorh.github.io/WSK/"><span class="logo">📡</span><span>WSK</span></a>
+    <div class="nav-actions">
+      <a class="navbtn" href="https://github.com/ChiakoRh/WSK" target="_blank" rel="noopener">⭐ <span data-i18n="star">ستاره</span></a>
+      <button class="iconbtn" id="themebtn" title="theme">🌙</button>
+      <button class="iconbtn" id="langbtn">EN</button>
     </div>
-    <div class="spacer"></div>
-    <span class="updated" id="updated">…</span>
-    <button class="langbtn" id="langbtn">EN</button>
   </div>
-</header>
+</nav>
 
 <main class="wrap">
-  <div class="tabs" id="tabs">
-    <button class="tab active" data-tab="mihomo">🟣 Mihomo</button>
-    <button class="tab" data-tab="clash">🟠 Clash</button>
-    <button class="tab" data-tab="base64">🔵 Base64</button>
-    <button class="tab" data-tab="raw">⚪ Raw</button>
+  <div class="workbench">
+    <h1 data-i18n="title">ساب‌های WhiteDNS بر اساس کشور</h1>
+    <p class="sub" data-i18n="subtitle">لینک مستقیم هر کشور، آماده کپی برای برنامه‌ات</p>
+    <span class="updated" id="updated">…</span>
+    <div class="tabs" id="tabs">
+      <button class="tab active" data-tab="mihomo">🟣 Mihomo</button>
+      <button class="tab" data-tab="clash">🟠 Clash</button>
+      <button class="tab" data-tab="base64">🔵 Base64</button>
+      <button class="tab" data-tab="raw">⚪ Raw</button>
+    </div>
+    <input class="search" id="search" data-i18n-ph="search" placeholder="🔍 جستجوی کشور… (مثلا آلمان، Japan، DE)">
+    <div class="grid" id="grid"></div>
+    <div class="status" id="status"></div>
   </div>
-  <input class="search" id="search" data-i18n-ph="search" placeholder="🔍 جستجوی کشور… (مثلا آلمان، Japan، DE)">
-  <div class="grid" id="grid"></div>
-  <div class="status" id="status"></div>
 </main>
 
 <footer>
@@ -85,6 +106,7 @@ footer a{color:var(--accent)}
 "use strict";
 const RAW_BASE = "https://raw.githubusercontent.com/ChiakoRh/WSK/main";
 const INDEX_URL = RAW_BASE + "/subs/index.json";
+const FLAG_CDN = "https://flagcdn.com/w80/";
 
 const FA_NAMES = {AL:"آلبانی",AT:"اتریش",AU:"استرالیا",BR:"برزیل",CA:"کانادا",DE:"آلمان",DK:"دانمارک",EC:"اکوادور",ES:"اسپانیا",FI:"فنلاند",FR:"فرانسه",GB:"انگلیس",GR:"یونان",HK:"هنگ‌کنگ",IE:"ایرلند",IT:"ایتالیا",JP:"ژاپن",KR:"کره جنوبی",KZ:"قزاقستان",LT:"لیتوانی",LV:"لتونی",MY:"مالزی",NL:"هلند",OT:"سایر",PL:"لهستان",PS:"فلسطین",PT:"پرتغال",RO:"رومانی",RU:"روسیه",SE:"سوئد",SG:"سنگاپور",TW:"تایوان",US:"آمریکا",ZA:"آفریقای جنوبی"};
 const EN_NAMES = {AL:"Albania",AT:"Austria",AU:"Australia",BR:"Brazil",CA:"Canada",DE:"Germany",DK:"Denmark",EC:"Ecuador",ES:"Spain",FI:"Finland",FR:"France",GB:"United Kingdom",GR:"Greece",HK:"Hong Kong",IE:"Ireland",IT:"Italy",JP:"Japan",KR:"South Korea",KZ:"Kazakhstan",LT:"Lithuania",LV:"Latvia",MY:"Malaysia",NL:"Netherlands",OT:"Other",PL:"Poland",PS:"Palestine",PT:"Portugal",RO:"Romania",RU:"Russia",SE:"Sweden",SG:"Singapore",TW:"Taiwan",US:"United States",ZA:"South Africa"};
@@ -97,14 +119,16 @@ const TABS = {
 };
 
 const I18N = {
-  fa:{title:"📡 ساب‌های WhiteDNS بر اساس کشور", subtitle:"لینک مستقیم هر کشور، آماده کپی برای برنامه‌ات",
+  fa:{title:"ساب‌های WhiteDNS بر اساس کشور", subtitle:"لینک مستقیم هر کشور، آماده کپی برای برنامه‌ات",
       search:"🔍 جستجوی کشور… (مثلا آلمان، Japan، DE)", copy:"📋 کپی لینک", copied:"✅ کپی شد!", open:"↗ باز کردن",
-      count:(n,t)=>`${n} ${t==="links"?"لینک":"پروکسی"}`, updated:d=>`🕐 آپدیت: ${d}`, loadFail:"❌ خطا در خواندن داده‌ها از گیت‌هاب",
-      retry:"🔄 تلاش دوباره", noResult:"کشوری پیدا نشد 🔍", credit:"ساخته‌شده از روی ساب اصلی"},
-  en:{title:"📡 WhiteDNS Subs by Country", subtitle:"Direct link per country, ready to copy into your app",
+      star:"ستاره", count:(n,t)=>`${n} ${t==="links"?"لینک":"پروکسی"}`, updated:d=>`🕐 آپدیت: ${d}`,
+      loadFail:"❌ خطا در خواندن داده‌ها از گیت‌هاب", retry:"🔄 تلاش دوباره", noResult:"کشوری پیدا نشد 🔍",
+      credit:"ساخته‌شده از روی ساب اصلی"},
+  en:{title:"WhiteDNS Subs by Country", subtitle:"Direct link per country, ready to copy into your app",
       search:"🔍 Search country… (e.g. Germany, Japan, DE)", copy:"📋 Copy link", copied:"✅ Copied!", open:"↗ Open",
-      count:(n,t)=>`${n} ${t==="links"?"links":"proxies"}`, updated:d=>`🕐 Updated: ${d}`, loadFail:"❌ Failed to load data from GitHub",
-      retry:"🔄 Retry", noResult:"No country found 🔍", credit:"Built from the upstream sub"}
+      star:"Star", count:(n,t)=>`${n} ${t==="links"?"links":"proxies"}`, updated:d=>`🕐 Updated: ${d}`,
+      loadFail:"❌ Failed to load data from GitHub", retry:"🔄 Retry", noResult:"No country found 🔍",
+      credit:"Built from the upstream sub"}
 };
 
 let DATA = null, LANG = localStorage.getItem("wsk-lang") || "fa", TAB = "mihomo", QUERY = "";
@@ -114,9 +138,20 @@ function flag(cc){
   if(/^[A-Z]{2}$/.test(cc)) return String.fromCodePoint(...[...cc].map(c=>0x1F1E6 + c.charCodeAt(0) - 65));
   return "🏳️";
 }
+/* Real flag pictures (emoji flags don't render on Windows) */
+function flagImg(cc){
+  if(cc === "OT") return '<span class="flag-emoji">❓</span>';
+  if(!/^[A-Z]{2}$/.test(cc)) return '<span class="flag-emoji">🏳️</span>';
+  return `<img class="flagimg" src="${FLAG_CDN}${cc.toLowerCase()}.png" alt="${cc}" loading="lazy" onerror="this.remove()">`;
+}
 function countryName(cc){ return (LANG==="fa"?FA_NAMES:EN_NAMES)[cc] || cc; }
 function subUrl(cc){ const t=TABS[TAB]; return `${RAW_BASE}/subs/${t.dir}/${t.prefix}${cc}${t.ext}`; }
 
+function applyTheme(){
+  const th = localStorage.getItem("wsk-theme") || "dark";
+  document.documentElement.setAttribute("data-theme", th);
+  document.getElementById("themebtn").textContent = th==="dark" ? "🌙" : "☀️";
+}
 function applyLang(){
   const d = I18N[LANG];
   document.documentElement.lang = LANG;
@@ -136,7 +171,7 @@ function matches(cc){
 
 function render(){
   const d = I18N[LANG], grid = document.getElementById("grid"), status = document.getElementById("status");
-  grid.innerHTML = ""; status.innerHTML = "";
+  grid.innerHTML = ""; status.innerHTML = ""; status.className = "status";
   if(!DATA) return;
   const t = TABS[TAB];
   const list = Object.keys(DATA.countries).sort().filter(cc=>{
@@ -149,12 +184,12 @@ function render(){
     const card = document.createElement("div");
     card.className = "card";
     card.innerHTML =
-      `<div class="row1"><span class="flag">${flag(cc)}</span>`+
+      `<div class="row1">${flagImg(cc)}`+
       `<span class="name">${countryName(cc)}</span><span class="code">${cc}</span></div>`+
       `<div class="count">${d.count(n, t.countKey)}</div>`+
       `<div class="actions"><button class="copy">${d.copy}</button>`+
       `<a class="open" href="${url}" target="_blank" rel="noopener">${d.open}</a></div>`;
-    card.querySelector(".copy").onclick = async (ev)=>{
+    card.querySelector(".copy").onclick = async ()=>{
       try{ await navigator.clipboard.writeText(url); }
       catch(e){
         const ta = document.createElement("textarea");
@@ -172,7 +207,7 @@ function render(){
 async function load(){
   const d = I18N[LANG], status = document.getElementById("status");
   document.getElementById("grid").innerHTML = "";
-  status.innerHTML = "";
+  status.innerHTML = ""; status.className = "status";
   try{
     const r = await fetch(INDEX_URL, {cache:"no-store"});
     if(!r.ok) throw new Error(r.status);
@@ -198,7 +233,11 @@ document.getElementById("search").addEventListener("input", ev=>{ QUERY = ev.tar
 document.getElementById("langbtn").onclick = ()=>{
   LANG = LANG==="fa"?"en":"fa"; localStorage.setItem("wsk-lang", LANG); applyLang(); load();
 };
-applyLang(); load();
+document.getElementById("themebtn").onclick = ()=>{
+  const next = (localStorage.getItem("wsk-theme") || "dark")==="dark" ? "light" : "dark";
+  localStorage.setItem("wsk-theme", next); applyTheme();
+};
+applyTheme(); applyLang(); load();
 </script>
 </body>
 </html>

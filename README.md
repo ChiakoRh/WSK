@@ -33,9 +33,6 @@
 
 **https://chiakorh.github.io/WSK/**
 
-> اگه باز نشد، یه بار توی تنظیمات ریپو فعالش کن:
-> `Settings → Pages → Deploy from a branch → main → /docs → Save`
-
 <a id="direct"></a>
 ## 🔗 لینک مستقیم همه ساب‌ها
 
