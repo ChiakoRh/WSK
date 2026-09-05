@@ -31,40 +31,209 @@
 لینک mihomo کشور موردنظرت رو کپی کن و به‌عنوان Subscription توی برنامت اضافه کن 👇 بقیه فرمت‌ها (clash / base64 / raw) توی باکس‌های بازشونده پایین هستن 📦
 
 <!-- DIRECT-LINKS-START -->
-🇦🇱 `AL` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-AL.yaml`
-🇦🇹 `AT` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-AT.yaml`
-🇦🇺 `AU` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-AU.yaml`
-🇧🇷 `BR` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-BR.yaml`
-🇨🇦 `CA` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-CA.yaml`
-🇩🇪 `DE` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-DE.yaml`
-🇩🇰 `DK` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-DK.yaml`
-🇪🇨 `EC` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-EC.yaml`
-🇪🇸 `ES` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-ES.yaml`
-🇫🇮 `FI` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-FI.yaml`
-🇫🇷 `FR` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-FR.yaml`
-🇬🇧 `GB` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-GB.yaml`
-🇬🇷 `GR` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-GR.yaml`
-🇭🇰 `HK` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-HK.yaml`
-🇮🇪 `IE` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-IE.yaml`
-🇮🇹 `IT` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-IT.yaml`
-🇯🇵 `JP` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-JP.yaml`
-🇰🇷 `KR` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-KR.yaml`
-🇰🇿 `KZ` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-KZ.yaml`
-🇱🇹 `LT` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-LT.yaml`
-🇱🇻 `LV` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-LV.yaml`
-🇲🇾 `MY` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-MY.yaml`
-🇳🇱 `NL` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-NL.yaml`
-❓ `OT` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-OT.yaml`
-🇵🇱 `PL` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-PL.yaml`
-🇵🇸 `PS` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-PS.yaml`
-🇵🇹 `PT` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-PT.yaml`
-🇷🇴 `RO` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-RO.yaml`
-🇷🇺 `RU` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-RU.yaml`
-🇸🇪 `SE` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-SE.yaml`
-🇸🇬 `SG` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-SG.yaml`
-🇹🇼 `TW` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-TW.yaml`
-🇺🇸 `US` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-US.yaml`
-🇿🇦 `ZA` — `https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-ZA.yaml`
+**🇦🇱 آلبانی (`AL`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-AL.yaml
+```
+
+**🇦🇹 اتریش (`AT`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-AT.yaml
+```
+
+**🇦🇺 استرالیا (`AU`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-AU.yaml
+```
+
+**🇧🇷 برزیل (`BR`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-BR.yaml
+```
+
+**🇨🇦 کانادا (`CA`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-CA.yaml
+```
+
+**🇩🇪 آلمان (`DE`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-DE.yaml
+```
+
+**🇩🇰 دانمارک (`DK`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-DK.yaml
+```
+
+**🇪🇨 اکوادور (`EC`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-EC.yaml
+```
+
+**🇪🇸 اسپانیا (`ES`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-ES.yaml
+```
+
+**🇫🇮 فنلاند (`FI`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-FI.yaml
+```
+
+**🇫🇷 فرانسه (`FR`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-FR.yaml
+```
+
+**🇬🇧 انگلیس (`GB`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-GB.yaml
+```
+
+**🇬🇷 یونان (`GR`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-GR.yaml
+```
+
+**🇭🇰 هنگ‌کنگ (`HK`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-HK.yaml
+```
+
+**🇮🇪 ایرلند (`IE`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-IE.yaml
+```
+
+**🇮🇹 ایتالیا (`IT`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-IT.yaml
+```
+
+**🇯🇵 ژاپن (`JP`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-JP.yaml
+```
+
+**🇰🇷 کره جنوبی (`KR`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-KR.yaml
+```
+
+**🇰🇿 قزاقستان (`KZ`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-KZ.yaml
+```
+
+**🇱🇹 لیتوانی (`LT`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-LT.yaml
+```
+
+**🇱🇻 لتونی (`LV`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-LV.yaml
+```
+
+**🇲🇾 مالزی (`MY`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-MY.yaml
+```
+
+**🇳🇱 هلند (`NL`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-NL.yaml
+```
+
+**❓ سایر (`OT`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-OT.yaml
+```
+
+**🇵🇱 لهستان (`PL`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-PL.yaml
+```
+
+**🇵🇸 فلسطین (`PS`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-PS.yaml
+```
+
+**🇵🇹 پرتغال (`PT`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-PT.yaml
+```
+
+**🇷🇴 رومانی (`RO`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-RO.yaml
+```
+
+**🇷🇺 روسیه (`RU`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-RU.yaml
+```
+
+**🇸🇪 سوئد (`SE`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-SE.yaml
+```
+
+**🇸🇬 سنگاپور (`SG`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-SG.yaml
+```
+
+**🇹🇼 تایوان (`TW`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-TW.yaml
+```
+
+**🇺🇸 آمریکا (`US`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-US.yaml
+```
+
+**🇿🇦 آفریقای جنوبی (`ZA`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-ZA.yaml
+```
 
 <details>
 <summary>🟠 لینک‌های clash کامل (34 کشور)</summary>

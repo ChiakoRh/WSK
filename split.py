@@ -46,6 +46,23 @@ RAW_DIR = OUT / "raw"
 # base URL of this repo's raw files (used for the README direct-links section)
 RAW_BASE = "https://raw.githubusercontent.com/ChiakoRh/WSK/main"
 
+# Persian country names (fallback: the code itself)
+COUNTRY_NAMES = {
+    "AL": "آلبانی", "AT": "اتریش", "AU": "استرالیا", "BR": "برزیل",
+    "CA": "کانادا", "DE": "آلمان", "DK": "دانمارک", "EC": "اکوادور",
+    "ES": "اسپانیا", "FI": "فنلاند", "FR": "فرانسه", "GB": "انگلیس",
+    "GR": "یونان", "HK": "هنگ‌کنگ", "IE": "ایرلند", "IT": "ایتالیا",
+    "JP": "ژاپن", "KR": "کره جنوبی", "KZ": "قزاقستان", "LT": "لیتوانی",
+    "LV": "لتونی", "MY": "مالزی", "NL": "هلند", "OT": "سایر",
+    "PL": "لهستان", "PS": "فلسطین", "PT": "پرتغال", "RO": "رومانی",
+    "RU": "روسیه", "SE": "سوئد", "SG": "سنگاپور", "TW": "تایوان",
+    "US": "آمریکا", "ZA": "آفریقای جنوبی",
+}
+
+
+def country_name(cc: str) -> str:
+    return COUNTRY_NAMES.get(cc, cc)
+
 # Minimal full-clash template so the yaml also works in apps that
 # require proxy-groups (ClashMeta/Mihomo/Streisand/NekoBox).
 # We keep mihomo-<CC>.yaml as proxies-only (like upstream, for WhiteVPN),
@@ -217,12 +234,15 @@ def main() -> None:
         else:
             print("[4/4] README markers not found, skipped")
 
-        # direct-links section: mihomo links one-by-one with flags (easy copy),
-        # other formats tucked into collapsible boxes to stay tidy
+        # direct-links section: each country gets flag + Persian name + its own
+        # code box (with GitHub's copy button); other formats tucked into
+        # collapsible boxes to stay tidy
         link_countries = [cc for cc in countries if index["countries"][cc]["links"] > 0]
-        sections = ["\n".join(
-            f"{flag(cc)} `{cc}` — `{RAW_BASE}/subs/mihomo/mihomo-{cc}.yaml`"
-            for cc in countries)]
+        mihomo_blocks = [
+            f"**{flag(cc)} {country_name(cc)} (`{cc}`)**\n\n```\n"
+            f"{RAW_BASE}/subs/mihomo/mihomo-{cc}.yaml\n```"
+            for cc in countries]
+        sections = ["\n\n".join(mihomo_blocks)]
         sections.append(
             "<details>\n<summary>🟠 لینک‌های clash کامل "
             f"({len(countries)} کشور)</summary>\n\n```\n"
