@@ -43,6 +43,9 @@ CLASH_DIR = OUT / "clash"
 BASE64_DIR = OUT / "base64"
 RAW_DIR = OUT / "raw"
 
+# base URL of this repo's raw files (used for the README direct-links section)
+RAW_BASE = "https://raw.githubusercontent.com/ChiakoRh/WSK/main"
+
 # Minimal full-clash template so the yaml also works in apps that
 # require proxy-groups (ClashMeta/Mihomo/Streisand/NekoBox).
 # We keep mihomo-<CC>.yaml as proxies-only (like upstream, for WhiteVPN),
@@ -200,10 +203,30 @@ def main() -> None:
         block = start + "\n" + "\n".join(table) + "\n" + end
         if start in text and end in text:
             text = re.sub(re.escape(start) + r".*?" + re.escape(end), block, text, flags=re.DOTALL)
-            readme.write_text(text, encoding="utf-8")
             print("[4/4] README table updated")
         else:
             print("[4/4] README markers not found, skipped")
+
+        # direct-links section (copy-paste raw URLs, grouped by format)
+        link_countries = [cc for cc in countries if index["countries"][cc]["links"] > 0]
+        sections = []
+        sections.append("### 🟣 mihomo (WhiteVPN / Clash / Mihomo)\n\n```\n" + "\n".join(
+            f"{RAW_BASE}/subs/mihomo/mihomo-{cc}.yaml" for cc in countries) + "\n```")
+        sections.append("### 🟠 clash کامل (Clash / Streisand / NekoBox)\n\n```\n" + "\n".join(
+            f"{RAW_BASE}/subs/clash/clash-{cc}.yaml" for cc in countries) + "\n```")
+        if link_countries:
+            sections.append("### 🔵 base64 (v2rayNG / NekoBox / FoXray)\n\n```\n" + "\n".join(
+                f"{RAW_BASE}/subs/base64/base64-{cc}.txt" for cc in link_countries) + "\n```")
+            sections.append("### ⚪ raw (لینک متنی)\n\n```\n" + "\n".join(
+                f"{RAW_BASE}/subs/raw/raw-{cc}.txt" for cc in link_countries) + "\n```")
+        lstart, lend = "<!-- DIRECT-LINKS-START -->", "<!-- DIRECT-LINKS-END -->"
+        lblock = lstart + "\n" + "\n\n".join(sections) + "\n" + lend
+        if lstart in text and lend in text:
+            text = re.sub(re.escape(lstart) + r".*?" + re.escape(lend), lblock, text, flags=re.DOTALL)
+            print("[4/4] README direct-links updated")
+        else:
+            print("[4/4] README direct-links markers not found, skipped")
+        readme.write_text(text, encoding="utf-8")
     print("DONE.")
 
 

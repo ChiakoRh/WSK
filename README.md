@@ -1,25 +1,162 @@
-# WSK — ساب تفکیک‌شده بر اساس کشور از روی WhiteDNS
+# 📡 WSK — ساب تفکیک‌شده بر اساس کشور از روی WhiteDNS
 
 سورس اصلی: https://github.com/iampedii/whitedns-sub (`mihomo.yaml` + `base64.txt`)
 که ساب داخلی برنامه https://github.com/WhiteDNS/WhiteVPN هست.
 
-این ریپو هر ۳۰ دقیقه با گیت‌هاب اکشن (`update.yml`) از ساب اصلی می‌خونه
+این ریپو هر ۱ ساعت با گیت‌هاب اکشن ⏰ (`update.yml`) از ساب اصلی می‌خونه
 و برای هر کشور یه ساب جدا می‌سازه، تا بشه تو برنامه‌های دیگه (v2rayNG، NekoBox، Clash، Streisand...)
 هر کشور رو جدا وارد کرد — چیزی که WhiteVPN داخل خودش داره ولی بقیه برنامه‌ها ندارن.
 
-## فرمت‌ها (برای هر کشور `CC`)
+## 📂 فرمت‌ها (برای هر کشور `CC`)
 
 | فرمت | فایل | به چه دردی می‌خوره |
 |---|---|---|
-| mihomo proxies-only | `subs/mihomo/mihomo-CC.yaml` | WhiteVPN، Mihomo، Clash (مثل فایل اصلی) |
-| clash کامل | `subs/clash/clash-CC.yaml` | Clash/Mihomo/Streisand — با proxy-group آماده |
-| base64 | `subs/base64/base64-CC.txt` | v2rayNG، NekoBox، FoXray (فرمت استاندارد ساب) |
-| raw | `subs/raw/raw-CC.txt` | لینک‌ها به صورت متنی، برای کپی دستی |
+| 🟣 mihomo proxies-only | `subs/mihomo/mihomo-CC.yaml` | WhiteVPN، Mihomo، Clash (مثل فایل اصلی) |
+| 🟠 clash کامل | `subs/clash/clash-CC.yaml` | Clash/Mihomo/Streisand — با proxy-group آماده |
+| 🔵 base64 | `subs/base64/base64-CC.txt` | v2rayNG، NekoBox، FoXray (فرمت استاندارد ساب) |
+| ⚪ raw | `subs/raw/raw-CC.txt` | لینک‌ها به صورت متنی، برای کپی دستی |
 
-لینک مستقیم:
-`https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-DE.yaml`
+## 🔗 لینک مستقیم همه ساب‌ها
 
-## لیست کشورها (خودکار آپدیت میشه)
+کافیه لینک کشور موردنظرت رو کپی کنی و به‌عنوان Subscription توی برنامت اضافه کنی 👇
+
+<!-- DIRECT-LINKS-START -->
+### 🟣 mihomo (WhiteVPN / Clash / Mihomo)
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-AL.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-AT.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-AU.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-BR.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-CA.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-DE.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-DK.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-EC.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-ES.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-FI.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-FR.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-GB.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-GR.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-HK.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-IE.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-IT.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-JP.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-KR.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-KZ.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-LT.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-LV.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-MY.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-NL.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-OT.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-PL.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-PS.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-PT.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-RO.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-RU.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-SE.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-SG.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-TW.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-US.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-ZA.yaml
+```
+
+### 🟠 clash کامل (Clash / Streisand / NekoBox)
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-AL.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-AT.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-AU.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-BR.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-CA.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-DE.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-DK.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-EC.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-ES.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-FI.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-FR.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-GB.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-GR.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-HK.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-IE.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-IT.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-JP.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-KR.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-KZ.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-LT.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-LV.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-MY.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-NL.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-OT.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-PL.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-PS.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-PT.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-RO.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-RU.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-SE.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-SG.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-TW.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-US.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-ZA.yaml
+```
+
+### 🔵 base64 (v2rayNG / NekoBox / FoXray)
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-AT.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-AU.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-CA.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-DE.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-FI.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-FR.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-GB.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-HK.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-IT.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-JP.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-KR.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-KZ.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-LT.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-MY.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-NL.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-OT.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-PL.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-RU.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-SE.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-SG.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-TW.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-US.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-ZA.txt
+```
+
+### ⚪ raw (لینک متنی)
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-AT.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-AU.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-CA.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-DE.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-FI.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-FR.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-GB.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-HK.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-IT.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-JP.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-KR.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-KZ.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-LT.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-MY.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-NL.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-OT.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-PL.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-RU.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-SE.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-SG.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-TW.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-US.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-ZA.txt
+```
+<!-- DIRECT-LINKS-END -->
+
+## 🌍 لیست کشورها (خودکار آپدیت میشه)
 
 <!-- COUNTRY-TABLE-START -->
 | کشور | mihomo (WhiteVPN/Clash) | clash کامل | base64 (v2rayNG) | raw | پروکسی / لینک |
@@ -60,7 +197,7 @@
 | `ZA` | [mihomo-ZA.yaml](subs/mihomo/mihomo-ZA.yaml) | [clash-ZA.yaml](subs/clash/clash-ZA.yaml) | [base64-ZA.txt](subs/base64/base64-ZA.txt) | [raw-ZA.txt](subs/raw/raw-ZA.txt) | 1 / 1 |
 <!-- COUNTRY-TABLE-END -->
 
-## اجرای دستی
+## ⚙️ اجرای دستی
 
 ```bash
 pip install pyyaml
@@ -76,7 +213,7 @@ python split.py
 
 اگه از این ساب‌ها استفاده می‌کنی، لطفاً به ریپوهای اصلی ستاره بده ⭐
 
-### پروژه‌های WhiteDNS / iampedii
+### 🚀 پروژه‌های WhiteDNS / iampedii
 
 | پروژه | توضیح | لینک |
 |---|---|---|

@@ -2,8 +2,8 @@ name: update-subs
 
 on:
   schedule:
-    # هر ۳۰ دقیقه از ساب اصلی آپدیت بگیر
-    - cron: "*/30 * * * *"
+    # هر ۱ ساعت از ساب اصلی آپدیت بگیر
+    - cron: "0 * * * *"
   workflow_dispatch:
 
 permissions:
