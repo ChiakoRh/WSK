@@ -1,0 +1,100 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇰🇿 | @WhiteDNS | KZ17|2.4MB/s|DNSOK|GPT⁺-KZ
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: Ao_imnCEIGAaL1DZnjOK1SSPpjQOw_XJcgMpNLEZwg0
+    short-id: ac4b582e
+  server: 111.88.143.139
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2b8c0574-ff6f-4975-8a06-e24ebefa1d1c
+  servername: www.cloudflare.com
+- client-fingerprint: chrome
+  name: 🇰🇿 | @WhiteDNS | KZ18|692KB/s|DNSOK|GPT⁺-KZ
+  port: 38065
+  reality-opts:
+    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
+    short-id: fa
+  server: 83.222.23.81
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+  network: tcp
+  servername: yahoo.com
+- client-fingerprint: chrome
+  name: 🇰🇿 | @WhiteDNS | KZ19|667KB/s|DNSOK|GPT⁺-KZ
+  network: tcp
+  port: 38065
+  reality-opts:
+    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
+    short-id: fa
+  server: 83.222.23.81
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+  xudp: true
+  servername: yahoo.com
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇰🇿 | @WhiteDNS | KZ20|643KB/s|DNSOK|GPT⁺-KZ
+  network: raw
+  port: 38065
+  reality-opts:
+    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
+    short-id: fa
+  server: 83.222.23.81
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+  xudp: true
+  servername: yahoo.com
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇰🇿 | @WhiteDNS | KZ21|558KB/s|DNSOK|GPT⁺-KZ
+  network: raw
+  port: 35728
+  reality-opts:
+    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
+    short-id: 69a2
+  server: 178.236.16.98
+  tls: true
+  type: vless
+  udp: true
+  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
+  xudp: true
+  servername: yahoo.com
+proxy-groups:
+- name: KZ-Auto
+  type: url-test
+  proxies:
+  - 🇰🇿 | @WhiteDNS | KZ17|2.4MB/s|DNSOK|GPT⁺-KZ
+  - 🇰🇿 | @WhiteDNS | KZ18|692KB/s|DNSOK|GPT⁺-KZ
+  - 🇰🇿 | @WhiteDNS | KZ19|667KB/s|DNSOK|GPT⁺-KZ
+  - 🇰🇿 | @WhiteDNS | KZ20|643KB/s|DNSOK|GPT⁺-KZ
+  - 🇰🇿 | @WhiteDNS | KZ21|558KB/s|DNSOK|GPT⁺-KZ
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,KZ-Auto

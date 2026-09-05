@@ -1,0 +1,59 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- alterId: 0
+  cipher: auto
+  name: 🇮🇳 | @WhiteDNS | IN23|2.5MB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 80
+  server: 152.67.8.205
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  ws-opts:
+    headers: {}
+    path: /
+  xudp: true
+  servername: 🇮🇳in-152.67.8.205-0164 | 0.149mb
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇮🇳 | @WhiteDNS | IN24|1.1MB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 80
+  server: 152.67.8.205
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  ws-opts:
+    headers: {}
+    path: /
+  xudp: true
+  servername: 152.67.8.205
+proxy-groups:
+- name: IN-Auto
+  type: url-test
+  proxies:
+  - 🇮🇳 | @WhiteDNS | IN23|2.5MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN24|1.1MB/s|DNSOK|GPT⁺-IN
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,IN-Auto
