@@ -2,8 +2,8 @@ name: update-subs
 
 on:
   schedule:
-    # هر ۱ ساعت از ساب اصلی آپدیت بگیر
-    - cron: "0 * * * *"
+    # هر ۳ ساعت از ساب اصلی آپدیت بگیر
+    - cron: "0 */3 * * *"
   workflow_dispatch:
 
 permissions:
@@ -18,8 +18,23 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install pyyaml
+      - name: check upstream
+        id: check
+        run: |
+          UPSTREAM_SHA=$(curl -s https://api.github.com/repos/iampedii/whitedns-sub/commits/main | python -c "import sys,json;print(json.load(sys.stdin)['sha'])")
+          LAST_SHA=$(cat subs/.upstream-sha 2>/dev/null || echo "")
+          if [ "$UPSTREAM_SHA" = "$LAST_SHA" ]; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "upstream unchanged ($UPSTREAM_SHA), skipping"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "$UPSTREAM_SHA" > subs/.upstream-sha
+            echo "upstream changed: $LAST_SHA -> $UPSTREAM_SHA"
+          fi
       - run: python split.py
+        if: steps.check.outputs.changed == 'true'
       - name: commit
+        if: steps.check.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
