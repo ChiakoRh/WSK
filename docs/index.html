@@ -7,6 +7,7 @@
 <meta name="description" content="Per-country WhiteDNS subscription links: mihomo, clash, base64, raw.">
 <meta name="theme-color" content="#141c23">
 <script>document.documentElement.setAttribute("data-theme", localStorage.getItem("wsk-theme") || "dark");</script>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
 <style>
 :root, [data-theme="dark"]{
   --bg:#141c23; --card:#1c2632; --card2:#243040; --text:#e6edf3;
@@ -22,55 +23,69 @@
 body{margin:0;font-family:"Vazirmatn","Segoe UI",Tahoma,Arial,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column}
 [dir="ltr"] body{font-family:"Segoe UI",Arial,sans-serif}
 button{cursor:pointer;font-family:inherit}
+.ri{font-size:1.05em;vertical-align:-.1em}
 /* navbar */
 .navbar{border-bottom:1px solid var(--border);background:var(--card);padding:0}
 .nav-inner{max-width:1000px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:8px}
 .brand{display:flex;align-items:center;gap:8px;font-weight:800;font-size:1.05rem;color:var(--text);text-decoration:none}
 .brand .logo{font-size:1.4rem}
 .nav-actions{margin-inline-start:auto;display:flex;gap:8px;align-items:center}
-.navbtn{display:inline-flex;align-items:center;gap:6px;background:var(--card2);color:var(--text);border:1px solid var(--border);border-radius:8px;padding:6px 12px;font-size:.82rem;text-decoration:none}
+.navbtn{display:inline-flex;align-items:center;gap:6px;background:var(--card2);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:5px 10px;font-size:.8rem;text-decoration:none}
 .navbtn:hover{border-color:var(--accent)}
-.iconbtn{background:var(--card2);color:var(--text);border:1px solid var(--border);border-radius:8px;padding:6px 10px;font-size:.9rem;line-height:1}
+.iconbtn{background:var(--card2);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:5px 8px;font-size:.85rem;line-height:1}
 .iconbtn:hover{border-color:var(--accent)}
 /* workbench */
 .wrap{max-width:1000px;margin:0 auto;padding:0 16px;width:100%}
-.workbench{background:var(--card);border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow);margin:18px 0;padding:18px}
+.workbench{background:var(--card);border:1px solid var(--border);border-radius:8px;margin:14px 0;padding:14px}
 h1{font-size:1.2rem;margin:0 0 2px}
 .sub{color:var(--muted);font-size:.85rem;margin:0 0 4px}
-.updated{display:inline-block;font-size:.75rem;color:var(--muted);background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:4px 12px;margin-top:8px}
-.tabs{display:flex;gap:8px;margin:16px 0 12px;flex-wrap:wrap}
-.tab{background:var(--card2);color:var(--muted);border:1px solid var(--border);border-radius:9px;padding:9px 18px;font-size:.9rem}
-.tab.active{background:var(--accent);color:#fff;border-color:var(--accent)}
-.search{width:100%;background:var(--input);border:1px solid var(--border);border-radius:9px;color:var(--text);padding:11px 14px;font-size:.95rem;font-family:inherit;margin-bottom:14px}
+.updated{display:inline-block;font-size:.75rem;color:var(--muted);background:var(--card2);border:1px solid var(--border);border-radius:6px;padding:3px 10px;margin-top:8px}
+.tabs{display:inline-flex;margin:16px 0 12px;border:1px solid var(--border);border-radius:6px;overflow:hidden}
+.tab{background:transparent;color:var(--muted);border:none;border-inline-start:1px solid var(--border);padding:7px 14px;font-size:.85rem;border-radius:0}
+.tab:first-child{border-inline-start:none}
+.tab.active{background:var(--accent);color:#fff}
+.search-wrap{position:relative;margin-bottom:12px}
+.search-wrap .ri{position:absolute;top:50%;right:12px;transform:translateY(-50%);color:var(--muted);font-size:.95rem;pointer-events:none}
+[dir="ltr"] .search-wrap .ri{right:auto;left:12px}
+.search{width:100%;background:var(--input);border:1px solid var(--border);border-radius:6px;color:var(--text);padding:9px 36px 9px 12px;font-size:.9rem;font-family:inherit}
 .search:focus{outline:none;border-color:var(--accent)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
-.card{background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:14px}
+.card{background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:12px}
 .card .row1{display:flex;align-items:center;gap:10px}
-.flagimg{width:46px;height:34px;object-fit:cover;border-radius:6px;border:1px solid var(--border);background:var(--input)}
+.flagimg{width:42px;height:32px;object-fit:cover;border-radius:4px;border:1px solid var(--border);background:var(--input)}
 .flag-emoji{font-size:1.9rem;line-height:1}
 .name{font-weight:700}
-.code{font-size:.72rem;color:var(--muted);border:1px solid var(--border);border-radius:6px;padding:1px 7px;margin-inline-start:auto;background:var(--card)}
-.count{font-size:.78rem;color:var(--muted);margin:8px 0 10px}
-.actions{display:flex;gap:8px}
-.copy{flex:1;background:var(--green);color:#fff;border:none;border-radius:8px;padding:9px;font-weight:700;font-size:.88rem}
+.code{font-size:.7rem;color:var(--muted);border:1px solid var(--border);border-radius:4px;padding:1px 6px;margin-inline-start:auto;background:var(--card)}
+.count{font-size:.75rem;color:var(--muted);margin:6px 0 8px}
+.actions{display:flex;border:1px solid var(--border);border-radius:6px;overflow:hidden;width:fit-content}
+.copy{background:var(--green);color:#fff;border:none;border-inline-start:1px solid var(--border);padding:7px 14px;font-weight:700;font-size:.82rem;border-radius:0}
 .copy:hover{filter:brightness(1.12)}
-.open{background:transparent;color:var(--text);border:1px solid var(--border);border-radius:8px;padding:9px 14px;font-size:.85rem;text-decoration:none}
-.open:hover{border-color:var(--accent)}
+.open{background:transparent;color:var(--text);border:none;padding:7px 12px;font-size:.8rem;text-decoration:none;border-radius:0}
+.open:hover{background:var(--card)}
 .status{text-align:center;color:var(--muted);padding:40px 10px}
 .status.err{color:#f47070}
-.retry{background:var(--accent);color:#fff;border:none;border-radius:8px;padding:9px 20px;margin-top:10px}
+.retry{background:var(--accent);color:#fff;border:none;border-radius:6px;padding:8px 18px;margin-top:10px}
 footer{text-align:center;color:var(--muted);font-size:.8rem;padding:18px;border-top:1px solid var(--border);margin-top:auto}
 footer a{color:var(--accent)}
-.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--green);color:#fff;font-weight:700;padding:10px 22px;border-radius:10px;display:none;z-index:50;box-shadow:var(--shadow)}
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--green);color:#fff;font-weight:700;padding:9px 20px;border-radius:6px;display:none;z-index:50;box-shadow:var(--shadow)}
+.skel{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin-top:4px}
+.skel-card{background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:12px}
+.skel-row{display:flex;align-items:center;gap:10px}
+.skel-flag{width:42px;height:32px;border-radius:4px;background:var(--border);animation:pulse 1.2s ease-in-out infinite}
+.skel-name{height:14px;width:90px;border-radius:4px;background:var(--border);animation:pulse 1.2s ease-in-out infinite}
+.skel-code{height:12px;width:28px;border-radius:4px;background:var(--border);margin-inline-start:auto;animation:pulse 1.2s ease-in-out infinite}
+.skel-count{height:11px;width:70px;border-radius:4px;background:var(--border);margin:8px 0;animation:pulse 1.2s ease-in-out infinite}
+.skel-bar{height:30px;border-radius:6px;background:var(--border);animation:pulse 1.2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:.4}50%{opacity:.15}}
 </style>
 </head>
 <body>
 <nav class="navbar">
   <div class="nav-inner">
-    <a class="brand" href="https://chiakorh.github.io/WSK/"><span class="logo">📡</span><span>WSK</span></a>
+    <a class="brand" href="https://chiakorh.github.io/WSK/"><span class="logo"><i class="ri-satellite-line"></i></span><span>WSK</span></a>
     <div class="nav-actions">
-      <a class="navbtn" href="https://github.com/ChiakoRh/WSK" target="_blank" rel="noopener">⭐ <span data-i18n="star">ستاره</span></a>
-      <button class="iconbtn" id="themebtn" title="theme">🌙</button>
+      <a class="navbtn" href="https://github.com/ChiakoRh/WSK" target="_blank" rel="noopener"><i class="ri-star-line"></i> <span data-i18n="star">ستاره</span></a>
+      <button class="iconbtn" id="themebtn" title="theme"><i class="ri-moon-line"></i></button>
       <button class="iconbtn" id="langbtn">EN</button>
     </div>
   </div>
@@ -80,14 +95,14 @@ footer a{color:var(--accent)}
   <div class="workbench">
     <h1 data-i18n="title">ساب‌های WhiteDNS بر اساس کشور</h1>
     <p class="sub" data-i18n="subtitle">لینک مستقیم هر کشور، آماده کپی برای برنامه‌ات</p>
-    <span class="updated" id="updated">…</span>
+    <span class="updated" id="updated"><i class="ri-time-line"></i> …</span>
     <div class="tabs" id="tabs">
-      <button class="tab active" data-tab="mihomo">🟣 Mihomo</button>
-      <button class="tab" data-tab="clash">🟠 Clash</button>
-      <button class="tab" data-tab="base64">🔵 Base64</button>
-      <button class="tab" data-tab="raw">⚪ Raw</button>
+      <button class="tab active" data-tab="mihomo"><i class="ri-server-line"></i> Mihomo</button>
+      <button class="tab" data-tab="clash"><i class="ri-shield-line"></i> Clash</button>
+      <button class="tab" data-tab="base64"><i class="ri-code-line"></i> Base64</button>
+      <button class="tab" data-tab="raw"><i class="ri-file-text-line"></i> Raw</button>
     </div>
-    <input class="search" id="search" data-i18n-ph="search" placeholder="🔍 جستجوی کشور… (مثلا آلمان، Japan، DE)">
+    <div class="search-wrap"><i class="ri-search-line"></i><input class="search" id="search" data-i18n-ph="search" placeholder="جستجوی کشور… (مثلا آلمان، Japan، DE)"></div>
     <div class="grid" id="grid"></div>
     <div class="status" id="status"></div>
   </div>
@@ -120,14 +135,14 @@ const TABS = {
 
 const I18N = {
   fa:{title:"ساب‌های WhiteDNS بر اساس کشور", subtitle:"لینک مستقیم هر کشور، آماده کپی برای برنامه‌ات",
-      search:"🔍 جستجوی کشور… (مثلا آلمان، Japan، DE)", copy:"📋 کپی لینک", copied:"✅ کپی شد!", open:"↗ باز کردن",
-      star:"ستاره", count:(n,t)=>`${n} ${t==="links"?"لینک":"پروکسی"}`, updated:d=>`🕐 آپدیت: ${d}`,
-      loadFail:"❌ خطا در خواندن داده‌ها از گیت‌هاب", retry:"🔄 تلاش دوباره", noResult:"کشوری پیدا نشد 🔍",
+      search:"جستجوی کشور… (مثلا آلمان، Japan، DE)", copy:'<i class="ri-file-copy-line"></i> کپی لینک', copied:'<i class="ri-check-line"></i> کپی شد!', open:'<i class="ri-external-link-line"></i> باز کردن',
+      star:"ستاره", count:(n,t)=>`${n} ${t==="links"?"لینک":"پروکسی"}`, updated:d=>`<i class="ri-time-line"></i> آپدیت: ${d}`,
+      loadFail:'<i class="ri-error-warning-line"></i> خطا در خواندن داده‌ها از گیت‌هاب', retry:'<i class="ri-refresh-line"></i> تلاش دوباره', noResult:'کشوری پیدا نشد <i class="ri-search-2-line"></i>',
       credit:"ساخته‌شده از روی ساب اصلی"},
   en:{title:"WhiteDNS Subs by Country", subtitle:"Direct link per country, ready to copy into your app",
-      search:"🔍 Search country… (e.g. Germany, Japan, DE)", copy:"📋 Copy link", copied:"✅ Copied!", open:"↗ Open",
-      star:"Star", count:(n,t)=>`${n} ${t==="links"?"links":"proxies"}`, updated:d=>`🕐 Updated: ${d}`,
-      loadFail:"❌ Failed to load data from GitHub", retry:"🔄 Retry", noResult:"No country found 🔍",
+      search:"Search country… (e.g. Germany, Japan, DE)", copy:'<i class="ri-file-copy-line"></i> Copy link', copied:'<i class="ri-check-line"></i> Copied!', open:'<i class="ri-external-link-line"></i> Open',
+      star:"Star", count:(n,t)=>`${n} ${t==="links"?"links":"proxies"}`, updated:d=>`<i class="ri-time-line"></i> Updated: ${d}`,
+      loadFail:'<i class="ri-error-warning-line"></i> Failed to load data from GitHub', retry:'<i class="ri-refresh-line"></i> Retry', noResult:'No country found <i class="ri-search-2-line"></i>',
       credit:"Built from the upstream sub"}
 };
 
@@ -150,7 +165,7 @@ function subUrl(cc){ const t=TABS[TAB]; return `${RAW_BASE}/subs/${t.dir}/${t.pr
 function applyTheme(){
   const th = localStorage.getItem("wsk-theme") || "dark";
   document.documentElement.setAttribute("data-theme", th);
-  document.getElementById("themebtn").textContent = th==="dark" ? "🌙" : "☀️";
+  document.getElementById("themebtn").innerHTML = th==="dark" ? '<i class="ri-moon-line"></i>' : '<i class="ri-sun-line"></i>';
 }
 function applyLang(){
   const d = I18N[LANG];
@@ -178,7 +193,7 @@ function render(){
     if((TAB==="base64"||TAB==="raw") && DATA.countries[cc].links===0) return false;
     return matches(cc);
   });
-  if(!list.length){ status.textContent = d.noResult; return; }
+  if(!list.length){ status.innerHTML = d.noResult; return; }
   for(const cc of list){
     const n = DATA.countries[cc][t.countKey], url = subUrl(cc);
     const card = document.createElement("div");
@@ -189,34 +204,47 @@ function render(){
       `<div class="count">${d.count(n, t.countKey)}</div>`+
       `<div class="actions"><button class="copy">${d.copy}</button>`+
       `<a class="open" href="${url}" target="_blank" rel="noopener">${d.open}</a></div>`;
-    card.querySelector(".copy").onclick = async ()=>{
+    card.querySelector(".copy").onclick = async function(){
+      const btn = this;
       try{ await navigator.clipboard.writeText(url); }
       catch(e){
         const ta = document.createElement("textarea");
         ta.value = url; document.body.appendChild(ta); ta.select();
         document.execCommand("copy"); ta.remove();
       }
+      btn.innerHTML = d.copied;
       const toast = document.getElementById("toast");
-      toast.textContent = d.copied; toast.style.display = "block";
-      clearTimeout(toast._t); toast._t = setTimeout(()=>toast.style.display="none", 1500);
+      toast.innerHTML = d.copied; toast.style.display = "block";
+      clearTimeout(toast._t); toast._t = setTimeout(()=>{ toast.style.display="none"; btn.innerHTML = d.copy; }, 1500);
     };
     grid.appendChild(card);
   }
 }
 
+function renderSkeleton(){
+  const grid = document.getElementById("grid");
+  grid.innerHTML = "";
+  for(let i=0;i<8;i++){
+    const c = document.createElement("div");
+    c.className = "skel-card";
+    c.innerHTML = '<div class="skel-row"><div class="skel-flag"></div><div class="skel-name"></div><div class="skel-code"></div></div><div class="skel-count"></div><div class="skel-bar"></div>';
+    grid.appendChild(c);
+  }
+}
 async function load(){
   const d = I18N[LANG], status = document.getElementById("status");
-  document.getElementById("grid").innerHTML = "";
   status.innerHTML = ""; status.className = "status";
+  renderSkeleton();
   try{
     const r = await fetch(INDEX_URL, {cache:"no-store"});
     if(!r.ok) throw new Error(r.status);
     DATA = await r.json();
     const dt = new Date(DATA.updated_at);
-    document.getElementById("updated").textContent =
+    document.getElementById("updated").innerHTML =
       d.updated(dt.toLocaleString(LANG==="fa"?"fa-IR":"en-US"));
     render();
   }catch(e){
+    document.getElementById("grid").innerHTML = "";
     status.className = "status err";
     status.innerHTML = `${d.loadFail}<br><button class="retry">${d.retry}</button>`;
     status.querySelector(".retry").onclick = load;
