@@ -5,10 +5,11 @@ Source:
   https://github.com/iampedii/whitedns-sub  (mihomo.yaml, base64.txt)
 
 Outputs (in subs/):
-  mihomo-<CC>.yaml   - Mihomo/Clash proxies-only, usable in WhiteVPN, Clash, Mihomo, NekoBox...
-  raw-<CC>.txt       - plain share-links (vless/vmess/trojan/ss/hysteria2...), usable in v2rayNG etc.
-  base64-<CC>.txt    - base64-encoded share-links (standard sub format)
-  index.json         - counts + update time
+  mihomo/mihomo-<CC>.yaml - Mihomo/Clash proxies-only, usable in WhiteVPN, Clash, Mihomo, NekoBox...
+  clash/clash-<CC>.yaml   - full Clash config with proxy-group, for Clash/Mihomo/Streisand...
+  base64/base64-<CC>.txt  - base64-encoded share-links (standard sub format)
+  raw/raw-<CC>.txt        - plain share-links (vless/vmess/trojan/ss/hysteria2...)
+  index.json              - counts + update time
 
 Country detection: from proxy `name` field, e.g.
   "🇩🇪 | @WhiteDNS | DE360|39.8MB/s|DNSOK|GPT⁺-DE" -> DE
@@ -37,6 +38,10 @@ UPSTREAM_BASE64 = "https://raw.githubusercontent.com/iampedii/whitedns-sub/main/
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "subs"
+MIHOMO_DIR = OUT / "mihomo"
+CLASH_DIR = OUT / "clash"
+BASE64_DIR = OUT / "base64"
+RAW_DIR = OUT / "raw"
 
 # Minimal full-clash template so the yaml also works in apps that
 # require proxy-groups (ClashMeta/Mihomo/Streisand/NekoBox).
@@ -119,7 +124,9 @@ def main() -> None:
     print(f"[3/4] countries found ({len(countries)}): {' '.join(countries)}")
 
     OUT.mkdir(parents=True, exist_ok=True)
-    # clean old generated files (keep index.json regeneration simple)
+    for d in (MIHOMO_DIR, CLASH_DIR, BASE64_DIR, RAW_DIR):
+        d.mkdir(parents=True, exist_ok=True)
+    # clean old generated files, including leftovers of the previous flat layout
     for f in OUT.glob("mihomo-*.yaml"):
         f.unlink()
     for f in OUT.glob("clash-*.yaml"):
@@ -128,6 +135,10 @@ def main() -> None:
         f.unlink()
     for f in OUT.glob("base64-*.txt"):
         f.unlink()
+    for d, pat in ((MIHOMO_DIR, "mihomo-*.yaml"), (CLASH_DIR, "clash-*.yaml"),
+                   (RAW_DIR, "raw-*.txt"), (BASE64_DIR, "base64-*.txt")):
+        for f in d.glob(pat):
+            f.unlink()
 
     index = {"updated_at": datetime.now(timezone.utc).isoformat(), "upstream": UPSTREAM_MIHOMO, "countries": {}}
 
@@ -136,7 +147,7 @@ def main() -> None:
         llist = by_country_links.get(cc, [])
 
         # 1) proxies-only yaml (same shape as upstream -> works in WhiteVPN)
-        with open(OUT / f"mihomo-{cc}.yaml", "w", encoding="utf-8") as f:
+        with open(MIHOMO_DIR / f"mihomo-{cc}.yaml", "w", encoding="utf-8") as f:
             yaml.safe_dump({"proxies": plist}, f, allow_unicode=True, sort_keys=False)
 
         # 2) full clash yaml (works in Clash/Mihomo/Streisand/NekoBox that need proxy-groups)
@@ -148,16 +159,16 @@ def main() -> None:
             ],
             "rules": ["MATCH," + f"{cc}-Auto"],
         }
-        with open(OUT / f"clash-{cc}.yaml", "w", encoding="utf-8") as f:
+        with open(CLASH_DIR / f"clash-{cc}.yaml", "w", encoding="utf-8") as f:
             f.write(CLASH_TEMPLATE)
             yaml.safe_dump({"proxies": plist}, f, allow_unicode=True, sort_keys=False)
             yaml.safe_dump(group_block, f, allow_unicode=True, sort_keys=False)
 
         # 3) raw + base64 share-links (works in v2rayNG, NekoBox, FoXray, Streisand...)
         raw = "\n".join(llist) + ("\n" if llist else "")
-        with open(OUT / f"raw-{cc}.txt", "w", encoding="utf-8") as f:
+        with open(RAW_DIR / f"raw-{cc}.txt", "w", encoding="utf-8") as f:
             f.write(raw)
-        with open(OUT / f"base64-{cc}.txt", "w", encoding="utf-8") as f:
+        with open(BASE64_DIR / f"base64-{cc}.txt", "w", encoding="utf-8") as f:
             f.write(base64.b64encode(raw.encode()).decode() if raw.strip() else "")
 
         index["countries"][cc] = {"mihomo_proxies": len(plist), "links": len(llist)}
@@ -174,12 +185,12 @@ def main() -> None:
         for cc in countries:
             n = index["countries"][cc]
             cnt = f"{n['mihomo_proxies']} / {n['links']}"
-            b64cell = f"[base64-{cc}.txt](subs/base64-{cc}.txt)" if n["links"] > 0 else "— (فقط mihomo)"
-            rawcell = f"[raw-{cc}.txt](subs/raw-{cc}.txt)" if n["links"] > 0 else "—"
+            b64cell = f"[base64-{cc}.txt](subs/base64/base64-{cc}.txt)" if n["links"] > 0 else "— (فقط mihomo)"
+            rawcell = f"[raw-{cc}.txt](subs/raw/raw-{cc}.txt)" if n["links"] > 0 else "—"
             table.append(
                 f"| `{cc}` "
-                f"| [mihomo-{cc}.yaml](subs/mihomo-{cc}.yaml) "
-                f"| [clash-{cc}.yaml](subs/clash-{cc}.yaml) "
+                f"| [mihomo-{cc}.yaml](subs/mihomo/mihomo-{cc}.yaml) "
+                f"| [clash-{cc}.yaml](subs/clash/clash-{cc}.yaml) "
                 f"| {b64cell} "
                 f"| {rawcell} "
                 f"| {cnt} |"
