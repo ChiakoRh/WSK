@@ -10,6 +10,7 @@
 ## 🧭 فهرست
 
 - [📂 فرمت‌ها](#formats)
+- [🌐 سایت (کپی راحت لینک‌ها)](#site)
 - [🔗 لینک مستقیم ساب‌ها](#direct)
 - [🌍 لیست کشورها](#countries)
 - [⚙️ اجرای دستی](#manual)
@@ -24,6 +25,16 @@
 | 🟠 clash کامل | `subs/clash/clash-CC.yaml` | Clash/Mihomo/Streisand — با proxy-group آماده |
 | 🔵 base64 | `subs/base64/base64-CC.txt` | v2rayNG، NekoBox، FoXray (فرمت استاندارد ساب) |
 | ⚪ raw | `subs/raw/raw-CC.txt` | لینک‌ها به صورت متنی، برای کپی دستی |
+
+<a id="site"></a>
+## 🌐 سایت (کپی راحت لینک‌ها)
+
+به‌جای گشتن توی ریدمی، از سایت استفاده کن — جستجوی کشور، تب ۴ فرمت، دکمه کپی، فارسی/انگلیسی 👇
+
+**https://chiakorh.github.io/WSK/**
+
+> اگه باز نشد، یه بار توی تنظیمات ریپو فعالش کن:
+> `Settings → Pages → Deploy from a branch → main → /docs → Save`
 
 <a id="direct"></a>
 ## 🔗 لینک مستقیم همه ساب‌ها

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WSK — ساب تفکیک‌شده WhiteDNS بر اساس کشور</title>
+<meta name="description" content="Per-country WhiteDNS subscription links: mihomo, clash, base64, raw.">
+<style>
+:root{
+  --bg:#0f1420; --card:#1a2233; --card2:#222d44; --text:#e8edf5;
+  --muted:#9aa7bd; --accent:#4f8cff; --accent2:#22c55e; --border:#2c3a55;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Vazirmatn","Segoe UI",Tahoma,Arial,sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+[dir="ltr"] body{font-family:"Segoe UI",Arial,sans-serif}
+header{position:sticky;top:0;z-index:10;background:rgba(15,20,32,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);padding:14px 16px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 16px}
+h1{font-size:1.25rem;margin:0 0 2px}
+.sub{color:var(--muted);font-size:.85rem;margin:0}
+.topbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.topbar .spacer{flex:1}
+button{cursor:pointer;font-family:inherit}
+.langbtn{background:var(--card2);color:var(--text);border:1px solid var(--border);border-radius:10px;padding:7px 14px;font-size:.85rem}
+.langbtn:hover{border-color:var(--accent)}
+.updated{font-size:.75rem;color:var(--muted);background:var(--card);border:1px solid var(--border);border-radius:20px;padding:5px 12px}
+.tabs{display:flex;gap:8px;margin:16px 0 12px;flex-wrap:wrap}
+.tab{background:var(--card);color:var(--muted);border:1px solid var(--border);border-radius:12px;padding:9px 18px;font-size:.9rem}
+.tab.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.search{width:100%;background:var(--card);border:1px solid var(--border);border-radius:12px;color:var(--text);padding:11px 14px;font-size:.95rem;font-family:inherit;margin-bottom:14px}
+.search:focus{outline:none;border-color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;padding-bottom:30px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px}
+.card .row1{display:flex;align-items:center;gap:10px}
+.flag{font-size:1.9rem;line-height:1}
+.name{font-weight:700}
+.code{font-size:.72rem;color:var(--muted);border:1px solid var(--border);border-radius:6px;padding:1px 7px;margin-inline-start:auto}
+.count{font-size:.78rem;color:var(--muted);margin:8px 0 10px}
+.actions{display:flex;gap:8px}
+.copy{flex:1;background:var(--accent2);color:#06230f;border:none;border-radius:10px;padding:9px;font-weight:700;font-size:.88rem}
+.copy:hover{filter:brightness(1.1)}
+.open{background:var(--card2);color:var(--text);border:1px solid var(--border);border-radius:10px;padding:9px 14px;font-size:.85rem;text-decoration:none}
+.status{text-align:center;color:var(--muted);padding:40px 10px}
+.status.err{color:#f87171}
+.retry{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:9px 20px;margin-top:10px}
+footer{text-align:center;color:var(--muted);font-size:.8rem;padding:18px;border-top:1px solid var(--border)}
+footer a{color:var(--accent)}
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--accent2);color:#06230f;font-weight:700;padding:10px 22px;border-radius:12px;display:none;z-index:50}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap topbar">
+    <div>
+      <h1 data-i18n="title">📡 ساب‌های WhiteDNS بر اساس کشور</h1>
+      <p class="sub" data-i18n="subtitle">لینک مستقیم هر کشور، آماده کپی برای برنامه‌ات</p>
+    </div>
+    <div class="spacer"></div>
+    <span class="updated" id="updated">…</span>
+    <button class="langbtn" id="langbtn">EN</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="tabs" id="tabs">
+    <button class="tab active" data-tab="mihomo">🟣 Mihomo</button>
+    <button class="tab" data-tab="clash">🟠 Clash</button>
+    <button class="tab" data-tab="base64">🔵 Base64</button>
+    <button class="tab" data-tab="raw">⚪ Raw</button>
+  </div>
+  <input class="search" id="search" data-i18n-ph="search" placeholder="🔍 جستجوی کشور… (مثلا آلمان، Japan، DE)">
+  <div class="grid" id="grid"></div>
+  <div class="status" id="status"></div>
+</main>
+
+<footer>
+  <span data-i18n="credit">ساخته‌شده از روی ساب اصلی</span>
+  <a href="https://github.com/iampedii/whitedns-sub" target="_blank" rel="noopener">iampedii/whitedns-sub</a>
+  • <a href="https://github.com/WhiteDNS/WhiteVPN" target="_blank" rel="noopener">WhiteVPN</a>
+  • <a href="https://github.com/ChiakoRh/WSK" target="_blank" rel="noopener">GitHub</a>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script>
+"use strict";
+const RAW_BASE = "https://raw.githubusercontent.com/ChiakoRh/WSK/main";
+const INDEX_URL = RAW_BASE + "/subs/index.json";
+
+const FA_NAMES = {AL:"آلبانی",AT:"اتریش",AU:"استرالیا",BR:"برزیل",CA:"کانادا",DE:"آلمان",DK:"دانمارک",EC:"اکوادور",ES:"اسپانیا",FI:"فنلاند",FR:"فرانسه",GB:"انگلیس",GR:"یونان",HK:"هنگ‌کنگ",IE:"ایرلند",IT:"ایتالیا",JP:"ژاپن",KR:"کره جنوبی",KZ:"قزاقستان",LT:"لیتوانی",LV:"لتونی",MY:"مالزی",NL:"هلند",OT:"سایر",PL:"لهستان",PS:"فلسطین",PT:"پرتغال",RO:"رومانی",RU:"روسیه",SE:"سوئد",SG:"سنگاپور",TW:"تایوان",US:"آمریکا",ZA:"آفریقای جنوبی"};
+const EN_NAMES = {AL:"Albania",AT:"Austria",AU:"Australia",BR:"Brazil",CA:"Canada",DE:"Germany",DK:"Denmark",EC:"Ecuador",ES:"Spain",FI:"Finland",FR:"France",GB:"United Kingdom",GR:"Greece",HK:"Hong Kong",IE:"Ireland",IT:"Italy",JP:"Japan",KR:"South Korea",KZ:"Kazakhstan",LT:"Lithuania",LV:"Latvia",MY:"Malaysia",NL:"Netherlands",OT:"Other",PL:"Poland",PS:"Palestine",PT:"Portugal",RO:"Romania",RU:"Russia",SE:"Sweden",SG:"Singapore",TW:"Taiwan",US:"United States",ZA:"South Africa"};
+
+const TABS = {
+  mihomo:{dir:"mihomo", prefix:"mihomo-", ext:".yaml", countKey:"mihomo_proxies"},
+  clash:{dir:"clash", prefix:"clash-", ext:".yaml", countKey:"mihomo_proxies"},
+  base64:{dir:"base64", prefix:"base64-", ext:".txt", countKey:"links"},
+  raw:{dir:"raw", prefix:"raw-", ext:".txt", countKey:"links"}
+};
+
+const I18N = {
+  fa:{title:"📡 ساب‌های WhiteDNS بر اساس کشور", subtitle:"لینک مستقیم هر کشور، آماده کپی برای برنامه‌ات",
+      search:"🔍 جستجوی کشور… (مثلا آلمان، Japan، DE)", copy:"📋 کپی لینک", copied:"✅ کپی شد!", open:"↗ باز کردن",
+      count:(n,t)=>`${n} ${t==="links"?"لینک":"پروکسی"}`, updated:d=>`🕐 آپدیت: ${d}`, loadFail:"❌ خطا در خواندن داده‌ها از گیت‌هاب",
+      retry:"🔄 تلاش دوباره", noResult:"کشوری پیدا نشد 🔍", credit:"ساخته‌شده از روی ساب اصلی"},
+  en:{title:"📡 WhiteDNS Subs by Country", subtitle:"Direct link per country, ready to copy into your app",
+      search:"🔍 Search country… (e.g. Germany, Japan, DE)", copy:"📋 Copy link", copied:"✅ Copied!", open:"↗ Open",
+      count:(n,t)=>`${n} ${t==="links"?"links":"proxies"}`, updated:d=>`🕐 Updated: ${d}`, loadFail:"❌ Failed to load data from GitHub",
+      retry:"🔄 Retry", noResult:"No country found 🔍", credit:"Built from the upstream sub"}
+};
+
+let DATA = null, LANG = localStorage.getItem("wsk-lang") || "fa", TAB = "mihomo", QUERY = "";
+
+function flag(cc){
+  if(cc === "OT") return "❓";
+  if(/^[A-Z]{2}$/.test(cc)) return String.fromCodePoint(...[...cc].map(c=>0x1F1E6 + c.charCodeAt(0) - 65));
+  return "🏳️";
+}
+function countryName(cc){ return (LANG==="fa"?FA_NAMES:EN_NAMES)[cc] || cc; }
+function subUrl(cc){ const t=TABS[TAB]; return `${RAW_BASE}/subs/${t.dir}/${t.prefix}${cc}${t.ext}`; }
+
+function applyLang(){
+  const d = I18N[LANG];
+  document.documentElement.lang = LANG;
+  document.documentElement.dir = LANG==="fa"?"rtl":"ltr";
+  document.querySelectorAll("[data-i18n]").forEach(el=>{ el.textContent = d[el.dataset.i18n]; });
+  document.querySelectorAll("[data-i18n-ph]").forEach(el=>{ el.placeholder = d[el.dataset.i18nPh]; });
+  document.getElementById("langbtn").textContent = LANG==="fa"?"EN":"فا";
+  render();
+}
+
+function matches(cc){
+  if(!QUERY) return true;
+  const q = QUERY.toLowerCase();
+  return cc.toLowerCase().includes(q) || (FA_NAMES[cc]||"").includes(QUERY) ||
+         (EN_NAMES[cc]||"").toLowerCase().includes(q);
+}
+
+function render(){
+  const d = I18N[LANG], grid = document.getElementById("grid"), status = document.getElementById("status");
+  grid.innerHTML = ""; status.innerHTML = "";
+  if(!DATA) return;
+  const t = TABS[TAB];
+  const list = Object.keys(DATA.countries).sort().filter(cc=>{
+    if((TAB==="base64"||TAB==="raw") && DATA.countries[cc].links===0) return false;
+    return matches(cc);
+  });
+  if(!list.length){ status.textContent = d.noResult; return; }
+  for(const cc of list){
+    const n = DATA.countries[cc][t.countKey], url = subUrl(cc);
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML =
+      `<div class="row1"><span class="flag">${flag(cc)}</span>`+
+      `<span class="name">${countryName(cc)}</span><span class="code">${cc}</span></div>`+
+      `<div class="count">${d.count(n, t.countKey)}</div>`+
+      `<div class="actions"><button class="copy">${d.copy}</button>`+
+      `<a class="open" href="${url}" target="_blank" rel="noopener">${d.open}</a></div>`;
+    card.querySelector(".copy").onclick = async (ev)=>{
+      try{ await navigator.clipboard.writeText(url); }
+      catch(e){
+        const ta = document.createElement("textarea");
+        ta.value = url; document.body.appendChild(ta); ta.select();
+        document.execCommand("copy"); ta.remove();
+      }
+      const toast = document.getElementById("toast");
+      toast.textContent = d.copied; toast.style.display = "block";
+      clearTimeout(toast._t); toast._t = setTimeout(()=>toast.style.display="none", 1500);
+    };
+    grid.appendChild(card);
+  }
+}
+
+async function load(){
+  const d = I18N[LANG], status = document.getElementById("status");
+  document.getElementById("grid").innerHTML = "";
+  status.innerHTML = "";
+  try{
+    const r = await fetch(INDEX_URL, {cache:"no-store"});
+    if(!r.ok) throw new Error(r.status);
+    DATA = await r.json();
+    const dt = new Date(DATA.updated_at);
+    document.getElementById("updated").textContent =
+      d.updated(dt.toLocaleString(LANG==="fa"?"fa-IR":"en-US"));
+    render();
+  }catch(e){
+    status.className = "status err";
+    status.innerHTML = `${d.loadFail}<br><button class="retry">${d.retry}</button>`;
+    status.querySelector(".retry").onclick = load;
+  }
+}
+
+document.getElementById("tabs").addEventListener("click", ev=>{
+  const b = ev.target.closest(".tab"); if(!b) return;
+  TAB = b.dataset.tab;
+  document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active", x===b));
+  render();
+});
+document.getElementById("search").addEventListener("input", ev=>{ QUERY = ev.target.value.trim(); render(); });
+document.getElementById("langbtn").onclick = ()=>{
+  LANG = LANG==="fa"?"en":"fa"; localStorage.setItem("wsk-lang", LANG); applyLang(); load();
+};
+applyLang(); load();
+</script>
+</body>
+</html>
