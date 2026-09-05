@@ -13,9 +13,23 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇵🇱 | @WhiteDNS | PL61|22.6MB/s|DNSOK|GPT⁺-PL
+  password: ytw2awn
+  port: 443
+  server: pl134.vpnbook.com
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇵🇱 | @WhiteDNS | PL62|21.7MB/s|DNSOK|GPT⁺-PL
+  password: itzvpn@321
+  port: 8388
+  server: 51.83.192.80
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   encryption: none
-  name: 🇵🇱 | @WhiteDNS | PL58|5.0MB/s|DNSOK|GPT⁺-PL
+  name: 🇵🇱 | @WhiteDNS | PL63|19.3MB/s|DNSOK|GPT⁺-PL
   network: ws
   port: 8443
   server: chopin.adaspoloandco.com
@@ -26,19 +40,12 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.67 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/52.0.2743.116 Safari/537.36
     path: /download.php
   xudp: true
   servername: chopin.adaspoloandco.com
-- cipher: chacha20-ietf-poly1305
-  name: 🇵🇱 | @WhiteDNS | PL59|4.6MB/s|DNSOK|GPT⁺-PL
-  password: VJtsgllDDJfNmaTe
-  port: 8388
-  server: 64.176.73.160
-  type: ss
-  udp: true
-- name: 🇵🇱 | @WhiteDNS | PL60|940KB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL64|16.3MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 151.115.54.133
@@ -50,9 +57,10 @@ proxy-groups:
 - name: PL-Auto
   type: url-test
   proxies:
-  - 🇵🇱 | @WhiteDNS | PL58|5.0MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL59|4.6MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL60|940KB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL61|22.6MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL62|21.7MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL63|19.3MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL64|16.3MB/s|DNSOK|GPT⁺-PL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

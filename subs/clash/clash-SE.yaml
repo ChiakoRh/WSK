@@ -13,44 +13,26 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇸🇪 | @WhiteDNS | SE36|15.7MB/s|DNSOK|GPT⁺-SE
-  password: None
-  port: 443
-  server: 149.50.216.65
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 - client-fingerprint: firefox
-  encryption: none
-  name: 🇸🇪 | @WhiteDNS | SE37|5.0MB/s|DNSOK|GPT⁺-SE
+  flow: xtls-rprx-vision
+  name: 🇸🇪 | @WhiteDNS | SE50|21.0MB/s|DNSOK|GPT⁺-SE
   network: tcp
-  port: 32855
+  port: 443
   reality-opts:
-    public-key: fRtTW1zQqje-Yh1DqPAHA8nWOMsX983pZUxy58FaY10
-    short-id: deb7a9e5a6e1d41a
-  server: pswed1.plasdomain.ir
+    public-key: 2AKBmK0PMf2zUMhRo1Ad-WNf_XoRk3AN-SGo6ZdhxA4
+    short-id: ecca56e9a9963ed7
+  server: 199.68.198.13
   tls: true
   type: vless
   udp: true
-  uuid: cc24b2ac-26f2-48ad-9ce4-b2b37d14490a
+  uuid: cf80b5fc-c445-4373-87e6-f8a22ad10d81
   xudp: true
-  servername: amp-api-edge.apps.apple.com
-- name: 🇸🇪 | @WhiteDNS | SE38|1.3MB/s|DNSOK|GPT⁺-SE
-  password: ''
-  port: 443
-  server: 146.70.242.146
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+  servername: se.monkeyisland.xyz
 proxy-groups:
 - name: SE-Auto
   type: url-test
   proxies:
-  - 🇸🇪 | @WhiteDNS | SE36|15.7MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE37|5.0MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE38|1.3MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE50|21.0MB/s|DNSOK|GPT⁺-SE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

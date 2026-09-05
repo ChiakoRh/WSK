@@ -1,0 +1,315 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- name: 🇨🇭 | @WhiteDNS | CH98|44.4MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 2082
+  server: 108.162.198.178
+  type: vless
+  udp: true
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  ws-opts:
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/52.0.2743.116 Safari/537.36
+    path: /?ed=2560security=tls
+  xudp: true
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- encryption: none
+  name: 🇨🇭 | @WhiteDNS | CH99|40.5MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 2086
+  server: 108.162.198.178
+  type: vless
+  udp: true
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; A37fw Build/LMY47V) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: unsafe
+  encryption: none
+  name: 🇨🇭 | @WhiteDNS | CH100|24.2MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 443
+  server: 188.114.97.6
+  tls: true
+  type: vless
+  udp: true
+  uuid: bd9ff08b-d042-3650-48e4-c4b400000000
+  ws-opts:
+    headers:
+      Host: netlivpn2950.bbxff.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+  xudp: true
+  servername: netlivpn2950.bbxff.workers.dev
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇨🇭 | @WhiteDNS | CH101|23.5MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 443
+  server: 172.67.173.138
+  tls: true
+  type: vless
+  udp: true
+  uuid: 813cd228-ebf6-0e21-481a-ba4af8f85b82
+  ws-opts:
+    headers:
+      Host: odd-disk-98c5.assassincreed4048.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.77 Safari/537.36
+    path: /sync
+  xudp: true
+  servername: odd-disk-98c5.assassincreed4048.workers.dev
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇨🇭 | @WhiteDNS | CH102|15.8MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 443
+  server: 104.17.147.22
+  tls: true
+  type: vless
+  udp: true
+  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
+  ws-opts:
+    headers:
+      Host: netlivpn5505.ffffdsaaa.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3 Build/HUAWEIFIG-LX3)
+        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+  xudp: true
+  servername: netlivpn5505.ffffdsaaa.workers.dev
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇨🇭 | @WhiteDNS | CH103|15.4MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 443
+  server: www.speedtest.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
+  ws-opts:
+    headers:
+      Host: netlivpn5505.ffffdsaaa.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/52.0.2743.116 Safari/537.36
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+  xudp: true
+  servername: netlivpn5505.ffffdsaaa.workers.dev
+- client-fingerprint: chrome
+  name: 🇨🇭 | @WhiteDNS | CH104|15.3MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 443
+  server: curly-night-6928.ggdhchjk.workers.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/67.0.3396.99 Safari/537.36
+    path: /
+  xudp: true
+  servername: curly-night-6928.ggdhchjk.workers.dev
+- encryption: none
+  name: 🇨🇭 | @WhiteDNS | CH105|6.8MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 8880
+  server: 172.67.143.54
+  type: vless
+  udp: true
+  uuid: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
+  ws-opts:
+    headers:
+      Host: aged-silence-8d7d.tahaggs.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /taha3
+  xudp: true
+  servername: aged-silence-8d7d.tahaggs.workers.dev
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇨🇭 | @WhiteDNS | CH106|5.8MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 2053
+  server: 104.21.200.243
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7074b9d7-2183-8919-fc11-ca5e00000000
+  ws-opts:
+    headers:
+      Host: netlivpn2584.vjvdgbc.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+  xudp: true
+  servername: netlivpn2584.vjvdgbc.workers.dev
+- client-fingerprint: chrome
+  name: 🇨🇭 | @WhiteDNS | CH107|5.5MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  password: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
+  port: 2096
+  server: 172.67.143.54
+  skip-cert-verify: false
+  sni: aged-silence-8d7d.tahaggs.workers.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/41.0.2228.0 Safari/537.36
+    path: /taha3
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇨🇭 | @WhiteDNS | CH108|5.3MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 443
+  server: 104.21.117.9
+  tls: true
+  type: vless
+  udp: true
+  uuid: bd9ff08b-d042-3650-48e4-c4b400000000
+  ws-opts:
+    headers:
+      Host: netlivpn2950.bbxff.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+  xudp: true
+  servername: netlivpn2950.bbxff.workers.dev
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇨🇭 | @WhiteDNS | CH109|5.3MB/s|DNSOK|GPT⁺-CH
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: bnUUlOHnKSj_dwJQP-zMTTVjJ9IierDOleYNKA_kpn4
+    short-id: ''
+  server: 194.154.29.149
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
+  xudp: true
+  servername: ch-1.kihsuyhf8jkiugsxb.cfd
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇨🇭 | @WhiteDNS | CH110|4.7MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 443
+  server: 172.67.133.170
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
+  ws-opts:
+    headers:
+      Host: peekconfigg.vipserver1-39d.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.67 Safari/537.36
+    path: /sync
+  xudp: true
+  servername: peekconfigg.vipserver1-39d.workers.dev
+- name: 🇨🇭 | @WhiteDNS | CH111|3.4MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 2086
+  server: 172.67.143.54
+  type: vless
+  udp: true
+  uuid: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
+  ws-opts:
+    headers:
+      Host: aged-silence-8d7d.tahaggs.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/64.0.3282.167 Safari/537.36
+    path: /taha3
+  xudp: true
+  servername: aged-silence-8d7d.tahaggs.workers.dev
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇨🇭 | @WhiteDNS | CH112|3.0MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 443
+  server: 172.67.130.144
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7da33b25-cdd6-e481-afcf-c5d532361a70
+  ws-opts:
+    headers:
+      Host: ez-1bc8ab.sekiro-c18.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /sync
+  xudp: true
+  servername: ez-1bc8ab.sekiro-c18.workers.dev
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇨🇭 | @WhiteDNS | CH113|2.6MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 443
+  server: 188.114.99.167
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3bb6fd82-3a15-eaea-6168-4dac2b70079e
+  ws-opts:
+    headers:
+      Host: nahan-fog-af01.dfghttr2012.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/52.0.2743.116 Safari/537.36
+    path: /sync
+  xudp: true
+  servername: nahan-fog-af01.dfghttr2012.workers.dev
+proxy-groups:
+- name: CH-Auto
+  type: url-test
+  proxies:
+  - 🇨🇭 | @WhiteDNS | CH98|44.4MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH99|40.5MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH100|24.2MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH101|23.5MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH102|15.8MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH103|15.4MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH104|15.3MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH105|6.8MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH106|5.8MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH107|5.5MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH108|5.3MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH109|5.3MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH110|4.7MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH111|3.4MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH112|3.0MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH113|2.6MB/s|DNSOK|GPT⁺-DE
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,CH-Auto

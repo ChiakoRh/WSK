@@ -1,0 +1,38 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- name: 🇱🇺 | @WhiteDNS | LU4|6.5MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 8080
+  server: 188.114.97.6
+  type: vless
+  udp: true
+  uuid: 0926b50d-3a90-18dd-7c8e-0cf100000000
+  ws-opts:
+    headers:
+      Host: netlivpn4024.bgfjhd.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/56.0.2924.87 Safari/537.36
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+  xudp: true
+proxy-groups:
+- name: LU-Auto
+  type: url-test
+  proxies:
+  - 🇱🇺 | @WhiteDNS | LU4|6.5MB/s|DNSOK|GPT⁺-CH
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,LU-Auto

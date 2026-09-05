@@ -13,60 +13,61 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT187|7.4MB/s|DNSOK|GPT⁺
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: vvpu_ljhBuTWmM9w5Hl6jj8ZTiE_JYq29S77zNDeCjQ
-    short-id: ff6975658b6cefce
-  server: 109.169.84.146
-  tls: true
-  type: vless
-  udp: true
-  uuid: 88212d38-f112-4a35-8ac2-eb3a1923e413
-  xudp: true
-  servername: strapi.io
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT188|7.2MB/s|DNSOK|GPT⁺-GB
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: vvpu_ljhBuTWmM9w5Hl6jj8ZTiE_JYq29S77zNDeCjQ
-    short-id: ff6975658b6cefce
-  server: 109.169.84.94
-  tls: true
-  type: vless
-  udp: true
-  uuid: 16529590-1702-4e7d-90d8-e64f4e18c1e2
-  xudp: true
-  servername: strapi.io
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT189|6.0MB/s|DNSOK|GPT⁺
-  network: tcp
+  name: ❓ | @WhiteDNS | OT142|7.2MB/s|DNSOK|GPT⁺-GB
   port: 443
   reality-opts:
-    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
-    short-id: fd55b698ee8c3629
-  server: 109.169.85.137
+    public-key: _8LiLlqEXJGXbg_G8KI1fXBlPnRoM3no-0oxxRRMcSw
+    short-id: efcfd3c41c1762b0
+  server: 78.129.184.117
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 8463447e-27bf-4a68-8c41-18b09e350f76
+  uuid: 911df873-8843-42ef-bf09-06334b8c3e02
+  network: tcp
+  servername: strapi.io
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: ❓ | @WhiteDNS | OT143|1.7MB/s|DNSOK|GPT⁺
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: vvpu_ljhBuTWmM9w5Hl6jj8ZTiE_JYq29S77zNDeCjQ
+    short-id: ff6975658b6cefce
+  server: 109.169.84.72
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7f437070-a14e-4355-bfbc-a6036a6bb040
   xudp: true
-  servername: slashdot.org
+  servername: strapi.io
+- client-fingerprint: chrome
+  encryption: none
+  name: ❓ | @WhiteDNS | OT144|521KB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 20001
+  server: 45.131.66.61
+  tls: true
+  type: vless
+  udp: true
+  uuid: a28311c6-8e7b-4697-a3e2-a4751749340a
+  ws-opts:
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /@Marisa_kristi
+  xudp: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT187|7.4MB/s|DNSOK|GPT⁺
-  - ❓ | @WhiteDNS | OT188|7.2MB/s|DNSOK|GPT⁺-GB
-  - ❓ | @WhiteDNS | OT189|6.0MB/s|DNSOK|GPT⁺
+  - ❓ | @WhiteDNS | OT142|7.2MB/s|DNSOK|GPT⁺-GB
+  - ❓ | @WhiteDNS | OT143|1.7MB/s|DNSOK|GPT⁺
+  - ❓ | @WhiteDNS | OT144|521KB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

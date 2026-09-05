@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇱🇻 | @WhiteDNS | LV26|3.7MB/s|DNSOK|GPT⁺-LV
+- name: 🇱🇻 | @WhiteDNS | LV63|2.8MB/s|DNSOK|GPT⁺-LV
   password: None
   port: 443
   server: 109.248.149.34
@@ -21,20 +21,27 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇱🇻 | @WhiteDNS | LV27|2.5MB/s|DNSOK|GPT⁺-LV
-  password: ''
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇱🇻 | @WhiteDNS | LV64|2.6MB/s|DNSOK|GPT⁺-LV
+  network: tcp
   port: 443
-  server: 109.248.147.66
-  skip-cert-verify: true
+  reality-opts:
+    public-key: 2AKBmK0PMf2zUMhRo1Ad-WNf_XoRk3AN-SGo6ZdhxA4
+    short-id: ecca56e9a9963ed7
+  server: 85.159.228.223
   tls: true
-  type: http
-  username: ''
+  type: vless
+  udp: true
+  uuid: cf80b5fc-c445-4373-87e6-f8a22ad10d81
+  xudp: true
+  servername: lv.monkeyisland.xyz
 proxy-groups:
 - name: LV-Auto
   type: url-test
   proxies:
-  - 🇱🇻 | @WhiteDNS | LV26|3.7MB/s|DNSOK|GPT⁺-LV
-  - 🇱🇻 | @WhiteDNS | LV27|2.5MB/s|DNSOK|GPT⁺-LV
+  - 🇱🇻 | @WhiteDNS | LV63|2.8MB/s|DNSOK|GPT⁺-LV
+  - 🇱🇻 | @WhiteDNS | LV64|2.6MB/s|DNSOK|GPT⁺-LV
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
