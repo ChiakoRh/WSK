@@ -13,47 +13,19 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇦🇱 | @WhiteDNS | AL20|6.0MB/s|DNSOK|GPT⁺-AL
-  network: ws
+- name: 🇦🇱 | @WhiteDNS | AL5|20.0MB/s|DNSOK|GPT⁺-AL
+  password: None
   port: 443
-  server: 104.25.146.77
+  server: 87.120.103.242
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
-  ws-opts:
-    headers:
-      Host: khoda.ak-khoda.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/70.0.3538.102 Safari/537.36
-    path: /sync
-  xudp: true
-  servername: khoda.ak-khoda.workers.dev
-- client-fingerprint: chrome
-  name: 🇦🇱 | @WhiteDNS | AL21|6.0MB/s|DNSOK|GPT⁺-AL
-  network: ws
-  port: 443
-  server: 104.17.247.68
-  tls: true
-  type: vless
-  udp: true
-  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
-  ws-opts:
-    headers:
-      Host: khoda.ak-khoda.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/58.0.3029.110 Safari/537.36
-    path: /sync
-  xudp: true
-  servername: khoda.ak-khoda.workers.dev
+  type: http
+  username: ''
 proxy-groups:
 - name: AL-Auto
   type: url-test
   proxies:
-  - 🇦🇱 | @WhiteDNS | AL20|6.0MB/s|DNSOK|GPT⁺-AL
-  - 🇦🇱 | @WhiteDNS | AL21|6.0MB/s|DNSOK|GPT⁺-AL
+  - 🇦🇱 | @WhiteDNS | AL5|20.0MB/s|DNSOK|GPT⁺-AL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

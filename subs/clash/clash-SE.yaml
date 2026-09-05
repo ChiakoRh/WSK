@@ -13,26 +13,28 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇸🇪 | @WhiteDNS | SE50|21.0MB/s|DNSOK|GPT⁺-SE
-  network: tcp
+- name: 🇸🇪 | @WhiteDNS | SE45|4.9MB/s|DNSOK|GPT⁺-SE
+  password: ''
   port: 443
-  reality-opts:
-    public-key: 2AKBmK0PMf2zUMhRo1Ad-WNf_XoRk3AN-SGo6ZdhxA4
-    short-id: ecca56e9a9963ed7
-  server: 199.68.198.13
+  server: 146.70.242.130
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: cf80b5fc-c445-4373-87e6-f8a22ad10d81
-  xudp: true
-  servername: se.monkeyisland.xyz
+  type: http
+  username: ''
+- name: 🇸🇪 | @WhiteDNS | SE46|4.1MB/s|DNSOK|GPT⁺-SE
+  password: None
+  port: 443
+  server: 149.50.216.65
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 proxy-groups:
 - name: SE-Auto
   type: url-test
   proxies:
-  - 🇸🇪 | @WhiteDNS | SE50|21.0MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE45|4.9MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE46|4.1MB/s|DNSOK|GPT⁺-SE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
