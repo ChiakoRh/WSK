@@ -1,28 +1,18 @@
 proxies:
-- alpn:
-  - v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇨🇦 | @WhiteDNS | CA192|4.0MB/s|DNSOK|GPT⁺-CA
-  network: ws
-  port: 8443
-  server: maple.adaspoloandco.com
+- name: 🇨🇦 | @WhiteDNS | CA69|3.7MB/s|DNSOK|GPT⁺-CA
+  port: 443
+  server: 184.107.106.68
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: db3f09ae-23f2-42b8-abee-7b89fb392c5e
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J710F Build/NRD90M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
-    path: /uploader.php
-  xudp: true
-  servername: maple.adaspoloandco.com
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  network: tcp
+  servername: lizca2.footballfantasyforum.com
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA193|2.9MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA70|3.0MB/s|DNSOK|GPT⁺-CA
   network: raw
   port: 41373
   reality-opts:
@@ -35,3 +25,56 @@ proxies:
   uuid: a71c8954-66a8-4321-bedb-2336230d81ce
   xudp: true
   servername: google.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA71|2.7MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  port: 41373
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
+  tls: true
+  type: vless
+  udp: true
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  xudp: true
+  servername: google.com
+- alpn:
+  - v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇨🇦 | @WhiteDNS | CA72|2.2MB/s|DNSOK|GPT⁺-CA
+  network: ws
+  port: 8443
+  server: maple.adaspoloandco.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: db3f09ae-23f2-42b8-abee-7b89fb392c5e
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /uploader.php
+  xudp: true
+  servername: maple.adaspoloandco.com
+- cipher: aes-256-cfb
+  name: 🇨🇦 | @WhiteDNS | CA73|1.6MB/s|DNSOK|GPT⁺-CA
+  password: amazonskr05
+  port: 443
+  server: 3.97.12.149
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 🇨🇦 | @WhiteDNS | CA74|1.5MB/s|DNSOK|GPT⁺-QA
+  network: tcp
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10008
+  server: z-jp2.251313.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true

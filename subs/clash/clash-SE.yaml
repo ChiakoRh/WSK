@@ -13,28 +13,18 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇸🇪 | @WhiteDNS | SE54|15.6MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE50|1.1MB/s|DNSOK|GPT⁺-SE
   password: ''
-  port: 443
-  server: 149.50.216.65
+  port: 81
+  server: 46.59.120.87
   skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇸🇪 | @WhiteDNS | SE55|1.8MB/s|DNSOK|GPT⁺-SE
-  password: None
-  port: 443
-  server: 149.50.216.65
-  skip-cert-verify: true
-  tls: true
   type: http
   username: ''
 proxy-groups:
 - name: SE-Auto
   type: url-test
   proxies:
-  - 🇸🇪 | @WhiteDNS | SE54|15.6MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE55|1.8MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE50|1.1MB/s|DNSOK|GPT⁺-SE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

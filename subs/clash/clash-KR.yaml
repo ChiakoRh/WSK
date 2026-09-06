@@ -13,33 +13,9 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR416|1.7MB/s|DNSOK|GPT⁺-KR
-  port: 443
-  server: 140.238.2.250
-  type: vmess
-  udp: true
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  network: tcp
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇰🇷 | @WhiteDNS | KR417|1.7MB/s|DNSOK|GPT⁺-KR
-  network: tcp
-  port: 28482
-  reality-opts:
-    public-key: 8fsYG_Pg35aeg1E5Gc3HUaXou2OUQee4ukxVk99iR0s
-    short-id: fa1e592603c283
-  server: 43.202.46.25
-  tls: true
-  type: vless
-  udp: true
-  uuid: 83973343-90db-423d-a5f7-2e3b56aeb8f4
-  xudp: true
-  servername: www.intel.com
 - alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR418|1.7MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR114|2.2MB/s|DNSOK|GPT⁺-KR
   network: none
   port: 443
   server: 140.238.2.250
@@ -49,25 +25,55 @@ proxies:
   udp: true
   uuid: 41a7089a-040b-4538-8b8d-010902405bde
   xudp: true
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇰🇷 | @WhiteDNS | KR419|1.1MB/s|DNSOK|GPT⁺-KR
-  network: raw
-  port: 28482
+  name: 🇰🇷 | @WhiteDNS | KR115|2.1MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  port: 443
   reality-opts:
-    public-key: 8fsYG_Pg35aeg1E5Gc3HUaXou2OUQee4ukxVk99iR0s
-    short-id: fa1e592603c283
-  server: 43.202.46.25
+    public-key: aVGSSemhxqqDg75lUDBxCNZZXfuBb4QrU8yZYnJD6nk
+    short-id: f554f56d31
+  server: kr1.miyazono-kaori.com
   tls: true
   type: vless
   udp: true
-  uuid: 83973343-90db-423d-a5f7-2e3b56aeb8f4
+  uuid: c20828bd-c63b-401f-b324-7b652dd353af
   xudp: true
-  servername: www.intel.com
+  servername: www.coway.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇰🇷 | @WhiteDNS | KR116|1.9MB/s|DNSOK|GPT⁺-KR
+  port: 443
+  reality-opts:
+    public-key: aVGSSemhxqqDg75lUDBxCNZZXfuBb4QrU8yZYnJD6nk
+    short-id: f554f56d31
+  server: kr1.miyazono-kaori.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c20828bd-c63b-401f-b324-7b652dd353af
+  network: tcp
+  servername: www.coway.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇰🇷 | @WhiteDNS | KR117|1.7MB/s|DNSOK|GPT⁺-KR
+  port: 443
+  reality-opts:
+    public-key: 6pZxjabeHoyJlsc2cP3Q5YK7G0bIOQwzWFyiarbUQXc
+    short-id: c8af1462debbc1
+  server: kr2.miyazono-kaori.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c20828bd-c63b-401f-b324-7b652dd353af
+  network: tcp
+  servername: www.coway.com
 - alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR420|1.0MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR118|1.5MB/s|DNSOK|GPT⁺-KR
   network: raw
   port: 443
   server: 140.238.2.250
@@ -79,7 +85,37 @@ proxies:
   xudp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇰🇷 | @WhiteDNS | KR421|905KB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR119|1.2MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  port: 19179
+  reality-opts:
+    public-key: BabvzCKB_cqCz56qFQhOWIypFKFhEWo9Eyn_JPZIAxA
+    short-id: fa1e592603c283
+  server: 3.38.1.152
+  tls: true
+  type: vless
+  udp: true
+  uuid: 10dd7b2d-eda2-4a47-9f6e-5093a3cd7ded
+  xudp: true
+  servername: www.intel.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇰🇷 | @WhiteDNS | KR120|1.2MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  port: 28482
+  reality-opts:
+    public-key: 8fsYG_Pg35aeg1E5Gc3HUaXou2OUQee4ukxVk99iR0s
+    short-id: fa1e592603c283
+  server: 43.202.46.25
+  tls: true
+  type: vless
+  udp: true
+  uuid: 83973343-90db-423d-a5f7-2e3b56aeb8f4
+  xudp: true
+  servername: www.intel.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇰🇷 | @WhiteDNS | KR121|1.2MB/s|DNSOK|GPT⁺-KR
   port: 19179
   reality-opts:
     public-key: BabvzCKB_cqCz56qFQhOWIypFKFhEWo9Eyn_JPZIAxA
@@ -92,25 +128,22 @@ proxies:
   uuid: 10dd7b2d-eda2-4a47-9f6e-5093a3cd7ded
   network: tcp
   servername: www.intel.com
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇰🇷 | @WhiteDNS | KR422|891KB/s|DNSOK|GPT⁺-KR
-  port: 28482
-  reality-opts:
-    public-key: 8fsYG_Pg35aeg1E5Gc3HUaXou2OUQee4ukxVk99iR0s
-    short-id: fa1e592603c283
-  server: 43.202.46.25
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 83973343-90db-423d-a5f7-2e3b56aeb8f4
+- alterId: '0'
+  cipher: auto
+  name: 🇰🇷 | @WhiteDNS | KR122|1010KB/s|DNSOK|GPT⁺-KR
   network: tcp
-  servername: www.intel.com
+  port: 443
+  server: 140.238.2.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  xudp: true
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇰🇷 | @WhiteDNS | KR423|646KB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR123|1009KB/s|DNSOK|GPT⁺-KR
   network: raw
   port: 19179
   reality-opts:
@@ -123,18 +156,54 @@ proxies:
   uuid: 10dd7b2d-eda2-4a47-9f6e-5093a3cd7ded
   xudp: true
   servername: www.intel.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇰🇷 | @WhiteDNS | KR124|1008KB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 6pZxjabeHoyJlsc2cP3Q5YK7G0bIOQwzWFyiarbUQXc
+    short-id: c8af1462debbc1
+  server: kr2.miyazono-kaori.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c20828bd-c63b-401f-b324-7b652dd353af
+  xudp: true
+  servername: www.coway.com
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇰🇷 | @WhiteDNS | KR125|978KB/s|DNSOK|GPT⁺-KR
+  network: raw
+  port: 28482
+  reality-opts:
+    public-key: 8fsYG_Pg35aeg1E5Gc3HUaXou2OUQee4ukxVk99iR0s
+    short-id: fa1e592603c283
+  server: 43.202.46.25
+  tls: true
+  type: vless
+  udp: true
+  uuid: 83973343-90db-423d-a5f7-2e3b56aeb8f4
+  xudp: true
+  servername: www.intel.com
 proxy-groups:
 - name: KR-Auto
   type: url-test
   proxies:
-  - 🇰🇷 | @WhiteDNS | KR416|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR417|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR418|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR419|1.1MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR420|1.0MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR421|905KB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR422|891KB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR423|646KB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR114|2.2MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR115|2.1MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR116|1.9MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR117|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR118|1.5MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR119|1.2MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR120|1.2MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR121|1.2MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR122|1010KB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR123|1009KB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR124|1008KB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR125|978KB/s|DNSOK|GPT⁺-KR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

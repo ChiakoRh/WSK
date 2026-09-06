@@ -12,11 +12,45 @@ dns:
   nameserver:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
-proxies: []
+proxies:
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: ❓ | @WhiteDNS | OT184|6.5MB/s|DNSOK|GPT⁺
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
+  server: 82.145.55.75
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8b20bab5-3088-4b1d-b308-667d358fe825
+  xudp: true
+  servername: strapi.io
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: ❓ | @WhiteDNS | OT185|2.8MB/s|DNSOK|GPT⁺
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
+  server: 82.145.55.75
+  tls: true
+  type: vless
+  udp: true
+  uuid: 58ca7c2e-dfd7-4414-984d-58a1084e2424
+  xudp: true
+  servername: strapi.io
 proxy-groups:
 - name: OT-Auto
   type: url-test
-  proxies: []
+  proxies:
+  - ❓ | @WhiteDNS | OT184|6.5MB/s|DNSOK|GPT⁺
+  - ❓ | @WhiteDNS | OT185|2.8MB/s|DNSOK|GPT⁺
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

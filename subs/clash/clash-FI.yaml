@@ -15,7 +15,7 @@ dns:
 proxies:
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI170|4.8MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI135|13.7MB/s|DNSOK|GPT⁺-FI
   port: 443
   reality-opts:
     public-key: n_-rh8EC8zmzkuu2AmCnKoh09omlYONdgS_F7CStITk
@@ -28,28 +28,92 @@ proxies:
   uuid: d7430ae7-320c-4658-808b-3006d0627d82
   network: tcp
   servername: endeavouros.ubuntuhosting.host
-- client-fingerprint: firefox
+- alpn:
+  - h2
+  client-fingerprint: chrome
   encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI136|6.3MB/s|DNSOK|GPT⁺-FI
+  network: xhttp
+  port: 443
+  server: 65.109.238.140
+  tls: true
+  type: vless
+  udp: true
+  uuid: 05bfcbaa-cba0-4bce-9103-09fe3f5f0667
+  xhttp-opts:
+    mode: auto
+    path: /api/v3/stream/
+  xudp: true
+  servername: hel1.nordlinkcloud.com
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI171|4.8MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI137|4.5MB/s|DNSOK|GPT⁺-FI
   network: tcp
+  port: 8443
+  reality-opts:
+    public-key: HNjZe5pYUhcuE8sASYVVrVSMW_jFfekgLnrnO4xXIyQ
+    short-id: a1b2c3d4
+  server: 217.60.33.44
+  tls: true
+  type: vless
+  udp: true
+  uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+  xudp: true
+  servername: fi.aeternavpn.space
+- client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.xj-lv6l2bLps6EWhf85986XQ1mmBqnr8Ikh_hNB_vGA
+  name: 🇫🇮 | @WhiteDNS | FI138|2.7MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 2087
+  server: 185.207.198.186
+  tls: true
+  type: vless
+  udp: true
+  uuid: 174622e3-2d1d-47ab-bf74-aef54996ec46
+  ws-opts:
+    headers:
+      Host: film.dearhossein-taktaz.ir
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/41.0.2228.0 Safari/537.36
+    path: /
+  xudp: true
+  servername: film.dearhossein-taktaz.ir
+- encryption: mlkem768x25519plus.native.0rtt.xosPlQGSxKTAHMITfhxMS68lmNsknfHLrvziVWtIqTw
+  name: 🇫🇮 | @WhiteDNS | FI139|2.7MB/s|DNSOK|GPT⁺-FI
+  network: xhttp
+  port: 3456
+  server: tunnn.qarmiko.ir
+  type: vless
+  udp: true
+  uuid: 4cf0a39d-b913-4497-9a7b-301cc0a31713
+  xhttp-opts:
+    mode: auto
+  xudp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI140|2.4MB/s|DNSOK|GPT⁺-FI
   port: 443
   reality-opts:
     public-key: n_-rh8EC8zmzkuu2AmCnKoh09omlYONdgS_F7CStITk
     short-id: 3fa234ea9feaa048
   server: 185.246.191.243
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: d7430ae7-320c-4658-808b-3006d0627d82
-  xudp: true
+  network: tcp
   servername: endeavouros.ubuntuhosting.host
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI170|4.8MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI171|4.8MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI135|13.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI136|6.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI137|4.5MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI138|2.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI139|2.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI140|2.4MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

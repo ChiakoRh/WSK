@@ -13,10 +13,11 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
+- client-fingerprint: firefox
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT1320|61.7MB/s|DNSOK|GPT⁺-IT
-  network: tcp
+  name: 🇮🇹 | @WhiteDNS | IT406|79.0MB/s|DNSOK|GPT⁺-IT
+  network: raw
   port: 32833
   reality-opts:
     public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
@@ -28,9 +29,16 @@ proxies:
   uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
   xudp: true
   servername: www.intel.com
+- cipher: aes-256-gcm
+  name: 🇮🇹 | @WhiteDNS | IT407|56.2MB/s|DNSOK|GPT⁺-IT
+  password: itzvpn@321
+  port: 8388
+  server: 57.131.48.45
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT1321|27.6MB/s|DNSOK|GPT⁺-IT
+  name: 🇮🇹 | @WhiteDNS | IT408|39.8MB/s|DNSOK|GPT⁺-IT
   port: 32833
   reality-opts:
     public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
@@ -43,27 +51,10 @@ proxies:
   uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
   network: tcp
   servername: www.intel.com
-- encryption: none
-  name: 🇮🇹 | @WhiteDNS | IT1322|27.5MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 8080
-  server: 188.114.97.6
-  type: vless
-  udp: true
-  uuid: 5a0028f9-c656-cec9-4b61-54678477a408
-  ws-opts:
-    headers:
-      Host: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
-      User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; de-de; SAMSUNG GT-I9195 Build/KOT49H)
-        AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile
-        Safari/537.36
-    path: /game
-  xudp: true
-- client-fingerprint: firefox
-  encryption: none
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT1323|19.3MB/s|DNSOK|GPT⁺-IT
-  network: raw
+  name: 🇮🇹 | @WhiteDNS | IT409|8.4MB/s|DNSOK|GPT⁺-IT
+  network: tcp
   port: 32833
   reality-opts:
     public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
@@ -75,118 +66,14 @@ proxies:
   uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
   xudp: true
   servername: www.intel.com
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇮🇹 | @WhiteDNS | IT1324|19.0MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 2096
-  server: peekconfigg.vipserver1-39d.workers.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
-  ws-opts:
-    headers:
-      Host: peekconfigg.vipserver1-39d.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/36.0.1985.143 Safari/537.36
-    path: /sync
-  xudp: true
-  servername: peekconfigg.vipserver1-39d.workers.dev
-- client-fingerprint: chrome
-  name: 🇮🇹 | @WhiteDNS | IT1325|6.6MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  password: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
-  port: 2096
-  server: aged-silence-8d7d.tahaggs.workers.dev
-  skip-cert-verify: false
-  sni: aged-silence-8d7d.tahaggs.workers.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/56.0.2924.87 Safari/537.36
-    path: /taha3
-- client-fingerprint: chrome
-  name: 🇮🇹 | @WhiteDNS | IT1326|4.5MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  password: f18d6149-e214-8554-e737-f7523c8b2eea
-  port: 443
-  server: 89.116.180.49
-  skip-cert-verify: false
-  sni: 0403.infinityconfig4.workers.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
-    path: /sync
-- encryption: none
-  name: 🇮🇹 | @WhiteDNS | IT1327|4.2MB/s|DNSOK|GPT⁺-AE
-  network: ws
-  port: 80
-  server: 45.130.125.201
-  type: vless
-  udp: true
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
-  ws-opts:
-    headers:
-      Host: nahan-core.netizo09.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/61.0.3163.100 Safari/537.36
-    path: /sync
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇮🇹 | @WhiteDNS | IT1328|2.6MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 443
-  server: nahan-core.fatitelegram.workers.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 73796e63-0000-4000-8000-000000000000
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.4
-        (KHTML, like Gecko) Chrome/5.0.375.99 Safari/533.4
-    path: /
-  xudp: true
-  servername: nahan-core.fatitelegram.workers.dev
-- name: 🇮🇹 | @WhiteDNS | IT1329|1.3MB/s|DNSOK|GPT⁺-IT
-  port: 10086
-  server: 204.216.216.23
-  type: vless
-  udp: true
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  network: tcp
-- encryption: none
-  name: 🇮🇹 | @WhiteDNS | IT1330|982KB/s|DNSOK|GPT⁺-IT
-  network: raw
-  port: 10086
-  server: 204.216.216.23
-  type: vless
-  udp: true
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  xudp: true
 proxy-groups:
 - name: IT-Auto
   type: url-test
   proxies:
-  - 🇮🇹 | @WhiteDNS | IT1320|61.7MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT1321|27.6MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT1322|27.5MB/s|DNSOK|GPT⁺-DE
-  - 🇮🇹 | @WhiteDNS | IT1323|19.3MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT1324|19.0MB/s|DNSOK|GPT⁺-DE
-  - 🇮🇹 | @WhiteDNS | IT1325|6.6MB/s|DNSOK|GPT⁺-DE
-  - 🇮🇹 | @WhiteDNS | IT1326|4.5MB/s|DNSOK|GPT⁺-DE
-  - 🇮🇹 | @WhiteDNS | IT1327|4.2MB/s|DNSOK|GPT⁺-AE
-  - 🇮🇹 | @WhiteDNS | IT1328|2.6MB/s|DNSOK|GPT⁺-DE
-  - 🇮🇹 | @WhiteDNS | IT1329|1.3MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT1330|982KB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT406|79.0MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT407|56.2MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT408|39.8MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT409|8.4MB/s|DNSOK|GPT⁺-IT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
