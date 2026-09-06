@@ -13,59 +13,25 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI108|6.0MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 80
-  server: 146.75.119.82
-  type: vless
-  udp: true
-  uuid: 5ec0a50f-b6b9-48f3-9f8c-f1664eb8bd48
-  ws-opts:
-    headers:
-      Host: rb24.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/42.0.2311.90 Safari/537.36
-    path: /ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
-  xudp: true
-- client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.xj-lv6l2bLps6EWhf85986XQ1mmBqnr8Ikh_hNB_vGA
-  name: 🇫🇮 | @WhiteDNS | FI109|4.8MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 2087
-  server: 185.207.198.186
-  tls: true
-  type: vless
-  udp: true
-  uuid: 174622e3-2d1d-47ab-bf74-aef54996ec46
-  ws-opts:
-    headers:
-      Host: film.dearhossein-taktaz.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.139 Safari/537.36
-    path: /
-  xudp: true
-  servername: film.dearhossein-taktaz.ir
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI110|2.6MB/s|DNSOK|GPT⁺-FI
-  network: xhttp
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI170|4.8MB/s|DNSOK|GPT⁺-FI
   port: 443
-  server: 65.109.238.140
+  reality-opts:
+    public-key: n_-rh8EC8zmzkuu2AmCnKoh09omlYONdgS_F7CStITk
+    short-id: 3fa234ea9feaa048
+  server: endeavouros.ubuntuhosting.host
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 05bfcbaa-cba0-4bce-9103-09fe3f5f0667
-  xhttp-opts:
-    path: /api/v3/stream/
-  xudp: true
-  servername: hel1.nordlinkcloud.com
+  uuid: d7430ae7-320c-4658-808b-3006d0627d82
+  network: tcp
+  servername: endeavouros.ubuntuhosting.host
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI111|1.3MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI171|4.8MB/s|DNSOK|GPT⁺-FI
   network: tcp
   port: 443
   reality-opts:
@@ -82,10 +48,8 @@ proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI108|6.0MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI109|4.8MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI110|2.6MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI111|1.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI170|4.8MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI171|4.8MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -13,29 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇵🇱 | @WhiteDNS | PL48|22.3MB/s|DNSOK|GPT⁺-PL
-  password: VJtsgllDDJfNmaTe
-  port: 8388
-  server: 64.176.73.160
-  type: ss
-  udp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇵🇱 | @WhiteDNS | PL49|20.1MB/s|DNSOK|GPT⁺-PL
-  port: 443
-  reality-opts:
-    public-key: 4h74KXbkBMYOhJkZabJNsf85cI91ytap_gkl56mzjTU
-    short-id: ''
-  server: 83.168.111.58
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
-  network: tcp
-  servername: soulful.host
-- name: 🇵🇱 | @WhiteDNS | PL50|17.7MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL57|13.8MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 151.115.54.133
@@ -43,39 +21,30 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇵🇱 | @WhiteDNS | PL51|16.1MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 37.120.156.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   encryption: none
-  flow: xtls-rprx-vision
-  name: 🇵🇱 | @WhiteDNS | PL52|6.3MB/s|DNSOK|GPT⁺-PL
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 4h74KXbkBMYOhJkZabJNsf85cI91ytap_gkl56mzjTU
-    short-id: ''
-  server: 83.168.111.58
+  name: 🇵🇱 | @WhiteDNS | PL58|1.7MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 20002
+  server: 45.131.66.247
   tls: true
   type: vless
   udp: true
-  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
+  uuid: 74f67dcd-4d40-4af1-b8e7-8af849bb2444
+  ws-opts:
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /@Marisa_kristi
   xudp: true
-  servername: soulful.host
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
 proxy-groups:
 - name: PL-Auto
   type: url-test
   proxies:
-  - 🇵🇱 | @WhiteDNS | PL48|22.3MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL49|20.1MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL50|17.7MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL51|16.1MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL52|6.3MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL57|13.8MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL58|1.7MB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

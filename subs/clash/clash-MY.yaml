@@ -16,7 +16,7 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇲🇾 | @WhiteDNS | MY15|2.5MB/s|DNSOK|GPT⁺-MY
+  name: 🇲🇾 | @WhiteDNS | MY20|2.5MB/s|DNSOK|GPT⁺-MY
   network: raw
   port: 53271
   reality-opts:
@@ -28,11 +28,55 @@ proxies:
   udp: true
   uuid: e8358eb5-7210-4cf8-982f-68af141b7694
   xudp: true
+  servername: www.tesla.com
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇲🇾 | @WhiteDNS | MY21|2.3MB/s|DNSOK|GPT⁺-MY
+  network: tcp
+  port: 10000
+  server: 47.250.135.244
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  xudp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇲🇾 | @WhiteDNS | MY22|1.9MB/s|DNSOK|GPT⁺-MY
+  port: 21874
+  reality-opts:
+    public-key: 75sTDYJk8ylA97-aBhAlF1tU4OaCfdOaOSIBshPW7Bs
+    short-id: 42e853a5559e1032
+  server: 43.217.16.8
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 85dd8227-0f12-4826-a712-6313211774b5
+  network: tcp
+  servername: www.amd.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇲🇾 | @WhiteDNS | MY23|1.7MB/s|DNSOK|GPT⁺-MY
+  port: 53271
+  reality-opts:
+    public-key: 1P58ZYmo81kPDnL4U7SnEUA-aT2R86l-o6dbFXoeDjc
+    short-id: 0a9bd9db19578964
+  server: 56.69.159.191
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8358eb5-7210-4cf8-982f-68af141b7694
+  network: tcp
   servername: www.tesla.com
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇲🇾 | @WhiteDNS | MY16|2.5MB/s|DNSOK|GPT⁺-MY
+  name: 🇲🇾 | @WhiteDNS | MY24|1.6MB/s|DNSOK|GPT⁺-MY
   network: raw
   port: 21874
   reality-opts:
@@ -45,54 +89,9 @@ proxies:
   uuid: 85dd8227-0f12-4826-a712-6313211774b5
   xudp: true
   servername: www.amd.com
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇲🇾 | @WhiteDNS | MY17|1.5MB/s|DNSOK|GPT⁺-MY
-  network: tcp
-  port: 21874
-  reality-opts:
-    public-key: 75sTDYJk8ylA97-aBhAlF1tU4OaCfdOaOSIBshPW7Bs
-    short-id: 42e853a5559e1032
-  server: 43.217.16.8
-  tls: true
-  type: vless
-  udp: true
-  uuid: 85dd8227-0f12-4826-a712-6313211774b5
-  xudp: true
-  servername: www.amd.com
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇲🇾 | @WhiteDNS | MY18|1.5MB/s|DNSOK|GPT⁺-MY
-  port: 53271
-  reality-opts:
-    public-key: 1P58ZYmo81kPDnL4U7SnEUA-aT2R86l-o6dbFXoeDjc
-    short-id: 0a9bd9db19578964
-  server: 56.69.159.191
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8358eb5-7210-4cf8-982f-68af141b7694
-  network: tcp
-  servername: www.tesla.com
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇲🇾 | @WhiteDNS | MY19|1.5MB/s|DNSOK|GPT⁺-MY
-  port: 21874
-  reality-opts:
-    public-key: 75sTDYJk8ylA97-aBhAlF1tU4OaCfdOaOSIBshPW7Bs
-    short-id: 42e853a5559e1032
-  server: 43.217.16.8
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 85dd8227-0f12-4826-a712-6313211774b5
-  network: tcp
-  servername: www.amd.com
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇲🇾 | @WhiteDNS | MY20|1.3MB/s|DNSOK|GPT⁺-MY
+  name: 🇲🇾 | @WhiteDNS | MY25|1.3MB/s|DNSOK|GPT⁺-MY
   network: tcp
   port: 53271
   reality-opts:
@@ -105,16 +104,32 @@ proxies:
   uuid: e8358eb5-7210-4cf8-982f-68af141b7694
   xudp: true
   servername: www.tesla.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇲🇾 | @WhiteDNS | MY26|1.3MB/s|DNSOK|GPT⁺-MY
+  network: tcp
+  port: 21874
+  reality-opts:
+    public-key: 75sTDYJk8ylA97-aBhAlF1tU4OaCfdOaOSIBshPW7Bs
+    short-id: 42e853a5559e1032
+  server: 43.217.16.8
+  tls: true
+  type: vless
+  udp: true
+  uuid: 85dd8227-0f12-4826-a712-6313211774b5
+  xudp: true
+  servername: www.amd.com
 proxy-groups:
 - name: MY-Auto
   type: url-test
   proxies:
-  - 🇲🇾 | @WhiteDNS | MY15|2.5MB/s|DNSOK|GPT⁺-MY
-  - 🇲🇾 | @WhiteDNS | MY16|2.5MB/s|DNSOK|GPT⁺-MY
-  - 🇲🇾 | @WhiteDNS | MY17|1.5MB/s|DNSOK|GPT⁺-MY
-  - 🇲🇾 | @WhiteDNS | MY18|1.5MB/s|DNSOK|GPT⁺-MY
-  - 🇲🇾 | @WhiteDNS | MY19|1.5MB/s|DNSOK|GPT⁺-MY
-  - 🇲🇾 | @WhiteDNS | MY20|1.3MB/s|DNSOK|GPT⁺-MY
+  - 🇲🇾 | @WhiteDNS | MY20|2.5MB/s|DNSOK|GPT⁺-MY
+  - 🇲🇾 | @WhiteDNS | MY21|2.3MB/s|DNSOK|GPT⁺-MY
+  - 🇲🇾 | @WhiteDNS | MY22|1.9MB/s|DNSOK|GPT⁺-MY
+  - 🇲🇾 | @WhiteDNS | MY23|1.7MB/s|DNSOK|GPT⁺-MY
+  - 🇲🇾 | @WhiteDNS | MY24|1.6MB/s|DNSOK|GPT⁺-MY
+  - 🇲🇾 | @WhiteDNS | MY25|1.3MB/s|DNSOK|GPT⁺-MY
+  - 🇲🇾 | @WhiteDNS | MY26|1.3MB/s|DNSOK|GPT⁺-MY
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -1,35 +1,19 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🇮🇳 | @WhiteDNS | IN23|2.5MB/s|DNSOK|GPT⁺-IN
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇮🇳 | @WhiteDNS | IN30|5.1MB/s|DNSOK|GPT⁺-IN
   network: ws
-  port: 80
-  server: 152.67.8.205
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+  port: 443
+  server: 172.67.208.1
+  tls: true
+  type: vless
   udp: true
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
   ws-opts:
-    headers: {}
-    path: /
+    headers:
+      Host: odd-violet-5440.asdgrweeee13.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/45.0.2454.85 Safari/537.36
+    path: /sync
   xudp: true
-  servername: 🇮🇳in-152.67.8.205-0164 | 0.149mb
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇮🇳 | @WhiteDNS | IN24|1.1MB/s|DNSOK|GPT⁺-IN
-  network: ws
-  port: 80
-  server: 152.67.8.205
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  ws-opts:
-    headers: {}
-    path: /
-  xudp: true
-  servername: 152.67.8.205
+  servername: odd-violet-5440.asdgrweeee13.workers.dev
