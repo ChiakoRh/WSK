@@ -15,7 +15,7 @@ dns:
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇰🇿 | @WhiteDNS | KZ16|2.5MB/s|DNSOK|GPT⁺-KZ
+  name: 🇰🇿 | @WhiteDNS | KZ16|4.0MB/s|DNSOK|GPT⁺-KZ
   port: 8443
   reality-opts:
     public-key: Ao_imnCEIGAaL1DZnjOK1SSPpjQOw_XJcgMpNLEZwg0
@@ -30,7 +30,7 @@ proxies:
   servername: www.cloudflare.com
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇰🇿 | @WhiteDNS | KZ17|2.4MB/s|DNSOK|GPT⁺-KZ
+  name: 🇰🇿 | @WhiteDNS | KZ17|3.4MB/s|DNSOK|GPT⁺-KZ
   network: tcp
   port: 8443
   reality-opts:
@@ -41,12 +41,11 @@ proxies:
   type: vless
   udp: true
   uuid: 2b8c0574-ff6f-4975-8a06-e24ebefa1d1c
-  xudp: true
   servername: www.cloudflare.com
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇰🇿 | @WhiteDNS | KZ18|2.3MB/s|DNSOK|GPT⁺-KZ
+  name: 🇰🇿 | @WhiteDNS | KZ18|2.8MB/s|DNSOK|GPT⁺-KZ
   network: raw
   port: 8443
   reality-opts:
@@ -63,9 +62,9 @@ proxy-groups:
 - name: KZ-Auto
   type: url-test
   proxies:
-  - 🇰🇿 | @WhiteDNS | KZ16|2.5MB/s|DNSOK|GPT⁺-KZ
-  - 🇰🇿 | @WhiteDNS | KZ17|2.4MB/s|DNSOK|GPT⁺-KZ
-  - 🇰🇿 | @WhiteDNS | KZ18|2.3MB/s|DNSOK|GPT⁺-KZ
+  - 🇰🇿 | @WhiteDNS | KZ16|4.0MB/s|DNSOK|GPT⁺-KZ
+  - 🇰🇿 | @WhiteDNS | KZ17|3.4MB/s|DNSOK|GPT⁺-KZ
+  - 🇰🇿 | @WhiteDNS | KZ18|2.8MB/s|DNSOK|GPT⁺-KZ
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

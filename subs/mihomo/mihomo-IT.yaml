@@ -1,30 +1,7 @@
 proxies:
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT406|79.0MB/s|DNSOK|GPT⁺-IT
-  network: raw
-  port: 32833
-  reality-opts:
-    public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
-    short-id: a0a305ccc8e94aa8
-  server: 172.238.232.239
-  tls: true
-  type: vless
-  udp: true
-  uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
-  xudp: true
-  servername: www.intel.com
-- cipher: aes-256-gcm
-  name: 🇮🇹 | @WhiteDNS | IT407|56.2MB/s|DNSOK|GPT⁺-IT
-  password: itzvpn@321
-  port: 8388
-  server: 57.131.48.45
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT408|39.8MB/s|DNSOK|GPT⁺-IT
+  name: 🇮🇹 | @WhiteDNS | IT132|40.2MB/s|DNSOK|GPT⁺-IT
   port: 32833
   reality-opts:
     public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
@@ -37,9 +14,48 @@ proxies:
   uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
   network: tcp
   servername: www.intel.com
+- name: 🇮🇹 | @WhiteDNS | IT133|21.2MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 8080
+  server: 104.21.70.21
+  type: vless
+  udp: true
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  ws-opts:
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+      User-Agent: Mozilla/5.0 (X11; U; Linux i586; en-US) AppleWebKit/533.2 (KHTML,
+        like Gecko) Chrome/5.0.342.1 Safari/533.2
+    path: /
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2560
+  xudp: true
+- name: 🇮🇹 | @WhiteDNS | IT134|16.2MB/s|DNSOK|GPT⁺-IT
+  password: None
+  port: 3133
+  server: 89.46.78.17
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇮🇹 | @WhiteDNS | IT135|8.8MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 80
+  server: 172.64.32.108
+  type: vless
+  udp: true
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  ws-opts:
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Moto C Build/NRD90M.059) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /?ed=2560security=tls
+  xudp: true
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT409|8.4MB/s|DNSOK|GPT⁺-IT
+  name: 🇮🇹 | @WhiteDNS | IT136|6.6MB/s|DNSOK|GPT⁺-IT
   network: tcp
   port: 32833
   reality-opts:
@@ -52,3 +68,27 @@ proxies:
   uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
   xudp: true
   servername: www.intel.com
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇮🇹 | @WhiteDNS | IT137|5.4MB/s|DNSOK|GPT⁺-IT
+  network: raw
+  port: 32833
+  reality-opts:
+    public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
+    short-id: a0a305ccc8e94aa8
+  server: 172.238.232.239
+  tls: true
+  type: vless
+  udp: true
+  uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
+  xudp: true
+  servername: www.intel.com
+- name: 🇮🇹 | @WhiteDNS | IT138|1.3MB/s|DNSOK|GPT⁺-IT
+  password: ''
+  port: 443
+  server: 91.243.118.217
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''

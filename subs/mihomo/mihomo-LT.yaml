@@ -1,8 +1,47 @@
 proxies:
-- name: 🇱🇹 | @WhiteDNS | LT13|5.1MB/s|DNSOK|GPT⁺-LT
-  password: ''
-  port: 11920
-  server: 212.24.108.20
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇱🇹 | @WhiteDNS | LT12|12.8MB/s|DNSOK|GPT⁺-LT
+  port: 443
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  server: 88.119.176.24
   skip-cert-verify: true
-  type: http
-  username: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
+  network: tcp
+  servername: lit9.helper-internet.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇱🇹 | @WhiteDNS | LT13|7.8MB/s|DNSOK|GPT⁺-LT
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  server: 88.119.176.24
+  tls: true
+  type: vless
+  udp: true
+  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
+  xudp: true
+  servername: lit9.helper-internet.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇱🇹 | @WhiteDNS | LT14|5.8MB/s|DNSOK|GPT⁺
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  server: 88.119.176.24
+  tls: true
+  type: vless
+  udp: true
+  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
+  xudp: true
+  servername: lit9.helper-internet.com
