@@ -13,51 +13,23 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   encryption: none
-  name: 🇵🇱 | @WhiteDNS | PL69|15.0MB/s|DNSOK|GPT⁺-PL
-  network: ws
-  port: 8443
-  server: chopin.adaspoloandco.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: f798a2c4-c51b-409d-b349-ca8455b36796
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/49.0.2623.87 Safari/537.36
-    path: /download.php
-  xudp: true
-  servername: chopin.adaspoloandco.com
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇵🇱 | @WhiteDNS | PL70|9.0MB/s|DNSOK|GPT⁺-PL
-  network: ws
-  port: 8443
-  server: chopin.adaspoloandco.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: f798a2c4-c51b-409d-b349-ca8455b36796
-  ws-opts:
-    headers:
-      Host: chopin.adaspoloandco.com
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1610 Build/MMB29M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
-    path: /download.php
-  xudp: true
-  servername: chopin.adaspoloandco.com
-- name: 🇵🇱 | @WhiteDNS | PL71|6.6MB/s|DNSOK|GPT⁺-PL
-  password: ''
+  flow: xtls-rprx-vision
+  name: 🇵🇱 | @WhiteDNS | PL70|20.3MB/s|DNSOK|GPT⁺-PL
+  network: tcp
   port: 443
-  server: 151.115.54.133
-  skip-cert-verify: true
+  reality-opts:
+    public-key: 4h74KXbkBMYOhJkZabJNsf85cI91ytap_gkl56mzjTU
+    short-id: ''
+  server: 83.168.111.58
   tls: true
-  type: http
-  username: ''
-- name: 🇵🇱 | @WhiteDNS | PL72|2.7MB/s|DNSOK|GPT⁺-PL
+  type: vless
+  udp: true
+  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
+  xudp: true
+  servername: soulful.host
+- name: 🇵🇱 | @WhiteDNS | PL71|16.1MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 37.120.156.18
@@ -65,14 +37,45 @@ proxies:
   tls: true
   type: http
   username: ''
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇵🇱 | @WhiteDNS | PL72|7.6MB/s|DNSOK|GPT⁺-PL
+  network: tcp
+  port: 11437
+  reality-opts:
+    public-key: XW53yYaevp21yOZsWMV_mVg58iYCNp91sYndl95qnmI
+    short-id: 7de83d0e31eb75ef
+  server: Pl.horlutr.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 30980395-1884-483f-95d1-2b7c26928e3c
+  xudp: true
+  servername: amp-api-edge.apps.apple.com
+- name: 🇵🇱 | @WhiteDNS | PL73|2.8MB/s|DNSOK|GPT⁺-PL
+  password: ''
+  port: 443
+  server: 151.115.54.133
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- cipher: chacha20-ietf-poly1305
+  name: 🇵🇱 | @WhiteDNS | PL74|2.8MB/s|DNSOK|GPT⁺-PL
+  password: VJtsgllDDJfNmaTe
+  port: 8388
+  server: 64.176.73.160
+  type: ss
+  udp: true
 proxy-groups:
 - name: PL-Auto
   type: url-test
   proxies:
-  - 🇵🇱 | @WhiteDNS | PL69|15.0MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL70|9.0MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL71|6.6MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL72|2.7MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL70|20.3MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL71|16.1MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL72|7.6MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL73|2.8MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL74|2.8MB/s|DNSOK|GPT⁺-PL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

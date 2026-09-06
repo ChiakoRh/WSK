@@ -15,7 +15,7 @@ dns:
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇱🇹 | @WhiteDNS | LT12|12.8MB/s|DNSOK|GPT⁺-LT
+  name: 🇱🇹 | @WhiteDNS | LT13|16.6MB/s|DNSOK|GPT⁺-LT
   port: 443
   reality-opts:
     public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
@@ -28,10 +28,10 @@ proxies:
   uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
   network: tcp
   servername: lit9.helper-internet.com
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇱🇹 | @WhiteDNS | LT13|7.8MB/s|DNSOK|GPT⁺-LT
-  network: raw
+  name: 🇱🇹 | @WhiteDNS | LT14|14.2MB/s|DNSOK|GPT⁺-LT
+  network: tcp
   port: 443
   reality-opts:
     public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
@@ -46,8 +46,23 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇱🇹 | @WhiteDNS | LT14|5.8MB/s|DNSOK|GPT⁺
+  name: 🇱🇹 | @WhiteDNS | LT15|4.2MB/s|DNSOK|GPT⁺-LT
   network: tcp
+  port: 443
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  server: lit9.helper-internet.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
+  xudp: true
+  servername: lit9.helper-internet.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇱🇹 | @WhiteDNS | LT16|2.9MB/s|DNSOK|GPT⁺-LT
+  network: raw
   port: 443
   reality-opts:
     public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
@@ -63,9 +78,10 @@ proxy-groups:
 - name: LT-Auto
   type: url-test
   proxies:
-  - 🇱🇹 | @WhiteDNS | LT12|12.8MB/s|DNSOK|GPT⁺-LT
-  - 🇱🇹 | @WhiteDNS | LT13|7.8MB/s|DNSOK|GPT⁺-LT
-  - 🇱🇹 | @WhiteDNS | LT14|5.8MB/s|DNSOK|GPT⁺
+  - 🇱🇹 | @WhiteDNS | LT13|16.6MB/s|DNSOK|GPT⁺-LT
+  - 🇱🇹 | @WhiteDNS | LT14|14.2MB/s|DNSOK|GPT⁺-LT
+  - 🇱🇹 | @WhiteDNS | LT15|4.2MB/s|DNSOK|GPT⁺-LT
+  - 🇱🇹 | @WhiteDNS | LT16|2.9MB/s|DNSOK|GPT⁺-LT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

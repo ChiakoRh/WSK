@@ -1,0 +1,40 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇳🇴 | @WhiteDNS | NO170|3.8MB/s|DNSOK|GPT⁺-NO
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: urD2miGxEfHylELSqqggBKCYIMSNXNTbdPijru7-eAQ
+    short-id: 46babe29a750b634
+  server: 151.242.168.182
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5899ca33-5cb2-4fa2-9557-b496bde9c974
+  xudp: true
+  servername: kibi-institut.de
+proxy-groups:
+- name: NO-Auto
+  type: url-test
+  proxies:
+  - 🇳🇴 | @WhiteDNS | NO170|3.8MB/s|DNSOK|GPT⁺-NO
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,NO-Auto

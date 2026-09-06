@@ -1,44 +1,24 @@
 proxies:
 - encryption: none
-  name: 🇫🇷 | @WhiteDNS | FR224|32.7MB/s|DNSOK|GPT⁺-CH
-  network: ws
-  port: 8880
-  server: 108.162.198.178
-  type: vless
-  udp: true
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.67 Safari/537.36
-    path: /
-  xudp: true
-- encryption: none
-  name: 🇫🇷 | @WhiteDNS | FR225|27.2MB/s|DNSOK|GPT⁺-FR
+  name: 🇫🇷 | @WhiteDNS | FR254|27.0MB/s|DNSOK|GPT⁺-FR
   network: tcp
   port: 22224
-  server: 13.39.241.105
+  server: 13.36.121.241
   type: vless
   udp: true
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   xudp: true
-- down: ''
-  fingerprint: ''
-  name: 🇫🇷 | @WhiteDNS | FR226|18.2MB/s|DNSOK|GPT⁺-FR
-  obfs: ''
-  obfs-password: ''
-  password: dongtaiwang.com
-  port: 22000
-  server: 62.210.124.146
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  type: hysteria2
-  up: ''
+- name: 🇫🇷 | @WhiteDNS | FR255|26.4MB/s|DNSOK|GPT⁺-FR
+  network: raw
+  port: 22223
+  server: 13.36.121.241
+  type: vless
+  udp: true
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  xudp: true
 - client-fingerprint: firefox
   encryption: none
-  name: 🇫🇷 | @WhiteDNS | FR227|13.6MB/s|DNSOK|GPT⁺-FR
+  name: 🇫🇷 | @WhiteDNS | FR256|23.7MB/s|DNSOK|GPT⁺-FR
   network: xhttp
   port: 32202
   reality-opts:
@@ -53,80 +33,52 @@ proxies:
     path: /G3EEoH63
   xudp: true
   servername: www.amazon.com
-- client-fingerprint: qq
-  encryption: none
-  name: 🇫🇷 | @WhiteDNS | FR228|5.8MB/s|DNSOK|GPT⁺-IT
-  network: ws
-  port: 8443
-  server: milan.adaspoloandco.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
-  ws-opts:
-    headers:
-      Host: milan.adaspoloandco.com
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/58.0.3029.110 Safari/537.36
-    path: /RoBeRt
-  xudp: true
-  servername: milan.adaspoloandco.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇷 | @WhiteDNS | FR229|5.7MB/s|DNSOK|GPT⁺-FR
-  network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: ''
-  server: 62.210.91.10
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  xudp: true
-  servername: fuck.rkn
-- encryption: none
-  name: 🇫🇷 | @WhiteDNS | FR230|2.3MB/s|DNSOK|GPT⁺-FR
-  network: tcp
-  port: 22223
-  server: 13.39.241.105
+- name: 🇫🇷 | @WhiteDNS | FR257|7.1MB/s|DNSOK|GPT⁺-FR
+  network: raw
+  port: 22222
+  server: 13.36.121.241
   type: vless
   udp: true
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   xudp: true
 - client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇷 | @WhiteDNS | FR231|1.8MB/s|DNSOK|GPT⁺-IT
-  network: ws
-  port: 8443
-  server: milan.adaspoloandco.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /RoBeRt
-  xudp: true
-  servername: milan.adaspoloandco.com
-- client-fingerprint: chrome
-  encryption: none
   flow: xtls-rprx-vision
-  name: 🇫🇷 | @WhiteDNS | FR232|1.3MB/s|DNSOK|GPT⁺-FR
-  network: tcp
+  name: 🇫🇷 | @WhiteDNS | FR258|3.9MB/s|DNSOK|GPT⁺-FR
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   server: 62.210.91.2
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  xudp: true
+  network: tcp
   servername: fuck.rkn
+- name: 🇫🇷 | @WhiteDNS | FR259|2.7MB/s|DNSOK|GPT⁺-FR
+  password: ''
+  port: 1088
+  server: 51.178.49.241
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- client-fingerprint: chrome
+  encryption: none
+  http-opts:
+    headers: {}
+    path:
+    - /naranv2ray
+  name: 🇫🇷 | @WhiteDNS | FR260|996KB/s|DNSOK|GPT⁺-PL
+  network: http
+  port: 443
+  reality-opts:
+    public-key: LrDYMSt1pt2h6n-7YnHpcUAb_IG7QsQ0rfXz8RqkfCY
+    short-id: 9e0fac51cc19d2
+  server: 54.38.138.175
+  tls: true
+  type: vless
+  udp: true
+  uuid: b2e8f455-3bd9-477c-b8f0-a3198f601565
+  xudp: true
+  servername: play.google.com

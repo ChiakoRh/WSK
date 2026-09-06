@@ -13,9 +13,56 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇷🇺 | @WhiteDNS | RU29|5.4MB/s|DNSOK|GPT⁺-CZ
+  network: raw
+  port: 7444
+  reality-opts:
+    public-key: -P8DgKISSG4jnLuj6ihZDqZs1_zt-juBrhVhTylHiAo
+    short-id: ''
+  server: 78.159.247.123
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0764541b-3e57-4b47-954b-51e996fae5fc
+  xudp: true
+  servername: akamai.com
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇷🇺 | @WhiteDNS | RU26|4.1MB/s|DNSOK|GPT⁺-CZ
+  name: 🇷🇺 | @WhiteDNS | RU30|3.6MB/s|DNSOK|GPT⁺-CZ
+  port: 7444
+  reality-opts:
+    public-key: -P8DgKISSG4jnLuj6ihZDqZs1_zt-juBrhVhTylHiAo
+    short-id: ''
+  server: 78.159.247.123
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0764541b-3e57-4b47-954b-51e996fae5fc
+  network: tcp
+  servername: akamai.com
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇷🇺 | @WhiteDNS | RU31|3.5MB/s|DNSOK|GPT⁺-CZ
+  network: raw
+  port: 7444
+  reality-opts:
+    public-key: -P8DgKISSG4jnLuj6ihZDqZs1_zt-juBrhVhTylHiAo
+    short-id: ''
+  server: 78.159.247.166
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0764541b-3e57-4b47-954b-51e996fae5fc
+  xudp: true
+  servername: akamai.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇷🇺 | @WhiteDNS | RU32|3.0MB/s|DNSOK|GPT⁺-CZ
   port: 7444
   reality-opts:
     public-key: -P8DgKISSG4jnLuj6ihZDqZs1_zt-juBrhVhTylHiAo
@@ -30,37 +77,7 @@ proxies:
   servername: akamai.com
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇷🇺 | @WhiteDNS | RU27|3.9MB/s|DNSOK|GPT⁺
-  port: 7444
-  reality-opts:
-    public-key: -P8DgKISSG4jnLuj6ihZDqZs1_zt-juBrhVhTylHiAo
-    short-id: ''
-  server: 78.159.247.123
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0764541b-3e57-4b47-954b-51e996fae5fc
-  network: tcp
-  servername: akamai.com
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇷🇺 | @WhiteDNS | RU28|3.6MB/s|DNSOK|GPT⁺-CZ
-  network: tcp
-  port: 7444
-  reality-opts:
-    public-key: -P8DgKISSG4jnLuj6ihZDqZs1_zt-juBrhVhTylHiAo
-    short-id: ''
-  server: 78.159.247.123
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0764541b-3e57-4b47-954b-51e996fae5fc
-  servername: akamai.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇷🇺 | @WhiteDNS | RU29|3.1MB/s|DNSOK|GPT⁺-CZ
+  name: 🇷🇺 | @WhiteDNS | RU33|2.7MB/s|DNSOK|GPT⁺-CZ
   network: tcp
   port: 7444
   reality-opts:
@@ -73,32 +90,15 @@ proxies:
   uuid: 0764541b-3e57-4b47-954b-51e996fae5fc
   xudp: true
   servername: akamai.com
-- client-fingerprint: chrome
-  encryption: none
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇷🇺 | @WhiteDNS | RU30|3.0MB/s|DNSOK|GPT⁺-CZ
-  network: raw
+  name: 🇷🇺 | @WhiteDNS | RU34|2.5MB/s|DNSOK|GPT⁺-CZ
+  network: tcp
   port: 7444
   reality-opts:
     public-key: -P8DgKISSG4jnLuj6ihZDqZs1_zt-juBrhVhTylHiAo
     short-id: ''
   server: 78.159.247.123
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0764541b-3e57-4b47-954b-51e996fae5fc
-  xudp: true
-  servername: akamai.com
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇷🇺 | @WhiteDNS | RU31|2.4MB/s|DNSOK|GPT⁺-CZ
-  network: raw
-  port: 7444
-  reality-opts:
-    public-key: -P8DgKISSG4jnLuj6ihZDqZs1_zt-juBrhVhTylHiAo
-    short-id: ''
-  server: 78.159.247.166
   tls: true
   type: vless
   udp: true
@@ -109,12 +109,12 @@ proxy-groups:
 - name: RU-Auto
   type: url-test
   proxies:
-  - 🇷🇺 | @WhiteDNS | RU26|4.1MB/s|DNSOK|GPT⁺-CZ
-  - 🇷🇺 | @WhiteDNS | RU27|3.9MB/s|DNSOK|GPT⁺
-  - 🇷🇺 | @WhiteDNS | RU28|3.6MB/s|DNSOK|GPT⁺-CZ
-  - 🇷🇺 | @WhiteDNS | RU29|3.1MB/s|DNSOK|GPT⁺-CZ
-  - 🇷🇺 | @WhiteDNS | RU30|3.0MB/s|DNSOK|GPT⁺-CZ
-  - 🇷🇺 | @WhiteDNS | RU31|2.4MB/s|DNSOK|GPT⁺-CZ
+  - 🇷🇺 | @WhiteDNS | RU29|5.4MB/s|DNSOK|GPT⁺-CZ
+  - 🇷🇺 | @WhiteDNS | RU30|3.6MB/s|DNSOK|GPT⁺-CZ
+  - 🇷🇺 | @WhiteDNS | RU31|3.5MB/s|DNSOK|GPT⁺-CZ
+  - 🇷🇺 | @WhiteDNS | RU32|3.0MB/s|DNSOK|GPT⁺-CZ
+  - 🇷🇺 | @WhiteDNS | RU33|2.7MB/s|DNSOK|GPT⁺-CZ
+  - 🇷🇺 | @WhiteDNS | RU34|2.5MB/s|DNSOK|GPT⁺-CZ
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

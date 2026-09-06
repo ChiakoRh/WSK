@@ -1,0 +1,32 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- name: 🇨🇴 | @WhiteDNS | CO7|1.5MB/s|DNSOK|GPT⁺-CO
+  network: tcp
+  port: 62145
+  server: 149.130.188.248
+  type: vless
+  udp: true
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  xudp: true
+proxy-groups:
+- name: CO-Auto
+  type: url-test
+  proxies:
+  - 🇨🇴 | @WhiteDNS | CO7|1.5MB/s|DNSOK|GPT⁺-CO
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,CO-Auto
