@@ -15,25 +15,25 @@ dns:
 proxies:
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT263|6.2MB/s|DNSOK|GPT⁺
+  name: 🇱🇹 | @WhiteDNS | LT9|4.7MB/s|DNSOK|GPT⁺-LT
+  network: raw
   port: 443
   reality-opts:
-    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
-    short-id: fd55b698ee8c3629
-  server: 78.129.149.85
-  skip-cert-verify: true
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  server: 88.119.176.24
   tls: true
   type: vless
   udp: true
-  uuid: 4dcc91a0-f0c4-42a1-9167-6ee8c881a50f
-  network: tcp
-  servername: foodnetwork.com
+  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
+  xudp: true
+  servername: lit9.helper-internet.com
 proxy-groups:
-- name: OT-Auto
+- name: LT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT263|6.2MB/s|DNSOK|GPT⁺
+  - 🇱🇹 | @WhiteDNS | LT9|4.7MB/s|DNSOK|GPT⁺-LT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,OT-Auto
+- MATCH,LT-Auto
