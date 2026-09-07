@@ -13,42 +13,36 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇹 | @WhiteDNS | IT167|6.7MB/s|DNSOK|GPT⁺
-  network: ws
-  port: 2082
-  server: 172.64.32.103
-  type: vless
-  udp: true
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  ws-opts:
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/59.0.3071.115 Safari/537.36
-    path: /?ed=2560security=tls
-  xudp: true
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇮🇹 | @WhiteDNS | IT168|2.2MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 2086
-  server: 162.159.48.32
-  type: vless
-  udp: true
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  ws-opts:
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: /?ed=2560security=tls
-  xudp: true
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇮🇹 | @WhiteDNS | IT163|16.5MB/s|DNSOK|GPT⁺
+  password: ''
+  port: 443
+  server: 178.237.4.200
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇮🇹 | @WhiteDNS | IT164|5.0MB/s|DNSOK|GPT⁺-IT
+  password: ''
+  port: 443
+  server: 185.183.105.130
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇮🇹 | @WhiteDNS | IT165|3.4MB/s|DNSOK|GPT⁺-IT
+  password: None
+  port: 3133
+  server: 89.46.78.17
+  skip-cert-verify: true
+  type: http
+  username: ''
 proxy-groups:
 - name: IT-Auto
   type: url-test
   proxies:
-  - 🇮🇹 | @WhiteDNS | IT167|6.7MB/s|DNSOK|GPT⁺
-  - 🇮🇹 | @WhiteDNS | IT168|2.2MB/s|DNSOK|GPT⁺-DE
+  - 🇮🇹 | @WhiteDNS | IT163|16.5MB/s|DNSOK|GPT⁺
+  - 🇮🇹 | @WhiteDNS | IT164|5.0MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT165|3.4MB/s|DNSOK|GPT⁺-IT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -14,42 +14,52 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - client-fingerprint: firefox
-  encryption: none
   flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT191|1.8MB/s|DNSOK|GPT⁺
-  network: raw
+  name: ❓ | @WhiteDNS | OT276|6.4MB/s|DNSOK|GPT⁺
+  network: tcp
   port: 443
   reality-opts:
-    public-key: qM0uZ1Gp_Ve59S_iKPyFqQXjfjkUqf6iSHH_fxFt7w0
-    short-id: 0f4d3210977f51a5
-  server: 51.161.199.124
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
+  server: 109.169.76.39
   tls: true
   type: vless
   udp: true
-  uuid: 643cdd4d-8731-440b-9e46-9496f593aa27
+  uuid: 91cb90fd-2fad-4bd7-84bd-f108a71c287a
   xudp: true
-  servername: suetinklerartglass.co.uk
+  servername: slashdot.org
+- encryption: none
+  name: ❓ | @WhiteDNS | OT277|1.4MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  xudp: true
+  servername: 152.69.195.67
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT192|1.5MB/s|DNSOK|GPT⁺-AU
+  name: ❓ | @WhiteDNS | OT278|1.0MB/s|DNSOK|GPT⁺-DE
   port: 443
   reality-opts:
-    public-key: qM0uZ1Gp_Ve59S_iKPyFqQXjfjkUqf6iSHH_fxFt7w0
-    short-id: 0f4d3210977f51a5
-  server: 51.161.199.124
+    public-key: HKKWGVu7xJfscDTH_28WhqSfSnp8fA5jpj7X1eMO-mU
+    short-id: 1067b23f928e7618
+  server: 200.165.229.159
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 6a23c91d-4ee1-4e9c-851e-ad079261c02d
+  uuid: 3db8407b-1f96-4b82-bfeb-55258c1e57b4
   network: tcp
-  servername: suetinklerartglass.co.uk
+  servername: flarora.ferreo.sbs
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT191|1.8MB/s|DNSOK|GPT⁺
-  - ❓ | @WhiteDNS | OT192|1.5MB/s|DNSOK|GPT⁺-AU
+  - ❓ | @WhiteDNS | OT276|6.4MB/s|DNSOK|GPT⁺
+  - ❓ | @WhiteDNS | OT277|1.4MB/s|DNSOK|GPT⁺-JP
+  - ❓ | @WhiteDNS | OT278|1.0MB/s|DNSOK|GPT⁺-DE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
