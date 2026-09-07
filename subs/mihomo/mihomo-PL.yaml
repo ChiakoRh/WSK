@@ -1,24 +1,43 @@
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇵🇱 | @WhiteDNS | PL72|5.8MB/s|DNSOK|GPT⁺-PL
-  network: tcp
-  port: 25418
-  reality-opts:
-    public-key: 39JaPRRNVgIevtmeJsQhumvIVLMq11FHQoR5oseirFg
-    short-id: ''
-  server: 82.40.62.11
+- cipher: chacha20-ietf-poly1305
+  name: 🇵🇱 | @WhiteDNS | PL68|23.2MB/s|DNSOK|GPT⁺-PL
+  password: VJtsgllDDJfNmaTe
+  port: 8388
+  server: 64.176.73.160
+  type: ss
+  udp: true
+- client-fingerprint: qq
+  name: 🇵🇱 | @WhiteDNS | PL69|20.7MB/s|DNSOK|GPT⁺-PL
+  network: ws
+  port: 8443
+  server: chopin.adaspoloandco.com
   tls: true
   type: vless
   udp: true
-  uuid: 913ee679-bc44-46cf-96d7-4a80caecdc41
+  uuid: f798a2c4-c51b-409d-b349-ca8455b36796
+  ws-opts:
+    headers:
+      Host: chopin.adaspoloandco.com
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /download.php
   xudp: true
-  servername: amp-api-edge.apps.apple.com
-- name: 🇵🇱 | @WhiteDNS | PL73|2.9MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 151.115.54.133
-  skip-cert-verify: true
+  servername: chopin.adaspoloandco.com
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇵🇱 | @WhiteDNS | PL70|6.5MB/s|DNSOK|GPT⁺-PL
+  network: ws
+  port: 8443
+  server: chopin.adaspoloandco.com
   tls: true
-  type: http
-  username: ''
+  type: vless
+  udp: true
+  uuid: f798a2c4-c51b-409d-b349-ca8455b36796
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/46.0.2490.86 Safari/537.36
+    path: /download.php
+  xudp: true
+  servername: chopin.adaspoloandco.com

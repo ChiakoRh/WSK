@@ -13,7 +13,23 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇦🇹 | @WhiteDNS | AT12|20.6MB/s|DNSOK|GPT⁺-AT
+- client-fingerprint: qq
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇦🇹 | @WhiteDNS | AT14|28.1MB/s|DNSOK|GPT⁺-AT
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
+  server: 152.53.1.40
+  tls: true
+  type: vless
+  udp: true
+  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
+  xudp: true
+  servername: at.quattro-tech.ru
+- name: 🇦🇹 | @WhiteDNS | AT15|20.7MB/s|DNSOK|GPT⁺-AT
   password: ''
   port: 443
   server: 146.70.244.2
@@ -25,7 +41,8 @@ proxy-groups:
 - name: AT-Auto
   type: url-test
   proxies:
-  - 🇦🇹 | @WhiteDNS | AT12|20.6MB/s|DNSOK|GPT⁺-AT
+  - 🇦🇹 | @WhiteDNS | AT14|28.1MB/s|DNSOK|GPT⁺-AT
+  - 🇦🇹 | @WhiteDNS | AT15|20.7MB/s|DNSOK|GPT⁺-AT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
