@@ -14,9 +14,10 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇰🇿 | @WhiteDNS | KZ10|4.1MB/s|DNSOK|GPT⁺-KZ
-  network: tcp
+  name: 🇰🇿 | @WhiteDNS | KZ17|2.5MB/s|DNSOK|GPT⁺-KZ
+  network: raw
   port: 8443
   reality-opts:
     public-key: Ao_imnCEIGAaL1DZnjOK1SSPpjQOw_XJcgMpNLEZwg0
@@ -30,7 +31,7 @@ proxies:
   servername: www.cloudflare.com
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇰🇿 | @WhiteDNS | KZ11|2.7MB/s|DNSOK|GPT⁺-KZ
+  name: 🇰🇿 | @WhiteDNS | KZ18|2.1MB/s|DNSOK|GPT⁺-KZ
   port: 8443
   reality-opts:
     public-key: Ao_imnCEIGAaL1DZnjOK1SSPpjQOw_XJcgMpNLEZwg0
@@ -45,7 +46,7 @@ proxies:
   servername: www.cloudflare.com
 - client-fingerprint: chrome
   encryption: none
-  name: 🇰🇿 | @WhiteDNS | KZ12|746KB/s|DNSOK|GPT⁺-KZ
+  name: 🇰🇿 | @WhiteDNS | KZ19|878KB/s|DNSOK|GPT⁺-KZ
   network: raw
   port: 38065
   reality-opts:
@@ -58,13 +59,75 @@ proxies:
   uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
   xudp: true
   servername: yahoo.com
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇰🇿 | @WhiteDNS | KZ20|738KB/s|DNSOK|GPT⁺-KZ
+  network: tcp
+  port: 35728
+  reality-opts:
+    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
+    short-id: 69a2
+  server: 178.236.16.98
+  tls: true
+  type: vless
+  udp: true
+  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
+  xudp: true
+  servername: yahoo.com
+- client-fingerprint: chrome
+  name: 🇰🇿 | @WhiteDNS | KZ21|716KB/s|DNSOK|GPT⁺-KZ
+  network: tcp
+  port: 38065
+  reality-opts:
+    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
+    short-id: fa
+  server: 83.222.23.81
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+  xudp: true
+  servername: yahoo.com
+- client-fingerprint: chrome
+  name: 🇰🇿 | @WhiteDNS | KZ22|652KB/s|DNSOK|GPT⁺-KZ
+  port: 35728
+  reality-opts:
+    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
+    short-id: 69a2
+  server: 178.236.16.98
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
+  network: tcp
+  servername: yahoo.com
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇰🇿 | @WhiteDNS | KZ23|515KB/s|DNSOK|GPT⁺-KZ
+  network: raw
+  port: 35728
+  reality-opts:
+    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
+    short-id: 69a2
+  server: 178.236.16.98
+  tls: true
+  type: vless
+  udp: true
+  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
+  xudp: true
+  servername: yahoo.com
 proxy-groups:
 - name: KZ-Auto
   type: url-test
   proxies:
-  - 🇰🇿 | @WhiteDNS | KZ10|4.1MB/s|DNSOK|GPT⁺-KZ
-  - 🇰🇿 | @WhiteDNS | KZ11|2.7MB/s|DNSOK|GPT⁺-KZ
-  - 🇰🇿 | @WhiteDNS | KZ12|746KB/s|DNSOK|GPT⁺-KZ
+  - 🇰🇿 | @WhiteDNS | KZ17|2.5MB/s|DNSOK|GPT⁺-KZ
+  - 🇰🇿 | @WhiteDNS | KZ18|2.1MB/s|DNSOK|GPT⁺-KZ
+  - 🇰🇿 | @WhiteDNS | KZ19|878KB/s|DNSOK|GPT⁺-KZ
+  - 🇰🇿 | @WhiteDNS | KZ20|738KB/s|DNSOK|GPT⁺-KZ
+  - 🇰🇿 | @WhiteDNS | KZ21|716KB/s|DNSOK|GPT⁺-KZ
+  - 🇰🇿 | @WhiteDNS | KZ22|652KB/s|DNSOK|GPT⁺-KZ
+  - 🇰🇿 | @WhiteDNS | KZ23|515KB/s|DNSOK|GPT⁺-KZ
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

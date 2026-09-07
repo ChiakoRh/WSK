@@ -13,25 +13,32 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: firefox
-  name: ❓ | @WhiteDNS | OT154|627KB/s|DNSOK|GPT⁺-GB
-  port: 443
-  reality-opts:
-    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
-    short-id: 98fa0b00d09419f7
-  server: gr015.techinyab.ir
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
+- client-fingerprint: chrome
+  name: ❓ | @WhiteDNS | OT116|2.8MB/s|DNSOK|GPT⁺-LA
   network: tcp
-  servername: play.google.com
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10045
+  server: z-sg1.251313.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: ❓ | @WhiteDNS | OT117|1.2MB/s|DNSOK|GPT⁺-MM
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10046
+  server: z-sg1.251313.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+  network: tcp
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT154|627KB/s|DNSOK|GPT⁺-GB
+  - ❓ | @WhiteDNS | OT116|2.8MB/s|DNSOK|GPT⁺-LA
+  - ❓ | @WhiteDNS | OT117|1.2MB/s|DNSOK|GPT⁺-MM
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

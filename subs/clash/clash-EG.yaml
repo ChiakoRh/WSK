@@ -1,0 +1,46 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- alpn:
+  - h2
+  - http/1.1
+  - h3
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇪🇬 | @WhiteDNS | EG3|3.2MB/s|DNSOK|GPT⁺-US
+  network: ws
+  port: 443
+  server: ccs2g.pai50288.uk
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/61.0.3163.100 Safari/537.36
+    path: /pai50288
+  xudp: true
+  servername: ccs2g.pai50288.uk
+proxy-groups:
+- name: EG-Auto
+  type: url-test
+  proxies:
+  - 🇪🇬 | @WhiteDNS | EG3|3.2MB/s|DNSOK|GPT⁺-US
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,EG-Auto

@@ -14,39 +14,54 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - client-fingerprint: firefox
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA67|16.1MB/s|DNSOK|GPT⁺-NO
+  name: 🇨🇦 | @WhiteDNS | CA74|6.2MB/s|DNSOK|GPT⁺-NO
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: urD2miGxEfHylELSqqggBKCYIMSNXNTbdPijru7-eAQ
+    short-id: 46babe29a750b634
+  server: 151.242.168.182
+  tls: true
+  type: vless
+  udp: true
+  uuid: 56b04d24-c894-4c47-9821-1826235b1f8e
+  xudp: true
+  servername: kibi-institut.de
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA75|6.1MB/s|DNSOK|GPT⁺-NO
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: urD2miGxEfHylELSqqggBKCYIMSNXNTbdPijru7-eAQ
+    short-id: 46babe29a750b634
+  server: 151.242.168.182
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5899ca33-5cb2-4fa2-9557-b496bde9c974
+  xudp: true
+  servername: kibi-institut.de
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA76|6.0MB/s|DNSOK|GPT⁺-NO
+  network: tcp
   port: 443
   reality-opts:
     public-key: urD2miGxEfHylELSqqggBKCYIMSNXNTbdPijru7-eAQ
     short-id: 46babe29a750b634
   server: 151.242.168.180
-  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: 05020afd-d476-406b-8950-ee7dd63a6e64
-  network: tcp
-  servername: kibi-institut.de
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA68|6.1MB/s|DNSOK|GPT⁺-NO
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: urD2miGxEfHylELSqqggBKCYIMSNXNTbdPijru7-eAQ
-    short-id: 46babe29a750b634
-  server: 151.242.168.182
-  tls: true
-  type: vless
-  udp: true
-  uuid: 56b04d24-c894-4c47-9821-1826235b1f8e
   xudp: true
   servername: kibi-institut.de
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA69|4.5MB/s|DNSOK|GPT⁺-NO
+  name: 🇨🇦 | @WhiteDNS | CA77|5.7MB/s|DNSOK|GPT⁺-NO
   port: 443
   reality-opts:
     public-key: urD2miGxEfHylELSqqggBKCYIMSNXNTbdPijru7-eAQ
@@ -59,10 +74,17 @@ proxies:
   uuid: 56b04d24-c894-4c47-9821-1826235b1f8e
   network: tcp
   servername: kibi-institut.de
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦 | @WhiteDNS | CA78|4.0MB/s|DNSOK|GPT⁺-CA
+  password: FD3rCuOsxOay
+  port: 8388
+  server: 15.235.75.71
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA70|4.0MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA79|4.0MB/s|DNSOK|GPT⁺-CA
   network: raw
   port: 41373
   reality-opts:
@@ -76,57 +98,9 @@ proxies:
   xudp: true
   servername: google.com
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA71|3.9MB/s|DNSOK|GPT⁺-CA
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  network: tcp
-  servername: google.com
-- client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA72|3.8MB/s|DNSOK|GPT⁺-CA
-  network: tcp
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  tls: true
-  type: vless
-  udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  xudp: true
-  servername: google.com
-- client-fingerprint: qq
-  name: 🇨🇦 | @WhiteDNS | CA73|3.8MB/s|DNSOK|GPT⁺-CA
-  network: ws
-  port: 8443
-  server: maple.adaspoloandco.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: db3f09ae-23f2-42b8-abee-7b89fb392c5e
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/65.0.3325.181 Safari/537.36
-    path: /uploader.php
-  xudp: true
-  servername: maple.adaspoloandco.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA74|3.6MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA80|3.1MB/s|DNSOK|GPT⁺-CA
   network: tcp#1⛑️@oneclickvpnkeys
   port: 41373
   reality-opts:
@@ -139,24 +113,23 @@ proxies:
   uuid: a71c8954-66a8-4321-bedb-2336230d81ce
   xudp: true
   servername: google.com
-- client-fingerprint: qq
-  name: 🇨🇦 | @WhiteDNS | CA75|2.2MB/s|DNSOK|GPT⁺-CA
-  network: ws
-  port: 8443
-  server: maple.adaspoloandco.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA81|2.9MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  port: 41373
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
   tls: true
   type: vless
   udp: true
-  uuid: db3f09ae-23f2-42b8-abee-7b89fb392c5e
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; A37fw Build/LMY47V) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
-    path: /uploader.php
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
   xudp: true
-  servername: maple.adaspoloandco.com
-- name: 🇨🇦 | @WhiteDNS | CA76|2.1MB/s|DNSOK|GPT⁺-CA
+  servername: google.com
+- name: 🇨🇦 | @WhiteDNS | CA82|2.9MB/s|DNSOK|GPT⁺-CA
   port: 443
   server: 184.107.106.68
   skip-cert-verify: true
@@ -167,30 +140,56 @@ proxies:
   network: tcp
   servername: lizca2.footballfantasyforum.com
 - client-fingerprint: chrome
-  name: 🇨🇦 | @WhiteDNS | CA77|1.8MB/s|DNSOK|GPT⁺-LA
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA83|2.6MB/s|DNSOK|GPT⁺-CA
+  port: 41373
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  network: tcp
+  servername: google.com
+- client-fingerprint: chrome
+  name: 🇨🇦 | @WhiteDNS | CA84|1.8MB/s|DNSOK|GPT⁺-NP
+  network: tcp
   password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
-  port: 10045
+  port: 10044
   server: z-sg2.251313.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
   udp: true
+- client-fingerprint: chrome
+  name: 🇨🇦 | @WhiteDNS | CA85|883KB/s|DNSOK|GPT⁺-QA
   network: tcp
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10008
+  server: z-jp1.251313.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
 proxy-groups:
 - name: CA-Auto
   type: url-test
   proxies:
-  - 🇨🇦 | @WhiteDNS | CA67|16.1MB/s|DNSOK|GPT⁺-NO
-  - 🇨🇦 | @WhiteDNS | CA68|6.1MB/s|DNSOK|GPT⁺-NO
-  - 🇨🇦 | @WhiteDNS | CA69|4.5MB/s|DNSOK|GPT⁺-NO
-  - 🇨🇦 | @WhiteDNS | CA70|4.0MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA71|3.9MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA72|3.8MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA73|3.8MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA74|3.6MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA75|2.2MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA76|2.1MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA77|1.8MB/s|DNSOK|GPT⁺-LA
+  - 🇨🇦 | @WhiteDNS | CA74|6.2MB/s|DNSOK|GPT⁺-NO
+  - 🇨🇦 | @WhiteDNS | CA75|6.1MB/s|DNSOK|GPT⁺-NO
+  - 🇨🇦 | @WhiteDNS | CA76|6.0MB/s|DNSOK|GPT⁺-NO
+  - 🇨🇦 | @WhiteDNS | CA77|5.7MB/s|DNSOK|GPT⁺-NO
+  - 🇨🇦 | @WhiteDNS | CA78|4.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA79|4.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA80|3.1MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA81|2.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA82|2.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA83|2.6MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA84|1.8MB/s|DNSOK|GPT⁺-NP
+  - 🇨🇦 | @WhiteDNS | CA85|883KB/s|DNSOK|GPT⁺-QA
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
