@@ -13,19 +13,20 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇵🇪 | @WhiteDNS | PE6|596KB/s|DNSOK|GPT⁺-PE
+- name: 🇮🇪 | @WhiteDNS | IE10|18.1MB/s|DNSOK|GPT⁺-IE
   password: ''
-  port: 999
-  server: 200.62.236.154
+  port: 443
+  server: 149.88.96.1
   skip-cert-verify: true
+  tls: true
   type: http
   username: ''
 proxy-groups:
-- name: PE-Auto
+- name: IE-Auto
   type: url-test
   proxies:
-  - 🇵🇪 | @WhiteDNS | PE6|596KB/s|DNSOK|GPT⁺-PE
+  - 🇮🇪 | @WhiteDNS | IE10|18.1MB/s|DNSOK|GPT⁺-IE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,PE-Auto
+- MATCH,IE-Auto

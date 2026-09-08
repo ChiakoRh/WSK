@@ -13,22 +13,30 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇦🇺 | @WhiteDNS | AU65|1.7MB/s|DNSOK|GPT⁺-AU
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇿🇦 | @WhiteDNS | ZA5|2.2MB/s|DNSOK|GPT⁺-ZA
+  network: ws
   port: 443
-  server: 172.105.169.70
-  skip-cert-verify: true
+  server: za-a-zzy.glnyhlgc.com
+  skip-cert-verify: false
   tls: true
-  type: vless
+  type: vmess
   udp: true
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  network: tcp
-  servername: 172.105.169.70
+  uuid: 5583af50-f464-4df6-e2ef-34592311e5c6
+  ws-opts:
+    headers: {}
+    path: /about/7678
+  xudp: true
+  servername: za-a-zzy.glnyhlgc.com
 proxy-groups:
-- name: AU-Auto
+- name: ZA-Auto
   type: url-test
   proxies:
-  - 🇦🇺 | @WhiteDNS | AU65|1.7MB/s|DNSOK|GPT⁺-AU
+  - 🇿🇦 | @WhiteDNS | ZA5|2.2MB/s|DNSOK|GPT⁺-ZA
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,AU-Auto
+- MATCH,ZA-Auto

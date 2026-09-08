@@ -1,45 +1,27 @@
 proxies:
-- client-fingerprint: firefox
-  encryption: none
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT151|68.8MB/s|DNSOK|GPT⁺-IT
-  network: raw
+  name: 🇮🇹 | @WhiteDNS | IT123|78.3MB/s|DNSOK|GPT⁺-IT
   port: 32833
   reality-opts:
     public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
     short-id: a0a305ccc8e94aa8
   server: 172.238.232.239
-  tls: true
-  type: vless
-  udp: true
-  uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
-  xudp: true
-  servername: www.intel.com
-- name: 🇮🇹 | @WhiteDNS | IT152|30.2MB/s|DNSOK|GPT⁺-IT
-  password: None
-  port: 443
-  server: 185.183.105.130
   skip-cert-verify: true
   tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT153|14.3MB/s|DNSOK|GPT⁺-IT
-  network: tcp
-  port: 32833
-  reality-opts:
-    public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
-    short-id: a0a305ccc8e94aa8
-  server: 172.238.232.239
-  tls: true
   type: vless
   udp: true
   uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
-  xudp: true
+  network: tcp
   servername: www.intel.com
-- name: 🇮🇹 | @WhiteDNS | IT154|5.2MB/s|DNSOK|GPT⁺-IT
+- cipher: aes-256-gcm
+  name: 🇮🇹 | @WhiteDNS | IT124|54.6MB/s|DNSOK|GPT⁺-IT
+  password: itzvpn@321
+  port: 8388
+  server: 57.131.48.45
+  type: ss
+  udp: true
+- name: 🇮🇹 | @WhiteDNS | IT125|44.0MB/s|DNSOK|GPT⁺-IT
   password: ''
   port: 443
   server: 185.183.105.146
@@ -47,18 +29,18 @@ proxies:
   tls: true
   type: http
   username: ''
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT155|5.2MB/s|DNSOK|GPT⁺-IT
-  port: 32833
-  reality-opts:
-    public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
-    short-id: a0a305ccc8e94aa8
-  server: 172.238.232.239
+- name: 🇮🇹 | @WhiteDNS | IT126|23.1MB/s|DNSOK|GPT⁺-IT
+  password: ''
+  port: 3133
+  server: 89.46.78.17
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇮🇹 | @WhiteDNS | IT127|5.7MB/s|DNSOK|GPT⁺
+  password: None
+  port: 443
+  server: 178.237.4.200
   skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
-  network: tcp
-  servername: www.intel.com
+  type: http
+  username: ''

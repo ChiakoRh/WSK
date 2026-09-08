@@ -1,9 +1,56 @@
 proxies:
-- name: 🇨🇭 | @WhiteDNS | CH21|38.8MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH20|22.9MB/s|DNSOK|GPT⁺-CH
   password: ''
-  port: 9443
-  server: 37.120.213.210
+  port: 443
+  server: 31.7.62.50
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
+- name: 🇨🇭 | @WhiteDNS | CH21|20.6MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 8880
+  server: 108.162.198.178
+  type: vless
+  udp: true
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  ws-opts:
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /?ed=2560security=tls
+  xudp: true
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- encryption: none
+  name: 🇨🇭 | @WhiteDNS | CH22|7.1MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 2095
+  server: 108.162.198.178
+  type: vless
+  udp: true
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /
+  xudp: true
+- name: 🇨🇭 | @WhiteDNS | CH23|6.4MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 80
+  server: 108.162.198.178
+  type: vless
+  udp: true
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  ws-opts:
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; de-de; SAMSUNG GT-I9195 Build/KOT49H)
+        AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile
+        Safari/537.36
+    path: /?ed=2560security=tls
+  xudp: true
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
