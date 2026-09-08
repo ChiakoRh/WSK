@@ -1,0 +1,89 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇯🇪 | @WhiteDNS | JE24|21.9MB/s|DNSOK|GPT⁺-GB
+  port: 443
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
+  server: 82.145.55.75
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5c0f54f4-f3e2-4931-a3b9-b1ffc0961d70
+  network: tcp
+  servername: strapi.io
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇯🇪 | @WhiteDNS | JE25|6.5MB/s|DNSOK|GPT⁺-GB
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
+  server: 82.145.55.75
+  tls: true
+  type: vless
+  udp: true
+  uuid: 15855b81-d8de-410f-9b02-a9c39748c9f5
+  xudp: true
+  servername: strapi.io
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇯🇪 | @WhiteDNS | JE26|6.4MB/s|DNSOK|GPT⁺-GB
+  port: 443
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
+  server: 82.145.55.75
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: f8bfa488-1e06-427e-b9e0-b014d175d570
+  network: tcp
+  servername: strapi.io
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇯🇪 | @WhiteDNS | JE27|1.7MB/s|DNSOK|GPT⁺-GB
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
+  server: 82.145.55.75
+  tls: true
+  type: vless
+  udp: true
+  uuid: dd484313-d506-4923-81f9-ef6c16776f62
+  xudp: true
+  servername: strapi.io
+proxy-groups:
+- name: JE-Auto
+  type: url-test
+  proxies:
+  - 🇯🇪 | @WhiteDNS | JE24|21.9MB/s|DNSOK|GPT⁺-GB
+  - 🇯🇪 | @WhiteDNS | JE25|6.5MB/s|DNSOK|GPT⁺-GB
+  - 🇯🇪 | @WhiteDNS | JE26|6.4MB/s|DNSOK|GPT⁺-GB
+  - 🇯🇪 | @WhiteDNS | JE27|1.7MB/s|DNSOK|GPT⁺-GB
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,JE-Auto

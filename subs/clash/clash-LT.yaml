@@ -15,28 +15,26 @@ dns:
 proxies:
 - client-fingerprint: chrome
   encryption: none
-  name: 🇪🇬 | @WhiteDNS | EG3|4.8MB/s|DNSOK|GPT⁺-US
-  network: ws
+  flow: xtls-rprx-vision
+  name: 🇱🇹 | @WhiteDNS | LT11|16.0MB/s|DNSOK|GPT⁺-LT
+  network: tcp
   port: 443
-  server: ccs2g.pai50288.uk
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  server: 88.119.176.24
   tls: true
   type: vless
   udp: true
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/41.0.2272.101 Safari/537.36
-    path: /pai50288
+  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
   xudp: true
-  servername: ccs2g.pai50288.uk
+  servername: lit9.helper-internet.com
 proxy-groups:
-- name: EG-Auto
+- name: LT-Auto
   type: url-test
   proxies:
-  - 🇪🇬 | @WhiteDNS | EG3|4.8MB/s|DNSOK|GPT⁺-US
+  - 🇱🇹 | @WhiteDNS | LT11|16.0MB/s|DNSOK|GPT⁺-LT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,EG-Auto
+- MATCH,LT-Auto

@@ -12,28 +12,11 @@ dns:
   nameserver:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
-proxies:
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT119|1.8MB/s|DNSOK|GPT⁺-GB
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
-    short-id: fd55b698ee8c3629
-  server: 109.169.76.39
-  tls: true
-  type: vless
-  udp: true
-  uuid: 972f1d1c-08e5-4485-a888-65688b5c7557
-  xudp: true
-  servername: slashdot.org
+proxies: []
 proxy-groups:
 - name: OT-Auto
   type: url-test
-  proxies:
-  - ❓ | @WhiteDNS | OT119|1.8MB/s|DNSOK|GPT⁺-GB
+  proxies: []
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

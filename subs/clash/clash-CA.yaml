@@ -16,8 +16,39 @@ proxies:
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA255|5.8MB/s|DNSOK|GPT⁺-NO
+  name: 🇨🇦 | @WhiteDNS | CA112|6.0MB/s|DNSOK|GPT⁺-NO
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: urD2miGxEfHylELSqqggBKCYIMSNXNTbdPijru7-eAQ
+    short-id: 46babe29a750b634
+  server: 151.242.168.182
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5899ca33-5cb2-4fa2-9557-b496bde9c974
+  xudp: true
+  servername: kibi-institut.de
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA113|5.7MB/s|DNSOK|GPT⁺-NO
   network: tcp
+  port: 443
+  reality-opts:
+    public-key: urD2miGxEfHylELSqqggBKCYIMSNXNTbdPijru7-eAQ
+    short-id: 46babe29a750b634
+  server: 151.242.168.180
+  tls: true
+  type: vless
+  udp: true
+  uuid: 05020afd-d476-406b-8950-ee7dd63a6e64
+  xudp: true
+  servername: kibi-institut.de
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA114|5.6MB/s|DNSOK|GPT⁺-NO
+  network: raw
   port: 443
   reality-opts:
     public-key: urD2miGxEfHylELSqqggBKCYIMSNXNTbdPijru7-eAQ
@@ -31,7 +62,7 @@ proxies:
   servername: kibi-institut.de
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA256|4.5MB/s|DNSOK|GPT⁺-NO
+  name: 🇨🇦 | @WhiteDNS | CA115|5.5MB/s|DNSOK|GPT⁺-NO
   port: 443
   reality-opts:
     public-key: urD2miGxEfHylELSqqggBKCYIMSNXNTbdPijru7-eAQ
@@ -46,114 +77,62 @@ proxies:
   servername: kibi-institut.de
 - client-fingerprint: chrome
   encryption: none
-  name: 🇨🇦 | @WhiteDNS | CA257|3.8MB/s|DNSOK|GPT⁺-CA
-  network: ws
-  port: 8443
-  server: maple.adaspoloandco.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: db3f09ae-23f2-42b8-abee-7b89fb392c5e
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/65.0.3325.181 Safari/537.36
-    path: /uploader.php
-  xudp: true
-  servername: maple.adaspoloandco.com
-- name: 🇨🇦 | @WhiteDNS | CA258|2.6MB/s|DNSOK|GPT⁺-CA
-  port: 443
-  server: 184.107.106.68
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA116|3.9MB/s|DNSOK|GPT⁺-CA
   network: tcp
-  servername: lizca2.footballfantasyforum.com
+  port: 41373
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
+  tls: true
+  type: vless
+  udp: true
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  xudp: true
+  servername: google.com
 - client-fingerprint: chrome
   encryption: none
-  name: 🇨🇦 | @WhiteDNS | CA259|2.5MB/s|DNSOK|GPT⁺-CA
-  network: ws
-  port: 8443
-  server: 54.39.96.233
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA117|2.7MB/s|DNSOK|GPT⁺-CA
+  network: tcp#1⛑️@oneclickvpnkeys
+  port: 41373
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
   tls: true
   type: vless
   udp: true
-  uuid: db3f09ae-23f2-42b8-abee-7b89fb392c5e
-  ws-opts:
-    headers:
-      Host: maple.adaspoloandco.com
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
-    path: /uploader.php
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
   xudp: true
-  servername: maple.adaspoloandco.com
-- client-fingerprint: qq
-  name: 🇨🇦 | @WhiteDNS | CA260|2.4MB/s|DNSOK|GPT⁺-CA
-  network: ws
-  port: 8443
-  server: maple.adaspoloandco.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: db3f09ae-23f2-42b8-abee-7b89fb392c5e
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
-    path: /uploader.php
-  xudp: true
-  servername: maple.adaspoloandco.com
-- client-fingerprint: firefox
-  encryption: none
-  name: 🇨🇦 | @WhiteDNS | CA261|636KB/s|DNSOK|GPT⁺-TR
-  network: tcp
-  port: 8443
-  server: 195.162.69.203
-  tls: true
-  type: vless
-  udp: true
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  xudp: true
-  servername: 195-162-69-203.sslip.io
-- client-fingerprint: firefox
-  name: 🇨🇦 | @WhiteDNS | CA262|626KB/s|DNSOK|GPT⁺-TR
-  port: 8443
-  server: 195.162.69.203
+  servername: google.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA118|1.8MB/s|DNSOK|GPT⁺-CA
+  port: 41373
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
   network: tcp
-  servername: 195-162-69-203.sslip.io
-- client-fingerprint: firefox
-  name: 🇨🇦 | @WhiteDNS | CA263|575KB/s|DNSOK|GPT⁺-TR
-  port: 8443
-  server: 195-162-69-203.sslip.io
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  network: tcp
-  servername: 195-162-69-203.sslip.io
+  servername: google.com
 proxy-groups:
 - name: CA-Auto
   type: url-test
   proxies:
-  - 🇨🇦 | @WhiteDNS | CA255|5.8MB/s|DNSOK|GPT⁺-NO
-  - 🇨🇦 | @WhiteDNS | CA256|4.5MB/s|DNSOK|GPT⁺-NO
-  - 🇨🇦 | @WhiteDNS | CA257|3.8MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA258|2.6MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA259|2.5MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA260|2.4MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA261|636KB/s|DNSOK|GPT⁺-TR
-  - 🇨🇦 | @WhiteDNS | CA262|626KB/s|DNSOK|GPT⁺-TR
-  - 🇨🇦 | @WhiteDNS | CA263|575KB/s|DNSOK|GPT⁺-TR
+  - 🇨🇦 | @WhiteDNS | CA112|6.0MB/s|DNSOK|GPT⁺-NO
+  - 🇨🇦 | @WhiteDNS | CA113|5.7MB/s|DNSOK|GPT⁺-NO
+  - 🇨🇦 | @WhiteDNS | CA114|5.6MB/s|DNSOK|GPT⁺-NO
+  - 🇨🇦 | @WhiteDNS | CA115|5.5MB/s|DNSOK|GPT⁺-NO
+  - 🇨🇦 | @WhiteDNS | CA116|3.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA117|2.7MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA118|1.8MB/s|DNSOK|GPT⁺-CA
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
