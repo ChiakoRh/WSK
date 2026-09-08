@@ -14,8 +14,9 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - client-fingerprint: firefox
+  encryption: none
   flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT276|6.4MB/s|DNSOK|GPT⁺
+  name: ❓ | @WhiteDNS | OT119|1.8MB/s|DNSOK|GPT⁺-GB
   network: tcp
   port: 443
   reality-opts:
@@ -25,41 +26,14 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 91cb90fd-2fad-4bd7-84bd-f108a71c287a
+  uuid: 972f1d1c-08e5-4485-a888-65688b5c7557
   xudp: true
   servername: slashdot.org
-- encryption: none
-  name: ❓ | @WhiteDNS | OT277|1.4MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 47878
-  server: 152.69.195.67
-  type: vless
-  udp: true
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-  xudp: true
-  servername: 152.69.195.67
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT278|1.0MB/s|DNSOK|GPT⁺-DE
-  port: 443
-  reality-opts:
-    public-key: HKKWGVu7xJfscDTH_28WhqSfSnp8fA5jpj7X1eMO-mU
-    short-id: 1067b23f928e7618
-  server: 200.165.229.159
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3db8407b-1f96-4b82-bfeb-55258c1e57b4
-  network: tcp
-  servername: flarora.ferreo.sbs
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT276|6.4MB/s|DNSOK|GPT⁺
-  - ❓ | @WhiteDNS | OT277|1.4MB/s|DNSOK|GPT⁺-JP
-  - ❓ | @WhiteDNS | OT278|1.0MB/s|DNSOK|GPT⁺-DE
+  - ❓ | @WhiteDNS | OT119|1.8MB/s|DNSOK|GPT⁺-GB
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

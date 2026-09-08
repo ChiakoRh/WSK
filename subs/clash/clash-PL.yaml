@@ -13,32 +13,29 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- cipher: aes-256-gcm
+  name: 🇵🇱 | @WhiteDNS | PL76|6.9MB/s|DNSOK|GPT⁺-PL
+  password: itzvpn@321
+  port: 8388
+  server: 51.83.192.80
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   encryption: none
-  name: 🇵🇱 | @WhiteDNS | PL68|6.5MB/s|DNSOK|GPT⁺-PL
-  network: ws
-  port: 8443
-  server: chopin.adaspoloandco.com
+  name: 🇵🇱 | @WhiteDNS | PL77|5.9MB/s|DNSOK|GPT⁺-PL
+  network: tcp
+  port: 8118
+  reality-opts:
+    public-key: LjAkLizwkZf35ObrUMFZ22UHXTEJzpgcTvHk9AuzcUM
+    short-id: ''
+  server: plll.banibus.ir
   tls: true
   type: vless
   udp: true
-  uuid: f798a2c4-c51b-409d-b349-ca8455b36796
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/31.0.1650.57 Safari/537.36
-    path: /download.php
+  uuid: 8b54a46a-e66b-48cc-bf5a-88f0855a3598
   xudp: true
-  servername: chopin.adaspoloandco.com
-- cipher: chacha20-ietf-poly1305
-  name: 🇵🇱 | @WhiteDNS | PL69|6.3MB/s|DNSOK|GPT⁺-PL
-  password: VJtsgllDDJfNmaTe
-  port: 8388
-  server: 64.176.73.160
-  type: ss
-  udp: true
-- name: 🇵🇱 | @WhiteDNS | PL70|5.5MB/s|DNSOK|GPT⁺-PL
+  servername: play.googleapis.com
+- name: 🇵🇱 | @WhiteDNS | PL78|5.6MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 151.115.54.133
@@ -46,17 +43,8 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇵🇱 | @WhiteDNS | PL71|4.9MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 37.120.156.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 - client-fingerprint: qq
-  encryption: none
-  name: 🇵🇱 | @WhiteDNS | PL72|4.8MB/s|DNSOK|GPT⁺-PL
+  name: 🇵🇱 | @WhiteDNS | PL79|4.4MB/s|DNSOK|GPT⁺-PL
   network: ws
   port: 8443
   server: chopin.adaspoloandco.com
@@ -66,29 +54,37 @@ proxies:
   uuid: f798a2c4-c51b-409d-b349-ca8455b36796
   ws-opts:
     headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J111M Build/LMY47V) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+      Host: chopin.adaspoloandco.com
+      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/42.0.2311.135 Safari/537.36
     path: /download.php
   xudp: true
   servername: chopin.adaspoloandco.com
-- name: 🇵🇱 | @WhiteDNS | PL73|2.4MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL80|4.2MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 7
   server: 91.228.89.45
   skip-cert-verify: true
   type: http
   username: ''
+- name: 🇵🇱 | @WhiteDNS | PL81|4.1MB/s|DNSOK|GPT⁺-PL
+  password: ''
+  port: 443
+  server: 37.120.156.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 proxy-groups:
 - name: PL-Auto
   type: url-test
   proxies:
-  - 🇵🇱 | @WhiteDNS | PL68|6.5MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL69|6.3MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL70|5.5MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL71|4.9MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL72|4.8MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL73|2.4MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL76|6.9MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL77|5.9MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL78|5.6MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL79|4.4MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL80|4.2MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL81|4.1MB/s|DNSOK|GPT⁺-PL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
