@@ -13,63 +13,10 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT166|85.3MB/s|DNSOK|GPT⁺-IT
-  network: tcp
-  port: 32833
-  reality-opts:
-    public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
-    short-id: a0a305ccc8e94aa8
-  server: 172.238.232.239
-  tls: true
-  type: vless
-  udp: true
-  uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
-  xudp: true
-  servername: www.intel.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT167|50.6MB/s|DNSOK|GPT⁺-IT
-  port: 32833
-  reality-opts:
-    public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
-    short-id: a0a305ccc8e94aa8
-  server: 172.238.232.239
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
-  network: tcp
-  servername: www.intel.com
-- name: 🇮🇹 | @WhiteDNS | IT168|18.6MB/s|DNSOK|GPT⁺
-  network: ws
-  port: 8880
-  server: 162.159.43.187
-  type: vless
-  udp: true
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  ws-opts:
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /?ed=2560security=tls
-  xudp: true
-- name: 🇮🇹 | @WhiteDNS | IT169|14.2MB/s|DNSOK|GPT⁺-IT
-  password: None
-  port: 443
-  server: 185.183.105.146
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT170|7.9MB/s|DNSOK|GPT⁺-IT
+  name: 🇮🇹 | @WhiteDNS | IT151|68.8MB/s|DNSOK|GPT⁺-IT
   network: raw
   port: 32833
   reality-opts:
@@ -82,26 +29,62 @@ proxies:
   uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
   xudp: true
   servername: www.intel.com
-- encryption: none
-  name: 🇮🇹 | @WhiteDNS | IT171|777KB/s|DNSOK|GPT⁺-IT
+- name: 🇮🇹 | @WhiteDNS | IT152|30.2MB/s|DNSOK|GPT⁺-IT
+  password: None
+  port: 443
+  server: 185.183.105.130
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇮🇹 | @WhiteDNS | IT153|14.3MB/s|DNSOK|GPT⁺-IT
   network: tcp
-  port: 10086
-  server: 204.216.216.23
+  port: 32833
+  reality-opts:
+    public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
+    short-id: a0a305ccc8e94aa8
+  server: 172.238.232.239
+  tls: true
   type: vless
   udp: true
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
   xudp: true
-  servername: /?BIA_TELEGRAM@MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI
+  servername: www.intel.com
+- name: 🇮🇹 | @WhiteDNS | IT154|5.2MB/s|DNSOK|GPT⁺-IT
+  password: ''
+  port: 443
+  server: 185.183.105.146
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇮🇹 | @WhiteDNS | IT155|5.2MB/s|DNSOK|GPT⁺-IT
+  port: 32833
+  reality-opts:
+    public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
+    short-id: a0a305ccc8e94aa8
+  server: 172.238.232.239
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
+  network: tcp
+  servername: www.intel.com
 proxy-groups:
 - name: IT-Auto
   type: url-test
   proxies:
-  - 🇮🇹 | @WhiteDNS | IT166|85.3MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT167|50.6MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT168|18.6MB/s|DNSOK|GPT⁺
-  - 🇮🇹 | @WhiteDNS | IT169|14.2MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT170|7.9MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT171|777KB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT151|68.8MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT152|30.2MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT153|14.3MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT154|5.2MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT155|5.2MB/s|DNSOK|GPT⁺-IT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

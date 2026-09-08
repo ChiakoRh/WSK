@@ -1,91 +1,21 @@
 proxies:
+- cipher: aes-256-cfb
+  name: 🇰🇷 | @WhiteDNS | KR46|1.5MB/s|DNSOK|GPT⁺-KR
+  password: 1234!@#$
+  port: 1774
+  server: 49.254.204.134
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🇰🇷 | @WhiteDNS | KR47|1.3MB/s|DNSOK|GPT⁺-KR
+  password: 1234!@#$
+  port: 1774
+  server: 49.254.204.133
+  type: ss
+  udp: true
 - alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR76|1.7MB/s|DNSOK|GPT⁺-KR
-  network: raw
-  port: 443
-  server: 140.238.2.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  xudp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR77|1.7MB/s|DNSOK|GPT⁺-KR
-  network: none
-  port: 443
-  server: 140.238.2.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  xudp: true
-- alterId: 0
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR78|1.6MB/s|DNSOK|GPT⁺-KR
-  port: 443
-  server: 140.238.2.250
-  type: vmess
-  udp: true
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  network: tcp
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 🇰🇷 | @WhiteDNS | KR79|1.5MB/s|DNSOK|GPT⁺-KR
-  network: http
-  port: 80
-  server: 217.142.138.61
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ac1b933d-afff-4487-93ef-f57130a55dff
-  xudp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR80|1.5MB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 80
-  server: 132.145.80.230
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  ws-opts:
-    headers: {}
-    path: /cctv13.m3u8
-  xudp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR81|1.5MB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 80
-  server: 132.145.80.230
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  ws-opts:
-    headers: {}
-    path: /cctv13.m3u8
-  xudp: true
-  servername: kr02.a0a.xyz
-- alterId: '0'
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR82|1.4MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR48|1.1MB/s|DNSOK|GPT⁺-KR
   network: tcp
   port: 443
   server: 140.238.2.250
@@ -95,25 +25,10 @@ proxies:
   udp: true
   uuid: 41a7089a-040b-4538-8b8d-010902405bde
   xudp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇰🇷 | @WhiteDNS | KR83|1.3MB/s|DNSOK|GPT⁺-KR
-  port: 19179
-  reality-opts:
-    public-key: BabvzCKB_cqCz56qFQhOWIypFKFhEWo9Eyn_JPZIAxA
-    short-id: fa1e592603c283
-  server: 3.38.1.152
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 10dd7b2d-eda2-4a47-9f6e-5093a3cd7ded
-  network: tcp
-  servername: www.intel.com
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇰🇷 | @WhiteDNS | KR84|1.3MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR49|1.1MB/s|DNSOK|GPT⁺-KR
   network: raw
   port: 28482
   reality-opts:
@@ -127,24 +42,8 @@ proxies:
   xudp: true
   servername: www.intel.com
 - client-fingerprint: firefox
-  encryption: none
   flow: xtls-rprx-vision
-  name: 🇰🇷 | @WhiteDNS | KR85|1.2MB/s|DNSOK|GPT⁺-KR
-  network: raw
-  port: 19179
-  reality-opts:
-    public-key: BabvzCKB_cqCz56qFQhOWIypFKFhEWo9Eyn_JPZIAxA
-    short-id: fa1e592603c283
-  server: 3.38.1.152
-  tls: true
-  type: vless
-  udp: true
-  uuid: 10dd7b2d-eda2-4a47-9f6e-5093a3cd7ded
-  xudp: true
-  servername: www.intel.com
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇰🇷 | @WhiteDNS | KR86|1.2MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR50|883KB/s|DNSOK|GPT⁺-KR
   port: 28482
   reality-opts:
     public-key: 8fsYG_Pg35aeg1E5Gc3HUaXou2OUQee4ukxVk99iR0s
@@ -157,10 +56,10 @@ proxies:
   uuid: 83973343-90db-423d-a5f7-2e3b56aeb8f4
   network: tcp
   servername: www.intel.com
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇰🇷 | @WhiteDNS | KR87|1.1MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR51|584KB/s|DNSOK|GPT⁺-KR
   network: tcp
   port: 28482
   reality-opts:
@@ -171,21 +70,5 @@ proxies:
   type: vless
   udp: true
   uuid: 83973343-90db-423d-a5f7-2e3b56aeb8f4
-  xudp: true
-  servername: www.intel.com
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇰🇷 | @WhiteDNS | KR88|1012KB/s|DNSOK|GPT⁺-KR
-  network: tcp
-  port: 19179
-  reality-opts:
-    public-key: BabvzCKB_cqCz56qFQhOWIypFKFhEWo9Eyn_JPZIAxA
-    short-id: fa1e592603c283
-  server: 3.38.1.152
-  tls: true
-  type: vless
-  udp: true
-  uuid: 10dd7b2d-eda2-4a47-9f6e-5093a3cd7ded
   xudp: true
   servername: www.intel.com

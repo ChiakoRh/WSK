@@ -13,18 +13,19 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇪🇨 | @WhiteDNS | EC5|1.2MB/s|DNSOK|GPT⁺-EC
+- name: 🇪🇨 | @WhiteDNS | EC5|2.0MB/s|DNSOK|GPT⁺-EC
   password: ''
-  port: 1550
-  server: 45.173.228.217
+  port: 9443
+  server: 38.165.231.71
   skip-cert-verify: true
+  tls: true
   type: http
   username: ''
 proxy-groups:
 - name: EC-Auto
   type: url-test
   proxies:
-  - 🇪🇨 | @WhiteDNS | EC5|1.2MB/s|DNSOK|GPT⁺-EC
+  - 🇪🇨 | @WhiteDNS | EC5|2.0MB/s|DNSOK|GPT⁺-EC
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
