@@ -13,27 +13,18 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇷 | @WhiteDNS | FR209|38.5MB/s|DNSOK|GPT⁺-IT
-  network: ws
-  port: 8443
-  server: milan.adaspoloandco.com
-  tls: true
+- encryption: none
+  name: 🇫🇷 | @WhiteDNS | FR186|28.5MB/s|DNSOK|GPT⁺-FR
+  network: tcp
+  port: 22222
+  server: 15.188.152.249
   type: vless
   udp: true
-  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/62.0.3202.94 Safari/537.36
-    path: /RoBeRt
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   xudp: true
-  servername: milan.adaspoloandco.com
 - client-fingerprint: firefox
   encryption: none
-  name: 🇫🇷 | @WhiteDNS | FR210|22.6MB/s|DNSOK|GPT⁺-FR
+  name: 🇫🇷 | @WhiteDNS | FR187|23.3MB/s|DNSOK|GPT⁺-FR
   network: xhttp
   port: 32202
   reality-opts:
@@ -48,34 +39,9 @@ proxies:
     path: /G3EEoH63
   xudp: true
   servername: www.amazon.com
-- encryption: none
-  name: 🇫🇷 | @WhiteDNS | FR211|7.3MB/s|DNSOK|GPT⁺-FR
-  network: tcp
-  port: 22223
-  server: 13.39.171.238
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇷 | @WhiteDNS | FR212|2.7MB/s|DNSOK|GPT⁺-FR
-  network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 62.210.91.10
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  xudp: true
-  servername: fuck.rkn
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇫🇷 | @WhiteDNS | FR213|2.4MB/s|DNSOK|GPT⁺-FR
+  name: 🇫🇷 | @WhiteDNS | FR188|20.1MB/s|DNSOK|GPT⁺-FR
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
@@ -88,35 +54,56 @@ proxies:
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   network: tcp
   servername: fuck.rkn
+- encryption: none
+  name: 🇫🇷 | @WhiteDNS | FR189|7.7MB/s|DNSOK|GPT⁺-FR
+  network: tcp
+  port: 22224
+  server: 15.188.152.249
+  type: vless
+  udp: true
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  xudp: true
 - client-fingerprint: chrome
-  encryption: none
-  http-opts:
-    headers: {}
-    path:
-    - /naranv2ray
-  name: 🇫🇷 | @WhiteDNS | FR214|1.2MB/s|DNSOK|GPT⁺-PL
-  network: http
-  port: 443
+  flow: xtls-rprx-vision
+  name: 🇫🇷 | @WhiteDNS | FR190|5.6MB/s|DNSOK|GPT⁺-FR
+  port: 23576
   reality-opts:
-    public-key: LrDYMSt1pt2h6n-7YnHpcUAb_IG7QsQ0rfXz8RqkfCY
-    short-id: 9e0fac51cc19d2
-  server: school.fizikade.ir
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.10
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: b2e8f455-3bd9-477c-b8f0-a3198f601565
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  servername: fuck.rkn
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇷 | @WhiteDNS | FR191|1.7MB/s|DNSOK|GPT⁺-FR
+  network: raw
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.10
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   xudp: true
-  servername: play.google.com
+  servername: fuck.rkn
 proxy-groups:
 - name: FR-Auto
   type: url-test
   proxies:
-  - 🇫🇷 | @WhiteDNS | FR209|38.5MB/s|DNSOK|GPT⁺-IT
-  - 🇫🇷 | @WhiteDNS | FR210|22.6MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR211|7.3MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR212|2.7MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR213|2.4MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR214|1.2MB/s|DNSOK|GPT⁺-PL
+  - 🇫🇷 | @WhiteDNS | FR186|28.5MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR187|23.3MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR188|20.1MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR189|7.7MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR190|5.6MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR191|1.7MB/s|DNSOK|GPT⁺-FR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

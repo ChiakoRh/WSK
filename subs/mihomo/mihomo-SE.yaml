@@ -1,21 +1,9 @@
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇸🇪 | @WhiteDNS | SE28|5.5MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 2053
-  server: 104.21.234.13
+- name: 🇸🇪 | @WhiteDNS | SE20|5.8MB/s|DNSOK|GPT⁺-SE
+  password: ''
+  port: 443
+  server: 146.70.242.130
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: d7d8af23-36cd-4c66-a42a-4469c177210f
-  ws-opts:
-    headers:
-      Host: fancy-rain-136e.thisisalee.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/67.0.3396.87 Safari/537.36
-    path: /eyJqdW5rIjoiMXZFdnZOdVFvSkNWIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiOTEuMTg2LjIxOS44MiJdfQ==
-    early-data-header-name: Sec-WebSocket-Protocol
-    max-early-data: 2560
-  xudp: true
-  servername: fancy-rain-136e.thisisalee.workers.dev
+  type: http
+  username: ''

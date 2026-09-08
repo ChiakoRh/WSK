@@ -16,7 +16,7 @@ proxies:
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA112|6.0MB/s|DNSOK|GPT⁺-NO
+  name: 🇨🇦 | @WhiteDNS | CA55|5.0MB/s|DNSOK|GPT⁺-NO
   network: raw
   port: 443
   reality-opts:
@@ -26,75 +26,13 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 5899ca33-5cb2-4fa2-9557-b496bde9c974
+  uuid: 56b04d24-c894-4c47-9821-1826235b1f8e
   xudp: true
-  servername: kibi-institut.de
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA113|5.7MB/s|DNSOK|GPT⁺-NO
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: urD2miGxEfHylELSqqggBKCYIMSNXNTbdPijru7-eAQ
-    short-id: 46babe29a750b634
-  server: 151.242.168.180
-  tls: true
-  type: vless
-  udp: true
-  uuid: 05020afd-d476-406b-8950-ee7dd63a6e64
-  xudp: true
-  servername: kibi-institut.de
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA114|5.6MB/s|DNSOK|GPT⁺-NO
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: urD2miGxEfHylELSqqggBKCYIMSNXNTbdPijru7-eAQ
-    short-id: 46babe29a750b634
-  server: 151.242.168.180
-  tls: true
-  type: vless
-  udp: true
-  uuid: 05020afd-d476-406b-8950-ee7dd63a6e64
-  xudp: true
-  servername: kibi-institut.de
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA115|5.5MB/s|DNSOK|GPT⁺-NO
-  port: 443
-  reality-opts:
-    public-key: urD2miGxEfHylELSqqggBKCYIMSNXNTbdPijru7-eAQ
-    short-id: 46babe29a750b634
-  server: 151.242.168.180
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 05020afd-d476-406b-8950-ee7dd63a6e64
-  network: tcp
   servername: kibi-institut.de
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA116|3.9MB/s|DNSOK|GPT⁺-CA
-  network: tcp
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  tls: true
-  type: vless
-  udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  xudp: true
-  servername: google.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA117|2.7MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA56|4.3MB/s|DNSOK|GPT⁺-CA
   network: tcp#1⛑️@oneclickvpnkeys
   port: 41373
   reality-opts:
@@ -108,8 +46,24 @@ proxies:
   xudp: true
   servername: google.com
 - client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA118|1.8MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA57|4.0MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  port: 41373
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
+  tls: true
+  type: vless
+  udp: true
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  xudp: true
+  servername: google.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA58|3.8MB/s|DNSOK|GPT⁺-CA
   port: 41373
   reality-opts:
     public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
@@ -122,17 +76,26 @@ proxies:
   uuid: a71c8954-66a8-4321-bedb-2336230d81ce
   network: tcp
   servername: google.com
+- client-fingerprint: chrome
+  name: 🇨🇦 | @WhiteDNS | CA59|1.5MB/s|DNSOK|GPT⁺-CA
+  port: 443
+  server: lizca2.footballfantasyforum.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  network: tcp
+  servername: lizca2.footballfantasyforum.com
 proxy-groups:
 - name: CA-Auto
   type: url-test
   proxies:
-  - 🇨🇦 | @WhiteDNS | CA112|6.0MB/s|DNSOK|GPT⁺-NO
-  - 🇨🇦 | @WhiteDNS | CA113|5.7MB/s|DNSOK|GPT⁺-NO
-  - 🇨🇦 | @WhiteDNS | CA114|5.6MB/s|DNSOK|GPT⁺-NO
-  - 🇨🇦 | @WhiteDNS | CA115|5.5MB/s|DNSOK|GPT⁺-NO
-  - 🇨🇦 | @WhiteDNS | CA116|3.9MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA117|2.7MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA118|1.8MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA55|5.0MB/s|DNSOK|GPT⁺-NO
+  - 🇨🇦 | @WhiteDNS | CA56|4.3MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA57|4.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA58|3.8MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA59|1.5MB/s|DNSOK|GPT⁺-CA
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

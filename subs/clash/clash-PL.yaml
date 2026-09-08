@@ -13,23 +13,8 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇵🇱 | @WhiteDNS | PL64|6.7MB/s|DNSOK|GPT⁺-PL
-  password: VJtsgllDDJfNmaTe
-  port: 8388
-  server: 64.176.73.160
-  type: ss
-  udp: true
-- name: 🇵🇱 | @WhiteDNS | PL65|5.9MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 151.115.54.133
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 - client-fingerprint: qq
-  name: 🇵🇱 | @WhiteDNS | PL66|4.8MB/s|DNSOK|GPT⁺-PL
+  name: 🇵🇱 | @WhiteDNS | PL59|20.5MB/s|DNSOK|GPT⁺-PL
   network: ws
   port: 8443
   server: chopin.adaspoloandco.com
@@ -40,34 +25,51 @@ proxies:
   ws-opts:
     headers:
       Host: chopin.adaspoloandco.com
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.110 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/49.0.2623.110 Safari/537.36
     path: /download.php
   xudp: true
   servername: chopin.adaspoloandco.com
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇵🇱 | @WhiteDNS | PL67|4.4MB/s|DNSOK|GPT⁺-PL
-  network: tcp
-  port: 8118
-  reality-opts:
-    public-key: LjAkLizwkZf35ObrUMFZ22UHXTEJzpgcTvHk9AuzcUM
-    short-id: ''
-  server: plll.banibus.ir
+- client-fingerprint: qq
+  name: 🇵🇱 | @WhiteDNS | PL60|19.9MB/s|DNSOK|GPT⁺-PL
+  network: ws
+  port: 8443
+  server: chopin.adaspoloandco.com
   tls: true
   type: vless
   udp: true
-  uuid: 8b54a46a-e66b-48cc-bf5a-88f0855a3598
+  uuid: f798a2c4-c51b-409d-b349-ca8455b36796
+  ws-opts:
+    headers:
+      Host: chopin.adaspoloandco.com
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G610M) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
+    path: /download.php
   xudp: true
-  servername: play.googleapis.com
+  servername: chopin.adaspoloandco.com
+- name: 🇵🇱 | @WhiteDNS | PL61|6.1MB/s|DNSOK|GPT⁺-PL
+  password: ''
+  port: 443
+  server: 151.115.54.133
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- cipher: chacha20-ietf-poly1305
+  name: 🇵🇱 | @WhiteDNS | PL62|1.0MB/s|DNSOK|GPT⁺-PL
+  password: VJtsgllDDJfNmaTe
+  port: 8388
+  server: 64.176.73.160
+  type: ss
+  udp: true
 proxy-groups:
 - name: PL-Auto
   type: url-test
   proxies:
-  - 🇵🇱 | @WhiteDNS | PL64|6.7MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL65|5.9MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL66|4.8MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL67|4.4MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL59|20.5MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL60|19.9MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL61|6.1MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL62|1.0MB/s|DNSOK|GPT⁺-PL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
