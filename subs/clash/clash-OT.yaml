@@ -13,26 +13,43 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: qq
+- client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT195|13.2MB/s|DNSOK|GPT⁺-GB
+  name: ❓ | @WhiteDNS | OT158|7.9MB/s|DNSOK|GPT⁺-GB
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: tPyAWkalFM4yi9lYY0zLDRxQyfSwPDwiexAy9QOjrWI
+    short-id: 42171a632f3b99ed
+  server: 95.154.221.153
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6c245314-225b-4999-9051-180b8dba117c
+  xudp: true
+  servername: strapi.io
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: ❓ | @WhiteDNS | OT159|7.4MB/s|DNSOK|GPT⁺-GB
+  network: tcp
   port: 443
   reality-opts:
     public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
     short-id: fd55b698ee8c3629
-  server: 109.169.85.137
-  skip-cert-verify: true
+  server: 78.129.149.85
   tls: true
   type: vless
   udp: true
-  uuid: defa74ea-6904-4167-bbf5-c3db0b6bccb5
-  network: tcp
-  servername: slashdot.org
+  uuid: 4dcc91a0-f0c4-42a1-9167-6ee8c881a50f
+  xudp: true
+  servername: foodnetwork.com
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT195|13.2MB/s|DNSOK|GPT⁺-GB
+  - ❓ | @WhiteDNS | OT158|7.9MB/s|DNSOK|GPT⁺-GB
+  - ❓ | @WhiteDNS | OT159|7.4MB/s|DNSOK|GPT⁺-GB
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

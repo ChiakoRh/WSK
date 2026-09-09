@@ -1,7 +1,7 @@
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT123|78.3MB/s|DNSOK|GPT⁺-IT
+  name: 🇮🇹 | @WhiteDNS | IT970|101.7MB/s|DNSOK|GPT⁺-IT
   port: 32833
   reality-opts:
     public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
@@ -15,28 +15,40 @@ proxies:
   network: tcp
   servername: www.intel.com
 - cipher: aes-256-gcm
-  name: 🇮🇹 | @WhiteDNS | IT124|54.6MB/s|DNSOK|GPT⁺-IT
-  password: itzvpn@321
+  name: 🇮🇹 | @WhiteDNS | IT971|44.0MB/s|DNSOK|GPT⁺-IT
+  password: qMvJmCbMduKUoeHq
   port: 8388
-  server: 57.131.48.45
+  server: 66.245.207.70
   type: ss
   udp: true
-- name: 🇮🇹 | @WhiteDNS | IT125|44.0MB/s|DNSOK|GPT⁺-IT
-  password: ''
+- name: 🇮🇹 | @WhiteDNS | IT972|31.5MB/s|DNSOK|GPT⁺-IT
+  password: None
   port: 443
-  server: 185.183.105.146
+  server: 185.183.105.130
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇮🇹 | @WhiteDNS | IT126|23.1MB/s|DNSOK|GPT⁺-IT
-  password: ''
-  port: 3133
-  server: 89.46.78.17
-  skip-cert-verify: true
-  type: http
-  username: ''
-- name: 🇮🇹 | @WhiteDNS | IT127|5.7MB/s|DNSOK|GPT⁺
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇮🇹 | @WhiteDNS | IT973|7.8MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  password: Telegram_healer_config
+  port: 443
+  server: 104.21.4.124
+  skip-cert-verify: false
+  sni: vRE6r9qrbQi0T25tg.SRtB0M3HDbWr2cjZ8fJuR.WoRKerS.DEv
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /tr/W3Ei3SdcW9sRVMLIbEd8sB1lm
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2560
+- name: 🇮🇹 | @WhiteDNS | IT974|6.1MB/s|DNSOK|GPT⁺-IT
   password: None
   port: 443
   server: 178.237.4.200
@@ -44,3 +56,20 @@ proxies:
   tls: true
   type: http
   username: ''
+- client-fingerprint: chrome
+  name: 🇮🇹 | @WhiteDNS | IT975|2.8MB/s|DNSOK|GPT⁺-US
+  network: ws
+  port: 8443
+  server: singapore.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
+  ws-opts:
+    headers:
+      Host: c7dabe95.proxy-978.pages.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.139 Safari/537.36
+    path: /
+  xudp: true
+  servername: c7dabe95.proxy-978.pages.dev

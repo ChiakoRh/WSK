@@ -13,8 +13,16 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇪 | @WhiteDNS | IE10|18.1MB/s|DNSOK|GPT⁺-IE
+- name: 🇮🇪 | @WhiteDNS | IE51|6.1MB/s|DNSOK|GPT⁺-IE
   password: ''
+  port: 443
+  server: 149.88.96.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇮🇪 | @WhiteDNS | IE52|5.7MB/s|DNSOK|GPT⁺-IE
+  password: None
   port: 443
   server: 149.88.96.1
   skip-cert-verify: true
@@ -25,7 +33,8 @@ proxy-groups:
 - name: IE-Auto
   type: url-test
   proxies:
-  - 🇮🇪 | @WhiteDNS | IE10|18.1MB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE51|6.1MB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE52|5.7MB/s|DNSOK|GPT⁺-IE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
