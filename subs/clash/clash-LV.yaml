@@ -13,28 +13,164 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇱🇻 | @WhiteDNS | LV31|5.6MB/s|DNSOK|GPT⁺-LV
-  password: None
+- name: 🇱🇻 | @WhiteDNS | LV35|5.1MB/s|DNSOK|GPT⁺-LV
+  network: ws
+  port: 2096
+  server: 89.36.161.222
+  type: vless
+  udp: true
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  ws-opts:
+    headers:
+      Host: laoye.in-gect.fun
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Moto G (5) Build/NPPS25.137-93-14)
+        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: firefox
+  name: 🇱🇻 | @WhiteDNS | LV36|4.9MB/s|DNSOK|GPT⁺-LV
+  network: xhttp
+  port: 8443
+  reality-opts:
+    public-key: Z3adeet9wvavdQ8mY6BZYgoXe22BV5DFcsyFChWYNUM
+    short-id: ''
+  server: 89.36.161.222
+  tls: true
+  type: vless
+  udp: true
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  xhttp-opts: {}
+  xudp: true
+  servername: laoye.in-gect.fun
+- name: 🇱🇻 | @WhiteDNS | LV37|4.6MB/s|DNSOK|GPT⁺-LV
+  network: ws
+  port: 2096
+  server: 89.36.161.222
+  type: vless
+  udp: true
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  ws-opts:
+    headers:
+      Host: laoye.in-gect.fun
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/50.0.2661.94 Safari/537.36
+    path: /
+  xudp: true
+  servername: laoye.in-gect.fun
+- name: 🇱🇻 | @WhiteDNS | LV38|4.5MB/s|DNSOK|GPT⁺-LV
+  password: ''
   port: 443
   server: 109.248.147.66
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇱🇻 | @WhiteDNS | LV32|4.4MB/s|DNSOK|GPT⁺-LV
-  password: ''
-  port: 443
-  server: 109.248.149.34
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇱🇻 | @WhiteDNS | LV39|4.4MB/s|DNSOK|GPT⁺
+  network: tcp
+  port: 2053
+  reality-opts:
+    public-key: cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg
+    short-id: d26f4703cdd30f4e
+  server: 89.36.161.222
+  tls: true
+  type: vless
+  udp: true
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  xudp: true
+  servername: vk.ru
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: 🇱🇻 | @WhiteDNS | LV40|3.3MB/s|DNSOK|GPT⁺-LV
+  port: 2053
+  reality-opts:
+    public-key: cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg
+    short-id: d26f4703cdd30f4e
+  server: laoye.in-gect.fun
   skip-cert-verify: true
   tls: true
-  type: http
-  username: ''
+  type: vless
+  udp: true
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  network: tcp
+  servername: vk.ru
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇱🇻 | @WhiteDNS | LV41|2.9MB/s|DNSOK|GPT⁺-LV
+  port: 2053
+  reality-opts:
+    public-key: cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg
+    short-id: d26f4703cdd30f4e
+  server: 89.36.161.222
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  network: tcp
+  servername: vk.ru
+- name: 🇱🇻 | @WhiteDNS | LV42|2.8MB/s|DNSOK|GPT⁺-LV
+  network: ws
+  port: 2096
+  server: 89.36.161.222
+  type: vless
+  udp: true
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 5.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /
+  xudp: true
+  servername: 89.36.161.222
+- encryption: none
+  name: 🇱🇻 | @WhiteDNS | LV43|2.7MB/s|DNSOK|GPT⁺-LV
+  network: ws
+  port: 2096
+  server: laoye.in-gect.fun
+  type: vless
+  udp: true
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  ws-opts:
+    headers:
+      Host: laoye.in-gect.fun
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/68.0.3440.106 Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇱🇻 | @WhiteDNS | LV44|2.3MB/s|DNSOK|GPT⁺-LV
+  network: tcp#🪆95@oneclickvpnkeyshysteria2://h_b9x3942fj9x_kpx3914kq_nz934hfg_rt@103.246.248.234:8080/?insecure=1
+  port: 2053
+  reality-opts:
+    public-key: cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg
+    short-id: d26f4703cdd30f4e
+  server: 89.36.161.222
+  tls: true
+  type: vless
+  udp: true
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  xudp: true
+  servername: vk.ru
 proxy-groups:
 - name: LV-Auto
   type: url-test
   proxies:
-  - 🇱🇻 | @WhiteDNS | LV31|5.6MB/s|DNSOK|GPT⁺-LV
-  - 🇱🇻 | @WhiteDNS | LV32|4.4MB/s|DNSOK|GPT⁺-LV
+  - 🇱🇻 | @WhiteDNS | LV35|5.1MB/s|DNSOK|GPT⁺-LV
+  - 🇱🇻 | @WhiteDNS | LV36|4.9MB/s|DNSOK|GPT⁺-LV
+  - 🇱🇻 | @WhiteDNS | LV37|4.6MB/s|DNSOK|GPT⁺-LV
+  - 🇱🇻 | @WhiteDNS | LV38|4.5MB/s|DNSOK|GPT⁺-LV
+  - 🇱🇻 | @WhiteDNS | LV39|4.4MB/s|DNSOK|GPT⁺
+  - 🇱🇻 | @WhiteDNS | LV40|3.3MB/s|DNSOK|GPT⁺-LV
+  - 🇱🇻 | @WhiteDNS | LV41|2.9MB/s|DNSOK|GPT⁺-LV
+  - 🇱🇻 | @WhiteDNS | LV42|2.8MB/s|DNSOK|GPT⁺-LV
+  - 🇱🇻 | @WhiteDNS | LV43|2.7MB/s|DNSOK|GPT⁺-LV
+  - 🇱🇻 | @WhiteDNS | LV44|2.3MB/s|DNSOK|GPT⁺-LV
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

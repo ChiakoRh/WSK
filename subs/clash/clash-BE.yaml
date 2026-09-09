@@ -13,54 +13,19 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇧🇪 | @WhiteDNS | BE13|21.1MB/s|DNSOK|GPT⁺-BE
-  network: ws
-  port: 2086
-  server: 172.67.155.136
-  type: vless
-  udp: true
-  uuid: 73796e63-0000-4000-8000-000000000007
-  ws-opts:
-    headers:
-      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-    path: /sync
-- encryption: none
-  name: 🇧🇪 | @WhiteDNS | BE14|6.2MB/s|DNSOK|GPT⁺-BE
-  network: ws
-  port: 2095
-  server: 104.21.64.198
-  type: vless
-  udp: true
-  uuid: 73796e63-0000-4000-8000-000000000008
-  ws-opts:
-    headers:
-      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.63 Safari/537.36
-    path: /sync
-  xudp: true
-- name: 🇧🇪 | @WhiteDNS | BE15|5.9MB/s|DNSOK|GPT⁺-BE
-  network: ws
-  port: 2086
-  server: 104.21.64.198
-  type: vless
-  udp: true
-  uuid: 73796e63-0000-4000-8000-000000000007
-  ws-opts:
-    headers:
-      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/53.0.2785.143 Safari/537.36
-    path: /sync
-  xudp: true
-  servername: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: 🇧🇪 | @WhiteDNS | BE3|5.7MB/s|DNSOK|GPT⁺-BE
+  password: ''
+  port: 443
+  server: 146.70.123.98
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 proxy-groups:
 - name: BE-Auto
   type: url-test
   proxies:
-  - 🇧🇪 | @WhiteDNS | BE13|21.1MB/s|DNSOK|GPT⁺-BE
-  - 🇧🇪 | @WhiteDNS | BE14|6.2MB/s|DNSOK|GPT⁺-BE
-  - 🇧🇪 | @WhiteDNS | BE15|5.9MB/s|DNSOK|GPT⁺-BE
+  - 🇧🇪 | @WhiteDNS | BE3|5.7MB/s|DNSOK|GPT⁺-BE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

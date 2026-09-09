@@ -1,23 +1,31 @@
 proxies:
-- encryption: none
-  name: 🇫🇷 | @WhiteDNS | FR250|27.4MB/s|DNSOK|GPT⁺-CH
-  network: ws
-  port: 2086
-  server: 172.67.143.54
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇷 | @WhiteDNS | FR259|45.3MB/s|DNSOK|GPT⁺-FR
+  password: BqnqToih0PbU
+  port: 8388
+  server: 51.255.13.232
+  type: ss
   udp: true
-  uuid: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
-  ws-opts:
-    headers:
-      Host: aged-silence-8d7d.tahaggs.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/51.0.2704.103 Safari/537.36
-    path: /taha3
-  xudp: true
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇫🇷 | @WhiteDNS | FR251|5.7MB/s|DNSOK|GPT⁺-FR
+  name: 🇫🇷 | @WhiteDNS | FR260|5.4MB/s|DNSOK|GPT⁺-FR
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.10
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  xudp: true
+  servername: fuck.rkn
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇷 | @WhiteDNS | FR261|5.2MB/s|DNSOK|GPT⁺-FR
   network: raw
   port: 23576
   reality-opts:
@@ -30,88 +38,3 @@ proxies:
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   xudp: true
   servername: fuck.rkn
-- name: 🇫🇷 | @WhiteDNS | FR252|4.4MB/s|DNSOK|GPT⁺-FR
-  password: ''
-  port: 443
-  server: 141.94.16.4
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇫🇷 | @WhiteDNS | FR253|4.4MB/s|DNSOK|GPT⁺-FR
-  network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 62.210.91.2
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  xudp: true
-  servername: fuck.rkn
-- encryption: none
-  name: 🇫🇷 | @WhiteDNS | FR254|2.7MB/s|DNSOK|GPT⁺-FR
-  network: tcp
-  port: 22223
-  server: 13.36.253.48
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  http-opts:
-    headers: {}
-    path:
-    - /naranv2ray
-  name: 🇫🇷 | @WhiteDNS | FR255|2.5MB/s|DNSOK|GPT⁺-PL
-  network: http
-  port: 443
-  reality-opts:
-    public-key: LrDYMSt1pt2h6n-7YnHpcUAb_IG7QsQ0rfXz8RqkfCY
-    short-id: 9e0fac51cc19d2
-  server: school.fizikade.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: b2e8f455-3bd9-477c-b8f0-a3198f601565
-  xudp: true
-  servername: play.google.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇫🇷 | @WhiteDNS | FR256|1.6MB/s|DNSOK|GPT⁺-FR
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 62.210.91.10
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  servername: fuck.rkn
-- client-fingerprint: chrome
-  encryption: none
-  http-opts:
-    headers: {}
-    path:
-    - /naranv2ray
-  name: 🇫🇷 | @WhiteDNS | FR257|1.0MB/s|DNSOK|GPT⁺-PL
-  network: http
-  port: 443
-  reality-opts:
-    public-key: LrDYMSt1pt2h6n-7YnHpcUAb_IG7QsQ0rfXz8RqkfCY
-    short-id: 9e0fac51cc19d2
-  server: 54.38.138.175
-  tls: true
-  type: vless
-  udp: true
-  uuid: b2e8f455-3bd9-477c-b8f0-a3198f601565
-  xudp: true
-  servername: play.google.com

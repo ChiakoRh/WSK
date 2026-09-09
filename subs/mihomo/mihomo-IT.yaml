@@ -1,7 +1,31 @@
 proxies:
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇮🇹 | @WhiteDNS | IT232|84.6MB/s|DNSOK|GPT⁺-IT
+  network: raw
+  port: 32833
+  reality-opts:
+    public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
+    short-id: a0a305ccc8e94aa8
+  server: 172.238.232.239
+  tls: true
+  type: vless
+  udp: true
+  uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
+  xudp: true
+  servername: www.intel.com
+- name: 🇮🇹 | @WhiteDNS | IT233|29.1MB/s|DNSOK|GPT⁺-IT
+  password: ''
+  port: 443
+  server: 185.183.105.146
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT970|101.7MB/s|DNSOK|GPT⁺-IT
+  name: 🇮🇹 | @WhiteDNS | IT234|27.6MB/s|DNSOK|GPT⁺-IT
   port: 32833
   reality-opts:
     public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
@@ -14,14 +38,22 @@ proxies:
   uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
   network: tcp
   servername: www.intel.com
-- cipher: aes-256-gcm
-  name: 🇮🇹 | @WhiteDNS | IT971|44.0MB/s|DNSOK|GPT⁺-IT
-  password: qMvJmCbMduKUoeHq
-  port: 8388
-  server: 66.245.207.70
-  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇮🇹 | @WhiteDNS | IT235|26.8MB/s|DNSOK|GPT⁺-IT
+  network: tcp
+  port: 32833
+  reality-opts:
+    public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
+    short-id: a0a305ccc8e94aa8
+  server: 172.238.232.239
+  tls: true
+  type: vless
   udp: true
-- name: 🇮🇹 | @WhiteDNS | IT972|31.5MB/s|DNSOK|GPT⁺-IT
+  uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
+  xudp: true
+  servername: www.intel.com
+- name: 🇮🇹 | @WhiteDNS | IT236|7.4MB/s|DNSOK|GPT⁺-IT
   password: None
   port: 443
   server: 185.183.105.130
@@ -29,47 +61,12 @@ proxies:
   tls: true
   type: http
   username: ''
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 🇮🇹 | @WhiteDNS | IT973|7.8MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  password: Telegram_healer_config
-  port: 443
-  server: 104.21.4.124
-  skip-cert-verify: false
-  sni: vRE6r9qrbQi0T25tg.SRtB0M3HDbWr2cjZ8fJuR.WoRKerS.DEv
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /tr/W3Ei3SdcW9sRVMLIbEd8sB1lm
-    early-data-header-name: Sec-WebSocket-Protocol
-    max-early-data: 2560
-- name: 🇮🇹 | @WhiteDNS | IT974|6.1MB/s|DNSOK|GPT⁺-IT
-  password: None
-  port: 443
-  server: 178.237.4.200
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  name: 🇮🇹 | @WhiteDNS | IT975|2.8MB/s|DNSOK|GPT⁺-US
-  network: ws
-  port: 8443
-  server: singapore.com
-  tls: true
+- name: 🇮🇹 | @WhiteDNS | IT237|639KB/s|DNSOK|GPT⁺-IT
+  network: tcp
+  port: 10086
+  server: 204.216.216.23
   type: vless
   udp: true
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  ws-opts:
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.139 Safari/537.36
-    path: /
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
   xudp: true
-  servername: c7dabe95.proxy-978.pages.dev
+  servername: /?bia_telegram@marambashi_marambashi_marambashi_marambashi

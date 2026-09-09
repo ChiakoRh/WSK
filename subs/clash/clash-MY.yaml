@@ -15,7 +15,7 @@ dns:
 proxies:
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇲🇾 | @WhiteDNS | MY13|2.6MB/s|DNSOK|GPT⁺-MY
+  name: 🇲🇾 | @WhiteDNS | MY17|2.6MB/s|DNSOK|GPT⁺-MY
   port: 21874
   reality-opts:
     public-key: 75sTDYJk8ylA97-aBhAlF1tU4OaCfdOaOSIBshPW7Bs
@@ -30,7 +30,22 @@ proxies:
   servername: www.amd.com
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇲🇾 | @WhiteDNS | MY14|2.3MB/s|DNSOK|GPT⁺-MY
+  name: 🇲🇾 | @WhiteDNS | MY18|2.0MB/s|DNSOK|GPT⁺-MY
+  network: tcp
+  port: 53271
+  reality-opts:
+    public-key: 1P58ZYmo81kPDnL4U7SnEUA-aT2R86l-o6dbFXoeDjc
+    short-id: 0a9bd9db19578964
+  server: 56.69.159.191
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8358eb5-7210-4cf8-982f-68af141b7694
+  xudp: true
+  servername: www.tesla.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇲🇾 | @WhiteDNS | MY19|1.7MB/s|DNSOK|GPT⁺-MY
   port: 53271
   reality-opts:
     public-key: 1P58ZYmo81kPDnL4U7SnEUA-aT2R86l-o6dbFXoeDjc
@@ -46,7 +61,7 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇲🇾 | @WhiteDNS | MY15|1.6MB/s|DNSOK|GPT⁺-MY
+  name: 🇲🇾 | @WhiteDNS | MY20|1.7MB/s|DNSOK|GPT⁺-MY
   network: raw
   port: 53271
   reality-opts:
@@ -61,7 +76,7 @@ proxies:
   servername: www.tesla.com
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇲🇾 | @WhiteDNS | MY16|1.6MB/s|DNSOK|GPT⁺-MY
+  name: 🇲🇾 | @WhiteDNS | MY21|1.6MB/s|DNSOK|GPT⁺-MY
   network: tcp
   port: 21874
   reality-opts:
@@ -77,7 +92,7 @@ proxies:
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇲🇾 | @WhiteDNS | MY17|1.4MB/s|DNSOK|GPT⁺-MY
+  name: 🇲🇾 | @WhiteDNS | MY22|1.5MB/s|DNSOK|GPT⁺-MY
   network: raw
   port: 21874
   reality-opts:
@@ -90,32 +105,16 @@ proxies:
   uuid: 85dd8227-0f12-4826-a712-6313211774b5
   xudp: true
   servername: www.amd.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇲🇾 | @WhiteDNS | MY18|1020KB/s|DNSOK|GPT⁺-MY
-  network: tcp
-  port: 53271
-  reality-opts:
-    public-key: 1P58ZYmo81kPDnL4U7SnEUA-aT2R86l-o6dbFXoeDjc
-    short-id: 0a9bd9db19578964
-  server: 56.69.159.191
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8358eb5-7210-4cf8-982f-68af141b7694
-  xudp: true
-  servername: www.tesla.com
 proxy-groups:
 - name: MY-Auto
   type: url-test
   proxies:
-  - 🇲🇾 | @WhiteDNS | MY13|2.6MB/s|DNSOK|GPT⁺-MY
-  - 🇲🇾 | @WhiteDNS | MY14|2.3MB/s|DNSOK|GPT⁺-MY
-  - 🇲🇾 | @WhiteDNS | MY15|1.6MB/s|DNSOK|GPT⁺-MY
-  - 🇲🇾 | @WhiteDNS | MY16|1.6MB/s|DNSOK|GPT⁺-MY
-  - 🇲🇾 | @WhiteDNS | MY17|1.4MB/s|DNSOK|GPT⁺-MY
-  - 🇲🇾 | @WhiteDNS | MY18|1020KB/s|DNSOK|GPT⁺-MY
+  - 🇲🇾 | @WhiteDNS | MY17|2.6MB/s|DNSOK|GPT⁺-MY
+  - 🇲🇾 | @WhiteDNS | MY18|2.0MB/s|DNSOK|GPT⁺-MY
+  - 🇲🇾 | @WhiteDNS | MY19|1.7MB/s|DNSOK|GPT⁺-MY
+  - 🇲🇾 | @WhiteDNS | MY20|1.7MB/s|DNSOK|GPT⁺-MY
+  - 🇲🇾 | @WhiteDNS | MY21|1.6MB/s|DNSOK|GPT⁺-MY
+  - 🇲🇾 | @WhiteDNS | MY22|1.5MB/s|DNSOK|GPT⁺-MY
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

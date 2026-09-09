@@ -1,24 +1,63 @@
 proxies:
-- name: 🇫🇮 | @WhiteDNS | FI194|6.4MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 80
-  server: 104.16.72.101
+- alpn:
+  - h2
+  - http/1.1
+  - h3
+  client-fingerprint: firefox
+  encryption: none
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 🇫🇮 | @WhiteDNS | FI138|15.5MB/s|DNSOK|GPT⁺-FI
+  network: grpc
+  port: 2087
+  server: 65.109.185.234
+  tls: true
   type: vless
   udp: true
-  uuid: d5598622-46b8-b017-3af3-232500000001
+  uuid: 83fd52e3-c8d4-4ba6-abf4-445b99fec0f0
+  xudp: true
+  servername: italic.dearhossein-taktaz.ir
+- alpn:
+  - h2
+  - http/1.1
+  - h3
+  client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 🇫🇮 | @WhiteDNS | FI139|7.0MB/s|DNSOK|GPT⁺-FI
+  network: grpc
+  port: 2087
+  server: italic.dearhossein-taktaz.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 83fd52e3-c8d4-4ba6-abf4-445b99fec0f0
+  xudp: true
+  servername: italic.dearhossein-taktaz.ir
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI140|6.6MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 443
+  server: 199.232.78.159
+  tls: true
+  type: vless
+  udp: true
+  uuid: 98644428-fa02-4617-8d99-4e70086c3240
   ws-opts:
     headers:
-      Host: nahan-core.netizo09.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/53.0.2785.143 Safari/537.36
-    path: /sync
+      Host: 7wwwspeedtestnet.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/49.0.2623.110 Safari/537.36
+    path: /
   xudp: true
-  servername: nahan-core.netizo09.workers.dev
+  servername: ssl.fastly.com
 - alpn:
   - h2
   client-fingerprint: firefox
   encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI195|6.3MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI141|6.6MB/s|DNSOK|GPT⁺-FI
   network: ws
   port: 443
   server: k2.cloud--vpn.site
@@ -29,72 +68,44 @@ proxies:
   ws-opts:
     headers:
       Host: c12.com
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; MYA-L22 Build/HUAWEIMYA-L22) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/47.0.2526.111 Safari/537.36
     path: /
   xudp: true
   servername: ssl.fastly.com
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI196|6.3MB/s|DNSOK|GPT⁺-FI
+- encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI142|6.2MB/s|DNSOK|GPT⁺-FI
   network: ws
-  port: 443
-  server: a2.arshia-nova.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: f54c98ce-ac44-4984-db61-ccca1fdbbf72
-  ws-opts:
-    headers:
-      Host: c12.com
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.3
-        (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
-    path: /
-  xudp: true
-  servername: ssl.fastly.com
-- alpn:
-  - h2
-  - http/1.1
-  - h3
-  client-fingerprint: chrome
-  encryption: none
-  grpc-opts:
-    grpc-service-name: grpc
-  name: 🇫🇮 | @WhiteDNS | FI197|6.2MB/s|DNSOK|GPT⁺-FI
-  network: grpc
-  port: 2087
+  port: 8080
   server: italic.dearhossein-taktaz.ir
-  tls: true
   type: vless
   udp: true
   uuid: 83fd52e3-c8d4-4ba6-abf4-445b99fec0f0
+  ws-opts:
+    headers:
+      Host: italic.dearhossein-taktaz.ir
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.94 Safari/537.36
+    path: /
   xudp: true
-  servername: italic.dearhossein-taktaz.ir
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI198|5.8MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 443
-  server: 151.101.56.6
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI143|4.7MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: HNjZe5pYUhcuE8sASYVVrVSMW_jFfekgLnrnO4xXIyQ
+    short-id: a1b2c3d4
+  server: 217.60.33.44
   tls: true
   type: vless
   udp: true
-  uuid: f54c98ce-ac44-4984-db61-ccca1fdbbf72
-  ws-opts:
-    headers:
-      Host: c12.com
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: /?CHANNEL---madshopx---madshopx---madshopx---madshopx---madshopx---madshopx---madshopx
+  uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
   xudp: true
-  servername: ssl.fastly.com
+  servername: fi.aeternavpn.space
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI199|4.7MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI144|3.0MB/s|DNSOK|GPT⁺-FI
   port: 8443
   reality-opts:
     public-key: HNjZe5pYUhcuE8sASYVVrVSMW_jFfekgLnrnO4xXIyQ
@@ -107,18 +118,17 @@ proxies:
   uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
   network: tcp
   servername: fi.aeternavpn.space
-- encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI200|4.5MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 8080
-  server: italic.dearhossein-taktaz.ir
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI145|1.6MB/s|DNSOK|GPT⁺-FI
+  network: xhttp
+  port: 443
+  server: hel1.nordlinkcloud.com
+  tls: true
   type: vless
   udp: true
-  uuid: 83fd52e3-c8d4-4ba6-abf4-445b99fec0f0
-  ws-opts:
-    headers:
-      Host: italic.dearhossein-taktaz.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/62.0.3202.89 Safari/537.36
-    path: /
+  uuid: 05bfcbaa-cba0-4bce-9103-09fe3f5f0667
+  xhttp-opts:
+    path: /api/v3/stream/
   xudp: true
+  servername: hel1.nordlinkcloud.com
