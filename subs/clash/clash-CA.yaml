@@ -14,10 +14,9 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - client-fingerprint: firefox
-  encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA86|15.5MB/s|DNSOK|GPT⁺-NO
-  network: raw
+  name: 🇨🇦 | @WhiteDNS | CA59|6.6MB/s|DNSOK|GPT⁺-NO
+  network: tcp
   port: 443
   reality-opts:
     public-key: urD2miGxEfHylELSqqggBKCYIMSNXNTbdPijru7-eAQ
@@ -30,40 +29,9 @@ proxies:
   xudp: true
   servername: kibi-institut.de
 - client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA87|15.4MB/s|DNSOK|GPT⁺-NO
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: urD2miGxEfHylELSqqggBKCYIMSNXNTbdPijru7-eAQ
-    short-id: 46babe29a750b634
-  server: 151.242.168.182
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5899ca33-5cb2-4fa2-9557-b496bde9c974
-  xudp: true
-  servername: kibi-institut.de
-- client-fingerprint: edge
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA88|6.0MB/s|DNSOK|GPT⁺-NO
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: urD2miGxEfHylELSqqggBKCYIMSNXNTbdPijru7-eAQ
-    short-id: 46babe29a750b634
-  server: 151.242.168.180
-  tls: true
-  type: vless
-  udp: true
-  uuid: 05020afd-d476-406b-8950-ee7dd63a6e64
-  xudp: true
-  servername: kibi-institut.de
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA89|5.3MB/s|DNSOK|GPT⁺-NO
+  name: 🇨🇦 | @WhiteDNS | CA60|6.1MB/s|DNSOK|GPT⁺-NO
   network: raw
   port: 443
   reality-opts:
@@ -73,12 +41,12 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 5899ca33-5cb2-4fa2-9557-b496bde9c974
+  uuid: 56b04d24-c894-4c47-9821-1826235b1f8e
   xudp: true
   servername: kibi-institut.de
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA90|5.3MB/s|DNSOK|GPT⁺-NO
+  name: 🇨🇦 | @WhiteDNS | CA61|5.9MB/s|DNSOK|GPT⁺-NO
   port: 443
   reality-opts:
     public-key: urD2miGxEfHylELSqqggBKCYIMSNXNTbdPijru7-eAQ
@@ -91,19 +59,16 @@ proxies:
   uuid: 05020afd-d476-406b-8950-ee7dd63a6e64
   network: tcp
   servername: kibi-institut.de
-- name: 🇨🇦 | @WhiteDNS | CA91|4.1MB/s|DNSOK|GPT⁺-CA
-  port: 443
-  server: 184.107.106.68
-  skip-cert-verify: true
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦 | @WhiteDNS | CA62|4.2MB/s|DNSOK|GPT⁺-CA
+  password: FD3rCuOsxOay
+  port: 8388
+  server: 15.235.75.71
+  type: ss
   udp: true
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
-  network: tcp
-  servername: lizca2.footballfantasyforum.com
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA92|3.9MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA63|4.0MB/s|DNSOK|GPT⁺-CA
   network: tcp
   port: 41373
   reality-opts:
@@ -119,7 +84,7 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA93|3.9MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA64|2.9MB/s|DNSOK|GPT⁺-CA
   network: raw
   port: 41373
   reality-opts:
@@ -132,25 +97,24 @@ proxies:
   uuid: a71c8954-66a8-4321-bedb-2336230d81ce
   xudp: true
   servername: google.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA94|3.8MB/s|DNSOK|GPT⁺-CA
-  network: tcp#1⛑️@oneclickvpnkeys
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  tls: true
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - awlix.pcjxq.monster
+    path:
+    - /
+  name: 🇨🇦 | @WhiteDNS | CA65|2.9MB/s|DNSOK|GPT⁺-CA
+  network: http
+  port: 42496
+  server: awlix.pcjxq.monster
   type: vless
   udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  uuid: '@awlix_ir'
   xudp: true
-  servername: google.com
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA95|2.6MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA66|2.9MB/s|DNSOK|GPT⁺-CA
   port: 41373
   reality-opts:
     public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
@@ -163,29 +127,26 @@ proxies:
   uuid: a71c8954-66a8-4321-bedb-2336230d81ce
   network: tcp
   servername: google.com
-- client-fingerprint: chrome
-  name: 🇨🇦 | @WhiteDNS | CA96|1.8MB/s|DNSOK|GPT⁺-QA
+- name: 🇨🇦 | @WhiteDNS | CA67|1.7MB/s|DNSOK|GPT⁺-CA
   network: tcp
-  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
-  port: 10008
-  server: z-jp2.1card.cc
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-  sni: z-jp2.1card.cc
-- client-fingerprint: chrome
-  name: 🇨🇦 | @WhiteDNS | CA97|1.8MB/s|DNSOK|GPT⁺-CA
-  port: 443
-  server: lizca2.footballfantasyforum.com
-  skip-cert-verify: true
-  tls: true
+  port: 12580
+  server: awlix.pcjxq.monster
   type: vless
   udp: true
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
-  network: tcp
-  servername: lizca2.footballfantasyforum.com
+  uuid: '@awlix_ir'
+  xudp: true
 - client-fingerprint: chrome
-  name: 🇨🇦 | @WhiteDNS | CA98|1.3MB/s|DNSOK|GPT⁺-SD
+  name: 🇨🇦 | @WhiteDNS | CA68|1.6MB/s|DNSOK|GPT⁺-AF
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10009
+  server: z-jp2.1card.cc
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇨🇦 | @WhiteDNS | CA69|1.3MB/s|DNSOK|GPT⁺-SD
   network: tcp
   password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
   port: 10012
@@ -195,55 +156,31 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 🇨🇦 | @WhiteDNS | CA99|1.3MB/s|DNSOK|GPT⁺-SD
+  name: 🇨🇦 | @WhiteDNS | CA70|1.2MB/s|DNSOK|GPT⁺-LA
+  network: tcp
   password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
-  port: 10012
-  server: z-jp1.1card.cc
+  port: 10045
+  server: z-sg1.6send.com
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
   udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇨🇦 | @WhiteDNS | CA100|1.2MB/s|DNSOK|GPT⁺-QA
-  network: tcp
-  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
-  port: 10008
-  server: z-jp1.1card.cc
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇨🇦 | @WhiteDNS | CA101|711KB/s|DNSOK|GPT⁺-QA
-  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
-  port: 10008
-  server: z-jp1.1card.cc
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
-  network: tcp
 proxy-groups:
 - name: CA-Auto
   type: url-test
   proxies:
-  - 🇨🇦 | @WhiteDNS | CA86|15.5MB/s|DNSOK|GPT⁺-NO
-  - 🇨🇦 | @WhiteDNS | CA87|15.4MB/s|DNSOK|GPT⁺-NO
-  - 🇨🇦 | @WhiteDNS | CA88|6.0MB/s|DNSOK|GPT⁺-NO
-  - 🇨🇦 | @WhiteDNS | CA89|5.3MB/s|DNSOK|GPT⁺-NO
-  - 🇨🇦 | @WhiteDNS | CA90|5.3MB/s|DNSOK|GPT⁺-NO
-  - 🇨🇦 | @WhiteDNS | CA91|4.1MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA92|3.9MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA93|3.9MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA94|3.8MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA95|2.6MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA96|1.8MB/s|DNSOK|GPT⁺-QA
-  - 🇨🇦 | @WhiteDNS | CA97|1.8MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA98|1.3MB/s|DNSOK|GPT⁺-SD
-  - 🇨🇦 | @WhiteDNS | CA99|1.3MB/s|DNSOK|GPT⁺-SD
-  - 🇨🇦 | @WhiteDNS | CA100|1.2MB/s|DNSOK|GPT⁺-QA
-  - 🇨🇦 | @WhiteDNS | CA101|711KB/s|DNSOK|GPT⁺-QA
+  - 🇨🇦 | @WhiteDNS | CA59|6.6MB/s|DNSOK|GPT⁺-NO
+  - 🇨🇦 | @WhiteDNS | CA60|6.1MB/s|DNSOK|GPT⁺-NO
+  - 🇨🇦 | @WhiteDNS | CA61|5.9MB/s|DNSOK|GPT⁺-NO
+  - 🇨🇦 | @WhiteDNS | CA62|4.2MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA63|4.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA64|2.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA65|2.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA66|2.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA67|1.7MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA68|1.6MB/s|DNSOK|GPT⁺-AF
+  - 🇨🇦 | @WhiteDNS | CA69|1.3MB/s|DNSOK|GPT⁺-SD
+  - 🇨🇦 | @WhiteDNS | CA70|1.2MB/s|DNSOK|GPT⁺-LA
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

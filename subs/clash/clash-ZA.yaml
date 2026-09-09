@@ -13,22 +13,19 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  name: 🇾🇪 | @WhiteDNS | YE2|1.9MB/s|DNSOK|GPT⁺-YE
-  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
-  port: 10010
-  server: z-jp1.1card.cc
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 🇿🇦 | @WhiteDNS | ZA3|2.6MB/s|DNSOK|GPT⁺-ZA
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  port: 16233
+  server: 102.133.165.160
+  type: ss
   udp: true
-  network: tcp
 proxy-groups:
-- name: YE-Auto
+- name: ZA-Auto
   type: url-test
   proxies:
-  - 🇾🇪 | @WhiteDNS | YE2|1.9MB/s|DNSOK|GPT⁺-YE
+  - 🇿🇦 | @WhiteDNS | ZA3|2.6MB/s|DNSOK|GPT⁺-ZA
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,YE-Auto
+- MATCH,ZA-Auto

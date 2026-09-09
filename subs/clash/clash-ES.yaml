@@ -13,30 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇪🇸 | @WhiteDNS | ES21|19.8MB/s|DNSOK|GPT⁺-ES
-  password: None
-  port: 443
-  server: 130.195.250.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: 🇪🇸 | @WhiteDNS | ES22|11.9MB/s|DNSOK|GPT⁺-ES
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: Sgocj9v63XdHU04TV3-Pk141YPIT_E-UgLr9u4OkE0E
-    short-id: d27201f7bf5874f9
-  server: 107.189.19.27
-  tls: true
-  type: vless
-  udp: true
-  uuid: 813a385c-f26f-48b5-9bbb-53204a9c5bcc
-  xudp: true
-  servername: cdn.dodostatic.net
-- name: 🇪🇸 | @WhiteDNS | ES23|6.1MB/s|DNSOK|GPT⁺-ES
+- name: 🇪🇸 | @WhiteDNS | ES19|19.9MB/s|DNSOK|GPT⁺-ES
   password: ''
   port: 443
   server: 130.195.250.34
@@ -44,38 +21,20 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇪🇸 | @WhiteDNS | ES24|4.1MB/s|DNSOK|GPT⁺-ES
-  password: ''
+- name: 🇪🇸 | @WhiteDNS | ES20|6.1MB/s|DNSOK|GPT⁺-ES
+  password: None
   port: 443
-  server: 82.102.17.178
+  server: 130.195.250.18
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: 🇪🇸 | @WhiteDNS | ES25|1.7MB/s|DNSOK|GPT⁺-ES
-  port: 443
-  reality-opts:
-    public-key: Sgocj9v63XdHU04TV3-Pk141YPIT_E-UgLr9u4OkE0E
-    short-id: d27201f7bf5874f9
-  server: 107.189.19.27
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 813a385c-f26f-48b5-9bbb-53204a9c5bcc
-  network: tcp
-  servername: cdn.dodostatic.net
 proxy-groups:
 - name: ES-Auto
   type: url-test
   proxies:
-  - 🇪🇸 | @WhiteDNS | ES21|19.8MB/s|DNSOK|GPT⁺-ES
-  - 🇪🇸 | @WhiteDNS | ES22|11.9MB/s|DNSOK|GPT⁺-ES
-  - 🇪🇸 | @WhiteDNS | ES23|6.1MB/s|DNSOK|GPT⁺-ES
-  - 🇪🇸 | @WhiteDNS | ES24|4.1MB/s|DNSOK|GPT⁺-ES
-  - 🇪🇸 | @WhiteDNS | ES25|1.7MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES19|19.9MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES20|6.1MB/s|DNSOK|GPT⁺-ES
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
