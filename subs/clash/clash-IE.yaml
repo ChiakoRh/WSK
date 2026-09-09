@@ -13,22 +13,20 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  name: 🇭🇳 | @WhiteDNS | HN3|1.6MB/s|DNSOK|GPT⁺-MM
-  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
-  port: 10046
-  server: z-sg2.6send.com
+- name: 🇮🇪 | @WhiteDNS | IE7|5.5MB/s|DNSOK|GPT⁺-IE
+  password: ''
+  port: 443
+  server: 149.88.96.1
   skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
-  network: tcp
+  tls: true
+  type: http
+  username: ''
 proxy-groups:
-- name: HN-Auto
+- name: IE-Auto
   type: url-test
   proxies:
-  - 🇭🇳 | @WhiteDNS | HN3|1.6MB/s|DNSOK|GPT⁺-MM
+  - 🇮🇪 | @WhiteDNS | IE7|5.5MB/s|DNSOK|GPT⁺-IE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,HN-Auto
+- MATCH,IE-Auto

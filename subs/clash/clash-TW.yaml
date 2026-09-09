@@ -14,17 +14,33 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 | @WhiteDNS | TW46|1.3MB/s|DNSOK|GPT⁺-TW
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  name: 🇹🇼 | @WhiteDNS | TW48|1.5MB/s|DNSOK|GPT⁺-TW
+  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
   port: 50099
-  server: 36.224.147.226
+  server: R3MRCG00129437X.cybervena.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 | @WhiteDNS | TW49|1.4MB/s|DNSOK|GPT⁺-TW
+  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+  port: 50099
+  server: R3MRCG001287H3P.cybervena.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 | @WhiteDNS | TW50|1001KB/s|DNSOK|GPT⁺-TW
+  password: a9a0d092-6f0e-4701-81ee-454643d6d506
+  port: 50099
+  server: namrcg001640lrm.cybervena.com
   type: ss
   udp: true
 proxy-groups:
 - name: TW-Auto
   type: url-test
   proxies:
-  - 🇹🇼 | @WhiteDNS | TW46|1.3MB/s|DNSOK|GPT⁺-TW
+  - 🇹🇼 | @WhiteDNS | TW48|1.5MB/s|DNSOK|GPT⁺-TW
+  - 🇹🇼 | @WhiteDNS | TW49|1.4MB/s|DNSOK|GPT⁺-TW
+  - 🇹🇼 | @WhiteDNS | TW50|1001KB/s|DNSOK|GPT⁺-TW
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

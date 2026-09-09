@@ -14,25 +14,21 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - client-fingerprint: chrome
-  name: 🇰🇿 | @WhiteDNS | KZ18|851KB/s|DNSOK|GPT⁺-KZ
-  network: tcp
-  port: 38065
-  reality-opts:
-    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
-    short-id: fa
-  server: 83.222.23.81
-  tls: true
-  type: vless
+  name: 🇾🇪 | @WhiteDNS | YE2|1.6MB/s|DNSOK|GPT⁺-YE
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10010
+  server: z-jp2.1card.cc
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
   udp: true
-  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
-  xudp: true
-  servername: yahoo.com
+  network: tcp
 proxy-groups:
-- name: KZ-Auto
+- name: YE-Auto
   type: url-test
   proxies:
-  - 🇰🇿 | @WhiteDNS | KZ18|851KB/s|DNSOK|GPT⁺-KZ
+  - 🇾🇪 | @WhiteDNS | YE2|1.6MB/s|DNSOK|GPT⁺-YE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,KZ-Auto
+- MATCH,YE-Auto

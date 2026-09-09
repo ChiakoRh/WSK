@@ -13,29 +13,20 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇦🇱 | @WhiteDNS | AL5|14.5MB/s|DNSOK|GPT⁺-AL
+- name: 🇦🇺 | @WhiteDNS | AU64|1.8MB/s|DNSOK|GPT⁺-AU
   password: ''
   port: 443
-  server: 87.120.103.226
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇦🇱 | @WhiteDNS | AL6|5.3MB/s|DNSOK|GPT⁺-AL
-  password: ''
-  port: 443
-  server: 87.120.103.242
+  server: 103.62.50.130
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
 proxy-groups:
-- name: AL-Auto
+- name: AU-Auto
   type: url-test
   proxies:
-  - 🇦🇱 | @WhiteDNS | AL5|14.5MB/s|DNSOK|GPT⁺-AL
-  - 🇦🇱 | @WhiteDNS | AL6|5.3MB/s|DNSOK|GPT⁺-AL
+  - 🇦🇺 | @WhiteDNS | AU64|1.8MB/s|DNSOK|GPT⁺-AU
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,AL-Auto
+- MATCH,AU-Auto
