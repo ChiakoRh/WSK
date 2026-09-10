@@ -13,29 +13,30 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: aes-256-gcm
-  name: 🇵🇱 | @WhiteDNS | PL61|23.4MB/s|DNSOK|GPT⁺-PL
-  password: itzvpn@321
+- cipher: chacha20-ietf-poly1305
+  name: 🇵🇱 | @WhiteDNS | PL62|23.8MB/s|DNSOK|GPT⁺-PL
+  password: VJtsgllDDJfNmaTe
   port: 8388
-  server: 51.83.192.80
+  server: 64.176.73.160
   type: ss
   udp: true
-- encryption: mlkem768x25519plus.native.0rtt.AX1_Iy42S3tDy5Byp6LQba6NUB3ePNTLrdSyxC7MvVQ
-  name: 🇵🇱 | @WhiteDNS | PL62|6.0MB/s|DNSOK|GPT⁺-PL
-  network: ws
-  port: 8088
-  server: pol-hhasca.ramcalshoping.ir
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇵🇱 | @WhiteDNS | PL63|23.0MB/s|DNSOK|GPT⁺-PL
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: 4h74KXbkBMYOhJkZabJNsf85cI91ytap_gkl56mzjTU
+    short-id: ''
+  server: 83.168.111.58
+  tls: true
   type: vless
   udp: true
-  uuid: ff1dcb64-f13d-4ccd-a3c6-055218f7490b
-  ws-opts:
-    headers:
-      Host: play-apps-features.googleusercontent.com
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; WAS-LX3 Build/HUAWEIWAS-LX3)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /bmi.ir
+  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
   xudp: true
-- name: 🇵🇱 | @WhiteDNS | PL63|2.7MB/s|DNSOK|GPT⁺-PL
+  servername: soulful.host
+- name: 🇵🇱 | @WhiteDNS | PL64|14.0MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 151.115.54.133
@@ -47,9 +48,9 @@ proxy-groups:
 - name: PL-Auto
   type: url-test
   proxies:
-  - 🇵🇱 | @WhiteDNS | PL61|23.4MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL62|6.0MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL63|2.7MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL62|23.8MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL63|23.0MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL64|14.0MB/s|DNSOK|GPT⁺-PL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

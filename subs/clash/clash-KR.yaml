@@ -13,23 +13,24 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇰🇷 | @WhiteDNS | KR73|2.0MB/s|DNSOK|GPT⁺-KR
-  port: 28482
-  reality-opts:
-    public-key: 8fsYG_Pg35aeg1E5Gc3HUaXou2OUQee4ukxVk99iR0s
-    short-id: fa1e592603c283
-  server: 43.202.46.25
-  skip-cert-verify: true
-  tls: true
-  type: vless
+- alterId: '0'
+  cipher: auto
+  name: 🇰🇷 | @WhiteDNS | KR74|2.1MB/s|DNSOK|GPT⁺-KR
+  network: ws
+  port: 80
+  server: 132.145.80.230
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-  uuid: 83973343-90db-423d-a5f7-2e3b56aeb8f4
-  network: tcp
-  servername: www.intel.com
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  ws-opts:
+    headers:
+      Host: kr02.a0a.xyz
+    path: /cctv13.m3u8
+  xudp: true
 - client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR74|1.8MB/s|DNSOK|GPT⁺-YE
+  name: 🇰🇷 | @WhiteDNS | KR75|1.6MB/s|DNSOK|GPT⁺-YE
   password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
   port: 10010
   server: z-jp1.1card.cc
@@ -38,94 +39,75 @@ proxies:
   type: trojan
   udp: true
   network: tcp
-- alterId: '0'
+- alpn:
+  - ''
+  alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR75|1.5MB/s|DNSOK|GPT⁺-KR
-  network: raw
-  port: 443
-  server: 140.238.2.250
+  name: 🇰🇷 | @WhiteDNS | KR76|1.2MB/s|DNSOK|GPT⁺-KR
+  network: ws
+  port: 80
+  server: 132.145.80.230
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  ws-opts:
+    headers: {}
+    path: /cctv13.m3u8
   xudp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇰🇷 | @WhiteDNS | KR76|1.3MB/s|DNSOK|GPT⁺-KR
+  servername: kr02.a0a.xyz
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR77|1.0MB/s|DNSOK|GPT⁺-YE
   network: tcp
-  port: 28482
-  reality-opts:
-    public-key: 8fsYG_Pg35aeg1E5Gc3HUaXou2OUQee4ukxVk99iR0s
-    short-id: fa1e592603c283
-  server: 43.202.46.25
-  tls: true
-  type: vless
-  udp: true
-  uuid: 83973343-90db-423d-a5f7-2e3b56aeb8f4
-  xudp: true
-  servername: www.intel.com
-- alterId: 0
-  cipher: auto
-  country: 🇰🇷KR
-  h2-opts: {}
-  http-opts: {}
-  name: 🇰🇷 | @WhiteDNS | KR77|1.2MB/s|DNSOK|GPT⁺-KR
-  network: none
-  port: 443
-  server: 140.238.2.250
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10010
+  server: z-jp2.1card.cc
   skip-cert-verify: true
-  type: vmess
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-- alterId: 0
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR78|1.2MB/s|DNSOK|GPT⁺-KR
-  port: 443
-  server: 140.238.2.250
-  type: vmess
+  sni: www.cloudflare.com
+  type: trojan
   udp: true
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR78|884KB/s|DNSOK|GPT⁺-YE
   network: tcp
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇰🇷 | @WhiteDNS | KR79|1.1MB/s|DNSOK|GPT⁺-KR
-  network: raw
-  port: 28482
-  reality-opts:
-    public-key: 8fsYG_Pg35aeg1E5Gc3HUaXou2OUQee4ukxVk99iR0s
-    short-id: fa1e592603c283
-  server: 43.202.46.25
-  tls: true
-  type: vless
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10010
+  server: z-jp2.1card.cc
+  skip-cert-verify: true
+  type: trojan
   udp: true
-  uuid: 83973343-90db-423d-a5f7-2e3b56aeb8f4
-  xudp: true
-  servername: www.intel.com
-- alterId: '0'
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR80|867KB/s|DNSOK|GPT⁺-KR
+  sni: z-jp2.1card.cc
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR79|837KB/s|DNSOK|GPT⁺-YE
   network: tcp
-  port: 443
-  server: 140.238.2.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10010
+  server: z-jp2.1card.cc
+  skip-cert-verify: true
+  sni: z-jp2.1card.cc
+  type: trojan
   udp: true
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  xudp: true
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR80|748KB/s|DNSOK|GPT⁺-YE
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10010
+  server: z-jp2.1card.cc
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+  network: tcp
 proxy-groups:
 - name: KR-Auto
   type: url-test
   proxies:
-  - 🇰🇷 | @WhiteDNS | KR73|2.0MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR74|1.8MB/s|DNSOK|GPT⁺-YE
-  - 🇰🇷 | @WhiteDNS | KR75|1.5MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR76|1.3MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR77|1.2MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR78|1.2MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR79|1.1MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR80|867KB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR74|2.1MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR75|1.6MB/s|DNSOK|GPT⁺-YE
+  - 🇰🇷 | @WhiteDNS | KR76|1.2MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR77|1.0MB/s|DNSOK|GPT⁺-YE
+  - 🇰🇷 | @WhiteDNS | KR78|884KB/s|DNSOK|GPT⁺-YE
+  - 🇰🇷 | @WhiteDNS | KR79|837KB/s|DNSOK|GPT⁺-YE
+  - 🇰🇷 | @WhiteDNS | KR80|748KB/s|DNSOK|GPT⁺-YE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

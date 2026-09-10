@@ -1,24 +1,54 @@
 proxies:
 - client-fingerprint: chrome
-  encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA59|3.7MB/s|DNSOK|GPT⁺-CA
-  network: raw
-  port: 41373
+  name: 🇨🇦 | @WhiteDNS | CA74|17.2MB/s|DNSOK|GPT⁺-NO
+  port: 443
   reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
+    public-key: urD2miGxEfHylELSqqggBKCYIMSNXNTbdPijru7-eAQ
+    short-id: 46babe29a750b634
+  server: 151.242.168.180
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  uuid: 05020afd-d476-406b-8950-ee7dd63a6e64
+  network: tcp
+  servername: kibi-institut.de
+- client-fingerprint: edge
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA75|16.4MB/s|DNSOK|GPT⁺-NO
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: urD2miGxEfHylELSqqggBKCYIMSNXNTbdPijru7-eAQ
+    short-id: 46babe29a750b634
+  server: 151.242.168.180
+  tls: true
+  type: vless
+  udp: true
+  uuid: 05020afd-d476-406b-8950-ee7dd63a6e64
   xudp: true
-  servername: google.com
+  servername: kibi-institut.de
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA76|6.1MB/s|DNSOK|GPT⁺-NO
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: urD2miGxEfHylELSqqggBKCYIMSNXNTbdPijru7-eAQ
+    short-id: 46babe29a750b634
+  server: 151.242.168.182
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5899ca33-5cb2-4fa2-9557-b496bde9c974
+  xudp: true
+  servername: kibi-institut.de
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA60|3.1MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA77|3.9MB/s|DNSOK|GPT⁺-CA
   network: tcp#1⛑️@oneclickvpnkeys
   port: 41373
   reality-opts:
@@ -31,68 +61,51 @@ proxies:
   uuid: a71c8954-66a8-4321-bedb-2336230d81ce
   xudp: true
   servername: google.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA61|3.0MB/s|DNSOK|GPT⁺-CA
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  skip-cert-verify: true
-  tls: true
+- encryption: none
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇨🇦 | @WhiteDNS | CA78|3.8MB/s|DNSOK|GPT⁺-CA
+  network: http
+  port: 1161
+  server: 147.182.157.72
   type: vless
   udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  network: tcp
-  servername: google.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA62|3.0MB/s|DNSOK|GPT⁺-CA
-  network: tcp
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  tls: true
-  type: vless
-  udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  uuid: 12d67793-4087-0237-bb9c-d91ac0406d58
   xudp: true
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA79|3.8MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  port: 8039
+  reality-opts:
+    public-key: ZrdPHtBvi7yMRj17SohKaGQEXuDptmCJWCi8gk5HlD8
+    short-id: 35938c4e546cd459
+  server: 147.182.157.72
+  tls: true
+  type: vless
+  udp: true
+  uuid: 12d67793-4087-0237-bb9c-d91ac0406d58
+  xudp: true
+  servername: play.google.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA80|3.7MB/s|DNSOK|GPT⁺-CA
+  port: 41373
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  network: tcp
   servername: google.com
 - client-fingerprint: chrome
-  name: 🇨🇦 | @WhiteDNS | CA63|1.9MB/s|DNSOK|GPT⁺-SD
-  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
-  port: 10012
-  server: z-jp1.1card.cc
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇨🇦 | @WhiteDNS | CA64|1.8MB/s|DNSOK|GPT⁺-SD
-  network: tcp
-  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
-  port: 10012
-  server: z-jp2.1card.cc
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇨🇦 | @WhiteDNS | CA65|1.8MB/s|DNSOK|GPT⁺-QA
-  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
-  port: 10008
-  server: z-jp1.1card.cc
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇨🇦 | @WhiteDNS | CA66|1.8MB/s|DNSOK|GPT⁺-AF
+  name: 🇨🇦 | @WhiteDNS | CA81|1.8MB/s|DNSOK|GPT⁺-AF
   network: tcp
   password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
   port: 10009
@@ -102,7 +115,57 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 🇨🇦 | @WhiteDNS | CA67|1.7MB/s|DNSOK|GPT⁺-QA
+  name: 🇨🇦 | @WhiteDNS | CA82|1.7MB/s|DNSOK|GPT⁺-QA
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10008
+  server: z-jp1.1card.cc
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇨🇦 | @WhiteDNS | CA83|1.7MB/s|DNSOK|GPT⁺-SD
+  network: tcp
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10012
+  server: z-jp1.1card.cc
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  sni: z-jp1.1card.cc
+- client-fingerprint: chrome
+  name: 🇨🇦 | @WhiteDNS | CA84|1.0MB/s|DNSOK|GPT⁺-SD
+  network: tcp
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10012
+  server: z-jp1.1card.cc
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇨🇦 | @WhiteDNS | CA85|705KB/s|DNSOK|GPT⁺-SD
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10012
+  server: z-jp2.1card.cc
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇨🇦 | @WhiteDNS | CA86|613KB/s|DNSOK|GPT⁺-QA
+  network: tcp
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10008
+  server: z-jp2.1card.cc
+  skip-cert-verify: true
+  sni: z-jp2.1card.cc
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇨🇦 | @WhiteDNS | CA87|611KB/s|DNSOK|GPT⁺
   network: tcp
   password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
   port: 10008
@@ -112,22 +175,12 @@ proxies:
   udp: true
   sni: z-jp2.1card.cc
 - client-fingerprint: chrome
-  name: 🇨🇦 | @WhiteDNS | CA68|1.3MB/s|DNSOK|GPT⁺-AF
+  name: 🇨🇦 | @WhiteDNS | CA88|568KB/s|DNSOK|GPT⁺-SD
   password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
-  port: 10009
-  server: z-jp2.1card.cc
+  port: 10012
+  server: z-jp1.1card.cc
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
   udp: true
   network: tcp
-- client-fingerprint: chrome
-  name: 🇨🇦 | @WhiteDNS | CA69|1.3MB/s|DNSOK|GPT⁺
-  network: tcp
-  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
-  port: 10012
-  server: z-jp1.1card.cc
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-  sni: z-jp1.1card.cc

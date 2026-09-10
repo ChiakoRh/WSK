@@ -13,42 +13,27 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: firefox
+- client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT227|6.5MB/s|DNSOK|GPT⁺
-  network: tcp
+  name: ❓ | @WhiteDNS | OT164|5.2MB/s|DNSOK|GPT⁺
+  network: raw
   port: 443
   reality-opts:
-    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
-    short-id: fd55b698ee8c3629
-  server: 82.145.55.75
+    public-key: urD2miGxEfHylELSqqggBKCYIMSNXNTbdPijru7-eAQ
+    short-id: 46babe29a750b634
+  server: 151.242.168.180
   tls: true
   type: vless
   udp: true
-  uuid: 5c0f54f4-f3e2-4931-a3b9-b1ffc0961d70
+  uuid: 05020afd-d476-406b-8950-ee7dd63a6e64
   xudp: true
-  servername: strapi.io
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT228|6.4MB/s|DNSOK|GPT⁺-GB
-  port: 443
-  reality-opts:
-    public-key: wiu5fVlBM7keSI48Oi3dEnQTR1BnJXgHtXo9xBpAnTA
-    short-id: 16498ac98306ce31
-  server: 95.154.196.62
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: a40ec4fc-e08b-4324-9f97-ab8ca5e99fc4
-  network: tcp
-  servername: foodnetwork.com
+  servername: kibi-institut.de
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT227|6.5MB/s|DNSOK|GPT⁺
-  - ❓ | @WhiteDNS | OT228|6.4MB/s|DNSOK|GPT⁺-GB
+  - ❓ | @WhiteDNS | OT164|5.2MB/s|DNSOK|GPT⁺
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
