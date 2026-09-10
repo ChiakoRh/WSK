@@ -12,28 +12,11 @@ dns:
   nameserver:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
-proxies:
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT164|5.2MB/s|DNSOK|GPT⁺
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: urD2miGxEfHylELSqqggBKCYIMSNXNTbdPijru7-eAQ
-    short-id: 46babe29a750b634
-  server: 151.242.168.180
-  tls: true
-  type: vless
-  udp: true
-  uuid: 05020afd-d476-406b-8950-ee7dd63a6e64
-  xudp: true
-  servername: kibi-institut.de
+proxies: []
 proxy-groups:
 - name: OT-Auto
   type: url-test
-  proxies:
-  - ❓ | @WhiteDNS | OT164|5.2MB/s|DNSOK|GPT⁺
+  proxies: []
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

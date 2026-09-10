@@ -13,10 +13,26 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇮🇹 | @WhiteDNS | IT950|82.4MB/s|DNSOK|GPT⁺-IT
+  network: tcp
+  port: 32833
+  reality-opts:
+    public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
+    short-id: a0a305ccc8e94aa8
+  server: 172.238.232.239
+  tls: true
+  type: vless
+  udp: true
+  uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
+  xudp: true
+  servername: www.intel.com
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT164|79.0MB/s|DNSOK|GPT⁺-IT
+  name: 🇮🇹 | @WhiteDNS | IT951|74.1MB/s|DNSOK|GPT⁺-IT
   network: raw
   port: 32833
   reality-opts:
@@ -29,30 +45,7 @@ proxies:
   uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
   xudp: true
   servername: www.intel.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT165|74.7MB/s|DNSOK|GPT⁺-IT
-  network: tcp
-  port: 32833
-  reality-opts:
-    public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
-    short-id: a0a305ccc8e94aa8
-  server: 172.238.232.239
-  tls: true
-  type: vless
-  udp: true
-  uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
-  xudp: true
-  servername: www.intel.com
-- name: 🇮🇹 | @WhiteDNS | IT166|44.4MB/s|DNSOK|GPT⁺-IT
-  password: None
-  port: 443
-  server: 185.183.105.146
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇮🇹 | @WhiteDNS | IT167|29.2MB/s|DNSOK|GPT⁺-IT
+- name: 🇮🇹 | @WhiteDNS | IT952|28.4MB/s|DNSOK|GPT⁺-IT
   password: None
   port: 443
   server: 185.183.105.130
@@ -61,8 +54,122 @@ proxies:
   type: http
   username: ''
 - client-fingerprint: chrome
+  encryption: none
+  name: 🇮🇹 | @WhiteDNS | IT953|22.6MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 443
+  server: 104.21.8.176
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7da33b25-cdd6-e481-afcf-c5d532361a70
+  ws-opts:
+    headers:
+      Host: ez-1bc8ab.sekiro-c18.workers.dev
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; de-DE) AppleWebKit/534.17
+        (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
+    path: /sync
+  xudp: true
+  servername: ez-1bc8ab.sekiro-c18.workers.dev
+- client-fingerprint: chrome
+  name: 🇮🇹 | @WhiteDNS | IT954|18.7MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  password: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
+  port: 2096
+  server: aged-silence-8d7d.tahaggs.workers.dev
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36
+    path: /
+  sni: aged-silence-8d7d.tahaggs.workers.dev
+- client-fingerprint: chrome
+  name: 🇮🇹 | @WhiteDNS | IT955|15.8MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  password: f18d6149-e214-8554-e737-f7523c8b2eea
+  port: 443
+  server: 89.116.180.49
+  skip-cert-verify: false
+  sni: 0403.infinityconfig4.workers.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/49.0.2623.112 Safari/537.36
+    path: /sync
+- client-fingerprint: chrome
+  name: 🇮🇹 | @WhiteDNS | IT956|13.5MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 443
+  server: restless-boat-ebf2.moha102030.workers.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 95de071f-747c-dc07-36ac-5c0854a9e50e
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/58.0.3029.110 Safari/537.36
+    path: /
+  xudp: true
+  servername: restless-boat-ebf2.moha102030.workers.dev
+- encryption: none
+  name: 🇮🇹 | @WhiteDNS | IT957|6.5MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 8080
+  server: 172.64.80.1
+  type: vless
+  udp: true
+  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
+  ws-opts:
+    headers:
+      Host: peekconfigg.vipserver1-39d.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; CPH1607 Build/MMB29M; wv) AppleWebKit/537.36
+        (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /sync
+  xudp: true
+  servername: peekconfigg.vipserver1-39d.workers.dev
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇮🇹 | @WhiteDNS | IT958|5.8MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 443
+  server: 104.21.55.123
+  tls: true
+  type: vless
+  udp: true
+  uuid: 95de071f-747c-dc07-36ac-5c0854a9e50e
+  ws-opts:
+    headers:
+      Host: restless-boat-ebf2.moha102030.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.102 Safari/537.36
+    path: /sync
+  xudp: true
+  servername: restless-boat-ebf2.moha102030.workers.dev
+- encryption: none
+  name: 🇮🇹 | @WhiteDNS | IT959|2.2MB/s|DNSOK|GPT⁺-AE
+  network: ws
+  port: 80
+  server: 45.130.125.201
+  type: vless
+  udp: true
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  ws-opts:
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/63.0.3239.132 Safari/537.36
+    path: /sync
+  xudp: true
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT168|21.4MB/s|DNSOK|GPT⁺-IT
+  name: 🇮🇹 | @WhiteDNS | IT960|2.2MB/s|DNSOK|GPT⁺-IT
   port: 32833
   reality-opts:
     public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
@@ -75,33 +182,21 @@ proxies:
   uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
   network: tcp
   servername: www.intel.com
-- name: 🇮🇹 | @WhiteDNS | IT169|21.0MB/s|DNSOK|GPT⁺-IT
-  password: None
-  port: 443
-  server: 178.237.4.200
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇮🇹 | @WhiteDNS | IT170|4.5MB/s|DNSOK|GPT⁺-IT
-  password: ''
-  port: 443
-  server: 178.237.4.200
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 proxy-groups:
 - name: IT-Auto
   type: url-test
   proxies:
-  - 🇮🇹 | @WhiteDNS | IT164|79.0MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT165|74.7MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT166|44.4MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT167|29.2MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT168|21.4MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT169|21.0MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT170|4.5MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT950|82.4MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT951|74.1MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT952|28.4MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT953|22.6MB/s|DNSOK|GPT⁺-DE
+  - 🇮🇹 | @WhiteDNS | IT954|18.7MB/s|DNSOK|GPT⁺-DE
+  - 🇮🇹 | @WhiteDNS | IT955|15.8MB/s|DNSOK|GPT⁺-DE
+  - 🇮🇹 | @WhiteDNS | IT956|13.5MB/s|DNSOK|GPT⁺-DE
+  - 🇮🇹 | @WhiteDNS | IT957|6.5MB/s|DNSOK|GPT⁺-DE
+  - 🇮🇹 | @WhiteDNS | IT958|5.8MB/s|DNSOK|GPT⁺-DE
+  - 🇮🇹 | @WhiteDNS | IT959|2.2MB/s|DNSOK|GPT⁺-AE
+  - 🇮🇹 | @WhiteDNS | IT960|2.2MB/s|DNSOK|GPT⁺-IT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
