@@ -1,16 +1,6 @@
 proxies:
-- encryption: mlkem768x25519plus.native.0rtt.ik1laWz5D6dpHNsvpbsv-Tab9BXxdKBHWKw8wC_ayT8
-  name: 🇰🇷 | @WhiteDNS | KR429|1.8MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 1200
-  server: 95.38.190.53
-  type: vless
-  udp: true
-  uuid: 46bef575-85f6-488e-ac60-508f85a566e2
-  xudp: true
 - client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR430|1.8MB/s|DNSOK|GPT⁺-YE
-  network: tcp
+  name: 🇰🇷 | @WhiteDNS | KR153|1.8MB/s|DNSOK|GPT⁺-YE
   password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
   port: 10010
   server: z-jp2.1card.cc
@@ -18,10 +8,27 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
+  network: tcp
 - alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR431|1.2MB/s|DNSOK|GPT⁺-KR
-  network: raw
+  name: 🇰🇷 | @WhiteDNS | KR154|1.7MB/s|DNSOK|GPT⁺-KR
+  network: ws
+  port: 80
+  server: 132.145.80.230
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  ws-opts:
+    headers:
+      Host: kr02.a0a.xyz
+    path: /cctv13.m3u8
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 🇰🇷 | @WhiteDNS | KR155|1.0MB/s|DNSOK|GPT⁺-KR
+  network: none
   port: 443
   server: 140.238.2.250
   skip-cert-verify: false
@@ -30,3 +37,62 @@ proxies:
   udp: true
   uuid: 41a7089a-040b-4538-8b8d-010902405bde
   xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 🇰🇷 | @WhiteDNS | KR156|1008KB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  port: 443
+  server: 140.238.2.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 🇰🇷 | @WhiteDNS | KR157|901KB/s|DNSOK|GPT⁺-KR
+  port: 443
+  server: 140.238.2.250
+  type: vmess
+  udp: true
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR158|696KB/s|DNSOK|GPT⁺-YE
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10010
+  server: z-jp1.1card.cc
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+  network: tcp
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇰🇷 | @WhiteDNS | KR159|597KB/s|DNSOK|GPT⁺-KR
+  network: ws
+  port: 80
+  server: 132.145.80.230
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  ws-opts:
+    headers: {}
+    path: /cctv13.m3u8
+  xudp: true
+  servername: kr02.a0a.xyz
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR160|583KB/s|DNSOK|GPT⁺-YE
+  network: tcp
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10010
+  server: z-jp2.1card.cc
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true

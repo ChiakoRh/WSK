@@ -1,16 +1,20 @@
 proxies:
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇷🇺 | @WhiteDNS | RU40|2.6MB/s|DNSOK|GPT⁺-CZ
-  port: 7444
-  reality-opts:
-    public-key: -P8DgKISSG4jnLuj6ihZDqZs1_zt-juBrhVhTylHiAo
-    short-id: ''
-  server: 78.159.247.123
-  skip-cert-verify: true
-  tls: true
-  type: vless
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇷🇺 | @WhiteDNS | RU22|11.3MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  password: A4u^p(_UR*F6
+  port: 443
+  server: 104.17.147.22
+  skip-cert-verify: false
+  sni: 027.electrocellco-cf-027.workers.dev
+  type: trojan
   udp: true
-  uuid: 0764541b-3e57-4b47-954b-51e996fae5fc
-  network: tcp
-  servername: akamai.com
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/67.0.3396.99 Safari/537.36
+    path: /eyJqdW5rIjoidlhnMXN5OXFUSiIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2560

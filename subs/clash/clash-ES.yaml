@@ -1,0 +1,66 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- name: 🇪🇸 | @WhiteDNS | ES19|21.0MB/s|DNSOK|GPT⁺-ES
+  password: None
+  port: 443
+  server: 130.195.250.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇪🇸 | @WhiteDNS | ES20|15.8MB/s|DNSOK|GPT⁺-ES
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: -Nw4pIuzq_vnQiII34vwq-_Hot3THgvXB6teTaX1jiQ
+    short-id: 56c0d432cdf36f66
+  server: 0144e048e9e3dd74.neshatinjafood.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 14ffccc6-81e0-4108-ab35-b3df398534af
+  xudp: true
+  servername: play-apps-features.googleusercontent.com
+- name: 🇪🇸 | @WhiteDNS | ES21|6.2MB/s|DNSOK|GPT⁺-ES
+  password: ''
+  port: 443
+  server: 130.195.250.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇪🇸 | @WhiteDNS | ES22|6.0MB/s|DNSOK|GPT⁺-ES
+  password: ''
+  port: 443
+  server: 82.102.17.178
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+proxy-groups:
+- name: ES-Auto
+  type: url-test
+  proxies:
+  - 🇪🇸 | @WhiteDNS | ES19|21.0MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES20|15.8MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES21|6.2MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES22|6.0MB/s|DNSOK|GPT⁺-ES
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,ES-Auto
