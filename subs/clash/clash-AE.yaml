@@ -1,0 +1,86 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- encryption: none
+  name: 🇦🇪 | @WhiteDNS | AE15|2.0MB/s|DNSOK|GPT⁺-AE
+  network: ws
+  port: 22573
+  server: uae.unixzone.us
+  type: vless
+  udp: true
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  ws-opts:
+    headers:
+      Host: uae.unixzone.us
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /
+  xudp: true
+- name: 🇦🇪 | @WhiteDNS | AE16|1.6MB/s|DNSOK|GPT⁺-AE
+  network: ws
+  port: 22573
+  server: 84.235.244.108
+  type: vless
+  udp: true
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  ws-opts:
+    headers:
+      Host: uae.unixzone.us
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; BLL-L22 Build/HUAWEIBLL-L22) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
+    path: /
+  xudp: true
+  servername: uae.unixzone.us
+- name: 🇦🇪 | @WhiteDNS | AE17|1.3MB/s|DNSOK|GPT⁺-AE
+  network: ws
+  port: 22573
+  server: uae.unixzone.us
+  type: vless
+  udp: true
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  ws-opts:
+    headers:
+      Host: uae.unixzone.us
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/50.0.2661.102 Safari/537.36
+    path: /
+  xudp: true
+  servername: uae.unixzone.us
+- name: 🇦🇪 | @WhiteDNS | AE18|740KB/s|DNSOK|GPT⁺-AE
+  network: ws
+  port: 22573
+  server: 84.235.244.108
+  type: vless
+  udp: true
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  ws-opts:
+    headers:
+      Host: uae.unixzone.us
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/47.0.2526.111 Safari/537.36 MVisionPlayer/1.0.0.0
+    path: /
+  xudp: true
+proxy-groups:
+- name: AE-Auto
+  type: url-test
+  proxies:
+  - 🇦🇪 | @WhiteDNS | AE15|2.0MB/s|DNSOK|GPT⁺-AE
+  - 🇦🇪 | @WhiteDNS | AE16|1.6MB/s|DNSOK|GPT⁺-AE
+  - 🇦🇪 | @WhiteDNS | AE17|1.3MB/s|DNSOK|GPT⁺-AE
+  - 🇦🇪 | @WhiteDNS | AE18|740KB/s|DNSOK|GPT⁺-AE
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,AE-Auto

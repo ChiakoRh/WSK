@@ -13,15 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇿 | @WhiteDNS | CZ6|6.1MB/s|DNSOK|GPT⁺-CZ
-  password: ''
-  port: 443
-  server: 185.216.35.66
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇿 | @WhiteDNS | CZ7|5.7MB/s|DNSOK|GPT⁺-CZ
+- name: 🇨🇿 | @WhiteDNS | CZ5|1.0MB/s|DNSOK|GPT⁺-CZ
   password: None
   port: 443
   server: 185.216.35.130
@@ -33,8 +25,7 @@ proxy-groups:
 - name: CZ-Auto
   type: url-test
   proxies:
-  - 🇨🇿 | @WhiteDNS | CZ6|6.1MB/s|DNSOK|GPT⁺-CZ
-  - 🇨🇿 | @WhiteDNS | CZ7|5.7MB/s|DNSOK|GPT⁺-CZ
+  - 🇨🇿 | @WhiteDNS | CZ5|1.0MB/s|DNSOK|GPT⁺-CZ
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
