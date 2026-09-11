@@ -1,21 +1,32 @@
 proxies:
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA72|5.1MB/s|DNSOK|GPT⁺-FI
+  name: 🇨🇦 | @WhiteDNS | CA64|5.1MB/s|DNSOK|GPT⁺-FI
+  network: tcp
   port: 443
   reality-opts:
     public-key: 40Tmrw44FhOyoqCQiOfR2kCgxEPXrBLLv6oYFvjbGUI
     short-id: 3c6ec7b2d73a28b6
   server: 2.26.91.57
-  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
-  network: tcp
   servername: fl.windconnect.pro
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇨🇦 | @WhiteDNS | CA65|5.1MB/s|DNSOK|GPT⁺-TR
+  network: tcp
+  port: 8443
+  server: 195.162.69.203
+  tls: true
+  type: vless
+  udp: true
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  xudp: true
+  servername: 195-162-69-203.sslip.io
 - client-fingerprint: firefox
-  name: 🇨🇦 | @WhiteDNS | CA73|4.8MB/s|DNSOK|GPT⁺-TR
+  name: 🇨🇦 | @WhiteDNS | CA66|4.7MB/s|DNSOK|GPT⁺-TR
   network: tcp
   port: 8443
   server: 195-162-69-203.sslip.io
@@ -25,89 +36,42 @@ proxies:
   uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
   xudp: true
   servername: 195-162-69-203.sslip.io
-- client-fingerprint: firefox
-  encryption: none
-  name: 🇨🇦 | @WhiteDNS | CA74|4.6MB/s|DNSOK|GPT⁺-TR
-  network: raw
-  port: 8443
-  server: 195.162.69.203
-  tls: true
-  type: vless
-  udp: true
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  xudp: true
-  servername: 195-162-69-203.sslip.io
-- client-fingerprint: chrome
+- client-fingerprint: safari
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA75|3.8MB/s|DNSOK|GPT⁺-CA
-  network: raw
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  tls: true
-  type: vless
-  udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  xudp: true
-  servername: google.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA76|3.8MB/s|DNSOK|GPT⁺-CA
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  name: 🇨🇦 | @WhiteDNS | CA67|4.6MB/s|DNSOK|GPT⁺-FI
   network: tcp
-  servername: google.com
-- client-fingerprint: firefox
-  name: 🇨🇦 | @WhiteDNS | CA77|2.9MB/s|DNSOK|GPT⁺-TR
-  port: 8443
-  server: 195-162-69-203.sslip.io
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  network: tcp
-  servername: 195-162-69-203.sslip.io
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦 | @WhiteDNS | CA78|2.8MB/s|DNSOK|GPT⁺-CA
-  password: FD3rCuOsxOay
-  port: 8388
-  server: 15.235.75.71
-  type: ss
-  udp: true
-- client-fingerprint: firefox
-  name: 🇨🇦 | @WhiteDNS | CA79|2.7MB/s|DNSOK|GPT⁺-TR
-  port: 8443
-  server: 195.162.69.203
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  network: tcp
-  servername: 195-162-69-203.sslip.io
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦 | @WhiteDNS | CA80|2.6MB/s|DNSOK|GPT⁺-CA
-  password: 3ssumf2
   port: 443
-  server: ca225.vpnbook.com
-  type: ss
+  reality-opts:
+    public-key: 40Tmrw44FhOyoqCQiOfR2kCgxEPXrBLLv6oYFvjbGUI
+    short-id: 3c6ec7b2d73a28b6
+  server: fl.windconnect.pro
+  tls: true
+  type: vless
   udp: true
+  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
+  xudp: true
+  servername: fl.windconnect.pro
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA81|2.6MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA68|3.9MB/s|DNSOK|GPT⁺-CA
+  network: raw
+  port: 41373
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
+  tls: true
+  type: vless
+  udp: true
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  xudp: true
+  servername: google.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA69|3.8MB/s|DNSOK|GPT⁺-CA
   network: tcp#1⛑️@oneclickvpnkeys
   port: 41373
   reality-opts:
@@ -123,7 +87,7 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA82|2.5MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA70|2.9MB/s|DNSOK|GPT⁺-CA
   network: tcp
   port: 41373
   reality-opts:
@@ -141,7 +105,7 @@ proxies:
   - http/1.1
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA83|1.2MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA71|2.5MB/s|DNSOK|GPT⁺-CA
   network: tcp
   port: 443
   reality-opts:

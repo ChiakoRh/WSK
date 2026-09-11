@@ -1,0 +1,35 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- client-fingerprint: firefox
+  name: 🇹🇷 | @WhiteDNS | TR21|2.7MB/s|DNSOK|GPT⁺-TR
+  port: 8443
+  server: 195-162-69-203.sslip.io
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  network: tcp
+  servername: 195-162-69-203.sslip.io
+proxy-groups:
+- name: TR-Auto
+  type: url-test
+  proxies:
+  - 🇹🇷 | @WhiteDNS | TR21|2.7MB/s|DNSOK|GPT⁺-TR
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,TR-Auto
