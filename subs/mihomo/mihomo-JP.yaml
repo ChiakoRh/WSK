@@ -1,15 +1,157 @@
 proxies:
-- cipher: aes-256-gcm
-  name: 🇯🇵 | @WhiteDNS | JP72|2.2MB/s|DNSOK|GPT⁺-JP
-  password: 3eOFeNssde7PYYMv
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP80|2.5MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  password: 62dbcf02-0989-4441-a01a-93f9c3b93525
   port: 443
-  server: 84.247.155.196
-  type: ss
+  server: 162.159.38.58
+  skip-cert-verify: false
+  sni: ot.hyas.space
+  type: trojan
   udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; TRT-LX3 Build/HUAWEITRT-LX3) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /x7f9k2m4p8
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP81|2.4MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  password: 624209bb-8216-45fe-bbe0-50132ec63162
+  port: 443
+  server: ot2.hyas.space
+  skip-cert-verify: false
+  sni: ot2.hyas.space
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/45.0.2454.93 Safari/537.36
+    path: /x7f9k2m4p8
+- alterId: '0'
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP82|2.1MB/s|DNSOK|GPT⁺-JP
+  network: raw
+  port: 55216
+  server: 155.248.176.44
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 154dbc39-0921-cf11-29bd-156c5000d763
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP83|1.8MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 11690
+  reality-opts:
+    public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
+    short-id: 034885e346fd30
+  server: 13.231.19.51
+  tls: true
+  type: vless
+  udp: true
+  uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
+  xudp: true
+  servername: www.tesla.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP84|1.7MB/s|DNSOK|GPT⁺-JP
+  port: 443
+  reality-opts:
+    public-key: 5-5-JEuwU97zcy-IJg32zruuHAOZ-85DM0YhRmzWbG4
+    short-id: 25d14b49bd77142e
+  server: 47.79.32.249
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6030877e-32a0-4f16-b65e-92e076f9e3f9
+  network: tcp
+  servername: www.apple.com
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP85|1.7MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  password: 62dbcf02-0989-4441-a01a-93f9c3b93525
+  port: 443
+  server: 172.64.229.84
+  skip-cert-verify: false
+  sni: ot.hyas.space
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.113 Safari/537.36
+    path: /x7f9k2m4p8
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP86|1.2MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 28573
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  server: 18.183.215.124
+  tls: true
+  type: vless
+  udp: true
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  xudp: true
+  servername: www.sony.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP87|1.2MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 5-5-JEuwU97zcy-IJg32zruuHAOZ-85DM0YhRmzWbG4
+    short-id: 25d14b49bd77142e
+  server: 47.79.32.249
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6030877e-32a0-4f16-b65e-92e076f9e3f9
+  xudp: true
+  servername: www.apple.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP88|1.0MB/s|DNSOK|GPT⁺-JP
+  port: 24620
+  reality-opts:
+    public-key: eZthMfn0kQJFNr_srk502fr8yUHMoHQ7Oh3v4_HfTBI
+    short-id: db2cb3b3c2dbb711
+  server: 13.231.7.104
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: b969ef8f-7bdb-474f-9481-d8f3c5686fb8
+  network: tcp
+  servername: www.amd.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP89|1.0MB/s|DNSOK|GPT⁺-JP
+  network: raw
+  port: 28573
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  server: 18.183.215.124
+  tls: true
+  type: vless
+  udp: true
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  xudp: true
+  servername: www.sony.com
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP73|1.7MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP90|1012KB/s|DNSOK|GPT⁺-JP
   network: tcp
   port: 24620
   reality-opts:
@@ -25,80 +167,37 @@ proxies:
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP74|1.3MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 11690
-  reality-opts:
-    public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
-    short-id: 034885e346fd30
-  server: 13.231.19.51
-  tls: true
-  type: vless
-  udp: true
-  uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
-  xudp: true
-  servername: www.tesla.com
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP75|1.3MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: None
-    path: /cctv13.m3u8
-  xudp: true
-  servername: None
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP76|1.2MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP91|1007KB/s|DNSOK|GPT⁺-JP
   network: raw
-  port: 11690
+  port: 24620
   reality-opts:
-    public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
-    short-id: 034885e346fd30
-  server: 13.231.19.51
+    public-key: eZthMfn0kQJFNr_srk502fr8yUHMoHQ7Oh3v4_HfTBI
+    short-id: db2cb3b3c2dbb711
+  server: 13.231.7.104
   tls: true
   type: vless
   udp: true
-  uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
+  uuid: b969ef8f-7bdb-474f-9481-d8f3c5686fb8
   xudp: true
-  servername: www.tesla.com
-- cipher: aes-256-gcm
-  name: 🇯🇵 | @WhiteDNS | JP77|1.2MB/s|DNSOK|GPT⁺-JP
-  password: 3eOFeNssde7PYYMv
-  port: 80
-  server: 84.247.155.196
-  type: ss
-  udp: true
+  servername: www.amd.com
 - client-fingerprint: firefox
-  encryption: none
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP78|1.2MB/s|DNSOK|GPT⁺-JP
-  network: tcp
+  name: 🇯🇵 | @WhiteDNS | JP92|967KB/s|DNSOK|GPT⁺-JP
   port: 28573
   reality-opts:
     public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
     short-id: 03653bc03be10c97
   server: 18.183.215.124
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-  xudp: true
+  network: tcp
   servername: www.sony.com
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP79|1.2MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP93|788KB/s|DNSOK|GPT⁺-JP
   port: 11690
   reality-opts:
     public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
@@ -111,27 +210,19 @@ proxies:
   uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
   network: tcp
   servername: www.tesla.com
-- alterId: '0'
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP80|1.2MB/s|DNSOK|GPT⁺-JP
-  network: tcp#🎡90@oneclickvpnkeys
-  port: 4433
-  server: 45.32.57.118
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  xudp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP81|544KB/s|DNSOK|GPT⁺-JP
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP94|681KB/s|DNSOK|GPT⁺-JP
   network: raw
-  port: 55216
-  server: 155.248.176.44
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+  port: 11690
+  reality-opts:
+    public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
+    short-id: 034885e346fd30
+  server: 13.231.19.51
+  tls: true
+  type: vless
   udp: true
-  uuid: 154dbc39-0921-cf11-29bd-156c5000d763
+  uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
   xudp: true
+  servername: www.tesla.com

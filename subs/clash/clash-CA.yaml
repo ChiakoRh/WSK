@@ -13,10 +13,86 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA66|12.2MB/s|DNSOK|GPT⁺-FI
+  port: 443
+  reality-opts:
+    public-key: 40Tmrw44FhOyoqCQiOfR2kCgxEPXrBLLv6oYFvjbGUI
+    short-id: 3c6ec7b2d73a28b6
+  server: fl.windconnect.pro
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
+  network: tcp
+  servername: fl.windconnect.pro
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇨🇦 | @WhiteDNS | CA67|5.6MB/s|DNSOK|GPT⁺-TR
+  network: tcp
+  port: 8443
+  server: 195.162.69.203
+  tls: true
+  type: vless
+  udp: true
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  xudp: true
+  servername: 195-162-69-203.sslip.io
+- client-fingerprint: firefox
+  name: 🇨🇦 | @WhiteDNS | CA68|4.3MB/s|DNSOK|GPT⁺-TR
+  port: 8443
+  server: 195.162.69.203
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  network: tcp
+  servername: 195-162-69-203.sslip.io
+- client-fingerprint: firefox
+  name: 🇨🇦 | @WhiteDNS | CA69|4.1MB/s|DNSOK|GPT⁺-TR
+  network: tcp
+  port: 8443
+  server: 195-162-69-203.sslip.io
+  tls: true
+  type: vless
+  udp: true
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  xudp: true
+  servername: 195-162-69-203.sslip.io
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA51|3.7MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA70|4.0MB/s|DNSOK|GPT⁺-CA
+  network: tcp#1⛑️@oneclickvpnkeys
+  port: 41373
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
+  tls: true
+  type: vless
+  udp: true
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  xudp: true
+  servername: google.com
+- client-fingerprint: firefox
+  name: 🇨🇦 | @WhiteDNS | CA71|3.9MB/s|DNSOK|GPT⁺-TR
+  port: 8443
+  server: 195-162-69-203.sslip.io
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  network: tcp
+  servername: 195-162-69-203.sslip.io
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA72|3.8MB/s|DNSOK|GPT⁺-CA
   network: raw
   port: 41373
   reality-opts:
@@ -31,7 +107,7 @@ proxies:
   servername: google.com
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA52|3.7MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA73|3.6MB/s|DNSOK|GPT⁺-CA
   port: 41373
   reality-opts:
     public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
@@ -47,7 +123,23 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA53|2.8MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA74|3.1MB/s|DNSOK|GPT⁺-CA
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
+    short-id: af7e79b5
+  server: 66.70.179.124
+  tls: true
+  type: vless
+  udp: true
+  uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
+  xudp: true
+  servername: www.apple.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA75|2.9MB/s|DNSOK|GPT⁺-CA
   network: tcp
   port: 41373
   reality-opts:
@@ -60,34 +152,12 @@ proxies:
   uuid: a71c8954-66a8-4321-bedb-2336230d81ce
   xudp: true
   servername: google.com
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦 | @WhiteDNS | CA54|2.6MB/s|DNSOK|GPT⁺-CA
-  password: 3ssumf2
-  port: 443
-  server: 142.4.216.225
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA55|1.7MB/s|DNSOK|GPT⁺-CA
-  port: 443
-  reality-opts:
-    public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
-    short-id: af7e79b5
-  server: 66.70.179.124
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
-  network: tcp
-  servername: www.apple.com
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA56|1.7MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA76|2.3MB/s|DNSOK|GPT⁺-CA
   network: tcp
   port: 443
   reality-opts:
@@ -101,32 +171,91 @@ proxies:
   xudp: true
   servername: www.apple.com
 - client-fingerprint: chrome
-  encryption: none
+  name: 🇨🇦 | @WhiteDNS | CA77|1.6MB/s|DNSOK|GPT⁺-QA
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10008
+  server: z-jp2.1card.cc
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA57|1.4MB/s|DNSOK|GPT⁺-CA
-  network: tcp#1⛑️@oneclickvpnkeys
-  port: 41373
+  name: 🇨🇦 | @WhiteDNS | CA78|1.6MB/s|DNSOK|GPT⁺-CA
+  port: 443
   reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
+    public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
+    short-id: af7e79b5
+  server: 66.70.179.124
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  xudp: true
-  servername: google.com
+  uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
+  network: tcp
+  servername: www.apple.com
+- client-fingerprint: chrome
+  name: 🇨🇦 | @WhiteDNS | CA79|1.5MB/s|DNSOK|GPT⁺-SD
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10012
+  server: z-jp1.1card.cc
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇨🇦 | @WhiteDNS | CA80|1.4MB/s|DNSOK|GPT⁺-NP
+  network: tcp
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10044
+  server: z-sg1.6send.com
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+- country: 🇺🇸US
+  name: 🇨🇦 | @WhiteDNS | CA81|1.3MB/s|DNSOK|GPT⁺-NP
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10044
+  server: z-sg2.6send.com
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇨🇦 | @WhiteDNS | CA82|1.3MB/s|DNSOK|GPT⁺-SD
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10012
+  server: z-jp2.1card.cc
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+  network: tcp
 proxy-groups:
 - name: CA-Auto
   type: url-test
   proxies:
-  - 🇨🇦 | @WhiteDNS | CA51|3.7MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA52|3.7MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA53|2.8MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA54|2.6MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA55|1.7MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA56|1.7MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA57|1.4MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA66|12.2MB/s|DNSOK|GPT⁺-FI
+  - 🇨🇦 | @WhiteDNS | CA67|5.6MB/s|DNSOK|GPT⁺-TR
+  - 🇨🇦 | @WhiteDNS | CA68|4.3MB/s|DNSOK|GPT⁺-TR
+  - 🇨🇦 | @WhiteDNS | CA69|4.1MB/s|DNSOK|GPT⁺-TR
+  - 🇨🇦 | @WhiteDNS | CA70|4.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA71|3.9MB/s|DNSOK|GPT⁺-TR
+  - 🇨🇦 | @WhiteDNS | CA72|3.8MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA73|3.6MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA74|3.1MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA75|2.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA76|2.3MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA77|1.6MB/s|DNSOK|GPT⁺-QA
+  - 🇨🇦 | @WhiteDNS | CA78|1.6MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA79|1.5MB/s|DNSOK|GPT⁺-SD
+  - 🇨🇦 | @WhiteDNS | CA80|1.4MB/s|DNSOK|GPT⁺-NP
+  - 🇨🇦 | @WhiteDNS | CA81|1.3MB/s|DNSOK|GPT⁺-NP
+  - 🇨🇦 | @WhiteDNS | CA82|1.3MB/s|DNSOK|GPT⁺-SD
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

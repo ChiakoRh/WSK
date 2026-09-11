@@ -13,22 +13,20 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇦🇺 | @WhiteDNS | AU11|1.8MB/s|DNSOK|GPT⁺-AU
+- name: 🇷🇸 | @WhiteDNS | RS4|6.3MB/s|DNSOK|GPT⁺-RS
+  password: ''
   port: 443
-  server: 172.105.169.70
+  server: 146.70.221.34
   skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  network: tcp
-  servername: 172.105.169.70
+  type: http
+  username: ''
 proxy-groups:
-- name: AU-Auto
+- name: RS-Auto
   type: url-test
   proxies:
-  - 🇦🇺 | @WhiteDNS | AU11|1.8MB/s|DNSOK|GPT⁺-AU
+  - 🇷🇸 | @WhiteDNS | RS4|6.3MB/s|DNSOK|GPT⁺-RS
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,AU-Auto
+- MATCH,RS-Auto

@@ -1,0 +1,57 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- name: 🇨🇭 | @WhiteDNS | CH11|40.8MB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 443
+  server: 31.7.62.50
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH12|39.2MB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 9443
+  server: 37.120.213.210
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇨🇭 | @WhiteDNS | CH13|36.2MB/s|DNSOK|GPT⁺-CH
+  network: tcp
+  port: 9000
+  reality-opts:
+    public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
+    short-id: cd0a1986719e44c8
+  server: switzerlandddddd-sgood.wopd.butnorwa.butter.whooisthebest.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: b33e4571-de3f-4249-b246-b2acf3db2f36
+  xudp: true
+  servername: sheets.google.com
+proxy-groups:
+- name: CH-Auto
+  type: url-test
+  proxies:
+  - 🇨🇭 | @WhiteDNS | CH11|40.8MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH12|39.2MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH13|36.2MB/s|DNSOK|GPT⁺-CH
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,CH-Auto
