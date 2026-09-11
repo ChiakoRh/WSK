@@ -13,9 +13,18 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 🇰🇷 | @WhiteDNS | KR408|1.8MB/s|DNSOK|GPT⁺-KR
+  port: 443
+  server: 140.238.2.250
+  type: vmess
+  udp: true
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  network: tcp
 - alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR65|1.7MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR409|1.2MB/s|DNSOK|GPT⁺-KR
   network: raw
   port: 443
   server: 140.238.2.250
@@ -25,35 +34,9 @@ proxies:
   udp: true
   uuid: 41a7089a-040b-4538-8b8d-010902405bde
   xudp: true
-- alterId: 0
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR66|1.7MB/s|DNSOK|GPT⁺-KR
-  port: 443
-  server: 140.238.2.250
-  type: vmess
-  udp: true
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  network: tcp
-- cipher: aes-256-cfb
-  name: 🇰🇷 | @WhiteDNS | KR67|1.3MB/s|DNSOK|GPT⁺-KR
-  password: 1234!@#$
-  port: 1774
-  server: 49.254.204.134
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR68|973KB/s|DNSOK|GPT⁺-YE
-  network: tcp
-  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
-  port: 10010
-  server: z-jp2.1card.cc
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
 - alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR69|710KB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR410|1.0MB/s|DNSOK|GPT⁺-KR
   network: tcp
   port: 443
   server: 140.238.2.250
@@ -67,11 +50,9 @@ proxy-groups:
 - name: KR-Auto
   type: url-test
   proxies:
-  - 🇰🇷 | @WhiteDNS | KR65|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR66|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR67|1.3MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR68|973KB/s|DNSOK|GPT⁺-YE
-  - 🇰🇷 | @WhiteDNS | KR69|710KB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR408|1.8MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR409|1.2MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR410|1.0MB/s|DNSOK|GPT⁺-KR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

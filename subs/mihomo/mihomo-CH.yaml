@@ -1,17 +1,184 @@
 proxies:
-- name: 🇨🇭 | @WhiteDNS | CH11|32.7MB/s|DNSOK|GPT⁺-CH
-  password: ''
-  port: 9443
-  server: 37.120.213.210
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇭 | @WhiteDNS | CH12|25.2MB/s|DNSOK|GPT⁺-CH
-  password: ''
+- name: 🇨🇭 | @WhiteDNS | CH95|34.6MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 8880
+  server: 172.67.143.54
+  type: vless
+  udp: true
+  uuid: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
+  ws-opts:
+    headers:
+      Host: aged-silence-8d7d.tahaggs.workers.dev
+    path: /taha3
+- encryption: none
+  name: 🇨🇭 | @WhiteDNS | CH96|28.2MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 8080
+  server: 172.67.133.170
+  type: vless
+  udp: true
+  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
+  ws-opts:
+    headers:
+      Host: peekconfigg.vipserver1-39d.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/41.0.2272.118 Safari/537.36
+    path: /sync
+  xudp: true
+  servername: peekconfigg.vipserver1-39d.workers.dev
+- client-fingerprint: chrome
+  name: 🇨🇭 | @WhiteDNS | CH97|17.3MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  password: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
+  port: 2096
+  server: 172.67.143.54
+  skip-cert-verify: false
+  sni: aged-silence-8d7d.tahaggs.workers.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/34.0.1847.131 Safari/537.36
+    path: /taha3
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇨🇭 | @WhiteDNS | CH98|16.7MB/s|DNSOK|GPT⁺-CH
+  network: ws
   port: 443
-  server: 31.7.62.50
-  skip-cert-verify: true
+  server: 104.18.28.234
   tls: true
-  type: http
-  username: ''
+  type: vless
+  udp: true
+  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
+  ws-opts:
+    headers:
+      Host: netlivpn5505.ffffdsaaa.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; TRT-LX2 Build/HUAWEITRT-LX2; wv)
+        AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile
+        Safari/537.36
+    path: /
+  xudp: true
+  servername: netlivpn5505.ffffdsaaa.workers.dev
+- client-fingerprint: qq
+  name: 🇨🇭 | @WhiteDNS | CH99|13.6MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 443
+  server: netlivpn5505.ffffdsaaa.workers.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/56.0.2924.87 Safari/537.36
+    path: /
+  xudp: true
+  servername: netlivpn5505.ffffdsaaa.workers.dev
+- client-fingerprint: qq
+  name: 🇨🇭 | @WhiteDNS | CH100|7.3MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 443
+  server: netlivpn5505.ffffdsaaa.workers.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/49.0.2623.110 Safari/537.36
+    path: /
+  xudp: true
+  servername: netlivpn5505.ffffdsaaa.workers.dev
+- client-fingerprint: chrome
+  name: 🇨🇭 | @WhiteDNS | CH101|6.4MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 443
+  server: curly-night-6928.ggdhchjk.workers.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /
+  xudp: true
+  servername: curly-night-6928.ggdhchjk.workers.dev
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇨🇭 | @WhiteDNS | CH102|6.4MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 443
+  server: 172.67.173.138
+  tls: true
+  type: vless
+  udp: true
+  uuid: 813cd228-ebf6-0e21-481a-ba4af8f85b82
+  ws-opts:
+    headers:
+      Host: odd-disk-98c5.assassincreed4048.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X Build/N2G47H) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /sync
+  xudp: true
+  servername: odd-disk-98c5.assassincreed4048.workers.dev
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇨🇭 | @WhiteDNS | CH103|6.1MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 443
+  server: 104.17.147.22
+  tls: true
+  type: vless
+  udp: true
+  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
+  ws-opts:
+    headers:
+      Host: netlivpn5505.ffffdsaaa.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1; A37f Build/LMY47V) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+  xudp: true
+  servername: netlivpn5505.ffffdsaaa.workers.dev
+- name: 🇨🇭 | @WhiteDNS | CH104|5.8MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 8080
+  server: 172.67.133.170
+  type: vless
+  udp: true
+  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
+  ws-opts:
+    headers:
+      Host: peekconfigg.vipserver1-39d.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.106 Safari/537.36
+    path: /sync
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇨🇭 | @WhiteDNS | CH105|1.6MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 443
+  server: 172.67.133.170
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
+  ws-opts:
+    headers:
+      Host: peekconfigg.vipserver1-39d.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.77 Safari/537.36
+    path: /sync
+  xudp: true
+  servername: peekconfigg.vipserver1-39d.workers.dev

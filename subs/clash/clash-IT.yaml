@@ -14,31 +14,9 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT161|84.6MB/s|DNSOK|GPT⁺-IT
-  port: 32833
-  reality-opts:
-    public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
-    short-id: a0a305ccc8e94aa8
-  server: 172.238.232.239
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
-  network: tcp
-  servername: www.intel.com
-- cipher: aes-256-gcm
-  name: 🇮🇹 | @WhiteDNS | IT162|42.3MB/s|DNSOK|GPT⁺-IT
-  password: itzvpn@321
-  port: 8388
-  server: 57.131.48.45
-  type: ss
-  udp: true
-- client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT163|39.0MB/s|DNSOK|GPT⁺-IT
+  name: 🇮🇹 | @WhiteDNS | IT1479|89.3MB/s|DNSOK|GPT⁺-IT
   network: raw
   port: 32833
   reality-opts:
@@ -51,18 +29,9 @@ proxies:
   uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
   xudp: true
   servername: www.intel.com
-- name: 🇮🇹 | @WhiteDNS | IT164|29.0MB/s|DNSOK|GPT⁺-IT
-  password: None
-  port: 443
-  server: 185.183.105.146
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 - client-fingerprint: chrome
-  encryption: none
   flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT165|7.1MB/s|DNSOK|GPT⁺-IT
+  name: 🇮🇹 | @WhiteDNS | IT1480|86.9MB/s|DNSOK|GPT⁺-IT
   network: tcp
   port: 32833
   reality-opts:
@@ -73,26 +42,69 @@ proxies:
   type: vless
   udp: true
   uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
-  xudp: true
   servername: www.intel.com
-- name: 🇮🇹 | @WhiteDNS | IT166|5.4MB/s|DNSOK|GPT⁺-IT
-  password: ''
-  port: 443
-  server: 178.237.4.200
-  skip-cert-verify: true
+- client-fingerprint: chrome
+  name: 🇮🇹 | @WhiteDNS | IT1481|1.6MB/s|DNSOK|GPT⁺-US
+  network: ws
+  port: 8443
+  server: singapore.com
   tls: true
-  type: http
-  username: ''
+  type: vless
+  udp: true
+  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
+  ws-opts:
+    headers:
+      Host: c7dabe95.proxy-978.pages.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.94 Safari/537.36
+    path: /
+  xudp: true
+  servername: c7dabe95.proxy-978.pages.dev
+- encryption: none
+  name: 🇮🇹 | @WhiteDNS | IT1482|1.0MB/s|DNSOK|GPT⁺-IT
+  network: tcp
+  port: 10086
+  server: 204.216.216.23
+  type: vless
+  udp: true
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇮🇹 | @WhiteDNS | IT1483|879KB/s|DNSOK|GPT⁺-IT
+  network: raw
+  port: 1114
+  reality-opts:
+    public-key: WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ
+    short-id: 79a1e14b
+  server: 204.216.216.23
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6ba2eac6-0ec9-44ca-a42b-a8e23aafb530
+  xudp: true
+  servername: yahoo.com
+- encryption: none
+  name: 🇮🇹 | @WhiteDNS | IT1484|772KB/s|DNSOK|GPT⁺-IT
+  network: tcp
+  port: 10086
+  server: 204.216.216.23
+  type: vless
+  udp: true
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  xudp: true
+  servername: /?bia_telegram@marambashi_marambashi_marambashi_marambashi_marambashi
 proxy-groups:
 - name: IT-Auto
   type: url-test
   proxies:
-  - 🇮🇹 | @WhiteDNS | IT161|84.6MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT162|42.3MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT163|39.0MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT164|29.0MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT165|7.1MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT166|5.4MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT1479|89.3MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT1480|86.9MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT1481|1.6MB/s|DNSOK|GPT⁺-US
+  - 🇮🇹 | @WhiteDNS | IT1482|1.0MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT1483|879KB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT1484|772KB/s|DNSOK|GPT⁺-IT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

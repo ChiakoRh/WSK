@@ -1,0 +1,78 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇮🇳 | @WhiteDNS | IN32|5.6MB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 443
+  server: odd-violet-5440.asdgrweeee13.workers.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /
+  xudp: true
+  servername: odd-violet-5440.asdgrweeee13.workers.dev
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇮🇳 | @WhiteDNS | IN33|5.6MB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 443
+  server: 104.21.69.118
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
+  ws-opts:
+    headers:
+      Host: odd-violet-5440.asdgrweeee13.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; de-de; SAMSUNG GT-I9195 Build/KOT49H)
+        AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile
+        Safari/537.36
+    path: /sync
+  xudp: true
+  servername: odd-violet-5440.asdgrweeee13.workers.dev
+- encryption: none
+  name: 🇮🇳 | @WhiteDNS | IN34|2.7MB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 80
+  server: 188.114.97.6
+  type: vless
+  udp: true
+  uuid: 44098455-565c-4c45-9f9a-7aaeb350990c
+  ws-opts:
+    headers:
+      Host: zaintest.vuclip.com.r3xxe.eu.cc
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /in-do
+  xudp: true
+proxy-groups:
+- name: IN-Auto
+  type: url-test
+  proxies:
+  - 🇮🇳 | @WhiteDNS | IN32|5.6MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN33|5.6MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN34|2.7MB/s|DNSOK|GPT⁺-IN
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,IN-Auto
