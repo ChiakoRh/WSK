@@ -13,19 +13,26 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇪🇸 | @WhiteDNS | ES18|19.5MB/s|DNSOK|GPT⁺-ES
-  password: None
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇪🇸 | @WhiteDNS | ES19|5.3MB/s|DNSOK|GPT⁺-ES
+  network: tcp
   port: 443
-  server: 130.195.250.18
-  skip-cert-verify: true
+  reality-opts:
+    public-key: -Nw4pIuzq_vnQiII34vwq-_Hot3THgvXB6teTaX1jiQ
+    short-id: 56c0d432cdf36f66
+  server: 0144e048e9e3dd74.neshatinjafood.ir
   tls: true
-  type: http
-  username: ''
+  type: vless
+  udp: true
+  uuid: 14ffccc6-81e0-4108-ab35-b3df398534af
+  xudp: true
+  servername: play-apps-features.googleusercontent.com
 proxy-groups:
 - name: ES-Auto
   type: url-test
   proxies:
-  - 🇪🇸 | @WhiteDNS | ES18|19.5MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES19|5.3MB/s|DNSOK|GPT⁺-ES
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
