@@ -1,59 +1,27 @@
 proxies:
 - client-fingerprint: chrome
   encryption: none
-  name: 🇸🇬 | @WhiteDNS | SG158|6.9MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG116|4.2MB/s|DNSOK|GPT⁺-SG
   network: ws
-  port: 2096
-  server: 91.193.58.27
+  port: 8443
+  server: news.zoom.us
   tls: true
   type: vless
   udp: true
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
   ws-opts:
     headers:
-      Host: free-server.techsonic.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /free-server.techsonic.dev
+      Host: u.srilankangrill.online
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /
   xudp: true
-  servername: free-server.techsonic.dev
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇸🇬 | @WhiteDNS | SG159|5.9MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 2096
-  server: 91.193.58.250
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  ws-opts:
-    headers:
-      Host: free-server.techsonic.dev
-      User-Agent: Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/533.2 (KHTML,
-        like Gecko) Chrome/5.0.342.1 Safari/533.2
-    path: /free-server.techsonic.dev
-  xudp: true
-  servername: free-server.techsonic.dev
-- name: 🇸🇬 | @WhiteDNS | SG160|5.7MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 80
-  server: support.zoom.us
-  type: vless
-  udp: true
-  uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
-  ws-opts:
-    headers:
-      Host: free-server.techsonic.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/49.0.2623.112 Safari/537.36
-    path: /free-server.techsonic.dev
-  xudp: true
+  servername: u.srilankangrill.online
 - alpn:
   - h2
   client-fingerprint: chrome
   encryption: none
-  name: 🇸🇬 | @WhiteDNS | SG161|5.3MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG117|3.3MB/s|DNSOK|GPT⁺-SG
   network: ws
   port: 443
   server: 170.114.52.22
@@ -64,151 +32,129 @@ proxies:
   ws-opts:
     headers:
       Host: asia.csmasterofficial.store
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/41.0.2272.76 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/56.0.2924.87 Safari/537.36
     path: /cs
   xudp: true
   servername: asia.csmasterofficial.store
 - client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG162|3.9MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 2096
-  server: 91.193.58.131
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG118|2.3MB/s|DNSOK|GPT⁺-SG
+  port: 12512
+  reality-opts:
+    public-key: sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA
+    short-id: e692a8250d2e2fd0
+  server: 46.137.202.178
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  uuid: 2a6c617d-98e4-49c3-95ab-76f02fcf0150
+  network: tcp
+  servername: www.intel.com
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG119|1.8MB/s|DNSOK|GPT⁺-SG
+  network: raw
+  port: 12512
+  reality-opts:
+    public-key: sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA
+    short-id: e692a8250d2e2fd0
+  server: 46.137.202.178
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2a6c617d-98e4-49c3-95ab-76f02fcf0150
+  xudp: true
+  servername: www.intel.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG120|1.7MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  port: 12512
+  reality-opts:
+    public-key: sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA
+    short-id: e692a8250d2e2fd0
+  server: 46.137.202.178
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2a6c617d-98e4-49c3-95ab-76f02fcf0150
+  servername: www.intel.com
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG121|1.6MB/s|DNSOK|GPT⁺-SG
+  network: raw
+  port: 19825
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  server: 146.235.16.130
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  xudp: true
+  servername: sg2-8sb.6121999.dpdns.org
+- client-fingerprint: qq
+  name: 🇸🇬 | @WhiteDNS | SG122|1.2MB/s|DNSOK|GPT⁺
+  port: 443
+  server: 8.sahanwickramasinghe.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
+  network: tcp
+  servername: 8.sahanwickramasinghe.me
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG123|1.2MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  port: 443
+  server: 8.sahanwickramasinghe.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
+  xudp: true
+  servername: 8.sahanwickramasinghe.me
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇸🇬 | @WhiteDNS | SG124|1.1MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  port: 443
+  server: 142.91.102.35
+  tls: true
+  type: vless
+  udp: true
+  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
+  xudp: true
+  servername: 8.sahanwickramasinghe.me
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇸🇬 | @WhiteDNS | SG125|1.1MB/s|DNSOK|GPT⁺-SG
+  network: ws
+  port: 8443
+  server: 104.17.73.206
+  tls: true
+  type: vless
+  udp: true
+  uuid: 542fd687-5160-4f80-9223-56678567dd29
   ws-opts:
     headers:
-      Host: free-server.techsonic.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/58.0.3029.110 Safari/537.36
-    path: /free-server.techsonic.dev
+      Host: 8.sahanwickramasinghe.me
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/40.0.2214.111 Safari/537.36
+    path: /
   xudp: true
-  servername: free-server.techsonic.dev
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG163|2.6MB/s|DNSOK|GPT⁺-SG
-  port: 12512
-  reality-opts:
-    public-key: sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA
-    short-id: e692a8250d2e2fd0
-  server: 46.137.202.178
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2a6c617d-98e4-49c3-95ab-76f02fcf0150
-  network: tcp
-  servername: www.intel.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG164|1.6MB/s|DNSOK|GPT⁺-SG
-  network: tcp
-  port: 19825
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  server: sg2-8sb.6121999.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  xudp: true
-  servername: sg2-8sb.6121999.dpdns.org
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG165|1.5MB/s|DNSOK|GPT⁺-SG
-  network: tcp
-  port: 12512
-  reality-opts:
-    public-key: sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA
-    short-id: e692a8250d2e2fd0
-  server: 46.137.202.178
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2a6c617d-98e4-49c3-95ab-76f02fcf0150
-  servername: www.intel.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG166|1.3MB/s|DNSOK|GPT⁺-SG
-  port: 19825
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  server: sg2-8sb.6121999.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  network: tcp
-  servername: sg2-8sb.6121999.dpdns.org
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG167|1.3MB/s|DNSOK|GPT⁺-SG
-  port: 443
-  reality-opts:
-    public-key: bMcyxNueltQhz5Kuxcf8odDStWHowYfLhKNdCbUweDc
-    short-id: d1742269
-  server: 91.192.81.214
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 607801ac-dbdd-4938-a167-129015d9978e
-  network: tcp
-  servername: www.cloudflare.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG168|1.3MB/s|DNSOK|GPT⁺-SG
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: bMcyxNueltQhz5Kuxcf8odDStWHowYfLhKNdCbUweDc
-    short-id: d1742269
-  server: 91.192.81.214
-  tls: true
-  type: vless
-  udp: true
-  uuid: 607801ac-dbdd-4938-a167-129015d9978e
-  xudp: true
-  servername: www.cloudflare.com
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG169|1.2MB/s|DNSOK|GPT⁺-SG
-  network: raw
-  port: 12512
-  reality-opts:
-    public-key: sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA
-    short-id: e692a8250d2e2fd0
-  server: 46.137.202.178
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2a6c617d-98e4-49c3-95ab-76f02fcf0150
-  xudp: true
-  servername: www.intel.com
-- alpn:
-  - h3
-  congestion-controller: bbr
-  name: 🇸🇬 | @WhiteDNS | SG170|1.2MB/s|DNSOK|GPT⁺-SG
-  password: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  port: 33738
-  server: 146.235.16.130
-  sni: sg2-8sb.6121999.dpdns.org
-  type: tuic
-  udp: true
-  udp-relay-mode: quic
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  version: 5
+  servername: 8.sahanwickramasinghe.me
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG171|1.1MB/s|DNSOK|GPT⁺-SG
-  network: tcp#5🐲@oneclickvpnkeys
+  name: 🇸🇬 | @WhiteDNS | SG126|1.0MB/s|DNSOK|GPT⁺-SG
+  network: tcp
   port: 19825
   reality-opts:
     public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
@@ -223,47 +169,46 @@ proxies:
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG172|1.0MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG127|1010KB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  port: 34033
+  reality-opts:
+    public-key: R1mts7yXplVMaA15AC1U0TMnYvqiX3OPbK1_ZBan_XQ
+    short-id: 702186e48d5646
+  server: 13.229.44.152
+  tls: true
+  type: vless
+  udp: true
+  uuid: b5138354-066a-4e9f-93e3-5bc700eaf89f
+  xudp: true
+  servername: www.amd.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG128|812KB/s|DNSOK|GPT⁺-SG
+  port: 24146
+  reality-opts:
+    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
+    short-id: 7205d9079521832c
+  server: 54.251.9.130
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
+  network: tcp
+  servername: www.intel.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG129|640KB/s|DNSOK|GPT⁺-SG
   network: raw
-  port: 19825
+  port: 24146
   reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  server: 146.235.16.130
+    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
+    short-id: 7205d9079521832c
+  server: 54.251.9.130
   tls: true
   type: vless
   udp: true
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
   xudp: true
-  servername: sg2-8sb.6121999.dpdns.org
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG173|1.0MB/s|DNSOK|GPT⁺-SG
-  network: tcp
-  port: 19825
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  server: sg2-8sb.6121999.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  xudp: true
-  servername: sg2-8sb.6121999.dpdns.org
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG174|1013KB/s|DNSOK|GPT⁺-SG
-  network: tcp
-  port: 19825
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  server: 146.235.16.130
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  xudp: true
-  servername: sg2-8sb.6121999.dpdns.org
+  servername: www.intel.com

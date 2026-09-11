@@ -13,23 +13,28 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: firefox
-  name: 🇹🇷 | @WhiteDNS | TR21|2.7MB/s|DNSOK|GPT⁺-TR
-  port: 8443
-  server: 195-162-69-203.sslip.io
+- name: 🇮🇪 | @WhiteDNS | IE18|6.8MB/s|DNSOK|GPT⁺-IE
+  password: ''
+  port: 443
+  server: 149.88.96.1
   skip-cert-verify: true
   tls: true
-  type: vless
+  type: http
+  username: ''
+- cipher: aes-256-cfb
+  name: 🇮🇪 | @WhiteDNS | IE19|3.7MB/s|DNSOK|GPT⁺-IE
+  password: amazonskr05
+  port: 443
+  server: 54.216.102.222
+  type: ss
   udp: true
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  network: tcp
-  servername: 195-162-69-203.sslip.io
 proxy-groups:
-- name: TR-Auto
+- name: IE-Auto
   type: url-test
   proxies:
-  - 🇹🇷 | @WhiteDNS | TR21|2.7MB/s|DNSOK|GPT⁺-TR
+  - 🇮🇪 | @WhiteDNS | IE18|6.8MB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE19|3.7MB/s|DNSOK|GPT⁺-IE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,TR-Auto
+- MATCH,IE-Auto

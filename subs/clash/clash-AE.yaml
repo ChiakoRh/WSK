@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇦🇪 | @WhiteDNS | AE21|2.6MB/s|DNSOK|GPT⁺-AE
+- name: 🇦🇪 | @WhiteDNS | AE15|2.7MB/s|DNSOK|GPT⁺-AE
   network: ws
   port: 22573
   server: 84.235.244.108
@@ -23,26 +23,12 @@ proxies:
   ws-opts:
     headers:
       Host: uae.unixzone.us
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Moto G (5) Build/NPPS25.137-93-14)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.139 Safari/537.36
     path: /
   xudp: true
   servername: uae.unixzone.us
-- name: 🇦🇪 | @WhiteDNS | AE22|2.4MB/s|DNSOK|GPT⁺-AE
-  network: ws
-  port: 22573
-  server: 84.235.244.108
-  type: vless
-  udp: true
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  ws-opts:
-    headers:
-      Host: uae.unixzone.us
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.181 Safari/537.36
-    path: /
-  xudp: true
-- name: 🇦🇪 | @WhiteDNS | AE23|1.3MB/s|DNSOK|GPT⁺-AE
+- name: 🇦🇪 | @WhiteDNS | AE16|2.6MB/s|DNSOK|GPT⁺-AE
   network: ws
   port: 22573
   server: uae.unixzone.us
@@ -52,8 +38,8 @@ proxies:
   ws-opts:
     headers:
       Host: uae.unixzone.us
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/41.0.2272.101 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/69.0.3497.100 Safari/537.36
     path: /
   xudp: true
   servername: uae.unixzone.us
@@ -61,9 +47,8 @@ proxy-groups:
 - name: AE-Auto
   type: url-test
   proxies:
-  - 🇦🇪 | @WhiteDNS | AE21|2.6MB/s|DNSOK|GPT⁺-AE
-  - 🇦🇪 | @WhiteDNS | AE22|2.4MB/s|DNSOK|GPT⁺-AE
-  - 🇦🇪 | @WhiteDNS | AE23|1.3MB/s|DNSOK|GPT⁺-AE
+  - 🇦🇪 | @WhiteDNS | AE15|2.7MB/s|DNSOK|GPT⁺-AE
+  - 🇦🇪 | @WhiteDNS | AE16|2.6MB/s|DNSOK|GPT⁺-AE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
