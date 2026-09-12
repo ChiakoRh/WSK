@@ -1,0 +1,42 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- name: 🇩🇰 | @WhiteDNS | DK4|2.6MB/s|DNSOK|GPT⁺-DK
+  password: ''
+  port: 443
+  server: 185.245.84.50
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- encryption: mlkem768x25519plus.native.0rtt.CCIZgZeeCX8na60UXi9II-iduj3OFxtj-fuh_4AWiUU
+  name: 🇩🇰 | @WhiteDNS | DK5|1.3MB/s|DNSOK|GPT⁺-DK
+  network: tcp
+  port: 443
+  server: 87.58.159.20
+  type: vless
+  udp: true
+  uuid: awlix_ir
+  xudp: true
+proxy-groups:
+- name: DK-Auto
+  type: url-test
+  proxies:
+  - 🇩🇰 | @WhiteDNS | DK4|2.6MB/s|DNSOK|GPT⁺-DK
+  - 🇩🇰 | @WhiteDNS | DK5|1.3MB/s|DNSOK|GPT⁺-DK
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,DK-Auto
