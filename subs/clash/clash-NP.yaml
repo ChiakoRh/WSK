@@ -13,20 +13,22 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇿 | @WhiteDNS | CZ10|5.6MB/s|DNSOK|GPT⁺-CZ
-  password: ''
-  port: 443
-  server: 185.216.35.66
+- client-fingerprint: chrome
+  name: 🇳🇵 | @WhiteDNS | NP2|622KB/s|DNSOK|GPT⁺-NP
+  network: tcp
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10044
+  server: z-sg2.6send.com
   skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
 proxy-groups:
-- name: CZ-Auto
+- name: NP-Auto
   type: url-test
   proxies:
-  - 🇨🇿 | @WhiteDNS | CZ10|5.6MB/s|DNSOK|GPT⁺-CZ
+  - 🇳🇵 | @WhiteDNS | NP2|622KB/s|DNSOK|GPT⁺-NP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,CZ-Auto
+- MATCH,NP-Auto

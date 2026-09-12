@@ -13,20 +13,27 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇭🇺 | @WhiteDNS | HU2|23.8MB/s|DNSOK|GPT⁺-HU
+- cipher: aes-256-gcm
+  name: 🇧🇷 | @WhiteDNS | BR16|1.3MB/s|DNSOK|GPT⁺-BR
+  password: owVdNnQcdPgthSyX
+  port: 8388
+  server: 216.128.168.190
+  type: ss
+  udp: true
+- name: 🇧🇷 | @WhiteDNS | BR17|1.0MB/s|DNSOK|GPT⁺-BR
   password: ''
-  port: 443
-  server: 146.70.203.18
+  port: 9191
+  server: 177.222.248.51
   skip-cert-verify: true
-  tls: true
   type: http
   username: ''
 proxy-groups:
-- name: HU-Auto
+- name: BR-Auto
   type: url-test
   proxies:
-  - 🇭🇺 | @WhiteDNS | HU2|23.8MB/s|DNSOK|GPT⁺-HU
+  - 🇧🇷 | @WhiteDNS | BR16|1.3MB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR17|1.0MB/s|DNSOK|GPT⁺-BR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,HU-Auto
+- MATCH,BR-Auto
