@@ -13,18 +13,42 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇸🇪 | @WhiteDNS | SE20|689KB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE24|16.2MB/s|DNSOK|GPT⁺-SE
   password: ''
-  port: 81
-  server: 46.59.120.87
+  port: 443
+  server: 149.50.216.65
   skip-cert-verify: true
+  tls: true
   type: http
   username: ''
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  encryption: none
+  name: 🇸🇪 | @WhiteDNS | SE25|5.9MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 443
+  server: 188.114.97.3
+  tls: true
+  type: vless
+  udp: true
+  uuid: d7d8af23-36cd-4c66-a42a-4469c177210f
+  ws-opts:
+    headers:
+      Host: fancy-rain-136e.thisisalee.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.94 Safari/537.36
+    path: /eyJqdW5rIjoidmJOWHUwYnBOS00zT04iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI5MS4xODYuMjE5LjgyIl19
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2560
+  xudp: true
+  servername: FanCy-raIn-136E.tHisIsaLEe.wOrKeRS.deV
 proxy-groups:
 - name: SE-Auto
   type: url-test
   proxies:
-  - 🇸🇪 | @WhiteDNS | SE20|689KB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE24|16.2MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE25|5.9MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

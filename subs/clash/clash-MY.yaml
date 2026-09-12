@@ -13,9 +13,10 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: firefox
+- client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇲🇾 | @WhiteDNS | MY13|2.6MB/s|DNSOK|GPT⁺-MY
+  name: 🇲🇾 | @WhiteDNS | MY12|2.4MB/s|DNSOK|GPT⁺-MY
   network: tcp
   port: 53271
   reality-opts:
@@ -26,11 +27,12 @@ proxies:
   type: vless
   udp: true
   uuid: e8358eb5-7210-4cf8-982f-68af141b7694
+  xudp: true
   servername: www.tesla.com
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇲🇾 | @WhiteDNS | MY14|2.4MB/s|DNSOK|GPT⁺-MY
+  name: 🇲🇾 | @WhiteDNS | MY13|1.3MB/s|DNSOK|GPT⁺-MY
   network: raw
   port: 53271
   reality-opts:
@@ -45,7 +47,7 @@ proxies:
   servername: www.tesla.com
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇲🇾 | @WhiteDNS | MY15|1.3MB/s|DNSOK|GPT⁺-MY
+  name: 🇲🇾 | @WhiteDNS | MY14|1.0MB/s|DNSOK|GPT⁺-MY
   port: 53271
   reality-opts:
     public-key: 1P58ZYmo81kPDnL4U7SnEUA-aT2R86l-o6dbFXoeDjc
@@ -62,9 +64,9 @@ proxy-groups:
 - name: MY-Auto
   type: url-test
   proxies:
-  - 🇲🇾 | @WhiteDNS | MY13|2.6MB/s|DNSOK|GPT⁺-MY
-  - 🇲🇾 | @WhiteDNS | MY14|2.4MB/s|DNSOK|GPT⁺-MY
-  - 🇲🇾 | @WhiteDNS | MY15|1.3MB/s|DNSOK|GPT⁺-MY
+  - 🇲🇾 | @WhiteDNS | MY12|2.4MB/s|DNSOK|GPT⁺-MY
+  - 🇲🇾 | @WhiteDNS | MY13|1.3MB/s|DNSOK|GPT⁺-MY
+  - 🇲🇾 | @WhiteDNS | MY14|1.0MB/s|DNSOK|GPT⁺-MY
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

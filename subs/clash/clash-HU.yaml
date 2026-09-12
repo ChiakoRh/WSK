@@ -13,24 +13,20 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: firefox
-  encryption: none
-  name: 🇹🇷 | @WhiteDNS | TR13|3.0MB/s|DNSOK|GPT⁺-TR
-  network: raw
-  port: 8443
-  server: 195.162.69.203
+- name: 🇭🇺 | @WhiteDNS | HU2|23.8MB/s|DNSOK|GPT⁺-HU
+  password: ''
+  port: 443
+  server: 146.70.203.18
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  xudp: true
-  servername: 195-162-69-203.sslip.io
+  type: http
+  username: ''
 proxy-groups:
-- name: TR-Auto
+- name: HU-Auto
   type: url-test
   proxies:
-  - 🇹🇷 | @WhiteDNS | TR13|3.0MB/s|DNSOK|GPT⁺-TR
+  - 🇭🇺 | @WhiteDNS | HU2|23.8MB/s|DNSOK|GPT⁺-HU
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,TR-Auto
+- MATCH,HU-Auto
