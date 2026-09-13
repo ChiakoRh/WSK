@@ -13,30 +13,6 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇭 | @WhiteDNS | CH24|40.3MB/s|DNSOK|GPT⁺-CH
-  password: ''
-  port: 443
-  server: 31.7.62.50
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇭 | @WhiteDNS | CH25|36.6MB/s|DNSOK|GPT⁺-CH
-  password: ''
-  port: 9443
-  server: 37.120.213.210
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇭 | @WhiteDNS | CH26|34.8MB/s|DNSOK|GPT⁺-CH
-  password: None
-  port: 443
-  server: 31.7.62.50
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 - encryption: none
   http-opts:
     headers:
@@ -44,7 +20,7 @@ proxies:
       - play-apps-features.googleusercontent.com
     path:
     - /
-  name: 🇨🇭 | @WhiteDNS | CH27|8.1MB/s|DNSOK|GPT⁺-CH
+  name: 🇨🇭 | @WhiteDNS | CH13|42.5MB/s|DNSOK|GPT⁺-CH
   network: http
   port: 8443
   server: it.kanzelo.ir
@@ -52,14 +28,38 @@ proxies:
   udp: true
   uuid: 0ecf2aa4-0ae7-1a4f-5455-b116c864542d
   xudp: true
+- name: 🇨🇭 | @WhiteDNS | CH14|37.6MB/s|DNSOK|GPT⁺-CH
+  password: None
+  port: 443
+  server: 31.7.62.50
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH15|29.6MB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 443
+  server: 31.7.62.50
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH16|14.6MB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 9443
+  server: 37.120.213.210
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 proxy-groups:
 - name: CH-Auto
   type: url-test
   proxies:
-  - 🇨🇭 | @WhiteDNS | CH24|40.3MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH25|36.6MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH26|34.8MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH27|8.1MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH13|42.5MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH14|37.6MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH15|29.6MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH16|14.6MB/s|DNSOK|GPT⁺-CH
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

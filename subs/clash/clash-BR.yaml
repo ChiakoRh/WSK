@@ -15,7 +15,7 @@ dns:
 proxies:
 - client-fingerprint: random
   encryption: none
-  name: 🇧🇷 | @WhiteDNS | BR13|5.1MB/s|DNSOK|GPT⁺-BR
+  name: 🇧🇷 | @WhiteDNS | BR18|3.1MB/s|DNSOK|GPT⁺-BR
   network: ws
   port: 443
   server: freev2.cloudflare.182682.xyz
@@ -26,18 +26,42 @@ proxies:
   ws-opts:
     headers:
       Host: br-gru.xhs152.shop
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/65.0.3325.181 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/69.0.3497.100 Safari/537.36
     path: /announcement
     early-data-header-name: Sec-WebSocket-Protocol
     max-early-data: 2048
   xudp: true
   servername: br-gru.xhs152.shop
+- name: 🇧🇷 | @WhiteDNS | BR19|745KB/s|DNSOK|GPT⁺-BR
+  password: ''
+  port: 8989
+  server: 138.204.95.193
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇧🇷 | @WhiteDNS | BR20|609KB/s|DNSOK|GPT⁺-BR
+  password: ''
+  port: 9191
+  server: 177.222.248.51
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇧🇷 | @WhiteDNS | BR21|586KB/s|DNSOK|GPT⁺-BR
+  password: ''
+  port: 8666
+  server: 45.228.89.114
+  skip-cert-verify: true
+  type: http
+  username: ''
 proxy-groups:
 - name: BR-Auto
   type: url-test
   proxies:
-  - 🇧🇷 | @WhiteDNS | BR13|5.1MB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR18|3.1MB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR19|745KB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR20|609KB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR21|586KB/s|DNSOK|GPT⁺-BR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
