@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇸🇪 | @WhiteDNS | SE19|15.8MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE30|16.0MB/s|DNSOK|GPT⁺-SE
   password: None
   port: 443
   server: 149.50.216.65
@@ -21,18 +21,26 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇸🇪 | @WhiteDNS | SE20|12.4MB/s|DNSOK|GPT⁺-SE
-  password: None
+- name: 🇸🇪 | @WhiteDNS | SE31|5.7MB/s|DNSOK|GPT⁺-SE
+  password: ''
   port: 443
-  server: 146.70.242.130
+  server: 146.70.242.146
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇸🇪 | @WhiteDNS | SE21|5.9MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE32|4.6MB/s|DNSOK|GPT⁺-SE
   password: ''
   port: 443
-  server: 146.70.242.146
+  server: 149.50.216.65
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇸🇪 | @WhiteDNS | SE33|1.7MB/s|DNSOK|GPT⁺-SE
+  password: None
+  port: 443
+  server: 146.70.242.130
   skip-cert-verify: true
   tls: true
   type: http
@@ -41,9 +49,10 @@ proxy-groups:
 - name: SE-Auto
   type: url-test
   proxies:
-  - 🇸🇪 | @WhiteDNS | SE19|15.8MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE20|12.4MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE21|5.9MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE30|16.0MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE31|5.7MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE32|4.6MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE33|1.7MB/s|DNSOK|GPT⁺-SE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
