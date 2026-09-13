@@ -13,18 +13,31 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇧🇷 | @WhiteDNS | BR21|807KB/s|DNSOK|GPT⁺-BR
-  password: ''
-  port: 9292
-  server: 200.95.192.61
-  skip-cert-verify: true
-  type: http
-  username: ''
+- client-fingerprint: random
+  encryption: none
+  name: 🇧🇷 | @WhiteDNS | BR13|5.1MB/s|DNSOK|GPT⁺-BR
+  network: ws
+  port: 443
+  server: freev2.cloudflare.182682.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7bbf1712-7504-4bb7-aa8d-df5760066240
+  ws-opts:
+    headers:
+      Host: br-gru.xhs152.shop
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/65.0.3325.181 Safari/537.36
+    path: /announcement
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2048
+  xudp: true
+  servername: br-gru.xhs152.shop
 proxy-groups:
 - name: BR-Auto
   type: url-test
   proxies:
-  - 🇧🇷 | @WhiteDNS | BR21|807KB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR13|5.1MB/s|DNSOK|GPT⁺-BR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
