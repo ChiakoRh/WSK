@@ -13,9 +13,17 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- name: 🇧🇬 | @WhiteDNS | BG10|5.3MB/s|DNSOK|GPT⁺-BG
+  password: ''
+  port: 443
+  server: 185.94.192.210
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 - client-fingerprint: chrome
   encryption: none
-  name: 🇧🇬 | @WhiteDNS | BG12|5.8MB/s|DNSOK|GPT⁺-BG
+  name: 🇧🇬 | @WhiteDNS | BG11|5.1MB/s|DNSOK|GPT⁺-BG
   network: ws
   port: 443
   server: 108.165.233.223
@@ -26,25 +34,17 @@ proxies:
   ws-opts:
     headers:
       Host: netlivpn4813.ddhshhshs.workers.dev
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; A37fw Build/LMY47V) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.94 Safari/537.36
     path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
   xudp: true
   servername: netlivpn4813.ddhshhshs.workers.dev
-- name: 🇧🇬 | @WhiteDNS | BG13|2.8MB/s|DNSOK|GPT⁺-BG
-  password: ''
-  port: 443
-  server: 185.94.192.210
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 proxy-groups:
 - name: BG-Auto
   type: url-test
   proxies:
-  - 🇧🇬 | @WhiteDNS | BG12|5.8MB/s|DNSOK|GPT⁺-BG
-  - 🇧🇬 | @WhiteDNS | BG13|2.8MB/s|DNSOK|GPT⁺-BG
+  - 🇧🇬 | @WhiteDNS | BG10|5.3MB/s|DNSOK|GPT⁺-BG
+  - 🇧🇬 | @WhiteDNS | BG11|5.1MB/s|DNSOK|GPT⁺-BG
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

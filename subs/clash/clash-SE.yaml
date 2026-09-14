@@ -13,15 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇸🇪 | @WhiteDNS | SE41|16.4MB/s|DNSOK|GPT⁺-SE
-  password: None
-  port: 443
-  server: 149.50.216.65
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇸🇪 | @WhiteDNS | SE42|5.6MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE37|16.1MB/s|DNSOK|GPT⁺-SE
   password: ''
   port: 443
   server: 146.70.242.146
@@ -29,33 +21,22 @@ proxies:
   tls: true
   type: http
   username: ''
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇸🇪 | @WhiteDNS | SE43|5.5MB/s|DNSOK|GPT⁺-SE
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: Bj9X3UJ2D5Q14wfBOwTz3s09SkFRVgMKTcn93s6kNHo
-    short-id: 8c0d541cdfe5e68d
-  server: p4mhflzkouf53uhb82b2.tulfexa.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1a67126c-b9c4-4e78-b96e-eabd4002ab0c
-  xudp: true
-  servername: sheets.google.com
-- name: 🇸🇪 | @WhiteDNS | SE44|4.0MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE38|16.0MB/s|DNSOK|GPT⁺-SE
   password: None
   port: 443
-  server: 146.70.242.130
+  server: 149.50.216.65
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇸🇪 | @WhiteDNS | SE45|2.9MB/s|DNSOK|GPT⁺-SE
+- cipher: aes-256-gcm
+  name: 🇸🇪 | @WhiteDNS | SE39|5.2MB/s|DNSOK|GPT⁺-SE
+  password: AxIYWtskJWIIaefW
+  port: 8388
+  server: 70.34.212.124
+  type: ss
+  udp: true
+- name: 🇸🇪 | @WhiteDNS | SE40|4.7MB/s|DNSOK|GPT⁺-SE
   password: ''
   port: 443
   server: 149.50.216.65
@@ -63,15 +44,31 @@ proxies:
   tls: true
   type: http
   username: ''
+- name: 🇸🇪 | @WhiteDNS | SE41|1.6MB/s|DNSOK|GPT⁺-SE
+  password: None
+  port: 443
+  server: 146.70.242.130
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇸🇪 | @WhiteDNS | SE42|1.3MB/s|DNSOK|GPT⁺-SE
+  password: ''
+  port: 81
+  server: 46.59.120.87
+  skip-cert-verify: true
+  type: http
+  username: ''
 proxy-groups:
 - name: SE-Auto
   type: url-test
   proxies:
-  - 🇸🇪 | @WhiteDNS | SE41|16.4MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE42|5.6MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE43|5.5MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE44|4.0MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE45|2.9MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE37|16.1MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE38|16.0MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE39|5.2MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE40|4.7MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE41|1.6MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE42|1.3MB/s|DNSOK|GPT⁺-SE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

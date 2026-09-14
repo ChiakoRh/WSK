@@ -13,22 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: aes-256-gcm
-  name: 🇮🇹 | @WhiteDNS | IT1254|36.2MB/s|DNSOK|GPT⁺-IT
-  password: itzvpn@321
-  port: 8388
-  server: 57.131.48.45
-  type: ss
-  udp: true
-- name: 🇮🇹 | @WhiteDNS | IT1255|25.7MB/s|DNSOK|GPT⁺-IT
-  password: None
-  port: 443
-  server: 185.183.105.130
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇮🇹 | @WhiteDNS | IT1256|25.4MB/s|DNSOK|GPT⁺-IT
+- name: 🇮🇹 | @WhiteDNS | IT970|28.6MB/s|DNSOK|GPT⁺-IT
   password: ''
   port: 443
   server: 185.183.105.130
@@ -36,27 +21,123 @@ proxies:
   tls: true
   type: http
   username: ''
-- encryption: none
-  name: 🇮🇹 | @WhiteDNS | IT1257|3.7MB/s|DNSOK|GPT⁺-AE
+- name: 🇮🇹 | @WhiteDNS | IT971|25.7MB/s|DNSOK|GPT⁺-IT
+  password: None
+  port: 443
+  server: 185.183.105.130
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- cipher: aes-256-gcm
+  name: 🇮🇹 | @WhiteDNS | IT972|21.9MB/s|DNSOK|GPT⁺-IT
+  password: itzvpn@321
+  port: 8388
+  server: 57.131.48.45
+  type: ss
+  udp: true
+- client-fingerprint: random
+  name: 🇮🇹 | @WhiteDNS | IT973|6.6MB/s|DNSOK|GPT⁺-IT
   network: ws
-  port: 80
-  server: 45.130.125.201
+  port: 443
+  server: ct.877774.xyz
+  tls: true
   type: vless
   udp: true
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  uuid: 563f3112-71fe-4a88-9055-23df3cbf708d
   ws-opts:
     headers:
-      Host: nahan-core.netizo09.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+      Host: it-mil.xhs152.shop
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
+    path: /announcement
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2048
+  xudp: true
+  servername: it-mil.xhs152.shop
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇮🇹 | @WhiteDNS | IT974|6.6MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 443
+  server: app-q0zc4t.user-4gfyh5.workers.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: /
+  xudp: true
+  servername: app-q0zc4t.user-4gfyh5.workers.dev
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇮🇹 | @WhiteDNS | IT975|5.6MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 443
+  server: 172.67.152.162
+  tls: true
+  type: vless
+  udp: true
+  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
+  ws-opts:
+    headers:
+      Host: app-q0zc4t.user-4gfyh5.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /cmh
+  xudp: true
+  servername: app-q0zc4t.user-4gfyh5.workers.dev
+- name: 🇮🇹 | @WhiteDNS | IT976|4.4MB/s|DNSOK|GPT⁺-IT
+  password: ''
+  port: 443
+  server: 178.237.4.200
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇮🇹 | @WhiteDNS | IT977|3.5MB/s|DNSOK|GPT⁺-SG
+  network: ws
+  port: 8080
+  server: 188.114.97.6
+  type: vless
+  udp: true
+  uuid: 2388e166-3890-33ae-f77e-efac00000002
+  ws-opts:
+    headers:
+      Host: netlivpn4813.ddhshhshs.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇮🇹 | @WhiteDNS | IT978|3.2MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 443
+  server: 172.67.202.235
+  tls: true
+  type: vless
+  udp: true
+  uuid: 566c0473-382e-aabb-c62a-f5bb00000000
+  ws-opts:
+    headers:
+      Host: ez-4b5fd4.appelidmymat.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.102 Safari/537.36
     path: /sync
   xudp: true
-  servername: nahan-core.netizo09.workers.dev
-- client-fingerprint: firefox
-  encryption: none
+  servername: ez-4b5fd4.appelidmymat.workers.dev
+- client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT1258|675KB/s|DNSOK|GPT⁺-IT
-  network: raw
+  name: 🇮🇹 | @WhiteDNS | IT979|1.2MB/s|DNSOK|GPT⁺-IT
+  network: tcp
   port: 32833
   reality-opts:
     public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
@@ -68,62 +149,20 @@ proxies:
   uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
   xudp: true
   servername: www.intel.com
-- name: 🇮🇹 | @WhiteDNS | IT1259|671KB/s|DNSOK|GPT⁺-IT
-  port: 10086
-  server: 204.216.216.23
-  type: vless
-  udp: true
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  network: tcp
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT1260|649KB/s|DNSOK|GPT⁺-IT
-  network: tcp
-  port: 1114
-  reality-opts:
-    public-key: WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ
-    short-id: 79a1e14b
-  server: 204.216.216.23
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6ba2eac6-0ec9-44ca-a42b-a8e23aafb530
-  xudp: true
-  servername: yahoo.com
-- encryption: none
-  name: 🇮🇹 | @WhiteDNS | IT1261|620KB/s|DNSOK|GPT⁺-IT
-  network: tcp
-  port: 10086
-  server: 204.216.216.23
-  type: vless
-  udp: true
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  xudp: true
-  servername: /
-- encryption: none
-  name: 🇮🇹 | @WhiteDNS | IT1262|537KB/s|DNSOK|GPT⁺-IT
-  network: tcp
-  port: 10086
-  server: 204.216.216.23
-  type: vless
-  udp: true
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  xudp: true
-  servername: /?BIA_TELEGRAM@MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI
 proxy-groups:
 - name: IT-Auto
   type: url-test
   proxies:
-  - 🇮🇹 | @WhiteDNS | IT1254|36.2MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT1255|25.7MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT1256|25.4MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT1257|3.7MB/s|DNSOK|GPT⁺-AE
-  - 🇮🇹 | @WhiteDNS | IT1258|675KB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT1259|671KB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT1260|649KB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT1261|620KB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT1262|537KB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT970|28.6MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT971|25.7MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT972|21.9MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT973|6.6MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT974|6.6MB/s|DNSOK|GPT⁺-DE
+  - 🇮🇹 | @WhiteDNS | IT975|5.6MB/s|DNSOK|GPT⁺-DE
+  - 🇮🇹 | @WhiteDNS | IT976|4.4MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT977|3.5MB/s|DNSOK|GPT⁺-SG
+  - 🇮🇹 | @WhiteDNS | IT978|3.2MB/s|DNSOK|GPT⁺-DE
+  - 🇮🇹 | @WhiteDNS | IT979|1.2MB/s|DNSOK|GPT⁺-IT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

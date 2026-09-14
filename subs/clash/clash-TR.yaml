@@ -13,30 +13,28 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- encryption: none
-  name: 🇹🇷 | @WhiteDNS | TR32|1.7MB/s|DNSOK|GPT⁺-TR
-  network: tcp
-  port: 8082
-  server: add.life-pro.ir
+- client-fingerprint: chrome
+  name: 🇹🇷 | @WhiteDNS | TR29|678KB/s|DNSOK|GPT⁺-TR
+  network: ws
+  port: 443
+  server: 104.17.147.22
+  tls: true
   type: vless
   udp: true
-  uuid: 79f98593-6a21-4783-a425-3d5609a79df1
+  uuid: 5ef04ae8-8d7c-0a66-13f4-6e3f00000003
+  ws-opts:
+    headers:
+      Host: relay.lunetcloud.ir
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J111M Build/LMY47V) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /lunetnetwork
   xudp: true
-- encryption: none
-  name: 🇹🇷 | @WhiteDNS | TR33|1.2MB/s|DNSOK|GPT⁺-TR
-  network: raw
-  port: 8082
-  server: add.life-pro.ir
-  type: vless
-  udp: true
-  uuid: 79f98593-6a21-4783-a425-3d5609a79df1
-  xudp: true
+  servername: relay.lunetcloud.ir
 proxy-groups:
 - name: TR-Auto
   type: url-test
   proxies:
-  - 🇹🇷 | @WhiteDNS | TR32|1.7MB/s|DNSOK|GPT⁺-TR
-  - 🇹🇷 | @WhiteDNS | TR33|1.2MB/s|DNSOK|GPT⁺-TR
+  - 🇹🇷 | @WhiteDNS | TR29|678KB/s|DNSOK|GPT⁺-TR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -1,15 +1,20 @@
 proxies:
-- cipher: aes-256-gcm
-  name: 🇧🇷 | @WhiteDNS | BR16|1.7MB/s|DNSOK|GPT⁺-BR
-  password: owVdNnQcdPgthSyX
-  port: 8388
-  server: 216.128.168.190
-  type: ss
+- client-fingerprint: random
+  name: 🇧🇷 | @WhiteDNS | BR17|2.9MB/s|DNSOK|GPT⁺-BR
+  network: ws
+  port: 443
+  server: ct.877774.xyz
+  tls: true
+  type: vless
   udp: true
-- name: 🇧🇷 | @WhiteDNS | BR17|765KB/s|DNSOK|GPT⁺-BR
-  password: ''
-  port: 3126
-  server: 189.84.157.245
-  skip-cert-verify: true
-  type: http
-  username: ''
+  uuid: 563f3112-71fe-4a88-9055-23df3cbf708d
+  ws-opts:
+    headers:
+      Host: br-gru.xhs152.shop
+      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /announcement
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2048
+  xudp: true
+  servername: br-gru.xhs152.shop
