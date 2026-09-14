@@ -15,7 +15,7 @@ dns:
 proxies:
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: 🇦🇹 | @WhiteDNS | AT28|33.0MB/s|DNSOK|GPT⁺-AT
+  name: 🇦🇹 | @WhiteDNS | AT26|27.2MB/s|DNSOK|GPT⁺-AT
   network: tcp
   port: 443
   reality-opts:
@@ -29,7 +29,7 @@ proxies:
   servername: at.quattro-tech.ru
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: 🇦🇹 | @WhiteDNS | AT29|29.8MB/s|DNSOK|GPT⁺-AT
+  name: 🇦🇹 | @WhiteDNS | AT27|4.2MB/s|DNSOK|GPT⁺-AT
   port: 443
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
@@ -42,21 +42,12 @@ proxies:
   uuid: edde565e-41f5-400e-84ea-7b87a3e84488
   network: tcp
   servername: at.quattro-tech.ru
-- name: 🇦🇹 | @WhiteDNS | AT30|2.4MB/s|DNSOK|GPT⁺-AT
-  password: ''
-  port: 443
-  server: 146.70.244.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 proxy-groups:
 - name: AT-Auto
   type: url-test
   proxies:
-  - 🇦🇹 | @WhiteDNS | AT28|33.0MB/s|DNSOK|GPT⁺-AT
-  - 🇦🇹 | @WhiteDNS | AT29|29.8MB/s|DNSOK|GPT⁺-AT
-  - 🇦🇹 | @WhiteDNS | AT30|2.4MB/s|DNSOK|GPT⁺-AT
+  - 🇦🇹 | @WhiteDNS | AT26|27.2MB/s|DNSOK|GPT⁺-AT
+  - 🇦🇹 | @WhiteDNS | AT27|4.2MB/s|DNSOK|GPT⁺-AT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

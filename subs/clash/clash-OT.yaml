@@ -12,22 +12,11 @@ dns:
   nameserver:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
-proxies:
-- client-fingerprint: chrome
-  name: ❓ | @WhiteDNS | OT135|519KB/s|DNSOK|GPT⁺
-  network: raw
-  password: tsuchiya
-  port: 443
-  server: 161.34.39.108
-  skip-cert-verify: false
-  sni: aa.ccmusic.jp
-  type: trojan
-  udp: true
+proxies: []
 proxy-groups:
 - name: OT-Auto
   type: url-test
-  proxies:
-  - ❓ | @WhiteDNS | OT135|519KB/s|DNSOK|GPT⁺
+  proxies: []
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

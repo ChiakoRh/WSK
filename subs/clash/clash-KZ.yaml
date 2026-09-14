@@ -13,26 +13,30 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇰🇿 | @WhiteDNS | KZ24|759KB/s|DNSOK|GPT⁺-KZ
-  network: tcp
-  port: 38065
-  reality-opts:
-    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
-    short-id: fa
-  server: 83.222.23.81
-  tls: true
-  type: vless
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇰🇿 | @WhiteDNS | KZ13|1.7MB/s|DNSOK|GPT⁺
+  network: ws
+  port: 80
+  server: 3h-kazakhstan1.09vpn.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  ws-opts:
+    headers:
+      Host: 3h-kazakhstan1.09vpn.com
+    path: /vmess/
   xudp: true
-  servername: yahoo.com
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
 proxy-groups:
 - name: KZ-Auto
   type: url-test
   proxies:
-  - 🇰🇿 | @WhiteDNS | KZ24|759KB/s|DNSOK|GPT⁺-KZ
+  - 🇰🇿 | @WhiteDNS | KZ13|1.7MB/s|DNSOK|GPT⁺
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
