@@ -13,9 +13,11 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- alterId: '0'
+- alpn:
+  - ''
+  alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR39|1.9MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR88|2.1MB/s|DNSOK|GPT⁺-KR
   network: ws
   port: 80
   server: 132.145.80.230
@@ -25,14 +27,31 @@ proxies:
   udp: true
   uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
   ws-opts:
-    headers:
-      Host: kr02.a0a.xyz
+    headers: {}
     path: /cctv13.m3u8
   xudp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇰🇷 | @WhiteDNS | KR89|1.9MB/s|DNSOK|GPT⁺-KR
+  network: ws
+  port: 80
+  server: 132.145.80.230
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  ws-opts:
+    headers: {}
+    path: /cctv13.m3u8
+  xudp: true
+  servername: kr02.a0a.xyz
 - alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR40|1.8MB/s|DNSOK|GPT⁺-KR
-  network: tcp
+  name: 🇰🇷 | @WhiteDNS | KR90|1.8MB/s|DNSOK|GPT⁺-KR
+  network: none
   port: 443
   server: 140.238.2.250
   skip-cert-verify: false
@@ -41,16 +60,9 @@ proxies:
   udp: true
   uuid: 41a7089a-040b-4538-8b8d-010902405bde
   xudp: true
-- cipher: aes-256-cfb
-  name: 🇰🇷 | @WhiteDNS | KR41|1.2MB/s|DNSOK|GPT⁺-KR
-  password: 1234!@#$
-  port: 1774
-  server: 49.254.204.133
-  type: ss
-  udp: true
 - alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR42|630KB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR91|1.7MB/s|DNSOK|GPT⁺-KR
   network: raw
   port: 443
   server: 140.238.2.250
@@ -60,14 +72,105 @@ proxies:
   udp: true
   uuid: 41a7089a-040b-4538-8b8d-010902405bde
   xudp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇰🇷 | @WhiteDNS | KR92|1.6MB/s|DNSOK|GPT⁺-KR
+  network: http
+  port: 80
+  server: 217.142.138.61
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ac1b933d-afff-4487-93ef-f57130a55dff
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 🇰🇷 | @WhiteDNS | KR93|1.0MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  port: 443
+  server: 140.238.2.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 🇰🇷 | @WhiteDNS | KR94|1021KB/s|DNSOK|GPT⁺-KR
+  port: 443
+  server: 140.238.2.250
+  type: vmess
+  udp: true
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  network: tcp
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇰🇷 | @WhiteDNS | KR95|996KB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: wrSzVpmEdnTU7oS5UbKuNnvP57Z7cJkOZRBwRqHM_Hk
+    short-id: 6132a3b8dd2d8c6b
+  server: 47.80.61.21
+  tls: true
+  type: vless
+  udp: true
+  uuid: f5851a6e-72da-4e4e-99b2-c79629149503
+  xudp: true
+  servername: www.logitech.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇰🇷 | @WhiteDNS | KR96|680KB/s|DNSOK|GPT⁺-KR
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: OBIHAXdhfYJ0PWsZjy3QYPRjTfMQlvjmBsTf1CT671w
+    short-id: 71110d3f7ef57760
+  server: 47.80.14.8
+  tls: true
+  type: vless
+  udp: true
+  uuid: 581cb8c3-dadb-4e10-a18b-5e79bfe7bd93
+  xudp: true
+  servername: www.samsung.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇰🇷 | @WhiteDNS | KR97|659KB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: OBIHAXdhfYJ0PWsZjy3QYPRjTfMQlvjmBsTf1CT671w
+    short-id: 71110d3f7ef57760
+  server: 47.80.14.8
+  tls: true
+  type: vless
+  udp: true
+  uuid: 581cb8c3-dadb-4e10-a18b-5e79bfe7bd93
+  xudp: true
+  servername: www.samsung.com
 proxy-groups:
 - name: KR-Auto
   type: url-test
   proxies:
-  - 🇰🇷 | @WhiteDNS | KR39|1.9MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR40|1.8MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR41|1.2MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR42|630KB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR88|2.1MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR89|1.9MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR90|1.8MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR91|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR92|1.6MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR93|1.0MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR94|1021KB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR95|996KB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR96|680KB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR97|659KB/s|DNSOK|GPT⁺-KR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

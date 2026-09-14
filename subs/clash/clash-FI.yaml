@@ -14,37 +14,10 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - alpn:
-  - http/1.1
+  - h2
   client-fingerprint: chrome
   encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI139|13.9MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 443
-  server: 216.24.57.1
-  tls: true
-  type: vless
-  udp: true
-  uuid: efc8337e-27ce-4ab4-9ef9-c7f9e5eef575
-  ws-opts:
-    headers:
-      Host: f.tmkkarss.online
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/47.0.2526.106 Safari/537.36
-    path: /
-  xudp: true
-  servername: f.tmkkarss.online
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇮 | @WhiteDNS | FI140|9.2MB/s|DNSOK|GPT⁺-FI
-  password: rSeYcig_XBy8q3k33NpK3A
-  port: 1080
-  server: 65.109.215.118
-  type: ss
-  udp: true
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI141|7.1MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI152|14.7MB/s|DNSOK|GPT⁺-FI
   network: ws
   port: 443
   server: k2.cloud--vpn.site
@@ -55,18 +28,61 @@ proxies:
   ws-opts:
     headers:
       Host: c12.com
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/56.0.2924.87 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.7
+        (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
     path: /
   xudp: true
   servername: ssl.fastly.com
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇮 | @WhiteDNS | FI153|6.5MB/s|DNSOK|GPT⁺-FI
+  password: rSeYcig_XBy8q3k33NpK3A
+  port: 1080
+  server: 65.109.215.118
+  type: ss
+  udp: true
+- encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI154|6.3MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 80
+  server: 146.75.119.82
+  type: vless
+  udp: true
+  uuid: a3ba5b2d-939b-418a-ab76-d7049c347d28
+  ws-opts:
+    headers:
+      Host: rb24.ir
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.7
+        (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
+    path: /ws/?ed=2048/@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1/?2048
+  xudp: true
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: qq
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI155|5.8MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 9IfmFNL1K2E7LIJ6nn8osBFu5SnUDJOFmvPIlZu55xg
+    short-id: d29f45a33f9d33d6
+  server: 87.58.147.113
+  tls: true
+  type: vless
+  udp: true
+  uuid: abe21eae-96d8-41b0-8978-a5fad369f120
+  xudp: true
+  servername: play-apps-features.googleusercontent.com
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI139|13.9MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI140|9.2MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI141|7.1MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI152|14.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI153|6.5MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI154|6.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI155|5.8MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

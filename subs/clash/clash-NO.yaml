@@ -13,19 +13,24 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: aes-256-gcm
-  name: 🇧🇷 | @WhiteDNS | BR2|1.3MB/s|DNSOK|GPT⁺-BR
-  password: owVdNnQcdPgthSyX
-  port: 8388
-  server: 216.128.168.190
-  type: ss
-  udp: true
+- down: ''
+  fingerprint: ''
+  name: 🇳🇴 | @WhiteDNS | NO28|4.5MB/s|DNSOK|GPT⁺-US
+  obfs: salamander
+  obfs-password: maintell
+  password: maintell
+  port: 2053
+  server: 107.172.67.52
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+  up: ''
 proxy-groups:
-- name: BR-Auto
+- name: NO-Auto
   type: url-test
   proxies:
-  - 🇧🇷 | @WhiteDNS | BR2|1.3MB/s|DNSOK|GPT⁺-BR
+  - 🇳🇴 | @WhiteDNS | NO28|4.5MB/s|DNSOK|GPT⁺-US
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,BR-Auto
+- MATCH,NO-Auto

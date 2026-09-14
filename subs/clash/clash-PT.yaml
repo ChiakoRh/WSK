@@ -13,20 +13,20 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇸🇪 | @WhiteDNS | SE14|5.8MB/s|DNSOK|GPT⁺-SE
+- name: 🇵🇹 | @WhiteDNS | PT2|5.0MB/s|DNSOK|GPT⁺-PT
   password: ''
   port: 443
-  server: 79.142.77.63
+  server: 149.22.86.1
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
 proxy-groups:
-- name: SE-Auto
+- name: PT-Auto
   type: url-test
   proxies:
-  - 🇸🇪 | @WhiteDNS | SE14|5.8MB/s|DNSOK|GPT⁺-SE
+  - 🇵🇹 | @WhiteDNS | PT2|5.0MB/s|DNSOK|GPT⁺-PT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,SE-Auto
+- MATCH,PT-Auto

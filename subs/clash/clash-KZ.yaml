@@ -17,10 +17,10 @@ proxies:
   - ''
   alterId: '0'
   cipher: auto
-  name: 🇰🇿 | @WhiteDNS | KZ13|1.7MB/s|DNSOK|GPT⁺
+  name: 🇰🇿 | @WhiteDNS | KZ20|3.2MB/s|DNSOK|GPT⁺
   network: ws
   port: 80
-  server: 3h-kazakhstan1.09vpn.com
+  server: 38.107.234.57
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -28,15 +28,61 @@ proxies:
   uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
   ws-opts:
     headers:
-      Host: 3h-kazakhstan1.09vpn.com
+      Host: google.com
     path: /vmess/
   xudp: true
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇰🇿 | @WhiteDNS | KZ21|787KB/s|DNSOK|GPT⁺-KZ
+  network: raw
+  port: 38065
+  reality-opts:
+    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
+    short-id: fa
+  server: 83.222.23.81
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+  xudp: true
+  servername: yahoo.com
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇰🇿 | @WhiteDNS | KZ22|752KB/s|DNSOK|GPT⁺-KZ
+  network: tcp
+  port: 38065
+  reality-opts:
+    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
+    short-id: fa
+  server: 83.222.23.81
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+  xudp: true
+  servername: yahoo.com
+- client-fingerprint: chrome
+  name: 🇰🇿 | @WhiteDNS | KZ23|728KB/s|DNSOK|GPT⁺-KZ
+  port: 38065
+  reality-opts:
+    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
+    short-id: fa
+  server: 83.222.23.81
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+  network: tcp
+  servername: yahoo.com
 proxy-groups:
 - name: KZ-Auto
   type: url-test
   proxies:
-  - 🇰🇿 | @WhiteDNS | KZ13|1.7MB/s|DNSOK|GPT⁺
+  - 🇰🇿 | @WhiteDNS | KZ20|3.2MB/s|DNSOK|GPT⁺
+  - 🇰🇿 | @WhiteDNS | KZ21|787KB/s|DNSOK|GPT⁺-KZ
+  - 🇰🇿 | @WhiteDNS | KZ22|752KB/s|DNSOK|GPT⁺-KZ
+  - 🇰🇿 | @WhiteDNS | KZ23|728KB/s|DNSOK|GPT⁺-KZ
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
