@@ -1,5 +1,5 @@
 proxies:
-- name: 🇸🇪 | @WhiteDNS | SE30|16.0MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE41|16.4MB/s|DNSOK|GPT⁺-SE
   password: None
   port: 443
   server: 149.50.216.65
@@ -7,7 +7,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇸🇪 | @WhiteDNS | SE31|5.7MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE42|5.6MB/s|DNSOK|GPT⁺-SE
   password: ''
   port: 443
   server: 146.70.242.146
@@ -15,18 +15,36 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇸🇪 | @WhiteDNS | SE32|4.6MB/s|DNSOK|GPT⁺-SE
-  password: ''
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇸🇪 | @WhiteDNS | SE43|5.5MB/s|DNSOK|GPT⁺-SE
+  network: tcp
   port: 443
-  server: 149.50.216.65
+  reality-opts:
+    public-key: Bj9X3UJ2D5Q14wfBOwTz3s09SkFRVgMKTcn93s6kNHo
+    short-id: 8c0d541cdfe5e68d
+  server: p4mhflzkouf53uhb82b2.tulfexa.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1a67126c-b9c4-4e78-b96e-eabd4002ab0c
+  xudp: true
+  servername: sheets.google.com
+- name: 🇸🇪 | @WhiteDNS | SE44|4.0MB/s|DNSOK|GPT⁺-SE
+  password: None
+  port: 443
+  server: 146.70.242.130
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇸🇪 | @WhiteDNS | SE33|1.7MB/s|DNSOK|GPT⁺-SE
-  password: None
+- name: 🇸🇪 | @WhiteDNS | SE45|2.9MB/s|DNSOK|GPT⁺-SE
+  password: ''
   port: 443
-  server: 146.70.242.130
+  server: 149.50.216.65
   skip-cert-verify: true
   tls: true
   type: http

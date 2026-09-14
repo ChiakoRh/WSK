@@ -14,17 +14,25 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - cipher: aes-256-gcm
-  name: 🇧🇷 | @WhiteDNS | BR15|1.7MB/s|DNSOK|GPT⁺-BR
+  name: 🇧🇷 | @WhiteDNS | BR16|1.7MB/s|DNSOK|GPT⁺-BR
   password: owVdNnQcdPgthSyX
   port: 8388
   server: 216.128.168.190
   type: ss
   udp: true
+- name: 🇧🇷 | @WhiteDNS | BR17|765KB/s|DNSOK|GPT⁺-BR
+  password: ''
+  port: 3126
+  server: 189.84.157.245
+  skip-cert-verify: true
+  type: http
+  username: ''
 proxy-groups:
 - name: BR-Auto
   type: url-test
   proxies:
-  - 🇧🇷 | @WhiteDNS | BR15|1.7MB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR16|1.7MB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR17|765KB/s|DNSOK|GPT⁺-BR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -12,30 +12,11 @@ dns:
   nameserver:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
-proxies:
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: ❓ | @WhiteDNS | OT148|5.6MB/s|DNSOK|GPT⁺-GB
-  network: ws
-  port: 80
-  server: 57.129.132.223
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  ws-opts:
-    headers:
-      Host: google.com
-    path: /vmess/
-  xudp: true
+proxies: []
 proxy-groups:
 - name: OT-Auto
   type: url-test
-  proxies:
-  - ❓ | @WhiteDNS | OT148|5.6MB/s|DNSOK|GPT⁺-GB
+  proxies: []
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

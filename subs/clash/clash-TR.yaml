@@ -1,0 +1,43 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- encryption: none
+  name: 🇹🇷 | @WhiteDNS | TR32|1.7MB/s|DNSOK|GPT⁺-TR
+  network: tcp
+  port: 8082
+  server: add.life-pro.ir
+  type: vless
+  udp: true
+  uuid: 79f98593-6a21-4783-a425-3d5609a79df1
+  xudp: true
+- encryption: none
+  name: 🇹🇷 | @WhiteDNS | TR33|1.2MB/s|DNSOK|GPT⁺-TR
+  network: raw
+  port: 8082
+  server: add.life-pro.ir
+  type: vless
+  udp: true
+  uuid: 79f98593-6a21-4783-a425-3d5609a79df1
+  xudp: true
+proxy-groups:
+- name: TR-Auto
+  type: url-test
+  proxies:
+  - 🇹🇷 | @WhiteDNS | TR32|1.7MB/s|DNSOK|GPT⁺-TR
+  - 🇹🇷 | @WhiteDNS | TR33|1.2MB/s|DNSOK|GPT⁺-TR
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,TR-Auto
