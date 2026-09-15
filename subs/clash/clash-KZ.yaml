@@ -13,27 +13,24 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇰🇿 | @WhiteDNS | KZ20|3.2MB/s|DNSOK|GPT⁺
-  network: ws
-  port: 80
-  server: 38.107.234.57
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  ws-opts:
-    headers:
-      Host: google.com
-    path: /vmess/
-  xudp: true
 - client-fingerprint: chrome
   encryption: none
-  name: 🇰🇿 | @WhiteDNS | KZ21|787KB/s|DNSOK|GPT⁺-KZ
+  name: 🇰🇿 | @WhiteDNS | KZ15|683KB/s|DNSOK|GPT⁺-KZ
+  network: tcp
+  port: 38065
+  reality-opts:
+    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
+    short-id: fa
+  server: 83.222.23.81
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+  xudp: true
+  servername: yahoo.com
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇰🇿 | @WhiteDNS | KZ16|590KB/s|DNSOK|GPT⁺-KZ
   network: raw
   port: 38065
   reality-opts:
@@ -46,43 +43,12 @@ proxies:
   uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
   xudp: true
   servername: yahoo.com
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇰🇿 | @WhiteDNS | KZ22|752KB/s|DNSOK|GPT⁺-KZ
-  network: tcp
-  port: 38065
-  reality-opts:
-    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
-    short-id: fa
-  server: 83.222.23.81
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
-  xudp: true
-  servername: yahoo.com
-- client-fingerprint: chrome
-  name: 🇰🇿 | @WhiteDNS | KZ23|728KB/s|DNSOK|GPT⁺-KZ
-  port: 38065
-  reality-opts:
-    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
-    short-id: fa
-  server: 83.222.23.81
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
-  network: tcp
-  servername: yahoo.com
 proxy-groups:
 - name: KZ-Auto
   type: url-test
   proxies:
-  - 🇰🇿 | @WhiteDNS | KZ20|3.2MB/s|DNSOK|GPT⁺
-  - 🇰🇿 | @WhiteDNS | KZ21|787KB/s|DNSOK|GPT⁺-KZ
-  - 🇰🇿 | @WhiteDNS | KZ22|752KB/s|DNSOK|GPT⁺-KZ
-  - 🇰🇿 | @WhiteDNS | KZ23|728KB/s|DNSOK|GPT⁺-KZ
+  - 🇰🇿 | @WhiteDNS | KZ15|683KB/s|DNSOK|GPT⁺-KZ
+  - 🇰🇿 | @WhiteDNS | KZ16|590KB/s|DNSOK|GPT⁺-KZ
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
