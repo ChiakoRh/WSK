@@ -13,26 +13,20 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  name: 🇰🇿 | @WhiteDNS | KZ12|528KB/s|DNSOK|GPT⁺-KZ
-  port: 38065
-  reality-opts:
-    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
-    short-id: fa
-  server: 83.222.23.81
+- name: 🇨🇭 | @WhiteDNS | CH10|27.0MB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 443
+  server: 31.7.62.50
   skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
-  network: tcp
-  servername: yahoo.com
+  type: http
+  username: ''
 proxy-groups:
-- name: KZ-Auto
+- name: CH-Auto
   type: url-test
   proxies:
-  - 🇰🇿 | @WhiteDNS | KZ12|528KB/s|DNSOK|GPT⁺-KZ
+  - 🇨🇭 | @WhiteDNS | CH10|27.0MB/s|DNSOK|GPT⁺-CH
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,KZ-Auto
+- MATCH,CH-Auto

@@ -1,61 +1,76 @@
 proxies:
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: se02-grpc-8e47a
+  name: 🇨🇦 | @WhiteDNS | CA71|5.2MB/s|DNSOK|GPT⁺-FI
+  network: grpc
+  port: 9443
+  server: 185.255.179.11
+  tls: true
+  type: vless
+  udp: true
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  xudp: true
+  servername: hub-se-02.hanvpn.cc
+- client-fingerprint: safari
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA72|5.0MB/s|DNSOK|GPT⁺-FI
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: 40Tmrw44FhOyoqCQiOfR2kCgxEPXrBLLv6oYFvjbGUI
+    short-id: 3c6ec7b2d73a28b6
+  server: fl.windconnect.pro
+  tls: true
+  type: vless
+  udp: true
+  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
+  xudp: true
+  servername: fl.windconnect.pro
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇦 | @WhiteDNS | CA71|4.1MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA73|4.3MB/s|DNSOK|GPT⁺-CA
   password: FD3rCuOsxOay
   port: 8388
   server: 15.235.75.71
   type: ss
   udp: true
 - client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA72|3.8MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA74|4.2MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  port: 41373
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
+  tls: true
+  type: vless
+  udp: true
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  xudp: true
+  servername: google.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA75|3.1MB/s|DNSOK|GPT⁺-CA
+  network: raw
   port: 443
   reality-opts:
     public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
     short-id: af7e79b5
   server: 66.70.179.124
-  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
-  network: tcp
+  xudp: true
   servername: www.apple.com
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA73|3.0MB/s|DNSOK|GPT⁺-CA
-  network: raw
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  tls: true
-  type: vless
-  udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  xudp: true
-  servername: google.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA74|2.9MB/s|DNSOK|GPT⁺-CA
-  network: tcp
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  tls: true
-  type: vless
-  udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  xudp: true
-  servername: google.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA75|2.9MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA76|3.0MB/s|DNSOK|GPT⁺-CA
   network: tcp#1⛑️@oneclickvpnkeys
   port: 41373
   reality-opts:
@@ -68,19 +83,9 @@ proxies:
   uuid: a71c8954-66a8-4321-bedb-2336230d81ce
   xudp: true
   servername: google.com
-- name: 🇨🇦 | @WhiteDNS | CA76|2.4MB/s|DNSOK|GPT⁺
-  port: 443
-  server: 184.107.106.68
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
-  network: tcp
-  servername: lizca2.footballfantasyforum.com
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA77|1.7MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA77|3.0MB/s|DNSOK|GPT⁺-CA
   port: 41373
   reality-opts:
     public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
@@ -94,8 +99,24 @@ proxies:
   network: tcp
   servername: google.com
 - client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA78|1.7MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA78|2.6MB/s|DNSOK|GPT⁺-CA
+  network: raw
+  port: 41373
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
+  tls: true
+  type: vless
+  udp: true
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  xudp: true
+  servername: google.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA79|2.6MB/s|DNSOK|GPT⁺-CA
   network: tcp
   port: 443
   reality-opts:
@@ -106,21 +127,37 @@ proxies:
   type: vless
   udp: true
   uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
-  xudp: true
   servername: www.apple.com
 - client-fingerprint: chrome
-  encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA79|1.6MB/s|DNSOK|GPT⁺-CA
-  network: raw
+  name: 🇨🇦 | @WhiteDNS | CA80|2.6MB/s|DNSOK|GPT⁺-CA
   port: 443
   reality-opts:
     public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
     short-id: af7e79b5
   server: 66.70.179.124
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
-  xudp: true
+  network: tcp
   servername: www.apple.com
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇨🇦 | @WhiteDNS | CA81|2.0MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 9443
+  server: 185.255.179.11
+  tls: true
+  type: vless
+  udp: true
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  ws-opts:
+    headers:
+      Host: hub-se-02.hanvpn.cc
+      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
+    path: /se02-ws-8e47a
+  xudp: true
+  servername: hub-se-02.hanvpn.cc
