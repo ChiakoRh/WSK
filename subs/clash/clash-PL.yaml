@@ -13,7 +13,31 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇵🇱 | @WhiteDNS | PL49|6.1MB/s|DNSOK|GPT⁺-PL
+- cipher: aes-256-gcm
+  name: 🇵🇱 | @WhiteDNS | PL52|20.7MB/s|DNSOK|GPT⁺-PL
+  password: itzvpn@321
+  port: 8388
+  server: 51.83.192.80
+  type: ss
+  udp: true
+- encryption: none
+  name: 🇵🇱 | @WhiteDNS | PL53|19.0MB/s|DNSOK|GPT⁺-PL
+  network: tcp
+  port: 25585
+  server: 64.176.64.194
+  type: vless
+  udp: true
+  uuid: 6eebb521-1844-4c3c-bf54-fb0e19870f80
+  xudp: true
+- name: 🇵🇱 | @WhiteDNS | PL54|6.5MB/s|DNSOK|GPT⁺-PL
+  network: tcp
+  port: 25585
+  server: 64.176.64.194
+  type: vless
+  udp: true
+  uuid: 8b84bbec-9a55-47c2-ac2e-03c41065e572
+  xudp: true
+- name: 🇵🇱 | @WhiteDNS | PL55|6.3MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 37.120.156.18
@@ -21,7 +45,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇵🇱 | @WhiteDNS | PL50|6.1MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL56|6.1MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 37.120.156.34
@@ -29,12 +53,24 @@ proxies:
   tls: true
   type: http
   username: ''
+- name: 🇵🇱 | @WhiteDNS | PL57|4.0MB/s|DNSOK|GPT⁺-PL
+  network: tcp
+  port: 25585
+  server: 64.176.64.194
+  type: vless
+  udp: true
+  uuid: e4668a2b-66d6-4500-bcef-5ed52414e40a
+  xudp: true
 proxy-groups:
 - name: PL-Auto
   type: url-test
   proxies:
-  - 🇵🇱 | @WhiteDNS | PL49|6.1MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL50|6.1MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL52|20.7MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL53|19.0MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL54|6.5MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL55|6.3MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL56|6.1MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL57|4.0MB/s|DNSOK|GPT⁺-PL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
