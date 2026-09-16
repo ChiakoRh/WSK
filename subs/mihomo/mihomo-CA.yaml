@@ -1,8 +1,21 @@
 proxies:
 - client-fingerprint: firefox
   grpc-opts:
+    grpc-service-name: fi02-grpc-8e47a
+  name: 🇨🇦 | @WhiteDNS | CA80|6.8MB/s|DNSOK|GPT⁺-FI
+  network: grpc
+  port: 9443
+  server: 185.255.179.11
+  tls: true
+  type: vless
+  udp: true
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  xudp: true
+  servername: hub-fi-02.hanvpn.cc
+- client-fingerprint: firefox
+  grpc-opts:
     grpc-service-name: se03-grpc-8e47a
-  name: 🇨🇦 | @WhiteDNS | CA263|6.0MB/s|DNSOK|GPT⁺-FI
+  name: 🇨🇦 | @WhiteDNS | CA81|5.6MB/s|DNSOK|GPT⁺-FI
   network: grpc
   port: 9443
   server: 185.255.179.11
@@ -12,17 +25,91 @@ proxies:
   uuid: d9d0f208-d582-41d5-bb7b-742671402810
   xudp: true
   servername: hub-se-03.hanvpn.cc
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦 | @WhiteDNS | CA264|3.6MB/s|DNSOK|GPT⁺-CA
-  password: FD3rCuOsxOay
-  port: 8388
-  server: 15.235.75.71
-  type: ss
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇨🇦 | @WhiteDNS | CA82|5.0MB/s|DNSOK|GPT⁺-CA
+  network: ws
+  port: 443
+  server: 151.101.1.194
+  tls: true
+  type: vless
   udp: true
+  uuid: d56716f5-a22a-463b-89ad-4f65a54d994a
+  ws-opts:
+    headers:
+      Host: mouse-shop-online.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X Build/N2G47H) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /
+  xudp: true
+  servername: mouse-shop-online.global.ssl.fastly.net
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: se02-grpc-8e47a
+  name: 🇨🇦 | @WhiteDNS | CA83|4.1MB/s|DNSOK|GPT⁺-FI
+  network: grpc
+  port: 9443
+  server: 185.255.179.11
+  tls: true
+  type: vless
+  udp: true
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  xudp: true
+  servername: hub-se-02.hanvpn.cc
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA265|3.2MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA84|3.9MB/s|DNSOK|GPT⁺-CA
+  network: raw
+  port: 41373
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
+  tls: true
+  type: vless
+  udp: true
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  xudp: true
+  servername: google.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA85|3.0MB/s|DNSOK|GPT⁺-CA
+  network: tcp#1⛑️@oneclickvpnkeys
+  port: 41373
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
+  tls: true
+  type: vless
+  udp: true
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  xudp: true
+  servername: google.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA86|2.9MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  port: 41373
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
+  tls: true
+  type: vless
+  udp: true
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  xudp: true
+  servername: google.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA87|1.7MB/s|DNSOK|GPT⁺-CA
   network: raw
   port: 443
   reality-opts:
@@ -37,22 +124,7 @@ proxies:
   servername: www.apple.com
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA266|3.2MB/s|DNSOK|GPT⁺-CA
-  port: 443
-  reality-opts:
-    public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
-    short-id: af7e79b5
-  server: 66.70.179.124
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
-  network: tcp
-  servername: www.apple.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA267|1.7MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA88|1.7MB/s|DNSOK|GPT⁺-CA
   network: tcp
   port: 443
   reality-opts:
@@ -63,4 +135,5 @@ proxies:
   type: vless
   udp: true
   uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
+  xudp: true
   servername: www.apple.com
