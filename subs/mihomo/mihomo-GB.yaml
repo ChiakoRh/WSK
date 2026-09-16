@@ -1,68 +1,60 @@
 proxies:
-- name: 🇬🇧 | @WhiteDNS | GB46|20.4MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 443
-  server: 212.102.63.61
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- cipher: 2022-blake3-chacha20-poly1305
-  name: 🇬🇧 | @WhiteDNS | GB47|19.6MB/s|DNSOK|GPT⁺-GB
-  password: UzfVPSkIrrIOeEXgQd6lFNRuUToMxKOW7go/DDzalLE=
-  port: 61312
-  server: 129.151.68.141
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB48|18.6MB/s|DNSOK|GPT⁺-GB
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
-    short-id: 1aa9f3c9021280c0
-  server: 5.152.223.97
-  tls: true
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - store.steampowered.com
+    path:
+    - /
+  name: 🇬🇧 | @WhiteDNS | GB43|44.0MB/s|DNSOK|GPT⁺-DE
+  network: http
+  port: 440
+  server: 165.22.85.85
   type: vless
   udp: true
-  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
+  uuid: 59906cb2-a61b-4cf3-b77b-5762ef61d2b0
   xudp: true
-  servername: strapi.io
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB49|18.1MB/s|DNSOK|GPT⁺-GB
-  network: tcp
+  encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB44|32.4MB/s|DNSOK|GPT⁺-DE
+  network: ws
   port: 443
-  reality-opts:
-    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
-    short-id: 1aa9f3c9021280c0
-  server: 5.152.223.97
+  server: rubifen.adaspoloandco.com
   tls: true
   type: vless
   udp: true
-  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
-  servername: strapi.io
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB50|6.5MB/s|DNSOK|GPT⁺-GB
-  network: tcp
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36
+    path: /GOrbEh
+  xudp: true
+  servername: rubifen.adaspoloandco.com
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB45|32.1MB/s|DNSOK|GPT⁺-DE
+  network: ws
   port: 443
-  reality-opts:
-    public-key: 2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM
-    short-id: e4a1b53b03eff60d
-  server: 95.154.196.61
+  server: rubifen.adaspoloandco.com
   tls: true
   type: vless
   udp: true
-  uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
-  servername: strapi.io
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3 Build/HUAWEIFIG-LX3)
+        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /GOrbEh
+  xudp: true
+  servername: rubifen.adaspoloandco.com
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB51|6.2MB/s|DNSOK|GPT⁺-GB
-  network: tcp
+  name: 🇬🇧 | @WhiteDNS | GB46|20.3MB/s|DNSOK|GPT⁺-GB
+  network: raw
   port: 443
   reality-opts:
     public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
@@ -77,36 +69,48 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB52|6.0MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB47|19.3MB/s|DNSOK|GPT⁺-GB
   network: raw
   port: 443
   reality-opts:
-    public-key: 2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM
-    short-id: e4a1b53b03eff60d
-  server: 95.154.196.61
+    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
+    short-id: 1aa9f3c9021280c0
+  server: 5.152.223.97
   tls: true
   type: vless
   udp: true
-  uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
+  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
   xudp: true
   servername: strapi.io
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
+- client-fingerprint: chrome
   encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB53|5.0MB/s|DNSOK|GPT⁺-GB
-  network: ws
+  flow: xtls-rprx-vision
+  name: 🇬🇧 | @WhiteDNS | GB48|18.8MB/s|DNSOK|GPT⁺-GB
+  network: tcp
   port: 443
-  server: 151.101.1.194
+  reality-opts:
+    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
+    short-id: 1aa9f3c9021280c0
+  server: 5.152.223.97
   tls: true
   type: vless
   udp: true
-  uuid: d56716f5-a22a-463b-89ad-4f65a54d994a
-  ws-opts:
-    headers:
-      Host: mousepad-shop-online.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; CAM-L03 Build/HUAWEICAM-L03) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /
+  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
   xudp: true
-  servername: mousepad-shop-online.global.ssl.fastly.net
+  servername: strapi.io
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇬🇧 | @WhiteDNS | GB49|6.2MB/s|DNSOK|GPT⁺-GB
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
+  server: 87.117.234.19
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
+  xudp: true
+  servername: strapi.io

@@ -13,61 +13,23 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇭🇰 | @WhiteDNS | HK85|1.7MB/s|DNSOK|GPT⁺-US
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: KhRbgahSFqlPKB6QNp9QYb4oXMy2SIgi440tm6iFZHA
-    short-id: ea6b43
-  server: hk4.miyazono-kaori.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: f3c10b66-6a02-499f-9ed5-e518be4dde61
-  xudp: true
-  servername: hk4e-launcher-static.hoyoverse.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇭🇰 | @WhiteDNS | HK86|1.7MB/s|DNSOK|GPT⁺-US
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 2kl8isq7ajNv3BR6Z1EPag_LqJHmsfo2pn0dA7yetko
-    short-id: a2d13d677624197e
-  server: hk6.miyazono-kaori.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: f3c10b66-6a02-499f-9ed5-e518be4dde61
-  xudp: true
-  servername: www.hsbc.com.hk
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇭🇰 | @WhiteDNS | HK87|1.3MB/s|DNSOK|GPT⁺-US
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: HbjpGbCmp7lBysnS-twEYgGoriXACHZQObIpU9zJWVc
-    short-id: a273e9ee6ac0a466
-  server: hk5.miyazono-kaori.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: f3c10b66-6a02-499f-9ed5-e518be4dde61
-  xudp: true
-  servername: www.hsbc.com.hk
+- down: ''
+  fingerprint: ''
+  name: 🇭🇰 | @WhiteDNS | HK58|1.9MB/s|DNSOK|GPT⁺-TW
+  obfs: ''
+  obfs-password: ''
+  password: 49f7ff21-a176-30cc-ab60-a5988fd85ce0
+  port: 60001
+  server: hk01.kfc-520.com
+  skip-cert-verify: true
+  sni: hk01.kfc-520.com
+  type: hysteria2
+  up: ''
 proxy-groups:
 - name: HK-Auto
   type: url-test
   proxies:
-  - 🇭🇰 | @WhiteDNS | HK85|1.7MB/s|DNSOK|GPT⁺-US
-  - 🇭🇰 | @WhiteDNS | HK86|1.7MB/s|DNSOK|GPT⁺-US
-  - 🇭🇰 | @WhiteDNS | HK87|1.3MB/s|DNSOK|GPT⁺-US
+  - 🇭🇰 | @WhiteDNS | HK58|1.9MB/s|DNSOK|GPT⁺-TW
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
