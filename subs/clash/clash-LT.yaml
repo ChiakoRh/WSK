@@ -15,7 +15,7 @@ dns:
 proxies:
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇱🇹 | @WhiteDNS | LT12|17.7MB/s|DNSOK|GPT⁺-LT
+  name: 🇱🇹 | @WhiteDNS | LT19|17.6MB/s|DNSOK|GPT⁺-LT
   network: tcp
   port: 443
   reality-opts:
@@ -30,22 +30,7 @@ proxies:
   servername: lt.aether-runet.top
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇱🇹 | @WhiteDNS | LT13|6.3MB/s|DNSOK|GPT⁺-LT
-  port: 443
-  reality-opts:
-    public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
-    short-id: 4fa44664f6a566d3
-  server: lt.aether-runet.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-  network: tcp
-  servername: lt.aether-runet.top
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇱🇹 | @WhiteDNS | LT14|5.7MB/s|DNSOK|GPT⁺-LT
+  name: 🇱🇹 | @WhiteDNS | LT20|6.5MB/s|DNSOK|GPT⁺-LT
   network: tcp
   port: 443
   reality-opts:
@@ -59,7 +44,7 @@ proxies:
   servername: lt.aether-runet.top
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇱🇹 | @WhiteDNS | LT15|4.7MB/s|DNSOK|GPT⁺-LT
+  name: 🇱🇹 | @WhiteDNS | LT21|6.1MB/s|DNSOK|GPT⁺-LT
   port: 443
   reality-opts:
     public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
@@ -72,14 +57,49 @@ proxies:
   uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
   network: tcp
   servername: lt.aether-runet.top
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇱🇹 | @WhiteDNS | LT22|6.0MB/s|DNSOK|GPT⁺-LT
+  port: 443
+  reality-opts:
+    public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
+    short-id: 4fa44664f6a566d3
+  server: lt.aether-runet.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  network: tcp
+  servername: lt.aether-runet.top
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇱🇹 | @WhiteDNS | LT23|2.5MB/s|DNSOK|GPT⁺-LT
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: oQqnxLVZveJ_o8SpbvRf6DW02pbK0_J7oH_vkLEQPVo
+    short-id: 90f9ae53d5e0a696
+  server: 188.225.32.115
+  tls: true
+  type: vless
+  udp: true
+  uuid: 97c231e5-8183-4945-9663-ba0655175b26
+  xhttp-opts:
+    host: cdn.cdnguard.org
+    mode: stream-one
+    path: /api/v2/media/stream
+  xudp: true
+  servername: cdn.cdnguard.org
 proxy-groups:
 - name: LT-Auto
   type: url-test
   proxies:
-  - 🇱🇹 | @WhiteDNS | LT12|17.7MB/s|DNSOK|GPT⁺-LT
-  - 🇱🇹 | @WhiteDNS | LT13|6.3MB/s|DNSOK|GPT⁺-LT
-  - 🇱🇹 | @WhiteDNS | LT14|5.7MB/s|DNSOK|GPT⁺-LT
-  - 🇱🇹 | @WhiteDNS | LT15|4.7MB/s|DNSOK|GPT⁺-LT
+  - 🇱🇹 | @WhiteDNS | LT19|17.6MB/s|DNSOK|GPT⁺-LT
+  - 🇱🇹 | @WhiteDNS | LT20|6.5MB/s|DNSOK|GPT⁺-LT
+  - 🇱🇹 | @WhiteDNS | LT21|6.1MB/s|DNSOK|GPT⁺-LT
+  - 🇱🇹 | @WhiteDNS | LT22|6.0MB/s|DNSOK|GPT⁺-LT
+  - 🇱🇹 | @WhiteDNS | LT23|2.5MB/s|DNSOK|GPT⁺-LT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
