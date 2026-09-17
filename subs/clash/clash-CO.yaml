@@ -13,25 +13,20 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: pl01-grpc-8e47a
-  name: 🇧🇷 | @WhiteDNS | BR2|13.8MB/s|DNSOK|GPT⁺-PL
-  network: grpc
-  port: 9443
-  server: 185.255.179.11
-  tls: true
+- name: 🇨🇴 | @WhiteDNS | CO4|1.0MB/s|DNSOK|GPT⁺-CO
+  network: raw
+  port: 62145
+  server: 157.137.226.173
   type: vless
   udp: true
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   xudp: true
-  servername: hub-pl-01.hanvpn.cc
 proxy-groups:
-- name: BR-Auto
+- name: CO-Auto
   type: url-test
   proxies:
-  - 🇧🇷 | @WhiteDNS | BR2|13.8MB/s|DNSOK|GPT⁺-PL
+  - 🇨🇴 | @WhiteDNS | CO4|1.0MB/s|DNSOK|GPT⁺-CO
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,BR-Auto
+- MATCH,CO-Auto

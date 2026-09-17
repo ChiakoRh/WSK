@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇭 | @WhiteDNS | CH51|31.3MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH11|29.5MB/s|DNSOK|GPT⁺-CH
   password: ''
   port: 9443
   server: 37.120.213.210
@@ -21,71 +21,11 @@ proxies:
   tls: true
   type: http
   username: ''
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇨🇭 | @WhiteDNS | CH52|16.8MB/s|DNSOK|GPT⁺-CH
-  network: ws
-  port: 443
-  server: ez-1bc8ab.sekiro-c18.workers.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7da33b25-cdd6-e481-afcf-c5d532361a70
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/56.0.2924.87 Safari/537.36
-    path: /
-  xudp: true
-  servername: ez-1bc8ab.sekiro-c18.workers.dev
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇨🇭 | @WhiteDNS | CH53|16.0MB/s|DNSOK|GPT⁺-CH
-  network: ws
-  port: 443
-  server: 172.67.173.138
-  tls: true
-  type: vless
-  udp: true
-  uuid: 813cd228-ebf6-0e21-481a-ba4af8f85b82
-  ws-opts:
-    headers:
-      Host: odd-disk-98c5.assassincreed4048.workers.dev
-      User-Agent: Mozilla/5.0 (X11; U; Linux i586; en-US) AppleWebKit/533.2 (KHTML,
-        like Gecko) Chrome/5.0.342.1 Safari/533.2
-    path: /sync
-  xudp: true
-  servername: odd-disk-98c5.assassincreed4048.workers.dev
-- client-fingerprint: chrome
-  name: 🇨🇭 | @WhiteDNS | CH54|6.0MB/s|DNSOK|GPT⁺-CH
-  network: ws
-  port: 443
-  server: 172.67.130.144
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7da33b25-cdd6-e481-afcf-c5d532361a70
-  ws-opts:
-    headers:
-      Host: ez-1bc8ab.sekiro-c18.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /sync
-  xudp: true
-  servername: ez-1bc8ab.sekiro-c18.workers.dev
 proxy-groups:
 - name: CH-Auto
   type: url-test
   proxies:
-  - 🇨🇭 | @WhiteDNS | CH51|31.3MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH52|16.8MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH53|16.0MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH54|6.0MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH11|29.5MB/s|DNSOK|GPT⁺-CH
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
