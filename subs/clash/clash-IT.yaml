@@ -13,23 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT1247|38.7MB/s|DNSOK|GPT⁺-IT
-  network: tcp
-  port: 32833
-  reality-opts:
-    public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
-    short-id: a0a305ccc8e94aa8
-  server: 172.238.232.239
-  tls: true
-  type: vless
-  udp: true
-  uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
-  xudp: true
-  servername: www.intel.com
-- name: 🇮🇹 | @WhiteDNS | IT1248|29.2MB/s|DNSOK|GPT⁺-IT
+- name: 🇮🇹 | @WhiteDNS | IT921|33.5MB/s|DNSOK|GPT⁺-IT
   password: ''
   port: 443
   server: 185.183.105.130
@@ -38,42 +22,18 @@ proxies:
   type: http
   username: ''
 - cipher: aes-256-gcm
-  name: 🇮🇹 | @WhiteDNS | IT1249|28.5MB/s|DNSOK|GPT⁺-IT
+  name: 🇮🇹 | @WhiteDNS | IT922|30.2MB/s|DNSOK|GPT⁺-IT
   password: itzvpn@321
   port: 8388
   server: 57.131.48.45
   type: ss
   udp: true
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇮🇹 | @WhiteDNS | IT1250|3.4MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 443
-  server: 104.18.1.1
-  tls: true
-  type: vless
-  udp: true
-  uuid: 813cd228-ebf6-0e21-481a-ba4af8f85b82
-  ws-opts:
-    headers:
-      Host: odd-disk-98c5.assassincreed4048.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/68.0.3440.106 Safari/537.36
-    path: /sync
-  xudp: true
-  servername: odd-disk-98c5.assassincreed4048.workers.dev
 proxy-groups:
 - name: IT-Auto
   type: url-test
   proxies:
-  - 🇮🇹 | @WhiteDNS | IT1247|38.7MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT1248|29.2MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT1249|28.5MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT1250|3.4MB/s|DNSOK|GPT⁺-DE
+  - 🇮🇹 | @WhiteDNS | IT921|33.5MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT922|30.2MB/s|DNSOK|GPT⁺-IT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
