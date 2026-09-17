@@ -6,7 +6,7 @@ proxies:
       - store.steampowered.com
     path:
     - /
-  name: 🇬🇧 | @WhiteDNS | GB43|44.0MB/s|DNSOK|GPT⁺-DE
+  name: 🇬🇧 | @WhiteDNS | GB89|47.5MB/s|DNSOK|GPT⁺-DE
   network: http
   port: 440
   server: 165.22.85.85
@@ -14,9 +14,39 @@ proxies:
   udp: true
   uuid: 59906cb2-a61b-4cf3-b77b-5762ef61d2b0
   xudp: true
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - store.steampowered.com
+    path:
+    - /
+  name: 🇬🇧 | @WhiteDNS | GB90|45.9MB/s|DNSOK|GPT⁺-DE
+  network: http
+  port: 440
+  server: 164.92.252.15
+  type: vless
+  udp: true
+  uuid: 59906cb2-a61b-4cf3-b77b-5762ef61d2b0
+  xudp: true
+- http-opts:
+    headers:
+      Host:
+      - store.steampowered.com
+    method: GET
+    path:
+    - /
+  name: 🇬🇧 | @WhiteDNS | GB91|34.3MB/s|DNSOK|GPT⁺-DE
+  network: http
+  port: 440
+  server: 206.81.29.176
+  tls: false
+  type: vless
+  udp: true
+  uuid: 59906cb2-a61b-4cf3-b77b-5762ef61d2b0
 - client-fingerprint: chrome
   encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB44|32.4MB/s|DNSOK|GPT⁺-DE
+  name: 🇬🇧 | @WhiteDNS | GB92|31.2MB/s|DNSOK|GPT⁺-DE
   network: ws
   port: 443
   server: rubifen.adaspoloandco.com
@@ -27,14 +57,14 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko)
+        Slackware/Chrome/12.0.742.100 Safari/534.30
     path: /GOrbEh
   xudp: true
   servername: rubifen.adaspoloandco.com
 - client-fingerprint: chrome
   encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB45|32.1MB/s|DNSOK|GPT⁺-DE
+  name: 🇬🇧 | @WhiteDNS | GB93|28.0MB/s|DNSOK|GPT⁺-DE
   network: ws
   port: 443
   server: rubifen.adaspoloandco.com
@@ -45,15 +75,53 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3 Build/HUAWEIFIG-LX3)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/41.0.2272.76 Safari/537.36
     path: /GOrbEh
   xudp: true
   servername: rubifen.adaspoloandco.com
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB94|23.1MB/s|DNSOK|GPT⁺-GB
+  password: 56rd6sxghyMun+TJalHZVSJtzjFYPDEBhn6dUXJ4IVg=
+  port: 61312
+  server: 134.65.61.31
+  type: ss
+  udp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB95|22.8MB/s|DNSOK|GPT⁺-GB
+  password: ktsunSg4AnlcqH3JiVv7JWSHpbDjDfTvldDgDpApNHw=
+  port: 61312
+  server: 129.151.91.115
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB46|20.3MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB96|22.6MB/s|DNSOK|GPT⁺-GB
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
+  server: 87.117.234.19
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
+  xudp: true
+  servername: strapi.io
+- name: 🇬🇧 | @WhiteDNS | GB97|20.1MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 443
+  server: 185.235.0.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇬🇧 | @WhiteDNS | GB98|19.3MB/s|DNSOK|GPT⁺-GB
   network: raw
   port: 443
   reality-opts:
@@ -66,26 +134,81 @@ proxies:
   uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
   xudp: true
   servername: strapi.io
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB99|19.0MB/s|DNSOK|GPT⁺-GB
+  password: ogzqyljZNyMjc7OF7aDzKaQO21eW9jaLK3b7wdot4hk=
+  port: 61312
+  server: 129.151.77.196
+  type: ss
+  udp: true
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - store.steampowered.com
+    path:
+    - /
+  name: 🇬🇧 | @WhiteDNS | GB100|8.1MB/s|DNSOK|GPT⁺-DE
+  network: http
+  port: 440
+  server: 64.226.88.152
+  type: vless
+  udp: true
+  uuid: 59906cb2-a61b-4cf3-b77b-5762ef61d2b0
+  xudp: true
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - store.steampowered.com
+    path:
+    - /
+  name: 🇬🇧 | @WhiteDNS | GB101|6.7MB/s|DNSOK|GPT⁺-DE
+  network: http
+  port: 440
+  server: 167.71.45.85
+  type: vless
+  udp: true
+  uuid: 59906cb2-a61b-4cf3-b77b-5762ef61d2b0
+  xudp: true
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB47|19.3MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB102|6.3MB/s|DNSOK|GPT⁺-GB
   network: raw
   port: 443
   reality-opts:
-    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
-    short-id: 1aa9f3c9021280c0
-  server: 5.152.223.97
+    public-key: 2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM
+    short-id: e4a1b53b03eff60d
+  server: 95.154.196.61
   tls: true
   type: vless
   udp: true
-  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
+  uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
   xudp: true
   servername: strapi.io
 - client-fingerprint: chrome
   encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB103|6.0MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 8443
+  server: 172.64.155.209
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4ff70740-8c80-48ae-985f-2afe4924e908
+  ws-opts:
+    headers:
+      Host: pubb.clnahanpnln.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/47.0.2526.106 Safari/537.36
+    path: /sync
+  xudp: true
+  servername: pubb.clnahanpnln.workers.dev
+- client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB48|18.8MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB104|6.0MB/s|DNSOK|GPT⁺-GB
   network: tcp
   port: 443
   reality-opts:
@@ -99,18 +222,82 @@ proxies:
   xudp: true
   servername: strapi.io
 - client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB49|6.2MB/s|DNSOK|GPT⁺-GB
-  network: tcp
+  name: 🇬🇧 | @WhiteDNS | GB105|5.6MB/s|DNSOK|GPT⁺-DE
+  network: ws
   port: 443
-  reality-opts:
-    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
-    short-id: fd55b698ee8c3629
-  server: 87.117.234.19
+  server: summer-meadow-af5b.woowoorrrkk.workers.dev
   tls: true
   type: vless
   udp: true
-  uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
+  uuid: a8890c1b-3622-3106-c4be-d8671be32d2b
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /
+  xudp: true
+  servername: summer-meadow-af5b.woowoorrrkk.workers.dev
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB106|5.5MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 443
+  server: 141.101.121.158
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3bb6fd82-3a15-eaea-6168-4dac2b70079e
+  ws-opts:
+    headers:
+      Host: nahan-fog-af01.dfghttr2012.workers.dev
+      User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko)
+        Chrome/12.0.742.100 Safari/534.30
+    path: /sync
+  xudp: true
+  servername: nahan-fog-af01.dfghttr2012.workers.dev
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇬🇧 | @WhiteDNS | GB107|5.1MB/s|DNSOK|GPT⁺-GB
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
+    short-id: 1aa9f3c9021280c0
+  server: 5.152.223.97
+  tls: true
+  type: vless
+  udp: true
+  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
   xudp: true
   servername: strapi.io
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - 956775g57b675.garluma.ir
+    path:
+    - /
+  name: 🇬🇧 | @WhiteDNS | GB108|1.8MB/s|DNSOK|GPT⁺-GB
+  network: http
+  port: 11000
+  server: 956775g57b675.garluma.ir
+  type: vless
+  udp: true
+  uuid: c373eca9-71bc-4bbf-8b50-ffb2ec2db698
+  xudp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB109|1.6MB/s|DNSOK|GPT⁺-GB
+  password: tvpBo/Hcvix3GwQ1duILnBX2njevG6/K/mhs9ow4vuI=
+  port: 61312
+  server: 134.65.58.241
+  type: ss
+  udp: true
+- name: 🇬🇧 | @WhiteDNS | GB110|1.3MB/s|DNSOK|GPT⁺-FR
+  password: ''
+  port: 1088
+  server: 144.91.111.48
+  skip-cert-verify: true
+  type: socks5
+  username: ''

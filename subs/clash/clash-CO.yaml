@@ -13,24 +13,19 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- down: ''
-  fingerprint: ''
-  name: 🇭🇰 | @WhiteDNS | HK58|1.9MB/s|DNSOK|GPT⁺-TW
-  obfs: ''
-  obfs-password: ''
-  password: 49f7ff21-a176-30cc-ab60-a5988fd85ce0
-  port: 60001
-  server: hk01.kfc-520.com
-  skip-cert-verify: true
-  sni: hk01.kfc-520.com
-  type: hysteria2
-  up: ''
+- name: 🇨🇴 | @WhiteDNS | CO2|1.0MB/s|DNSOK|GPT⁺-CO
+  network: tcp
+  port: 62145
+  server: 157.137.226.173
+  type: vless
+  udp: true
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
 proxy-groups:
-- name: HK-Auto
+- name: CO-Auto
   type: url-test
   proxies:
-  - 🇭🇰 | @WhiteDNS | HK58|1.9MB/s|DNSOK|GPT⁺-TW
+  - 🇨🇴 | @WhiteDNS | CO2|1.0MB/s|DNSOK|GPT⁺-CO
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,HK-Auto
+- MATCH,CO-Auto

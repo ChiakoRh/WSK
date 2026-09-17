@@ -13,24 +13,20 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- down: ''
-  fingerprint: ''
-  name: 🇧🇷 | @WhiteDNS | BR2|1.2MB/s|DNSOK|GPT⁺-DE
-  obfs: ''
-  obfs-password: ''
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  port: 4433
-  server: de1.xiaoliyu.cyou
-  skip-cert-verify: false
-  sni: de1.xiaoliyu.cyou
-  type: hysteria2
-  up: ''
+- name: 🇬🇷 | @WhiteDNS | GR5|5.7MB/s|DNSOK|GPT⁺-GR
+  password: ''
+  port: 443
+  server: 149.22.85.65
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 proxy-groups:
-- name: BR-Auto
+- name: GR-Auto
   type: url-test
   proxies:
-  - 🇧🇷 | @WhiteDNS | BR2|1.2MB/s|DNSOK|GPT⁺-DE
+  - 🇬🇷 | @WhiteDNS | GR5|5.7MB/s|DNSOK|GPT⁺-GR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,BR-Auto
+- MATCH,GR-Auto

@@ -14,26 +14,43 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - encryption: none
-  name: 🇫🇷 | @WhiteDNS | FR184|28.0MB/s|DNSOK|GPT⁺-FR
+  name: 🇫🇷 | @WhiteDNS | FR260|30.0MB/s|DNSOK|GPT⁺-FR
   network: tcp
   port: 22224
-  server: 15.188.219.10
+  server: 15.237.34.168
+  type: vless
+  udp: true
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  xudp: true
+- name: 🇫🇷 | @WhiteDNS | FR261|28.9MB/s|DNSOK|GPT⁺-FR
+  network: raw
+  port: 22224
+  server: 15.237.34.168
   type: vless
   udp: true
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   xudp: true
 - encryption: none
-  name: 🇫🇷 | @WhiteDNS | FR185|26.5MB/s|DNSOK|GPT⁺-FR
+  name: 🇫🇷 | @WhiteDNS | FR262|27.5MB/s|DNSOK|GPT⁺-FR
   network: tcp
-  port: 22223
-  server: 15.188.219.10
+  port: 22222
+  server: 52.47.212.72
+  type: vless
+  udp: true
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  xudp: true
+- encryption: none
+  name: 🇫🇷 | @WhiteDNS | FR263|25.9MB/s|DNSOK|GPT⁺-FR
+  network: tcp
+  port: 22224
+  server: 52.47.212.72
   type: vless
   udp: true
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   xudp: true
 - client-fingerprint: firefox
   encryption: none
-  name: 🇫🇷 | @WhiteDNS | FR186|23.8MB/s|DNSOK|GPT⁺-FR
+  name: 🇫🇷 | @WhiteDNS | FR264|22.9MB/s|DNSOK|GPT⁺-FR
   network: xhttp
   port: 32202
   reality-opts:
@@ -48,41 +65,34 @@ proxies:
     path: /G3EEoH63
   xudp: true
   servername: www.amazon.com
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇷 | @WhiteDNS | FR187|16.0MB/s|DNSOK|GPT⁺-NL
+- encryption: none
+  name: 🇫🇷 | @WhiteDNS | FR265|9.6MB/s|DNSOK|GPT⁺-FR
   network: tcp
+  port: 22223
+  server: 52.47.212.72
+  type: vless
+  udp: true
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  xudp: true
+- name: 🇫🇷 | @WhiteDNS | FR266|5.8MB/s|DNSOK|GPT⁺-FR
+  network: raw
+  port: 22222
+  server: 15.237.34.168
+  type: vless
+  udp: true
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  xudp: true
+- name: 🇫🇷 | @WhiteDNS | FR267|5.7MB/s|DNSOK|GPT⁺-FR
+  password: ''
   port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: ''
-  server: fr-gra-ovh-03.stre4m.net
+  server: 149.102.245.65
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: 98d0fa1b-d778-477e-b897-4e2569c53178
-  xudp: true
-  servername: mother-earth.fyi
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇷 | @WhiteDNS | FR188|13.6MB/s|DNSOK|GPT⁺-FR
-  network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 62.210.91.2
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  xudp: true
-  servername: fuck.rkn
+  type: http
+  username: ''
 - down: ''
   fingerprint: ''
-  name: 🇫🇷 | @WhiteDNS | FR189|6.2MB/s|DNSOK|GPT⁺-FR
+  name: 🇫🇷 | @WhiteDNS | FR268|5.6MB/s|DNSOK|GPT⁺-FR
   obfs: ''
   obfs-password: ''
   password: dongtaiwang.com
@@ -92,25 +102,63 @@ proxies:
   sni: www.microsoft.com
   type: hysteria2
   up: ''
-- client-fingerprint: edge
+- client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇫🇷 | @WhiteDNS | FR190|5.0MB/s|DNSOK|GPT⁺-FR
+  name: 🇫🇷 | @WhiteDNS | FR269|4.5MB/s|DNSOK|GPT⁺-FR
   network: tcp
-  port: 56562
+  port: 23576
   reality-opts:
-    public-key: 33hVTwP-1rQYG0F92oXJ-o1zPo4Cc8n2Uml_i9tv6XM
-    short-id: aa74a7a98e86f2ed
-  server: lfr1.plasmoon.ir
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.10
   tls: true
   type: vless
   udp: true
-  uuid: 853cbf00-0459-4514-98ad-15cd1069a4fe
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   xudp: true
-  servername: play-apps-features.googleusercontent.com
+  servername: fuck.rkn
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇷 | @WhiteDNS | FR270|2.6MB/s|DNSOK|GPT⁺-FR
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.2
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  xudp: true
+  servername: fuck.rkn
+- encryption: mlkem768x25519plus.random.0rtt.4ZiK3Dv6QqgU4hTboAe80H0CPJ6KV_GUdsjOCLY3UlA
+  name: 🇫🇷 | @WhiteDNS | FR271|1.7MB/s|DNSOK|GPT⁺-FR
+  network: xhttp
+  port: 6010
+  server: fr.masterpgd.com
+  type: vless
+  udp: true
+  uuid: d2bf8658-06dc-4462-80d4-39c5c3bb0dd8
+  xhttp-opts:
+    host: myket.ir
+    mode: stream-up
+    path: /assets
+  xudp: true
+- encryption: none
+  name: 🇫🇷 | @WhiteDNS | FR272|1.6MB/s|DNSOK|GPT⁺-FR
+  network: tcp
+  port: 22222
+  server: 15.237.34.168
+  type: vless
+  udp: true
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  xudp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇫🇷 | @WhiteDNS | FR191|2.3MB/s|DNSOK|GPT⁺-FR
+  name: 🇫🇷 | @WhiteDNS | FR273|1.5MB/s|DNSOK|GPT⁺-FR
   network: raw
   port: 23576
   reality-opts:
@@ -123,52 +171,34 @@ proxies:
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   xudp: true
   servername: fuck.rkn
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇷 | @WhiteDNS | FR192|2.0MB/s|DNSOK|GPT⁺-FR
-  network: raw
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 62.210.91.10
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  xudp: true
-  servername: fuck.rkn
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇷 | @WhiteDNS | FR193|597KB/s|DNSOK|GPT⁺-FR
+- encryption: none
+  name: 🇫🇷 | @WhiteDNS | FR274|1.2MB/s|DNSOK|GPT⁺-FR
   network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 62.210.91.10
-  tls: true
+  port: 22223
+  server: 15.237.34.168
   type: vless
   udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   xudp: true
-  servername: fuck.rkn
 proxy-groups:
 - name: FR-Auto
   type: url-test
   proxies:
-  - 🇫🇷 | @WhiteDNS | FR184|28.0MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR185|26.5MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR186|23.8MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR187|16.0MB/s|DNSOK|GPT⁺-NL
-  - 🇫🇷 | @WhiteDNS | FR188|13.6MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR189|6.2MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR190|5.0MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR191|2.3MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR192|2.0MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR193|597KB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR260|30.0MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR261|28.9MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR262|27.5MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR263|25.9MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR264|22.9MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR265|9.6MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR266|5.8MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR267|5.7MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR268|5.6MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR269|4.5MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR270|2.6MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR271|1.7MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR272|1.6MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR273|1.5MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR274|1.2MB/s|DNSOK|GPT⁺-FR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

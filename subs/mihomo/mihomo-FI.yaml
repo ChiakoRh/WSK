@@ -1,9 +1,92 @@
 proxies:
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - play-apps-features.googleusercontent.com
+    path:
+    - /
+  name: 🇫🇮 | @WhiteDNS | FI116|19.0MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 9090
+  server: 65.109.193.102
+  type: vless
+  udp: true
+  uuid: 5e03bdbb-cb39-4c6e-8ee5-eb549b5e7a70
+  xudp: true
+- encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI117|7.0MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 80
+  server: 104.16.72.101
+  type: vless
+  udp: true
+  uuid: d5598622-46b8-b017-3af3-232500000001
+  ws-opts:
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/49.0.2623.110 Safari/537.36
+    path: /sync
+  xudp: true
 - alpn:
   - h2
   client-fingerprint: firefox
   encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI94|6.3MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI118|6.1MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 443
+  server: 151.101.56.6
+  tls: true
+  type: vless
+  udp: true
+  uuid: bd5bbbac-adc3-4b23-d3ac-8506694c0ef9
+  ws-opts:
+    headers:
+      Host: c12.com
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /?RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS
+  xudp: true
+  servername: ssl.fastly.com
+- name: 🇫🇮 | @WhiteDNS | FI119|5.9MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 80
+  server: 104.16.72.101
+  type: vless
+  udp: true
+  uuid: d5598622-46b8-b017-3af3-232500000001
+  ws-opts:
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/67.0.3396.99 Safari/537.36
+    path: /sync
+  xudp: true
+  servername: nahan-core.netizo09.workers.dev
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI120|5.9MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 443
+  server: fxe3.sorixset.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: d7282b41-1f2a-47bb-8593-f464fd6b6d78
+  ws-opts:
+    headers:
+      Host: kayko.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/57.0.2987.133 Safari/537.36
+    path: /
+  xudp: true
+  servername: global.fastly.com
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI121|5.3MB/s|DNSOK|GPT⁺-FI
   network: ws
   port: 443
   server: a2.arshia-nova.ir
@@ -14,35 +97,25 @@ proxies:
   ws-opts:
     headers:
       Host: c12.com
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/63.0.3239.132 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/64.0.3282.167 Safari/537.36
     path: /
   xudp: true
   servername: ssl.fastly.com
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇮 | @WhiteDNS | FI95|6.1MB/s|DNSOK|GPT⁺-FI
-  password: rSeYcig_XBy8q3k33NpK3A
-  port: 1080
-  server: 65.109.215.118
-  type: ss
-  udp: true
-- alpn:
-  - h2
-  client-fingerprint: firefox
+- client-fingerprint: chrome
   encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI96|5.5MB/s|DNSOK|GPT⁺-FI
-  network: ws
+  grpc-opts:
+    grpc-service-name: vless-grpc-reality
+  name: 🇫🇮 | @WhiteDNS | FI122|2.6MB/s|DNSOK|GPT⁺-FI
+  network: grpc
   port: 443
-  server: k2.cloud--vpn.site
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: ''
+  server: 82.146.56.149
   tls: true
   type: vless
   udp: true
-  uuid: bd5bbbac-adc3-4b23-d3ac-8506694c0ef9
-  ws-opts:
-    headers:
-      Host: c12.com
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/67.0.3396.99 Safari/537.36
-    path: /
+  uuid: b1b3e430-ff52-44b8-b95d-27fa580fbc4f
   xudp: true
-  servername: ssl.fastly.com
+  servername: id.vk.com

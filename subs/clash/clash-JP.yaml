@@ -13,28 +13,9 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- down: ''
-  fingerprint: ''
-  name: 🇯🇵 | @WhiteDNS | JP49|2.3MB/s|DNSOK|GPT⁺-JP
-  obfs: ''
-  obfs-password: ''
-  password: ecc1f6d7-d378-40f1-a424-cfca853f0b2e
-  port: 39509
-  server: 45.76.218.34
-  skip-cert-verify: true
-  sni: lazeno.vip
-  type: hysteria2
-  up: ''
-- cipher: aes-256-gcm
-  name: 🇯🇵 | @WhiteDNS | JP50|1.9MB/s|DNSOK|GPT⁺-JP
-  password: 2bf192f1-7d86-43a3-88b3-8f72b7eb5ad9
-  port: 31870
-  server: jp-2.gsafevpnapi.com
-  type: ss
-  udp: true
 - alterId: '0'
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP51|1.8MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP667|1.3MB/s|DNSOK|GPT⁺-JP
   network: tcp
   port: 4433
   server: 45.32.57.118
@@ -46,7 +27,7 @@ proxies:
   xudp: true
 - alterId: 0
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP52|1.0MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP668|1.2MB/s|DNSOK|GPT⁺-JP
   port: 4433
   server: 45.32.57.118
   type: vmess
@@ -55,7 +36,7 @@ proxies:
   network: tcp
 - alterId: '0'
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP53|1.0MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP669|1.1MB/s|DNSOK|GPT⁺-JP
   network: tcp#🎡90@oneclickvpnkeys
   port: 4433
   server: 45.32.57.118
@@ -69,11 +50,9 @@ proxy-groups:
 - name: JP-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP49|2.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP50|1.9MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP51|1.8MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP52|1.0MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP53|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP667|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP668|1.2MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP669|1.1MB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
