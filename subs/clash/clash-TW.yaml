@@ -13,29 +13,19 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇹🇼 | @WhiteDNS | TW38|1.3MB/s|DNSOK|GPT⁺-TW
-  network: ws
+- name: 🇹🇼 | @WhiteDNS | TW41|1.6MB/s|DNSOK|GPT⁺-TW
+  password: 9sK2mP8xQ7vL3nZ6
   port: 443
-  server: 7dba81fc3a0b.oylfmxz.cn
-  skip-cert-verify: false
-  tls: true
-  type: vmess
+  server: 6ivh.pnuqcnp.cn
+  skip-cert-verify: true
+  sni: images.ctfassets.net
+  type: anytls
   udp: true
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  ws-opts:
-    headers: {}
-    path: /
-  xudp: true
-  servername: 7dba81fc3a0b.oylfmxz.cn
 proxy-groups:
 - name: TW-Auto
   type: url-test
   proxies:
-  - 🇹🇼 | @WhiteDNS | TW38|1.3MB/s|DNSOK|GPT⁺-TW
+  - 🇹🇼 | @WhiteDNS | TW41|1.6MB/s|DNSOK|GPT⁺-TW
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

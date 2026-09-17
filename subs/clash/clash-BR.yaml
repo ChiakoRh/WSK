@@ -1,0 +1,35 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- auth: CyG0RFxMjzs41uQD4OLuHQ==
+  name: 🇧🇷 | @WhiteDNS | BR2|2.4MB/s|DNSOK|GPT⁺-BR
+  obfs: salamander
+  obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
+  password: CyG0RFxMjzs41uQD4OLuHQ==
+  port: 20000
+  ports: 20000-30000
+  server: 137.131.167.179
+  skip-cert-verify: true
+  sni: rmgyvpn.rest
+  type: hysteria2
+proxy-groups:
+- name: BR-Auto
+  type: url-test
+  proxies:
+  - 🇧🇷 | @WhiteDNS | BR2|2.4MB/s|DNSOK|GPT⁺-BR
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,BR-Auto
