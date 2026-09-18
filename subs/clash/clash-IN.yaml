@@ -13,9 +13,11 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- alterId: 0
+- alpn:
+  - ''
+  alterId: '0'
   cipher: auto
-  name: 🇮🇳 | @WhiteDNS | IN28|3.4MB/s|DNSOK|GPT⁺-IN
+  name: 🇮🇳 | @WhiteDNS | IN32|1.4MB/s|DNSOK|GPT⁺-IN
   network: ws
   port: 80
   server: 152.67.8.205
@@ -33,7 +35,7 @@ proxy-groups:
 - name: IN-Auto
   type: url-test
   proxies:
-  - 🇮🇳 | @WhiteDNS | IN28|3.4MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN32|1.4MB/s|DNSOK|GPT⁺-IN
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

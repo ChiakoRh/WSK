@@ -13,58 +13,37 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: pl01-grpc-8e47a
-  name: 🇧🇷 | @WhiteDNS | BR20|20.0MB/s|DNSOK|GPT⁺-PL
-  network: grpc
-  port: 9443
-  server: 185.255.179.11
+- client-fingerprint: random
+  encryption: none
+  name: 🇧🇷 | @WhiteDNS | BR19|3.0MB/s|DNSOK|GPT⁺-BR
+  network: ws
+  port: 443
+  server: www.visa.com.hk
   tls: true
   type: vless
   udp: true
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  uuid: 1367d3f3-a7f4-4a31-ba9a-ac2793fa0b9b
+  ws-opts:
+    headers:
+      Host: br-gru.xhs152.shop
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /announcement
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2048
   xudp: true
-  servername: hub-pl-01.hanvpn.cc
-- name: 🇧🇷 | @WhiteDNS | BR21|1.7MB/s|DNSOK|GPT⁺-BR
-  password: ''
-  port: 45005
-  server: 191.241.187.16
-  skip-cert-verify: true
-  type: http
-  username: ''
-- name: 🇧🇷 | @WhiteDNS | BR22|1.3MB/s|DNSOK|GPT⁺-BR
-  password: ''
-  port: 8989
-  server: 138.204.95.193
-  skip-cert-verify: true
-  type: http
-  username: ''
-- name: 🇧🇷 | @WhiteDNS | BR23|1.0MB/s|DNSOK|GPT⁺-BR
-  password: ''
-  port: 3126
-  server: 189.84.157.245
-  skip-cert-verify: true
-  type: http
-  username: ''
-- name: 🇧🇷 | @WhiteDNS | BR24|1.0MB/s|DNSOK|GPT⁺-BR
-  password: ''
-  port: 9292
-  server: 200.95.192.61
-  skip-cert-verify: true
-  type: http
-  username: ''
-- name: 🇧🇷 | @WhiteDNS | BR25|1.0MB/s|DNSOK|GPT⁺-BR
+  servername: br-gru.xhs152.shop
+- name: 🇧🇷 | @WhiteDNS | BR20|849KB/s|DNSOK|GPT⁺-BR
   password: ''
   port: 8666
   server: 128.201.29.6
   skip-cert-verify: true
   type: http
   username: ''
-- name: 🇧🇷 | @WhiteDNS | BR26|835KB/s|DNSOK|GPT⁺-BR
+- name: 🇧🇷 | @WhiteDNS | BR21|547KB/s|DNSOK|GPT⁺-BR
   password: ''
-  port: 9191
-  server: 177.222.248.50
+  port: 8989
+  server: 138.204.95.193
   skip-cert-verify: true
   type: http
   username: ''
@@ -72,13 +51,9 @@ proxy-groups:
 - name: BR-Auto
   type: url-test
   proxies:
-  - 🇧🇷 | @WhiteDNS | BR20|20.0MB/s|DNSOK|GPT⁺-PL
-  - 🇧🇷 | @WhiteDNS | BR21|1.7MB/s|DNSOK|GPT⁺-BR
-  - 🇧🇷 | @WhiteDNS | BR22|1.3MB/s|DNSOK|GPT⁺-BR
-  - 🇧🇷 | @WhiteDNS | BR23|1.0MB/s|DNSOK|GPT⁺-BR
-  - 🇧🇷 | @WhiteDNS | BR24|1.0MB/s|DNSOK|GPT⁺-BR
-  - 🇧🇷 | @WhiteDNS | BR25|1.0MB/s|DNSOK|GPT⁺-BR
-  - 🇧🇷 | @WhiteDNS | BR26|835KB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR19|3.0MB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR20|849KB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR21|547KB/s|DNSOK|GPT⁺-BR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

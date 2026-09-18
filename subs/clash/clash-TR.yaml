@@ -14,29 +14,28 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - client-fingerprint: chrome
-  encryption: none
-  name: 🇪🇬 | @WhiteDNS | EG4|2.6MB/s|DNSOK|GPT⁺-US
+  name: 🇹🇷 | @WhiteDNS | TR15|568KB/s|DNSOK|GPT⁺-TR
   network: ws
   port: 443
-  server: ccs2g.pai50288.uk
+  server: 104.17.147.22
   tls: true
   type: vless
   udp: true
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  uuid: 5ef04ae8-8d7c-0a66-13f4-6e3f00000003
   ws-opts:
     headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/57.0.2987.133 Safari/537.36
-    path: /pai50288
+      Host: relay.lunetcloud.ir
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /lunetnetwork
   xudp: true
-  servername: ccs2g.pai50288.uk
+  servername: relay.lunetcloud.ir
 proxy-groups:
-- name: EG-Auto
+- name: TR-Auto
   type: url-test
   proxies:
-  - 🇪🇬 | @WhiteDNS | EG4|2.6MB/s|DNSOK|GPT⁺-US
+  - 🇹🇷 | @WhiteDNS | TR15|568KB/s|DNSOK|GPT⁺-TR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,EG-Auto
+- MATCH,TR-Auto

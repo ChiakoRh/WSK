@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇸🇪 | @WhiteDNS | SE16|6.1MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE15|16.0MB/s|DNSOK|GPT⁺-SE
   password: ''
   port: 443
   server: 149.50.216.65
@@ -21,7 +21,15 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇸🇪 | @WhiteDNS | SE17|5.5MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE16|15.3MB/s|DNSOK|GPT⁺-SE
+  password: None
+  port: 443
+  server: 146.70.242.130
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇸🇪 | @WhiteDNS | SE17|6.0MB/s|DNSOK|GPT⁺-SE
   password: ''
   port: 443
   server: 146.70.242.146
@@ -29,37 +37,21 @@ proxies:
   tls: true
   type: http
   username: ''
-- client-fingerprint: edge
-  encryption: none
-  name: 🇸🇪 | @WhiteDNS | SE18|5.4MB/s|DNSOK|GPT⁺-SE
-  network: tcp
-  port: 8735
-  reality-opts:
-    public-key: NpgXDQ6jl_HGPdHAHFeiBl5Ym7bywxmw_EYovmFjVQs
-    short-id: 9e3f5e25c17d2615
-  server: sez.starzone.ir
-  tls: true
-  type: vless
+- cipher: aes-256-gcm
+  name: 🇸🇪 | @WhiteDNS | SE18|4.8MB/s|DNSOK|GPT⁺-SE
+  password: AxIYWtskJWIIaefW
+  port: 8388
+  server: 70.34.212.124
+  type: ss
   udp: true
-  uuid: 3e73031b-1bcd-4c27-b4b5-807f3bd556d8
-  xudp: true
-  servername: play-apps-features.googleusercontent.com
-- name: 🇸🇪 | @WhiteDNS | SE19|4.8MB/s|DNSOK|GPT⁺-SE
-  password: ''
-  port: 443
-  server: 146.70.242.130
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 proxy-groups:
 - name: SE-Auto
   type: url-test
   proxies:
-  - 🇸🇪 | @WhiteDNS | SE16|6.1MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE17|5.5MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE18|5.4MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE19|4.8MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE15|16.0MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE16|15.3MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE17|6.0MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE18|4.8MB/s|DNSOK|GPT⁺-SE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
