@@ -15,7 +15,7 @@ dns:
 proxies:
 - down: ''
   fingerprint: ''
-  name: 🇯🇵 | @WhiteDNS | JP84|2.3MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP75|2.3MB/s|DNSOK|GPT⁺-JP
   obfs: ''
   obfs-password: ''
   password: ecc1f6d7-d378-40f1-a424-cfca853f0b2e
@@ -27,7 +27,7 @@ proxies:
   up: ''
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP85|1.8MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP76|2.0MB/s|DNSOK|GPT⁺-JP
   network: tcp
   port: 443
   reality-opts:
@@ -38,92 +38,11 @@ proxies:
   type: vless
   udp: true
   uuid: d03c34c3-98fa-42ff-80a8-6ea1d0b24ac9
+  xudp: true
   servername: cdn.jsdelivr.net
-- client-fingerprint: ios
-  name: 🇯🇵 | @WhiteDNS | JP86|1.8MB/s|DNSOK|GPT⁺-JP
-  port: 20270
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-    short-id: 28500ae15838f905
-  server: jp-1.gsafevpnapi.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: f0eb9f67-ef76-40aa-a1e6-22a11d5a9379
-  network: tcp
-  servername: www.yahoo.com
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇯🇵 | @WhiteDNS | JP87|1.8MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 20270
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-    short-id: 28500ae15838f905
-  server: jp-1.gsafevpnapi.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: c80d9d87-0aa6-4b45-9673-7a9d1e5e4d6b
-  xudp: true
-  servername: www.yahoo.com
-- client-fingerprint: qq
-  encryption: none
-  name: 🇯🇵 | @WhiteDNS | JP88|1.8MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 20270
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-    short-id: 28500ae15838f905
-  server: jp-1.gsafevpnapi.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7647b321-4bfe-43f3-b21f-926c5de8f9b6
-  xudp: true
-  servername: www.yahoo.com
-- cipher: aes-256-gcm
-  name: 🇯🇵 | @WhiteDNS | JP89|1.7MB/s|DNSOK|GPT⁺-JP
-  password: 38b8e2fb-b9a0-40a6-b42c-335def2765cf
-  port: 31870
-  server: jp-2.gsafevpnapi.com
-  type: ss
-  udp: true
 - alterId: '0'
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP90|1.7MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: 168.138.43.75
-    path: /cctv13.m3u8
-  xudp: true
-- client-fingerprint: ios
-  encryption: none
-  name: 🇯🇵 | @WhiteDNS | JP91|1.1MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 20270
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-    short-id: 28500ae15838f905
-  server: jp-1.gsafevpnapi.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: f0eb9f67-ef76-40aa-a1e6-22a11d5a9379
-  xudp: true
-  servername: www.yahoo.com
-- alterId: '0'
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP92|1.0MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP77|1.5MB/s|DNSOK|GPT⁺-JP
   network: tcp
   port: 4433
   server: 45.32.57.118
@@ -133,9 +52,18 @@ proxies:
   udp: true
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
   xudp: true
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP78|1.2MB/s|DNSOK|GPT⁺-JP
+  port: 4433
+  server: 45.32.57.118
+  type: vmess
+  udp: true
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  network: tcp
 - alterId: '0'
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP93|1.0MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP79|1.0MB/s|DNSOK|GPT⁺-JP
   network: tcp#🎡90@oneclickvpnkeys
   port: 4433
   server: 45.32.57.118
@@ -149,16 +77,11 @@ proxy-groups:
 - name: JP-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP84|2.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP85|1.8MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP86|1.8MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP87|1.8MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP88|1.8MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP89|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP90|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP91|1.1MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP92|1.0MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP93|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP75|2.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP76|2.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP77|1.5MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP78|1.2MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP79|1.0MB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

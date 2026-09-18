@@ -12,27 +12,11 @@ dns:
   nameserver:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
-proxies:
-- encryption: none
-  http-opts:
-    headers:
-      Host:
-      - store.steampowered.com
-    path:
-    - /
-  name: ❓ | @WhiteDNS | OT133|4.0MB/s|DNSOK|GPT⁺-DE
-  network: http
-  port: 440
-  server: 167.71.45.85
-  type: vless
-  udp: true
-  uuid: 59906cb2-a61b-4cf3-b77b-5762ef61d2b0
-  xudp: true
+proxies: []
 proxy-groups:
 - name: OT-Auto
   type: url-test
-  proxies:
-  - ❓ | @WhiteDNS | OT133|4.0MB/s|DNSOK|GPT⁺-DE
+  proxies: []
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
