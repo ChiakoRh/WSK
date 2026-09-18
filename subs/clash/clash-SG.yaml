@@ -13,21 +13,8 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇸🇬 | @WhiteDNS | SG160|4.6MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 80
-  server: 170.114.46.6
-  type: vless
-  udp: true
-  uuid: 6aa028bc-08a9-41d1-a397-d60ce65df081
-  ws-opts:
-    headers:
-      Host: shalana.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /shalana
-  xudp: true
-- name: 🇸🇬 | @WhiteDNS | SG161|4.4MB/s|DNSOK|GPT⁺-SG
+- encryption: none
+  name: 🇸🇬 | @WhiteDNS | SG172|4.7MB/s|DNSOK|GPT⁺-SG
   network: ws
   port: 80
   server: support.zoom.us
@@ -37,14 +24,104 @@ proxies:
   ws-opts:
     headers:
       Host: shalana.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/52.0.2743.116 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.17
+        (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
+    path: /shalana
+  xudp: true
+- name: 🇸🇬 | @WhiteDNS | SG173|4.7MB/s|DNSOK|GPT⁺-SG
+  network: ws
+  port: 80
+  server: 170.114.45.6
+  type: vless
+  udp: true
+  uuid: 6aa028bc-08a9-41d1-a397-d60ce65df081
+  ws-opts:
+    headers:
+      Host: shalana.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/67.0.3396.99 Safari/537.36
+    path: /shalana
+  xudp: true
+- name: 🇸🇬 | @WhiteDNS | SG174|4.6MB/s|DNSOK|GPT⁺-SG
+  network: ws
+  port: 80
+  server: support.zoom.us
+  type: vless
+  udp: true
+  uuid: 6aa028bc-08a9-41d1-a397-d60ce65df081
+  ws-opts:
+    headers:
+      Host: shalana.xyz
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+    path: /shalana
+  xudp: true
+  servername: support.zoom.us
+- name: 🇸🇬 | @WhiteDNS | SG175|4.5MB/s|DNSOK|GPT⁺-SG
+  network: ws
+  port: 80
+  server: 170.114.46.6
+  type: vless
+  udp: true
+  uuid: 6aa028bc-08a9-41d1-a397-d60ce65df081
+  ws-opts:
+    headers:
+      Host: shalana.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: /shalana
+  xudp: true
+- name: 🇸🇬 | @WhiteDNS | SG176|4.4MB/s|DNSOK|GPT⁺-SG
+  network: ws
+  port: 80
+  server: support.zoom.us
+  type: vless
+  udp: true
+  uuid: 6aa028bc-08a9-41d1-a397-d60ce65df081
+  ws-opts:
+    headers:
+      Host: shalana.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.67 Safari/537.36
+    path: /shalana
+  xudp: true
+  servername: shalana.xyz
+- name: 🇸🇬 | @WhiteDNS | SG177|3.4MB/s|DNSOK|GPT⁺-SG
+  network: ws
+  port: 80
+  server: 170.114.46.6
+  type: vless
+  udp: true
+  uuid: 6aa028bc-08a9-41d1-a397-d60ce65df081
+  ws-opts:
+    headers:
+      Host: shalana.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.67 Safari/537.36
+    path: /shalana
+  xudp: true
+  servername: shalana.xyz
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇸🇬 | @WhiteDNS | SG178|3.3MB/s|DNSOK|GPT⁺-SG
+  network: ws
+  port: 2096
+  server: 104.17.70.206
+  tls: true
+  type: vless
+  udp: true
+  uuid: 395d040e-a04a-43d7-a1e9-8635f545879a
+  ws-opts:
+    headers:
+      Host: shalana.xyz
+      User-Agent: Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/533.2 (KHTML,
+        like Gecko) Chrome/5.0.342.1 Safari/533.2
     path: /shalana
   xudp: true
   servername: shalana.xyz
 - client-fingerprint: unsafe
   encryption: none
-  name: 🇸🇬 | @WhiteDNS | SG162|3.6MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG179|2.6MB/s|DNSOK|GPT⁺-SG
   network: ws
   port: 2096
   server: 188.114.97.6
@@ -55,294 +132,69 @@ proxies:
   ws-opts:
     headers:
       Host: shalana.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/57.0.2987.133 Safari/537.36
-    path: /shalana
-  xudp: true
-  servername: shalana.xyz
-- name: 🇸🇬 | @WhiteDNS | SG163|3.4MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 80
-  server: 170.114.46.6
-  type: vless
-  udp: true
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1; A1601 Build/LMY47I) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36
-    path: /
-  xudp: true
-- client-fingerprint: unsafe
-  encryption: none
-  name: 🇸🇬 | @WhiteDNS | SG164|3.3MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 443
-  server: 104.16.10.199
-  tls: true
-  type: vless
-  udp: true
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/70.0.3538.110 Safari/537.36
-    path: /
-  xudp: true
-  servername: u.srilankangrill.online
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇸🇬 | @WhiteDNS | SG165|3.1MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 443
-  server: 104.16.111.193
-  tls: true
-  type: vless
-  udp: true
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/49.0.2623.112 Safari/537.36
-    path: /
-  xudp: true
-  servername: u.srilankangrill.online
-- name: 🇸🇬 | @WhiteDNS | SG166|2.8MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 80
-  server: 170.114.46.6
-  type: vless
-  udp: true
-  uuid: 6aa028bc-08a9-41d1-a397-d60ce65df081
-  ws-opts:
-    headers:
-      Host: shalana.xyz
       User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/70.0.3538.67 Safari/537.36
     path: /shalana
   xudp: true
   servername: shalana.xyz
-- name: 🇸🇬 | @WhiteDNS | SG167|2.7MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 80
-  server: 170.114.45.6
-  type: vless
-  udp: true
-  uuid: 6aa028bc-08a9-41d1-a397-d60ce65df081
-  ws-opts:
-    headers:
-      Host: shalana.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/50.0.2661.102 Safari/537.36
-    path: /shalana
-  xudp: true
-- client-fingerprint: unsafe
-  encryption: none
-  name: 🇸🇬 | @WhiteDNS | SG168|2.7MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 443
-  server: 104.16.10.104
-  tls: true
-  type: vless
-  udp: true
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/48.0.2564.116 Safari/537.36
-    path: /
-  xudp: true
-  servername: u.srilankangrill.online
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG169|2.6MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 443
-  server: 104.21.89.41
-  tls: true
-  type: vless
-  udp: true
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/58.0.3029.81 Safari/537.36
-    path: /
-  xudp: true
-  servername: u.srilankangrill.online
-- encryption: none
-  name: 🇸🇬 | @WhiteDNS | SG170|2.6MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 80
-  server: support.zoom.us
-  type: vless
-  udp: true
-  uuid: 6aa028bc-08a9-41d1-a397-d60ce65df081
-  ws-opts:
-    headers:
-      Host: shalana.xyz
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
-    path: /shalana
-  xudp: true
-- client-fingerprint: random
-  encryption: none
-  name: 🇸🇬 | @WhiteDNS | SG171|2.6MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 443
-  server: freev2.cloudflare.182682.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1367d3f3-a7f4-4a31-ba9a-ac2793fa0b9b
-  ws-opts:
-    headers:
-      Host: ap-south.xhs152.shop
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.106 Safari/537.36
-    path: /announcement
-    early-data-header-name: Sec-WebSocket-Protocol
-    max-early-data: 2048
-  xudp: true
-  servername: ap-south.xhs152.shop
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG172|2.6MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 443
-  server: 104.19.178.244
-  tls: true
-  type: vless
-  udp: true
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/53.0.2785.143 Safari/537.36
-    path: /
-  xudp: true
-  servername: u.srilankangrill.online
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG173|2.6MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 8443
-  server: 141.193.213.20
-  tls: true
-  type: vless
-  udp: true
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-      User-Agent: Mozilla/5.0 (X11; Datanyze; Linux x86_64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/65.0.3325.181 Safari/537.36
-    path: /
-  xudp: true
-  servername: u.srilankangrill.online
-- encryption: none
-  name: 🇸🇬 | @WhiteDNS | SG174|2.5MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 80
-  server: support.zoom.us
-  type: vless
-  udp: true
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/64.0.3282.167 Safari/537.36
-    path: /
-  xudp: true
 - cipher: 2022-blake3-chacha20-poly1305
-  name: 🇸🇬 | @WhiteDNS | SG175|2.5MB/s|DNSOK|GPT⁺-SG
-  password: Yaz8LJBSJ12nY56yI3YkTXbN/C7BiGBRQurrUwREhvs=
+  name: 🇸🇬 | @WhiteDNS | SG180|2.3MB/s|DNSOK|GPT⁺-SG
+  password: mYD6SNVk6rYfSsNcRE54unnYKlp5hRZk+XTtDnjEzjY=
   port: 56927
-  server: 168.138.185.221
-  type: ss
-  udp: true
-- name: 🇸🇬 | @WhiteDNS | SG176|2.3MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 80
-  server: support.zoom.us
-  type: vless
-  udp: true
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.139 Safari/537.36
-    path: /
-  xudp: true
-  servername: u.srilankangrill.online
-- cipher: 2022-blake3-chacha20-poly1305
-  name: 🇸🇬 | @WhiteDNS | SG177|2.1MB/s|DNSOK|GPT⁺-SG
-  password: O8NAGBdB4ptCXObiSU8J/Gf38K8gnGNG6Bj6QU6/1WI=
-  port: 56927
-  server: 161.118.242.116
+  server: 138.2.71.128
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG178|2.1MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 443
-  server: 104.21.60.109
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG181|1.3MB/s|DNSOK|GPT⁺-SG
+  network: tcp#5🐲@oneclickvpnkeys
+  port: 19825
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  server: 146.235.16.130
   tls: true
   type: vless
   udp: true
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.67 Safari/537.36
-    path: /
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
   xudp: true
-  servername: u.srilankangrill.online
+  servername: sg2-8sb.6121999.dpdns.org
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG179|1.7MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG182|1.3MB/s|DNSOK|GPT⁺-SG
+  network: tcp
   port: 19825
   reality-opts:
     public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
     short-id: 6ba85179e30d4fc2
   server: sg2-8sb.6121999.dpdns.org
-  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  network: tcp
+  xudp: true
   servername: sg2-8sb.6121999.dpdns.org
-- alpn:
-  - h3
-  congestion-controller: bbr
-  name: 🇸🇬 | @WhiteDNS | SG180|1.7MB/s|DNSOK|GPT⁺-SG
-  password: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  port: 33738
-  server: sg2-8sb.6121999.dpdns.org
-  sni: sg2-8sb.6121999.dpdns.org
-  type: tuic
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG183|1.1MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  port: 19825
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  server: 146.235.16.130
+  tls: true
+  type: vless
   udp: true
-  udp-relay-mode: quic
   uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  version: 5
-- cipher: 2022-blake3-chacha20-poly1305
-  name: 🇸🇬 | @WhiteDNS | SG181|1.4MB/s|DNSOK|GPT⁺-SG
-  password: jzbveBTs+YuJotZVNhD1uM6abJDkpkxoV/ZPZTYTaSs=
-  port: 56927
-  server: 168.107.65.209
-  type: ss
-  udp: true
+  xudp: true
+  servername: sg2-8sb.6121999.dpdns.org
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG182|1.3MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG184|1.0MB/s|DNSOK|GPT⁺-SG
   network: raw
   port: 19825
   reality-opts:
@@ -355,113 +207,31 @@ proxies:
   uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
   xudp: true
   servername: sg2-8sb.6121999.dpdns.org
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG183|1.3MB/s|DNSOK|GPT⁺-SG
-  network: tcp
-  port: 19825
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  server: sg2-8sb.6121999.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  xudp: true
-  servername: sg2-8sb.6121999.dpdns.org
-- alpn:
-  - h3
-  congestion-controller: bbr
-  name: 🇸🇬 | @WhiteDNS | SG184|1.2MB/s|DNSOK|GPT⁺-SG
-  password: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  port: 33738
-  server: 146.235.16.130
-  sni: sg2-8sb.6121999.dpdns.org
-  type: tuic
-  udp: true
-  udp-relay-mode: quic
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  version: 5
 - cipher: 2022-blake3-chacha20-poly1305
-  name: 🇸🇬 | @WhiteDNS | SG185|1.2MB/s|DNSOK|GPT⁺-SG
-  password: aRK/1nmhuEH5nuNCChQnkiJcgsrKb13Vcj7xA2Q/LQY=
+  name: 🇸🇬 | @WhiteDNS | SG185|1.0MB/s|DNSOK|GPT⁺-SG
+  password: jzbveBTs+YuJotZVNhD1uM6abJDkpkxoV/ZPZTYTaSs=
   port: 56927
-  server: 152.69.222.209
+  server: 168.107.65.209
   type: ss
   udp: true
-- cipher: 2022-blake3-chacha20-poly1305
-  name: 🇸🇬 | @WhiteDNS | SG186|1.0MB/s|DNSOK|GPT⁺-SG
-  password: sy97HcKMDTchOQqDSOIOklrpdXHtrJzbJ51u8/vCALs=
-  port: 56927
-  server: 161.118.206.93
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG187|1.0MB/s|DNSOK|GPT⁺-SG
-  network: tcp#5🐲@oneclickvpnkeyshysteria2://umndu7jgfyujpvjvm2sw9hl0rryljngzvwru2hzwehyzkkrx@hold.wwwinternetvideo.click:443/?insecure=1
-  port: 19825
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  server: 146.235.16.130
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  xudp: true
-  servername: sg2-8sb.6121999.dpdns.org
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG188|966KB/s|DNSOK|GPT⁺-SG
-  network: tcp
-  port: 19825
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  server: 146.235.16.130
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  xudp: true
-  servername: sg2-8sb.6121999.dpdns.org
 proxy-groups:
 - name: SG-Auto
   type: url-test
   proxies:
-  - 🇸🇬 | @WhiteDNS | SG160|4.6MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG161|4.4MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG162|3.6MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG163|3.4MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG164|3.3MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG165|3.1MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG166|2.8MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG167|2.7MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG168|2.7MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG169|2.6MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG170|2.6MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG171|2.6MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG172|2.6MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG173|2.6MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG174|2.5MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG175|2.5MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG176|2.3MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG177|2.1MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG178|2.1MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG179|1.7MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG180|1.7MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG181|1.4MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG172|4.7MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG173|4.7MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG174|4.6MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG175|4.5MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG176|4.4MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG177|3.4MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG178|3.3MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG179|2.6MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG180|2.3MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG181|1.3MB/s|DNSOK|GPT⁺-SG
   - 🇸🇬 | @WhiteDNS | SG182|1.3MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG183|1.3MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG184|1.2MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG185|1.2MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG186|1.0MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG187|1.0MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG188|966KB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG183|1.1MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG184|1.0MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG185|1.0MB/s|DNSOK|GPT⁺-SG
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
