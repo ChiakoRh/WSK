@@ -13,26 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  name: 🇸🇪 | @WhiteDNS | SE26|18.8MB/s|DNSOK|GPT⁺-SE
-  network: ws
-  port: 443
-  server: freev2.cloudflare.182682.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: ff7cb8d1-b912-46e8-9686-a209c613c614
-  ws-opts:
-    headers:
-      Host: se-sto.xhs152.shop
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/49.0.2623.87 Safari/537.36
-    path: /announcement
-    early-data-header-name: Sec-WebSocket-Protocol
-    max-early-data: 2048
-  xudp: true
-  servername: se-sto.xhs152.shop
-- name: 🇸🇪 | @WhiteDNS | SE27|15.4MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE27|16.2MB/s|DNSOK|GPT⁺-SE
   password: None
   port: 443
   server: 146.70.242.130
@@ -40,7 +21,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇸🇪 | @WhiteDNS | SE28|11.4MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE28|5.6MB/s|DNSOK|GPT⁺-SE
   password: ''
   port: 443
   server: 149.50.216.65
@@ -49,7 +30,7 @@ proxies:
   type: http
   username: ''
 - name: 🇸🇪 | @WhiteDNS | SE29|5.4MB/s|DNSOK|GPT⁺-SE
-  password: None
+  password: ''
   port: 443
   server: 146.70.242.146
   skip-cert-verify: true
@@ -60,9 +41,8 @@ proxy-groups:
 - name: SE-Auto
   type: url-test
   proxies:
-  - 🇸🇪 | @WhiteDNS | SE26|18.8MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE27|15.4MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE28|11.4MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE27|16.2MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE28|5.6MB/s|DNSOK|GPT⁺-SE
   - 🇸🇪 | @WhiteDNS | SE29|5.4MB/s|DNSOK|GPT⁺-SE
   url: http://www.gstatic.com/generate_204
   interval: 300

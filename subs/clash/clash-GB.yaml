@@ -13,69 +13,57 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- encryption: none
-  http-opts:
-    headers:
-      Host:
-      - store.steampowered.com
-    path:
-    - /
-  name: 🇬🇧 | @WhiteDNS | GB60|47.5MB/s|DNSOK|GPT⁺-DE
-  network: http
-  port: 440
-  server: 134.122.89.101
-  type: vless
-  udp: true
-  uuid: 59906cb2-a61b-4cf3-b77b-5762ef61d2b0
-  xudp: true
-- cipher: 2022-blake3-chacha20-poly1305
-  name: 🇬🇧 | @WhiteDNS | GB61|22.5MB/s|DNSOK|GPT⁺-GB
-  password: b55gTfbbzI7GfDrbynYm2QwMB0lCtQXQsFl8qIevieg=
-  port: 61312
-  server: 129.151.87.133
-  type: ss
-  udp: true
-- name: 🇬🇧 | @WhiteDNS | GB62|20.8MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 443
-  server: 212.102.63.31
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB63|20.8MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 443
-  server: 185.235.0.66
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 - client-fingerprint: chrome
   encryption: none
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB64|19.7MB/s|DNSOK|GPT⁺-GB
-  network: tcp
+  name: 🇬🇧 | @WhiteDNS | GB70|33.3MB/s|DNSOK|GPT⁺-DE
+  network: ws
   port: 443
-  reality-opts:
-    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
-    short-id: 1aa9f3c9021280c0
-  server: 5.152.223.97
+  server: rubifen.adaspoloandco.com
   tls: true
   type: vless
   udp: true
-  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /GOrbEh
   xudp: true
-  servername: strapi.io
-- name: 🇬🇧 | @WhiteDNS | GB65|19.3MB/s|DNSOK|GPT⁺-GB
-  password: ''
+  servername: rubifen.adaspoloandco.com
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB71|24.4MB/s|DNSOK|GPT⁺-DE
+  network: ws
   port: 443
-  server: 212.102.63.1
-  skip-cert-verify: true
+  server: rubifen.adaspoloandco.com
   tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB66|18.7MB/s|DNSOK|GPT⁺-GB
+  type: vless
+  udp: true
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X Build/N2G47H) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /GOrbEh
+  xudp: true
+  servername: rubifen.adaspoloandco.com
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB72|23.1MB/s|DNSOK|GPT⁺-GB
+  password: aKfETv3FnRLG5JBPKBZLrjX42g1rwmCWW9kPwL4jskI=
+  port: 61312
+  server: 134.65.58.197
+  type: ss
+  udp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB73|22.5MB/s|DNSOK|GPT⁺-GB
+  password: 9UzSnfj0gy1JNUBD2L3JgpLLlQieW6AfOJ9vptz0iks=
+  port: 61312
+  server: 134.65.63.122
+  type: ss
+  udp: true
+- name: 🇬🇧 | @WhiteDNS | GB74|21.0MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
   server: 212.102.63.61
@@ -83,10 +71,18 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB67|17.6MB/s|DNSOK|GPT⁺-GB
-  password: None
+- name: 🇬🇧 | @WhiteDNS | GB75|20.9MB/s|DNSOK|GPT⁺-GB
+  password: ''
   port: 443
-  server: 37.120.233.18
+  server: 185.235.0.66
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB76|20.7MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 443
+  server: 185.235.0.34
   skip-cert-verify: true
   tls: true
   type: http
@@ -94,23 +90,7 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB68|6.8MB/s|DNSOK|GPT⁺-GB
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
-    short-id: fd55b698ee8c3629
-  server: 87.117.234.19
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
-  xudp: true
-  servername: strapi.io
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB69|6.4MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB77|20.6MB/s|DNSOK|GPT⁺-GB
   network: raw
   port: 443
   reality-opts:
@@ -123,10 +103,10 @@ proxies:
   uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
   xudp: true
   servername: strapi.io
-- name: 🇬🇧 | @WhiteDNS | GB70|6.4MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB78|20.0MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
-  server: 185.235.0.2
+  server: 212.102.63.31
   skip-cert-verify: true
   tls: true
   type: http
@@ -134,7 +114,38 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB71|6.3MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB79|19.5MB/s|DNSOK|GPT⁺-GB
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
+    short-id: 1aa9f3c9021280c0
+  server: 5.152.223.97
+  tls: true
+  type: vless
+  udp: true
+  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
+  xudp: true
+  servername: strapi.io
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB80|19.0MB/s|DNSOK|GPT⁺-GB
+  password: em25pV7s2EUkWhgDNcKJDRPTc8KBbjReVwoUdeqeQoU=
+  port: 61312
+  server: 129.151.66.224
+  type: ss
+  udp: true
+- name: 🇬🇧 | @WhiteDNS | GB81|6.7MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 443
+  server: 212.102.63.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇬🇧 | @WhiteDNS | GB82|6.6MB/s|DNSOK|GPT⁺-GB
   network: raw
   port: 443
   reality-opts:
@@ -147,18 +158,10 @@ proxies:
   uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
   xudp: true
   servername: strapi.io
-- name: 🇬🇧 | @WhiteDNS | GB72|6.3MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 443
-  server: 37.120.233.50
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB73|6.2MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB83|6.5MB/s|DNSOK|GPT⁺-GB
   network: tcp
   port: 443
   reality-opts:
@@ -171,26 +174,10 @@ proxies:
   uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
   xudp: true
   servername: strapi.io
-- name: 🇬🇧 | @WhiteDNS | GB74|6.1MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 443
-  server: 185.235.0.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB75|6.1MB/s|DNSOK|GPT⁺-GB
-  password: None
-  port: 443
-  server: 37.120.233.50
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB76|6.0MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB84|6.4MB/s|DNSOK|GPT⁺-GB
   network: raw
   port: 443
   reality-opts:
@@ -203,7 +190,38 @@ proxies:
   uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
   xudp: true
   servername: strapi.io
-- name: 🇬🇧 | @WhiteDNS | GB77|5.9MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB85|6.2MB/s|DNSOK|GPT⁺-GB
+  password: None
+  port: 443
+  server: 37.120.233.50
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB86|6.1MB/s|DNSOK|GPT⁺-GB
+  password: None
+  port: 443
+  server: 37.120.233.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB87|6.0MB/s|DNSOK|GPT⁺-GB
+  password: zRZNBszYyWo5
+  port: 8388
+  server: 51.77.225.200
+  type: ss
+  udp: true
+- name: 🇬🇧 | @WhiteDNS | GB88|6.0MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 443
+  server: 185.235.0.2
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB89|5.6MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
   server: 37.120.233.34
@@ -211,28 +229,54 @@ proxies:
   tls: true
   type: http
   username: ''
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB90|4.8MB/s|DNSOK|GPT⁺-GB
+  password: 0N1dYtQFmHnwBeKv53o5MJDkRzbGYY1KkLXnaNkWo3o=
+  port: 61312
+  server: 129.151.68.65
+  type: ss
+  udp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB91|1.7MB/s|DNSOK|GPT⁺-GB
+  password: b55gTfbbzI7GfDrbynYm2QwMB0lCtQXQsFl8qIevieg=
+  port: 61312
+  server: 129.151.87.133
+  type: ss
+  udp: true
+- name: 🇬🇧 | @WhiteDNS | GB92|1022KB/s|DNSOK|GPT⁺-FR
+  password: ''
+  port: 1088
+  server: 144.91.121.61
+  skip-cert-verify: true
+  type: socks5
+  username: ''
 proxy-groups:
 - name: GB-Auto
   type: url-test
   proxies:
-  - 🇬🇧 | @WhiteDNS | GB60|47.5MB/s|DNSOK|GPT⁺-DE
-  - 🇬🇧 | @WhiteDNS | GB61|22.5MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB62|20.8MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB63|20.8MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB64|19.7MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB65|19.3MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB66|18.7MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB67|17.6MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB68|6.8MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB69|6.4MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB70|6.4MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB71|6.3MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB72|6.3MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB73|6.2MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB74|6.1MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB75|6.1MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB76|6.0MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB77|5.9MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB70|33.3MB/s|DNSOK|GPT⁺-DE
+  - 🇬🇧 | @WhiteDNS | GB71|24.4MB/s|DNSOK|GPT⁺-DE
+  - 🇬🇧 | @WhiteDNS | GB72|23.1MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB73|22.5MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB74|21.0MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB75|20.9MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB76|20.7MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB77|20.6MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB78|20.0MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB79|19.5MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB80|19.0MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB81|6.7MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB82|6.6MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB83|6.5MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB84|6.4MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB85|6.2MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB86|6.1MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB87|6.0MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB88|6.0MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB89|5.6MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB90|4.8MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB91|1.7MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB92|1022KB/s|DNSOK|GPT⁺-FR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
