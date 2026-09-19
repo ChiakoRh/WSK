@@ -13,9 +13,33 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- name: 🇦🇹 | @WhiteDNS | AT7|24.5MB/s|DNSOK|GPT⁺-AT
+  password: None
+  port: 443
+  server: 146.70.244.2
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇦🇹 | @WhiteDNS | AT8|18.4MB/s|DNSOK|GPT⁺-AT
+  password: ''
+  port: 443
+  server: 146.70.244.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇦🇹 | @WhiteDNS | AT9|15.0MB/s|DNSOK|GPT⁺-AT
+  password: ''
+  port: 443
+  server: 146.70.244.2
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: 🇦🇹 | @WhiteDNS | AT7|24.5MB/s|DNSOK|GPT⁺-AT
+  name: 🇦🇹 | @WhiteDNS | AT10|7.2MB/s|DNSOK|GPT⁺-AT
   network: tcp
   port: 443
   reality-opts:
@@ -27,29 +51,14 @@ proxies:
   udp: true
   uuid: edde565e-41f5-400e-84ea-7b87a3e84488
   servername: at.quattro-tech.ru
-- name: 🇦🇹 | @WhiteDNS | AT8|6.7MB/s|DNSOK|GPT⁺-AT
-  password: ''
-  port: 443
-  server: 146.70.244.2
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇦🇹 | @WhiteDNS | AT9|5.9MB/s|DNSOK|GPT⁺-AT
-  password: None
-  port: 443
-  server: 146.70.244.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 proxy-groups:
 - name: AT-Auto
   type: url-test
   proxies:
   - 🇦🇹 | @WhiteDNS | AT7|24.5MB/s|DNSOK|GPT⁺-AT
-  - 🇦🇹 | @WhiteDNS | AT8|6.7MB/s|DNSOK|GPT⁺-AT
-  - 🇦🇹 | @WhiteDNS | AT9|5.9MB/s|DNSOK|GPT⁺-AT
+  - 🇦🇹 | @WhiteDNS | AT8|18.4MB/s|DNSOK|GPT⁺-AT
+  - 🇦🇹 | @WhiteDNS | AT9|15.0MB/s|DNSOK|GPT⁺-AT
+  - 🇦🇹 | @WhiteDNS | AT10|7.2MB/s|DNSOK|GPT⁺-AT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
