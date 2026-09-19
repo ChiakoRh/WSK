@@ -13,14 +13,14 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇲🇽 | @WhiteDNS | MX6|2.0MB/s|DNSOK|GPT⁺-MX
+- name: 🇲🇽 | @WhiteDNS | MX4|2.1MB/s|DNSOK|GPT⁺-MX
   password: ''
   port: 999
   server: 189.51.168.164
   skip-cert-verify: true
   type: http
   username: ''
-- name: 🇲🇽 | @WhiteDNS | MX7|1.0MB/s|DNSOK|GPT⁺-MX
+- name: 🇲🇽 | @WhiteDNS | MX5|1.4MB/s|DNSOK|GPT⁺-MX
   password: ''
   port: 2604
   server: 200.94.38.46
@@ -31,8 +31,8 @@ proxy-groups:
 - name: MX-Auto
   type: url-test
   proxies:
-  - 🇲🇽 | @WhiteDNS | MX6|2.0MB/s|DNSOK|GPT⁺-MX
-  - 🇲🇽 | @WhiteDNS | MX7|1.0MB/s|DNSOK|GPT⁺-MX
+  - 🇲🇽 | @WhiteDNS | MX4|2.1MB/s|DNSOK|GPT⁺-MX
+  - 🇲🇽 | @WhiteDNS | MX5|1.4MB/s|DNSOK|GPT⁺-MX
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -1,22 +1,42 @@
 proxies:
-- name: 🇧🇷 | @WhiteDNS | BR18|661KB/s|DNSOK|GPT⁺-BR
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: pl01-grpc-8e47a
+  name: 🇧🇷 | @WhiteDNS | BR21|6.6MB/s|DNSOK|GPT⁺-PL
+  network: grpc
+  port: 9443
+  server: 185.255.179.11
+  tls: true
+  type: vless
+  udp: true
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  xudp: true
+  servername: hub-pl-01.hanvpn.cc
+- cipher: aes-256-gcm
+  name: 🇧🇷 | @WhiteDNS | BR22|1.6MB/s|DNSOK|GPT⁺-BR
+  password: owVdNnQcdPgthSyX
+  port: 8388
+  server: 216.128.168.190
+  type: ss
+  udp: true
+- name: 🇧🇷 | @WhiteDNS | BR23|1.0MB/s|DNSOK|GPT⁺-BR
   password: ''
-  port: 8989
-  server: 138.204.95.193
+  port: 9191
+  server: 177.222.248.50
   skip-cert-verify: true
   type: http
   username: ''
-- name: 🇧🇷 | @WhiteDNS | BR19|612KB/s|DNSOK|GPT⁺-BR
-  password: ''
-  port: 3126
-  server: 189.84.157.245
-  skip-cert-verify: true
-  type: http
-  username: ''
-- name: 🇧🇷 | @WhiteDNS | BR20|538KB/s|DNSOK|GPT⁺-BR
+- name: 🇧🇷 | @WhiteDNS | BR24|695KB/s|DNSOK|GPT⁺-BR
   password: ''
   port: 8666
   server: 128.201.29.6
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇧🇷 | @WhiteDNS | BR25|591KB/s|DNSOK|GPT⁺-BR
+  password: ''
+  port: 8989
+  server: 138.204.95.193
   skip-cert-verify: true
   type: http
   username: ''
