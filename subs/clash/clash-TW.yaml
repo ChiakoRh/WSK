@@ -13,44 +13,52 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🇹🇼 | @WhiteDNS | TW43|1.3MB/s|DNSOK|GPT⁺-TW
-  network: ws
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇹🇼 | @WhiteDNS | TW44|1.7MB/s|DNSOK|GPT⁺-TW
+  network: tcp
   port: 443
-  server: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
-  skip-cert-verify: false
+  reality-opts:
+    public-key: JE82iOR_U_H7ffxJ5yfoxXeRkMlE-aVu1wxR7n6jrVM
+    short-id: 473277e2
+  server: tw3.miyazono-kaori.com
   tls: true
-  type: vmess
+  type: vless
   udp: true
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  ws-opts:
-    headers:
-      Host: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
-    path: /
+  uuid: 1d6c2ce7-7b05-40cb-8779-bb1ade0899ce
   xudp: true
-  servername: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 | @WhiteDNS | TW44|1.2MB/s|DNSOK|GPT⁺-TW
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-  port: 50099
-  server: R3MRCG00129437X.cybervena.com
-  type: ss
+  servername: dlcdnets.asus.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇹🇼 | @WhiteDNS | TW45|1.3MB/s|DNSOK|GPT⁺-TW
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: IqsN_cPeCP6oEXtYQMMWBiUim-r9lxq7YGj_mE3992g
+    short-id: e6d59aff03e5b0
+  server: tw4.miyazono-kaori.com
+  tls: true
+  type: vless
   udp: true
+  uuid: 1d6c2ce7-7b05-40cb-8779-bb1ade0899ce
+  xudp: true
+  servername: dlcdnets.asus.com
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 | @WhiteDNS | TW45|1.0MB/s|DNSOK|GPT⁺-TW
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+  name: 🇹🇼 | @WhiteDNS | TW46|1.3MB/s|DNSOK|GPT⁺-TW
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   port: 50099
-  server: r3mrcg00129437x.cybervena.com
+  server: 36.224.185.143
   type: ss
   udp: true
 proxy-groups:
 - name: TW-Auto
   type: url-test
   proxies:
-  - 🇹🇼 | @WhiteDNS | TW43|1.3MB/s|DNSOK|GPT⁺-TW
-  - 🇹🇼 | @WhiteDNS | TW44|1.2MB/s|DNSOK|GPT⁺-TW
-  - 🇹🇼 | @WhiteDNS | TW45|1.0MB/s|DNSOK|GPT⁺-TW
+  - 🇹🇼 | @WhiteDNS | TW44|1.7MB/s|DNSOK|GPT⁺-TW
+  - 🇹🇼 | @WhiteDNS | TW45|1.3MB/s|DNSOK|GPT⁺-TW
+  - 🇹🇼 | @WhiteDNS | TW46|1.3MB/s|DNSOK|GPT⁺-TW
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

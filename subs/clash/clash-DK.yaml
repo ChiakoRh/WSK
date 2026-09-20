@@ -13,16 +13,8 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇩🇰 | @WhiteDNS | DK8|19.9MB/s|DNSOK|GPT⁺-DK
-  password: ''
-  port: 443
-  server: 185.245.84.50
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 - encryption: mlkem768x25519plus.native.0rtt.CCIZgZeeCX8na60UXi9II-iduj3OFxtj-fuh_4AWiUU
-  name: 🇩🇰 | @WhiteDNS | DK9|19.1MB/s|DNSOK|GPT⁺-DK
+  name: 🇩🇰 | @WhiteDNS | DK9|19.0MB/s|DNSOK|GPT⁺-DK
   network: tcp
   port: 443
   server: 87.58.159.20
@@ -30,16 +22,8 @@ proxies:
   udp: true
   uuid: 2471e7da-5dcd-5da4-983a-3ef758abb17c
   xudp: true
-- name: 🇩🇰 | @WhiteDNS | DK10|18.7MB/s|DNSOK|GPT⁺-DK
-  password: None
-  port: 9443
-  server: 185.245.84.50
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 - encryption: mlkem768x25519plus.native.0rtt.CCIZgZeeCX8na60UXi9II-iduj3OFxtj-fuh_4AWiUU
-  name: 🇩🇰 | @WhiteDNS | DK11|4.2MB/s|DNSOK|GPT⁺-DK
+  name: 🇩🇰 | @WhiteDNS | DK10|18.5MB/s|DNSOK|GPT⁺-DK
   network: tcp
   port: 443
   server: 87.58.159.20
@@ -47,14 +31,21 @@ proxies:
   udp: true
   uuid: awlix_ir
   xudp: true
+- name: 🇩🇰 | @WhiteDNS | DK11|5.4MB/s|DNSOK|GPT⁺-DK
+  password: ''
+  port: 443
+  server: 185.245.84.50
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 proxy-groups:
 - name: DK-Auto
   type: url-test
   proxies:
-  - 🇩🇰 | @WhiteDNS | DK8|19.9MB/s|DNSOK|GPT⁺-DK
-  - 🇩🇰 | @WhiteDNS | DK9|19.1MB/s|DNSOK|GPT⁺-DK
-  - 🇩🇰 | @WhiteDNS | DK10|18.7MB/s|DNSOK|GPT⁺-DK
-  - 🇩🇰 | @WhiteDNS | DK11|4.2MB/s|DNSOK|GPT⁺-DK
+  - 🇩🇰 | @WhiteDNS | DK9|19.0MB/s|DNSOK|GPT⁺-DK
+  - 🇩🇰 | @WhiteDNS | DK10|18.5MB/s|DNSOK|GPT⁺-DK
+  - 🇩🇰 | @WhiteDNS | DK11|5.4MB/s|DNSOK|GPT⁺-DK
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

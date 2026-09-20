@@ -13,18 +13,6 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- alterId: '0'
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR81|1.9MB/s|DNSOK|GPT⁺-KR
-  network: none
-  port: 443
-  server: 140.238.2.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  xudp: true
 - alpn:
   - ''
   alterId: '0'
@@ -33,7 +21,7 @@ proxies:
     headers: {}
     path:
     - /
-  name: 🇰🇷 | @WhiteDNS | KR82|1.2MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR71|1.7MB/s|DNSOK|GPT⁺-KR
   network: http
   port: 80
   server: 217.142.138.61
@@ -43,12 +31,107 @@ proxies:
   udp: true
   uuid: ac1b933d-afff-4487-93ef-f57130a55dff
   xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇰🇷 | @WhiteDNS | KR72|1.7MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: aVGSSemhxqqDg75lUDBxCNZZXfuBb4QrU8yZYnJD6nk
+    short-id: f554f56d31
+  server: kr1.miyazono-kaori.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1d6c2ce7-7b05-40cb-8779-bb1ade0899ce
+  xudp: true
+  servername: www.coway.com
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇰🇷 | @WhiteDNS | KR73|1.7MB/s|DNSOK|GPT⁺-KR
+  network: ws
+  port: 80
+  server: 132.145.80.230
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  ws-opts:
+    headers: {}
+    path: /cctv13.m3u8
+  xudp: true
+- name: 🇰🇷 | @WhiteDNS | KR74|1.2MB/s|DNSOK|GPT⁺-KR
+  password: ''
+  port: 1090
+  server: 121.169.46.116
+  skip-cert-verify: true
+  type: socks5
+  username: T2clM0QlM0Q6
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇰🇷 | @WhiteDNS | KR75|1.2MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 6pZxjabeHoyJlsc2cP3Q5YK7G0bIOQwzWFyiarbUQXc
+    short-id: c8af1462debbc1
+  server: kr2.miyazono-kaori.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1d6c2ce7-7b05-40cb-8779-bb1ade0899ce
+  xudp: true
+  servername: www.coway.com
+- alterId: 0
+  cipher: auto
+  country: 🇰🇷KR
+  h2-opts: {}
+  http-opts: {}
+  name: 🇰🇷 | @WhiteDNS | KR76|1.0MB/s|DNSOK|GPT⁺-KR
+  network: none
+  port: 443
+  server: 140.238.2.250
+  skip-cert-verify: true
+  type: vmess
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+- alterId: 0
+  cipher: auto
+  name: 🇰🇷 | @WhiteDNS | KR77|768KB/s|DNSOK|GPT⁺
+  port: 443
+  server: 140.238.2.250
+  type: vmess
+  udp: true
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  network: tcp
+- alterId: '0'
+  cipher: auto
+  name: 🇰🇷 | @WhiteDNS | KR78|651KB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  port: 443
+  server: 140.238.2.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  xudp: true
 proxy-groups:
 - name: KR-Auto
   type: url-test
   proxies:
-  - 🇰🇷 | @WhiteDNS | KR81|1.9MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR82|1.2MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR71|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR72|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR73|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR74|1.2MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR75|1.2MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR76|1.0MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR77|768KB/s|DNSOK|GPT⁺
+  - 🇰🇷 | @WhiteDNS | KR78|651KB/s|DNSOK|GPT⁺-KR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
