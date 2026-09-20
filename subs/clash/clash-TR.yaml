@@ -1,0 +1,42 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.T3No9D-db3ZYQW3tbvZeqH0qgLXWDbN5FN9qIuxbPVA
+  name: 🇹🇷 | @WhiteDNS | TR12|5.8MB/s|DNSOK|GPT⁺-TR
+  network: xhttp
+  port: 55805
+  reality-opts:
+    public-key: ts76kMHodroAUFU4rwPnSAA4s-w7W8rNSmP2FMaI9xQ
+    short-id: 2f0611891b8613cc
+  server: update.download.pass.mycarservhpdd10.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 527462f9-95a9-4470-ba22-ba1c45903954
+  xhttp-opts:
+    mode: auto
+    path: /
+  xudp: true
+  servername: play.google.com
+proxy-groups:
+- name: TR-Auto
+  type: url-test
+  proxies:
+  - 🇹🇷 | @WhiteDNS | TR12|5.8MB/s|DNSOK|GPT⁺-TR
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,TR-Auto

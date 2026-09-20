@@ -1,7 +1,37 @@
 proxies:
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇱🇹 | @WhiteDNS | LT15|18.6MB/s|DNSOK|GPT⁺-LT
+  name: 🇱🇹 | @WhiteDNS | LT15|14.0MB/s|DNSOK|GPT⁺-LT
+  port: 443
+  reality-opts:
+    public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
+    short-id: 4fa44664f6a566d3
+  server: 84.32.215.94
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  network: tcp
+  servername: lt.aether-runet.top
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇱🇹 | @WhiteDNS | LT16|6.5MB/s|DNSOK|GPT⁺-LT
+  port: 443
+  reality-opts:
+    public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
+    short-id: 4fa44664f6a566d3
+  server: lt.aether-runet.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  network: tcp
+  servername: lt.aether-runet.top
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇱🇹 | @WhiteDNS | LT17|6.3MB/s|DNSOK|GPT⁺-LT
   network: tcp
   port: 443
   reality-opts:
@@ -14,9 +44,24 @@ proxies:
   uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
   xudp: true
   servername: lt.aether-runet.top
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇱🇹 | @WhiteDNS | LT18|5.6MB/s|DNSOK|GPT⁺-LT
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
+    short-id: 4fa44664f6a566d3
+  server: 84.32.215.5
+  tls: true
+  type: vless
+  udp: true
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  xudp: true
+  servername: lt.aether-runet.top
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇱🇹 | @WhiteDNS | LT16|5.7MB/s|DNSOK|GPT⁺-LT
+  name: 🇱🇹 | @WhiteDNS | LT19|4.1MB/s|DNSOK|GPT⁺-LT
   network: tcp
   port: 443
   reality-opts:
@@ -29,23 +74,3 @@ proxies:
   uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
   xudp: true
   servername: lt.aether-runet.top
-- alpn:
-  - http/1.1
-  client-fingerprint: firefox
-  encryption: none
-  name: 🇱🇹 | @WhiteDNS | LT17|3.4MB/s|DNSOK|GPT⁺-LT
-  network: ws
-  port: 443
-  server: 95.129.236.216
-  tls: true
-  type: vless
-  udp: true
-  uuid: 86c4f7f4-dc67-4a70-93f6-95749a48ce71
-  ws-opts:
-    headers:
-      Host: crm.hourtley.com
-      User-Agent: Mozilla/5.0 (Linux; Android 7.1; vivo 1716 Build/N2G47H) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36
-    path: /origin/190546791/fetch
-  xudp: true
-  servername: crm.hourtley.com
