@@ -1,13 +1,5 @@
 proxies:
-- name: 🇵🇱 | @WhiteDNS | PL53|11.8MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 37.120.156.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇵🇱 | @WhiteDNS | PL54|6.5MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL62|19.4MB/s|DNSOK|GPT⁺-PL
   password: None
   port: 443
   server: 37.120.156.34
@@ -15,7 +7,65 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇵🇱 | @WhiteDNS | PL55|748KB/s|DNSOK|GPT⁺-PL
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - play-apps-features.googleusercontent.com
+    path:
+    - /
+  name: 🇵🇱 | @WhiteDNS | PL63|18.5MB/s|DNSOK|GPT⁺-PL
+  network: http
+  port: 50665
+  server: 91.224.75.56
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: '@Nitro_Skybot'
+  xudp: true
+- name: 🇵🇱 | @WhiteDNS | PL64|16.3MB/s|DNSOK|GPT⁺-PL
+  password: ''
+  port: 443
+  server: 37.120.156.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇵🇱 | @WhiteDNS | PL65|5.9MB/s|DNSOK|GPT⁺-PL
+  port: 443
+  reality-opts:
+    public-key: 4h74KXbkBMYOhJkZabJNsf85cI91ytap_gkl56mzjTU
+    short-id: ''
+  server: 83.168.111.58
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
+  network: tcp
+  servername: soulful.host
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇵🇱 | @WhiteDNS | PL66|5.5MB/s|DNSOK|GPT⁺-PL
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: 4h74KXbkBMYOhJkZabJNsf85cI91ytap_gkl56mzjTU
+    short-id: ''
+  server: 83.168.111.58
+  tls: true
+  type: vless
+  udp: true
+  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
+  xudp: true
+  servername: soulful.host
+- name: 🇵🇱 | @WhiteDNS | PL67|2.2MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 151.115.54.133
@@ -23,3 +73,39 @@ proxies:
   tls: true
   type: http
   username: ''
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇵🇱 | @WhiteDNS | PL68|1.8MB/s|DNSOK|GPT⁺-PL
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 4h74KXbkBMYOhJkZabJNsf85cI91ytap_gkl56mzjTU
+    short-id: ''
+  server: 83.168.111.58
+  tls: true
+  type: vless
+  udp: true
+  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
+  xudp: true
+  servername: soulful.host
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - https://www.speedtest.net
+    path:
+    - /
+  name: 🇵🇱 | @WhiteDNS | PL69|1.2MB/s|DNSOK|GPT⁺-PL
+  network: http
+  port: 35823
+  server: 82.40.62.191
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6adff010-82b6-4bb2-ac90-9f66d3c42836
+  xudp: true

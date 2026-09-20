@@ -15,7 +15,22 @@ dns:
 proxies:
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇱🇹 | @WhiteDNS | LT14|6.2MB/s|DNSOK|GPT⁺-LT
+  name: 🇱🇹 | @WhiteDNS | LT16|17.4MB/s|DNSOK|GPT⁺-LT
+  port: 443
+  reality-opts:
+    public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
+    short-id: 4fa44664f6a566d3
+  server: lt.aether-runet.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  network: tcp
+  servername: lt.aether-runet.top
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇱🇹 | @WhiteDNS | LT17|6.2MB/s|DNSOK|GPT⁺-LT
   network: tcp
   port: 443
   reality-opts:
@@ -28,9 +43,23 @@ proxies:
   uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
   xudp: true
   servername: lt.aether-runet.top
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇱🇹 | @WhiteDNS | LT18|6.2MB/s|DNSOK|GPT⁺-LT
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
+    short-id: 4fa44664f6a566d3
+  server: 84.32.215.94
+  tls: true
+  type: vless
+  udp: true
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  servername: lt.aether-runet.top
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇱🇹 | @WhiteDNS | LT15|6.2MB/s|DNSOK|GPT⁺-LT
+  name: 🇱🇹 | @WhiteDNS | LT19|6.2MB/s|DNSOK|GPT⁺-LT
   network: tcp
   port: 443
   reality-opts:
@@ -45,7 +74,7 @@ proxies:
   servername: lt.aether-runet.top
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇱🇹 | @WhiteDNS | LT16|6.2MB/s|DNSOK|GPT⁺-LT
+  name: 🇱🇹 | @WhiteDNS | LT20|1.7MB/s|DNSOK|GPT⁺-LT
   port: 443
   reality-opts:
     public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
@@ -57,46 +86,16 @@ proxies:
   udp: true
   uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
   network: tcp
-  servername: lt.aether-runet.top
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇱🇹 | @WhiteDNS | LT17|5.9MB/s|DNSOK|GPT⁺-LT
-  port: 443
-  reality-opts:
-    public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
-    short-id: 4fa44664f6a566d3
-  server: lt.aether-runet.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-  network: tcp
-  servername: lt.aether-runet.top
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇱🇹 | @WhiteDNS | LT18|2.3MB/s|DNSOK|GPT⁺-LT
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
-    short-id: 4fa44664f6a566d3
-  server: 84.32.215.94
-  tls: true
-  type: vless
-  udp: true
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-  xudp: true
   servername: lt.aether-runet.top
 proxy-groups:
 - name: LT-Auto
   type: url-test
   proxies:
-  - 🇱🇹 | @WhiteDNS | LT14|6.2MB/s|DNSOK|GPT⁺-LT
-  - 🇱🇹 | @WhiteDNS | LT15|6.2MB/s|DNSOK|GPT⁺-LT
-  - 🇱🇹 | @WhiteDNS | LT16|6.2MB/s|DNSOK|GPT⁺-LT
-  - 🇱🇹 | @WhiteDNS | LT17|5.9MB/s|DNSOK|GPT⁺-LT
-  - 🇱🇹 | @WhiteDNS | LT18|2.3MB/s|DNSOK|GPT⁺-LT
+  - 🇱🇹 | @WhiteDNS | LT16|17.4MB/s|DNSOK|GPT⁺-LT
+  - 🇱🇹 | @WhiteDNS | LT17|6.2MB/s|DNSOK|GPT⁺-LT
+  - 🇱🇹 | @WhiteDNS | LT18|6.2MB/s|DNSOK|GPT⁺-LT
+  - 🇱🇹 | @WhiteDNS | LT19|6.2MB/s|DNSOK|GPT⁺-LT
+  - 🇱🇹 | @WhiteDNS | LT20|1.7MB/s|DNSOK|GPT⁺-LT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
