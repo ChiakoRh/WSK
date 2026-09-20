@@ -13,15 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇪🇸 | @WhiteDNS | ES15|6.3MB/s|DNSOK|GPT⁺-ES
-  password: ''
-  port: 443
-  server: 130.195.250.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇪🇸 | @WhiteDNS | ES16|6.2MB/s|DNSOK|GPT⁺-ES
+- name: 🇪🇸 | @WhiteDNS | ES11|20.5MB/s|DNSOK|GPT⁺-ES
   password: ''
   port: 443
   server: 130.195.250.34
@@ -29,7 +21,15 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇪🇸 | @WhiteDNS | ES17|4.8MB/s|DNSOK|GPT⁺-ES
+- name: 🇪🇸 | @WhiteDNS | ES12|19.0MB/s|DNSOK|GPT⁺-ES
+  password: ''
+  port: 443
+  server: 130.195.250.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇪🇸 | @WhiteDNS | ES13|5.9MB/s|DNSOK|GPT⁺-ES
   password: ''
   port: 443
   server: 82.102.17.178
@@ -41,9 +41,9 @@ proxy-groups:
 - name: ES-Auto
   type: url-test
   proxies:
-  - 🇪🇸 | @WhiteDNS | ES15|6.3MB/s|DNSOK|GPT⁺-ES
-  - 🇪🇸 | @WhiteDNS | ES16|6.2MB/s|DNSOK|GPT⁺-ES
-  - 🇪🇸 | @WhiteDNS | ES17|4.8MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES11|20.5MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES12|19.0MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES13|5.9MB/s|DNSOK|GPT⁺-ES
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
