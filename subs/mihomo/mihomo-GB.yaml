@@ -1,27 +1,67 @@
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB101|24.7MB/s|DNSOK|GPT⁺-DE
-  network: ws
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB85|21.6MB/s|DNSOK|GPT⁺-GB
+  password: JDuG6erD7ug3QCtbLAZ2KCJaOhCmxAXL5C8bFxSsMBw=
+  port: 61312
+  server: 129.151.72.134
+  type: ss
+  udp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB86|21.4MB/s|DNSOK|GPT⁺-GB
+  password: fEjh5VVMPSTm8pTR60oPxKZmZ7sEAdqXNLM/wt6Xajg=
+  port: 61312
+  server: 134.65.61.141
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB87|21.0MB/s|DNSOK|GPT⁺-GB
+  password: zRZNBszYyWo5
+  port: 8388
+  server: 51.77.225.200
+  type: ss
+  udp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB88|21.0MB/s|DNSOK|GPT⁺-GB
+  password: Bi1Qf5DBkEKpJDa8QA8LCm4rE+MZUBBUWfbYSWjv3bk=
+  port: 61312
+  server: 129.151.87.175
+  type: ss
+  udp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇬🇧 | @WhiteDNS | GB89|20.8MB/s|DNSOK|GPT⁺-GB
   port: 443
-  server: rubifen.adaspoloandco.com
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
+  server: 87.117.234.19
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; ANE-LX3 Build/HUAWEIANE-LX3)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /GOrbEh
-  xudp: true
-  servername: rubifen.adaspoloandco.com
+  uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
+  network: tcp
+  servername: strapi.io
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB90|20.2MB/s|DNSOK|GPT⁺-GB
+  password: pfXiuLfaGDAlLQRsBXMGn0JepNmrqAMESQDiMP+neyU=
+  port: 61312
+  server: 144.24.229.97
+  type: ss
+  udp: true
+- name: 🇬🇧 | @WhiteDNS | GB91|19.9MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 443
+  server: 212.102.63.31
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB102|21.5MB/s|DNSOK|GPT⁺-GB
-  network: raw
+  name: 🇬🇧 | @WhiteDNS | GB92|19.7MB/s|DNSOK|GPT⁺-GB
+  network: tcp
   port: 443
   reality-opts:
     public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
@@ -33,7 +73,7 @@ proxies:
   uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
   xudp: true
   servername: strapi.io
-- name: 🇬🇧 | @WhiteDNS | GB103|21.4MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB93|19.4MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
   server: 212.102.63.61
@@ -41,25 +81,38 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB104|20.6MB/s|DNSOK|GPT⁺-GB
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇬🇧 | @WhiteDNS | GB94|18.2MB/s|DNSOK|GPT⁺-GB
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
+    short-id: 1aa9f3c9021280c0
+  server: 5.152.223.97
+  tls: true
+  type: vless
+  udp: true
+  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
+  servername: strapi.io
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB95|17.8MB/s|DNSOK|GPT⁺-GB
+  password: jfj6Bwqjzn3nwcpYTmU46qP+W2o8lzbxIrCMRlbOKuQ=
+  port: 61312
+  server: 144.24.228.69
+  type: ss
+  udp: true
+- name: 🇬🇧 | @WhiteDNS | GB96|16.9MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
-  server: 185.235.0.66
+  server: 37.120.233.18
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB105|19.5MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB97|15.5MB/s|DNSOK|GPT⁺-GB
   password: ''
-  port: 443
-  server: 212.102.63.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB106|17.3MB/s|DNSOK|GPT⁺-GB
-  password: None
-  port: 443
+  port: 9443
   server: 37.120.233.34
   skip-cert-verify: true
   tls: true
@@ -68,70 +121,8 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB107|14.8MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB98|6.5MB/s|DNSOK|GPT⁺-GB
   network: raw
-  port: 443
-  reality-opts:
-    public-key: 2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM
-    short-id: e4a1b53b03eff60d
-  server: 95.154.196.61
-  tls: true
-  type: vless
-  udp: true
-  uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
-  xudp: true
-  servername: strapi.io
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB108|13.0MB/s|DNSOK|GPT⁺-GB
-  port: 443
-  reality-opts:
-    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
-    short-id: 1aa9f3c9021280c0
-  server: 5.152.223.97
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
-  network: tcp
-  servername: strapi.io
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB109|12.6MB/s|DNSOK|GPT⁺-GB
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
-    short-id: 1aa9f3c9021280c0
-  server: 5.152.223.97
-  tls: true
-  type: vless
-  udp: true
-  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
-  xudp: true
-  servername: strapi.io
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB110|11.9MB/s|DNSOK|GPT⁺-GB
-  port: 443
-  reality-opts:
-    public-key: 2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM
-    short-id: e4a1b53b03eff60d
-  server: 95.154.196.61
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
-  network: tcp
-  servername: strapi.io
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB111|6.5MB/s|DNSOK|GPT⁺-GB
-  network: tcp
   port: 443
   reality-opts:
     public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
@@ -146,23 +137,46 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB112|6.5MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB99|6.5MB/s|DNSOK|GPT⁺-GB
   network: raw
+  port: 443
+  reality-opts:
+    public-key: 2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM
+    short-id: e4a1b53b03eff60d
+  server: 95.154.196.61
+  tls: true
+  type: vless
+  udp: true
+  uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
+  xudp: true
+  servername: strapi.io
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇬🇧 | @WhiteDNS | GB100|6.4MB/s|DNSOK|GPT⁺-GB
   port: 443
   reality-opts:
     public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
     short-id: 1aa9f3c9021280c0
   server: 5.152.223.97
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
-  xudp: true
+  network: tcp
   servername: strapi.io
-- name: 🇬🇧 | @WhiteDNS | GB113|6.3MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB101|6.4MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
-  server: 212.102.63.31
+  server: 212.102.63.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB102|6.0MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 443
+  server: 37.120.233.50
   skip-cert-verify: true
   tls: true
   type: http
@@ -171,7 +185,7 @@ proxies:
   encryption: none
   grpc-opts:
     grpc-service-name: grpc_common1
-  name: 🇬🇧 | @WhiteDNS | GB114|6.3MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB103|6.0MB/s|DNSOK|GPT⁺-GB
   network: grpc
   port: 30963
   reality-opts:
@@ -184,25 +198,41 @@ proxies:
   uuid: aabcb69e-9f17-44bd-aaac-552dd23e9691
   xudp: true
   servername: us.vrzn.download.nvidia.com
-- name: 🇬🇧 | @WhiteDNS | GB115|6.3MB/s|DNSOK|GPT⁺-GB
-  password: ''
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇬🇧 | @WhiteDNS | GB104|5.7MB/s|DNSOK|GPT⁺-GB
+  network: raw
   port: 443
-  server: 185.235.0.2
-  skip-cert-verify: true
+  reality-opts:
+    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
+    short-id: 1aa9f3c9021280c0
+  server: 5.152.223.97
   tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB116|6.2MB/s|DNSOK|GPT⁺-GB
-  password: None
-  port: 443
-  server: 37.120.233.50
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+  type: vless
+  udp: true
+  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
+  xudp: true
+  servername: strapi.io
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB117|6.2MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB105|5.5MB/s|DNSOK|GPT⁺-GB
+  port: 443
+  reality-opts:
+    public-key: 2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM
+    short-id: e4a1b53b03eff60d
+  server: 95.154.196.61
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
+  network: tcp
+  servername: strapi.io
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇬🇧 | @WhiteDNS | GB106|4.6MB/s|DNSOK|GPT⁺-GB
   network: tcp
   port: 443
   reality-opts:
@@ -213,68 +243,51 @@ proxies:
   type: vless
   udp: true
   uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
+  xudp: true
   servername: strapi.io
-- name: 🇬🇧 | @WhiteDNS | GB118|6.1MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB107|4.3MB/s|DNSOK|GPT⁺-GB
   password: ''
+  port: 443
+  server: 185.235.0.2
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB108|4.0MB/s|DNSOK|GPT⁺-GB
+  password: None
   port: 443
   server: 185.235.0.34
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB119|5.5MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB109|3.3MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
-  server: 37.120.233.50
+  server: 185.235.0.66
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB120|5.5MB/s|DNSOK|GPT⁺-GB
-  port: 443
+  name: 🇬🇧 | @WhiteDNS | GB110|1.8MB/s|DNSOK|GPT⁺-GB
+  port: 51847
   reality-opts:
-    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
-    short-id: fd55b698ee8c3629
-  server: 87.117.234.19
+    public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
+    short-id: 0eec442e7b34d2f2
+  server: 3.9.135.156
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
+  uuid: 391a01e9-b664-407b-9158-610fab3f5920
   network: tcp
-  servername: strapi.io
-- name: 🇬🇧 | @WhiteDNS | GB121|5.0MB/s|DNSOK|GPT⁺-GB
-  password: None
-  port: 443
-  server: 37.120.233.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB122|4.5MB/s|DNSOK|GPT⁺
-  network: ws
-  port: 443
-  server: rubifen.adaspoloandco.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like
-        Gecko) Chrome/11.0.696.3 Safari/534.24
-    path: /GOrbEh
-  xudp: true
-  servername: rubifen.adaspoloandco.com
+  servername: www.tesla.com
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB123|1.8MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB111|1.7MB/s|DNSOK|GPT⁺-GB
   network: raw
   port: 51847
   reality-opts:
@@ -287,25 +300,10 @@ proxies:
   uuid: 391a01e9-b664-407b-9158-610fab3f5920
   xudp: true
   servername: www.tesla.com
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB124|1.2MB/s|DNSOK|GPT⁺-GB
-  port: 51847
-  reality-opts:
-    public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
-    short-id: 0eec442e7b34d2f2
-  server: 3.9.135.156
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 391a01e9-b664-407b-9158-610fab3f5920
-  network: tcp
-  servername: www.tesla.com
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB125|1.2MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB112|1.6MB/s|DNSOK|GPT⁺-GB
   network: tcp
   port: 51847
   reality-opts:
@@ -318,3 +316,21 @@ proxies:
   uuid: 391a01e9-b664-407b-9158-610fab3f5920
   xudp: true
   servername: www.tesla.com
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB113|1.4MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 443
+  server: rubifen.adaspoloandco.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (X11; Datanyze; Linux x86_64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/65.0.3325.181 Safari/537.36
+    path: /GOrbEh
+  xudp: true
+  servername: rubifen.adaspoloandco.com

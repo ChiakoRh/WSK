@@ -13,27 +13,26 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- encryption: none
-  name: 🇨🇱 | @WhiteDNS | CL5|1.3MB/s|DNSOK|GPT⁺-CL
+- name: 🇱🇰 | @WhiteDNS | LK2|3.2MB/s|DNSOK|GPT⁺-LK
   network: ws
   port: 80
-  server: platform109.golnamakcert.top
+  server: support.zoom.us
   type: vless
   udp: true
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
   ws-opts:
     headers:
-      Host: platform109.halalkhor.info
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.106 Safari/537.36
-    path: /platform109
+      Host: free.sahanwickramasinghe.me
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/39.0.2171.95 Safari/537.36
+    path: /
   xudp: true
 proxy-groups:
-- name: CL-Auto
+- name: LK-Auto
   type: url-test
   proxies:
-  - 🇨🇱 | @WhiteDNS | CL5|1.3MB/s|DNSOK|GPT⁺-CL
+  - 🇱🇰 | @WhiteDNS | LK2|3.2MB/s|DNSOK|GPT⁺-LK
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,CL-Auto
+- MATCH,LK-Auto

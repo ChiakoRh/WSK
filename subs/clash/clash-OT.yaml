@@ -13,28 +13,19 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: 2022-blake3-chacha20-poly1305
-  name: ❓ | @WhiteDNS | OT279|7.9MB/s|DNSOK|GPT⁺-NL
-  password: EJZfJJpreInajdnfzw0HEza6o+tOGQpipfqP/3LzZmE=
-  port: 45819
-  server: 141.148.234.37
-  type: ss
-  udp: true
-- encryption: none
-  name: ❓ | @WhiteDNS | OT280|5.8MB/s|DNSOK|GPT⁺
-  network: raw
-  port: 10086
-  server: 204.216.216.23
-  type: vless
-  udp: true
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  xudp: true
+- name: ❓ | @WhiteDNS | OT266|3.0MB/s|DNSOK|GPT⁺-US
+  password: 'null'
+  port: 9002
+  server: 138.199.35.200
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT279|7.9MB/s|DNSOK|GPT⁺-NL
-  - ❓ | @WhiteDNS | OT280|5.8MB/s|DNSOK|GPT⁺
+  - ❓ | @WhiteDNS | OT266|3.0MB/s|DNSOK|GPT⁺-US
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

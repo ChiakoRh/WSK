@@ -14,9 +14,8 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - client-fingerprint: chrome
-  encryption: none
-  name: 🇰🇿 | @WhiteDNS | KZ18|587KB/s|DNSOK|GPT⁺-KZ
-  network: raw
+  name: 🇰🇿 | @WhiteDNS | KZ21|641KB/s|DNSOK|GPT⁺-KZ
+  network: tcp
   port: 38065
   reality-opts:
     public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
@@ -28,25 +27,11 @@ proxies:
   uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
   xudp: true
   servername: yahoo.com
-- client-fingerprint: chrome
-  name: 🇰🇿 | @WhiteDNS | KZ19|522KB/s|DNSOK|GPT⁺-KZ
-  network: tcp
-  port: 38065
-  reality-opts:
-    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
-    short-id: fa
-  server: 83.222.23.81
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
-  servername: yahoo.com
 proxy-groups:
 - name: KZ-Auto
   type: url-test
   proxies:
-  - 🇰🇿 | @WhiteDNS | KZ18|587KB/s|DNSOK|GPT⁺-KZ
-  - 🇰🇿 | @WhiteDNS | KZ19|522KB/s|DNSOK|GPT⁺-KZ
+  - 🇰🇿 | @WhiteDNS | KZ21|641KB/s|DNSOK|GPT⁺-KZ
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

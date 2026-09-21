@@ -13,27 +13,26 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: random
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇪🇪 | @WhiteDNS | EE28|6.1MB/s|DNSOK|GPT⁺-EE
+  name: 🇭🇰 | @WhiteDNS | HK149|1.5MB/s|DNSOK|GPT⁺-US
+  network: tcp
   port: 443
   reality-opts:
-    public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
-    short-id: d98e7afec9c0c359
-  server: estomin1.vodniki.monster
-  skip-cert-verify: true
+    public-key: 2kl8isq7ajNv3BR6Z1EPag_LqJHmsfo2pn0dA7yetko
+    short-id: a2d13d677624197e
+  server: hk6.miyazono-kaori.com
   tls: true
   type: vless
   udp: true
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  network: tcp
-  servername: estomin1.vodniki.monster
+  uuid: 351aa392-8769-4c49-b009-0ae4c4940b00
+  servername: www.hsbc.com.hk
 proxy-groups:
-- name: EE-Auto
+- name: HK-Auto
   type: url-test
   proxies:
-  - 🇪🇪 | @WhiteDNS | EE28|6.1MB/s|DNSOK|GPT⁺-EE
+  - 🇭🇰 | @WhiteDNS | HK149|1.5MB/s|DNSOK|GPT⁺-US
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,EE-Auto
+- MATCH,HK-Auto

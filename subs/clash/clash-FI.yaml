@@ -13,16 +13,111 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: aes-256-gcm
-  name: 🇫🇮 | @WhiteDNS | FI166|13.5MB/s|DNSOK|GPT⁺-FI
-  password: rg0g3xp9rk9nk9o0
-  port: 443
-  server: 87.58.148.70
-  type: ss
+- encryption: mlkem768x25519plus.random.0rtt.swY_aKEuuHUHKO0BHVV2uot-UFbtrXpLWr7g8uZk0xk
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇫🇮 | @WhiteDNS | FI160|16.2MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 56539
+  server: 65.109.180.37
+  type: vless
   udp: true
+  uuid: 4b55becd-697c-4162-a23e-16e740d2f2e1
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI161|13.3MB/s|DNSOK|GPT⁺-FI
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  server: 65.108.3.59
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  xudp: true
+  servername: web.eitaa.com
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI162|6.7MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 443
+  server: k2.cloud--vpn.site
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
+  ws-opts:
+    headers:
+      Host: c12.com
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /
+  xudp: true
+  servername: ssl.fastly.com
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI163|6.1MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 443
+  server: a2.arshia-nova.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
+  ws-opts:
+    headers:
+      Host: c12.com
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.181 Safari/537.36
+    path: /
+  xudp: true
+  servername: ssl.fastly.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI164|6.0MB/s|DNSOK|GPT⁺-FI
+  port: 443
+  reality-opts:
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  server: 65.108.3.59
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  network: tcp
+  servername: web.eitaa.com
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI165|5.6MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 443
+  server: 151.101.56.7
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
+  ws-opts:
+    headers:
+      Host: kayko.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/34.0.1847.131 Safari/537.36
+    path: /
+  xudp: true
+  servername: global.fastly.com
 - client-fingerprint: firefox
   encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI167|6.2MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI166|5.3MB/s|DNSOK|GPT⁺-FI
   network: ws
   port: 443
   server: 202.166.187.132
@@ -33,151 +128,39 @@ proxies:
   ws-opts:
     headers:
       Host: f.yoptybla.ru
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/69.0.3497.100 Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 7.1; vivo 1716 Build/N2G47H) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36
     path: /
   xudp: true
   servername: f.yoptybla.ru
-- encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI168|6.1MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 80
-  server: 146.75.119.82
-  type: vless
-  udp: true
-  uuid: 9121db28-c8ef-4faf-ae7b-c433fb848249
-  ws-opts:
-    headers:
-      Host: rb24.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.77 Safari/537.36
-    path: /ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
-  xudp: true
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI169|6.0MB/s|DNSOK|GPT⁺-FI
-  network: raw
-  port: 2083
-  reality-opts:
-    public-key: tADYkZWWksM_mCqqwlRHCciSCXnP3JMYrPi5eoRHh2s
-    short-id: d059fb98048c5318
-  server: 62.238.103.54
-  tls: true
-  type: vless
-  udp: true
-  uuid: d78de562-872e-43dd-be48-e9d7b06c87a3
-  xudp: true
-  servername: www.yahoo.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI170|5.8MB/s|DNSOK|GPT⁺-NO
-  port: 43312
-  reality-opts:
-    public-key: 06vBWFA7tgljTVI9N1pY6L6Ls88me171hrKzeH9-7EQ
-    short-id: 194eb312877c9c35
-  server: norw-sca-eta.ramzshadi.ir
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8124ddbb-bf22-49d9-945d-2e72c554deb2
+  name: 🇫🇮 | @WhiteDNS | FI167|4.4MB/s|DNSOK|GPT⁺-FI
   network: tcp
-  servername: play.google.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI171|5.6MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 2083
+  port: 443
   reality-opts:
-    public-key: tADYkZWWksM_mCqqwlRHCciSCXnP3JMYrPi5eoRHh2s
-    short-id: d059fb98048c5318
-  server: 62.238.103.54
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  server: 65.108.3.59
   tls: true
   type: vless
   udp: true
-  uuid: d78de562-872e-43dd-be48-e9d7b06c87a3
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
   xudp: true
-  servername: www.yahoo.com
-- client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.tC9O9Ycapxrrb4E7Kp1kwLuQOqzGFtHMTpwje0itL20
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI172|5.1MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 20888
-  reality-opts:
-    public-key: wJQx7lkO3WgOPya9Syjd5N20NTiz6PM-kqIV6f-cXnI
-    short-id: 3007a113b7917442
-  server: pnia2.pastilbastani.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: bd70f457-3ec8-4c93-9e5d-b2299b98cd80
-  xudp: true
-  servername: play.google.com
-- client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.LiAC5NZeBub5qyAnJR--Asb2urMAuRkrGwLexToWPhU
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI173|2.5MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 30558
-  reality-opts:
-    public-key: GaiQyQDjRBb4FPg89ifTpLhA5eV4J5X0Othj_uZOxRc
-    short-id: 00587e87ebfbad1d
-  server: 99qj3.pastilbastani.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: bd70f457-3ec8-4c93-9e5d-b2299b98cd80
-  xudp: true
-  servername: play.google.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI174|1.8MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 2087
-  reality-opts:
-    public-key: _FKzdndiMfCSU5YLVXSBqzk2lIG0W2-DauFpos684Uc
-    short-id: e9fae729e40ae07e
-  server: 95.217.24.119
-  tls: true
-  type: vless
-  udp: true
-  uuid: ddc0bc7e-04c6-4ff9-9adb-c68c71606e8f
-  xudp: true
-  servername: 62.238.103.54
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI175|1.5MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 2083
-  reality-opts:
-    public-key: tADYkZWWksM_mCqqwlRHCciSCXnP3JMYrPi5eoRHh2s
-    short-id: d059fb98048c5318
-  server: 95.217.24.119
-  tls: true
-  type: vless
-  udp: true
-  uuid: d78de562-872e-43dd-be48-e9d7b06c87a3
-  xudp: true
-  servername: www.yahoo.com
+  servername: web.eitaa.com
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI166|13.5MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI167|6.2MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI168|6.1MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI169|6.0MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI170|5.8MB/s|DNSOK|GPT⁺-NO
-  - 🇫🇮 | @WhiteDNS | FI171|5.6MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI172|5.1MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI173|2.5MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI174|1.8MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI175|1.5MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI160|16.2MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI161|13.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI162|6.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI163|6.1MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI164|6.0MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI165|5.6MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI166|5.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI167|4.4MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
