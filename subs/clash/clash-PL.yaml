@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇵🇱 | @WhiteDNS | PL50|16.3MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL55|5.5MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 37.120.156.18
@@ -21,46 +21,20 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇵🇱 | @WhiteDNS | PL51|6.2MB/s|DNSOK|GPT⁺-PL
-  password: None
+- name: 🇵🇱 | @WhiteDNS | PL56|5.0MB/s|DNSOK|GPT⁺-PL
+  password: ''
   port: 443
   server: 37.120.156.34
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇵🇱 | @WhiteDNS | PL52|4.9MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 151.115.54.133
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- alterId: '0'
-  cipher: auto
-  name: 🇵🇱 | @WhiteDNS | PL53|1.5MB/s|DNSOK|GPT⁺-PL
-  network: ws
-  port: 80
-  server: 188.114.96.19
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  ws-opts:
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-    path: /
-  xudp: true
 proxy-groups:
 - name: PL-Auto
   type: url-test
   proxies:
-  - 🇵🇱 | @WhiteDNS | PL50|16.3MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL51|6.2MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL52|4.9MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL53|1.5MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL55|5.5MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL56|5.0MB/s|DNSOK|GPT⁺-PL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

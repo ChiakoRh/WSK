@@ -12,20 +12,11 @@ dns:
   nameserver:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
-proxies:
-- name: ❓ | @WhiteDNS | OT266|3.0MB/s|DNSOK|GPT⁺-US
-  password: 'null'
-  port: 9002
-  server: 138.199.35.200
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
+proxies: []
 proxy-groups:
 - name: OT-Auto
   type: url-test
-  proxies:
-  - ❓ | @WhiteDNS | OT266|3.0MB/s|DNSOK|GPT⁺-US
+  proxies: []
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

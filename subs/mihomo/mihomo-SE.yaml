@@ -1,19 +1,20 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇸🇪 | @WhiteDNS | SE31|19.6MB/s|DNSOK|GPT⁺-SE
-  network: tcp
+- name: 🇸🇪 | @WhiteDNS | SE28|5.2MB/s|DNSOK|GPT⁺-SE
+  password: ''
   port: 443
-  reality-opts:
-    public-key: mxDQcCrpXFpSX3UNYCOb4kE-tBxPuNedTvllOaDtxCs
-    short-id: ab85606c439c302e
-  server: se1.miyazono-kaori.com
+  server: 149.50.216.65
+  skip-cert-verify: true
   tls: true
-  type: vless
+  type: http
+  username: ''
+- cipher: aes-256-gcm
+  name: 🇸🇪 | @WhiteDNS | SE29|4.9MB/s|DNSOK|GPT⁺-SE
+  password: AxIYWtskJWIIaefW
+  port: 8388
+  server: 70.34.212.124
+  type: ss
   udp: true
-  uuid: 351aa392-8769-4c49-b009-0ae4c4940b00
-  servername: www.volvocars.com
-- name: 🇸🇪 | @WhiteDNS | SE32|5.7MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE30|4.8MB/s|DNSOK|GPT⁺-SE
   password: None
   port: 443
   server: 146.70.242.146
@@ -21,25 +22,50 @@ proxies:
   tls: true
   type: http
   username: ''
-- cipher: aes-256-gcm
-  name: 🇸🇪 | @WhiteDNS | SE33|2.9MB/s|DNSOK|GPT⁺-SE
-  password: AxIYWtskJWIIaefW
-  port: 8388
-  server: 70.34.212.124
-  type: ss
-  udp: true
-- name: 🇸🇪 | @WhiteDNS | SE34|1.8MB/s|DNSOK|GPT⁺-SE
-  password: None
+- name: 🇸🇪 | @WhiteDNS | SE31|4.8MB/s|DNSOK|GPT⁺-SE
+  password: ''
   port: 443
-  server: 146.70.242.130
+  server: 146.70.242.146
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇸🇪 | @WhiteDNS | SE35|1.2MB/s|DNSOK|GPT⁺-SE
-  password: ''
+- client-fingerprint: safari
+  grpc-opts:
+    grpc-service-name: moktana.net.v1.StreamService
+  name: 🇸🇪 | @WhiteDNS | SE32|4.7MB/s|DNSOK|GPT⁺-SE
+  network: grpc
   port: 443
-  server: 149.50.216.65
+  reality-opts:
+    public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
+    short-id: 5d1e8b3f6c2a9d4e
+  server: 84.32.106.171
+  tls: true
+  type: vless
+  udp: true
+  uuid: 10394279-283c-4ab8-8529-f1e0a4c61bc8
+  xudp: true
+  servername: my.lunarchaff.com
+- client-fingerprint: safari
+  grpc-opts:
+    grpc-service-name: moktana.net.v1.StreamService
+  name: 🇸🇪 | @WhiteDNS | SE33|2.6MB/s|DNSOK|GPT⁺-SE
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
+    short-id: 5d1e8b3f6c2a9d4e
+  server: 185.207.66.8
+  tls: true
+  type: vless
+  udp: true
+  uuid: 10394279-283c-4ab8-8529-f1e0a4c61bc8
+  xudp: true
+  servername: hexagonicfield.com
+- name: 🇸🇪 | @WhiteDNS | SE34|1.8MB/s|DNSOK|GPT⁺-SE
+  password: None
+  port: 443
+  server: 146.70.242.130
   skip-cert-verify: true
   tls: true
   type: http

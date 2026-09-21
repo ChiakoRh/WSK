@@ -1,61 +1,54 @@
 proxies:
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: lv01-grpc-8e47a
-  name: 🇨🇦 | @WhiteDNS | CA73|5.2MB/s|DNSOK|GPT⁺-LV
-  network: grpc
-  port: 9443
-  server: 185.255.179.11
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA75|12.1MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: A0Na0oG3DYM8FtAsxN-oWVjikFbO-Ama8i1Z0C4V_ho
+    short-id: ''
+  server: 151.242.160.153
   tls: true
   type: vless
   udp: true
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  uuid: 129799e0-a9b1-4ae8-80bd-fa92db813f85
   xudp: true
-  servername: hub-lv-01.hanvpn.cc
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦 | @WhiteDNS | CA74|4.0MB/s|DNSOK|GPT⁺-CA
-  password: FD3rCuOsxOay
-  port: 8388
-  server: 15.235.75.71
-  type: ss
-  udp: true
-- client-fingerprint: chrome
+  servername: germm2.shhflow.xyz
+- client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA75|3.7MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA76|5.6MB/s|DNSOK|GPT⁺-DE
   port: 443
   reality-opts:
-    public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
-    short-id: af7e79b5
-  server: 66.70.179.124
+    public-key: A0Na0oG3DYM8FtAsxN-oWVjikFbO-Ama8i1Z0C4V_ho
+    short-id: ''
+  server: 151.242.160.153
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
+  uuid: 129799e0-a9b1-4ae8-80bd-fa92db813f85
   network: tcp
-  servername: www.apple.com
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
+  servername: germm2.shhflow.xyz
+- client-fingerprint: safari
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA76|3.1MB/s|DNSOK|GPT⁺-CA
-  network: tcp
+  name: 🇨🇦 | @WhiteDNS | CA77|5.6MB/s|DNSOK|GPT⁺-DE
+  network: raw
   port: 443
   reality-opts:
-    public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
-    short-id: af7e79b5
-  server: 66.70.179.124
+    public-key: A0Na0oG3DYM8FtAsxN-oWVjikFbO-Ama8i1Z0C4V_ho
+    short-id: ''
+  server: 151.242.160.153
   tls: true
   type: vless
   udp: true
-  uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
+  uuid: 129799e0-a9b1-4ae8-80bd-fa92db813f85
   xudp: true
-  servername: www.apple.com
+  servername: germm2.shhflow.xyz
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA77|3.1MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA78|2.1MB/s|DNSOK|GPT⁺-CA
   network: raw
   port: 443
   reality-opts:
@@ -67,4 +60,33 @@ proxies:
   udp: true
   uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
   xudp: true
+  servername: www.apple.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA79|1.9MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
+    short-id: af7e79b5
+  server: 66.70.179.124
+  tls: true
+  type: vless
+  udp: true
+  uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
+  servername: www.apple.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA80|1013KB/s|DNSOK|GPT⁺-CA
+  port: 443
+  reality-opts:
+    public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
+    short-id: af7e79b5
+  server: 66.70.179.124
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
+  network: tcp
   servername: www.apple.com
