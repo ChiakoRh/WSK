@@ -14,17 +14,17 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - cipher: aes-256-cfb
-  name: 🇰🇷 | @WhiteDNS | KR225|2.0MB/s|DNSOK|GPT⁺-KR
-  password: 1234!@#$
-  port: 1774
-  server: 49.254.204.134
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇰🇷 | @WhiteDNS | KR226|1.3MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR273|1.7MB/s|DNSOK|GPT⁺-KR
   password: 1234!@#$
   port: 1774
   server: 49.254.204.133
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🇰🇷 | @WhiteDNS | KR274|1.3MB/s|DNSOK|GPT⁺-KR
+  password: 1234!@#$
+  port: 1774
+  server: 49.254.204.134
   type: ss
   udp: true
 - alpn:
@@ -35,7 +35,7 @@ proxies:
     headers: {}
     path:
     - /
-  name: 🇰🇷 | @WhiteDNS | KR227|1.3MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR275|1.0MB/s|DNSOK|GPT⁺-KR
   network: http
   port: 80
   server: 217.142.138.61
@@ -49,9 +49,9 @@ proxy-groups:
 - name: KR-Auto
   type: url-test
   proxies:
-  - 🇰🇷 | @WhiteDNS | KR225|2.0MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR226|1.3MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR227|1.3MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR273|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR274|1.3MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR275|1.0MB/s|DNSOK|GPT⁺-KR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

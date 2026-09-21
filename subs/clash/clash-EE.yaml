@@ -13,22 +13,27 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇦🇺 | @WhiteDNS | AU15|1.8MB/s|DNSOK|GPT⁺-AU
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: 🇪🇪 | @WhiteDNS | EE28|6.1MB/s|DNSOK|GPT⁺-EE
   port: 443
-  server: 172.105.169.70
+  reality-opts:
+    public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
+    short-id: d98e7afec9c0c359
+  server: estomin1.vodniki.monster
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   network: tcp
-  servername: 172.105.169.70
+  servername: estomin1.vodniki.monster
 proxy-groups:
-- name: AU-Auto
+- name: EE-Auto
   type: url-test
   proxies:
-  - 🇦🇺 | @WhiteDNS | AU15|1.8MB/s|DNSOK|GPT⁺-AU
+  - 🇪🇪 | @WhiteDNS | EE28|6.1MB/s|DNSOK|GPT⁺-EE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,AU-Auto
+- MATCH,EE-Auto

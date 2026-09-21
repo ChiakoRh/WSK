@@ -13,140 +13,18 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇭 | @WhiteDNS | CH95|34.1MB/s|DNSOK|GPT⁺-CH
-  password: ''
-  port: 443
-  server: 31.7.62.50
+- name: 🇨🇭 | @WhiteDNS | CH42|42.3MB/s|DNSOK|GPT⁺-CH
+  password: None
+  port: 9443
+  server: 37.120.213.210
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- encryption: none
-  name: 🇨🇭 | @WhiteDNS | CH96|22.3MB/s|DNSOK|GPT⁺-CH
-  network: ws
-  port: 8080
-  server: 172.67.133.170
-  type: vless
-  udp: true
-  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
-  ws-opts:
-    headers:
-      Host: peekconfigg.vipserver1-39d.workers.dev
-      User-Agent: Mozilla/5.0 (Linux; Android 7.1; vivo 1716 Build/N2G47H) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36
-    path: /sync
-  xudp: true
-  servername: peekconfigg.vipserver1-39d.workers.dev
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇨🇭 | @WhiteDNS | CH97|20.5MB/s|DNSOK|GPT⁺-CH
-  network: ws
-  port: 443
-  server: ez-1bc8ab.sekiro-c18.workers.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7da33b25-cdd6-e481-afcf-c5d532361a70
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/57.0.2987.133 Safari/537.36
-    path: /
-  xudp: true
-  servername: ez-1bc8ab.sekiro-c18.workers.dev
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇨🇭 | @WhiteDNS | CH98|7.2MB/s|DNSOK|GPT⁺-CH
-  network: ws
-  port: 443
-  server: 172.67.133.170
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
-  ws-opts:
-    headers:
-      Host: peekconfigg.vipserver1-39d.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.117 Safari/537.36
-    path: /sync
-  xudp: true
-  servername: peekconfigg.vipserver1-39d.workers.dev
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇨🇭 | @WhiteDNS | CH99|7.1MB/s|DNSOK|GPT⁺-CH
-  network: ws
-  port: 443
-  server: 172.67.173.138
-  tls: true
-  type: vless
-  udp: true
-  uuid: 813cd228-ebf6-0e21-481a-ba4af8f85b82
-  ws-opts:
-    headers:
-      Host: odd-disk-98c5.assassincreed4048.workers.dev
-      User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X Build/N2G47H) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
-    path: /sync
-  xudp: true
-  servername: odd-disk-98c5.assassincreed4048.workers.dev
-- name: 🇨🇭 | @WhiteDNS | CH100|6.0MB/s|DNSOK|GPT⁺-CH
-  network: ws
-  port: 8080
-  server: 172.67.133.170
-  type: vless
-  udp: true
-  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
-  ws-opts:
-    headers:
-      Host: peekconfigg.vipserver1-39d.workers.dev
-      User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; SM-G7102 Build/KOT49H) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
-    path: /sync
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇨🇭 | @WhiteDNS | CH101|6.0MB/s|DNSOK|GPT⁺-CH
-  network: ws
-  port: 443
-  server: 172.67.137.223
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
-  ws-opts:
-    headers:
-      Host: curly-night-6928.ggdhchjk.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/68.0.3440.106 Safari/537.36
-    path: /sync
-  xudp: true
-  servername: curly-night-6928.ggdhchjk.workers.dev
-- client-fingerprint: chrome
-  name: 🇨🇭 | @WhiteDNS | CH102|5.2MB/s|DNSOK|GPT⁺-CH
-  network: ws
-  port: 443
-  server: 172.67.130.144
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7da33b25-cdd6-e481-afcf-c5d532361a70
-  ws-opts:
-    headers:
-      Host: ez-1bc8ab.sekiro-c18.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/57.0.2987.133 Safari/537.36
-    path: /sync
-  xudp: true
-  servername: ez-1bc8ab.sekiro-c18.workers.dev
-- name: 🇨🇭 | @WhiteDNS | CH103|5.1MB/s|DNSOK|GPT⁺
+- name: 🇨🇭 | @WhiteDNS | CH43|29.4MB/s|DNSOK|GPT⁺-CH
   password: ''
-  port: 9443
-  server: 37.120.213.210
+  port: 443
+  server: 31.7.62.50
   skip-cert-verify: true
   tls: true
   type: http
@@ -155,15 +33,8 @@ proxy-groups:
 - name: CH-Auto
   type: url-test
   proxies:
-  - 🇨🇭 | @WhiteDNS | CH95|34.1MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH96|22.3MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH97|20.5MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH98|7.2MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH99|7.1MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH100|6.0MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH101|6.0MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH102|5.2MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH103|5.1MB/s|DNSOK|GPT⁺
+  - 🇨🇭 | @WhiteDNS | CH42|42.3MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH43|29.4MB/s|DNSOK|GPT⁺-CH
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
