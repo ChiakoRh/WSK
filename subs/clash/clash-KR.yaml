@@ -13,18 +13,11 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: aes-256-cfb
-  name: 🇰🇷 | @WhiteDNS | KR453|1.9MB/s|DNSOK|GPT⁺-KR
-  password: 1234!@#$
-  port: 1774
-  server: 49.254.204.134
-  type: ss
-  udp: true
 - alpn:
   - ''
   alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR454|1.7MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR358|1.6MB/s|DNSOK|GPT⁺-KR
   network: ws
   port: 80
   server: 132.145.80.230
@@ -42,28 +35,11 @@ proxies:
   - ''
   alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR455|1.7MB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 80
-  server: 132.145.80.230
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  ws-opts:
-    headers: {}
-    path: /cctv13.m3u8
-  xudp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
   http-opts:
     headers: {}
     path:
     - /
-  name: 🇰🇷 | @WhiteDNS | KR456|1.7MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR359|1.0MB/s|DNSOK|GPT⁺-KR
   network: http
   port: 80
   server: 217.142.138.61
@@ -77,10 +53,8 @@ proxy-groups:
 - name: KR-Auto
   type: url-test
   proxies:
-  - 🇰🇷 | @WhiteDNS | KR453|1.9MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR454|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR455|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR456|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR358|1.6MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR359|1.0MB/s|DNSOK|GPT⁺-KR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
