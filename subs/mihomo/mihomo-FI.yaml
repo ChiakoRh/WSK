@@ -1,56 +1,28 @@
 proxies:
-- client-fingerprint: chrome
+- alpn:
+  - h2
+  client-fingerprint: chrome
   encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI177|17.6MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 2083
-  reality-opts:
-    public-key: tADYkZWWksM_mCqqwlRHCciSCXnP3JMYrPi5eoRHh2s
-    short-id: d059fb98048c5318
-  server: 62.238.103.54
+  name: 🇫🇮 | @WhiteDNS | FI176|5.7MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 443
+  server: k2.cloud--vpn.site
   tls: true
   type: vless
   udp: true
-  uuid: d78de562-872e-43dd-be48-e9d7b06c87a3
+  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
+  ws-opts:
+    headers:
+      Host: c12.com
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /
   xudp: true
-  servername: www.yahoo.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI178|17.2MB/s|DNSOK|GPT⁺-FI
-  network: raw
-  port: 2087
-  reality-opts:
-    public-key: _FKzdndiMfCSU5YLVXSBqzk2lIG0W2-DauFpos684Uc
-    short-id: e9fae729e40ae07e
-  server: 95.217.24.119
-  tls: true
-  type: vless
-  udp: true
-  uuid: ddc0bc7e-04c6-4ff9-9adb-c68c71606e8f
-  xudp: true
-  servername: 62.238.103.54
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI179|16.9MB/s|DNSOK|GPT⁺-FI
-  network: raw
-  port: 2083
-  reality-opts:
-    public-key: tADYkZWWksM_mCqqwlRHCciSCXnP3JMYrPi5eoRHh2s
-    short-id: d059fb98048c5318
-  server: 62.238.103.54
-  tls: true
-  type: vless
-  udp: true
-  uuid: d78de562-872e-43dd-be48-e9d7b06c87a3
-  xudp: true
-  servername: www.yahoo.com
+  servername: ssl.fastly.com
 - client-fingerprint: random
   encryption: mlkem768x25519plus.native.0rtt.LiAC5NZeBub5qyAnJR--Asb2urMAuRkrGwLexToWPhU
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI180|16.5MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI177|5.5MB/s|DNSOK|GPT⁺-FI
   network: tcp
   port: 30558
   reality-opts:
@@ -64,159 +36,9 @@ proxies:
   xudp: true
   servername: play.google.com
 - client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI181|15.0MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  server: 65.108.3.59
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  xudp: true
-  servername: web.eitaa.com
-- client-fingerprint: random
   encryption: mlkem768x25519plus.native.0rtt.tC9O9Ycapxrrb4E7Kp1kwLuQOqzGFtHMTpwje0itL20
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI182|13.5MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 20888
-  reality-opts:
-    public-key: wJQx7lkO3WgOPya9Syjd5N20NTiz6PM-kqIV6f-cXnI
-    short-id: 3007a113b7917442
-  server: 77.42.34.2
-  tls: true
-  type: vless
-  udp: true
-  uuid: bd70f457-3ec8-4c93-9e5d-b2299b98cd80
-  xudp: true
-  servername: play.google.com
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI183|6.4MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 443
-  server: a2.arshia-nova.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
-  ws-opts:
-    headers:
-      Host: c12.com
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/49.0.2623.110 Safari/537.36
-    path: /
-  xudp: true
-  servername: ssl.fastly.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI184|6.3MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 2083
-  reality-opts:
-    public-key: tADYkZWWksM_mCqqwlRHCciSCXnP3JMYrPi5eoRHh2s
-    short-id: d059fb98048c5318
-  server: 95.217.24.119
-  tls: true
-  type: vless
-  udp: true
-  uuid: d78de562-872e-43dd-be48-e9d7b06c87a3
-  xudp: true
-  servername: www.yahoo.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI185|6.0MB/s|DNSOK|GPT⁺-FI
-  port: 2083
-  reality-opts:
-    public-key: tADYkZWWksM_mCqqwlRHCciSCXnP3JMYrPi5eoRHh2s
-    short-id: d059fb98048c5318
-  server: 62.238.103.54
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d78de562-872e-43dd-be48-e9d7b06c87a3
-  network: tcp
-  servername: www.yahoo.com
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI186|5.9MB/s|DNSOK|GPT⁺-FI
-  port: 443
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  server: 65.108.3.59
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  network: tcp
-  servername: web.eitaa.com
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI187|5.7MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 443
-  server: 151.101.56.6
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
-  ws-opts:
-    headers:
-      Host: c12.com
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J730GM Build/NRD90M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
-    path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
-  xudp: true
-  servername: ssl.fastly.com
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI188|5.7MB/s|DNSOK|GPT⁺-FI
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  server: 65.108.3.59
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  xudp: true
-  servername: web.eitaa.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI189|5.7MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 2087
-  reality-opts:
-    public-key: _FKzdndiMfCSU5YLVXSBqzk2lIG0W2-DauFpos684Uc
-    short-id: e9fae729e40ae07e
-  server: 95.217.24.119
-  tls: true
-  type: vless
-  udp: true
-  uuid: ddc0bc7e-04c6-4ff9-9adb-c68c71606e8f
-  xudp: true
-  servername: 62.238.103.54
-- client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.tC9O9Ycapxrrb4E7Kp1kwLuQOqzGFtHMTpwje0itL20
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI190|5.6MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI178|5.4MB/s|DNSOK|GPT⁺-FI
   network: raw
   port: 20888
   reality-opts:
@@ -229,69 +51,48 @@ proxies:
   uuid: bd70f457-3ec8-4c93-9e5d-b2299b98cd80
   xudp: true
   servername: play.google.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI191|4.7MB/s|DNSOK|GPT⁺-FI
-  network: raw
-  port: 2083
-  reality-opts:
-    public-key: tADYkZWWksM_mCqqwlRHCciSCXnP3JMYrPi5eoRHh2s
-    short-id: d059fb98048c5318
-  server: 95.217.24.119
-  tls: true
-  type: vless
-  udp: true
-  uuid: d78de562-872e-43dd-be48-e9d7b06c87a3
-  xudp: true
-  servername: www.yahoo.com
-- client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.LiAC5NZeBub5qyAnJR--Asb2urMAuRkrGwLexToWPhU
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI192|2.7MB/s|DNSOK|GPT⁺-FI
-  network: raw
-  port: 30558
-  reality-opts:
-    public-key: GaiQyQDjRBb4FPg89ifTpLhA5eV4J5X0Othj_uZOxRc
-    short-id: 00587e87ebfbad1d
-  server: 77.42.34.2
-  tls: true
-  type: vless
-  udp: true
-  uuid: bd70f457-3ec8-4c93-9e5d-b2299b98cd80
-  xudp: true
-  servername: play.google.com
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI193|2.6MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 443
-  server: 151.101.56.7
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
-  ws-opts:
-    headers:
-      Host: kayko.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; SM-G7102 Build/KOT49H) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
-    path: /
-  xudp: true
-  servername: global.fastly.com
 - client-fingerprint: firefox
   grpc-opts:
-    grpc-service-name: Sosat
-  name: 🇫🇮 | @WhiteDNS | FI194|1.6MB/s|DNSOK|GPT⁺-FI
+    grpc-service-name: s1-grpc-8e47a
+  name: 🇫🇮 | @WhiteDNS | FI179|5.3MB/s|DNSOK|GPT⁺-FI
   network: grpc
-  port: 443
-  reality-opts:
-    public-key: wG3BS0H2EKpY2tpv9bWipTmafwIdXuUXPAZCpr1eZ0M
-    short-id: ''
-  server: 201.24.50.94
+  port: 9443
+  server: 185.255.179.11
   tls: true
   type: vless
   udp: true
-  uuid: 8057eabc-921d-0001-9acb-80ccc6b48379
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
   xudp: true
-  servername: kerbal.mafioznik.xyz
+  servername: hub-se-01.hanvpn.cc
+- client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.LiAC5NZeBub5qyAnJR--Asb2urMAuRkrGwLexToWPhU
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI180|2.8MB/s|DNSOK|GPT⁺-FI
+  network: raw
+  port: 30558
+  reality-opts:
+    public-key: GaiQyQDjRBb4FPg89ifTpLhA5eV4J5X0Othj_uZOxRc
+    short-id: 00587e87ebfbad1d
+  server: 77.42.34.2
+  tls: true
+  type: vless
+  udp: true
+  uuid: bd70f457-3ec8-4c93-9e5d-b2299b98cd80
+  xudp: true
+  servername: play.google.com
+- client-fingerprint: random
+  encryption: mlkem768x25519plus.native.0rtt.tC9O9Ycapxrrb4E7Kp1kwLuQOqzGFtHMTpwje0itL20
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI181|2.7MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 20888
+  reality-opts:
+    public-key: wJQx7lkO3WgOPya9Syjd5N20NTiz6PM-kqIV6f-cXnI
+    short-id: 3007a113b7917442
+  server: 77.42.34.2
+  tls: true
+  type: vless
+  udp: true
+  uuid: bd70f457-3ec8-4c93-9e5d-b2299b98cd80
+  xudp: true
+  servername: play.google.com
