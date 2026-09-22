@@ -1,16 +1,55 @@
 proxies:
-- name: 🇨🇿 | @WhiteDNS | CZ6|3.1MB/s|DNSOK|GPT⁺-CZ
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇨🇿 | @WhiteDNS | CZ15|21.0MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 443
+  server: soskeynets-core.fatitelegram.workers.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 73796e63-0000-4000-8000-000000000000
+  ws-opts:
+    headers:
+      Host: nahan-core.fatitelegram.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/41.0.2272.118 Safari/537.36
+    path: /sync
+  xudp: true
+  servername: nahan-core.fatitelegram.workers.dev
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇨🇿 | @WhiteDNS | CZ16|18.8MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 443
+  server: 104.21.88.201
+  tls: true
+  type: vless
+  udp: true
+  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
+  ws-opts:
+    headers:
+      Host: app-q0zc4t.user-4gfyh5.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/69.0.3497.100 Safari/537.36
+    path: /cmh
+  xudp: true
+  servername: app-q0zc4t.user-4gfyh5.workers.dev
+- name: 🇨🇿 | @WhiteDNS | CZ17|11.9MB/s|DNSOK|GPT⁺-CZ
   password: ''
   port: 443
-  server: 185.216.35.130
+  server: 185.216.35.66
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇨🇿 | @WhiteDNS | CZ7|1.5MB/s|DNSOK|GPT⁺-CZ
+- name: 🇨🇿 | @WhiteDNS | CZ18|5.8MB/s|DNSOK|GPT⁺-CZ
   password: ''
   port: 443
-  server: 185.216.35.66
+  server: 185.216.35.130
   skip-cert-verify: true
   tls: true
   type: http

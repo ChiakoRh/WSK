@@ -13,7 +13,24 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇧🇬 | @WhiteDNS | BG21|4.6MB/s|DNSOK|GPT⁺-BG
+- client-fingerprint: chrome
+  name: 🇧🇬 | @WhiteDNS | BG24|4.6MB/s|DNSOK|GPT⁺-BG
+  network: ws
+  port: 443
+  server: 108.165.233.223
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2388e166-3890-33ae-f77e-efac00000001
+  ws-opts:
+    headers:
+      Host: netlivpn4813.ddhshhshs.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/50.0.2661.94 Safari/537.36
+    path: /
+  xudp: true
+  servername: netlivpn4813.ddhshhshs.workers.dev
+- name: 🇧🇬 | @WhiteDNS | BG25|1.7MB/s|DNSOK|GPT⁺-BG
   password: ''
   port: 443
   server: 185.94.192.210
@@ -25,7 +42,8 @@ proxy-groups:
 - name: BG-Auto
   type: url-test
   proxies:
-  - 🇧🇬 | @WhiteDNS | BG21|4.6MB/s|DNSOK|GPT⁺-BG
+  - 🇧🇬 | @WhiteDNS | BG24|4.6MB/s|DNSOK|GPT⁺-BG
+  - 🇧🇬 | @WhiteDNS | BG25|1.7MB/s|DNSOK|GPT⁺-BG
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
