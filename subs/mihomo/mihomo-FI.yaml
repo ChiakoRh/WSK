@@ -1,98 +1,39 @@
 proxies:
-- alpn:
-  - h2
-  client-fingerprint: chrome
+- client-fingerprint: chrome
   encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI176|5.7MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 443
-  server: k2.cloud--vpn.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
-  ws-opts:
-    headers:
-      Host: c12.com
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /
-  xudp: true
-  servername: ssl.fastly.com
-- client-fingerprint: random
-  encryption: mlkem768x25519plus.native.0rtt.LiAC5NZeBub5qyAnJR--Asb2urMAuRkrGwLexToWPhU
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI177|5.5MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI168|7.0MB/s|DNSOK|GPT⁺-FI
   network: tcp
-  port: 30558
+  port: 2087
   reality-opts:
-    public-key: GaiQyQDjRBb4FPg89ifTpLhA5eV4J5X0Othj_uZOxRc
-    short-id: 00587e87ebfbad1d
-  server: 77.42.34.2
+    public-key: KN8tFlpIwPgJGwUCG7Pp9c9c0juYKPvNIv4kFHwqbyk
+    short-id: a32cfb5deca913ad
+  server: 95.217.24.236
   tls: true
   type: vless
   udp: true
-  uuid: bd70f457-3ec8-4c93-9e5d-b2299b98cd80
+  uuid: 10d85f65-f8d6-4504-b1e2-94649db1577a
   xudp: true
-  servername: play.google.com
+  servername: 62.238.41.21
 - client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.tC9O9Ycapxrrb4E7Kp1kwLuQOqzGFtHMTpwje0itL20
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI178|5.4MB/s|DNSOK|GPT⁺-FI
-  network: raw
-  port: 20888
+  name: 🇫🇮 | @WhiteDNS | FI169|726KB/s|DNSOK|GPT⁺-FI
+  port: 2087
   reality-opts:
-    public-key: wJQx7lkO3WgOPya9Syjd5N20NTiz6PM-kqIV6f-cXnI
-    short-id: 3007a113b7917442
-  server: 77.42.34.2
+    public-key: _FKzdndiMfCSU5YLVXSBqzk2lIG0W2-DauFpos684Uc
+    short-id: e9fae729e40ae07e
+  server: 95.217.24.119
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bd70f457-3ec8-4c93-9e5d-b2299b98cd80
-  xudp: true
-  servername: play.google.com
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: s1-grpc-8e47a
-  name: 🇫🇮 | @WhiteDNS | FI179|5.3MB/s|DNSOK|GPT⁺-FI
-  network: grpc
-  port: 9443
-  server: 185.255.179.11
-  tls: true
-  type: vless
-  udp: true
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
-  xudp: true
-  servername: hub-se-01.hanvpn.cc
-- client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.LiAC5NZeBub5qyAnJR--Asb2urMAuRkrGwLexToWPhU
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI180|2.8MB/s|DNSOK|GPT⁺-FI
-  network: raw
-  port: 30558
-  reality-opts:
-    public-key: GaiQyQDjRBb4FPg89ifTpLhA5eV4J5X0Othj_uZOxRc
-    short-id: 00587e87ebfbad1d
-  server: 77.42.34.2
-  tls: true
-  type: vless
-  udp: true
-  uuid: bd70f457-3ec8-4c93-9e5d-b2299b98cd80
-  xudp: true
-  servername: play.google.com
-- client-fingerprint: random
-  encryption: mlkem768x25519plus.native.0rtt.tC9O9Ycapxrrb4E7Kp1kwLuQOqzGFtHMTpwje0itL20
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI181|2.7MB/s|DNSOK|GPT⁺-FI
+  uuid: ddc0bc7e-04c6-4ff9-9adb-c68c71606e8f
   network: tcp
-  port: 20888
-  reality-opts:
-    public-key: wJQx7lkO3WgOPya9Syjd5N20NTiz6PM-kqIV6f-cXnI
-    short-id: 3007a113b7917442
-  server: 77.42.34.2
-  tls: true
-  type: vless
+  servername: 62.238.103.54
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇮 | @WhiteDNS | FI170|707KB/s|DNSOK|GPT⁺-FI
+  password: ao5znrhEwVqoJy-l7AVvgw
+  port: 1080
+  server: p1tun4.greewebservices.ir
+  type: ss
   udp: true
-  uuid: bd70f457-3ec8-4c93-9e5d-b2299b98cd80
-  xudp: true
-  servername: play.google.com

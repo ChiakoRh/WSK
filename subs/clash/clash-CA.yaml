@@ -14,10 +14,9 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - client-fingerprint: chrome
-  encryption: none
   grpc-opts:
-    grpc-service-name: fi02-grpc-8e47a
-  name: 🇨🇦 | @WhiteDNS | CA142|5.9MB/s|DNSOK|GPT⁺-FI
+    grpc-service-name: lv01-grpc-8e47a
+  name: 🇨🇦 | @WhiteDNS | CA143|5.5MB/s|DNSOK|GPT⁺-LV
   network: grpc
   port: 9443
   server: 185.255.179.11
@@ -26,57 +25,11 @@ proxies:
   udp: true
   uuid: d9d0f208-d582-41d5-bb7b-742671402810
   xudp: true
-  servername: hub-fi-02.hanvpn.cc
+  servername: hub-lv-01.hanvpn.cc
 - client-fingerprint: firefox
   grpc-opts:
-    grpc-service-name: se03-grpc-8e47a
-  name: 🇨🇦 | @WhiteDNS | CA143|5.1MB/s|DNSOK|GPT⁺
-  network: grpc
-  port: 9443
-  server: 185.255.179.11
-  tls: true
-  type: vless
-  udp: true
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
-  xudp: true
-  servername: hub-se-03.hanvpn.cc
-- client-fingerprint: random
-  encryption: none
-  name: 🇨🇦 | @WhiteDNS | CA144|3.8MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 9443
-  server: 185.255.179.11
-  tls: true
-  type: vless
-  udp: true
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
-  ws-opts:
-    headers:
-      Host: hub-se-02.hanvpn.cc
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J120M Build/LMY47X) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /se02-ws-8e47a
-  xudp: true
-  servername: hub-se-02.hanvpn.cc
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA145|3.1MB/s|DNSOK|GPT⁺-CA
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
-    short-id: af7e79b5
-  server: 66.70.179.124
-  tls: true
-  type: vless
-  udp: true
-  uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
-  xudp: true
-  servername: www.apple.com
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: s1-grpc-8e47a
-  name: 🇨🇦 | @WhiteDNS | CA146|3.0MB/s|DNSOK|GPT⁺-FI
+    grpc-service-name: lv01-grpc-8e47a
+  name: 🇨🇦 | @WhiteDNS | CA144|4.7MB/s|DNSOK|GPT⁺-LV
   network: grpc
   port: 9443
   server: 138.124.183.18
@@ -85,17 +38,13 @@ proxies:
   udp: true
   uuid: d9d0f208-d582-41d5-bb7b-742671402810
   xudp: true
-  servername: hub-se-01.hanvpn.cc
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦 | @WhiteDNS | CA147|3.0MB/s|DNSOK|GPT⁺-CA
-  password: FD3rCuOsxOay
-  port: 8388
-  server: 15.235.75.71
-  type: ss
-  udp: true
-- client-fingerprint: chrome
+  servername: hub-lv-01.hanvpn.cc
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA148|2.6MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA145|3.1MB/s|DNSOK|GPT⁺-CA
   network: tcp
   port: 443
   reality-opts:
@@ -106,23 +55,11 @@ proxies:
   type: vless
   udp: true
   uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
-  servername: www.apple.com
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: se03-grpc-8e47a
-  name: 🇨🇦 | @WhiteDNS | CA149|1.6MB/s|DNSOK|GPT⁺-FI
-  network: grpc
-  port: 9443
-  server: 138.124.183.18
-  tls: true
-  type: vless
-  udp: true
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
   xudp: true
-  servername: hub-se-03.hanvpn.cc
+  servername: www.apple.com
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA150|1.6MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA146|1.7MB/s|DNSOK|GPT⁺-CA
   port: 443
   reality-opts:
     public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
@@ -135,47 +72,30 @@ proxies:
   uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
   network: tcp
   servername: www.apple.com
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: lv01-grpc-8e47a
-  name: 🇨🇦 | @WhiteDNS | CA151|1.2MB/s|DNSOK|GPT⁺-LV
-  network: grpc
-  port: 9443
-  server: 138.124.183.18
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA147|1.6MB/s|DNSOK|GPT⁺-CA
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
+    short-id: af7e79b5
+  server: 66.70.179.124
   tls: true
   type: vless
   udp: true
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
   xudp: true
-  servername: hub-lv-01.hanvpn.cc
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: se02-grpc-8e47a
-  name: 🇨🇦 | @WhiteDNS | CA152|751KB/s|DNSOK|GPT⁺-FI
-  network: grpc
-  port: 9443
-  server: 138.124.183.18
-  tls: true
-  type: vless
-  udp: true
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
-  xudp: true
-  servername: hub-se-02.hanvpn.cc
+  servername: www.apple.com
 proxy-groups:
 - name: CA-Auto
   type: url-test
   proxies:
-  - 🇨🇦 | @WhiteDNS | CA142|5.9MB/s|DNSOK|GPT⁺-FI
-  - 🇨🇦 | @WhiteDNS | CA143|5.1MB/s|DNSOK|GPT⁺
-  - 🇨🇦 | @WhiteDNS | CA144|3.8MB/s|DNSOK|GPT⁺-FI
+  - 🇨🇦 | @WhiteDNS | CA143|5.5MB/s|DNSOK|GPT⁺-LV
+  - 🇨🇦 | @WhiteDNS | CA144|4.7MB/s|DNSOK|GPT⁺-LV
   - 🇨🇦 | @WhiteDNS | CA145|3.1MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA146|3.0MB/s|DNSOK|GPT⁺-FI
-  - 🇨🇦 | @WhiteDNS | CA147|3.0MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA148|2.6MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA149|1.6MB/s|DNSOK|GPT⁺-FI
-  - 🇨🇦 | @WhiteDNS | CA150|1.6MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA151|1.2MB/s|DNSOK|GPT⁺-LV
-  - 🇨🇦 | @WhiteDNS | CA152|751KB/s|DNSOK|GPT⁺-FI
+  - 🇨🇦 | @WhiteDNS | CA146|1.7MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA147|1.6MB/s|DNSOK|GPT⁺-CA
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

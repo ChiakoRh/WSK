@@ -13,15 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇦🇱 | @WhiteDNS | AL4|13.6MB/s|DNSOK|GPT⁺-AL
-  password: ''
-  port: 443
-  server: 87.120.103.226
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇦🇱 | @WhiteDNS | AL5|13.6MB/s|DNSOK|GPT⁺-AL
+- name: 🇦🇱 | @WhiteDNS | AL4|14.0MB/s|DNSOK|GPT⁺-AL
   password: ''
   port: 443
   server: 87.120.103.242
@@ -29,8 +21,16 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇦🇱 | @WhiteDNS | AL6|5.2MB/s|DNSOK|GPT⁺-AL
+- name: 🇦🇱 | @WhiteDNS | AL5|2.6MB/s|DNSOK|GPT⁺-AL
   password: None
+  port: 443
+  server: 87.120.103.226
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇦🇱 | @WhiteDNS | AL6|2.4MB/s|DNSOK|GPT⁺-AL
+  password: ''
   port: 443
   server: 87.120.103.226
   skip-cert-verify: true
@@ -41,9 +41,9 @@ proxy-groups:
 - name: AL-Auto
   type: url-test
   proxies:
-  - 🇦🇱 | @WhiteDNS | AL4|13.6MB/s|DNSOK|GPT⁺-AL
-  - 🇦🇱 | @WhiteDNS | AL5|13.6MB/s|DNSOK|GPT⁺-AL
-  - 🇦🇱 | @WhiteDNS | AL6|5.2MB/s|DNSOK|GPT⁺-AL
+  - 🇦🇱 | @WhiteDNS | AL4|14.0MB/s|DNSOK|GPT⁺-AL
+  - 🇦🇱 | @WhiteDNS | AL5|2.6MB/s|DNSOK|GPT⁺-AL
+  - 🇦🇱 | @WhiteDNS | AL6|2.4MB/s|DNSOK|GPT⁺-AL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
