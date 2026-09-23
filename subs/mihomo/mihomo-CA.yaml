@@ -1,70 +1,15 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA70|3.9MB/s|DNSOK|GPT⁺-CA
-  network: raw
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦 | @WhiteDNS | CA52|4.4MB/s|DNSOK|GPT⁺-CA
+  password: FD3rCuOsxOay
+  port: 8388
+  server: 15.235.75.71
+  type: ss
   udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  xudp: true
-  servername: google.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA71|3.7MB/s|DNSOK|GPT⁺-CA
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  network: tcp
-  servername: google.com
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA72|3.0MB/s|DNSOK|GPT⁺-CA
-  network: tcp#1⛑️@oneclickvpnkeys
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  tls: true
-  type: vless
-  udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  xudp: true
-  servername: google.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA73|3.0MB/s|DNSOK|GPT⁺-CA
-  network: tcp
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  tls: true
-  type: vless
-  udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  xudp: true
-  servername: google.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA74|2.4MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA53|3.1MB/s|DNSOK|GPT⁺-CA
   network: raw
   port: 443
   reality-opts:
@@ -77,9 +22,12 @@ proxies:
   uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
   xudp: true
   servername: www.apple.com
-- client-fingerprint: chrome
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA75|2.4MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA54|3.0MB/s|DNSOK|GPT⁺-CA
   network: tcp
   port: 443
   reality-opts:
@@ -94,7 +42,7 @@ proxies:
   servername: www.apple.com
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA76|1.7MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA55|1.6MB/s|DNSOK|GPT⁺-CA
   port: 443
   reality-opts:
     public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY

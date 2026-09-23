@@ -13,27 +13,21 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT245|1.5MB/s|DNSOK|GPT⁺-DE
+- encryption: none
+  name: ❓ | @WhiteDNS | OT242|1.4MB/s|DNSOK|GPT⁺-JP
   network: tcp
-  port: 443
-  reality-opts:
-    public-key: XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE
-    short-id: 5c6481cdd4
-  server: defrnode.jumpernode.online
-  tls: true
+  port: 47878
+  server: 152.69.195.67
   type: vless
   udp: true
-  uuid: 8af93649-403b-46d8-9966-923d4c58402c
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
   xudp: true
-  servername: buckeye-retail-website.amazon.com
+  servername: 152.69.195.67
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT245|1.5MB/s|DNSOK|GPT⁺-DE
+  - ❓ | @WhiteDNS | OT242|1.4MB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

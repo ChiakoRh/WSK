@@ -13,38 +13,11 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: 2022-blake3-chacha20-poly1305
-  name: 🇩🇪 | @WhiteDNS | DE189|44.7MB/s|DNSOK|GPT⁺-DE
-  password: MbYmuMLaB299+b+tHO5lTDizuqcxnh0y5bvchPVbzWU=
-  port: 59924
-  server: 130.61.150.64
-  type: ss
-- cipher: 2022-blake3-chacha20-poly1305
-  name: 🇩🇪 | @WhiteDNS | DE190|38.1MB/s|DNSOK|GPT⁺-DE
-  password: RD6QcfitQhj0OaJEBkmMui6Gw8AWdmKhwGcqz1CD1kg=
-  port: 59924
-  server: 130.61.236.17
-  type: ss
-  udp: true
-- cipher: 2022-blake3-chacha20-poly1305
-  name: 🇩🇪 | @WhiteDNS | DE191|37.6MB/s|DNSOK|GPT⁺-DE
-  password: oez/eAOjbnuo75MPFJBQDnCnLeIfcr4eQ2txjGMLWXs=
-  port: 59924
-  server: 130.61.130.205
-  type: ss
-  udp: true
-- cipher: 2022-blake3-chacha20-poly1305
-  name: 🇩🇪 | @WhiteDNS | DE192|36.2MB/s|DNSOK|GPT⁺-DE
-  password: zilToN5OddXbe0YD2wu0SiDIctB+e2ATBlXmzJjEmc4=
-  port: 59924
-  server: 130.61.41.250
-  type: ss
-  udp: true
 - alterId: 0
-  cipher: aes-128-gcm
-  name: 🇩🇪 | @WhiteDNS | DE193|34.0MB/s|DNSOK|GPT⁺-DE
+  cipher: auto
+  name: 🇩🇪 | @WhiteDNS | DE175|35.5MB/s|DNSOK|GPT⁺-DE
   port: 1234
-  server: 141.95.65.9
+  server: 162.19.204.71
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -56,10 +29,106 @@ proxies:
   http-opts:
     headers:
       Host:
+      - dynu.com
+    path:
+    - /@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---
+  name: 🇩🇪 | @WhiteDNS | DE176|34.8MB/s|DNSOK|GPT⁺-DE
+  network: http
+  port: 9090
+  server: 5.75.202.116
+  type: vless
+  udp: true
+  uuid: 2789c2ec-d860-4b75-a614-49e8ab65f7bc
+  xudp: true
+- encryption: none
+  http-opts:
+    headers:
+      Host:
       - store.steampowered.com
     path:
     - /
-  name: 🇩🇪 | @WhiteDNS | DE194|32.4MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE177|34.3MB/s|DNSOK|GPT⁺-DE
+  network: http
+  port: 443
+  server: 46.224.170.213
+  type: vless
+  udp: true
+  uuid: cf990ae8-ee77-4436-aa3a-bbc2fb040c53
+  xudp: true
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - store.steampowered.com
+    path:
+    - /
+  name: 🇩🇪 | @WhiteDNS | DE178|33.9MB/s|DNSOK|GPT⁺-DE
+  network: http
+  port: 443
+  server: 91.99.58.134
+  type: vless
+  udp: true
+  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
+  xudp: true
+- name: 🇩🇪 | @WhiteDNS | DE179|33.4MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 443
+  server: 149.36.50.129
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇩🇪 | @WhiteDNS | DE180|32.7MB/s|DNSOK|GPT⁺-DE
+  password: None
+  port: 443
+  server: 149.36.50.157
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - play.google.com
+    path:
+    - /
+  name: 🇩🇪 | @WhiteDNS | DE181|31.7MB/s|DNSOK|GPT⁺-DE
+  network: http
+  port: 2087
+  server: dv90.kontabox.ir
+  type: vless
+  udp: true
+  uuid: 7a62d083-36c8-4ce3-8d5a-67a65f9cc2da
+  xudp: true
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 🇩🇪 | @WhiteDNS | DE182|30.4MB/s|DNSOK|GPT⁺-DE
+  port: 1234
+  server: 141.95.65.9
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  network: tcp
+  servername: supervpn.super.com
+- name: 🇩🇪 | @WhiteDNS | DE183|28.0MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 443
+  server: 87.249.132.97
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - store.steampowered.com
+    path:
+    - /
+  name: 🇩🇪 | @WhiteDNS | DE184|27.2MB/s|DNSOK|GPT⁺-DE
   network: http
   port: 443
   server: 46.224.165.114
@@ -74,101 +143,14 @@ proxies:
       - store.steampowered.com
     path:
     - /
-  name: 🇩🇪 | @WhiteDNS | DE195|32.3MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE185|27.1MB/s|DNSOK|GPT⁺-DE
   network: http
   port: 443
-  server: 91.99.58.134
-  type: vless
-  udp: true
-  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
-  xudp: true
-- encryption: none
-  http-opts:
-    headers:
-      Host:
-      - store.steampowered.com
-    path:
-    - /
-  name: 🇩🇪 | @WhiteDNS | DE196|30.7MB/s|DNSOK|GPT⁺-DE
-  network: http
-  port: 443
-  server: 91.99.58.195
-  type: vless
-  udp: true
-  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
-  xudp: true
-- encryption: none
-  http-opts:
-    headers:
-      Host:
-      - store.steampowered.com
-    path:
-    - /
-  name: 🇩🇪 | @WhiteDNS | DE197|30.4MB/s|DNSOK|GPT⁺-DE
-  network: http
-  port: 443
-  server: 46.224.170.213
+  server: 116.202.19.251
   type: vless
   udp: true
   uuid: cf990ae8-ee77-4436-aa3a-bbc2fb040c53
   xudp: true
-- cipher: 2022-blake3-chacha20-poly1305
-  name: 🇩🇪 | @WhiteDNS | DE198|30.0MB/s|DNSOK|GPT⁺-DE
-  password: Q9dJ8Aj/aW3duKQ8LPjU5UhTGFS53oK8V7iJ5s94q+s=
-  port: 59924
-  server: 130.61.146.230
-  type: ss
-  udp: true
-- cipher: 2022-blake3-chacha20-poly1305
-  name: 🇩🇪 | @WhiteDNS | DE199|29.4MB/s|DNSOK|GPT⁺-DE
-  password: 2XG9witwk9u9AP7ZPoKluZNL5VBW82xnYgGA/8oHC4I=
-  port: 59924
-  server: 130.61.102.123
-  type: ss
-  udp: true
-- name: 🇩🇪 | @WhiteDNS | DE200|27.6MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 9443
-  server: 87.249.132.97
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇩🇪 | @WhiteDNS | DE201|27.5MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 443
-  server: 149.36.50.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- encryption: none
-  http-opts:
-    headers:
-      Host:
-      - www.google.com
-    path:
-    - /
-  name: 🇩🇪 | @WhiteDNS | DE202|26.8MB/s|DNSOK|GPT⁺-DE
-  network: http
-  port: 28110
-  server: 178.105.218.75
-  type: vless
-  udp: true
-  uuid: 17a7a914-5199-4651-98ba-6c6909030e20
-  xudp: true
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪 | @WhiteDNS | DE203|25.2MB/s|DNSOK|GPT⁺-DE
-  port: 1234
-  server: 162.19.204.71
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  network: tcp
-  servername: supervpn.super.com
 - encryption: none
   http-opts:
     headers:
@@ -176,7 +158,7 @@ proxies:
       - store.steampowered.com
     path:
     - /
-  name: 🇩🇪 | @WhiteDNS | DE204|24.6MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE186|24.6MB/s|DNSOK|GPT⁺-DE
   network: http
   port: 443
   server: 46.224.1.83
@@ -184,64 +166,81 @@ proxies:
   udp: true
   uuid: cf990ae8-ee77-4436-aa3a-bbc2fb040c53
   xudp: true
-- name: 🇩🇪 | @WhiteDNS | DE205|24.1MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 443
-  server: 149.36.50.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- cipher: 2022-blake3-chacha20-poly1305
-  name: 🇩🇪 | @WhiteDNS | DE206|20.8MB/s|DNSOK|GPT⁺-DE
-  password: WywuM3LCtRahUDSJUINtsxLFG4KC601yhCZ4/ap//ds=
-  port: 59924
-  server: 130.61.231.22
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇩🇪 | @WhiteDNS | DE207|15.6MB/s|DNSOK|GPT⁺-GB
-  password: g5h5jleTRSyO3Rk4
-  port: 443
-  server: 149.102.132.184
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇩🇪 | @WhiteDNS | DE208|13.2MB/s|DNSOK|GPT⁺-GB
-  password: g5h5jleTRSyO3Rk4
-  port: 80
-  server: 149.102.132.184
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE209|9.0MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE187|18.6MB/s|DNSOK|GPT⁺-DE
   network: ws
   port: 443
   server: 199.232.78.159
   tls: true
   type: vless
   udp: true
-  uuid: 9f714831-a392-429d-b09f-15f0e4653049
+  uuid: 7a62d083-36c8-4ce3-8d5a-67a65f9cc2da
   ws-opts:
     headers:
-      Host: lsjaoijji.global.ssl.fastly.neT
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+      Host: pokerrr.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.102 Safari/537.36
     path: /
   xudp: true
   servername: ssl.fastly.com
-- cipher: 2022-blake3-chacha20-poly1305
-  name: 🇩🇪 | @WhiteDNS | DE210|8.1MB/s|DNSOK|GPT⁺-DE
-  password: BsLjFFy84gRCcR4bs3Ytx1np7ooiLMmFFCjxk2P45t8=
-  port: 59924
-  server: 130.61.115.100
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - store.steampowered.com
+    path:
+    - /
+  name: 🇩🇪 | @WhiteDNS | DE188|18.6MB/s|DNSOK|GPT⁺-DE
+  network: http
+  port: 443
+  server: 91.99.59.248
+  type: vless
+  udp: true
+  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
+  xudp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇩🇪 | @WhiteDNS | DE189|14.6MB/s|DNSOK|GPT⁺-DE
+  port: 80
+  reality-opts:
+    public-key: 0Ag8wyoyN-M84yS4cbZ04wtqawZCHAzfKFT1A1xBFms
+    short-id: 253126232f9bb9be
+  server: 159.69.103.251
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1bbef2cd-2851-4f00-b37e-a2478a1e5a70
+  network: tcp
+  servername: www.yahoo.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇩🇪 | @WhiteDNS | DE190|8.3MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 80
+  reality-opts:
+    public-key: 0Ag8wyoyN-M84yS4cbZ04wtqawZCHAzfKFT1A1xBFms
+    short-id: 253126232f9bb9be
+  server: 159.69.103.251
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1bbef2cd-2851-4f00-b37e-a2478a1e5a70
+  xudp: true
+  servername: www.yahoo.com
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪 | @WhiteDNS | DE191|7.6MB/s|DNSOK|GPT⁺-DE
+  password: 2YdE4lFOid5a
+  port: 8388
+  server: 51.195.126.38
   type: ss
   udp: true
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE211|8.0MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE192|7.6MB/s|DNSOK|GPT⁺-DE
   network: raw
   port: 80
   reality-opts:
@@ -254,115 +253,37 @@ proxies:
   uuid: 1bbef2cd-2851-4f00-b37e-a2478a1e5a70
   xudp: true
   servername: www.yahoo.com
-- encryption: none
-  http-opts:
-    headers:
-      Host:
-      - store.steampowered.com
-    path:
-    - /
-  name: 🇩🇪 | @WhiteDNS | DE212|7.9MB/s|DNSOK|GPT⁺-DE
-  network: http
+- name: 🇩🇪 | @WhiteDNS | DE193|7.5MB/s|DNSOK|GPT⁺-DE
+  password: ''
   port: 443
-  server: 116.202.19.251
-  type: vless
-  udp: true
-  uuid: cf990ae8-ee77-4436-aa3a-bbc2fb040c53
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE213|7.4MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 80
-  reality-opts:
-    public-key: 0Ag8wyoyN-M84yS4cbZ04wtqawZCHAzfKFT1A1xBFms
-    short-id: 253126232f9bb9be
-  server: 159.69.103.251
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1bbef2cd-2851-4f00-b37e-a2478a1e5a70
-  xudp: true
-  servername: www.yahoo.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE214|7.2MB/s|DNSOK|GPT⁺-DE
-  port: 80
-  reality-opts:
-    public-key: 0Ag8wyoyN-M84yS4cbZ04wtqawZCHAzfKFT1A1xBFms
-    short-id: 253126232f9bb9be
-  server: 159.69.103.251
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1bbef2cd-2851-4f00-b37e-a2478a1e5a70
-  network: tcp
-  servername: www.yahoo.com
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE215|7.1MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: ocEjHWXH55fdTMdqtEDGmIzRiUJBUveDqg-UpyeKmDQ
-    short-id: 4358ba2cf18b0741
-  server: d.v2.mahysamy.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: c98aa083-734a-4c16-9e9e-a979ee7867a9
-  xudp: true
-  servername: www.goo.gl
-- cipher: 2022-blake3-chacha20-poly1305
-  name: 🇩🇪 | @WhiteDNS | DE216|6.5MB/s|DNSOK|GPT⁺-DE
-  password: KV+/g/XMi4NIfsy6ZSb4JEXZno4bCUp0ZlyQivMAhCQ=
-  port: 59924
-  server: 130.61.34.177
-  type: ss
-  udp: true
-- encryption: none
-  http-opts:
-    headers:
-      Host:
-      - store.steampowered.com
-    path:
-    - /
-  name: 🇩🇪 | @WhiteDNS | DE217|6.4MB/s|DNSOK|GPT⁺-DE
-  network: http
-  port: 443
-  server: 91.99.59.248
-  type: vless
-  udp: true
-  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
-  xudp: true
-- name: 🇩🇪 | @WhiteDNS | DE218|6.3MB/s|DNSOK|GPT⁺-DE
-  password: None
-  port: 443
-  server: 149.36.50.157
+  server: 149.36.50.1
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
 - cipher: 2022-blake3-chacha20-poly1305
-  name: 🇩🇪 | @WhiteDNS | DE219|6.0MB/s|DNSOK|GPT⁺-DE
-  password: +n5JF83I0RydYOC0f8bFw2GEKIAkYDaSSTq0epm0JDM=
+  name: 🇩🇪 | @WhiteDNS | DE194|7.4MB/s|DNSOK|GPT⁺-DE
+  password: 2XG9witwk9u9AP7ZPoKluZNL5VBW82xnYgGA/8oHC4I=
   port: 59924
-  server: 130.61.103.121
+  server: 130.61.102.123
   type: ss
   udp: true
-- fingerprint: ''
-  name: 🇩🇪 | @WhiteDNS | DE220|5.7MB/s|DNSOK|GPT⁺-DE
-  password: b652305a-0c63-4527-8cb3-0ea582076124
-  port: 1443
-  server: 178.162.221.200
-  skip-cert-verify: true
-  sni: fra.freeguard.org
-  type: anytls
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - store.steampowered.com
+    path:
+    - /
+  name: 🇩🇪 | @WhiteDNS | DE195|6.6MB/s|DNSOK|GPT⁺-DE
+  network: http
+  port: 443
+  server: 91.99.58.195
+  type: vless
   udp: true
-  username: b652305a-0c63-4527-8cb3-0ea582076124
-- name: 🇩🇪 | @WhiteDNS | DE221|5.7MB/s|DNSOK|GPT⁺-DE
+  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
+  xudp: true
+- name: 🇩🇪 | @WhiteDNS | DE196|6.3MB/s|DNSOK|GPT⁺-DE
   password: ''
   port: 443
   server: 141.17.83.73
@@ -370,38 +291,45 @@ proxies:
   tls: true
   type: http
   username: ''
-- cipher: aes-256-gcm
-  name: 🇩🇪 | @WhiteDNS | DE222|5.2MB/s|DNSOK|GPT⁺-GB
-  password: LXchLsIwtCeUAUgu
-  port: 443
-  server: 149.102.149.207
-  type: ss
-  udp: true
-- encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE223|3.3MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 80
-  server: 188.114.97.6
-  type: vless
-  udp: true
-  uuid: 38aa8e17-2c2e-419a-a522-2f3ca7c79a3f
-  ws-opts:
-    headers:
-      Host: msjsi.azazilvpn.sbs.
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/65.0.3325.162 Safari/537.36
-    path: /CooonfigCooonfigCooonfigCooonfigCooonfig
-  xudp: true
-- cipher: aes-256-gcm
-  name: 🇩🇪 | @WhiteDNS | DE224|3.0MB/s|DNSOK|GPT⁺-GB
-  password: LXchLsIwtCeUAUgu
-  port: 80
-  server: 149.102.149.207
+- down: ''
+  fingerprint: ''
+  name: 🇩🇪 | @WhiteDNS | DE197|5.5MB/s|DNSOK|GPT⁺-DE
+  obfs: salamander
+  obfs-password: telegram-ID-conf0088
+  password: telegram-ID-conf0088
+  port: 25287
+  server: api.ohbah.com
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+  up: ''
+  disable-sni: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇩🇪 | @WhiteDNS | DE198|4.9MB/s|DNSOK|GPT⁺-DE
+  password: BsLjFFy84gRCcR4bs3Ytx1np7ooiLMmFFCjxk2P45t8=
+  port: 59924
+  server: 130.61.115.100
   type: ss
   udp: true
 - client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE225|1.4MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE199|4.5MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE
+    short-id: 5c6481cdd4
+  server: defrnode.jumpernode.online
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8af93649-403b-46d8-9966-923d4c58402c
+  xudp: true
+  servername: buckeye-retail-website.amazon.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇩🇪 | @WhiteDNS | DE200|3.8MB/s|DNSOK|GPT⁺-DE
   network: tcp
   port: 443
   reality-opts:
@@ -414,9 +342,24 @@ proxies:
   uuid: 8af93649-403b-46d8-9966-923d4c58402c
   xudp: true
   servername: buckeye-retail-website.amazon.com
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - store.steampowered.com
+    path:
+    - /
+  name: 🇩🇪 | @WhiteDNS | DE201|1.5MB/s|DNSOK|GPT⁺-DE
+  network: http
+  port: 443
+  server: 91.99.57.24
+  type: vless
+  udp: true
+  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
+  xudp: true
 - client-fingerprint: chrome
   encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE226|874KB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE202|1.1MB/s|DNSOK|GPT⁺
   network: ws
   port: 443
   server: rubifen.adaspoloandco.com
@@ -427,12 +370,12 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/56.0.2924.87 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.67 Safari/537.36
     path: /GOrbEh
   xudp: true
   servername: rubifen.adaspoloandco.com
-- name: 🇩🇪 | @WhiteDNS | DE227|549KB/s|DNSOK|GPT⁺-DE
+- name: 🇩🇪 | @WhiteDNS | DE203|519KB/s|DNSOK|GPT⁺-DE
   password: e4b72b531a2d10900519
   port: 443
   server: 167.172.172.190
@@ -440,61 +383,39 @@ proxies:
   tls: true
   type: http
   username: testuser1
-- fingerprint: ''
-  name: 🇩🇪 | @WhiteDNS | DE228|520KB/s|DNSOK|GPT⁺-DE
-  password: e70ec0f2ab60e8c22b316156bf9ac43fec98b45be6681401
-  port: 443
-  server: 178.105.126.242
-  skip-cert-verify: true
-  sni: ''
-  type: anytls
-  udp: true
-  username: e70ec0f2ab60e8c22b316156bf9ac43fec98b45be6681401
-  disable-sni: true
 proxy-groups:
 - name: DE-Auto
   type: url-test
   proxies:
-  - 🇩🇪 | @WhiteDNS | DE189|44.7MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE190|38.1MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE191|37.6MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE192|36.2MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE193|34.0MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE194|32.4MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE195|32.3MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE196|30.7MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE197|30.4MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE198|30.0MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE199|29.4MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE200|27.6MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE201|27.5MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE202|26.8MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE203|25.2MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE204|24.6MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE205|24.1MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE206|20.8MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE207|15.6MB/s|DNSOK|GPT⁺-GB
-  - 🇩🇪 | @WhiteDNS | DE208|13.2MB/s|DNSOK|GPT⁺-GB
-  - 🇩🇪 | @WhiteDNS | DE209|9.0MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE210|8.1MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE211|8.0MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE212|7.9MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE213|7.4MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE214|7.2MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE215|7.1MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE216|6.5MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE217|6.4MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE218|6.3MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE219|6.0MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE220|5.7MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE221|5.7MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE222|5.2MB/s|DNSOK|GPT⁺-GB
-  - 🇩🇪 | @WhiteDNS | DE223|3.3MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE224|3.0MB/s|DNSOK|GPT⁺-GB
-  - 🇩🇪 | @WhiteDNS | DE225|1.4MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE226|874KB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE227|549KB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE228|520KB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE175|35.5MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE176|34.8MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE177|34.3MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE178|33.9MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE179|33.4MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE180|32.7MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE181|31.7MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE182|30.4MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE183|28.0MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE184|27.2MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE185|27.1MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE186|24.6MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE187|18.6MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE188|18.6MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE189|14.6MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE190|8.3MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE191|7.6MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE192|7.6MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE193|7.5MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE194|7.4MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE195|6.6MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE196|6.3MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE197|5.5MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE198|4.9MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE199|4.5MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE200|3.8MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE201|1.5MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE202|1.1MB/s|DNSOK|GPT⁺
+  - 🇩🇪 | @WhiteDNS | DE203|519KB/s|DNSOK|GPT⁺-DE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
