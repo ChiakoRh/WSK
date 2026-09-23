@@ -13,22 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇱 | @WhiteDNS | CL12|1.4MB/s|DNSOK|GPT⁺-CL
-  network: ws
-  port: 80
-  server: platform117.golnamakcert.top
-  type: vless
-  udp: true
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  ws-opts:
-    headers:
-      Host: platform117.halalkhor.info
-      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36
-    path: /platform117
-  xudp: true
-- encryption: none
-  name: 🇨🇱 | @WhiteDNS | CL13|1.1MB/s|DNSOK|GPT⁺-CL
+- name: 🇨🇱 | @WhiteDNS | CL14|1.5MB/s|DNSOK|GPT⁺-CL
   network: ws
   port: 80
   server: platform109.golnamakcert.top
@@ -39,30 +24,61 @@ proxies:
     headers:
       Host: platform109.halalkhor.info
       User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/41.0.2272.101 Safari/537.36
+        Chrome/57.0.2987.133 Safari/537.36
     path: /platform109
   xudp: true
-- name: 🇨🇱 | @WhiteDNS | CL14|1.1MB/s|DNSOK|GPT⁺-CL
+  servername: platform109.halalkhor.info
+- encryption: none
+  name: 🇨🇱 | @WhiteDNS | CL15|1.3MB/s|DNSOK|GPT⁺-CL
   network: ws
   port: 80
-  server: 64.176.5.166
+  server: platform109.golnamakcert.top
   type: vless
   udp: true
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   ws-opts:
     headers:
-      Host: platform117.halalkhor.info
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: /platform117
+      Host: platform109.halalkhor.info
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/39.0.2171.95 Safari/537.36
+    path: /platform109
+  xudp: true
+- name: 🇨🇱 | @WhiteDNS | CL16|1.3MB/s|DNSOK|GPT⁺-CL
+  network: ws
+  port: 80
+  server: platform118.golnamakcert.top
+  type: vless
+  udp: true
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  ws-opts:
+    headers:
+      Host: platform118.halalkhor.info
+      User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X Build/N2G47H) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /platform118
+  xudp: true
+- name: 🇨🇱 | @WhiteDNS | CL17|1.2MB/s|DNSOK|GPT⁺-CL
+  network: ws
+  port: 80
+  server: 64.176.23.207
+  type: vless
+  udp: true
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  ws-opts:
+    headers:
+      Host: platform118.halalkhor.info
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /platform118
   xudp: true
 proxy-groups:
 - name: CL-Auto
   type: url-test
   proxies:
-  - 🇨🇱 | @WhiteDNS | CL12|1.4MB/s|DNSOK|GPT⁺-CL
-  - 🇨🇱 | @WhiteDNS | CL13|1.1MB/s|DNSOK|GPT⁺-CL
-  - 🇨🇱 | @WhiteDNS | CL14|1.1MB/s|DNSOK|GPT⁺-CL
+  - 🇨🇱 | @WhiteDNS | CL14|1.5MB/s|DNSOK|GPT⁺-CL
+  - 🇨🇱 | @WhiteDNS | CL15|1.3MB/s|DNSOK|GPT⁺-CL
+  - 🇨🇱 | @WhiteDNS | CL16|1.3MB/s|DNSOK|GPT⁺-CL
+  - 🇨🇱 | @WhiteDNS | CL17|1.2MB/s|DNSOK|GPT⁺-CL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -15,22 +15,7 @@ dns:
 proxies:
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: 🇦🇹 | @WhiteDNS | AT20|30.9MB/s|DNSOK|GPT⁺-AT
-  port: 443
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
-  server: 152.53.1.40
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
-  network: tcp
-  servername: at.quattro-tech.ru
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇦🇹 | @WhiteDNS | AT21|28.0MB/s|DNSOK|GPT⁺-AT
+  name: 🇦🇹 | @WhiteDNS | AT19|31.9MB/s|DNSOK|GPT⁺-AT
   network: tcp
   port: 443
   reality-opts:
@@ -43,7 +28,22 @@ proxies:
   uuid: edde565e-41f5-400e-84ea-7b87a3e84488
   xudp: true
   servername: at.quattro-tech.ru
-- name: 🇦🇹 | @WhiteDNS | AT22|6.8MB/s|DNSOK|GPT⁺-AT
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇦🇹 | @WhiteDNS | AT20|31.9MB/s|DNSOK|GPT⁺-AT
+  port: 443
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
+  server: 152.53.1.40
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
+  network: tcp
+  servername: at.quattro-tech.ru
+- name: 🇦🇹 | @WhiteDNS | AT21|17.7MB/s|DNSOK|GPT⁺-AT
   password: ''
   port: 443
   server: 146.70.244.18
@@ -51,7 +51,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇦🇹 | @WhiteDNS | AT23|6.1MB/s|DNSOK|GPT⁺-AT
+- name: 🇦🇹 | @WhiteDNS | AT22|5.9MB/s|DNSOK|GPT⁺-AT
   password: ''
   port: 443
   server: 146.70.244.2
@@ -63,10 +63,10 @@ proxy-groups:
 - name: AT-Auto
   type: url-test
   proxies:
-  - 🇦🇹 | @WhiteDNS | AT20|30.9MB/s|DNSOK|GPT⁺-AT
-  - 🇦🇹 | @WhiteDNS | AT21|28.0MB/s|DNSOK|GPT⁺-AT
-  - 🇦🇹 | @WhiteDNS | AT22|6.8MB/s|DNSOK|GPT⁺-AT
-  - 🇦🇹 | @WhiteDNS | AT23|6.1MB/s|DNSOK|GPT⁺-AT
+  - 🇦🇹 | @WhiteDNS | AT19|31.9MB/s|DNSOK|GPT⁺-AT
+  - 🇦🇹 | @WhiteDNS | AT20|31.9MB/s|DNSOK|GPT⁺-AT
+  - 🇦🇹 | @WhiteDNS | AT21|17.7MB/s|DNSOK|GPT⁺-AT
+  - 🇦🇹 | @WhiteDNS | AT22|5.9MB/s|DNSOK|GPT⁺-AT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
