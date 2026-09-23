@@ -13,14 +13,24 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: aes-256-gcm
-  name: 🇸🇪 | @WhiteDNS | SE28|16.6MB/s|DNSOK|GPT⁺-SE
-  password: AxIYWtskJWIIaefW
-  port: 8388
-  server: 70.34.212.124
-  type: ss
+- client-fingerprint: random
+  encryption: none
+  grpc-opts:
+    grpc-service-name: moktana.net.v1.StreamService
+  name: 🇸🇪 | @WhiteDNS | SE44|5.4MB/s|DNSOK|GPT⁺-SE
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
+    short-id: 3f8e2d1c9b4a7e6f
+  server: 201.24.52.151
+  tls: true
+  type: vless
   udp: true
-- name: 🇸🇪 | @WhiteDNS | SE29|16.0MB/s|DNSOK|GPT⁺-SE
+  uuid: 8c40bb2c-157a-4830-a2c3-0b35ef50c660
+  xudp: true
+  servername: hexagonicfield.com
+- name: 🇸🇪 | @WhiteDNS | SE45|5.2MB/s|DNSOK|GPT⁺-SE
   password: ''
   port: 443
   server: 149.50.216.65
@@ -28,7 +38,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇸🇪 | @WhiteDNS | SE30|15.4MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE46|5.2MB/s|DNSOK|GPT⁺-SE
   password: None
   port: 443
   server: 146.70.242.130
@@ -36,7 +46,14 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇸🇪 | @WhiteDNS | SE31|5.3MB/s|DNSOK|GPT⁺-SE
+- cipher: aes-256-gcm
+  name: 🇸🇪 | @WhiteDNS | SE47|4.6MB/s|DNSOK|GPT⁺-SE
+  password: AxIYWtskJWIIaefW
+  port: 8388
+  server: 70.34.212.124
+  type: ss
+  udp: true
+- name: 🇸🇪 | @WhiteDNS | SE48|2.8MB/s|DNSOK|GPT⁺-SE
   password: None
   port: 443
   server: 146.70.242.146
@@ -48,10 +65,11 @@ proxy-groups:
 - name: SE-Auto
   type: url-test
   proxies:
-  - 🇸🇪 | @WhiteDNS | SE28|16.6MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE29|16.0MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE30|15.4MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE31|5.3MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE44|5.4MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE45|5.2MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE46|5.2MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE47|4.6MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE48|2.8MB/s|DNSOK|GPT⁺-SE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -13,26 +13,11 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP87|2.1MB/s|DNSOK|GPT⁺-JP
-  port: 28573
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  server: 18.183.215.124
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-  network: tcp
-  servername: www.sony.com
 - alpn:
   - ''
   alterId: '0'
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP88|1.8MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP705|1.7MB/s|DNSOK|GPT⁺-JP
   network: ws
   port: 80
   server: 168.138.43.75
@@ -47,68 +32,9 @@ proxies:
     path: /cctv13.m3u8
   xudp: true
   servername: None
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP89|1.7MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: None
-    path: /cctv13.m3u8
-  xudp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP90|1.7MB/s|DNSOK|GPT⁺-JP
-  network: raw
-  port: 28573
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  server: 18.183.215.124
-  tls: true
-  type: vless
-  udp: true
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-  xudp: true
-  servername: www.sony.com
-- alterId: '0'
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP91|1.6MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 4433
-  server: 45.32.57.118
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  xudp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP92|1.6MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 28573
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  server: 18.183.215.124
-  tls: true
-  type: vless
-  udp: true
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-  servername: www.sony.com
 - alterId: 0
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP93|1.6MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP706|1.7MB/s|DNSOK|GPT⁺-JP
   network: ws
   port: 80
   server: 168.138.43.75
@@ -123,18 +49,71 @@ proxies:
     path: /cctv13.m3u8
   xudp: true
   servername: jp01.a0a.xyz
-- alterId: 0
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP707|1.6MB/s|DNSOK|GPT⁺-JP
+  network: raw
+  password: tsuchiya
+  port: 443
+  server: aa.ccmusic.jp
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+  sni: aa.ccmusic.jp
+- encryption: none
+  name: 🇯🇵 | @WhiteDNS | JP708|1.4MB/s|DNSOK|GPT⁺-JP
+  network: raw
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  xudp: true
+- alpn:
+  - ''
+  alterId: '0'
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP94|1.2MB/s|DNSOK|GPT⁺-JP
-  port: 4433
-  server: 45.32.57.118
+  name: 🇯🇵 | @WhiteDNS | JP709|1.3MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
   type: vmess
   udp: true
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  network: tcp
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: None
+    path: /cctv13.m3u8
+  xudp: true
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP710|1.3MB/s|DNSOK|GPT⁺-JP
+  network: raw
+  password: tsuchiya
+  port: 443
+  server: aa.ccmusic.jp
+  skip-cert-verify: false
+  sni: aa.ccmusic.jp
+  type: trojan
+  udp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP711|1.2MB/s|DNSOK|GPT⁺-JP
+  network: raw
+  port: 28573
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  server: 18.183.215.124
+  tls: true
+  type: vless
+  udp: true
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  xudp: true
+  servername: www.sony.com
 - alterId: '0'
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP95|1.1MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP712|1.1MB/s|DNSOK|GPT⁺-JP
   network: tcp#🎡90@oneclickvpnkeys
   port: 4433
   server: 45.32.57.118
@@ -146,7 +125,7 @@ proxies:
   xudp: true
 - alterId: 0
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP96|1.0MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP713|1.0MB/s|DNSOK|GPT⁺-JP
   network: ws
   port: 80
   server: 168.138.43.75
@@ -161,20 +140,95 @@ proxies:
     path: /cctv13.m3u8
   xudp: true
   servername: 168.138.43.75
+- alterId: '0'
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP714|1.0MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 4433
+  server: 45.32.57.118
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP715|1.0MB/s|DNSOK|GPT⁺-JP
+  port: 4433
+  server: 45.32.57.118
+  type: vmess
+  udp: true
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  network: tcp
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP716|1.0MB/s|DNSOK|GPT⁺-JP
+  port: 28573
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  server: 18.183.215.124
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  network: tcp
+  servername: www.sony.com
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP717|998KB/s|DNSOK|GPT⁺-JP
+  network: raw
+  password: tsuchiya
+  port: 443
+  server: 161.34.39.108
+  skip-cert-verify: false
+  sni: aa.ccmusic.jp
+  type: trojan
+  udp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP718|991KB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 28573
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  server: 18.183.215.124
+  tls: true
+  type: vless
+  udp: true
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  servername: www.sony.com
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP719|881KB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: tsuchiya
+  port: 443
+  server: aa.ccmusic.jp
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+  sni: aa.ccmusic.jp
 proxy-groups:
 - name: JP-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP87|2.1MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP88|1.8MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP89|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP90|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP91|1.6MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP92|1.6MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP93|1.6MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP94|1.2MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP95|1.1MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP96|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP705|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP706|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP707|1.6MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP708|1.4MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP709|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP710|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP711|1.2MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP712|1.1MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP713|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP714|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP715|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP716|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP717|998KB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP718|991KB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP719|881KB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

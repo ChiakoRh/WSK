@@ -1,0 +1,76 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- client-fingerprint: unsafe
+  encryption: none
+  name: 🇱🇺 | @WhiteDNS | LU4|30.4MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 443
+  server: 188.114.97.6
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0926b50d-3a90-18dd-7c8e-0cf100000000
+  ws-opts:
+    headers:
+      Host: netlivpn4024.bgfjhd.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/34.0.1847.131 Safari/537.36
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+  xudp: true
+  servername: netlivpn4024.bgfjhd.workers.dev
+- name: 🇱🇺 | @WhiteDNS | LU5|25.3MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 8080
+  server: 188.114.97.6
+  type: vless
+  udp: true
+  uuid: 0926b50d-3a90-18dd-7c8e-0cf100000000
+  ws-opts:
+    headers:
+      Host: netlivpn4024.bgfjhd.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Moto C Build/NRD90M.059) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇱🇺 | @WhiteDNS | LU6|25.0MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 443
+  server: 104.21.117.9
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0926b50d-3a90-18dd-7c8e-0cf100000000
+  ws-opts:
+    headers:
+      Host: netlivpn4024.bgfjhd.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.89 Safari/537.36
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+  xudp: true
+  servername: netlivpn4024.bgfjhd.workers.dev
+proxy-groups:
+- name: LU-Auto
+  type: url-test
+  proxies:
+  - 🇱🇺 | @WhiteDNS | LU4|30.4MB/s|DNSOK|GPT⁺-CH
+  - 🇱🇺 | @WhiteDNS | LU5|25.3MB/s|DNSOK|GPT⁺-CH
+  - 🇱🇺 | @WhiteDNS | LU6|25.0MB/s|DNSOK|GPT⁺-CH
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,LU-Auto

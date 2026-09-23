@@ -17,7 +17,7 @@ proxies:
   encryption: none
   grpc-opts:
     grpc-service-name: grpc-yandex
-  name: 🇵🇱 | @WhiteDNS | PL58|29.0MB/s|DNSOK|GPT⁺-PL
+  name: 🇵🇱 | @WhiteDNS | PL62|26.2MB/s|DNSOK|GPT⁺-PL
   network: grpc
   port: 8443
   reality-opts:
@@ -30,7 +30,22 @@ proxies:
   uuid: 2e9d3568-f977-4cea-800d-fd9a876e7252
   xudp: true
   servername: static.vkimages.io
-- name: 🇵🇱 | @WhiteDNS | PL59|15.5MB/s|DNSOK|GPT⁺-PL
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇵🇱 | @WhiteDNS | PL63|23.8MB/s|DNSOK|GPT⁺-PL
+  port: 9443
+  reality-opts:
+    public-key: 8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho
+    short-id: b76dcf9e1183fe1b
+  server: plsh.riotvpn.eu
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2e9d3568-f977-4cea-800d-fd9a876e7252
+  network: tcp
+  servername: static.vkimages.io
+- name: 🇵🇱 | @WhiteDNS | PL64|5.8MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 37.120.156.34
@@ -38,7 +53,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇵🇱 | @WhiteDNS | PL60|6.3MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL65|5.7MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 151.115.54.133
@@ -46,7 +61,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇵🇱 | @WhiteDNS | PL61|5.8MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL66|5.6MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 37.120.156.18
@@ -54,14 +69,32 @@ proxies:
   tls: true
   type: http
   username: ''
+- client-fingerprint: qq
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇵🇱 | @WhiteDNS | PL67|5.3MB/s|DNSOK|GPT⁺-PL
+  network: tcp
+  port: 9443
+  reality-opts:
+    public-key: 8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho
+    short-id: b76dcf9e1183fe1b
+  server: plsh.riotvpn.eu
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2e9d3568-f977-4cea-800d-fd9a876e7252
+  xudp: true
+  servername: static.vkimages.io
 proxy-groups:
 - name: PL-Auto
   type: url-test
   proxies:
-  - 🇵🇱 | @WhiteDNS | PL58|29.0MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL59|15.5MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL60|6.3MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL61|5.8MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL62|26.2MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL63|23.8MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL64|5.8MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL65|5.7MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL66|5.6MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL67|5.3MB/s|DNSOK|GPT⁺-PL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

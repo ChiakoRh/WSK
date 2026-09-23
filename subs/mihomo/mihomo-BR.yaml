@@ -1,50 +1,9 @@
 proxies:
-- client-fingerprint: random
-  encryption: none
-  grpc-opts:
-    grpc-service-name: pl01-grpc-8e47a
-  name: 🇧🇷 | @WhiteDNS | BR24|17.3MB/s|DNSOK|GPT⁺-PL
-  network: grpc
-  port: 9443
-  server: 185.255.179.11
-  tls: true
-  type: vless
-  udp: true
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
-  xudp: true
-  servername: hub-pl-01.hanvpn.cc
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: pl01-grpc-8e47a
-  name: 🇧🇷 | @WhiteDNS | BR25|5.4MB/s|DNSOK|GPT⁺-PL
-  network: grpc
-  port: 9443
-  server: 138.124.183.18
-  tls: true
-  type: vless
-  udp: true
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
-  xudp: true
-  servername: hub-pl-01.hanvpn.cc
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: 🇧🇷 | @WhiteDNS | BR26|2.4MB/s|DNSOK|GPT⁺-BR
-  network: raw
-  port: 22324
-  server: 172.233.14.17
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  xudp: true
 - alpn:
   - ''
   alterId: '0'
   cipher: auto
-  name: 🇧🇷 | @WhiteDNS | BR27|2.0MB/s|DNSOK|GPT⁺-BR
+  name: 🇧🇷 | @WhiteDNS | BR23|2.4MB/s|DNSOK|GPT⁺-BR
   network: tcp
   port: 22324
   server: 172.233.14.17
@@ -56,17 +15,52 @@ proxies:
   xudp: true
 - alterId: 0
   cipher: auto
-  name: 🇧🇷 | @WhiteDNS | BR28|1.8MB/s|DNSOK|GPT⁺-BR
+  name: 🇧🇷 | @WhiteDNS | BR24|2.4MB/s|DNSOK|GPT⁺-BR
   port: 22324
   server: 172.233.14.17
   type: vmess
   udp: true
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   network: tcp
-- name: 🇧🇷 | @WhiteDNS | BR29|897KB/s|DNSOK|GPT⁺-BR
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇧🇷 | @WhiteDNS | BR25|1.9MB/s|DNSOK|GPT⁺-BR
+  network: raw
+  port: 22324
+  server: 172.233.14.17
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  xudp: true
+- name: 🇧🇷 | @WhiteDNS | BR26|1.1MB/s|DNSOK|GPT⁺-BR
   password: ''
-  port: 3126
-  server: 189.84.157.245
+  port: 8989
+  server: 138.204.95.193
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇧🇷 | @WhiteDNS | BR27|903KB/s|DNSOK|GPT⁺-BR
+  password: ''
+  port: 45005
+  server: 191.241.187.16
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇧🇷 | @WhiteDNS | BR28|744KB/s|DNSOK|GPT⁺-BR
+  password: ''
+  port: 9292
+  server: 200.95.192.61
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇧🇷 | @WhiteDNS | BR29|638KB/s|DNSOK|GPT⁺-BR
+  password: ''
+  port: 8666
+  server: 128.201.29.12
   skip-cert-verify: true
   type: http
   username: ''
