@@ -13,139 +13,64 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
+- client-fingerprint: unsafe
   encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI181|18.3MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 2087
-  reality-opts:
-    public-key: KN8tFlpIwPgJGwUCG7Pp9c9c0juYKPvNIv4kFHwqbyk
-    short-id: a32cfb5deca913ad
-  server: 95.217.24.236
-  tls: true
-  type: vless
-  udp: true
-  uuid: 10d85f65-f8d6-4504-b1e2-94649db1577a
-  xudp: true
-  servername: 62.238.41.21
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI182|17.4MB/s|DNSOK|GPT⁺-FI
-  network: raw
-  port: 2087
-  reality-opts:
-    public-key: KN8tFlpIwPgJGwUCG7Pp9c9c0juYKPvNIv4kFHwqbyk
-    short-id: a32cfb5deca913ad
-  server: 95.217.24.236
-  tls: true
-  type: vless
-  udp: true
-  uuid: 10d85f65-f8d6-4504-b1e2-94649db1577a
-  xudp: true
-  servername: 62.238.41.21
-- name: 🇫🇮 | @WhiteDNS | FI183|6.2MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 80
-  server: 104.16.72.101
-  type: vless
-  udp: true
-  uuid: d5598622-46b8-b017-3af3-232500000001
-  ws-opts:
-    headers:
-      Host: nahan-core.netizo09.workers.dev
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; ANE-LX3 Build/HUAWEIANE-LX3)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /sync
-  xudp: true
-  servername: nahan-core.netizo09.workers.dev
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI184|6.1MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI162|10.5MB/s|DNSOK|GPT⁺-FI
   network: ws
   port: 443
-  server: a2.arshia-nova.ir
+  server: 188.114.97.6
   tls: true
   type: vless
   udp: true
-  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
+  uuid: 8be20011-59b1-4118-91ed-83e8e6b662cd
   ws-opts:
     headers:
-      Host: c12.com
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.86 Safari/537.36
-    path: /
-  xudp: true
-  servername: ssl.fastly.com
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI185|5.9MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 443
-  server: 151.101.56.6
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
-  ws-opts:
-    headers:
-      Host: c12.com
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; WAS-LX3 Build/HUAWEIWAS-LX3)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /?RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS
-  xudp: true
-  servername: ssl.fastly.com
-- encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI186|5.7MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 80
-  server: 104.16.72.101
-  type: vless
-  udp: true
-  uuid: d5598622-46b8-b017-3af3-232500000001
-  ws-opts:
-    headers:
-      Host: nahan-core.netizo09.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /sync
-  xudp: true
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI187|5.5MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 443
-  server: k2.cloud--vpn.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
-  ws-opts:
-    headers:
-      Host: c12.com
+      Host: f.yoptybla.ru
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.101 Safari/537.36
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
     path: /
   xudp: true
-  servername: ssl.fastly.com
+  servername: f.yoptybla.ru
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI163|6.1MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 443
+  server: 151.101.56.7
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
+  ws-opts:
+    headers:
+      Host: kayko.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.77 Safari/537.36
+    path: /
+  xudp: true
+  servername: global.fastly.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI164|1.3MB/s|DNSOK|GPT⁺-FI
+  port: 2087
+  reality-opts:
+    public-key: KN8tFlpIwPgJGwUCG7Pp9c9c0juYKPvNIv4kFHwqbyk
+    short-id: a32cfb5deca913ad
+  server: 95.217.24.236
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 10d85f65-f8d6-4504-b1e2-94649db1577a
+  network: tcp
+  servername: 62.238.41.21
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI181|18.3MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI182|17.4MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI183|6.2MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI184|6.1MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI185|5.9MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI186|5.7MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI187|5.5MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI162|10.5MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI163|6.1MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI164|1.3MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

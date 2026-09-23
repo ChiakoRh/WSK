@@ -15,7 +15,7 @@ dns:
 proxies:
 - client-fingerprint: chrome
   encryption: none
-  name: 🇪🇬 | @WhiteDNS | EG4|4.8MB/s|DNSOK|GPT⁺-US
+  name: 🇪🇬 | @WhiteDNS | EG2|3.0MB/s|DNSOK|GPT⁺-US
   network: ws
   port: 443
   server: ccs2g.pai50288.uk
@@ -26,26 +26,8 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/39.0.2171.95 Safari/537.36
-    path: /pai50288
-  xudp: true
-  servername: ccs2g.pai50288.uk
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇪🇬 | @WhiteDNS | EG5|2.8MB/s|DNSOK|GPT⁺-US
-  network: ws
-  port: 443
-  server: ccs2g.pai50288.uk
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/63.0.3239.84 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.181 Safari/537.36
     path: /pai50288
   xudp: true
   servername: ccs2g.pai50288.uk
@@ -53,8 +35,7 @@ proxy-groups:
 - name: EG-Auto
   type: url-test
   proxies:
-  - 🇪🇬 | @WhiteDNS | EG4|4.8MB/s|DNSOK|GPT⁺-US
-  - 🇪🇬 | @WhiteDNS | EG5|2.8MB/s|DNSOK|GPT⁺-US
+  - 🇪🇬 | @WhiteDNS | EG2|3.0MB/s|DNSOK|GPT⁺-US
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
