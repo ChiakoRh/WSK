@@ -1,20 +1,63 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪 | @WhiteDNS | DE137|35.8MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE152|42.3MB/s|DNSOK|GPT⁺-DE
   password: 2YdE4lFOid5a
   port: 8388
   server: 51.195.126.38
   type: ss
   udp: true
-- name: 🇩🇪 | @WhiteDNS | DE138|32.3MB/s|DNSOK|GPT⁺-DE
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 🇩🇪 | @WhiteDNS | DE153|34.5MB/s|DNSOK|GPT⁺-DE
+  port: 1234
+  server: 141.95.65.9
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  network: tcp
+  servername: supervpn.super.com
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - www.google.com
+    path:
+    - /
+  name: 🇩🇪 | @WhiteDNS | DE154|34.0MB/s|DNSOK|GPT⁺-DE
+  network: http
+  port: 28110
+  server: 157.90.155.1
+  type: vless
+  udp: true
+  uuid: 64162f8e-32dd-4a63-9c1a-41c01b69c6d4
+  xudp: true
+- name: 🇩🇪 | @WhiteDNS | DE155|32.1MB/s|DNSOK|GPT⁺-DE
   password: ''
-  port: 9443
+  port: 443
   server: 87.249.132.97
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇩🇪 | @WhiteDNS | DE139|30.6MB/s|DNSOK|GPT⁺-DE
+- name: 🇩🇪 | @WhiteDNS | DE156|30.7MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 443
+  server: 149.36.50.129
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇩🇪 | @WhiteDNS | DE157|30.4MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 443
+  server: 149.36.50.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇩🇪 | @WhiteDNS | DE158|29.6MB/s|DNSOK|GPT⁺-DE
   password: None
   port: 443
   server: 149.36.50.157
@@ -22,8 +65,100 @@ proxies:
   tls: true
   type: http
   username: ''
+- client-fingerprint: chrome
+  name: 🇩🇪 | @WhiteDNS | DE159|28.3MB/s|DNSOK|GPT⁺-DE
+  password: 9SmhZnHv0G
+  port: 3004
+  server: api.ohbah.com
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+  network: tcp
+  sni: api.ohbah.com
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪 | @WhiteDNS | DE160|27.3MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 3001
+  server: api.ohbah.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: db6d2834-e9d0-46a7-88ee-24861ba39542
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/49.0.2623.87 Safari/537.36
+    path: /?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+  xudp: true
+  servername: api.ohbah.com
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇩🇪 | @WhiteDNS | DE161|24.1MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  password: 9SmhZnHv0G
+  port: 3005
+  server: api.ohbah.com
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+  sni: api.ohbah.com
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  alterId: '0'
+  cipher: auto
+  name: 🇩🇪 | @WhiteDNS | DE162|22.4MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 3009
+  server: api.ohbah.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: db6d2834-e9d0-46a7-88ee-24861ba39542
+  ws-opts:
+    headers: {}
+    path: /
+  xudp: true
+  servername: api.ohbah.com
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪 | @WhiteDNS | DE163|22.2MB/s|DNSOK|GPT⁺-DE
+  password: 6B-X_OuMsGxWj0AhJ9aMdpht_hQfYeNz
+  port: 1080
+  server: 2.28.123.196
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇩🇪 | @WhiteDNS | DE164|14.6MB/s|DNSOK|GPT⁺-GB
+  password: g5h5jleTRSyO3Rk4
+  port: 443
+  server: 149.102.132.184
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇩🇪 | @WhiteDNS | DE165|12.7MB/s|DNSOK|GPT⁺-GB
+  password: g5h5jleTRSyO3Rk4
+  port: 80
+  server: 149.102.132.184
+  type: ss
+  udp: true
 - encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE140|30.4MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE166|10.4MB/s|DNSOK|GPT⁺-DE
   network: ws
   port: 80
   server: 188.114.97.6
@@ -33,64 +168,14 @@ proxies:
   ws-opts:
     headers:
       Host: msjsi.azazilvpn.sbs.
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/49.0.2623.110 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/63.0.3239.132 Safari/537.36
     path: /CooonfigCooonfigCooonfigCooonfigCooonfig
   xudp: true
-- name: 🇩🇪 | @WhiteDNS | DE141|27.5MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 443
-  server: 149.36.50.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇩🇪 | @WhiteDNS | DE142|27.2MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 443
-  server: 87.249.132.97
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- cipher: aes-256-gcm
-  name: 🇩🇪 | @WhiteDNS | DE143|15.0MB/s|DNSOK|GPT⁺-GB
-  password: g5h5jleTRSyO3Rk4
-  port: 443
-  server: 149.102.132.184
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE144|14.7MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 57007
-  reality-opts:
-    public-key: xJrOVncq9U06-mrcoQMJRVT0ZI3pKiL870j_FYHnswg
-    short-id: 86652c20afc7a2bc
-  server: iranivib.kashimo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8ec5d86b-d895-477d-bc96-21fa01049f2f
-  xudp: true
-  servername: scone-pa.clients6.google.com
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪 | @WhiteDNS | DE145|13.9MB/s|DNSOK|GPT⁺-DE
-  port: 1234
-  server: 162.19.204.71
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  network: tcp
-  servername: supervpn.super.com
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE146|8.4MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE167|8.1MB/s|DNSOK|GPT⁺-DE
   network: raw
   port: 80
   reality-opts:
@@ -103,57 +188,25 @@ proxies:
   uuid: 1bbef2cd-2851-4f00-b37e-a2478a1e5a70
   xudp: true
   servername: www.yahoo.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE147|8.3MB/s|DNSOK|GPT⁺-DE
-  port: 80
-  reality-opts:
-    public-key: 0Ag8wyoyN-M84yS4cbZ04wtqawZCHAzfKFT1A1xBFms
-    short-id: 253126232f9bb9be
-  server: 159.69.103.251
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1bbef2cd-2851-4f00-b37e-a2478a1e5a70
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇩🇪 | @WhiteDNS | DE168|6.9MB/s|DNSOK|GPT⁺-DE
   network: tcp
-  servername: www.yahoo.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE148|8.1MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 80
-  reality-opts:
-    public-key: 0Ag8wyoyN-M84yS4cbZ04wtqawZCHAzfKFT1A1xBFms
-    short-id: 253126232f9bb9be
-  server: 159.69.103.251
-  tls: true
-  type: vless
+  password: 9SmhZnHv0G
+  port: 3004
+  server: api.ohbah.com
+  skip-cert-verify: false
+  type: trojan
   udp: true
-  uuid: 1bbef2cd-2851-4f00-b37e-a2478a1e5a70
-  xudp: true
-  servername: www.yahoo.com
-- name: 🇩🇪 | @WhiteDNS | DE149|7.4MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 443
-  server: 149.36.50.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- cipher: aes-256-gcm
-  name: 🇩🇪 | @WhiteDNS | DE150|6.4MB/s|DNSOK|GPT⁺-GB
-  password: g5h5jleTRSyO3Rk4
-  port: 80
-  server: 149.102.132.184
-  type: ss
-  udp: true
+  sni: api.ohbah.com
 - alterId: 0
-  cipher: aes-128-gcm
-  name: 🇩🇪 | @WhiteDNS | DE151|6.2MB/s|DNSOK|GPT⁺-DE
+  cipher: auto
+  name: 🇩🇪 | @WhiteDNS | DE169|6.2MB/s|DNSOK|GPT⁺-DE
   port: 1234
-  server: 141.95.65.9
+  server: 162.19.204.71
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -161,36 +214,84 @@ proxies:
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   network: tcp
   servername: supervpn.super.com
-- name: 🇩🇪 | @WhiteDNS | DE152|5.7MB/s|DNSOK|GPT⁺-DE
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇩🇪 | @WhiteDNS | DE170|6.1MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: qqq91FxhIoUtIA2kWHKJ_DvWA8Z5f76N5cE5motNpE0
+    short-id: 34ab0b62f9de3320
+  server: 91.107.170.161
+  tls: true
+  type: vless
+  udp: true
+  uuid: c9ec2618-1946-4988-9bbe-d91fc2815371
+  xudp: true
+  servername: storage.googleapis.com
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - dynu.com
+    path:
+    - /@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---
+  name: 🇩🇪 | @WhiteDNS | DE171|6.0MB/s|DNSOK|GPT⁺-DE
+  network: http
+  port: 10351
+  server: 5.75.205.104
+  type: vless
+  udp: true
+  uuid: 2789c2ec-d860-4b75-a614-49e8ab65f7bc
+  xudp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇩🇪 | @WhiteDNS | DE172|5.8MB/s|DNSOK|GPT⁺-DE
+  password: PISvrx4EJiuuPiMKlSP6CUw8hpr1QPctt+5SNKtL0us=
+  port: 59924
+  server: 130.61.114.98
+  type: ss
+  udp: true
+- name: 🇩🇪 | @WhiteDNS | DE173|5.6MB/s|DNSOK|GPT⁺-DE
   password: ''
   port: 443
-  server: 141.17.83.78
+  server: 141.17.83.73
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪 | @WhiteDNS | DE153|5.7MB/s|DNSOK|GPT⁺-DE
-  password: 7mVYfd9UxI5L57zutpJLxuotDKBvhrk1M8EnuT6qlN0=
-  port: 2052
-  server: 94.130.68.139
+- cipher: aes-256-gcm
+  name: 🇩🇪 | @WhiteDNS | DE174|5.5MB/s|DNSOK|GPT⁺-GB
+  password: LXchLsIwtCeUAUgu
+  port: 443
+  server: 149.102.149.207
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 🇩🇪 | @WhiteDNS | DE154|4.6MB/s|DNSOK|GPT⁺-GB
+  name: 🇩🇪 | @WhiteDNS | DE175|5.4MB/s|DNSOK|GPT⁺-GB
   password: LXchLsIwtCeUAUgu
   port: 80
   server: 149.102.149.207
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: 🇩🇪 | @WhiteDNS | DE155|3.2MB/s|DNSOK|GPT⁺-GB
-  password: LXchLsIwtCeUAUgu
+- client-fingerprint: random
+  encryption: none
+  grpc-opts:
+    grpc-service-name: Piska
+  name: 🇩🇪 | @WhiteDNS | DE176|4.7MB/s|DNSOK|GPT⁺-DE
+  network: grpc
   port: 443
-  server: 149.102.149.207
-  type: ss
+  reality-opts:
+    public-key: aK5um9qlbrjpXgpI4H9n05FBmWAvKUbmLm7iAj9K9mw
+    short-id: ''
+  server: 104.171.138.229
+  tls: true
+  type: vless
   udp: true
-- name: 🇩🇪 | @WhiteDNS | DE156|546KB/s|DNSOK|GPT⁺-DE
+  uuid: 8057eabc-921d-0001-9acb-80ccc6b48379
+  xudp: true
+  servername: download.amd.com
+- name: 🇩🇪 | @WhiteDNS | DE177|541KB/s|DNSOK|GPT⁺-DE
   password: e4b72b531a2d10900519
   port: 443
   server: 167.172.172.190

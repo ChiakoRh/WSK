@@ -13,39 +13,31 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA59|3.1MB/s|DNSOK|GPT⁺-CA
-  port: 443
-  reality-opts:
-    public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
-    short-id: af7e79b5
-  server: 66.70.179.124
-  skip-cert-verify: true
-  tls: true
+- http-opts:
+    headers:
+      Host:
+      - http://amazonaws-china.com
+    method: GET
+    path:
+    - /
+  name: 🇨🇦 | @WhiteDNS | CA47|4.4MB/s|DNSOK|GPT⁺-CA
+  network: http
+  port: 11186
+  server: 147.182.151.199
   type: vless
   udp: true
-  uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
-  network: tcp
-  servername: www.apple.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA60|3.1MB/s|DNSOK|GPT⁺-CA
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
-    short-id: af7e79b5
-  server: 66.70.179.124
-  tls: true
-  type: vless
+  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦 | @WhiteDNS | CA48|3.8MB/s|DNSOK|GPT⁺-CA
+  password: FD3rCuOsxOay
+  port: 8388
+  server: 15.235.75.71
+  type: ss
   udp: true
-  uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
-  servername: www.apple.com
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA61|3.0MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA49|3.1MB/s|DNSOK|GPT⁺-CA
   network: raw
   port: 443
   reality-opts:
@@ -58,29 +50,44 @@ proxies:
   uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
   xudp: true
   servername: www.apple.com
-- http-opts:
-    headers:
-      Host:
-      - http://amazonaws-china.com
-    method: GET
-    path:
-    - /
-  name: 🇨🇦 | @WhiteDNS | CA62|1.7MB/s|DNSOK|GPT⁺-CA
-  network: http
-  port: 11186
-  server: 147.182.151.199
-  tls: false
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA50|3.1MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
+    short-id: af7e79b5
+  server: 66.70.179.124
+  tls: true
   type: vless
   udp: true
-  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
+  uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
+  servername: www.apple.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA51|3.0MB/s|DNSOK|GPT⁺-CA
+  port: 443
+  reality-opts:
+    public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
+    short-id: af7e79b5
+  server: 66.70.179.124
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
+  network: tcp
+  servername: www.apple.com
 proxy-groups:
 - name: CA-Auto
   type: url-test
   proxies:
-  - 🇨🇦 | @WhiteDNS | CA59|3.1MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA60|3.1MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA61|3.0MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA62|1.7MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA47|4.4MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA48|3.8MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA49|3.1MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA50|3.1MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA51|3.0MB/s|DNSOK|GPT⁺-CA
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

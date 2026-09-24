@@ -13,9 +13,98 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP79|2.0MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: None
+    path: /cctv13.m3u8
+  xudp: true
 - alterId: 0
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP72|1.8MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP80|1.7MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: jp01.a0a.xyz
+    path: /cctv13.m3u8
+  xudp: true
+  servername: jp01.a0a.xyz
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP81|1.7MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: None
+    path: /cctv13.m3u8
+  xudp: true
+  servername: None
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP82|1.7MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 23462
+  server: 64.176.51.214
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 95c5abc1-018d-4628-89a7-25ab9c62ab74
+  ws-opts:
+    headers: {}
+    path: /a15206
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP83|1.6MB/s|DNSOK|GPT⁺-JP
+  port: 4433
+  server: 45.32.57.118
+  type: vmess
+  udp: true
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  network: tcp
+- encryption: none
+  name: 🇯🇵 | @WhiteDNS | JP84|1.3MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 20802
+  server: 152.69.192.144
+  type: vless
+  udp: true
+  uuid: ac76a374-7447-4dab-bfa9-b7f83a7a7946
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP85|1.3MB/s|DNSOK|GPT⁺-JP
   network: tcp
   port: 4433
   server: 45.32.57.118
@@ -26,49 +115,9 @@ proxies:
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
   xudp: true
   servername: 'null'
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP73|1.7MB/s|DNSOK|GPT⁺-JP
-  port: 28573
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  server: 18.183.215.124
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-  network: tcp
-  servername: www.sony.com
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP74|1.7MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 28573
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  server: 18.183.215.124
-  tls: true
-  type: vless
-  udp: true
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-  xudp: true
-  servername: www.sony.com
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP75|1.2MB/s|DNSOK|GPT⁺-JP
-  port: 4433
-  server: 45.32.57.118
-  type: vmess
-  udp: true
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  network: tcp
 - alterId: '0'
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP76|1.2MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP86|1.1MB/s|DNSOK|GPT⁺-JP
   network: tcp
   port: 4433
   server: 45.32.57.118
@@ -80,7 +129,7 @@ proxies:
   xudp: true
 - alterId: '0'
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP77|1.0MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP87|1.0MB/s|DNSOK|GPT⁺-JP
   network: tcp#🎡90@oneclickvpnkeys
   port: 4433
   server: 45.32.57.118
@@ -90,32 +139,19 @@ proxies:
   udp: true
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
   xudp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP78|778KB/s|DNSOK|GPT⁺-JP
-  network: raw
-  port: 28573
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  server: 18.183.215.124
-  tls: true
-  type: vless
-  udp: true
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-  xudp: true
-  servername: www.sony.com
 proxy-groups:
 - name: JP-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP72|1.8MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP73|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP74|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP75|1.2MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP76|1.2MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP77|1.0MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP78|778KB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP79|2.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP80|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP81|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP82|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP83|1.6MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP84|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP85|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP86|1.1MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP87|1.0MB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

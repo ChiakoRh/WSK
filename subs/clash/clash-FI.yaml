@@ -13,97 +13,33 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI147|12.6MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 443
-  server: 151.101.56.6
-  tls: true
-  type: vless
-  udp: true
-  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
-  ws-opts:
-    headers:
-      Host: c12.com
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Moto C Build/NRD90M.059) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /
-  xudp: true
-  servername: ssl.fastly.com
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI148|6.4MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 443
-  server: k2.cloud--vpn.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
-  ws-opts:
-    headers:
-      Host: c12.com
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/63.0.3239.132 Safari/537.36
-    path: /
-  xudp: true
-  servername: ssl.fastly.com
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI149|6.0MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 443
-  server: a2.arshia-nova.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
-  ws-opts:
-    headers:
-      Host: c12.com
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1; A37f Build/LMY47V) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36
-    path: /
-  xudp: true
-  servername: ssl.fastly.com
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI150|5.4MB/s|DNSOK|GPT⁺-FI
+- alterId: '0'
+  cipher: auto
+  name: 🇫🇮 | @WhiteDNS | FI138|6.2MB/s|DNSOK|GPT⁺-FI
   network: tcp
-  port: 2087
-  reality-opts:
-    public-key: KN8tFlpIwPgJGwUCG7Pp9c9c0juYKPvNIv4kFHwqbyk
-    short-id: a32cfb5deca913ad
-  server: 95.217.24.236
-  tls: true
+  port: 57361
+  server: me6.movieseryalirani.ir
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
+  xudp: true
+- encryption: mlkem768x25519plus.native.0rtt.jyflF0RHRYv7QHkxAwAK4c49BDolRTl6P5o07q9mbnE
+  name: 🇫🇮 | @WhiteDNS | FI139|4.6MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 32569
+  server: nothing.quickpl.ir
   type: vless
   udp: true
-  uuid: 10d85f65-f8d6-4504-b1e2-94649db1577a
+  uuid: ec825a3d-4136-40db-b39f-2ef40f19aa19
   xudp: true
-  servername: 95.217.24.236
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇮 | @WhiteDNS | FI151|2.4MB/s|DNSOK|GPT⁺-FI
-  password: cVvgP0Bz69hsErPBvqKbwQ
-  port: 2070
-  server: p1tun3.greewebservices.ir
-  type: ss
-  udp: true
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI147|12.6MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI148|6.4MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI149|6.0MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI150|5.4MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI151|2.4MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI138|6.2MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI139|4.6MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
