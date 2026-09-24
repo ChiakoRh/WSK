@@ -13,18 +13,27 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇹🇷 | @WhiteDNS | TR15|1.4MB/s|DNSOK|GPT⁺-TR
+- name: 🇹🇷 | @WhiteDNS | TR20|6.3MB/s|DNSOK|GPT⁺-TR
   port: 2053
   server: test.keoplentuio.xyz
   type: vless
   udp: true
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   network: tcp
+- name: 🇹🇷 | @WhiteDNS | TR21|6.3MB/s|DNSOK|GPT⁺-TR
+  network: tcp
+  port: 2053
+  server: test.keoplentuio.xyz
+  type: vless
+  udp: true
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  xudp: true
 proxy-groups:
 - name: TR-Auto
   type: url-test
   proxies:
-  - 🇹🇷 | @WhiteDNS | TR15|1.4MB/s|DNSOK|GPT⁺-TR
+  - 🇹🇷 | @WhiteDNS | TR20|6.3MB/s|DNSOK|GPT⁺-TR
+  - 🇹🇷 | @WhiteDNS | TR21|6.3MB/s|DNSOK|GPT⁺-TR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
