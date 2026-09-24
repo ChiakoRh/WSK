@@ -13,31 +13,10 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇧🇷 | @WhiteDNS | BR22|1.7MB/s|DNSOK|GPT⁺-BR
-  network: raw
-  port: 22324
-  server: 172.233.14.17
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  xudp: true
-- name: 🇧🇷 | @WhiteDNS | BR23|1.2MB/s|DNSOK|GPT⁺-BR
+- name: 🇧🇷 | @WhiteDNS | BR14|811KB/s|DNSOK|GPT⁺-BR
   password: ''
-  port: 9292
-  server: 200.95.192.61
-  skip-cert-verify: true
-  type: http
-  username: ''
-- name: 🇧🇷 | @WhiteDNS | BR24|788KB/s|DNSOK|GPT⁺-BR
-  password: ''
-  port: 8989
-  server: 138.204.95.193
+  port: 8666
+  server: 128.201.29.6
   skip-cert-verify: true
   type: http
   username: ''
@@ -45,9 +24,7 @@ proxy-groups:
 - name: BR-Auto
   type: url-test
   proxies:
-  - 🇧🇷 | @WhiteDNS | BR22|1.7MB/s|DNSOK|GPT⁺-BR
-  - 🇧🇷 | @WhiteDNS | BR23|1.2MB/s|DNSOK|GPT⁺-BR
-  - 🇧🇷 | @WhiteDNS | BR24|788KB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR14|811KB/s|DNSOK|GPT⁺-BR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

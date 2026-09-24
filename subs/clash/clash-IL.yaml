@@ -1,0 +1,85 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- name: 🇮🇱 | @WhiteDNS | IL6|2.8MB/s|DNSOK|GPT⁺-IL
+  network: ws
+  port: 80
+  server: platform113.golnamakcert.top
+  type: vless
+  udp: true
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  ws-opts:
+    headers:
+      Host: platform113.halalkhor.info
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1610 Build/MMB29M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
+    path: /platform113
+  xudp: true
+  servername: platform113.halalkhor.info
+- name: 🇮🇱 | @WhiteDNS | IL7|2.5MB/s|DNSOK|GPT⁺-IL
+  network: ws
+  port: 80
+  server: platform118.golnamakcert.top
+  type: vless
+  udp: true
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  ws-opts:
+    headers:
+      Host: platform118.halalkhor.info
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G610F Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /platform118
+  xudp: true
+- encryption: none
+  name: 🇮🇱 | @WhiteDNS | IL8|2.4MB/s|DNSOK|GPT⁺-IL
+  network: ws
+  port: 80
+  server: platform113.golnamakcert.top
+  type: vless
+  udp: true
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  ws-opts:
+    headers:
+      Host: platform113.halalkhor.info
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/50.0.2661.102 Safari/537.36
+    path: /platform113
+  xudp: true
+- name: 🇮🇱 | @WhiteDNS | IL9|588KB/s|DNSOK|GPT⁺-IL
+  network: ws
+  port: 80
+  server: platform117.golnamakcert.top
+  type: vless
+  udp: true
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  ws-opts:
+    headers:
+      Host: platform117.halalkhor.info
+      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /platform117
+  xudp: true
+proxy-groups:
+- name: IL-Auto
+  type: url-test
+  proxies:
+  - 🇮🇱 | @WhiteDNS | IL6|2.8MB/s|DNSOK|GPT⁺-IL
+  - 🇮🇱 | @WhiteDNS | IL7|2.5MB/s|DNSOK|GPT⁺-IL
+  - 🇮🇱 | @WhiteDNS | IL8|2.4MB/s|DNSOK|GPT⁺-IL
+  - 🇮🇱 | @WhiteDNS | IL9|588KB/s|DNSOK|GPT⁺-IL
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,IL-Auto

@@ -13,20 +13,21 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇧🇪 | @WhiteDNS | BE2|4.9MB/s|DNSOK|GPT⁺-BE
-  password: ''
-  port: 443
-  server: 146.70.176.242
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+- encryption: none
+  name: 🇨🇴 | @WhiteDNS | CO6|1.4MB/s|DNSOK|GPT⁺-CO
+  network: tcp
+  port: 62145
+  server: 157.137.236.11
+  type: vless
+  udp: true
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  xudp: true
 proxy-groups:
-- name: BE-Auto
+- name: CO-Auto
   type: url-test
   proxies:
-  - 🇧🇪 | @WhiteDNS | BE2|4.9MB/s|DNSOK|GPT⁺-BE
+  - 🇨🇴 | @WhiteDNS | CO6|1.4MB/s|DNSOK|GPT⁺-CO
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,BE-Auto
+- MATCH,CO-Auto

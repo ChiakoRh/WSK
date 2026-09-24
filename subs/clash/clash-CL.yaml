@@ -13,35 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇱 | @WhiteDNS | CL11|2.1MB/s|DNSOK|GPT⁺-CL
-  network: ws
-  port: 80
-  server: 64.176.18.104
-  type: vless
-  udp: true
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  ws-opts:
-    headers:
-      Host: platform109.halalkhor.info
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/68.0.3440.106 Safari/537.36
-    path: /platform109
-  xudp: true
-- name: 🇨🇱 | @WhiteDNS | CL12|1.8MB/s|DNSOK|GPT⁺-CL
-  network: ws
-  port: 80
-  server: platform117.golnamakcert.top
-  type: vless
-  udp: true
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  ws-opts:
-    headers:
-      Host: platform117.halalkhor.info
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.113 Safari/537.36
-    path: /platform117
-  xudp: true
-- name: 🇨🇱 | @WhiteDNS | CL13|1.7MB/s|DNSOK|GPT⁺-CL
+- name: 🇨🇱 | @WhiteDNS | CL6|1.1MB/s|DNSOK|GPT⁺-CL
   network: ws
   port: 80
   server: platform109.golnamakcert.top
@@ -51,34 +23,32 @@ proxies:
   ws-opts:
     headers:
       Host: platform109.halalkhor.info
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/69.0.3497.100 Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-J500M Build/MMB29M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
     path: /platform109
   xudp: true
   servername: platform109.halalkhor.info
 - encryption: none
-  name: 🇨🇱 | @WhiteDNS | CL14|1.1MB/s|DNSOK|GPT⁺-CL
+  name: 🇨🇱 | @WhiteDNS | CL7|1.0MB/s|DNSOK|GPT⁺-CL
   network: ws
   port: 80
-  server: platform109.golnamakcert.top
+  server: platform108.golnamakcert.top
   type: vless
   udp: true
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   ws-opts:
     headers:
-      Host: platform109.halalkhor.info
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/57.0.2987.133 Safari/537.36
-    path: /platform109
+      Host: platform108.halalkhor.info
+      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /platform108
   xudp: true
 proxy-groups:
 - name: CL-Auto
   type: url-test
   proxies:
-  - 🇨🇱 | @WhiteDNS | CL11|2.1MB/s|DNSOK|GPT⁺-CL
-  - 🇨🇱 | @WhiteDNS | CL12|1.8MB/s|DNSOK|GPT⁺-CL
-  - 🇨🇱 | @WhiteDNS | CL13|1.7MB/s|DNSOK|GPT⁺-CL
-  - 🇨🇱 | @WhiteDNS | CL14|1.1MB/s|DNSOK|GPT⁺-CL
+  - 🇨🇱 | @WhiteDNS | CL6|1.1MB/s|DNSOK|GPT⁺-CL
+  - 🇨🇱 | @WhiteDNS | CL7|1.0MB/s|DNSOK|GPT⁺-CL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

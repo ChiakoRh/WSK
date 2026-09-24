@@ -1,84 +1,67 @@
 proxies:
-- encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI147|6.5MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 80
-  server: 151.101.240.148
-  type: vless
-  udp: true
-  uuid: 4ca49915-aee9-41c4-bfa5-1555c7447faa
-  ws-opts:
-    headers:
-      Host: jabaat.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.139 Safari/537.36
-    path: /
-  xudp: true
 - alpn:
   - h2
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI148|6.2MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI147|12.6MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 443
+  server: 151.101.56.6
+  tls: true
+  type: vless
+  udp: true
+  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
+  ws-opts:
+    headers:
+      Host: c12.com
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Moto C Build/NRD90M.059) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /
+  xudp: true
+  servername: ssl.fastly.com
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI148|6.4MB/s|DNSOK|GPT⁺-FI
   network: ws
   port: 443
   server: k2.cloud--vpn.site
   tls: true
   type: vless
   udp: true
-  uuid: 622cd467-ae00-4afe-b7ee-15dca6b9649a
+  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
   ws-opts:
     headers:
       Host: c12.com
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; vivo 1603 Build/MMB29M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/63.0.3239.132 Safari/537.36
     path: /
   xudp: true
   servername: ssl.fastly.com
 - alpn:
   - h2
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI149|6.1MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI149|6.0MB/s|DNSOK|GPT⁺-FI
   network: ws
   port: 443
   server: a2.arshia-nova.ir
   tls: true
   type: vless
   udp: true
-  uuid: 622cd467-ae00-4afe-b7ee-15dca6b9649a
+  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
   ws-opts:
     headers:
       Host: c12.com
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/54.0.2840.71 Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1; A37f Build/LMY47V) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36
     path: /
   xudp: true
   servername: ssl.fastly.com
-- client-fingerprint: ios
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI150|5.9MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 9145
-  reality-opts:
-    public-key: Fw1tpKBQ_bT_eSTbaCSYBthpXAQ76kujwfywvjgpUA0
-    short-id: 5e06032a9c448538
-  server: fnbarz.jorzel.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: df31f630-b1b6-47c6-8733-b9205d94738a
-  xudp: true
-  servername: android.clients.google.com
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇮 | @WhiteDNS | FI151|2.8MB/s|DNSOK|GPT⁺-FI
-  password: ao5znrhEwVqoJy-l7AVvgw
-  port: 2050
-  server: p1tun1.greewebservices.ir
-  type: ss
-  udp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI152|1.3MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI150|5.4MB/s|DNSOK|GPT⁺-FI
   network: tcp
   port: 2087
   reality-opts:
@@ -91,19 +74,10 @@ proxies:
   uuid: 10d85f65-f8d6-4504-b1e2-94649db1577a
   xudp: true
   servername: 95.217.24.236
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI153|557KB/s|DNSOK|GPT⁺-FI
-  network: raw
-  port: 2087
-  reality-opts:
-    public-key: KN8tFlpIwPgJGwUCG7Pp9c9c0juYKPvNIv4kFHwqbyk
-    short-id: a32cfb5deca913ad
-  server: 95.217.24.236
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇮 | @WhiteDNS | FI151|2.4MB/s|DNSOK|GPT⁺-FI
+  password: cVvgP0Bz69hsErPBvqKbwQ
+  port: 2070
+  server: p1tun3.greewebservices.ir
+  type: ss
   udp: true
-  uuid: 10d85f65-f8d6-4504-b1e2-94649db1577a
-  xudp: true
-  servername: 62.238.41.21
