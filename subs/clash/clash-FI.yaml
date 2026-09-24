@@ -13,29 +13,14 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI151|6.6MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 80
-  server: 151.101.240.148
-  type: vless
-  udp: true
-  uuid: 7a62d083-36c8-4ce3-8d5a-67a65f9cc2da
-  ws-opts:
-    headers:
-      Host: jabaat.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.99 Safari/537.36
-    path: /
-  xudp: true
 - alpn:
   - h2
   client-fingerprint: chrome
   encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI152|5.9MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI153|6.6MB/s|DNSOK|GPT⁺-FI
   network: ws
   port: 443
-  server: a2.arshia-nova.ir
+  server: k2.cloud--vpn.site
   tls: true
   type: vless
   udp: true
@@ -43,14 +28,63 @@ proxies:
   ws-opts:
     headers:
       Host: c12.com
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/31.0.1650.57 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
     path: /
   xudp: true
   servername: ssl.fastly.com
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI154|5.5MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 443
+  server: 151.101.56.6
+  tls: true
+  type: vless
+  udp: true
+  uuid: 622cd467-ae00-4afe-b7ee-15dca6b9649a
+  ws-opts:
+    headers:
+      Host: c12.com
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /?TELEGRAM--KANAL--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray
+  xudp: true
+  servername: ssl.fastly.com
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇮 | @WhiteDNS | FI155|2.6MB/s|DNSOK|GPT⁺-FI
+  password: LMnotcv4RdaEOBXT-LdtfA
+  port: 2070
+  server: p1tun3.greewebservices.ir
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇮 | @WhiteDNS | FI156|2.4MB/s|DNSOK|GPT⁺-FI
+  password: LMnotcv4RdaEOBXT-LdtfA
+  port: 1080
+  server: p1tun4.greewebservices.ir
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI153|1.3MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI157|1.3MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 2087
+  reality-opts:
+    public-key: KN8tFlpIwPgJGwUCG7Pp9c9c0juYKPvNIv4kFHwqbyk
+    short-id: a32cfb5deca913ad
+  server: 95.217.24.236
+  tls: true
+  type: vless
+  udp: true
+  uuid: 10d85f65-f8d6-4504-b1e2-94649db1577a
+  xudp: true
+  servername: 62.238.41.21
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI158|1.3MB/s|DNSOK|GPT⁺-FI
   port: 2087
   reality-opts:
     public-key: KN8tFlpIwPgJGwUCG7Pp9c9c0juYKPvNIv4kFHwqbyk
@@ -66,7 +100,7 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI154|605KB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI159|1.3MB/s|DNSOK|GPT⁺-FI
   network: raw
   port: 2087
   reality-opts:
@@ -83,10 +117,13 @@ proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI151|6.6MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI152|5.9MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI153|1.3MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI154|605KB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI153|6.6MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI154|5.5MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI155|2.6MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI156|2.4MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI157|1.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI158|1.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI159|1.3MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

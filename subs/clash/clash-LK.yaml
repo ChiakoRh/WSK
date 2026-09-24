@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇱🇰 | @WhiteDNS | LK4|2.7MB/s|DNSOK|GPT⁺-LK
+- name: 🇱🇰 | @WhiteDNS | LK4|2.6MB/s|DNSOK|GPT⁺-LK
   network: ws
   port: 80
   server: support.zoom.us
@@ -23,12 +23,12 @@ proxies:
   ws-opts:
     headers:
       Host: free.sahanwickramasinghe.me
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/47.0.2526.106 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.106 Safari/537.36
     path: /
   xudp: true
 - client-fingerprint: chrome
-  name: 🇱🇰 | @WhiteDNS | LK5|2.7MB/s|DNSOK|GPT⁺-LK
+  name: 🇱🇰 | @WhiteDNS | LK5|2.6MB/s|DNSOK|GPT⁺-LK
   port: 443
   server: free.sahanwickramasinghe.me
   skip-cert-verify: true
@@ -39,7 +39,7 @@ proxies:
   network: tcp
   servername: aka.ms
 - encryption: none
-  name: 🇱🇰 | @WhiteDNS | LK6|2.6MB/s|DNSOK|GPT⁺-LK
+  name: 🇱🇰 | @WhiteDNS | LK6|1.1MB/s|DNSOK|GPT⁺-LK
   network: ws
   port: 80
   server: free.sahanwickramasinghe.me
@@ -49,17 +49,17 @@ proxies:
   ws-opts:
     headers:
       Host: free.sahanwickramasinghe.me
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; WAS-LX3 Build/HUAWEIWAS-LX3)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/57.0.2987.133 Safari/537.36
     path: /
   xudp: true
 proxy-groups:
 - name: LK-Auto
   type: url-test
   proxies:
-  - 🇱🇰 | @WhiteDNS | LK4|2.7MB/s|DNSOK|GPT⁺-LK
-  - 🇱🇰 | @WhiteDNS | LK5|2.7MB/s|DNSOK|GPT⁺-LK
-  - 🇱🇰 | @WhiteDNS | LK6|2.6MB/s|DNSOK|GPT⁺-LK
+  - 🇱🇰 | @WhiteDNS | LK4|2.6MB/s|DNSOK|GPT⁺-LK
+  - 🇱🇰 | @WhiteDNS | LK5|2.6MB/s|DNSOK|GPT⁺-LK
+  - 🇱🇰 | @WhiteDNS | LK6|1.1MB/s|DNSOK|GPT⁺-LK
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

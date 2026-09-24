@@ -14,20 +14,26 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - encryption: none
-  name: ❓ | @WhiteDNS | OT242|1.4MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 47878
-  server: 152.69.195.67
+  name: ❓ | @WhiteDNS | OT190|1.7MB/s|DNSOK|GPT⁺-NL
+  network: ws
+  port: 12068
+  server: 85.17.145.65
   type: vless
   udp: true
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  uuid: 05caca6c-9e97-4c0f-8edf-7b88a6e572c5
+  ws-opts:
+    headers:
+      Host: mypanel.unixzone.us
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/59.0.3071.115 Safari/537.36
+    path: /
   xudp: true
-  servername: 152.69.195.67
+  servername: mypanel.unixzone.us
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT242|1.4MB/s|DNSOK|GPT⁺-JP
+  - ❓ | @WhiteDNS | OT190|1.7MB/s|DNSOK|GPT⁺-NL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

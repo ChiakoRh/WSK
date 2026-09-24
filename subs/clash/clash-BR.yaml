@@ -17,7 +17,7 @@ proxies:
   - ''
   alterId: '0'
   cipher: auto
-  name: 🇧🇷 | @WhiteDNS | BR21|1.1MB/s|DNSOK|GPT⁺-BR
+  name: 🇧🇷 | @WhiteDNS | BR25|2.5MB/s|DNSOK|GPT⁺-BR
   network: tcp
   port: 22324
   server: 172.233.14.17
@@ -27,11 +27,68 @@ proxies:
   udp: true
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   xudp: true
+- alterId: 0
+  cipher: auto
+  name: 🇧🇷 | @WhiteDNS | BR26|1.8MB/s|DNSOK|GPT⁺-BR
+  port: 22324
+  server: 172.233.14.17
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  network: tcp
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: 🇧🇷 | @WhiteDNS | BR27|1.7MB/s|DNSOK|GPT⁺-BR
+  network: raw
+  port: 22324
+  server: 172.233.14.17
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  xudp: true
+- name: 🇧🇷 | @WhiteDNS | BR28|978KB/s|DNSOK|GPT⁺-BR
+  password: ''
+  port: 9191
+  server: 177.222.248.54
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇧🇷 | @WhiteDNS | BR29|766KB/s|DNSOK|GPT⁺-BR
+  password: ''
+  port: 8989
+  server: 138.204.95.193
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇧🇷 | @WhiteDNS | BR30|656KB/s|DNSOK|GPT⁺-BR
+  password: ''
+  port: 3126
+  server: 189.84.157.245
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇧🇷 | @WhiteDNS | BR31|598KB/s|DNSOK|GPT⁺-BR
+  password: ''
+  port: 8666
+  server: 128.201.29.12
+  skip-cert-verify: true
+  type: http
+  username: ''
 proxy-groups:
 - name: BR-Auto
   type: url-test
   proxies:
-  - 🇧🇷 | @WhiteDNS | BR21|1.1MB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR25|2.5MB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR26|1.8MB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR27|1.7MB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR28|978KB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR29|766KB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR30|656KB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR31|598KB/s|DNSOK|GPT⁺-BR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
