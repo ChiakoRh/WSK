@@ -14,21 +14,13 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - cipher: aes-256-gcm
-  name: 🇸🇪 | @WhiteDNS | SE47|16.6MB/s|DNSOK|GPT⁺-SE
+  name: 🇸🇪 | @WhiteDNS | SE34|18.5MB/s|DNSOK|GPT⁺-SE
   password: AxIYWtskJWIIaefW
   port: 8388
   server: 70.34.212.124
   type: ss
   udp: true
-- name: 🇸🇪 | @WhiteDNS | SE48|16.2MB/s|DNSOK|GPT⁺-SE
-  password: ''
-  port: 443
-  server: 149.50.216.65
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇸🇪 | @WhiteDNS | SE49|5.5MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE35|15.5MB/s|DNSOK|GPT⁺-SE
   password: None
   port: 443
   server: 146.70.242.130
@@ -36,7 +28,15 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇸🇪 | @WhiteDNS | SE50|4.7MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE36|15.4MB/s|DNSOK|GPT⁺-SE
+  password: ''
+  port: 443
+  server: 149.50.216.65
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇸🇪 | @WhiteDNS | SE37|5.4MB/s|DNSOK|GPT⁺-SE
   password: ''
   port: 443
   server: 146.70.242.146
@@ -48,10 +48,10 @@ proxy-groups:
 - name: SE-Auto
   type: url-test
   proxies:
-  - 🇸🇪 | @WhiteDNS | SE47|16.6MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE48|16.2MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE49|5.5MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE50|4.7MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE34|18.5MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE35|15.5MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE36|15.4MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE37|5.4MB/s|DNSOK|GPT⁺-SE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

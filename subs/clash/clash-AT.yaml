@@ -15,7 +15,21 @@ dns:
 proxies:
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: 🇦🇹 | @WhiteDNS | AT18|32.6MB/s|DNSOK|GPT⁺-AT
+  name: 🇦🇹 | @WhiteDNS | AT18|33.6MB/s|DNSOK|GPT⁺-AT
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
+  server: 152.53.1.40
+  tls: true
+  type: vless
+  udp: true
+  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
+  servername: at.quattro-tech.ru
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇦🇹 | @WhiteDNS | AT19|29.8MB/s|DNSOK|GPT⁺-AT
   port: 443
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
@@ -28,21 +42,7 @@ proxies:
   uuid: edde565e-41f5-400e-84ea-7b87a3e84488
   network: tcp
   servername: at.quattro-tech.ru
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: 🇦🇹 | @WhiteDNS | AT19|28.0MB/s|DNSOK|GPT⁺-AT
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
-  server: 152.53.1.40
-  tls: true
-  type: vless
-  udp: true
-  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
-  servername: at.quattro-tech.ru
-- name: 🇦🇹 | @WhiteDNS | AT20|23.3MB/s|DNSOK|GPT⁺-AT
+- name: 🇦🇹 | @WhiteDNS | AT20|6.5MB/s|DNSOK|GPT⁺-AT
   password: ''
   port: 443
   server: 146.70.244.18
@@ -50,7 +50,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇦🇹 | @WhiteDNS | AT21|20.2MB/s|DNSOK|GPT⁺-AT
+- name: 🇦🇹 | @WhiteDNS | AT21|4.7MB/s|DNSOK|GPT⁺-AT
   password: ''
   port: 443
   server: 146.70.244.2
@@ -62,10 +62,10 @@ proxy-groups:
 - name: AT-Auto
   type: url-test
   proxies:
-  - 🇦🇹 | @WhiteDNS | AT18|32.6MB/s|DNSOK|GPT⁺-AT
-  - 🇦🇹 | @WhiteDNS | AT19|28.0MB/s|DNSOK|GPT⁺-AT
-  - 🇦🇹 | @WhiteDNS | AT20|23.3MB/s|DNSOK|GPT⁺-AT
-  - 🇦🇹 | @WhiteDNS | AT21|20.2MB/s|DNSOK|GPT⁺-AT
+  - 🇦🇹 | @WhiteDNS | AT18|33.6MB/s|DNSOK|GPT⁺-AT
+  - 🇦🇹 | @WhiteDNS | AT19|29.8MB/s|DNSOK|GPT⁺-AT
+  - 🇦🇹 | @WhiteDNS | AT20|6.5MB/s|DNSOK|GPT⁺-AT
+  - 🇦🇹 | @WhiteDNS | AT21|4.7MB/s|DNSOK|GPT⁺-AT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

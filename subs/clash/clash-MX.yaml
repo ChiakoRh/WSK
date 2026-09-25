@@ -13,24 +13,19 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- alterId: '0'
-  cipher: auto
-  name: 🇲🇾 | @WhiteDNS | MY9|2.3MB/s|DNSOK|GPT⁺-MY
-  network: raw
-  port: 10000
-  server: 47.250.135.244
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
-  xudp: true
+- name: 🇲🇽 | @WhiteDNS | MX5|1.0MB/s|DNSOK|GPT⁺-MX
+  password: ''
+  port: 2604
+  server: 200.94.38.46
+  skip-cert-verify: true
+  type: http
+  username: ''
 proxy-groups:
-- name: MY-Auto
+- name: MX-Auto
   type: url-test
   proxies:
-  - 🇲🇾 | @WhiteDNS | MY9|2.3MB/s|DNSOK|GPT⁺-MY
+  - 🇲🇽 | @WhiteDNS | MX5|1.0MB/s|DNSOK|GPT⁺-MX
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,MY-Auto
+- MATCH,MX-Auto
