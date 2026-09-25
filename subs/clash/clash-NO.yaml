@@ -13,20 +13,24 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇧🇬 | @WhiteDNS | BG16|6.0MB/s|DNSOK|GPT⁺-BG
-  password: ''
-  port: 443
-  server: 185.94.192.210
+- down: ''
+  fingerprint: ''
+  name: 🇳🇴 | @WhiteDNS | NO21|2.5MB/s|DNSOK|GPT⁺-US
+  obfs: salamander
+  obfs-password: maintell
+  password: maintell
+  port: 2053
+  server: 107.172.67.52
   skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+  sni: bing.com
+  type: hysteria2
+  up: ''
 proxy-groups:
-- name: BG-Auto
+- name: NO-Auto
   type: url-test
   proxies:
-  - 🇧🇬 | @WhiteDNS | BG16|6.0MB/s|DNSOK|GPT⁺-BG
+  - 🇳🇴 | @WhiteDNS | NO21|2.5MB/s|DNSOK|GPT⁺-US
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,BG-Auto
+- MATCH,NO-Auto

@@ -1,26 +1,23 @@
 proxies:
-- name: 🇦🇺 | @WhiteDNS | AU17|1.8MB/s|DNSOK|GPT⁺-AU
-  port: 443
-  server: 172.105.169.70
-  skip-cert-verify: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇦🇺 | @WhiteDNS | AU10|1.8MB/s|DNSOK|GPT⁺-AU
+  network: tcp
+  port: 20270
+  reality-opts:
+    public-key: RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE
+    short-id: e6a5a4a9115456de
+  server: au1.gsafevpnapi.com
   tls: true
   type: vless
   udp: true
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  network: tcp
-  servername: 172.105.169.70
-- name: 🇦🇺 | @WhiteDNS | AU18|1.6MB/s|DNSOK|GPT⁺-AU
-  password: None
-  port: 443
-  server: 159.13.44.228
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+  uuid: 6eef3a79-22bc-4086-b5e6-95e07db73016
+  xudp: true
+  servername: www.yahoo.com
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇦🇺 | @WhiteDNS | AU19|928KB/s|DNSOK|GPT⁺-AU
+  name: 🇦🇺 | @WhiteDNS | AU11|1.7MB/s|DNSOK|GPT⁺-AU
   network: raw
   port: 20270
   reality-opts:
@@ -30,12 +27,12 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 38b8e2fb-b9a0-40a6-b42c-335def2765cf
+  uuid: 6eef3a79-22bc-4086-b5e6-95e07db73016
   xudp: true
   servername: www.yahoo.com
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇦🇺 | @WhiteDNS | AU20|695KB/s|DNSOK|GPT⁺-AU
+  name: 🇦🇺 | @WhiteDNS | AU12|1.7MB/s|DNSOK|GPT⁺-AU
   port: 20270
   reality-opts:
     public-key: RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE
@@ -45,6 +42,16 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 38b8e2fb-b9a0-40a6-b42c-335def2765cf
+  uuid: 6eef3a79-22bc-4086-b5e6-95e07db73016
   network: tcp
   servername: www.yahoo.com
+- name: 🇦🇺 | @WhiteDNS | AU13|599KB/s|DNSOK|GPT⁺-AU
+  port: 443
+  server: 172.105.169.70
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  network: tcp
+  servername: 172.105.169.70

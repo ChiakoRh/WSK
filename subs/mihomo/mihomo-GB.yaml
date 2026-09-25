@@ -1,23 +1,43 @@
 proxies:
-- encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB87|27.9MB/s|DNSOK|GPT⁺-GB
-  network: tcp
-  port: 22224
-  server: 18.135.254.77
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB86|27.1MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 443
+  server: rubifen.adaspoloandco.com
+  tls: true
   type: vless
   udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/47.0.2526.111 Safari/537.36 MVisionPlayer/1.0.0.0
+    path: /GOrbEh
   xudp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 | @WhiteDNS | GB88|22.9MB/s|DNSOK|GPT⁺-GB
-  password: zRZNBszYyWo5
-  port: 8388
-  server: 51.77.225.200
-  type: ss
+  servername: rubifen.adaspoloandco.com
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB87|25.2MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 443
+  server: rubifen.adaspoloandco.com
+  tls: true
+  type: vless
   udp: true
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /GOrbEh
+  xudp: true
+  servername: rubifen.adaspoloandco.com
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB89|22.0MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB88|23.7MB/s|DNSOK|GPT⁺-GB
   network: tcp
   port: 443
   reality-opts:
@@ -29,7 +49,7 @@ proxies:
   udp: true
   uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
   servername: speed.cloudflare.com
-- name: 🇬🇧 | @WhiteDNS | GB90|21.7MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB89|21.6MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
   server: 212.102.63.61
@@ -37,53 +57,15 @@ proxies:
   tls: true
   type: http
   username: ''
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB91|21.7MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB90|20.2MB/s|DNSOK|GPT⁺-GB
+  password: None
   port: 443
-  reality-opts:
-    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
-    short-id: b19b017d6f453873
-  server: 23.81.34.204
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
-  network: tcp
-  servername: speed.cloudflare.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB92|21.0MB/s|DNSOK|GPT⁺-GB
-  port: 443
-  reality-opts:
-    public-key: x-oA2H8zwILFq4PCZvvJPzUlawE2ADkVUXG3h9m2-hg
-    short-id: 6337fd42719a0912
-  server: 51.68.215.88
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0774160b-be44-4781-aad7-1a1745a36659
-  network: tcp
-  servername: www.icloud.com
-- name: 🇬🇧 | @WhiteDNS | GB93|20.8MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 443
-  server: 84.17.50.193
+  server: 185.235.0.34
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB94|20.7MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 443
-  server: 212.102.63.31
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB95|20.2MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB91|20.1MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
   server: 212.102.63.1
@@ -91,11 +73,18 @@ proxies:
   tls: true
   type: http
   username: ''
+- name: 🇬🇧 | @WhiteDNS | GB92|20.0MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 443
+  server: 212.102.63.31
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 - client-fingerprint: chrome
-  encryption: none
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB96|20.0MB/s|DNSOK|GPT⁺-GB
-  network: raw
+  name: 🇬🇧 | @WhiteDNS | GB93|19.0MB/s|DNSOK|GPT⁺-GB
+  network: tcp
   port: 443
   reality-opts:
     public-key: x-oA2H8zwILFq4PCZvvJPzUlawE2ADkVUXG3h9m2-hg
@@ -105,10 +94,25 @@ proxies:
   type: vless
   udp: true
   uuid: 0774160b-be44-4781-aad7-1a1745a36659
-  xudp: true
   servername: www.icloud.com
-- name: 🇬🇧 | @WhiteDNS | GB97|18.2MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB94|17.8MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 443
+  server: 37.120.233.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB95|16.7MB/s|DNSOK|GPT⁺-GB
   password: None
+  port: 443
+  server: 37.120.233.50
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB96|14.3MB/s|DNSOK|GPT⁺-GB
+  password: ''
   port: 443
   server: 185.235.0.2
   skip-cert-verify: true
@@ -118,7 +122,7 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB98|18.2MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB97|6.9MB/s|DNSOK|GPT⁺-GB
   network: raw
   port: 443
   reality-opts:
@@ -131,8 +135,69 @@ proxies:
   uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
   xudp: true
   servername: speed.cloudflare.com
-- name: 🇬🇧 | @WhiteDNS | GB99|17.8MB/s|DNSOK|GPT⁺-GB
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇬🇧 | @WhiteDNS | GB98|6.8MB/s|DNSOK|GPT⁺-GB
+  port: 443
+  reality-opts:
+    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
+    short-id: b19b017d6f453873
+  server: 23.81.34.204
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
+  network: tcp
+  servername: speed.cloudflare.com
+- name: 🇬🇧 | @WhiteDNS | GB99|6.8MB/s|DNSOK|GPT⁺-GB
   password: ''
+  port: 443
+  server: 185.235.0.66
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB100|6.4MB/s|DNSOK|GPT⁺-GB
+  password: zRZNBszYyWo5
+  port: 8388
+  server: 51.77.225.200
+  type: ss
+  udp: true
+- name: 🇬🇧 | @WhiteDNS | GB101|6.3MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 443
+  server: 84.17.50.193
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB102|6.1MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 443
+  server: 185.235.0.98
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇬🇧 | @WhiteDNS | GB103|6.1MB/s|DNSOK|GPT⁺-GB
+  port: 443
+  reality-opts:
+    public-key: x-oA2H8zwILFq4PCZvvJPzUlawE2ADkVUXG3h9m2-hg
+    short-id: 6337fd42719a0912
+  server: 51.68.215.88
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0774160b-be44-4781-aad7-1a1745a36659
+  network: tcp
+  servername: www.icloud.com
+- name: 🇬🇧 | @WhiteDNS | GB104|5.6MB/s|DNSOK|GPT⁺-GB
+  password: None
   port: 443
   server: 37.120.233.18
   skip-cert-verify: true
@@ -142,8 +207,8 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB100|17.5MB/s|DNSOK|GPT⁺-GB
-  network: tcp
+  name: 🇬🇧 | @WhiteDNS | GB105|5.3MB/s|DNSOK|GPT⁺-GB
+  network: raw
   port: 443
   reality-opts:
     public-key: x-oA2H8zwILFq4PCZvvJPzUlawE2ADkVUXG3h9m2-hg
@@ -155,84 +220,7 @@ proxies:
   uuid: 0774160b-be44-4781-aad7-1a1745a36659
   xudp: true
   servername: www.icloud.com
-- name: 🇬🇧 | @WhiteDNS | GB101|16.9MB/s|DNSOK|GPT⁺-GB
-  password: None
-  port: 443
-  server: 37.120.233.50
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB102|16.7MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 443
-  server: 185.235.0.66
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB103|16.6MB/s|DNSOK|GPT⁺-GB
-  network: raw
-  port: 51847
-  reality-opts:
-    public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
-    short-id: 0eec442e7b34d2f2
-  server: 3.9.135.156
-  tls: true
-  type: vless
-  udp: true
-  uuid: 391a01e9-b664-407b-9158-610fab3f5920
-  xudp: true
-  servername: www.tesla.com
-- name: 🇬🇧 | @WhiteDNS | GB104|12.8MB/s|DNSOK|GPT⁺-GB
-  password: None
-  port: 443
-  server: 185.235.0.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- encryption: none
-  http-opts:
-    headers:
-      Host:
-      - vn74kujn.selqora.ir
-    path:
-    - /
-  name: 🇬🇧 | @WhiteDNS | GB105|6.9MB/s|DNSOK|GPT⁺-GB
-  network: http
-  port: 51595
-  server: vn74kujn.selqora.ir
-  type: vless
-  udp: true
-  uuid: 94459532-f38d-40a2-9bbe-74deb93b3a22
-  xudp: true
-- cipher: 2022-blake3-chacha20-poly1305
-  name: 🇬🇧 | @WhiteDNS | GB106|6.9MB/s|DNSOK|GPT⁺-GB
-  password: 7+83lYmtkC1TL9F5THnzEGaaF24mquCQgoT+DqJDrlE=
-  port: 61312
-  server: 129.151.83.115
-  type: ss
-  udp: true
-- cipher: 2022-blake3-chacha20-poly1305
-  name: 🇬🇧 | @WhiteDNS | GB107|6.3MB/s|DNSOK|GPT⁺-GB
-  password: /pYDD9iRDQlBUa4aL0lBTCSp6ZNStfL6xHNn4mSFqFE=
-  port: 61312
-  server: 129.151.77.63
-  type: ss
-  udp: true
-- name: 🇬🇧 | @WhiteDNS | GB108|6.2MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 443
-  server: 185.235.0.98
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB109|6.1MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB106|4.9MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 9443
   server: 37.120.233.34
@@ -240,66 +228,21 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB110|6.0MB/s|DNSOK|GPT⁺-GB
-  password: None
-  port: 443
-  server: 37.120.233.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB111|6.0MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 443
-  server: 185.235.0.2
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB112|5.5MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 443
-  server: 37.120.233.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB113|4.4MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 443
-  server: 185.235.0.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB114|2.2MB/s|DNSOK|GPT⁺-GB
-  port: 51847
-  reality-opts:
-    public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
-    short-id: 0eec442e7b34d2f2
-  server: 3.9.135.156
-  skip-cert-verify: true
-  tls: true
+- encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB107|2.4MB/s|DNSOK|GPT⁺-GB
+  network: tcp
+  port: 22224
+  server: 18.135.254.77
   type: vless
   udp: true
-  uuid: 391a01e9-b664-407b-9158-610fab3f5920
-  network: tcp
-  servername: www.tesla.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB115|1.6MB/s|DNSOK|GPT⁺-GB
-  network: tcp
-  port: 51847
-  reality-opts:
-    public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
-    short-id: 0eec442e7b34d2f2
-  server: 3.9.135.156
-  tls: true
-  type: vless
-  udp: true
-  uuid: 391a01e9-b664-407b-9158-610fab3f5920
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   xudp: true
-  servername: www.tesla.com
+- encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB108|705KB/s|DNSOK|GPT⁺-GB
+  network: tcp
+  port: 22223
+  server: 18.135.254.77
+  type: vless
+  udp: true
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  xudp: true

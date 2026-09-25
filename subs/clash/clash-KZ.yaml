@@ -13,26 +13,26 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇪🇪 | @WhiteDNS | EE22|13.7MB/s|DNSOK|GPT⁺-EE
-  network: tcp
-  port: 443
+- client-fingerprint: chrome
+  name: 🇰🇿 | @WhiteDNS | KZ13|560KB/s|DNSOK|GPT⁺-KZ
+  port: 38065
   reality-opts:
-    public-key: 98MNvJC4t0ZjK_xHlQjOx2WfLfAPluNDb71MzS9sPT8
-    short-id: 38018dde3e27335e
-  server: 5.181.201.43
+    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
+    short-id: fa
+  server: 83.222.23.81
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: f495298f-2bdb-4fd8-9ac9-5dd33d1b482a
-  servername: est1.loozerp.wiki
+  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+  network: tcp
+  servername: yahoo.com
 proxy-groups:
-- name: EE-Auto
+- name: KZ-Auto
   type: url-test
   proxies:
-  - 🇪🇪 | @WhiteDNS | EE22|13.7MB/s|DNSOK|GPT⁺-EE
+  - 🇰🇿 | @WhiteDNS | KZ13|560KB/s|DNSOK|GPT⁺-KZ
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,EE-Auto
+- MATCH,KZ-Auto

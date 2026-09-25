@@ -13,8 +13,17 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- encryption: mlkem768x25519plus.native.0rtt.jyflF0RHRYv7QHkxAwAK4c49BDolRTl6P5o07q9mbnE
+  name: 🇫🇮 | @WhiteDNS | FI164|5.5MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 32569
+  server: nothing.quickpl.ir
+  type: vless
+  udp: true
+  uuid: ec825a3d-4136-40db-b39f-2ef40f19aa19
+  xudp: true
 - client-fingerprint: firefox
-  name: 🇫🇮 | @WhiteDNS | FI147|12.4MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI165|2.6MB/s|DNSOK|GPT⁺-FI
   port: 443
   reality-opts:
     public-key: CxRZ7oJWwR7okmOoqEEbVYCSfTaBlNA6ycf_UniyeEk
@@ -27,37 +36,8 @@ proxies:
   uuid: 63aaea7f-2847-4f41-afab-0836b1cf79d9
   network: tcp
   servername: matrix-client.matrix.org
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇫🇮 | @WhiteDNS | FI148|6.2MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 2100
-  server: kzjqw5fyd3f0.dop66.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5b58a880-19ce-47d6-9864-3d4dae94514c
-  xudp: true
-- encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI149|5.3MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 80
-  server: 146.75.119.82
-  type: vless
-  udp: true
-  uuid: dfa4a78a-6170-4924-bf16-a2a7b292e623
-  ws-opts:
-    headers:
-      Host: rb24.ir
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.77 Safari/537.36
-    path: /ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
-  xudp: true
 - client-fingerprint: firefox
-  name: 🇫🇮 | @WhiteDNS | FI150|2.8MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI166|1.4MB/s|DNSOK|GPT⁺-FI
   network: tcp
   port: 443
   reality-opts:
@@ -68,34 +48,14 @@ proxies:
   type: vless
   udp: true
   uuid: 63aaea7f-2847-4f41-afab-0836b1cf79d9
-  xudp: true
   servername: matrix-client.matrix.org
-- client-fingerprint: chrome
-  name: 🇫🇮 | @WhiteDNS | FI151|1.9MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 443
-  server: 151.101.56.7
-  tls: true
-  type: vless
-  udp: true
-  uuid: e9ed3344-200c-41a0-a7ea-b398fe3df3bc
-  ws-opts:
-    headers:
-      Host: kayko.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /
-  xudp: true
-  servername: global.fastly.com
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI147|12.4MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI148|6.2MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI149|5.3MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI150|2.8MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI151|1.9MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI164|5.5MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI165|2.6MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI166|1.4MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
