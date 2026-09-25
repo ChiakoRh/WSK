@@ -13,16 +13,8 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇹🇼 | @WhiteDNS | TW23|1.2MB/s|DNSOK|GPT⁺-TW
-  password: 9sK2mP8xQ7vL3nZ6
-  port: 443
-  server: ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn
-  skip-cert-verify: true
-  sni: ac7548f3ebe045b39a90288ff1e97526.lwdnxf.cn
-  type: anytls
-  udp: true
 - fingerprint: ''
-  name: 🇹🇼 | @WhiteDNS | TW24|1.1MB/s|DNSOK|GPT⁺-TW
+  name: 🇹🇼 | @WhiteDNS | TW23|1.6MB/s|DNSOK|GPT⁺-TW
   password: 9sK2mP8xQ7vL3nZ6
   port: 443
   server: 6ivh.pnuqcnp.cn
@@ -31,12 +23,36 @@ proxies:
   type: anytls
   udp: true
   username: 9sK2mP8xQ7vL3nZ6
+- name: 🇹🇼 | @WhiteDNS | TW24|1.6MB/s|DNSOK|GPT⁺-TW
+  password: 9sK2mP8xQ7vL3nZ6
+  port: 443
+  server: ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn
+  skip-cert-verify: true
+  sni: ac7548f3ebe045b39a90288ff1e97526.lwdnxf.cn
+  type: anytls
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 | @WhiteDNS | TW25|1.3MB/s|DNSOK|GPT⁺-TW
+  password: a9a0d092-6f0e-4701-81ee-454643d6d506
+  port: 50099
+  server: namrcg001640lrm.cybervena.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇹🇼TW
+  name: 🇹🇼 | @WhiteDNS | TW26|1.0MB/s|DNSOK|GPT⁺-TW
+  password: 7b56aeaa-8e2d-4bdf-b1d7-233ecca15f56
+  port: 50099
+  server: namrcg001640lrm.cybervena.com
+  type: ss
 proxy-groups:
 - name: TW-Auto
   type: url-test
   proxies:
-  - 🇹🇼 | @WhiteDNS | TW23|1.2MB/s|DNSOK|GPT⁺-TW
-  - 🇹🇼 | @WhiteDNS | TW24|1.1MB/s|DNSOK|GPT⁺-TW
+  - 🇹🇼 | @WhiteDNS | TW23|1.6MB/s|DNSOK|GPT⁺-TW
+  - 🇹🇼 | @WhiteDNS | TW24|1.6MB/s|DNSOK|GPT⁺-TW
+  - 🇹🇼 | @WhiteDNS | TW25|1.3MB/s|DNSOK|GPT⁺-TW
+  - 🇹🇼 | @WhiteDNS | TW26|1.0MB/s|DNSOK|GPT⁺-TW
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -13,15 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇪🇸 | @WhiteDNS | ES18|19.8MB/s|DNSOK|GPT⁺-ES
-  password: ''
-  port: 443
-  server: 130.195.250.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇪🇸 | @WhiteDNS | ES19|10.4MB/s|DNSOK|GPT⁺-ES
+- name: 🇪🇸 | @WhiteDNS | ES22|11.8MB/s|DNSOK|GPT⁺-ES
   password: ''
   port: 443
   server: 82.102.17.178
@@ -29,10 +21,33 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇪🇸 | @WhiteDNS | ES20|6.3MB/s|DNSOK|GPT⁺-ES
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇪🇸 | @WhiteDNS | ES23|6.3MB/s|DNSOK|GPT⁺-ES
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ihEweXseofZYKT-AB6cTtQ1IlXgC3a7HHAsi-o50yFE
+    short-id: e93196a756abca09
+  server: esbe.vihodest.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88956de8-38db-449c-8410-4b70a4fb5c9b
+  xudp: true
+  servername: esbe.vihodest.net
+- name: 🇪🇸 | @WhiteDNS | ES24|5.6MB/s|DNSOK|GPT⁺-ES
   password: None
   port: 443
   server: 82.102.17.178
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇪🇸 | @WhiteDNS | ES25|5.4MB/s|DNSOK|GPT⁺-ES
+  password: ''
+  port: 443
+  server: 130.195.250.18
   skip-cert-verify: true
   tls: true
   type: http
@@ -41,9 +56,10 @@ proxy-groups:
 - name: ES-Auto
   type: url-test
   proxies:
-  - 🇪🇸 | @WhiteDNS | ES18|19.8MB/s|DNSOK|GPT⁺-ES
-  - 🇪🇸 | @WhiteDNS | ES19|10.4MB/s|DNSOK|GPT⁺-ES
-  - 🇪🇸 | @WhiteDNS | ES20|6.3MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES22|11.8MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES23|6.3MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES24|5.6MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES25|5.4MB/s|DNSOK|GPT⁺-ES
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

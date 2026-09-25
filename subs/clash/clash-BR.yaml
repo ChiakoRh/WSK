@@ -13,38 +13,10 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇧🇷 | @WhiteDNS | BR15|2.2MB/s|DNSOK|GPT⁺-BR
-  network: raw
-  port: 22324
-  server: 172.233.14.17
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  xudp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇧🇷 | @WhiteDNS | BR16|1.9MB/s|DNSOK|GPT⁺-BR
-  network: tcp
-  port: 22324
-  server: 172.233.14.17
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  xudp: true
-- name: 🇧🇷 | @WhiteDNS | BR17|820KB/s|DNSOK|GPT⁺-BR
+- name: 🇧🇷 | @WhiteDNS | BR14|531KB/s|DNSOK|GPT⁺-BR
   password: ''
-  port: 45005
-  server: 191.241.187.16
+  port: 9191
+  server: 177.222.248.54
   skip-cert-verify: true
   type: http
   username: ''
@@ -52,9 +24,7 @@ proxy-groups:
 - name: BR-Auto
   type: url-test
   proxies:
-  - 🇧🇷 | @WhiteDNS | BR15|2.2MB/s|DNSOK|GPT⁺-BR
-  - 🇧🇷 | @WhiteDNS | BR16|1.9MB/s|DNSOK|GPT⁺-BR
-  - 🇧🇷 | @WhiteDNS | BR17|820KB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR14|531KB/s|DNSOK|GPT⁺-BR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
