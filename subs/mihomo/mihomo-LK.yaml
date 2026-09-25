@@ -1,20 +1,6 @@
 proxies:
-- name: 🇱🇰 | @WhiteDNS | LK4|2.6MB/s|DNSOK|GPT⁺-LK
-  network: ws
-  port: 80
-  server: support.zoom.us
-  type: vless
-  udp: true
-  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
-  ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.me
-      User-Agent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/49.0.2623.112 Safari/537.36
-    path: /
-  xudp: true
 - encryption: none
-  name: 🇱🇰 | @WhiteDNS | LK5|2.2MB/s|DNSOK|GPT⁺-LK
+  name: 🇱🇰 | @WhiteDNS | LK4|3.7MB/s|DNSOK|GPT⁺-LK
   network: ws
   port: 80
   server: free.sahanwickramasinghe.me
@@ -24,12 +10,12 @@ proxies:
   ws-opts:
     headers:
       Host: free.sahanwickramasinghe.me
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/58.0.3029.81 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.102 Safari/537.36
     path: /
   xudp: true
 - client-fingerprint: chrome
-  name: 🇱🇰 | @WhiteDNS | LK6|1.7MB/s|DNSOK|GPT⁺-LK
+  name: 🇱🇰 | @WhiteDNS | LK5|2.7MB/s|DNSOK|GPT⁺-LK
   port: 443
   server: free.sahanwickramasinghe.me
   skip-cert-verify: true
@@ -39,3 +25,17 @@ proxies:
   uuid: 3d08ed67-5a47-42d3-a948-ebc7d2eb21f7
   network: tcp
   servername: aka.ms
+- name: 🇱🇰 | @WhiteDNS | LK6|2.4MB/s|DNSOK|GPT⁺-LK
+  network: ws
+  port: 80
+  server: support.zoom.us
+  type: vless
+  udp: true
+  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  ws-opts:
+    headers:
+      Host: free.sahanwickramasinghe.me
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1; A37f Build/LMY47V) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36
+    path: /
+  xudp: true

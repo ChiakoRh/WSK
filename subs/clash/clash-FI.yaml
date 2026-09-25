@@ -13,20 +13,8 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- alterId: '0'
-  cipher: auto
-  name: 🇫🇮 | @WhiteDNS | FI138|6.2MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 57361
-  server: me6.movieseryalirani.ir
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
-  xudp: true
 - encryption: mlkem768x25519plus.native.0rtt.jyflF0RHRYv7QHkxAwAK4c49BDolRTl6P5o07q9mbnE
-  name: 🇫🇮 | @WhiteDNS | FI139|4.6MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI160|19.7MB/s|DNSOK|GPT⁺-FI
   network: tcp
   port: 32569
   server: nothing.quickpl.ir
@@ -34,12 +22,124 @@ proxies:
   udp: true
   uuid: ec825a3d-4136-40db-b39f-2ef40f19aa19
   xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI161|18.9MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 1U9eTADaumTYxiO9NifVHUv5mbMowU2NSjgc2rBdvHo
+    short-id: 7a0300af51a1c4cf
+  server: 65.109.199.174
+  tls: true
+  type: vless
+  udp: true
+  uuid: c8c48cda-09c0-4742-850f-5ef910aa730b
+  xudp: true
+  servername: Miro.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI162|6.3MB/s|DNSOK|GPT⁺-FI
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: 1U9eTADaumTYxiO9NifVHUv5mbMowU2NSjgc2rBdvHo
+    short-id: 7a0300af51a1c4cf
+  server: 65.109.199.174
+  tls: true
+  type: vless
+  udp: true
+  uuid: c8c48cda-09c0-4742-850f-5ef910aa730b
+  xudp: true
+  servername: Miro.com
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI163|6.2MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 443
+  server: 151.101.56.6
+  tls: true
+  type: vless
+  udp: true
+  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
+  ws-opts:
+    headers:
+      Host: c12.com
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.181 Safari/537.36
+    path: /?TELEGRAM--BYA---@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud
+  xudp: true
+  servername: ssl.fastly.com
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI164|6.2MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 443
+  server: k2.cloud--vpn.site
+  tls: true
+  type: vless
+  udp: true
+  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
+  ws-opts:
+    headers:
+      Host: c12.com
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/61.0.3163.100 Safari/537.36
+    path: /
+  xudp: true
+  servername: ssl.fastly.com
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI165|6.1MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 443
+  server: a2.arshia-nova.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
+  ws-opts:
+    headers:
+      Host: c12.com
+      User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/49.0.2623.112 Safari/537.36
+    path: /
+  xudp: true
+  servername: ssl.fastly.com
+- encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI166|5.9MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 80
+  server: 104.16.72.101
+  type: vless
+  udp: true
+  uuid: d5598622-46b8-b017-3af3-232500000001
+  ws-opts:
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.67 Safari/537.36
+    path: /sync
+  xudp: true
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI138|6.2MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI139|4.6MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI160|19.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI161|18.9MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI162|6.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI163|6.2MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI164|6.2MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI165|6.1MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI166|5.9MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -1,96 +1,19 @@
 proxies:
-- alpn:
-  - ''
-  alterId: '0'
+- alterId: '0'
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP79|2.0MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: None
-    path: /cctv13.m3u8
-  xudp: true
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP80|1.7MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: jp01.a0a.xyz
-    path: /cctv13.m3u8
-  xudp: true
-  servername: jp01.a0a.xyz
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP81|1.7MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: None
-    path: /cctv13.m3u8
-  xudp: true
-  servername: None
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP82|1.7MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 23462
-  server: 64.176.51.214
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 95c5abc1-018d-4628-89a7-25ab9c62ab74
-  ws-opts:
-    headers: {}
-    path: /a15206
-  xudp: true
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP83|1.6MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP591|1.7MB/s|DNSOK|GPT⁺-JP
+  network: tcp#🎡90@oneclickvpnkeys
   port: 4433
   server: 45.32.57.118
+  skip-cert-verify: false
+  tls: false
   type: vmess
   udp: true
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  network: tcp
-- encryption: none
-  name: 🇯🇵 | @WhiteDNS | JP84|1.3MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 20802
-  server: 152.69.192.144
-  type: vless
-  udp: true
-  uuid: ac76a374-7447-4dab-bfa9-b7f83a7a7946
   xudp: true
 - alterId: 0
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP85|1.3MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP592|1.7MB/s|DNSOK|GPT⁺-JP
   network: tcp
   port: 4433
   server: 45.32.57.118
@@ -101,27 +24,53 @@ proxies:
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
   xudp: true
   servername: 'null'
-- alterId: '0'
+- encryption: none
+  name: 🇯🇵 | @WhiteDNS | JP593|1.1MB/s|DNSOK|GPT⁺-JP
+  network: raw
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  xudp: true
+- alterId: 0
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP86|1.1MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP594|1.0MB/s|DNSOK|GPT⁺-JP
+  port: 4433
+  server: 45.32.57.118
+  type: vmess
+  udp: true
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
   network: tcp
-  port: 4433
-  server: 45.32.57.118
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- encryption: none
+  name: 🇯🇵 | @WhiteDNS | JP595|1.0MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 47878
+  server: 152.69.195.67
+  type: vless
   udp: true
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
   xudp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP87|1.0MB/s|DNSOK|GPT⁺-JP
-  network: tcp#🎡90@oneclickvpnkeys
-  port: 4433
-  server: 45.32.57.118
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+  servername: 152.69.195.67
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP596|847KB/s|DNSOK|GPT⁺-JP
+  port: 11690
+  reality-opts:
+    public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
+    short-id: 034885e346fd30
+  server: 13.231.19.51
+  skip-cert-verify: true
+  tls: true
+  type: vless
   udp: true
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  xudp: true
+  uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
+  network: tcp
+  servername: www.tesla.com
+- name: 🇯🇵 | @WhiteDNS | JP597|609KB/s|DNSOK|GPT⁺-JP
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  network: tcp
