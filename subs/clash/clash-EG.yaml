@@ -14,26 +14,29 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇭🇰 | @WhiteDNS | HK80|1.6MB/s|DNSOK|GPT⁺-US
-  network: tcp
+  encryption: none
+  name: 🇪🇬 | @WhiteDNS | EG3|2.8MB/s|DNSOK|GPT⁺-US
+  network: ws
   port: 443
-  reality-opts:
-    public-key: zV4Sja0iajpdzkR1iBMbI7RRWL2nlpgwGOtirQSG-zc
-    short-id: b81edf7fdee4
-  server: hk3.miyazono-kaori.com
+  server: ccs2g.pai50288.uk
   tls: true
   type: vless
   udp: true
-  uuid: 64b377ab-779a-46e2-8525-69810668ca7a
+  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.67 Safari/537.36
+    path: /pai50288
   xudp: true
-  servername: hk4e-launcher-static.hoyoverse.com
+  servername: ccs2g.pai50288.uk
 proxy-groups:
-- name: HK-Auto
+- name: EG-Auto
   type: url-test
   proxies:
-  - 🇭🇰 | @WhiteDNS | HK80|1.6MB/s|DNSOK|GPT⁺-US
+  - 🇪🇬 | @WhiteDNS | EG3|2.8MB/s|DNSOK|GPT⁺-US
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,HK-Auto
+- MATCH,EG-Auto
