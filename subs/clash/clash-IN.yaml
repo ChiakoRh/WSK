@@ -13,94 +13,35 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇮🇳 | @WhiteDNS | IN40|5.5MB/s|DNSOK|GPT⁺-IN
-  network: ws
-  port: 443
-  server: odd-violet-5440.asdgrweeee13.workers.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
-  ws-opts:
-    headers:
-      Host: odd-violet-5440.asdgrweeee13.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: /sync
-  xudp: true
-  servername: odd-violet-5440.asdgrweeee13.workers.dev
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇮🇳 | @WhiteDNS | IN41|5.1MB/s|DNSOK|GPT⁺-IN
-  network: ws
-  port: 443
-  server: odd-violet-5440.asdgrweeee13.workers.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.77 Safari/537.36
-    path: /
-  xudp: true
-  servername: odd-violet-5440.asdgrweeee13.workers.dev
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇮🇳 | @WhiteDNS | IN42|5.1MB/s|DNSOK|GPT⁺-IN
-  network: ws
-  port: 443
-  server: 172.67.208.1
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
-  ws-opts:
-    headers:
-      Host: odd-violet-5440.asdgrweeee13.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/59.0.3071.115 Safari/537.36
-    path: /sync
-  xudp: true
-  servername: odd-violet-5440.asdgrweeee13.workers.dev
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇮🇳 | @WhiteDNS | IN43|4.9MB/s|DNSOK|GPT⁺-IN
-  network: ws
-  port: 443
-  server: 104.21.69.118
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
-  ws-opts:
-    headers:
-      Host: odd-violet-5440.asdgrweeee13.workers.dev
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.3
-        (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
-    path: /sync
-  xudp: true
-  servername: odd-violet-5440.asdgrweeee13.workers.dev
-- name: 🇮🇳 | @WhiteDNS | IN44|2.6MB/s|DNSOK|GPT⁺-IN
+- name: 🇮🇳 | @WhiteDNS | IN31|2.3MB/s|DNSOK|GPT⁺-IN
   password: ''
   port: 1088
   server: 144.24.111.128
   skip-cert-verify: true
   type: socks5
   username: ''
+- alterId: 0
+  cipher: auto
+  name: 🇮🇳 | @WhiteDNS | IN32|1.3MB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 16626
+  server: planb.mojcn.com.linuxlh.xin
+  type: vmess
+  udp: true
+  uuid: a004e196-8e94-4d17-b95d-fa02fa68038e
+  ws-opts:
+    headers:
+      Host: 4b413f3013048c48708eb5ac1ac3d90d.mobgslb.tbcache.com
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /
+  xudp: true
 proxy-groups:
 - name: IN-Auto
   type: url-test
   proxies:
-  - 🇮🇳 | @WhiteDNS | IN40|5.5MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN41|5.1MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN42|5.1MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN43|4.9MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN44|2.6MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN31|2.3MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN32|1.3MB/s|DNSOK|GPT⁺-IN
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
