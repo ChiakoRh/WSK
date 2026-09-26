@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇱🇰 | @WhiteDNS | LK4|2.0MB/s|DNSOK|GPT⁺-LK
+- name: 🇱🇰 | @WhiteDNS | LK3|2.1MB/s|DNSOK|GPT⁺-LK
   network: ws
   port: 80
   server: support.zoom.us
@@ -23,27 +23,15 @@ proxies:
   ws-opts:
     headers:
       Host: free.sahanwickramasinghe.me
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/41.0.2272.118 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.7
+        (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
     path: /
   xudp: true
-- client-fingerprint: chrome
-  name: 🇱🇰 | @WhiteDNS | LK5|796KB/s|DNSOK|GPT⁺-LK
-  port: 443
-  server: free.sahanwickramasinghe.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3d08ed67-5a47-42d3-a948-ebc7d2eb21f7
-  network: tcp
-  servername: aka.ms
 proxy-groups:
 - name: LK-Auto
   type: url-test
   proxies:
-  - 🇱🇰 | @WhiteDNS | LK4|2.0MB/s|DNSOK|GPT⁺-LK
-  - 🇱🇰 | @WhiteDNS | LK5|796KB/s|DNSOK|GPT⁺-LK
+  - 🇱🇰 | @WhiteDNS | LK3|2.1MB/s|DNSOK|GPT⁺-LK
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

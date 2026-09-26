@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇭 | @WhiteDNS | CH50|43.0MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH16|47.3MB/s|DNSOK|GPT⁺-CH
   password: ''
   port: 443
   server: 31.7.62.50
@@ -21,7 +21,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇭 | @WhiteDNS | CH51|40.7MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH17|39.5MB/s|DNSOK|GPT⁺-CH
   password: None
   port: 9443
   server: 37.120.213.210
@@ -29,53 +29,12 @@ proxies:
   tls: true
   type: http
   username: ''
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇨🇭 | @WhiteDNS | CH52|27.5MB/s|DNSOK|GPT⁺-CH
-  network: ws
-  port: 443
-  server: 172.67.173.138
-  tls: true
-  type: vless
-  udp: true
-  uuid: 813cd228-ebf6-0e21-481a-ba4af8f85b82
-  ws-opts:
-    headers:
-      Host: odd-disk-98c5.assassincreed4048.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.99 Safari/537.36
-    path: /sync
-  xudp: true
-  servername: odd-disk-98c5.assassincreed4048.workers.dev
-- client-fingerprint: chrome
-  name: 🇨🇭 | @WhiteDNS | CH53|17.0MB/s|DNSOK|GPT⁺-CH
-  network: ws
-  port: 443
-  server: 172.67.130.144
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7da33b25-cdd6-e481-afcf-c5d532361a70
-  ws-opts:
-    headers:
-      Host: ez-1bc8ab.sekiro-c18.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.110 Safari/537.36
-    path: /sync
-  xudp: true
-  servername: ez-1bc8ab.sekiro-c18.workers.dev
 proxy-groups:
 - name: CH-Auto
   type: url-test
   proxies:
-  - 🇨🇭 | @WhiteDNS | CH50|43.0MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH51|40.7MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH52|27.5MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH53|17.0MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH16|47.3MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH17|39.5MB/s|DNSOK|GPT⁺-CH
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
