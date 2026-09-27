@@ -13,8 +13,21 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- encryption: none
-  name: 🇿🇦 | @WhiteDNS | ZA29|2.2MB/s|DNSOK|GPT⁺-ZA
+- cipher: chacha20-ietf-poly1305
+  name: 🇿🇦 | @WhiteDNS | ZA29|2.7MB/s|DNSOK|GPT⁺-ZA
+  password: aduB9HGxQHjA2SBMRjkHX6
+  port: 443
+  server: 102.37.156.224
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇿🇦 | @WhiteDNS | ZA30|2.6MB/s|DNSOK|GPT⁺-ZA
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  port: 16233
+  server: 102.133.165.160
+  type: ss
+  udp: true
+- name: 🇿🇦 | @WhiteDNS | ZA31|1.7MB/s|DNSOK|GPT⁺-ZA
   network: ws
   port: 80
   server: platform113.golnamakcert.top
@@ -24,56 +37,12 @@ proxies:
   ws-opts:
     headers:
       Host: platform113.halalkhor.info
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/53.0.2785.143 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/48.0.2564.109 Safari/537.36
     path: /platform113
   xudp: true
-- encryption: none
-  name: 🇿🇦 | @WhiteDNS | ZA30|2.0MB/s|DNSOK|GPT⁺-ZA
-  network: ws
-  port: 80
-  server: platform115.golnamakcert.top
-  type: vless
-  udp: true
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  ws-opts:
-    headers:
-      Host: platform115.halalkhor.info
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.3
-        (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
-    path: /platform115
-  xudp: true
-- name: 🇿🇦 | @WhiteDNS | ZA31|2.0MB/s|DNSOK|GPT⁺-ZA
-  network: ws
-  port: 80
-  server: platform118.golnamakcert.top
-  type: vless
-  udp: true
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  ws-opts:
-    headers:
-      Host: platform118.halalkhor.info
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /platform118
-  xudp: true
-  servername: platform118.golnamakcert.top
-- name: 🇿🇦 | @WhiteDNS | ZA32|2.0MB/s|DNSOK|GPT⁺-ZA
-  network: ws
-  port: 80
-  server: platform101.golnamakcert.top
-  type: vless
-  udp: true
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  ws-opts:
-    headers:
-      Host: platform101.halalkhor.info
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.101 Safari/537.36
-    path: /platform101
-  xudp: true
-  servername: platform101.golnamakcert.top
-- name: 🇿🇦 | @WhiteDNS | ZA33|1.9MB/s|DNSOK|GPT⁺-ZA
+  servername: platform113.halalkhor.info
+- name: 🇿🇦 | @WhiteDNS | ZA32|1.7MB/s|DNSOK|GPT⁺-ZA
   network: ws
   port: 80
   server: platform107.golnamakcert.top
@@ -83,71 +52,12 @@ proxies:
   ws-opts:
     headers:
       Host: platform107.halalkhor.info
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; de-DE) AppleWebKit/534.17
-        (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
+      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
     path: /platform107
   xudp: true
   servername: platform107.halalkhor.info
-- name: 🇿🇦 | @WhiteDNS | ZA34|1.8MB/s|DNSOK|GPT⁺-ZA
-  network: ws
-  port: 80
-  server: platform101.golnamakcert.top
-  type: vless
-  udp: true
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  ws-opts:
-    headers:
-      Host: platform101.halalkhor.info
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
-    path: /platform101
-  xudp: true
-- name: 🇿🇦 | @WhiteDNS | ZA35|1.8MB/s|DNSOK|GPT⁺-ZA
-  network: ws
-  port: 80
-  server: platform115.golnamakcert.top
-  type: vless
-  udp: true
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  ws-opts:
-    headers:
-      Host: platform115.halalkhor.info
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.117 Safari/537.36
-    path: /platform115
-  xudp: true
-  servername: platform115.halalkhor.info
-- name: 🇿🇦 | @WhiteDNS | ZA36|1.8MB/s|DNSOK|GPT⁺-ZA
-  network: ws
-  port: 80
-  server: platform118.golnamakcert.top
-  type: vless
-  udp: true
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  ws-opts:
-    headers:
-      Host: platform118.halalkhor.info
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; ANE-LX3 Build/HUAWEIANE-LX3)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /platform118
-  xudp: true
-  servername: platform118.halalkhor.info
-- name: 🇿🇦 | @WhiteDNS | ZA37|1.7MB/s|DNSOK|GPT⁺-ZA
-  network: ws
-  port: 80
-  server: platform102.golnamakcert.top
-  type: vless
-  udp: true
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  ws-opts:
-    headers:
-      Host: platform102.halalkhor.info
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/67.0.3396.99 Safari/537.36
-    path: /platform102
-  xudp: true
-  servername: platform102.golnamakcert.top
-- name: 🇿🇦 | @WhiteDNS | ZA38|1.4MB/s|DNSOK|GPT⁺-ZA
+- name: 🇿🇦 | @WhiteDNS | ZA33|1.6MB/s|DNSOK|GPT⁺-ZA
   network: ws
   port: 80
   server: platform106.golnamakcert.top
@@ -157,40 +67,11 @@ proxies:
   ws-opts:
     headers:
       Host: platform106.halalkhor.info
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/49.0.2623.110 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/68.0.3440.106 Safari/537.36
     path: /platform106
   xudp: true
-- name: 🇿🇦 | @WhiteDNS | ZA39|1.4MB/s|DNSOK|GPT⁺-ZA
-  network: ws
-  port: 80
-  server: platform118.golnamakcert.top
-  type: vless
-  udp: true
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  ws-opts:
-    headers:
-      Host: platform118.halalkhor.info
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J111M Build/LMY47V) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /platform118
-  xudp: true
-- encryption: none
-  name: 🇿🇦 | @WhiteDNS | ZA40|1.3MB/s|DNSOK|GPT⁺-ZA
-  network: ws
-  port: 80
-  server: platform107.golnamakcert.top
-  type: vless
-  udp: true
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  ws-opts:
-    headers:
-      Host: platform107.halalkhor.info
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/54.0.2840.71 Safari/537.36
-    path: /%2Fplatform107
-  xudp: true
-- name: 🇿🇦 | @WhiteDNS | ZA41|1.2MB/s|DNSOK|GPT⁺-ZA
+- name: 🇿🇦 | @WhiteDNS | ZA34|1.5MB/s|DNSOK|GPT⁺-ZA
   network: ws
   port: 80
   server: platform103.golnamakcert.top
@@ -200,12 +81,11 @@ proxies:
   ws-opts:
     headers:
       Host: platform103.halalkhor.info
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/48.0.2564.109 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/65.0.3325.181 Safari/537.36
     path: /platform103
   xudp: true
-  servername: platform103.halalkhor.info
-- name: 🇿🇦 | @WhiteDNS | ZA42|1.2MB/s|DNSOK|GPT⁺-ZA
+- name: 🇿🇦 | @WhiteDNS | ZA35|1.4MB/s|DNSOK|GPT⁺-ZA
   network: ws
   port: 80
   server: platform102.golnamakcert.top
@@ -215,11 +95,93 @@ proxies:
   ws-opts:
     headers:
       Host: platform102.halalkhor.info
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/56.0.2924.87 Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1610 Build/MMB29M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
     path: /platform102
   xudp: true
-- name: 🇿🇦 | @WhiteDNS | ZA43|1011KB/s|DNSOK|GPT⁺-ZA
+- name: 🇿🇦 | @WhiteDNS | ZA36|1.4MB/s|DNSOK|GPT⁺-ZA
+  network: ws
+  port: 80
+  server: platform102.golnamakcert.top
+  type: vless
+  udp: true
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  ws-opts:
+    headers:
+      Host: platform102.halalkhor.info
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /platform102
+  xudp: true
+  servername: platform102.golnamakcert.top
+- cipher: chacha20-ietf-poly1305
+  name: 🇿🇦 | @WhiteDNS | ZA37|1.3MB/s|DNSOK|GPT⁺-ZA
+  password: tfAcRikawhNoZAhu
+  port: 8388
+  server: 139.84.247.164
+  type: ss
+  udp: true
+- encryption: none
+  name: 🇿🇦 | @WhiteDNS | ZA38|1.3MB/s|DNSOK|GPT⁺-ZA
+  network: ws
+  port: 80
+  server: platform115.golnamakcert.top
+  type: vless
+  udp: true
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  ws-opts:
+    headers:
+      Host: platform115.halalkhor.info
+      User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko)
+        Slackware/Chrome/12.0.742.100 Safari/534.30
+    path: /platform115
+  xudp: true
+- name: 🇿🇦 | @WhiteDNS | ZA39|1.3MB/s|DNSOK|GPT⁺-ZA
+  network: ws
+  port: 80
+  server: platform115.golnamakcert.top
+  type: vless
+  udp: true
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  ws-opts:
+    headers:
+      Host: platform115.halalkhor.info
+      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /platform115
+  xudp: true
+  servername: platform115.halalkhor.info
+- encryption: none
+  name: 🇿🇦 | @WhiteDNS | ZA40|1.2MB/s|DNSOK|GPT⁺-ZA
+  network: ws
+  port: 80
+  server: platform107.golnamakcert.top
+  type: vless
+  udp: true
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  ws-opts:
+    headers:
+      Host: platform107.halalkhor.info
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /%2Fplatform107
+  xudp: true
+- encryption: none
+  name: 🇿🇦 | @WhiteDNS | ZA41|1.2MB/s|DNSOK|GPT⁺-ZA
+  network: ws
+  port: 80
+  server: platform113.golnamakcert.top
+  type: vless
+  udp: true
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  ws-opts:
+    headers:
+      Host: platform113.halalkhor.info
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/47.0.2526.106 Safari/537.36
+    path: /platform113
+  xudp: true
+- name: 🇿🇦 | @WhiteDNS | ZA42|1.1MB/s|DNSOK|GPT⁺-ZA
   network: ws
   port: 80
   server: platform103.golnamakcert.top
@@ -229,29 +191,29 @@ proxies:
   ws-opts:
     headers:
       Host: platform103.halalkhor.info
-      User-Agent: Mozilla/5.0 (X11; Datanyze; Linux x86_64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/65.0.3325.181 Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; SM-G7102 Build/KOT49H) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
     path: /platform103
   xudp: true
+  servername: platform103.halalkhor.info
 proxy-groups:
 - name: ZA-Auto
   type: url-test
   proxies:
-  - 🇿🇦 | @WhiteDNS | ZA29|2.2MB/s|DNSOK|GPT⁺-ZA
-  - 🇿🇦 | @WhiteDNS | ZA30|2.0MB/s|DNSOK|GPT⁺-ZA
-  - 🇿🇦 | @WhiteDNS | ZA31|2.0MB/s|DNSOK|GPT⁺-ZA
-  - 🇿🇦 | @WhiteDNS | ZA32|2.0MB/s|DNSOK|GPT⁺-ZA
-  - 🇿🇦 | @WhiteDNS | ZA33|1.9MB/s|DNSOK|GPT⁺-ZA
-  - 🇿🇦 | @WhiteDNS | ZA34|1.8MB/s|DNSOK|GPT⁺-ZA
-  - 🇿🇦 | @WhiteDNS | ZA35|1.8MB/s|DNSOK|GPT⁺-ZA
-  - 🇿🇦 | @WhiteDNS | ZA36|1.8MB/s|DNSOK|GPT⁺-ZA
-  - 🇿🇦 | @WhiteDNS | ZA37|1.7MB/s|DNSOK|GPT⁺-ZA
-  - 🇿🇦 | @WhiteDNS | ZA38|1.4MB/s|DNSOK|GPT⁺-ZA
-  - 🇿🇦 | @WhiteDNS | ZA39|1.4MB/s|DNSOK|GPT⁺-ZA
-  - 🇿🇦 | @WhiteDNS | ZA40|1.3MB/s|DNSOK|GPT⁺-ZA
+  - 🇿🇦 | @WhiteDNS | ZA29|2.7MB/s|DNSOK|GPT⁺-ZA
+  - 🇿🇦 | @WhiteDNS | ZA30|2.6MB/s|DNSOK|GPT⁺-ZA
+  - 🇿🇦 | @WhiteDNS | ZA31|1.7MB/s|DNSOK|GPT⁺-ZA
+  - 🇿🇦 | @WhiteDNS | ZA32|1.7MB/s|DNSOK|GPT⁺-ZA
+  - 🇿🇦 | @WhiteDNS | ZA33|1.6MB/s|DNSOK|GPT⁺-ZA
+  - 🇿🇦 | @WhiteDNS | ZA34|1.5MB/s|DNSOK|GPT⁺-ZA
+  - 🇿🇦 | @WhiteDNS | ZA35|1.4MB/s|DNSOK|GPT⁺-ZA
+  - 🇿🇦 | @WhiteDNS | ZA36|1.4MB/s|DNSOK|GPT⁺-ZA
+  - 🇿🇦 | @WhiteDNS | ZA37|1.3MB/s|DNSOK|GPT⁺-ZA
+  - 🇿🇦 | @WhiteDNS | ZA38|1.3MB/s|DNSOK|GPT⁺-ZA
+  - 🇿🇦 | @WhiteDNS | ZA39|1.3MB/s|DNSOK|GPT⁺-ZA
+  - 🇿🇦 | @WhiteDNS | ZA40|1.2MB/s|DNSOK|GPT⁺-ZA
   - 🇿🇦 | @WhiteDNS | ZA41|1.2MB/s|DNSOK|GPT⁺-ZA
-  - 🇿🇦 | @WhiteDNS | ZA42|1.2MB/s|DNSOK|GPT⁺-ZA
-  - 🇿🇦 | @WhiteDNS | ZA43|1011KB/s|DNSOK|GPT⁺-ZA
+  - 🇿🇦 | @WhiteDNS | ZA42|1.1MB/s|DNSOK|GPT⁺-ZA
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

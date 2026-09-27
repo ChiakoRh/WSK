@@ -1,86 +1,21 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB73|25.1MB/s|DNSOK|GPT⁺-GB
+  password: zRZNBszYyWo5
+  port: 8388
+  server: 51.77.225.200
+  type: ss
+  udp: true
 - encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB97|27.9MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB74|25.0MB/s|DNSOK|GPT⁺-GB
   network: tcp
   port: 22223
-  server: 52.56.145.227
+  server: 18.133.172.254
   type: vless
   udp: true
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   xudp: true
-- encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB98|25.4MB/s|DNSOK|GPT⁺-GB
-  network: tcp
-  port: 22222
-  server: 52.56.145.227
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  xudp: true
-- encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB99|25.3MB/s|DNSOK|GPT⁺-GB
-  network: tcp
-  port: 22223
-  server: 18.169.206.105
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  xudp: true
-- encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB100|24.8MB/s|DNSOK|GPT⁺-GB
-  network: raw
-  port: 22222
-  server: 18.169.206.105
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  xudp: true
-- encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB101|24.6MB/s|DNSOK|GPT⁺-GB
-  network: tcp
-  port: 22222
-  server: 18.169.206.105
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB102|23.0MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 443
-  server: rubifen.adaspoloandco.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; CPH1607 Build/MMB29M; wv) AppleWebKit/537.36
-        (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36
-    path: /GOrbEh
-  xudp: true
-  servername: rubifen.adaspoloandco.com
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB103|22.6MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 443
-  server: rubifen.adaspoloandco.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.101 Safari/537.36
-    path: /GOrbEh
-  xudp: true
-  servername: rubifen.adaspoloandco.com
-- name: 🇬🇧 | @WhiteDNS | GB104|21.7MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB75|21.1MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
   server: 84.17.50.193
@@ -88,7 +23,41 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB105|20.2MB/s|DNSOK|GPT⁺-GB
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇬🇧 | @WhiteDNS | GB76|21.1MB/s|DNSOK|GPT⁺-GB
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
+    short-id: b19b017d6f453873
+  server: 23.81.34.204
+  tls: true
+  type: vless
+  udp: true
+  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
+  xudp: true
+  servername: speed.cloudflare.com
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB77|20.6MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 443
+  server: rubifen.adaspoloandco.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/45.0.2454.85 Safari/537.36
+    path: /GOrbEh
+  xudp: true
+  servername: rubifen.adaspoloandco.com
+- name: 🇬🇧 | @WhiteDNS | GB78|20.1MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
   server: 212.102.63.61
@@ -96,7 +65,46 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB106|16.8MB/s|DNSOK|GPT⁺-GB
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇬🇧 | @WhiteDNS | GB79|18.8MB/s|DNSOK|GPT⁺-GB
+  port: 443
+  reality-opts:
+    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
+    short-id: b19b017d6f453873
+  server: 23.81.34.204
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
+  network: tcp
+  servername: speed.cloudflare.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇬🇧 | @WhiteDNS | GB80|6.7MB/s|DNSOK|GPT⁺-GB
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
+    short-id: b19b017d6f453873
+  server: 23.81.34.204
+  tls: true
+  type: vless
+  udp: true
+  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
+  xudp: true
+  servername: speed.cloudflare.com
+- name: 🇬🇧 | @WhiteDNS | GB81|6.1MB/s|DNSOK|GPT⁺-GB
+  password: None
+  port: 443
+  server: 37.120.233.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB82|6.0MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
   server: 37.120.233.18
@@ -104,23 +112,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 | @WhiteDNS | GB107|6.7MB/s|DNSOK|GPT⁺-GB
-  password: zRZNBszYyWo5
-  port: 8388
-  server: 51.77.225.200
-  type: ss
-  udp: true
-- encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB108|6.6MB/s|DNSOK|GPT⁺-GB
-  network: tcp
-  port: 22224
-  server: 18.169.206.105
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  xudp: true
-- name: 🇬🇧 | @WhiteDNS | GB109|6.2MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB83|5.7MB/s|DNSOK|GPT⁺-GB
   password: None
   port: 443
   server: 37.120.233.50
@@ -130,21 +122,33 @@ proxies:
   username: ''
 - client-fingerprint: chrome
   encryption: none
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB110|6.1MB/s|DNSOK|GPT⁺-GB
-  network: raw
+  name: 🇬🇧 | @WhiteDNS | GB84|5.5MB/s|DNSOK|GPT⁺-DE
+  network: ws
   port: 443
-  reality-opts:
-    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
-    short-id: b19b017d6f453873
-  server: 23.81.34.204
+  server: rubifen.adaspoloandco.com
   tls: true
   type: vless
   udp: true
-  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/48.0.2564.109 Safari/537.36
+    path: /GOrbEh
   xudp: true
-  servername: speed.cloudflare.com
-- name: 🇬🇧 | @WhiteDNS | GB111|5.9MB/s|DNSOK|GPT⁺-GB
+  servername: rubifen.adaspoloandco.com
+- fingerprint: ''
+  name: 🇬🇧 | @WhiteDNS | GB85|4.7MB/s|DNSOK|GPT⁺-GB
+  password: b652305a-0c63-4527-8cb3-0ea582076124
+  port: 1443
+  server: 95.168.184.34
+  skip-cert-verify: true
+  sni: lon1.freeguard.org
+  type: anytls
+  udp: true
+  username: b652305a-0c63-4527-8cb3-0ea582076124
+- name: 🇬🇧 | @WhiteDNS | GB86|2.5MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
   server: 185.235.0.2
@@ -152,43 +156,10 @@ proxies:
   tls: true
   type: http
   username: ''
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB112|5.9MB/s|DNSOK|GPT⁺-GB
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
-    short-id: b19b017d6f453873
-  server: 23.81.34.204
-  tls: true
-  type: vless
-  udp: true
-  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
-  xudp: true
-  servername: speed.cloudflare.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB113|5.3MB/s|DNSOK|GPT⁺-GB
-  port: 443
-  reality-opts:
-    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
-    short-id: b19b017d6f453873
-  server: 23.81.34.204
+- name: 🇬🇧 | @WhiteDNS | GB87|848KB/s|DNSOK|GPT⁺-FR
+  password: ''
+  port: 1088
+  server: 144.91.121.61
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
-  network: tcp
-  servername: speed.cloudflare.com
-- encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB114|2.5MB/s|DNSOK|GPT⁺-GB
-  network: tcp
-  port: 22224
-  server: 52.56.145.227
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  xudp: true
+  type: socks5
+  username: ''

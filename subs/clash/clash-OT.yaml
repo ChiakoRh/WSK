@@ -13,24 +13,38 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- down: ''
-  fingerprint: ''
-  name: ❓ | @WhiteDNS | OT280|2.2MB/s|DNSOK|GPT⁺-US
-  obfs: ''
-  obfs-password: ''
-  password: suAmQS9LlInNq4Wumh-FUF4GGlpgmG_g
-  port: 8443
-  server: 159.223.157.129
+- encryption: none
+  name: ❓ | @WhiteDNS | OT308|1.6MB/s|DNSOK|GPT⁺-NL
+  network: ws
+  port: 12068
+  server: 85.17.145.65
+  type: vless
+  udp: true
+  uuid: 05caca6c-9e97-4c0f-8edf-7b88a6e572c5
+  ws-opts:
+    headers:
+      Host: mypanel.unixzone.us
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-J500M Build/MMB29M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /
+  xudp: true
+  servername: mypanel.unixzone.us
+- fingerprint: ''
+  name: ❓ | @WhiteDNS | OT309|886KB/s|DNSOK|GPT⁺-TW
+  password: 9sK2mP8xQ7vL3nZ6
+  port: 443
+  server: 6ivh.pnuqcnp.cn
   skip-cert-verify: true
-  sni: ''
-  type: hysteria2
-  up: ''
-  disable-sni: true
+  sni: images.ctfassets.net
+  type: anytls
+  udp: true
+  username: 9sK2mP8xQ7vL3nZ6
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT280|2.2MB/s|DNSOK|GPT⁺-US
+  - ❓ | @WhiteDNS | OT308|1.6MB/s|DNSOK|GPT⁺-NL
+  - ❓ | @WhiteDNS | OT309|886KB/s|DNSOK|GPT⁺-TW
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
