@@ -13,28 +13,27 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇸🇪 | @WhiteDNS | SE40|1.6MB/s|DNSOK|GPT⁺-SE
-  password: None
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: 🇪🇪 | @WhiteDNS | EE27|829KB/s|DNSOK|GPT⁺-EE
   port: 443
-  server: 146.70.242.130
+  reality-opts:
+    public-key: 98MNvJC4t0ZjK_xHlQjOx2WfLfAPluNDb71MzS9sPT8
+    short-id: 38018dde3e27335e
+  server: 5.181.201.44
   skip-cert-verify: true
   tls: true
-  type: http
-  username: ''
-- cipher: aes-256-gcm
-  name: 🇸🇪 | @WhiteDNS | SE41|1.1MB/s|DNSOK|GPT⁺-SE
-  password: AxIYWtskJWIIaefW
-  port: 8388
-  server: 70.34.212.124
-  type: ss
+  type: vless
   udp: true
+  uuid: 47b63e55-a4e4-43ce-97dc-946e6a26971d
+  network: tcp
+  servername: bababoy.karp1pdd.life
 proxy-groups:
-- name: SE-Auto
+- name: EE-Auto
   type: url-test
   proxies:
-  - 🇸🇪 | @WhiteDNS | SE40|1.6MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE41|1.1MB/s|DNSOK|GPT⁺-SE
+  - 🇪🇪 | @WhiteDNS | EE27|829KB/s|DNSOK|GPT⁺-EE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,SE-Auto
+- MATCH,EE-Auto
