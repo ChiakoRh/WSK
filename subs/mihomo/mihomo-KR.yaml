@@ -1,9 +1,46 @@
 proxies:
+- alterId: '0'
+  cipher: auto
+  name: 🇰🇷 | @WhiteDNS | KR63|1.9MB/s|DNSOK|GPT⁺-KR
+  network: raw
+  port: 443
+  server: 140.238.2.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 🇰🇷 | @WhiteDNS | KR64|1.6MB/s|DNSOK|GPT⁺-KR
+  port: 443
+  server: 140.238.2.250
+  type: vmess
+  udp: true
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  network: tcp
 - alpn:
   - ''
   alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR290|1.7MB/s|DNSOK|GPT⁺-KR
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇰🇷 | @WhiteDNS | KR65|1.3MB/s|DNSOK|GPT⁺-KR
+  network: http
+  port: 80
+  server: 217.142.138.61
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ac1b933d-afff-4487-93ef-f57130a55dff
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 🇰🇷 | @WhiteDNS | KR66|1.3MB/s|DNSOK|GPT⁺-KR
   network: ws
   port: 80
   server: 132.145.80.230
@@ -17,58 +54,12 @@ proxies:
     path: /cctv13.m3u8
   xudp: true
   servername: kr02.a0a.xyz
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇰🇷 | @WhiteDNS | KR291|1.6MB/s|DNSOK|GPT⁺-KR
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: IfHHOvL5aYfIX_FuDpggAGTMD-CbU567fxiTkBPyXmA
-    short-id: 0c30407d613f958a
-  server: 43.108.98.29
-  tls: true
-  type: vless
-  udp: true
-  uuid: b8c16ec9-3574-46eb-a39a-fe09550710c1
-  xudp: true
-  servername: www.samsung.com
-- alpn:
-  - ''
-  alterId: '0'
+- alterId: '0'
   cipher: auto
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 🇰🇷 | @WhiteDNS | KR292|1.5MB/s|DNSOK|GPT⁺-KR
-  network: http
-  port: 80
-  server: 217.142.138.61
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ac1b933d-afff-4487-93ef-f57130a55dff
-  xudp: true
-- alterId: 0
-  cipher: auto
-  country: 🇰🇷KR
-  h2-opts: {}
-  http-opts: {}
-  name: 🇰🇷 | @WhiteDNS | KR293|1.3MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR67|1.3MB/s|DNSOK|GPT⁺-KR
   network: none
   port: 443
   server: 140.238.2.250
-  skip-cert-verify: true
-  type: vmess
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-- alterId: '0'
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR294|1.2MB/s|DNSOK|GPT⁺-KR
-  network: tcp
-  port: 443
-  server: 140.238.2.250
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -77,8 +68,8 @@ proxies:
   xudp: true
 - alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR295|609KB/s|DNSOK|GPT⁺-KR
-  network: raw
+  name: 🇰🇷 | @WhiteDNS | KR68|1.1MB/s|DNSOK|GPT⁺-KR
+  network: tcp
   port: 443
   server: 140.238.2.250
   skip-cert-verify: false
