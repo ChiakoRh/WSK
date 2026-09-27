@@ -13,7 +13,57 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇿 | @WhiteDNS | CZ11|4.0MB/s|DNSOK|GPT⁺-CZ
+- name: 🇨🇿 | @WhiteDNS | CZ14|6.1MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 80
+  server: 172.67.148.26
+  type: vless
+  udp: true
+  uuid: 95de071f-747c-dc07-36ac-5c0854a9e50e
+  ws-opts:
+    headers:
+      Host: restless-boat-ebf2.moha102030.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/47.0.2526.106 Safari/537.36
+    path: /sync
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇨🇿 | @WhiteDNS | CZ15|5.6MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 443
+  server: 172.67.214.106
+  tls: true
+  type: vless
+  udp: true
+  uuid: a8890c1b-3622-3106-c4be-d8671be32d2b
+  ws-opts:
+    headers:
+      Host: summer-meadow-af5b.woowoorrrkk.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /sync
+  xudp: true
+  servername: summer-meadow-af5b.woowoorrrkk.workers.dev
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇨🇿 | @WhiteDNS | CZ16|5.4MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 443
+  server: peekconfigg.vipserver1-39d.workers.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
+  ws-opts:
+    headers:
+      Host: peekconfigg.vipserver1-39d.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /sync
+  xudp: true
+  servername: peekconfigg.vipserver1-39d.workers.dev
+- name: 🇨🇿 | @WhiteDNS | CZ17|5.3MB/s|DNSOK|GPT⁺-CZ
   password: ''
   port: 443
   server: 185.216.35.66
@@ -25,7 +75,10 @@ proxy-groups:
 - name: CZ-Auto
   type: url-test
   proxies:
-  - 🇨🇿 | @WhiteDNS | CZ11|4.0MB/s|DNSOK|GPT⁺-CZ
+  - 🇨🇿 | @WhiteDNS | CZ14|6.1MB/s|DNSOK|GPT⁺-DE
+  - 🇨🇿 | @WhiteDNS | CZ15|5.6MB/s|DNSOK|GPT⁺-DE
+  - 🇨🇿 | @WhiteDNS | CZ16|5.4MB/s|DNSOK|GPT⁺-DE
+  - 🇨🇿 | @WhiteDNS | CZ17|5.3MB/s|DNSOK|GPT⁺-CZ
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

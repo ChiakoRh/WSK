@@ -1,0 +1,68 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇱🇰 | @WhiteDNS | LK8|834KB/s|DNSOK|GPT⁺-LK
+  network: tcp
+  port: 443
+  server: free.sahanwickramasinghe.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3d08ed67-5a47-42d3-a948-ebc7d2eb21f7
+  xudp: true
+  servername: free.sahanwickramasinghe.me
+- name: 🇱🇰 | @WhiteDNS | LK9|796KB/s|DNSOK|GPT⁺-LK
+  network: ws
+  port: 80
+  server: support.zoom.us
+  type: vless
+  udp: true
+  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  ws-opts:
+    headers:
+      Host: free.sahanwickramasinghe.me
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/56.0.2924.87 Safari/537.36
+    path: /
+  xudp: true
+  servername: support.zoom.us
+- encryption: none
+  name: 🇱🇰 | @WhiteDNS | LK10|557KB/s|DNSOK|GPT⁺-LK
+  network: ws
+  port: 80
+  server: free.sahanwickramasinghe.me
+  type: vless
+  udp: true
+  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  ws-opts:
+    headers:
+      Host: free.sahanwickramasinghe.me
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /
+  xudp: true
+proxy-groups:
+- name: LK-Auto
+  type: url-test
+  proxies:
+  - 🇱🇰 | @WhiteDNS | LK8|834KB/s|DNSOK|GPT⁺-LK
+  - 🇱🇰 | @WhiteDNS | LK9|796KB/s|DNSOK|GPT⁺-LK
+  - 🇱🇰 | @WhiteDNS | LK10|557KB/s|DNSOK|GPT⁺-LK
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,LK-Auto

@@ -1,31 +1,99 @@
 proxies:
-- alterId: 0
+- alterId: '0'
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP133|2.2MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP793|2.3MB/s|DNSOK|GPT⁺-JP
+  network: tcp
   port: 4433
   server: 45.32.57.118
+  skip-cert-verify: false
+  tls: false
   type: vmess
   udp: true
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  network: tcp
-- client-fingerprint: chrome
+  xudp: true
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP134|2.0MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 443
+  name: 🇯🇵 | @WhiteDNS | JP794|1.8MB/s|DNSOK|GPT⁺-JP
+  network: raw
+  port: 28573
   reality-opts:
-    public-key: p8VhFzvFOBAhWAEAeWmwDxT3xBSRsGYixqi0qnLFnBM
-    short-id: 21270a66
-  server: high-speed-test-01.linkpc.net
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  server: 18.183.215.124
   tls: true
   type: vless
   udp: true
-  uuid: 37615d66-5467-44a3-bc23-f2c3bef7f761
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
   xudp: true
-  servername: aws.amazon.com
+  servername: www.sony.com
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP795|1.7MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 28573
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  server: 18.183.215.124
+  tls: true
+  type: vless
+  udp: true
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  xudp: true
+  servername: www.sony.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP796|1.7MB/s|DNSOK|GPT⁺-JP
+  port: 443
+  reality-opts:
+    public-key: cZ9MxrT-CYtdhBdbGeqzcQEvWvAuKw7fEfRbR8QrOlM
+    short-id: 37bb73b5
+  server: 108.160.128.46
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: de241e4e-226e-46d5-aa79-602e11ef94d8
+  network: tcp
+  servername: www.bing.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP797|1.7MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: cZ9MxrT-CYtdhBdbGeqzcQEvWvAuKw7fEfRbR8QrOlM
+    short-id: 37bb73b5
+  server: 108.160.128.46
+  tls: true
+  type: vless
+  udp: true
+  uuid: de241e4e-226e-46d5-aa79-602e11ef94d8
+  xudp: true
+  servername: www.bing.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP798|1.6MB/s|DNSOK|GPT⁺-JP
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: cZ9MxrT-CYtdhBdbGeqzcQEvWvAuKw7fEfRbR8QrOlM
+    short-id: 37bb73b5
+  server: 108.160.128.46
+  tls: true
+  type: vless
+  udp: true
+  uuid: de241e4e-226e-46d5-aa79-602e11ef94d8
+  xudp: true
+  servername: www.bing.com
 - alterId: 0
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP135|1.7MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP799|1.6MB/s|DNSOK|GPT⁺-JP
   network: tcp
   port: 4433
   server: 45.32.57.118
@@ -36,156 +104,9 @@ proxies:
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
   xudp: true
   servername: 'null'
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP136|1.7MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: jp01.a0a.xyz
-    path: /cctv13.m3u8
-  xudp: true
-  servername: jp01.a0a.xyz
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP137|1.7MB/s|DNSOK|GPT⁺-JP
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: cZ9MxrT-CYtdhBdbGeqzcQEvWvAuKw7fEfRbR8QrOlM
-    short-id: 37bb73b5
-  server: 108.160.128.46
-  tls: true
-  type: vless
-  udp: true
-  uuid: de241e4e-226e-46d5-aa79-602e11ef94d8
-  xudp: true
-  servername: www.bing.com
-- alterId: '0'
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP138|1.7MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: jp01.a0a.xyz
-    path: /cctv13.m3u8
-  xudp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP139|1.6MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: None
-    path: /cctv13.m3u8
-  xudp: true
-  servername: None
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP140|1.3MB/s|DNSOK|GPT⁺-JP
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: p8VhFzvFOBAhWAEAeWmwDxT3xBSRsGYixqi0qnLFnBM
-    short-id: 21270a66
-  server: high-speed-test-01.linkpc.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 37615d66-5467-44a3-bc23-f2c3bef7f761
-  xudp: true
-  servername: aws.amazon.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP141|1.3MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: OkBMcL2bNv4xGTny1GEMyrPPw0zA8HKsaq_F7Ws6ljw
-    short-id: 289970eb9a114bac
-  server: 47.245.59.217
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7b7a7971-f2f7-4480-97a9-65725d0feb90
-  xudp: true
-  servername: www.nvidia.com
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP142|1.3MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: 168.138.43.75
-    path: /cctv13.m3u8
-  xudp: true
-  servername: 168.138.43.75
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP143|1.3MB/s|DNSOK|GPT⁺-JP
-  port: 443
-  reality-opts:
-    public-key: cZ9MxrT-CYtdhBdbGeqzcQEvWvAuKw7fEfRbR8QrOlM
-    short-id: 37bb73b5
-  server: 108.160.128.46
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: de241e4e-226e-46d5-aa79-602e11ef94d8
-  network: tcp
-  servername: www.bing.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP144|1.3MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: cZ9MxrT-CYtdhBdbGeqzcQEvWvAuKw7fEfRbR8QrOlM
-    short-id: 37bb73b5
-  server: 108.160.128.46
-  tls: true
-  type: vless
-  udp: true
-  uuid: de241e4e-226e-46d5-aa79-602e11ef94d8
-  xudp: true
-  servername: www.bing.com
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP145|1.2MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP800|1.5MB/s|DNSOK|GPT⁺-JP
   port: 443
   reality-opts:
     public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
@@ -198,38 +119,33 @@ proxies:
   uuid: 4192524f-09f0-414f-88fd-7a14378491c7
   network: tcp
   servername: cloudflare.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP801|1.3MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
+    short-id: 913e9b95fbc71278
+  server: 43.133.11.187
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
+  xudp: true
+  servername: cloudflare.com
 - alterId: 0
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP146|1.2MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 23462
-  server: 64.176.51.214
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 95c5abc1-018d-4628-89a7-25ab9c62ab74
-  ws-opts:
-    headers:
-      Host: 64.176.51.214
-    path: /a15206
-  xudp: true
-  servername: 64.176.51.214
-- alterId: '0'
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP147|1.2MB/s|DNSOK|GPT⁺-JP
-  network: tcp
+  name: 🇯🇵 | @WhiteDNS | JP802|1.2MB/s|DNSOK|GPT⁺-JP
   port: 4433
   server: 45.32.57.118
-  skip-cert-verify: false
-  tls: false
   type: vmess
   udp: true
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  xudp: true
+  network: tcp
 - alterId: '0'
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP148|1.2MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP803|1.1MB/s|DNSOK|GPT⁺-JP
   network: tcp#🎡90@oneclickvpnkeys
   port: 4433
   server: 45.32.57.118
@@ -239,34 +155,3 @@ proxies:
   udp: true
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
   xudp: true
-- encryption: none
-  name: 🇯🇵 | @WhiteDNS | JP149|1.0MB/s|DNSOK|GPT⁺-JP
-  network: raw
-  port: 47878
-  server: 152.69.195.67
-  type: vless
-  udp: true
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-  xudp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP150|1.0MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
-    short-id: 913e9b95fbc71278
-  server: 43.133.11.187
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
-  xudp: true
-  servername: cloudflare.com
-- name: 🇯🇵 | @WhiteDNS | JP151|731KB/s|DNSOK|GPT⁺-JP
-  port: 47878
-  server: 152.69.195.67
-  type: vless
-  udp: true
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-  network: tcp
