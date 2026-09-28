@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇧🇬 | @WhiteDNS | BG14|5.9MB/s|DNSOK|GPT⁺-BG
+- name: 🇧🇬 | @WhiteDNS | BG18|4.3MB/s|DNSOK|GPT⁺-BG
   password: ''
   port: 443
   server: 185.94.192.210
@@ -21,11 +21,43 @@ proxies:
   tls: true
   type: http
   username: ''
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇧🇬 | @WhiteDNS | BG19|2.5MB/s|DNSOK|GPT⁺-BG
+  port: 6016
+  reality-opts:
+    public-key: ZqviTSUKpqxl9htoEiix8iIH3lRB6ahvw00btl-HOSk
+    short-id: 1779b108c9eb4da7
+  server: bg.masterpgd.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d207c6c8-a278-487c-b06e-f1fc89304e6d
+  network: tcp
+  servername: play.google.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇧🇬 | @WhiteDNS | BG20|1.6MB/s|DNSOK|GPT⁺-BG
+  port: 6016
+  reality-opts:
+    public-key: ZqviTSUKpqxl9htoEiix8iIH3lRB6ahvw00btl-HOSk
+    short-id: 1779b108c9eb4da7
+  server: bg.masterpgd.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e19f406e-0f0f-4abd-9861-a3d2d213b650
+  network: tcp
+  servername: play.google.com
 proxy-groups:
 - name: BG-Auto
   type: url-test
   proxies:
-  - 🇧🇬 | @WhiteDNS | BG14|5.9MB/s|DNSOK|GPT⁺-BG
+  - 🇧🇬 | @WhiteDNS | BG18|4.3MB/s|DNSOK|GPT⁺-BG
+  - 🇧🇬 | @WhiteDNS | BG19|2.5MB/s|DNSOK|GPT⁺-BG
+  - 🇧🇬 | @WhiteDNS | BG20|1.6MB/s|DNSOK|GPT⁺-BG
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

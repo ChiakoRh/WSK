@@ -13,39 +13,28 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR48|1.7MB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 80
-  server: 132.145.80.230
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- cipher: aes-256-cfb
+  name: 🇰🇷 | @WhiteDNS | KR54|1.7MB/s|DNSOK|GPT⁺-KR
+  password: 1234!@#$
+  port: 1774
+  server: 49.254.204.134
+  type: ss
   udp: true
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  ws-opts:
-    headers: {}
-    path: /cctv13.m3u8
-  xudp: true
-  servername: kr02.a0a.xyz
-- alterId: '0'
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR49|1.5MB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 80
-  server: 132.145.80.230
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇰🇷 | @WhiteDNS | KR55|1.6MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ve9BJ1dUCdKh3kV4W1Df78AXveg2Ziyh5_ClDMYhaEQ
+    short-id: 137866fd9d22d203
+  server: 43.108.59.183
+  tls: true
+  type: vless
   udp: true
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  ws-opts:
-    headers: {}
-    path: /cctv13.m3u8
+  uuid: 14a63fc7-d415-4a81-8338-cfd06c0984de
   xudp: true
+  servername: www.logitech.com
 - alpn:
   - ''
   alterId: '0'
@@ -54,7 +43,7 @@ proxies:
     headers: {}
     path:
     - /
-  name: 🇰🇷 | @WhiteDNS | KR50|1.1MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR56|1.5MB/s|DNSOK|GPT⁺-KR
   network: http
   port: 80
   server: 217.142.138.61
@@ -64,13 +53,37 @@ proxies:
   udp: true
   uuid: ac1b933d-afff-4487-93ef-f57130a55dff
   xudp: true
+- cipher: aes-256-cfb
+  name: 🇰🇷 | @WhiteDNS | KR57|1.4MB/s|DNSOK|GPT⁺-KR
+  password: 1234!@#$
+  port: 1774
+  server: 49.254.204.133
+  type: ss
+  udp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇰🇷 | @WhiteDNS | KR58|1.3MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: VfrYrzfyQqgaVeMozagueBL7lvbbU1JB6RHfGJk4enU
+    short-id: 281c396bb44c48da
+  server: 43.108.18.193
+  tls: true
+  type: vless
+  udp: true
+  uuid: 809f043c-86cd-466d-9340-3769bc949e66
+  xudp: true
+  servername: learn.microsoft.com
 proxy-groups:
 - name: KR-Auto
   type: url-test
   proxies:
-  - 🇰🇷 | @WhiteDNS | KR48|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR49|1.5MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR50|1.1MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR54|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR55|1.6MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR56|1.5MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR57|1.4MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR58|1.3MB/s|DNSOK|GPT⁺-KR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

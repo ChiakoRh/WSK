@@ -13,26 +13,31 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- encryption: mlkem768x25519plus.native.0rtt.l3mvTzzaVMf4WsI2Esh3pPbQhYkB9CpYdSdBGsVsD0g
-  http-opts:
-    headers:
-      Host:
-      - www.eiger.io
-    path:
-    - /
-  name: 🇫🇮 | @WhiteDNS | FI89|17.8MB/s|DNSOK|GPT⁺-FI
-  network: http
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI161|17.3MB/s|DNSOK|GPT⁺-FI
+  network: ws
   port: 443
-  server: umber10.fars-remen.ir
+  server: k2.cloud--vpn.site
+  tls: true
   type: vless
   udp: true
-  uuid: 79d066ae-353b-4228-aa7b-f7c03a0686ee
+  uuid: 5b8ce557-47d6-4a57-ada2-097a795a6d19
+  ws-opts:
+    headers:
+      Host: c12.com
+      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /
   xudp: true
+  servername: ssl.fastly.com
 - alpn:
   - h2
   client-fingerprint: chrome
   encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI90|6.5MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI162|6.3MB/s|DNSOK|GPT⁺-FI
   network: ws
   port: 443
   server: 151.101.56.6
@@ -43,33 +48,75 @@ proxies:
   ws-opts:
     headers:
       Host: c12.com
-      User-Agent: Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/533.2 (KHTML,
-        like Gecko) Chrome/5.0.342.1 Safari/533.2
-    path: /?RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; vivo 1603 Build/MMB29M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36
+    path: /?TELEGRAM--KANAL--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray
   xudp: true
   servername: ssl.fastly.com
+- encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI163|6.1MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 80
+  server: 146.75.119.82
+  type: vless
+  udp: true
+  uuid: 81c957de-8fb0-49af-8205-beea6d1ce6ee
+  ws-opts:
+    headers:
+      Host: rb24.ir
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1610 Build/MMB29M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
+    path: /ws/?ed=2048/@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1/?2048
+  xudp: true
 - client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.TS04_ZUFuLeo1lJ5jwwxPu7_x2PjtcSfC1biXQvXJyM
-  name: 🇫🇮 | @WhiteDNS | FI91|4.9MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 15887
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI164|1.5MB/s|DNSOK|GPT⁺-FI
+  network: raw
+  port: 2087
   reality-opts:
-    public-key: 4nWH47Mk6-KTehelFn60I2cTF7QJe0sCwwKFbmnbJWM
-    short-id: 97acfa7a1cfd757e
-  server: fin4.speedtest-shop.ir
+    public-key: KN8tFlpIwPgJGwUCG7Pp9c9c0juYKPvNIv4kFHwqbyk
+    short-id: a32cfb5deca913ad
+  server: 95.217.24.236
   tls: true
   type: vless
   udp: true
-  uuid: 96c80c88-74ab-4599-9e16-0f4f3ba54ca6
+  uuid: 10d85f65-f8d6-4504-b1e2-94649db1577a
   xudp: true
-  servername: play.google.com
+  servername: 62.238.41.21
+- client-fingerprint: random
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI165|1.4MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 2087
+  reality-opts:
+    public-key: KN8tFlpIwPgJGwUCG7Pp9c9c0juYKPvNIv4kFHwqbyk
+    short-id: a32cfb5deca913ad
+  server: 95.217.24.236
+  tls: true
+  type: vless
+  udp: true
+  uuid: 10d85f65-f8d6-4504-b1e2-94649db1577a
+  xudp: true
+  servername: 95.217.24.236
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇮 | @WhiteDNS | FI166|1.4MB/s|DNSOK|GPT⁺-FI
+  password: 3Q1UUZhdMJ1Xi4V_348v2g
+  port: 2050
+  server: p1tun1.greewebservices.ir
+  type: ss
+  udp: true
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI89|17.8MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI90|6.5MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI91|4.9MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI161|17.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI162|6.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI163|6.1MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI164|1.5MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI165|1.4MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI166|1.4MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
