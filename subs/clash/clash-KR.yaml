@@ -14,39 +14,33 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - cipher: aes-256-cfb
-  name: 🇰🇷 | @WhiteDNS | KR180|1.9MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR57|1.7MB/s|DNSOK|GPT⁺-KR
   password: 1234!@#$
   port: 1774
   server: 49.254.204.134
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  country: 🇰🇷KR
-  h2-opts: {}
-  http-opts: {}
-  name: 🇰🇷 | @WhiteDNS | KR181|1.6MB/s|DNSOK|GPT⁺-KR
-  network: none
-  port: 443
-  server: 140.238.2.250
-  skip-cert-verify: true
-  type: vmess
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
 - alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR182|1.4MB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 80
-  server: 132.145.80.230
+  name: 🇰🇷 | @WhiteDNS | KR58|1.6MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  port: 443
+  server: 140.238.2.250
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  ws-opts:
-    headers: {}
-    path: /cctv13.m3u8
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
   xudp: true
+- alterId: 0
+  cipher: auto
+  name: 🇰🇷 | @WhiteDNS | KR59|1.6MB/s|DNSOK|GPT⁺-KR
+  port: 443
+  server: 140.238.2.250
+  type: vmess
+  udp: true
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  network: tcp
 - alpn:
   - ''
   alterId: '0'
@@ -55,7 +49,7 @@ proxies:
     headers: {}
     path:
     - /
-  name: 🇰🇷 | @WhiteDNS | KR183|1.3MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR60|1.4MB/s|DNSOK|GPT⁺-KR
   network: http
   port: 80
   server: 217.142.138.61
@@ -67,7 +61,7 @@ proxies:
   xudp: true
 - alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR184|1.3MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR61|1.0MB/s|DNSOK|GPT⁺-KR
   network: raw
   port: 443
   server: 140.238.2.250
@@ -77,57 +71,28 @@ proxies:
   udp: true
   uuid: 41a7089a-040b-4538-8b8d-010902405bde
   xudp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR185|1.3MB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 80
-  server: 132.145.80.230
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  ws-opts:
-    headers: {}
-    path: /cctv13.m3u8
-  xudp: true
-  servername: kr02.a0a.xyz
 - alterId: 0
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR186|1.2MB/s|DNSOK|GPT⁺-KR
+  country: 🇰🇷KR
+  h2-opts: {}
+  http-opts: {}
+  name: 🇰🇷 | @WhiteDNS | KR62|766KB/s|DNSOK|GPT⁺-KR
+  network: none
   port: 443
   server: 140.238.2.250
+  skip-cert-verify: true
   type: vmess
-  udp: true
   uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  network: tcp
-- alterId: '0'
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR187|1015KB/s|DNSOK|GPT⁺-KR
-  network: tcp
-  port: 443
-  server: 140.238.2.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  xudp: true
 proxy-groups:
 - name: KR-Auto
   type: url-test
   proxies:
-  - 🇰🇷 | @WhiteDNS | KR180|1.9MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR181|1.6MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR182|1.4MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR183|1.3MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR184|1.3MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR185|1.3MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR186|1.2MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR187|1015KB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR57|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR58|1.6MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR59|1.6MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR60|1.4MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR61|1.0MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR62|766KB/s|DNSOK|GPT⁺-KR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

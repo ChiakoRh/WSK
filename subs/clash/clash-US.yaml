@@ -13,45 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 | @WhiteDNS | US608|4.5MB/s|DNSOK|GPT⁺-US
-  password: eDfN7SODQceIOmIAbtJJtK
-  port: 443
-  server: 198.98.53.130
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US609|4.2MB/s|DNSOK|GPT⁺-US
-  network: tcp
-  port: 36925
-  reality-opts:
-    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-    short-id: ''
-  server: 137.184.218.169
-  tls: true
-  type: vless
-  udp: true
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
-  xudp: true
-  servername: www.cloudflare.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US610|4.1MB/s|DNSOK|GPT⁺-US
-  port: 443
-  reality-opts:
-    public-key: QtYyp41YbDij6nygTaPPpqXqEGzDD3wYFI3YlfTjfBo
-    short-id: 6b85179e
-  server: 47.90.153.88
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1e255ca5-93b1-4952-a838-0783dfc034d8
-  network: tcp
-  servername: www.apple.com
-- name: 🇺🇸 | @WhiteDNS | US611|4.0MB/s|DNSOK|GPT⁺-US
+- name: 🇺🇸 | @WhiteDNS | US512|4.5MB/s|DNSOK|GPT⁺-US
   password: e4b72b531a2d10900519
   port: 443
   server: 147.182.216.4
@@ -59,7 +21,14 @@ proxies:
   tls: true
   type: http
   username: testuser1
-- name: 🇺🇸 | @WhiteDNS | US612|3.9MB/s|DNSOK|GPT⁺-US
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸 | @WhiteDNS | US513|4.0MB/s|DNSOK|GPT⁺-US
+  password: ZoZtfPOyVvmKARUN
+  port: 8388
+  server: 140.82.63.79
+  type: ss
+  udp: true
+- name: 🇺🇸 | @WhiteDNS | US514|3.9MB/s|DNSOK|GPT⁺-US
   password: ''
   port: 443
   server: 52.55.81.168
@@ -67,42 +36,10 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇺🇸 | @WhiteDNS | US613|3.8MB/s|DNSOK|GPT⁺-US
-  password: ''
-  port: 8080
-  server: 47.253.46.218
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇺🇸 | @WhiteDNS | US614|3.4MB/s|DNSOK|GPT⁺-US
-  password: 'null'
-  port: 9002
-  server: 138.199.35.210
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 🇺🇸 | @WhiteDNS | US615|3.3MB/s|DNSOK|GPT⁺-US
-  password: 'null'
-  port: 9002
-  server: 138.199.35.207
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 🇺🇸 | @WhiteDNS | US616|3.3MB/s|DNSOK|GPT⁺-US
-  password: None
-  port: 9002
-  server: 138.199.35.213
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US617|3.3MB/s|DNSOK|GPT⁺-US
+  name: 🇺🇸 | @WhiteDNS | US515|3.7MB/s|DNSOK|GPT⁺-US
   network: raw
   port: 443
   reality-opts:
@@ -115,119 +52,81 @@ proxies:
   uuid: 1e255ca5-93b1-4952-a838-0783dfc034d8
   xudp: true
   servername: www.apple.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US618|3.2MB/s|DNSOK|GPT⁺-US
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: QtYyp41YbDij6nygTaPPpqXqEGzDD3wYFI3YlfTjfBo
-    short-id: 6b85179e
-  server: 47.90.153.88
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1e255ca5-93b1-4952-a838-0783dfc034d8
-  xudp: true
-  servername: www.apple.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US619|3.2MB/s|DNSOK|GPT⁺-US
-  network: tcp
-  port: 36925
-  reality-opts:
-    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-    short-id: ''
-  server: ww9.levikogjgfdd.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
-  xudp: true
-  servername: www.cloudflare.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US620|3.1MB/s|DNSOK|GPT⁺-US
-  network: raw
-  port: 36925
-  reality-opts:
-    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-    short-id: ''
-  server: 137.184.218.169
-  tls: true
-  type: vless
-  udp: true
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
-  xudp: true
-  servername: www.cloudflare.com
-- name: 🇺🇸 | @WhiteDNS | US621|3.1MB/s|DNSOK|GPT⁺-US
-  password: ''
-  port: 443
-  server: 149.34.248.65
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇺🇸 | @WhiteDNS | US622|3.0MB/s|DNSOK|GPT⁺-US
-  password: ''
-  port: 443
-  server: 12.202.180.10
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸 | @WhiteDNS | US623|3.0MB/s|DNSOK|GPT⁺-US
-  network: tcp
-  port: 12004
-  server: 47.85.188.30
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8b5552bd-4cc7-4cac-af08-81c21686fd4f
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US624|3.0MB/s|DNSOK|GPT⁺-US
-  network: tcp#⛑️96@oneclickvpnkeys
-  port: 443
-  reality-opts:
-    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
-    short-id: ''
-  server: 47.253.226.114
-  tls: true
-  type: vless
-  udp: true
-  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
-  xudp: true
-  servername: www.cloudflare.com
 - down: ''
   fingerprint: ''
-  name: 🇺🇸 | @WhiteDNS | US625|3.0MB/s|DNSOK|GPT⁺-US
+  name: 🇺🇸 | @WhiteDNS | US516|3.6MB/s|DNSOK|GPT⁺-US
   obfs: ''
   obfs-password: ''
-  password: bce6c821-200d-421f-bf3d-7159e5246ea0
-  port: 33333
-  server: 155.248.209.237
+  password: pbgLTkd5276SN1sZ
+  port: 8443
+  server: 144.24.46.175
   skip-cert-verify: true
-  sni: 155.248.209.2
+  sni: www.bing.com
   type: hysteria2
   up: ''
-- name: 🇺🇸 | @WhiteDNS | US626|2.9MB/s|DNSOK|GPT⁺-US
-  password: None
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇺🇸 | @WhiteDNS | US517|3.5MB/s|DNSOK|GPT⁺-US
+  port: 443
+  reality-opts:
+    public-key: QtYyp41YbDij6nygTaPPpqXqEGzDD3wYFI3YlfTjfBo
+    short-id: 6b85179e
+  server: 47.90.153.88
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1e255ca5-93b1-4952-a838-0783dfc034d8
+  network: tcp
+  servername: www.apple.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇺🇸 | @WhiteDNS | US518|3.3MB/s|DNSOK|GPT⁺-US
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: yEpPLsSy8aCXkQ4wzc9t38gQACipc_k54upD9fJj5y4
+    short-id: 4679f07417e9feb4
+  server: 47.253.144.114
+  tls: true
+  type: vless
+  udp: true
+  uuid: a4c6bab6-bd83-4b72-8c78-99e96f40cde3
+  xudp: true
+  servername: www.apple.com
+- name: 🇺🇸 | @WhiteDNS | US519|3.2MB/s|DNSOK|GPT⁺-US
+  password: ''
   port: 9002
-  server: 138.199.35.220
+  server: 138.199.35.198
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇺🇸 | @WhiteDNS | US627|2.9MB/s|DNSOK|GPT⁺-US
+- name: 🇺🇸 | @WhiteDNS | US520|3.1MB/s|DNSOK|GPT⁺-US
+  password: ''
+  port: 443
+  server: 52.15.98.63
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- cipher: 2022-blake3-aes-128-gcm
+  name: 🇺🇸 | @WhiteDNS | US521|3.0MB/s|DNSOK|GPT⁺-US
+  password: ABpp50oz/6gDZGxZQhVyKA==
+  port: 8388
+  server: 47.90.153.88
+  type: ss
+  udp: true
+- name: 🇺🇸 | @WhiteDNS | US522|3.0MB/s|DNSOK|GPT⁺-US
+  password: ''
+  port: 8443
+  server: 18.206.28.143
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇺🇸 | @WhiteDNS | US523|3.0MB/s|DNSOK|GPT⁺-US
   password: None
   port: 9002
   server: 138.199.35.215
@@ -235,29 +134,17 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇺🇸 | @WhiteDNS | US628|2.8MB/s|DNSOK|GPT⁺-US
+- name: 🇺🇸 | @WhiteDNS | US524|3.0MB/s|DNSOK|GPT⁺-US
   password: ''
   port: 9002
-  server: 138.199.35.209
+  server: 138.199.35.200
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
 - down: ''
   fingerprint: ''
-  name: 🇺🇸 | @WhiteDNS | US629|2.7MB/s|DNSOK|GPT⁺-US
-  obfs: ''
-  obfs-password: ''
-  password: bce6c821-200d-421f-bf3d-7159e5246ea0
-  port: 33333
-  server: 155.248.209.237
-  skip-cert-verify: false
-  sni: hy2.123266.xyz
-  type: hysteria2
-  up: ''
-- down: ''
-  fingerprint: ''
-  name: 🇺🇸 | @WhiteDNS | US630|2.7MB/s|DNSOK|GPT⁺-US
+  name: 🇺🇸 | @WhiteDNS | US525|2.9MB/s|DNSOK|GPT⁺-US
   obfs: ''
   obfs-password: ''
   password: bce6c821-200d-421f-bf3d-7159e5246ea0
@@ -267,10 +154,249 @@ proxies:
   sni: hy2.123266.xyz
   type: hysteria2
   up: ''
-- name: 🇺🇸 | @WhiteDNS | US631|2.7MB/s|DNSOK|GPT⁺-US
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇺🇸 | @WhiteDNS | US526|2.9MB/s|DNSOK|GPT⁺-US
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: QtYyp41YbDij6nygTaPPpqXqEGzDD3wYFI3YlfTjfBo
+    short-id: 6b85179e
+  server: 47.90.153.88
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1e255ca5-93b1-4952-a838-0783dfc034d8
+  xudp: true
+  servername: www.apple.com
+- down: ''
+  fingerprint: ''
+  name: 🇺🇸 | @WhiteDNS | US527|2.9MB/s|DNSOK|GPT⁺-US
+  obfs: ''
+  obfs-password: ''
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  port: 33333
+  server: 155.248.209.237
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+  up: ''
+  disable-sni: true
+- down: ''
+  fingerprint: ''
+  name: 🇺🇸 | @WhiteDNS | US528|2.7MB/s|DNSOK|GPT⁺-US
+  obfs: ''
+  obfs-password: ''
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  port: 33333
+  server: hy2.123266.xyz
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+  up: ''
+  disable-sni: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇺🇸 | @WhiteDNS | US529|2.7MB/s|DNSOK|GPT⁺-US
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 15.204.97.209
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  xudp: true
+  servername: fuck.rkn
+- down: ''
+  fingerprint: ''
+  name: 🇺🇸 | @WhiteDNS | US530|2.7MB/s|DNSOK|GPT⁺-US
+  obfs: ''
+  obfs-password: ''
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  port: 33333
+  server: 155.248.209.237
+  skip-cert-verify: false
+  sni: hy2.123266.xyz
+  type: hysteria2
+  up: ''
+- down: ''
+  fingerprint: ''
+  name: 🇺🇸 | @WhiteDNS | US531|2.7MB/s|DNSOK|GPT⁺-US
+  obfs: ''
+  obfs-password: ''
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  port: 33333
+  server: 155.248.209.237
+  skip-cert-verify: true
+  sni: 155.248.209.237
+  type: hysteria2
+  up: ''
+- down: ''
+  fingerprint: ''
+  name: 🇺🇸 | @WhiteDNS | US532|2.7MB/s|DNSOK|GPT⁺-US
+  obfs: ''
+  obfs-password: ''
+  password: pbgLTkd5276SN1sZ
+  port: 8443
+  server: 144.24.46.175
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+  up: ''
+  disable-sni: true
+- name: 🇺🇸 | @WhiteDNS | US533|2.7MB/s|DNSOK|GPT⁺-US
+  password: 'null'
+  port: 9002
+  server: 138.199.35.206
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇺🇸 | @WhiteDNS | US534|2.7MB/s|DNSOK|GPT⁺-US
+  network: raw
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 15.204.97.197
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  xudp: true
+  servername: fuck.rkn
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇺🇸 | @WhiteDNS | US535|2.6MB/s|DNSOK|GPT⁺-US
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 15.204.97.206
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  servername: fuck.rkn
+- name: 🇺🇸 | @WhiteDNS | US536|2.6MB/s|DNSOK|GPT⁺-US
   password: ''
   port: 9002
-  server: 138.199.35.204
+  server: 138.199.35.218
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇺🇸 | @WhiteDNS | US537|2.6MB/s|DNSOK|GPT⁺-US
+  password: ''
+  port: 9002
+  server: 138.199.35.212
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇺🇸 | @WhiteDNS | US538|2.6MB/s|DNSOK|GPT⁺-US
+  password: 'null'
+  port: 9002
+  server: 138.199.35.198
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+- down: ''
+  fingerprint: ''
+  name: 🇺🇸 | @WhiteDNS | US539|2.6MB/s|DNSOK|GPT⁺-US
+  obfs: ''
+  obfs-password: ''
+  password: pbgLTkd5276SN1sZ
+  port: 8443
+  server: 144.24.46.175
+  skip-cert-verify: true
+  sni: 144.24.46.175
+  type: hysteria2
+  up: ''
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇺🇸 | @WhiteDNS | US540|2.6MB/s|DNSOK|GPT⁺-US
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs
+    short-id: 896f52ba2cfca903
+  server: 47.251.108.158
+  tls: true
+  type: vless
+  udp: true
+  uuid: 975fc322-6e38-434b-a53c-d39fed49b9a9
+  xudp: true
+  servername: www.cloudflare.com
+- name: 🇺🇸 | @WhiteDNS | US541|2.6MB/s|DNSOK|GPT⁺-US
+  password: 'null'
+  port: 9002
+  server: 138.199.35.216
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇺🇸 | @WhiteDNS | US542|2.6MB/s|DNSOK|GPT⁺-US
+  network: raw
+  port: 42942
+  reality-opts:
+    public-key: JmkfJoDWpAqt6gj4cbc4_cwItsdryMlV7joAGfNTKQU
+    short-id: a56d7d8da977f860
+  server: 172.235.38.85
+  tls: true
+  type: vless
+  udp: true
+  uuid: bca46025-bf43-40c0-895b-054a6fbcfd32
+  xudp: true
+  servername: www.tesla.com
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸 | @WhiteDNS | US543|2.5MB/s|DNSOK|GPT⁺-US
+  password: 8tmnvX5zYuWGVIDP2jglZw
+  port: 1080
+  server: 5.78.51.123
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇺🇸 | @WhiteDNS | US544|2.5MB/s|DNSOK|GPT⁺-US
+  network: raw
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 15.204.97.206
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  xudp: true
+  servername: fuck.rkn
+- name: 🇺🇸 | @WhiteDNS | US545|2.5MB/s|DNSOK|GPT⁺-US
+  password: ''
+  port: 443
+  server: 149.88.21.129
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇺🇸 | @WhiteDNS | US546|2.5MB/s|DNSOK|GPT⁺-US
+  password: ''
+  port: 443
+  server: 68.235.56.51
   skip-cert-verify: true
   tls: true
   type: http
@@ -278,7 +404,7 @@ proxies:
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US632|2.7MB/s|DNSOK|GPT⁺-US
+  name: 🇺🇸 | @WhiteDNS | US547|2.5MB/s|DNSOK|GPT⁺-US
   network: raw
   port: 53734
   reality-opts:
@@ -291,22 +417,38 @@ proxies:
   uuid: 56a1b253-cde4-490f-9c5e-09a523882bdd
   xudp: true
   servername: www.tesla.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇺🇸 | @WhiteDNS | US548|2.5MB/s|DNSOK|GPT⁺-US
+  port: 42942
+  reality-opts:
+    public-key: JmkfJoDWpAqt6gj4cbc4_cwItsdryMlV7joAGfNTKQU
+    short-id: a56d7d8da977f860
+  server: 172.235.38.85
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: bca46025-bf43-40c0-895b-054a6fbcfd32
+  network: tcp
+  servername: www.tesla.com
 - down: ''
   fingerprint: ''
-  name: 🇺🇸 | @WhiteDNS | US633|2.6MB/s|DNSOK|GPT⁺-US
+  name: 🇺🇸 | @WhiteDNS | US549|2.5MB/s|DNSOK|GPT⁺-US
   obfs: ''
   obfs-password: ''
   password: bce6c821-200d-421f-bf3d-7159e5246ea0
   port: 33333
   server: 155.248.209.237
   skip-cert-verify: true
-  sni: 155.248.209.237
+  sni: ''
   type: hysteria2
   up: ''
+  disable-sni: true
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US634|2.6MB/s|DNSOK|GPT⁺-US
+  name: 🇺🇸 | @WhiteDNS | US550|2.4MB/s|DNSOK|GPT⁺-US
   network: tcp
   port: 443
   reality-opts:
@@ -319,186 +461,10 @@ proxies:
   uuid: 975fc322-6e38-434b-a53c-d39fed49b9a9
   xudp: true
   servername: www.cloudflare.com
-- down: ''
-  fingerprint: ''
-  name: 🇺🇸 | @WhiteDNS | US635|2.6MB/s|DNSOK|GPT⁺-US
-  obfs: ''
-  obfs-password: ''
-  password: bce6c821-200d-421f-bf3d-7159e5246ea0
-  port: 33333
-  server: hy2.123266.xyz
-  skip-cert-verify: true
-  sni: ''
-  type: hysteria2
-  up: ''
-  disable-sni: true
-- name: 🇺🇸 | @WhiteDNS | US636|2.6MB/s|DNSOK|GPT⁺-US
-  password: ''
-  port: 8443
-  server: 44.217.145.28
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 - client-fingerprint: chrome
-  encryption: none
   flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US637|2.6MB/s|DNSOK|GPT⁺-US
+  name: 🇺🇸 | @WhiteDNS | US551|2.4MB/s|DNSOK|GPT⁺-US
   network: tcp
-  port: 53734
-  reality-opts:
-    public-key: JAG5rl6KEt7KAV0y8Z2x6orWHymCXRSX49SkEnEftWU
-    short-id: a56d7d8da977f860
-  server: 172.233.139.46
-  tls: true
-  type: vless
-  udp: true
-  uuid: 56a1b253-cde4-490f-9c5e-09a523882bdd
-  xudp: true
-  servername: www.tesla.com
-- down: ''
-  fingerprint: ''
-  name: 🇺🇸 | @WhiteDNS | US638|2.6MB/s|DNSOK|GPT⁺-US
-  obfs: ''
-  obfs-password: ''
-  password: bce6c821-200d-421f-bf3d-7159e5246ea0
-  port: 33333
-  server: 155.248.209.237
-  skip-cert-verify: true
-  sni: ''
-  type: hysteria2
-  up: ''
-  disable-sni: true
-- name: 🇺🇸 | @WhiteDNS | US639|2.6MB/s|DNSOK|GPT⁺-US
-  password: None
-  port: 9002
-  server: 138.199.35.201
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇺🇸 | @WhiteDNS | US640|2.6MB/s|DNSOK|GPT⁺-US
-  password: ''
-  port: 9002
-  server: 138.199.35.198
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 | @WhiteDNS | US641|2.6MB/s|DNSOK|GPT⁺-US
-  password: 8tmnvX5zYuWGVIDP2jglZw
-  port: 1080
-  server: 5.78.51.123
-  type: ss
-  udp: true
-- name: 🇺🇸 | @WhiteDNS | US642|2.6MB/s|DNSOK|GPT⁺-US
-  password: ''
-  port: 9002
-  server: 138.199.35.197
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇺🇸 | @WhiteDNS | US643|2.6MB/s|DNSOK|GPT⁺-US
-  password: ''
-  port: 9002
-  server: 138.199.35.199
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇺🇸 | @WhiteDNS | US644|2.6MB/s|DNSOK|GPT⁺-US
-  password: ''
-  port: 9002
-  server: 138.199.35.207
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇺🇸 | @WhiteDNS | US645|2.6MB/s|DNSOK|GPT⁺-US
-  password: ''
-  port: 9002
-  server: 138.199.35.196
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US646|2.6MB/s|DNSOK|GPT⁺-US
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0
-    short-id: 4477382ff6d3d41c
-  server: 51.81.203.63
-  tls: true
-  type: vless
-  udp: true
-  uuid: cb2dbb6a-a1ea-4023-9ace-6466cee57241
-  xudp: true
-  servername: www.icloud.com
-- name: 🇺🇸 | @WhiteDNS | US647|2.6MB/s|DNSOK|GPT⁺-US
-  password: ''
-  port: 9002
-  server: 138.199.35.208
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US648|2.6MB/s|DNSOK|GPT⁺-US
-  network: raw
-  port: 28190
-  reality-opts:
-    public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
-    short-id: ''
-  server: 159.89.87.21
-  tls: true
-  type: vless
-  udp: true
-  uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
-  xudp: true
-  servername: aws.amazon.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US649|2.5MB/s|DNSOK|GPT⁺-US
-  network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 15.204.97.214
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  xudp: true
-  servername: fuck.rkn
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US650|2.5MB/s|DNSOK|GPT⁺-US
-  network: raw
-  port: 53957
-  reality-opts:
-    public-key: XUHlbk5VH5z4E2wxZBhlpLZ33qevyQgqU7dheRDgoGQ
-    short-id: 44e82fd7b97b14
-  server: 172.235.43.210
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7ab29f89-6eef-4171-b232-fc4f580ad31b
-  xudp: true
-  servername: www.nvidia.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US651|2.5MB/s|DNSOK|GPT⁺-US
-  network: raw
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
@@ -510,159 +476,9 @@ proxies:
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   xudp: true
   servername: fuck.rkn
-- name: 🇺🇸 | @WhiteDNS | US652|2.5MB/s|DNSOK|GPT⁺-US
-  password: ''
-  port: 443
-  server: 149.88.21.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇺🇸 | @WhiteDNS | US653|2.5MB/s|DNSOK|GPT⁺-US
-  password: ''
-  port: 443
-  server: 20.42.108.114
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US654|2.5MB/s|DNSOK|GPT⁺-US
-  network: tcp#3👝@oneclickvpnkeys
-  port: 53957
-  reality-opts:
-    public-key: XUHlbk5VH5z4E2wxZBhlpLZ33qevyQgqU7dheRDgoGQ
-    short-id: 44e82fd7b97b14
-  server: 172.235.43.210
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7ab29f89-6eef-4171-b232-fc4f580ad31b
-  xudp: true
-  servername: www.nvidia.com
-- name: 🇺🇸 | @WhiteDNS | US655|2.5MB/s|DNSOK|GPT⁺-US
-  password: 'null'
-  port: 9002
-  server: 138.199.35.216
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US656|2.4MB/s|DNSOK|GPT⁺-US
-  network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: ''
-  server: 15.204.97.197
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  xudp: true
-  servername: fuck.rkn
-- name: 🇺🇸 | @WhiteDNS | US657|2.4MB/s|DNSOK|GPT⁺-US
-  password: ''
-  port: 9002
-  server: 138.199.35.202
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇺🇸 | @WhiteDNS | US658|2.4MB/s|DNSOK|GPT⁺-US
-  password: None
-  port: 9002
-  server: 138.199.35.200
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇺🇸 | @WhiteDNS | US659|2.4MB/s|DNSOK|GPT⁺-US
-  password: ''
-  port: 9002
-  server: 138.199.35.206
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇺🇸 | @WhiteDNS | US660|2.4MB/s|DNSOK|GPT⁺-US
-  password: 'null'
-  port: 9002
-  server: 138.199.35.206
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US661|2.4MB/s|DNSOK|GPT⁺-US
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs
-    short-id: 896f52ba2cfca903
-  server: 47.251.108.158
-  tls: true
-  type: vless
-  udp: true
-  uuid: 975fc322-6e38-434b-a53c-d39fed49b9a9
-  xudp: true
-  servername: www.cloudflare.com
-- name: 🇺🇸 | @WhiteDNS | US662|2.4MB/s|DNSOK|GPT⁺-US
-  password: ''
-  port: 9002
-  server: 138.199.35.195
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇺🇸 | @WhiteDNS | US663|2.4MB/s|DNSOK|GPT⁺-US
-  password: 'null'
-  port: 9002
-  server: 138.199.35.198
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US664|2.4MB/s|DNSOK|GPT⁺-US
-  network: raw
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 15.204.97.216
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  xudp: true
-  servername: fuck.rkn
-- name: 🇺🇸 | @WhiteDNS | US665|2.4MB/s|DNSOK|GPT⁺-US
-  password: ''
-  port: 9002
-  server: 138.199.35.219
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇺🇸 | @WhiteDNS | US666|2.4MB/s|DNSOK|GPT⁺-US
-  password: ''
-  port: 9002
-  server: 138.199.35.203
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US667|2.4MB/s|DNSOK|GPT⁺-US
+  name: 🇺🇸 | @WhiteDNS | US552|2.4MB/s|DNSOK|GPT⁺-US
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
@@ -675,46 +491,38 @@ proxies:
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   network: tcp
   servername: fuck.rkn
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 | @WhiteDNS | US668|2.4MB/s|DNSOK|GPT⁺-US
-  password: ZoZtfPOyVvmKARUN
-  port: 8388
-  server: 140.82.63.79
-  type: ss
-  udp: true
-- name: 🇺🇸 | @WhiteDNS | US669|2.4MB/s|DNSOK|GPT⁺-US
-  password: ''
-  port: 9002
-  server: 138.199.35.212
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇺🇸 | @WhiteDNS | US670|2.4MB/s|DNSOK|GPT⁺-US
-  password: None
-  port: 9002
-  server: 138.199.35.216
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇺🇸 | @WhiteDNS | US671|2.3MB/s|DNSOK|GPT⁺-US
-  password: ''
-  port: 443
-  server: 68.235.56.51
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇺🇸 | @WhiteDNS | US672|2.3MB/s|DNSOK|GPT⁺-US
-  password: ''
+- name: 🇺🇸 | @WhiteDNS | US553|2.4MB/s|DNSOK|GPT⁺-US
+  password: 'null'
   port: 9002
   server: 138.199.35.211
   skip-cert-verify: true
   tls: true
   type: http
-  username: ''
-- name: 🇺🇸 | @WhiteDNS | US673|2.3MB/s|DNSOK|GPT⁺-US
+  username: 'null'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇺🇸 | @WhiteDNS | US554|2.4MB/s|DNSOK|GPT⁺-US
+  port: 443
+  reality-opts:
+    public-key: yEpPLsSy8aCXkQ4wzc9t38gQACipc_k54upD9fJj5y4
+    short-id: 4679f07417e9feb4
+  server: 47.253.144.114
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: a4c6bab6-bd83-4b72-8c78-99e96f40cde3
+  network: tcp
+  servername: www.apple.com
+- name: 🇺🇸 | @WhiteDNS | US555|2.4MB/s|DNSOK|GPT⁺-US
+  password: 'null'
+  port: 9002
+  server: 138.199.35.197
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+- name: 🇺🇸 | @WhiteDNS | US556|2.4MB/s|DNSOK|GPT⁺-US
   password: 'null'
   port: 9002
   server: 138.199.35.214
@@ -722,48 +530,185 @@ proxies:
   tls: true
   type: http
   username: 'null'
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US674|2.3MB/s|DNSOK|GPT⁺-US
-  network: tcp
-  port: 42942
-  reality-opts:
-    public-key: JmkfJoDWpAqt6gj4cbc4_cwItsdryMlV7joAGfNTKQU
-    short-id: a56d7d8da977f860
-  server: 172.235.38.85
-  tls: true
-  type: vless
-  udp: true
-  uuid: bca46025-bf43-40c0-895b-054a6fbcfd32
-  xudp: true
-  servername: www.tesla.com
-- name: 🇺🇸 | @WhiteDNS | US675|2.3MB/s|DNSOK|GPT⁺-US
+- name: 🇺🇸 | @WhiteDNS | US557|2.4MB/s|DNSOK|GPT⁺-US
   password: None
   port: 9002
-  server: 138.199.35.217
+  server: 138.199.35.202
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US676|2.3MB/s|DNSOK|GPT⁺-US
-  network: tcp
+  name: 🇺🇸 | @WhiteDNS | US558|2.4MB/s|DNSOK|GPT⁺-US
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   server: 15.204.97.198
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  servername: fuck.rkn
+- name: 🇺🇸 | @WhiteDNS | US559|2.4MB/s|DNSOK|GPT⁺-US
+  password: 'null'
+  port: 9002
+  server: 138.199.35.220
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+- name: 🇺🇸 | @WhiteDNS | US560|2.4MB/s|DNSOK|GPT⁺-US
+  password: ''
+  port: 443
+  server: 20.42.108.114
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇺🇸 | @WhiteDNS | US561|2.4MB/s|DNSOK|GPT⁺-US
+  password: None
+  port: 9002
+  server: 138.199.35.195
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇺🇸 | @WhiteDNS | US562|2.4MB/s|DNSOK|GPT⁺-US
+  password: None
+  port: 9002
+  server: 138.199.35.201
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇺🇸 | @WhiteDNS | US563|2.3MB/s|DNSOK|GPT⁺-US
+  port: 53957
+  reality-opts:
+    public-key: XUHlbk5VH5z4E2wxZBhlpLZ33qevyQgqU7dheRDgoGQ
+    short-id: 44e82fd7b97b14
+  server: 172.235.43.210
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7ab29f89-6eef-4171-b232-fc4f580ad31b
+  network: tcp
+  servername: www.nvidia.com
+- name: 🇺🇸 | @WhiteDNS | US564|2.3MB/s|DNSOK|GPT⁺-US
+  password: ''
+  port: 443
+  server: 162.217.114.50
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- down: ''
+  fingerprint: ''
+  name: 🇺🇸 | @WhiteDNS | US565|2.3MB/s|DNSOK|GPT⁺-US
+  obfs: ''
+  obfs-password: ''
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  port: 33333
+  server: 155.248.209.237
+  skip-cert-verify: true
+  sni: 155.248.209.2
+  type: hysteria2
+  up: ''
+- name: 🇺🇸 | @WhiteDNS | US566|2.1MB/s|DNSOK|GPT⁺-US
+  password: ''
+  port: 9443
+  server: 38.95.111.226
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇺🇸 | @WhiteDNS | US567|2.1MB/s|DNSOK|GPT⁺-US
+  password: ''
+  port: 9443
+  server: 198.44.138.27
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇺🇸 | @WhiteDNS | US568|2.0MB/s|DNSOK|GPT⁺-US
+  network: tcp#3👝@oneclickvpnkeys
+  port: 53957
+  reality-opts:
+    public-key: XUHlbk5VH5z4E2wxZBhlpLZ33qevyQgqU7dheRDgoGQ
+    short-id: 44e82fd7b97b14
+  server: 172.235.43.210
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7ab29f89-6eef-4171-b232-fc4f580ad31b
+  xudp: true
+  servername: www.nvidia.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇺🇸 | @WhiteDNS | US569|1.9MB/s|DNSOK|GPT⁺-US
+  network: tcp
+  port: 53734
+  reality-opts:
+    public-key: JAG5rl6KEt7KAV0y8Z2x6orWHymCXRSX49SkEnEftWU
+    short-id: a56d7d8da977f860
+  server: 172.233.139.46
+  tls: true
+  type: vless
+  udp: true
+  uuid: 56a1b253-cde4-490f-9c5e-09a523882bdd
+  xudp: true
+  servername: www.tesla.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇺🇸 | @WhiteDNS | US570|1.9MB/s|DNSOK|GPT⁺-US
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: ''
+  server: 15.204.97.197
   tls: true
   type: vless
   udp: true
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   xudp: true
   servername: fuck.rkn
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸 | @WhiteDNS | US571|1.9MB/s|DNSOK|GPT⁺-US
+  network: ws
+  port: 39495
+  server: 129.146.77.248
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  ws-opts:
+    headers: {}
+    path: /cctv13.m3u8
+  xudp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸 | @WhiteDNS | US572|1.8MB/s|DNSOK|GPT⁺-US
+  password: eDfN7SODQceIOmIAbtJJtK
+  port: 443
+  server: 198.98.53.130
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 | @WhiteDNS | US677|2.3MB/s|DNSOK|GPT⁺-US
+  name: 🇺🇸 | @WhiteDNS | US573|1.8MB/s|DNSOK|GPT⁺-US
   network: ws
   port: 39495
   server: 129.146.77.248
@@ -778,157 +723,93 @@ proxies:
     path: /cctv13.m3u8
   xudp: true
   servername: 129.146.77.248
-- name: 🇺🇸 | @WhiteDNS | US678|2.3MB/s|DNSOK|GPT⁺-US
-  password: ''
-  port: 9443
-  server: 38.95.111.226
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US679|2.2MB/s|DNSOK|GPT⁺-US
-  port: 56565
+  name: 🇺🇸 | @WhiteDNS | US574|1.6MB/s|DNSOK|GPT⁺-US
+  network: tcp
+  port: 23576
   reality-opts:
-    public-key: Td03Ae-cuYLq4xg7MSps58c_yRUcbbwtZLXm0ywabjY
-    short-id: ''
-  server: 147.182.212.232
-  skip-cert-verify: true
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 15.204.97.198
   tls: true
   type: vless
   udp: true
-  uuid: 7b188eea-b08f-42c2-bac7-d3b0e74218b8
-  network: tcp
-  servername: www.paypal.com
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇺🇸 | @WhiteDNS | US680|1.9MB/s|DNSOK|GPT⁺-US
-  network: ws
-  port: 39495
-  server: 129.146.77.248
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  ws-opts:
-    headers:
-      Host: 129.146.77.248
-    path: /cctv13.m3u8
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   xudp: true
+  servername: fuck.rkn
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US681|1.8MB/s|DNSOK|GPT⁺-US
+  name: 🇺🇸 | @WhiteDNS | US575|1.6MB/s|DNSOK|GPT⁺-US
   network: raw
-  port: 42942
-  reality-opts:
-    public-key: JmkfJoDWpAqt6gj4cbc4_cwItsdryMlV7joAGfNTKQU
-    short-id: a56d7d8da977f860
-  server: 172.235.38.85
-  tls: true
-  type: vless
-  udp: true
-  uuid: bca46025-bf43-40c0-895b-054a6fbcfd32
-  xudp: true
-  servername: www.tesla.com
-- cipher: 2022-blake3-aes-128-gcm
-  name: 🇺🇸 | @WhiteDNS | US682|1.7MB/s|DNSOK|GPT⁺-US
-  password: ABpp50oz/6gDZGxZQhVyKA==
-  port: 8388
-  server: 47.90.153.88
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US683|1.7MB/s|DNSOK|GPT⁺-US
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-  server: 15.204.97.206
-  skip-cert-verify: true
+  server: 15.204.97.219
   tls: true
   type: vless
   udp: true
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
+  xudp: true
   servername: fuck.rkn
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US684|1.7MB/s|DNSOK|GPT⁺-US
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0
-    short-id: 4477382ff6d3d41c
-  server: 51.81.203.63
-  tls: true
-  type: vless
-  udp: true
-  uuid: cb2dbb6a-a1ea-4023-9ace-6466cee57241
-  xudp: true
-  servername: www.icloud.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US685|1.7MB/s|DNSOK|GPT⁺-US
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 15.204.97.216
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  servername: fuck.rkn
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US686|1.7MB/s|DNSOK|GPT⁺-US
-  port: 443
-  reality-opts:
-    public-key: nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0
-    short-id: 4477382ff6d3d41c
-  server: 51.81.203.63
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: cb2dbb6a-a1ea-4023-9ace-6466cee57241
-  network: tcp
-  servername: www.icloud.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US687|1.7MB/s|DNSOK|GPT⁺-US
-  network: tcp
-  port: 28190
-  reality-opts:
-    public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
-    short-id: ''
-  server: 159.89.87.21
-  tls: true
-  type: vless
-  udp: true
-  uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
-  xudp: true
-  servername: aws.amazon.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US688|1.6MB/s|DNSOK|GPT⁺-US
+  name: 🇺🇸 | @WhiteDNS | US576|1.5MB/s|DNSOK|GPT⁺-US
   network: raw
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   server: 15.204.97.198
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  xudp: true
+  servername: fuck.rkn
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇺🇸 | @WhiteDNS | US577|1.5MB/s|DNSOK|GPT⁺-US
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: ww13.levikogjgfdd.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  xudp: true
+  servername: fuck.rkn
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇺🇸 | @WhiteDNS | US578|1.5MB/s|DNSOK|GPT⁺-US
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 15.204.97.195
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  servername: fuck.rkn
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇺🇸 | @WhiteDNS | US579|1.5MB/s|DNSOK|GPT⁺-US
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 15.204.97.214
   tls: true
   type: vless
   udp: true
@@ -936,53 +817,124 @@ proxies:
   xudp: true
   servername: fuck.rkn
 - client-fingerprint: firefox
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US689|1.6MB/s|DNSOK|GPT⁺-US
+  name: 🇺🇸 | @WhiteDNS | US580|1.5MB/s|DNSOK|GPT⁺-US
+  network: tcp
+  port: 53957
+  reality-opts:
+    public-key: XUHlbk5VH5z4E2wxZBhlpLZ33qevyQgqU7dheRDgoGQ
+    short-id: 44e82fd7b97b14
+  server: 172.235.43.210
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7ab29f89-6eef-4171-b232-fc4f580ad31b
+  xudp: true
+  servername: www.nvidia.com
+- name: 🇺🇸 | @WhiteDNS | US581|1.5MB/s|DNSOK|GPT⁺-US
+  password: ''
+  port: 443
+  server: 12.202.180.10
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇺🇸 | @WhiteDNS | US582|1.5MB/s|DNSOK|GPT⁺-US
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 15.204.97.209
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  servername: fuck.rkn
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇺🇸 | @WhiteDNS | US583|1.5MB/s|DNSOK|GPT⁺-US
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 15.204.97.206
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  xudp: true
+  servername: fuck.rkn
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇺🇸 | @WhiteDNS | US584|1.4MB/s|DNSOK|GPT⁺-US
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 15.204.97.195
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  xudp: true
+  servername: fuck.rkn
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 | @WhiteDNS | US585|1.3MB/s|DNSOK|GPT⁺-US
+  network: tcp
+  port: 48111
+  server: 129.146.143.80
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  xudp: true
+  servername: 129.146.143.80
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇺🇸 | @WhiteDNS | US586|1.3MB/s|DNSOK|GPT⁺-US
+  network: tcp
   port: 42942
   reality-opts:
     public-key: JmkfJoDWpAqt6gj4cbc4_cwItsdryMlV7joAGfNTKQU
     short-id: a56d7d8da977f860
   server: 172.235.38.85
-  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: bca46025-bf43-40c0-895b-054a6fbcfd32
-  network: tcp
+  xudp: true
   servername: www.tesla.com
 - client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US690|1.6MB/s|DNSOK|GPT⁺-US
+  name: 🇺🇸 | @WhiteDNS | US587|1.3MB/s|DNSOK|GPT⁺-US
+  network: raw
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-  server: 15.204.97.198
-  skip-cert-verify: true
+  server: 15.204.97.195
   tls: true
   type: vless
   udp: true
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
+  xudp: true
   servername: fuck.rkn
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US691|1.6MB/s|DNSOK|GPT⁺-US
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 15.204.97.219
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  servername: fuck.rkn
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US692|1.5MB/s|DNSOK|GPT⁺-US
+  name: 🇺🇸 | @WhiteDNS | US588|1.3MB/s|DNSOK|GPT⁺-US
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
@@ -996,307 +948,131 @@ proxies:
   network: tcp
   servername: fuck.rkn
 - client-fingerprint: chrome
-  encryption: none
   flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US693|1.5MB/s|DNSOK|GPT⁺-US
+  name: 🇺🇸 | @WhiteDNS | US589|1.3MB/s|DNSOK|GPT⁺-US
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 15.204.97.219
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 15.204.97.195
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  xudp: true
   servername: fuck.rkn
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US694|1.5MB/s|DNSOK|GPT⁺-US
-  network: raw
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 15.204.97.197
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  xudp: true
-  servername: fuck.rkn
-- name: 🇺🇸 | @WhiteDNS | US695|1.5MB/s|DNSOK|GPT⁺-US
+- name: 🇺🇸 | @WhiteDNS | US590|1.0MB/s|DNSOK|GPT⁺-US
   password: ''
   port: 442
   server: 54.235.192.64
   skip-cert-verify: true
   type: http
   username: ''
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US696|1.5MB/s|DNSOK|GPT⁺-US
-  network: raw
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 15.204.97.206
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  xudp: true
-  servername: fuck.rkn
-- name: 🇺🇸 | @WhiteDNS | US697|1.5MB/s|DNSOK|GPT⁺-US
-  password: ''
-  port: 443
-  server: 162.217.114.50
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US698|1.3MB/s|DNSOK|GPT⁺-US
-  network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 15.204.97.216
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  xudp: true
-  servername: fuck.rkn
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US699|1.3MB/s|DNSOK|GPT⁺-US
-  network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 15.204.97.219
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  xudp: true
-  servername: fuck.rkn
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US700|1.3MB/s|DNSOK|GPT⁺-US
-  network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 15.204.97.206
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  xudp: true
-  servername: fuck.rkn
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US701|1.3MB/s|DNSOK|GPT⁺
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 15.204.97.195
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  servername: fuck.rkn
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US702|1.3MB/s|DNSOK|GPT⁺-US
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 15.204.97.197
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  servername: fuck.rkn
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US703|1.2MB/s|DNSOK|GPT⁺-US
-  port: 53957
-  reality-opts:
-    public-key: XUHlbk5VH5z4E2wxZBhlpLZ33qevyQgqU7dheRDgoGQ
-    short-id: 44e82fd7b97b14
-  server: 172.235.43.210
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7ab29f89-6eef-4171-b232-fc4f580ad31b
-  network: tcp
-  servername: www.nvidia.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US704|1.2MB/s|DNSOK|GPT⁺-US
-  network: raw
-  port: 36925
-  reality-opts:
-    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-    short-id: ''
-  server: ww9.levikogjgfdd.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
-  xudp: true
-  servername: www.cloudflare.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸 | @WhiteDNS | US705|985KB/s|DNSOK|GPT⁺
-  network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: ww13.levikogjgfdd.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  xudp: true
-  servername: fuck.rkn
 - down: ''
   fingerprint: ''
-  name: 🇺🇸 | @WhiteDNS | US706|755KB/s|DNSOK|GPT⁺-US
+  name: 🇺🇸 | @WhiteDNS | US591|936KB/s|DNSOK|GPT⁺-US
   obfs: ''
   obfs-password: ''
-  password: pbgLTkd5276SN1sZ
+  password: suAmQS9LlInNq4Wumh-FUF4GGlpgmG_g
   port: 8443
-  server: 144.24.46.175
+  server: 159.223.157.129
   skip-cert-verify: true
-  sni: www.bing.com
+  sni: www.microsoft.com
   type: hysteria2
   up: ''
+- name: 🇺🇸 | @WhiteDNS | US592|686KB/s|DNSOK|GPT⁺-US
+  password: ''
+  port: 8282
+  server: 208.95.22.65
+  skip-cert-verify: true
+  type: http
+  username: ''
 proxy-groups:
 - name: US-Auto
   type: url-test
   proxies:
-  - 🇺🇸 | @WhiteDNS | US608|4.5MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US609|4.2MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US610|4.1MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US611|4.0MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US612|3.9MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US613|3.8MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US614|3.4MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US615|3.3MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US616|3.3MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US617|3.3MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US618|3.2MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US619|3.2MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US620|3.1MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US621|3.1MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US622|3.0MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US623|3.0MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US624|3.0MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US625|3.0MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US626|2.9MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US627|2.9MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US628|2.8MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US629|2.7MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US630|2.7MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US631|2.7MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US632|2.7MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US633|2.6MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US634|2.6MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US635|2.6MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US636|2.6MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US637|2.6MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US638|2.6MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US639|2.6MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US640|2.6MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US641|2.6MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US642|2.6MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US643|2.6MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US644|2.6MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US645|2.6MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US646|2.6MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US647|2.6MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US648|2.6MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US649|2.5MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US650|2.5MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US651|2.5MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US652|2.5MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US653|2.5MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US654|2.5MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US655|2.5MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US656|2.4MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US657|2.4MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US658|2.4MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US659|2.4MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US660|2.4MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US661|2.4MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US662|2.4MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US663|2.4MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US664|2.4MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US665|2.4MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US666|2.4MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US667|2.4MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US668|2.4MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US669|2.4MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US670|2.4MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US671|2.3MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US672|2.3MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US673|2.3MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US674|2.3MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US675|2.3MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US676|2.3MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US677|2.3MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US678|2.3MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US679|2.2MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US680|1.9MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US681|1.8MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US682|1.7MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US683|1.7MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US684|1.7MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US685|1.7MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US686|1.7MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US687|1.7MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US688|1.6MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US689|1.6MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US690|1.6MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US691|1.6MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US692|1.5MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US693|1.5MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US694|1.5MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US695|1.5MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US696|1.5MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US697|1.5MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US698|1.3MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US699|1.3MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US700|1.3MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US701|1.3MB/s|DNSOK|GPT⁺
-  - 🇺🇸 | @WhiteDNS | US702|1.3MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US703|1.2MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US704|1.2MB/s|DNSOK|GPT⁺-US
-  - 🇺🇸 | @WhiteDNS | US705|985KB/s|DNSOK|GPT⁺
-  - 🇺🇸 | @WhiteDNS | US706|755KB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US512|4.5MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US513|4.0MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US514|3.9MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US515|3.7MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US516|3.6MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US517|3.5MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US518|3.3MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US519|3.2MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US520|3.1MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US521|3.0MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US522|3.0MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US523|3.0MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US524|3.0MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US525|2.9MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US526|2.9MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US527|2.9MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US528|2.7MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US529|2.7MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US530|2.7MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US531|2.7MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US532|2.7MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US533|2.7MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US534|2.7MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US535|2.6MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US536|2.6MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US537|2.6MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US538|2.6MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US539|2.6MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US540|2.6MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US541|2.6MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US542|2.6MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US543|2.5MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US544|2.5MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US545|2.5MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US546|2.5MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US547|2.5MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US548|2.5MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US549|2.5MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US550|2.4MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US551|2.4MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US552|2.4MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US553|2.4MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US554|2.4MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US555|2.4MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US556|2.4MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US557|2.4MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US558|2.4MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US559|2.4MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US560|2.4MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US561|2.4MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US562|2.4MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US563|2.3MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US564|2.3MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US565|2.3MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US566|2.1MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US567|2.1MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US568|2.0MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US569|1.9MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US570|1.9MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US571|1.9MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US572|1.8MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US573|1.8MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US574|1.6MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US575|1.6MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US576|1.5MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US577|1.5MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US578|1.5MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US579|1.5MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US580|1.5MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US581|1.5MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US582|1.5MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US583|1.5MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US584|1.4MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US585|1.3MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US586|1.3MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US587|1.3MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US588|1.3MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US589|1.3MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US590|1.0MB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US591|936KB/s|DNSOK|GPT⁺-US
+  - 🇺🇸 | @WhiteDNS | US592|686KB/s|DNSOK|GPT⁺-US
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
