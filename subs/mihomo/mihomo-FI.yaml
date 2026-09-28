@@ -1,95 +1,14 @@
 proxies:
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI161|17.3MB/s|DNSOK|GPT⁺-FI
-  network: ws
+- encryption: mlkem768x25519plus.random.0rtt.swY_aKEuuHUHKO0BHVV2uot-UFbtrXpLWr7g8uZk0xk
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇫🇮 | @WhiteDNS | FI131|6.4MB/s|DNSOK|GPT⁺-FI
+  network: http
   port: 443
-  server: k2.cloud--vpn.site
-  tls: true
+  server: 65.109.198.201
   type: vless
   udp: true
-  uuid: 5b8ce557-47d6-4a57-ada2-097a795a6d19
-  ws-opts:
-    headers:
-      Host: c12.com
-      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
-    path: /
+  uuid: 97ca5df4-6b6e-41d9-ac01-216caaa50357
   xudp: true
-  servername: ssl.fastly.com
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI162|6.3MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 443
-  server: 151.101.56.6
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5b8ce557-47d6-4a57-ada2-097a795a6d19
-  ws-opts:
-    headers:
-      Host: c12.com
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; vivo 1603 Build/MMB29M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36
-    path: /?TELEGRAM--KANAL--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray
-  xudp: true
-  servername: ssl.fastly.com
-- encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI163|6.1MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 80
-  server: 146.75.119.82
-  type: vless
-  udp: true
-  uuid: 81c957de-8fb0-49af-8205-beea6d1ce6ee
-  ws-opts:
-    headers:
-      Host: rb24.ir
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1610 Build/MMB29M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
-    path: /ws/?ed=2048/@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1/?2048
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI164|1.5MB/s|DNSOK|GPT⁺-FI
-  network: raw
-  port: 2087
-  reality-opts:
-    public-key: KN8tFlpIwPgJGwUCG7Pp9c9c0juYKPvNIv4kFHwqbyk
-    short-id: a32cfb5deca913ad
-  server: 95.217.24.236
-  tls: true
-  type: vless
-  udp: true
-  uuid: 10d85f65-f8d6-4504-b1e2-94649db1577a
-  xudp: true
-  servername: 62.238.41.21
-- client-fingerprint: random
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI165|1.4MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 2087
-  reality-opts:
-    public-key: KN8tFlpIwPgJGwUCG7Pp9c9c0juYKPvNIv4kFHwqbyk
-    short-id: a32cfb5deca913ad
-  server: 95.217.24.236
-  tls: true
-  type: vless
-  udp: true
-  uuid: 10d85f65-f8d6-4504-b1e2-94649db1577a
-  xudp: true
-  servername: 95.217.24.236
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇮 | @WhiteDNS | FI166|1.4MB/s|DNSOK|GPT⁺-FI
-  password: 3Q1UUZhdMJ1Xi4V_348v2g
-  port: 2050
-  server: p1tun1.greewebservices.ir
-  type: ss
-  udp: true
