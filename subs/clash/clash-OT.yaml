@@ -13,43 +13,19 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- encryption: none
-  name: ❓ | @WhiteDNS | OT335|18.7MB/s|DNSOK|GPT⁺-NL
-  network: ws
-  port: 80
-  server: SC-TheNetherlands1.09vpn.com
-  type: vless
-  udp: true
-  uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
-  ws-opts:
-    headers:
-      Host: SC-TheNetherlands1.09vpn.com
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/41.0.2272.76 Safari/537.36
-    path: /vless/
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT336|1013KB/s|DNSOK|GPT⁺-LT
-  network: raw
+- name: ❓ | @WhiteDNS | OT363|1.9MB/s|DNSOK|GPT⁺-DE
+  password: ''
   port: 443
-  reality-opts:
-    public-key: UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8
-    short-id: dbb2ef1c7c
-  server: 94.176.234.161
+  server: 79.76.126.155
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: d448490d-4ee6-442f-80e1-5e1c186c4ce1
-  xudp: true
-  servername: www.intel.com
+  type: http
+  username: ''
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT335|18.7MB/s|DNSOK|GPT⁺-NL
-  - ❓ | @WhiteDNS | OT336|1013KB/s|DNSOK|GPT⁺-LT
+  - ❓ | @WhiteDNS | OT363|1.9MB/s|DNSOK|GPT⁺-DE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
