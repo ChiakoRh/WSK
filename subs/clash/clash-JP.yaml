@@ -13,104 +13,159 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP121|2.4MB/s|DNSOK|GPT⁺-JP
-  network: ws
+- client-fingerprint: edge
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP788|1.3MB/s|DNSOK|GPT⁺-JP
+  network: raw
   port: 443
-  server: 162.159.135.1
+  reality-opts:
+    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
+    short-id: 913e9b95fbc71278
+  server: 43.133.11.187
   tls: true
   type: vless
   udp: true
-  uuid: bb1be788-6b00-47c8-a96e-c828f3a33de4
-  ws-opts:
-    headers:
-      Host: d3b866e4.69lover.site
-      User-Agent: Mozilla/5.0 (Windows NT 5.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /api/v2/671d8a5bccaf636f/stream
+  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
   xudp: true
-  servername: d3b866e4.69lover.site
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP122|2.1MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 23462
-  server: 64.176.51.214
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+  servername: cloudflare.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP789|1.3MB/s|DNSOK|GPT⁺-JP
+  port: 33561
+  reality-opts:
+    public-key: 158SMilJQo8T-Fi8-T1354xZsVFCYxA8dXQstKbIdVs
+    short-id: 6b9e61372a82002c
+  server: 13.158.67.183
+  skip-cert-verify: true
+  tls: true
+  type: vless
   udp: true
-  uuid: 95c5abc1-018d-4628-89a7-25ab9c62ab74
-  ws-opts:
-    headers:
-      Host: 64.176.51.214
-    path: /a15206
-  xudp: true
-  servername: 64.176.51.214
-- encryption: none
-  name: 🇯🇵 | @WhiteDNS | JP123|1.4MB/s|DNSOK|GPT⁺-JP
+  uuid: d00d9d18-20cf-4191-be76-6f73d43a27ec
   network: tcp
-  port: 47878
-  server: 152.69.195.67
+  servername: www.cloudflare.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP790|1.2MB/s|DNSOK|GPT⁺-JP
+  port: 443
+  reality-opts:
+    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
+    short-id: 913e9b95fbc71278
+  server: 43.133.11.187
+  skip-cert-verify: true
+  tls: true
   type: vless
   udp: true
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-  xudp: true
-  servername: 152.69.195.67
-- alterId: '0'
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP124|1.4MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 23462
-  server: 64.176.51.214
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
+  network: tcp
+  servername: cloudflare.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP791|1.2MB/s|DNSOK|GPT⁺-JP
+  port: 38830
+  reality-opts:
+    public-key: 5E5p5boHrgCyBlt5qZPX1XozU9I90JoBgS4zmXngllI
+    short-id: ac12ed79
+  server: 13.230.30.102
+  skip-cert-verify: true
+  tls: true
+  type: vless
   udp: true
-  uuid: 95c5abc1-018d-4628-89a7-25ab9c62ab74
-  ws-opts:
-    headers:
-      Host: 64.176.51.214
-    path: /a15206
-  xudp: true
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP125|1.1MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+  uuid: d00d9d18-20cf-4191-be76-6f73d43a27ec
+  network: tcp
+  servername: www.cloudflare.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP792|1.2MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 33561
+  reality-opts:
+    public-key: 158SMilJQo8T-Fi8-T1354xZsVFCYxA8dXQstKbIdVs
+    short-id: 6b9e61372a82002c
+  server: 13.158.67.183
+  tls: true
+  type: vless
   udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: none
-    path: /cctv13.m3u8
+  uuid: d00d9d18-20cf-4191-be76-6f73d43a27ec
   xudp: true
-  servername: none
-- encryption: none
-  name: 🇯🇵 | @WhiteDNS | JP126|923KB/s|DNSOK|GPT⁺-JP
+  servername: www.cloudflare.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP793|1.0MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 38830
+  reality-opts:
+    public-key: 5E5p5boHrgCyBlt5qZPX1XozU9I90JoBgS4zmXngllI
+    short-id: ac12ed79
+  server: 13.230.30.102
+  tls: true
+  type: vless
+  udp: true
+  uuid: d00d9d18-20cf-4191-be76-6f73d43a27ec
+  xudp: true
+  servername: www.cloudflare.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP794|1008KB/s|DNSOK|GPT⁺-JP
   network: raw
-  port: 47878
-  server: 152.69.195.67
+  port: 11690
+  reality-opts:
+    public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
+    short-id: 034885e346fd30
+  server: 13.231.19.51
+  tls: true
   type: vless
   udp: true
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
   xudp: true
+  servername: www.tesla.com
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP795|790KB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
+    short-id: 913e9b95fbc71278
+  server: 43.133.11.187
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
+  xudp: true
+  servername: cloudflare.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP796|706KB/s|DNSOK|GPT⁺-JP
+  network: raw
+  port: 28573
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  server: 18.183.215.124
+  tls: true
+  type: vless
+  udp: true
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  xudp: true
+  servername: www.sony.com
 proxy-groups:
 - name: JP-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP121|2.4MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP122|2.1MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP123|1.4MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP124|1.4MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP125|1.1MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP126|923KB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP788|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP789|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP790|1.2MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP791|1.2MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP792|1.2MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP793|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP794|1008KB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP795|790KB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP796|706KB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

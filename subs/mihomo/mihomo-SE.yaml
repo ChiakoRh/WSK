@@ -1,5 +1,12 @@
 proxies:
-- name: 🇸🇪 | @WhiteDNS | SE31|15.7MB/s|DNSOK|GPT⁺-SE
+- cipher: aes-256-gcm
+  name: 🇸🇪 | @WhiteDNS | SE42|16.4MB/s|DNSOK|GPT⁺-SE
+  password: AxIYWtskJWIIaefW
+  port: 8388
+  server: 70.34.212.124
+  type: ss
+  udp: true
+- name: 🇸🇪 | @WhiteDNS | SE43|16.1MB/s|DNSOK|GPT⁺-SE
   password: None
   port: 443
   server: 146.70.242.130
@@ -7,10 +14,31 @@ proxies:
   tls: true
   type: http
   username: ''
-- cipher: aes-256-gcm
-  name: 🇸🇪 | @WhiteDNS | SE32|6.0MB/s|DNSOK|GPT⁺-SE
-  password: AxIYWtskJWIIaefW
-  port: 8388
-  server: 70.34.212.124
-  type: ss
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇸🇪 | @WhiteDNS | SE44|5.1MB/s|DNSOK|GPT⁺-SE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: xwLNHc6jBOg5Ddr1LezwY7I45nP485Qfu1YJXMKwVnI
+    short-id: 330a464a00000000
+  server: 212.147.245.198
+  tls: true
+  type: vless
   udp: true
+  uuid: 042d2d08-2973-5d10-97ad-3b75f16bbe54
+  xudp: true
+  servername: online.1c.ru
+- down: ''
+  fingerprint: ''
+  name: 🇸🇪 | @WhiteDNS | SE45|2.3MB/s|DNSOK|GPT⁺-SE
+  obfs: ''
+  obfs-password: ''
+  password: ODM2MzExOTcyMCwxNzkwNTMyNzE0ksak7YOGMD
+  port: 8227
+  server: 84.252.100.204
+  skip-cert-verify: false
+  sni: sw.lumenvpn.tech
+  type: hysteria2
+  up: ''
