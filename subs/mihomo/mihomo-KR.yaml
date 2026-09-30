@@ -3,7 +3,23 @@ proxies:
   - ''
   alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR45|2.0MB/s|DNSOK|GPT⁺-KR
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇰🇷 | @WhiteDNS | KR321|1.7MB/s|DNSOK|GPT⁺-KR
+  network: http
+  port: 80
+  server: 217.142.138.61
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ac1b933d-afff-4487-93ef-f57130a55dff
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 🇰🇷 | @WhiteDNS | KR322|1.5MB/s|DNSOK|GPT⁺-KR
   network: ws
   port: 80
   server: 132.145.80.230
@@ -19,58 +35,26 @@ proxies:
   servername: kr02.a0a.xyz
 - alterId: 0
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR46|1.7MB/s|DNSOK|GPT⁺-KR
-  network: raw
-  port: 443
-  server: 140.238.2.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  xudp: true
-- alterId: 0
-  cipher: auto
   country: 🇰🇷KR
   h2-opts: {}
   http-opts: {}
-  name: 🇰🇷 | @WhiteDNS | KR47|1.7MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR323|1.4MB/s|DNSOK|GPT⁺-KR
   network: none
   port: 443
   server: 140.238.2.250
   skip-cert-verify: true
   type: vmess
   uuid: 41a7089a-040b-4538-8b8d-010902405bde
-- alterId: 0
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR48|1.5MB/s|DNSOK|GPT⁺-KR
-  port: 443
-  server: 140.238.2.250
-  type: vmess
+- cipher: aes-256-cfb
+  name: 🇰🇷 | @WhiteDNS | KR324|1.3MB/s|DNSOK|GPT⁺-KR
+  password: 1234!@#$
+  port: 1774
+  server: 49.254.204.133
+  type: ss
   udp: true
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  network: tcp
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 🇰🇷 | @WhiteDNS | KR49|1.4MB/s|DNSOK|GPT⁺-KR
-  network: http
-  port: 80
-  server: 217.142.138.61
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ac1b933d-afff-4487-93ef-f57130a55dff
-  xudp: true
 - alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR50|1.3MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR325|673KB/s|DNSOK|GPT⁺-KR
   network: tcp
   port: 443
   server: 140.238.2.250
@@ -79,21 +63,4 @@ proxies:
   type: vmess
   udp: true
   uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  xudp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR51|1.0MB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 80
-  server: 132.145.80.230
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  ws-opts:
-    headers: {}
-    path: /cctv13.m3u8
   xudp: true
