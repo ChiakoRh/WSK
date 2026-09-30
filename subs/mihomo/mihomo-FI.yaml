@@ -1,8 +1,23 @@
 proxies:
 - client-fingerprint: chrome
   encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI53|16.8MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 2053
+  reality-opts:
+    public-key: fY4zG7EPbiRzlabmT4p_LFuHj6vfMAEdxNoCt-bCPz8
+    short-id: 5c56ebc08e4ad1d9
+  server: ff.ketabkhan24.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: d02fcca7-e77f-42f1-94bf-5545eec68f0a
+  xudp: true
+  servername: play.google.com
+- client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI62|13.9MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI54|16.8MB/s|DNSOK|GPT⁺-FI
   network: tcp
   port: 443
   reality-opts:
@@ -15,37 +30,9 @@ proxies:
   uuid: 3ba22938-7323-48ef-a981-7092171dc60e
   xudp: true
   servername: Miro.com
-- name: 🇫🇮 | @WhiteDNS | FI63|6.0MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 80
-  server: 95.216.182.249
-  type: vless
-  udp: true
-  uuid: c65a693c-0685-423a-9e08-2b0f037bcbe7
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; WAS-LX3 Build/HUAWEIWAS-LX3)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /
-  xudp: true
-- name: 🇫🇮 | @WhiteDNS | FI64|5.8MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 80
-  server: 65.109.251.9
-  type: vless
-  udp: true
-  uuid: 002d2e68-8995-4d4d-8b02-224cf73c18f5
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; TRT-LX3 Build/HUAWEITRT-LX3) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /
-  xudp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI65|5.6MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI55|14.9MB/s|DNSOK|GPT⁺-FI
   port: 443
   reality-opts:
     public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
@@ -58,18 +45,39 @@ proxies:
   uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
   network: tcp
   servername: web.eitaa.com
-- name: 🇫🇮 | @WhiteDNS | FI66|5.4MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 1085
-  server: smart.avenone.ir
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - dynu.com
+    path:
+    - /
+  name: 🇫🇮 | @WhiteDNS | FI56|6.3MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 41580
+  server: fl-m2.starzone.ir
   type: vless
   udp: true
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  uuid: cfd0c89a-8c2d-4cfa-adaf-1f945ca73012
   xudp: true
-- client-fingerprint: chrome
+- client-fingerprint: edge
   encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI57|6.1MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 29247
+  reality-opts:
+    public-key: NpgXDQ6jl_HGPdHAHFeiBl5Ym7bywxmw_EYovmFjVQs
+    short-id: c077229044b68285
+  server: fl-m2.starzone.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: cfd0c89a-8c2d-4cfa-adaf-1f945ca73012
+  xudp: true
+  servername: ajax.googleapis.com
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI67|5.0MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI58|5.6MB/s|DNSOK|GPT⁺-FI
   network: tcp
   port: 443
   reality-opts:
@@ -80,21 +88,4 @@ proxies:
   type: vless
   udp: true
   uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  xudp: true
   servername: web.eitaa.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI68|4.6MB/s|DNSOK|GPT⁺-FI
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: 1U9eTADaumTYxiO9NifVHUv5mbMowU2NSjgc2rBdvHo
-    short-id: 7a0300af51a1c4cf
-  server: 65.109.199.174
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3ba22938-7323-48ef-a981-7092171dc60e
-  xudp: true
-  servername: Miro.com

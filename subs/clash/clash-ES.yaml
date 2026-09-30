@@ -13,7 +13,30 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇪🇸 | @WhiteDNS | ES31|19.5MB/s|DNSOK|GPT⁺-ES
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - dynu.com
+    path:
+    - /
+  name: 🇪🇸 | @WhiteDNS | ES35|22.6MB/s|DNSOK|GPT⁺-ES
+  network: http
+  port: 41580
+  server: sp7.d1.starzone.ir
+  type: vless
+  udp: true
+  uuid: cfd0c89a-8c2d-4cfa-adaf-1f945ca73012
+  xudp: true
+- name: 🇪🇸 | @WhiteDNS | ES36|18.6MB/s|DNSOK|GPT⁺-ES
+  password: ''
+  port: 443
+  server: 130.195.250.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇪🇸 | @WhiteDNS | ES37|6.5MB/s|DNSOK|GPT⁺-ES
   password: ''
   port: 443
   server: 130.195.250.34
@@ -21,8 +44,8 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇪🇸 | @WhiteDNS | ES32|5.1MB/s|DNSOK|GPT⁺-ES
-  password: None
+- name: 🇪🇸 | @WhiteDNS | ES38|5.8MB/s|DNSOK|GPT⁺-ES
+  password: ''
   port: 443
   server: 82.102.17.178
   skip-cert-verify: true
@@ -33,8 +56,10 @@ proxy-groups:
 - name: ES-Auto
   type: url-test
   proxies:
-  - 🇪🇸 | @WhiteDNS | ES31|19.5MB/s|DNSOK|GPT⁺-ES
-  - 🇪🇸 | @WhiteDNS | ES32|5.1MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES35|22.6MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES36|18.6MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES37|6.5MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES38|5.8MB/s|DNSOK|GPT⁺-ES
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
