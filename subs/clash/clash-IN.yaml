@@ -13,14 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇳 | @WhiteDNS | IN38|2.7MB/s|DNSOK|GPT⁺-IN
-  password: ''
-  port: 1088
-  server: 144.24.111.128
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- name: 🇮🇳 | @WhiteDNS | IN39|1.3MB/s|DNSOK|GPT⁺-IN
+- name: 🇮🇳 | @WhiteDNS | IN45|2.9MB/s|DNSOK|GPT⁺-IN
   password: ''
   port: 443
   server: 165.231.253.66
@@ -28,12 +21,37 @@ proxies:
   tls: true
   type: http
   username: ''
+- name: 🇮🇳 | @WhiteDNS | IN46|2.6MB/s|DNSOK|GPT⁺-IN
+  password: ''
+  port: 443
+  server: 165.231.253.210
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇮🇳 | @WhiteDNS | IN47|2.6MB/s|DNSOK|GPT⁺-IN
+  password: ''
+  port: 1088
+  server: 144.24.111.128
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- name: 🇮🇳 | @WhiteDNS | IN48|763KB/s|DNSOK|GPT⁺-IN
+  password: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
+  port: 443
+  server: as-yindu01.y1static-content-distribution.shop
+  skip-cert-verify: true
+  sni: as-yindu01.y1static-content-distribution.shop
+  type: anytls
+  udp: true
 proxy-groups:
 - name: IN-Auto
   type: url-test
   proxies:
-  - 🇮🇳 | @WhiteDNS | IN38|2.7MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN39|1.3MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN45|2.9MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN46|2.6MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN47|2.6MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN48|763KB/s|DNSOK|GPT⁺-IN
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

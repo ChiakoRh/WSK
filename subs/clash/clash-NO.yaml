@@ -1,0 +1,57 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇳🇴 | @WhiteDNS | NO27|20.7MB/s|DNSOK|GPT⁺-NO
+  network: raw
+  port: 8765
+  reality-opts:
+    public-key: Da_s-Cgqm5kqaIbCgXVJdrq_KF7fCQveRByRhKUzonc
+    short-id: 7bf47eabf939728b
+  server: 89.185.81.95
+  tls: true
+  type: vless
+  udp: true
+  uuid: df9f5aca-eda0-428f-a752-e53866153d12
+  xudp: true
+  servername: r-b8a34c.vless.monster
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇳🇴 | @WhiteDNS | NO28|19.7MB/s|DNSOK|GPT⁺-NO
+  network: tcp
+  port: 8765
+  reality-opts:
+    public-key: Da_s-Cgqm5kqaIbCgXVJdrq_KF7fCQveRByRhKUzonc
+    short-id: 7bf47eabf939728b
+  server: 89.185.81.95
+  tls: true
+  type: vless
+  udp: true
+  uuid: df9f5aca-eda0-428f-a752-e53866153d12
+  xudp: true
+  servername: r-b8a34c.vless.monster
+proxy-groups:
+- name: NO-Auto
+  type: url-test
+  proxies:
+  - 🇳🇴 | @WhiteDNS | NO27|20.7MB/s|DNSOK|GPT⁺-NO
+  - 🇳🇴 | @WhiteDNS | NO28|19.7MB/s|DNSOK|GPT⁺-NO
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,NO-Auto
