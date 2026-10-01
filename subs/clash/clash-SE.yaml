@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇸🇪 | @WhiteDNS | SE36|16.3MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE34|15.5MB/s|DNSOK|GPT⁺-SE
   password: None
   port: 443
   server: 146.70.242.146
@@ -21,7 +21,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇸🇪 | @WhiteDNS | SE37|5.0MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE35|15.4MB/s|DNSOK|GPT⁺-SE
   password: ''
   port: 443
   server: 146.70.242.130
@@ -29,12 +29,25 @@ proxies:
   tls: true
   type: http
   username: ''
+- down: ''
+  fingerprint: ''
+  name: 🇸🇪 | @WhiteDNS | SE36|1023KB/s|DNSOK|GPT⁺-SE
+  obfs: ''
+  obfs-password: ''
+  password: QFO6ZOwTxjvD8ITXouHLh_Rrp-QC3rXnZRTnShz_GcJPRsPXQ4QV456o1TN6ISbN
+  port: 8443
+  server: 45.151.101.197
+  skip-cert-verify: false
+  sni: hy2.70.34.213.83.nip.io
+  type: hysteria2
+  up: ''
 proxy-groups:
 - name: SE-Auto
   type: url-test
   proxies:
-  - 🇸🇪 | @WhiteDNS | SE36|16.3MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE37|5.0MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE34|15.5MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE35|15.4MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE36|1023KB/s|DNSOK|GPT⁺-SE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

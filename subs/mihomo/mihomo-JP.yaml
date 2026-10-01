@@ -1,7 +1,106 @@
 proxies:
+- name: 🇯🇵 | @WhiteDNS | JP463|1.9MB/s|DNSOK|GPT⁺-JP
+  password: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
+  port: 65308
+  server: jpglobal-identity-federation-auth.younai-ytl.shop
+  skip-cert-verify: true
+  sni: jp11.pulsarcore.site
+  type: anytls
+  udp: true
 - alterId: '0'
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP786|1.7MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP464|1.7MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: jp01.a0a.xyz
+    path: /cctv13.m3u8
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP465|1.7MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: 168.138.43.75
+    path: /cctv13.m3u8
+  xudp: true
+  servername: 168.138.43.75
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP466|1.4MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
+    short-id: 913e9b95fbc71278
+  server: 43.133.11.187
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
+  xudp: true
+  servername: cloudflare.com
+- client-fingerprint: edge
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP467|1.3MB/s|DNSOK|GPT⁺-JP
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
+    short-id: 913e9b95fbc71278
+  server: 43.133.11.187
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
+  xudp: true
+  servername: cloudflare.com
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP468|1.3MB/s|DNSOK|GPT⁺-JP
+  port: 4433
+  server: 45.32.57.118
+  type: vmess
+  udp: true
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  network: tcp
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP469|1.3MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: none
+    path: /cctv13.m3u8
+  xudp: true
+  servername: none
+- alterId: '0'
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP470|1.2MB/s|DNSOK|GPT⁺-JP
   network: tcp
   port: 4433
   server: 45.32.57.118
@@ -11,9 +110,31 @@ proxies:
   udp: true
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
   xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP471|1.1MB/s|DNSOK|GPT⁺-JP
+  network: tcp#🎡90@oneclickvpnkeys
+  port: 4433
+  server: 45.32.57.118
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  xudp: true
+- fingerprint: ''
+  name: 🇯🇵 | @WhiteDNS | JP472|1.1MB/s|DNSOK|GPT⁺-JP
+  password: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
+  port: 53274
+  server: jp-02-hdja-kido.younai-ytl.shop
+  skip-cert-verify: true
+  sni: jp33.swiftrelay.cc
+  type: anytls
+  udp: true
+  username: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
 - alterId: 0
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP787|1.7MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP473|1.1MB/s|DNSOK|GPT⁺-JP
   network: tcp
   port: 4433
   server: 45.32.57.118
@@ -24,117 +145,18 @@ proxies:
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
   xudp: true
   servername: 'null'
-- fingerprint: ''
-  name: 🇯🇵 | @WhiteDNS | JP788|1.4MB/s|DNSOK|GPT⁺-JP
-  password: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
-  port: 53274
-  server: jp-02-hdja-kido.younai-ytl.shop
-  skip-cert-verify: true
-  sni: jp33.swiftrelay.cc
-  type: anytls
-  udp: true
-  username: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
-- client-fingerprint: edge
-  encryption: none
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP789|1.3MB/s|DNSOK|GPT⁺-JP
-  network: raw
+  name: 🇯🇵 | @WhiteDNS | JP474|1.0MB/s|DNSOK|GPT⁺-JP
   port: 443
   reality-opts:
     public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
     short-id: 913e9b95fbc71278
   server: 43.133.11.187
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
-  xudp: true
-  servername: cloudflare.com
-- alterId: '0'
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP790|1.3MB/s|DNSOK|GPT⁺-JP
-  network: tcp#🎡90@oneclickvpnkeys
-  port: 4433
-  server: 45.32.57.118
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP791|1.2MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
-    short-id: 913e9b95fbc71278
-  server: 43.133.11.187
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
-  xudp: true
-  servername: cloudflare.com
-- client-fingerprint: random
-  name: 🇯🇵 | @WhiteDNS | JP792|1.1MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 52226
-  reality-opts:
-    public-key: Y0aqDtPHb_inkRBkx1hs5yxMZX9_dZr4t_sGGIU8mmM
-    short-id: d6
-  server: 45.76.215.91
-  tls: true
-  type: vless
-  udp: true
-  uuid: 88dde62f-b4aa-4e59-84c3-1024f838e1c9
-  xudp: true
-  servername: www.intel.com
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP793|1.1MB/s|DNSOK|GPT⁺-JP
-  port: 4433
-  server: 45.32.57.118
-  type: vmess
-  udp: true
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  network: tcp
-- client-fingerprint: random
-  encryption: none
-  name: 🇯🇵 | @WhiteDNS | JP794|1.0MB/s|DNSOK|GPT⁺-JP
-  network: raw
-  port: 52226
-  reality-opts:
-    public-key: Y0aqDtPHb_inkRBkx1hs5yxMZX9_dZr4t_sGGIU8mmM
-    short-id: d6
-  server: 45.76.215.91
-  tls: true
-  type: vless
-  udp: true
-  uuid: 88dde62f-b4aa-4e59-84c3-1024f838e1c9
-  xudp: true
-  servername: www.intel.com
-- client-fingerprint: random
-  name: 🇯🇵 | @WhiteDNS | JP795|1.0MB/s|DNSOK|GPT⁺-JP
-  port: 52226
-  reality-opts:
-    public-key: Y0aqDtPHb_inkRBkx1hs5yxMZX9_dZr4t_sGGIU8mmM
-    short-id: d6
-  server: 45.76.215.91
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 88dde62f-b4aa-4e59-84c3-1024f838e1c9
+  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
   network: tcp
-  servername: www.intel.com
-- name: 🇯🇵 | @WhiteDNS | JP796|981KB/s|DNSOK|GPT⁺-JP
-  password: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
-  port: 65308
-  server: jpglobal-identity-federation-auth.younai-ytl.shop
-  skip-cert-verify: true
-  sni: jp11.pulsarcore.site
-  type: anytls
-  udp: true
+  servername: cloudflare.com

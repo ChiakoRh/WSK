@@ -1,0 +1,32 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- name: 🇵🇭 | @WhiteDNS | PH3|988KB/s|DNSOK|GPT⁺-PH
+  password: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
+  port: 17930
+  server: yazhouany02.downapptwo.cc
+  skip-cert-verify: true
+  sni: flv02.swiftrelay.cc
+  type: anytls
+  udp: true
+proxy-groups:
+- name: PH-Auto
+  type: url-test
+  proxies:
+  - 🇵🇭 | @WhiteDNS | PH3|988KB/s|DNSOK|GPT⁺-PH
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,PH-Auto

@@ -1,46 +1,15 @@
 proxies:
-- name: 🇨🇦 | @WhiteDNS | CA264|4.0MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 443
-  server: 206.223.183.21
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA265|3.8MB/s|DNSOK|GPT⁺-CA
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  skip-cert-verify: true
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦 | @WhiteDNS | CA162|3.9MB/s|DNSOK|GPT⁺-CA
+  password: FD3rCuOsxOay
+  port: 8388
+  server: 15.235.75.71
+  type: ss
   udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  network: tcp
-  servername: google.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA266|3.8MB/s|DNSOK|GPT⁺-CA
-  network: raw
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  tls: true
-  type: vless
-  udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  xudp: true
-  servername: google.com
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA267|3.8MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA163|3.8MB/s|DNSOK|GPT⁺-CA
   network: tcp#1⛑️@oneclickvpnkeys
   port: 41373
   reality-opts:
@@ -53,35 +22,9 @@ proxies:
   uuid: a71c8954-66a8-4321-bedb-2336230d81ce
   xudp: true
   servername: google.com
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA268|3.1MB/s|DNSOK|GPT⁺-CA
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
-    short-id: af7e79b5
-  server: 66.70.179.124
-  tls: true
-  type: vless
-  udp: true
-  uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
-  xudp: true
-  servername: www.apple.com
-- name: 🇨🇦 | @WhiteDNS | CA269|2.9MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 9443
-  server: 198.44.157.27
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA270|2.7MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA164|3.8MB/s|DNSOK|GPT⁺-CA
   network: tcp
   port: 41373
   reality-opts:
@@ -93,46 +36,22 @@ proxies:
   udp: true
   uuid: a71c8954-66a8-4321-bedb-2336230d81ce
   servername: google.com
-- name: 🇨🇦 | @WhiteDNS | CA271|2.4MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 9443
-  server: 23.169.224.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA272|2.4MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 443
-  server: 206.223.183.13
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA273|1.9MB/s|DNSOK|GPT⁺-CA
-  port: 443
+  name: 🇨🇦 | @WhiteDNS | CA165|3.7MB/s|DNSOK|GPT⁺-CA
+  port: 41373
   reality-opts:
-    public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
-    short-id: af7e79b5
-  server: 66.70.179.124
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
   network: tcp
-  servername: www.apple.com
-- name: 🇨🇦 | @WhiteDNS | CA274|1.7MB/s|DNSOK|GPT⁺-CA
-  network: tcp
-  port: 8080
-  server: milo.rubinaz.xyz
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  xudp: true
-- name: 🇨🇦 | @WhiteDNS | CA275|1.7MB/s|DNSOK|GPT⁺-CA
+  servername: google.com
+- name: 🇨🇦 | @WhiteDNS | CA166|3.0MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 443
   server: 206.223.161.47
@@ -140,29 +59,53 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA276|1.7MB/s|DNSOK|GPT⁺-CA
-  port: 8080
-  server: milo.rubinaz.xyz
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  network: tcp
 - client-fingerprint: chrome
-  encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA277|1.3MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA167|3.0MB/s|DNSOK|GPT⁺-CA
   network: raw
-  port: 443
+  port: 41373
   reality-opts:
-    public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
-    short-id: af7e79b5
-  server: 66.70.179.124
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
   tls: true
   type: vless
   udp: true
-  uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
   xudp: true
-  servername: www.apple.com
+  servername: google.com
+- name: 🇨🇦 | @WhiteDNS | CA168|2.5MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 443
+  server: 206.223.183.13
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA169|2.5MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 443
+  server: 206.223.183.21
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA170|2.5MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 9443
+  server: 23.169.224.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA171|2.3MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 9443
+  server: 198.44.157.27
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 - encryption: none
   http-opts:
     headers:
@@ -170,7 +113,7 @@ proxies:
       - connectivitycheck.android.com
     path:
     - /
-  name: 🇨🇦 | @WhiteDNS | CA278|943KB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA172|600KB/s|DNSOK|GPT⁺-CA
   network: http
   port: 20018
   server: us-vpnstore.rovilo.ir
