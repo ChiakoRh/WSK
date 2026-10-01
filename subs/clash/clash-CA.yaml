@@ -13,98 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦 | @WhiteDNS | CA162|3.9MB/s|DNSOK|GPT⁺-CA
-  password: FD3rCuOsxOay
-  port: 8388
-  server: 15.235.75.71
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA163|3.8MB/s|DNSOK|GPT⁺-CA
-  network: tcp#1⛑️@oneclickvpnkeys
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  tls: true
-  type: vless
-  udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  xudp: true
-  servername: google.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA164|3.8MB/s|DNSOK|GPT⁺-CA
-  network: tcp
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  tls: true
-  type: vless
-  udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  servername: google.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA165|3.7MB/s|DNSOK|GPT⁺-CA
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  network: tcp
-  servername: google.com
-- name: 🇨🇦 | @WhiteDNS | CA166|3.0MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 443
-  server: 206.223.161.47
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA167|3.0MB/s|DNSOK|GPT⁺-CA
-  network: raw
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  tls: true
-  type: vless
-  udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  xudp: true
-  servername: google.com
-- name: 🇨🇦 | @WhiteDNS | CA168|2.5MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 443
-  server: 206.223.183.13
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA169|2.5MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 443
-  server: 206.223.183.21
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA170|2.5MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA60|4.4MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 9443
   server: 23.169.224.34
@@ -112,7 +21,23 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA171|2.3MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA61|3.0MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 443
+  server: 206.223.161.47
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA62|3.0MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 443
+  server: 206.223.183.13
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA63|3.0MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 9443
   server: 198.44.157.27
@@ -120,36 +45,40 @@ proxies:
   tls: true
   type: http
   username: ''
-- encryption: none
-  http-opts:
-    headers:
-      Host:
-      - connectivitycheck.android.com
-    path:
-    - /
-  name: 🇨🇦 | @WhiteDNS | CA172|600KB/s|DNSOK|GPT⁺-CA
-  network: http
-  port: 20018
-  server: us-vpnstore.rovilo.ir
+- name: 🇨🇦 | @WhiteDNS | CA64|1.8MB/s|DNSOK|GPT⁺-CA
+  port: 8080
+  server: milo.rubinaz.xyz
   type: vless
   udp: true
-  uuid: 452f869f-7720-47c3-a175-b6673e31d3e8
-  xudp: true
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  network: tcp
+- name: 🇨🇦 | @WhiteDNS | CA65|1.7MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 443
+  server: 23.169.224.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA66|1.2MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 443
+  server: 206.223.183.21
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 proxy-groups:
 - name: CA-Auto
   type: url-test
   proxies:
-  - 🇨🇦 | @WhiteDNS | CA162|3.9MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA163|3.8MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA164|3.8MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA165|3.7MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA166|3.0MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA167|3.0MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA168|2.5MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA169|2.5MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA170|2.5MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA171|2.3MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA172|600KB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA60|4.4MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA61|3.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA62|3.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA63|3.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA64|1.8MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA65|1.7MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA66|1.2MB/s|DNSOK|GPT⁺-CA
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

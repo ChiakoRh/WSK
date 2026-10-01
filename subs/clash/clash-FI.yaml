@@ -13,114 +13,42 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇫🇮 | @WhiteDNS | FI74|20.7MB/s|DNSOK|GPT⁺-FI
+- name: 🇫🇮 | @WhiteDNS | FI56|7.1MB/s|DNSOK|GPT⁺-FI
+  port: 1085
+  server: 77.42.20.51
+  type: vless
+  udp: true
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  network: tcp
+- name: 🇫🇮 | @WhiteDNS | FI57|2.7MB/s|DNSOK|GPT⁺-FI
   network: tcp
   port: 1085
   server: 77.42.20.51
   type: vless
   udp: true
   uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
-  xudp: true
 - encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI75|20.3MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 1085
-  server: smart.avenone.ir
+  name: 🇫🇮 | @WhiteDNS | FI58|1.1MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 1280
+  server: 77.42.28.120
   type: vless
   udp: true
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
-  xudp: true
-- encryption: none
-  http-opts:
+  uuid: 3721913e-0ab1-4ee5-a05d-c9e85c72311c
+  ws-opts:
     headers:
-      Host:
-      - dynu.com
-    path:
-    - /@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---
-  name: 🇫🇮 | @WhiteDNS | FI76|19.6MB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 9094
-  server: 65.109.178.171
-  type: vless
-  udp: true
-  uuid: 7b760357-d569-4d02-9de6-7b1c0bfae1b8
-  xudp: true
-- name: 🇫🇮 | @WhiteDNS | FI77|19.0MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 1085
-  server: 204.168.147.195
-  type: vless
-  udp: true
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI78|16.9MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  server: 65.109.28.164
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  xudp: true
-  servername: web.eitaa.com
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI79|6.2MB/s|DNSOK|GPT⁺-FI
-  port: 443
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  server: 65.109.28.164
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  network: tcp
-  servername: web.eitaa.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI80|6.1MB/s|DNSOK|GPT⁺-FI
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  server: 65.109.28.164
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  xudp: true
-  servername: web.eitaa.com
-- encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI81|2.7MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 49092
-  server: 65.109.187.18
-  type: vless
-  udp: true
-  uuid: b7e7ed42-5b9d-462d-8e54-5a4bd46f6822
+      Host: is1-ssl.mzstatic.com
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/49.0.2623.87 Safari/537.36
+    path: /
   xudp: true
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI74|20.7MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI75|20.3MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI76|19.6MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI77|19.0MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI78|16.9MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI79|6.2MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI80|6.1MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI81|2.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI56|7.1MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI57|2.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI58|1.1MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
