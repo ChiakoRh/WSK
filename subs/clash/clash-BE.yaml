@@ -13,7 +13,38 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇧🇪 | @WhiteDNS | BE5|6.1MB/s|DNSOK|GPT⁺-BE
+- encryption: none
+  name: 🇧🇪 | @WhiteDNS | BE9|20.9MB/s|DNSOK|GPT⁺-BE
+  network: ws
+  port: 2086
+  server: 104.21.64.198
+  type: vless
+  udp: true
+  uuid: 73796e63-0000-4000-8000-000000000007
+  ws-opts:
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.71 Safari/537.36
+    path: /sync
+  xudp: true
+- encryption: none
+  name: 🇧🇪 | @WhiteDNS | BE10|19.7MB/s|DNSOK|GPT⁺-BE
+  network: ws
+  port: 2095
+  server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+  type: vless
+  udp: true
+  uuid: 73796e63-0000-4000-8000-000000000008
+  ws-opts:
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.110 Safari/537.36
+    path: /sync
+  xudp: true
+  servername: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: 🇧🇪 | @WhiteDNS | BE11|5.8MB/s|DNSOK|GPT⁺-BE
   password: ''
   port: 443
   server: 146.70.176.242
@@ -25,7 +56,9 @@ proxy-groups:
 - name: BE-Auto
   type: url-test
   proxies:
-  - 🇧🇪 | @WhiteDNS | BE5|6.1MB/s|DNSOK|GPT⁺-BE
+  - 🇧🇪 | @WhiteDNS | BE9|20.9MB/s|DNSOK|GPT⁺-BE
+  - 🇧🇪 | @WhiteDNS | BE10|19.7MB/s|DNSOK|GPT⁺-BE
+  - 🇧🇪 | @WhiteDNS | BE11|5.8MB/s|DNSOK|GPT⁺-BE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

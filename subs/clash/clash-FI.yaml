@@ -13,24 +13,31 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇫🇮 | @WhiteDNS | FI101|21.3MB/s|DNSOK|GPT⁺-FI
+- name: 🇫🇮 | @WhiteDNS | FI99|19.6MB/s|DNSOK|GPT⁺-FI
   port: 1085
   server: 77.42.20.51
   type: vless
   udp: true
   uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
   network: tcp
-- name: 🇫🇮 | @WhiteDNS | FI102|19.8MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 1085
-  server: 77.42.20.51
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - dynu.com
+    path:
+    - /@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---
+  name: 🇫🇮 | @WhiteDNS | FI100|18.8MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 9092
+  server: 65.109.178.171
   type: vless
   udp: true
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  uuid: 7b760357-d569-4d02-9de6-7b1c0bfae1b8
   xudp: true
 - client-fingerprint: chrome
   encryption: mlkem768x25519plus.native.0rtt.aKpQ-kdaXi216oJdXRTincHGr7FihZt9QsqcGZfWgRA
-  name: 🇫🇮 | @WhiteDNS | FI103|14.3MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI101|14.6MB/s|DNSOK|GPT⁺-FI
   network: tcp
   port: 37610
   reality-opts:
@@ -43,13 +50,17 @@ proxies:
   uuid: dc01beee-1a43-4378-91a4-666eb027f664
   xudp: true
   servername: play.google.com
-- alpn:
-  - h2
-  - http/1.1
-  - h3
-  client-fingerprint: chrome
+- name: 🇫🇮 | @WhiteDNS | FI102|6.3MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 1085
+  server: 77.42.20.51
+  type: vless
+  udp: true
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  xudp: true
+- client-fingerprint: chrome
   encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI104|7.5MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI103|5.3MB/s|DNSOK|GPT⁺-FI
   network: xhttp
   port: 8443
   server: n2.akan1.ir
@@ -58,28 +69,19 @@ proxies:
   udp: true
   uuid: 55af8466-53cd-46f4-aef9-5378f5ac34a4
   xhttp-opts:
-    host: home.akan1.ir
     mode: auto
     path: /
-    x-padding-bytes: 100-1000
   xudp: true
   servername: home.akan1.ir
-- name: 🇫🇮 | @WhiteDNS | FI105|6.7MB/s|DNSOK|GPT⁺-FI
-  port: 1085
-  server: smart.avenone.ir
-  type: vless
-  udp: true
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
-  network: tcp
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI101|21.3MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI102|19.8MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI103|14.3MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI104|7.5MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI105|6.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI99|19.6MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI100|18.8MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI101|14.6MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI102|6.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI103|5.3MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
