@@ -13,15 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇵🇱 | @WhiteDNS | PL77|5.6MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 151.115.54.133
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇵🇱 | @WhiteDNS | PL78|4.5MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL57|23.8MB/s|DNSOK|GPT⁺-PL
   network: ws
   port: 80
   server: 70.34.255.101
@@ -31,11 +23,19 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/57.0.2987.133 Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1; A1601 Build/LMY47I) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36
     path: /
   xudp: true
-- name: 🇵🇱 | @WhiteDNS | PL79|2.5MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL58|5.6MB/s|DNSOK|GPT⁺-PL
+  password: ''
+  port: 443
+  server: 151.115.54.133
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇵🇱 | @WhiteDNS | PL59|2.5MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 31.186.220.204
@@ -47,9 +47,9 @@ proxy-groups:
 - name: PL-Auto
   type: url-test
   proxies:
-  - 🇵🇱 | @WhiteDNS | PL77|5.6MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL78|4.5MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL79|2.5MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL57|23.8MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL58|5.6MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL59|2.5MB/s|DNSOK|GPT⁺-PL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

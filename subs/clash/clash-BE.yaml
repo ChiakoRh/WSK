@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇧🇪 | @WhiteDNS | BE6|5.5MB/s|DNSOK|GPT⁺-BE
+- name: 🇧🇪 | @WhiteDNS | BE8|5.7MB/s|DNSOK|GPT⁺-BE
   password: ''
   port: 443
   server: 146.70.176.242
@@ -21,11 +21,43 @@ proxies:
   tls: true
   type: http
   username: ''
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇧🇪 | @WhiteDNS | BE9|5.4MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+    short-id: ''
+  server: be.monkora.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  xudp: true
+  servername: example.org
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇧🇪 | @WhiteDNS | BE10|5.1MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+    short-id: ''
+  server: 144.31.219.97
+  tls: true
+  type: vless
+  udp: true
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  xudp: true
+  servername: example.org
 proxy-groups:
 - name: BE-Auto
   type: url-test
   proxies:
-  - 🇧🇪 | @WhiteDNS | BE6|5.5MB/s|DNSOK|GPT⁺-BE
+  - 🇧🇪 | @WhiteDNS | BE8|5.7MB/s|DNSOK|GPT⁺-BE
+  - 🇧🇪 | @WhiteDNS | BE9|5.4MB/s|DNSOK|GPT⁺-DE
+  - 🇧🇪 | @WhiteDNS | BE10|5.1MB/s|DNSOK|GPT⁺-DE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

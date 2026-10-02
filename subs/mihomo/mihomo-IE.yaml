@@ -1,4 +1,12 @@
 proxies:
+- name: 🇮🇪 | @WhiteDNS | IE10|13.7MB/s|DNSOK|GPT⁺-IE
+  password: ''
+  port: 443
+  server: 149.88.96.12
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 - client-fingerprint: chrome
   name: 🇮🇪 | @WhiteDNS | IE11|6.1MB/s|DNSOK|GPT⁺-IE
   password: Trojan@82164024
@@ -9,16 +17,18 @@ proxies:
   type: trojan
   udp: true
   network: tcp
-- name: 🇮🇪 | @WhiteDNS | IE12|5.9MB/s|DNSOK|GPT⁺-IE
-  password: ''
-  port: 443
-  server: 149.88.96.12
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 - client-fingerprint: chrome
-  name: 🇮🇪 | @WhiteDNS | IE13|5.8MB/s|DNSOK|GPT⁺-IE
+  name: 🇮🇪 | @WhiteDNS | IE12|6.0MB/s|DNSOK|GPT⁺-IE
+  network: tcp
+  password: Trojan@82164024
+  port: 443
+  server: ie.tronsg.com
+  skip-cert-verify: false
+  sni: ie.tronsg.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇮🇪 | @WhiteDNS | IE13|4.9MB/s|DNSOK|GPT⁺-IE
   network: tcp
   password: Trojan@82164024
   port: 443
@@ -27,13 +37,3 @@ proxies:
   type: trojan
   udp: true
   sni: ie.tronsg.com
-- client-fingerprint: chrome
-  name: 🇮🇪 | @WhiteDNS | IE14|4.8MB/s|DNSOK|GPT⁺-IE
-  network: tcp
-  password: Trojan@82164024
-  port: 443
-  server: ie.tronsg.com
-  skip-cert-verify: true
-  sni: ie.tronsg.com
-  type: trojan
-  udp: true

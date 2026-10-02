@@ -1,37 +1,66 @@
 proxies:
-- name: 🇨🇦 | @WhiteDNS | CA75|5.0MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA61|5.2MB/s|DNSOK|GPT⁺-CA
+  port: 8080
+  server: milo.rubinaz.xyz
+  type: vless
+  udp: true
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  network: tcp
+- name: 🇨🇦 | @WhiteDNS | CA62|5.2MB/s|DNSOK|GPT⁺-CA
   network: tcp
   port: 8080
   server: milo.rubinaz.xyz
   type: vless
   udp: true
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-- name: 🇨🇦 | @WhiteDNS | CA76|4.4MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 9443
-  server: 23.169.224.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA77|3.8MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 443
-  server: 206.223.183.16
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- encryption: none
-  name: 🇨🇦 | @WhiteDNS | CA78|3.2MB/s|DNSOK|GPT⁺-CA
-  network: raw
+  xudp: true
+- name: 🇨🇦 | @WhiteDNS | CA63|5.0MB/s|DNSOK|GPT⁺-CA
+  network: tcp
   port: 8080
   server: milo.rubinaz.xyz
   type: vless
   udp: true
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   xudp: true
-- name: 🇨🇦 | @WhiteDNS | CA79|3.0MB/s|DNSOK|GPT⁺-CA
+  servername: milo.rubinaz.xyz
+- name: 🇨🇦 | @WhiteDNS | CA64|3.7MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 443
+  server: 206.223.161.47
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇨🇦 | @WhiteDNS | CA65|2.9MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+    short-id: ''
+  server: ca.monkora.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  xudp: true
+  servername: ca.monkora.org
+- client-fingerprint: firefox
+  name: 🇨🇦 | @WhiteDNS | CA66|2.9MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+    short-id: ''
+  server: 23.95.76.164
+  tls: true
+  type: vless
+  udp: true
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  xudp: true
+  servername: ca.monkora.org
+- name: 🇨🇦 | @WhiteDNS | CA67|2.7MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 9443
   server: 198.44.157.27
@@ -39,15 +68,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA80|2.4MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 443
-  server: 206.223.183.13
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA81|2.3MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA68|2.5MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 443
   server: 206.223.183.21
@@ -55,10 +76,26 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA82|1.6MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA69|2.5MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 443
-  server: 206.223.161.47
+  server: 206.223.183.16
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA70|2.5MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 443
+  server: 23.169.224.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA71|1.6MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 443
+  server: 206.223.183.13
   skip-cert-verify: true
   tls: true
   type: http

@@ -13,8 +13,23 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - dynu.com
+    path:
+    - /@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---
+  name: 🇫🇮 | @WhiteDNS | FI72|16.9MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 9094
+  server: 65.109.209.172
+  type: vless
+  udp: true
+  uuid: 7b760357-d569-4d02-9de6-7b1c0bfae1b8
+  xudp: true
 - encryption: mlkem768x25519plus.native.0rtt.oEfFlk7NfA_QAF1u_5EXbuXfD_8q-oPbaHXmxAjLAS0
-  name: 🇫🇮 | @WhiteDNS | FI90|15.5MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI73|6.1MB/s|DNSOK|GPT⁺-FI
   network: ws
   port: 80
   server: Kashgsgsiajsh.apple.gymyoga.ir
@@ -24,51 +39,32 @@ proxies:
   ws-opts:
     headers:
       Host: Kashgsgsiajsh.apple.gymyoga.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.77 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/68.0.3440.106 Safari/537.36
     path: /
   xudp: true
-- encryption: mlkem768x25519plus.native.0rtt.oEfFlk7NfA_QAF1u_5EXbuXfD_8q-oPbaHXmxAjLAS0
-  name: 🇫🇮 | @WhiteDNS | FI91|6.2MB/s|DNSOK|GPT⁺-FI
+- encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI74|6.1MB/s|DNSOK|GPT⁺-FI
   network: ws
-  port: 80
-  server: japaajvagajakahav.f15.gymyoga.ir
+  port: 1280
+  server: 77.42.28.120
   type: vless
   udp: true
-  uuid: 8aa18536-0382-4f81-a90b-2456699c64fc
+  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
   ws-opts:
     headers:
-      Host: Japaajvagajakahav.f15.gymyoga.ir
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.139 Safari/537.36
+      Host: is1-ssl.mzstatic.com
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/48.0.2564.116 Safari/537.36
     path: /
   xudp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI92|5.3MB/s|DNSOK|GPT⁺-FI
-  network: xhttp
-  port: 443
-  server: cdn3.alihapp.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: c4394e27-baeb-422d-8905-a93f8e01126f
-  xhttp-opts:
-    host: cdn3.alihapp.com
-    mode: auto
-    path: /
-  xudp: true
-  servername: cdn3.alihapp.com
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI90|15.5MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI91|6.2MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI92|5.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI72|16.9MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI73|6.1MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI74|6.1MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -13,7 +13,14 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇳 | @WhiteDNS | IN30|2.9MB/s|DNSOK|GPT⁺-IN
+- name: 🇮🇳 | @WhiteDNS | IN28|3.4MB/s|DNSOK|GPT⁺-IN
+  password: ''
+  port: 1088
+  server: 144.24.111.128
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- name: 🇮🇳 | @WhiteDNS | IN29|2.2MB/s|DNSOK|GPT⁺-IN
   password: ''
   port: 443
   server: 165.231.253.66
@@ -21,14 +28,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇮🇳 | @WhiteDNS | IN31|2.6MB/s|DNSOK|GPT⁺-IN
-  password: ''
-  port: 1088
-  server: 144.24.111.128
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- name: 🇮🇳 | @WhiteDNS | IN32|2.5MB/s|DNSOK|GPT⁺-IN
+- name: 🇮🇳 | @WhiteDNS | IN30|2.1MB/s|DNSOK|GPT⁺-IN
   password: ''
   port: 443
   server: 165.231.253.210
@@ -36,21 +36,13 @@ proxies:
   tls: true
   type: http
   username: ''
-- cipher: aes-256-gcm
-  name: 🇮🇳 | @WhiteDNS | IN33|1.8MB/s|DNSOK|GPT⁺-IN
-  password: GEdoeeqLZtkJRgSa
-  port: 8388
-  server: 139.84.166.47
-  type: ss
-  udp: true
 proxy-groups:
 - name: IN-Auto
   type: url-test
   proxies:
-  - 🇮🇳 | @WhiteDNS | IN30|2.9MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN31|2.6MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN32|2.5MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN33|1.8MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN28|3.4MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN29|2.2MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN30|2.1MB/s|DNSOK|GPT⁺-IN
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
