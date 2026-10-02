@@ -1,0 +1,36 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- down: ''
+  fingerprint: ''
+  name: 🇭🇰 | @WhiteDNS | HK119|3.2MB/s|DNSOK|GPT⁺-JP
+  obfs: ''
+  obfs-password: ''
+  password: 71e75cc1-d625-4be2-b3e4-ea2b197abf25
+  port: 20000
+  server: hkt03ddns.poke-mon.xyz
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  up: ''
+proxy-groups:
+- name: HK-Auto
+  type: url-test
+  proxies:
+  - 🇭🇰 | @WhiteDNS | HK119|3.2MB/s|DNSOK|GPT⁺-JP
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,HK-Auto

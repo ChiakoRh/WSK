@@ -13,42 +13,8 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- alpn:
-  - http/1.1
-  client-fingerprint: unsafe
-  name: 🇯🇵 | @WhiteDNS | JP113|1.8MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 443
-  server: 188.114.97.6
-  tls: true
-  type: vless
-  udp: true
-  uuid: bb1be788-6b00-47c8-a96e-c828f3a33de4
-  ws-opts:
-    headers:
-      Host: d3b866e4.69lover.site
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/51.0.2704.103 Safari/537.36
-    path: /api/v2/671d8a5bccaf636f/stream
-  xudp: true
-  servername: d3b866e4.69lover.site
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP114|1.8MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 20270
-  reality-opts:
-    public-key: gaFVpIOW9RJGuFFisfXVvITfYY5ikKn-4gB89ZQCFHI
-    short-id: 89fecfdaf45cd76d
-  server: jp-1.gsafevpnapi.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6fc32ed-05de-430b-99ca-3edc9185e79b
-  xudp: true
-  servername: www.yahoo.com
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP115|1.3MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP127|2.0MB/s|DNSOK|GPT⁺-JP
   network: tcp
   password: Trojan@82164024
   port: 443
@@ -57,29 +23,48 @@ proxies:
   sni: jp.tronsg.com
   type: trojan
   udp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
+- client-fingerprint: chrome
   encryption: none
-  name: 🇯🇵 | @WhiteDNS | JP116|1.3MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 443
-  server: 162.159.135.1
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP128|2.0MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 25874
+  reality-opts:
+    public-key: aBdmSZuchSwd7IKT4PPb8hgTFWZeb-4iGSyf8lIGUSE
+    short-id: 6ba85179e30d4fc2
+  server: jpt.negai.de
   tls: true
   type: vless
   udp: true
-  uuid: bb1be788-6b00-47c8-a96e-c828f3a33de4
-  ws-opts:
-    headers:
-      Host: d3b866e4.69lover.site
-      User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; Redmi Note 5A Build/N2G47H; wv)
-        AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile
-        Safari/537.36
-    path: /api/v2/671d8a5bccaf636f/stream
+  uuid: bfac5c43-52f2-4b0a-9fee-3e2281483c81
   xudp: true
-  servername: d3b866e4.69lover.site
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP117|1.3MB/s|DNSOK|GPT⁺-JP
+  servername: jpt.negai.de
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP129|1.8MB/s|DNSOK|GPT⁺-JP
+  port: 25874
+  reality-opts:
+    public-key: aBdmSZuchSwd7IKT4PPb8hgTFWZeb-4iGSyf8lIGUSE
+    short-id: 6ba85179e30d4fc2
+  server: jpt.negai.de
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: bfac5c43-52f2-4b0a-9fee-3e2281483c81
+  network: tcp
+  servername: jpt.negai.de
+- encryption: none
+  name: 🇯🇵 | @WhiteDNS | JP130|1.5MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  xudp: true
+  servername: 152.69.195.67
+- name: 🇯🇵 | @WhiteDNS | JP131|1.3MB/s|DNSOK|GPT⁺-JP
   password: Trojan@82164024
   port: 443
   server: jp.tronsg.com
@@ -88,26 +73,20 @@ proxies:
   type: trojan
   udp: true
   network: tcp
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP118|1.2MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
-    short-id: 913e9b95fbc71278
-  server: 43.133.11.187
-  tls: true
-  type: vless
+- fingerprint: ''
+  name: 🇯🇵 | @WhiteDNS | JP132|1.3MB/s|DNSOK|GPT⁺-JP
+  password: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
+  port: 53274
+  server: jp-02-hdja-kido.younai-ytl.shop
+  skip-cert-verify: true
+  sni: jp33.swiftrelay.cc
+  type: anytls
   udp: true
-  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
-  xudp: true
-  servername: cloudflare.com
+  username: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
 - client-fingerprint: edge
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP119|1.0MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP133|1.3MB/s|DNSOK|GPT⁺-JP
   network: raw
   port: 443
   reality-opts:
@@ -120,44 +99,162 @@ proxies:
   uuid: 4192524f-09f0-414f-88fd-7a14378491c7
   xudp: true
   servername: cloudflare.com
-- client-fingerprint: firefox
+- name: 🇯🇵 | @WhiteDNS | JP134|1.2MB/s|DNSOK|GPT⁺-JP
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  network: tcp
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP135|1.2MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 4433
+  server: 45.32.57.118
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  xudp: true
+  servername: 'null'
+- client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP120|1001KB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP136|1.2MB/s|DNSOK|GPT⁺-JP
+  network: tcp
   port: 443
   reality-opts:
     public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
     short-id: 913e9b95fbc71278
   server: 43.133.11.187
-  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: 4192524f-09f0-414f-88fd-7a14378491c7
-  network: tcp
+  xudp: true
   servername: cloudflare.com
-- fingerprint: ''
-  name: 🇯🇵 | @WhiteDNS | JP121|944KB/s|DNSOK|GPT⁺-JP
-  password: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
-  port: 53274
-  server: jp-02-hdja-kido.younai-ytl.shop
-  skip-cert-verify: true
-  sni: jp33.swiftrelay.cc
-  type: anytls
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP137|1.2MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 28573
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  server: 18.183.215.124
+  tls: true
+  type: vless
   udp: true
-  username: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  xudp: true
+  servername: www.sony.com
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP138|1.2MB/s|DNSOK|GPT⁺-JP
+  port: 4433
+  server: 45.32.57.118
+  type: vmess
+  udp: true
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  network: tcp
+- encryption: none
+  name: 🇯🇵 | @WhiteDNS | JP139|1.2MB/s|DNSOK|GPT⁺-JP
+  network: raw
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP140|1.1MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 4433
+  server: 45.32.57.118
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP141|1.0MB/s|DNSOK|GPT⁺-JP
+  network: tcp#🎡90@oneclickvpnkeys
+  port: 4433
+  server: 45.32.57.118
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  xudp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP142|861KB/s|DNSOK|GPT⁺-JP
+  port: 28573
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  server: 18.183.215.124
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  network: tcp
+  servername: www.sony.com
+- name: 🇯🇵 | @WhiteDNS | JP143|855KB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  xudp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP144|542KB/s|DNSOK|GPT⁺-JP
+  network: raw
+  port: 28573
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  server: 18.183.215.124
+  tls: true
+  type: vless
+  udp: true
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  xudp: true
+  servername: www.sony.com
 proxy-groups:
 - name: JP-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP113|1.8MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP114|1.8MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP115|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP116|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP117|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP118|1.2MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP119|1.0MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP120|1001KB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP121|944KB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP127|2.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP128|2.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP129|1.8MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP130|1.5MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP131|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP132|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP133|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP134|1.2MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP135|1.2MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP136|1.2MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP137|1.2MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP138|1.2MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP139|1.2MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP140|1.1MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP141|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP142|861KB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP143|855KB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP144|542KB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

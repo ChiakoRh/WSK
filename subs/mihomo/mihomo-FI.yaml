@@ -1,30 +1,59 @@
 proxies:
-- name: 🇫🇮 | @WhiteDNS | FI56|7.1MB/s|DNSOK|GPT⁺-FI
+- name: 🇫🇮 | @WhiteDNS | FI101|21.3MB/s|DNSOK|GPT⁺-FI
   port: 1085
   server: 77.42.20.51
   type: vless
   udp: true
   uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
   network: tcp
-- name: 🇫🇮 | @WhiteDNS | FI57|2.7MB/s|DNSOK|GPT⁺-FI
+- name: 🇫🇮 | @WhiteDNS | FI102|19.8MB/s|DNSOK|GPT⁺-FI
   network: tcp
   port: 1085
   server: 77.42.20.51
   type: vless
   udp: true
   uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
-- encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI58|1.1MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 1280
-  server: 77.42.28.120
-  type: vless
-  udp: true
-  uuid: 3721913e-0ab1-4ee5-a05d-c9e85c72311c
-  ws-opts:
-    headers:
-      Host: is1-ssl.mzstatic.com
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/49.0.2623.87 Safari/537.36
-    path: /
   xudp: true
+- client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.aKpQ-kdaXi216oJdXRTincHGr7FihZt9QsqcGZfWgRA
+  name: 🇫🇮 | @WhiteDNS | FI103|14.3MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 37610
+  reality-opts:
+    public-key: Q3_RF8ioyvvTdFsmoiY-k1etO3XgYg0GY5OB-753yQs
+    short-id: 729d3991cc5d433b
+  server: findland1.henlo.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: dc01beee-1a43-4378-91a4-666eb027f664
+  xudp: true
+  servername: play.google.com
+- alpn:
+  - h2
+  - http/1.1
+  - h3
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI104|7.5MB/s|DNSOK|GPT⁺-FI
+  network: xhttp
+  port: 8443
+  server: n2.akan1.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55af8466-53cd-46f4-aef9-5378f5ac34a4
+  xhttp-opts:
+    host: home.akan1.ir
+    mode: auto
+    path: /
+    x-padding-bytes: 100-1000
+  xudp: true
+  servername: home.akan1.ir
+- name: 🇫🇮 | @WhiteDNS | FI105|6.7MB/s|DNSOK|GPT⁺-FI
+  port: 1085
+  server: smart.avenone.ir
+  type: vless
+  udp: true
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  network: tcp

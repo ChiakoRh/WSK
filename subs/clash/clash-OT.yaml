@@ -13,18 +13,19 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: ❓ | @WhiteDNS | OT325|3.0MB/s|DNSOK|GPT⁺
+- name: ❓ | @WhiteDNS | OT2|1.2MB/s|DNSOK|GPT⁺
   password: ''
-  port: 1080
-  server: 129.153.11.56
+  port: 8443
+  server: 45.142.141.5
   skip-cert-verify: true
-  type: socks5
+  tls: true
+  type: http
   username: ''
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT325|3.0MB/s|DNSOK|GPT⁺
+  - ❓ | @WhiteDNS | OT2|1.2MB/s|DNSOK|GPT⁺
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
