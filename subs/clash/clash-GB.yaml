@@ -15,7 +15,7 @@ dns:
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB86|23.1MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB61|21.8MB/s|DNSOK|GPT⁺-GB
   port: 443
   reality-opts:
     public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
@@ -28,15 +28,8 @@ proxies:
   uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
   network: tcp
   servername: speed.cloudflare.com
-- cipher: 2022-blake3-chacha20-poly1305
-  name: 🇬🇧 | @WhiteDNS | GB87|22.5MB/s|DNSOK|GPT⁺-GB
-  password: BHkQ13jCKX876J8TVa/Qx/Awfit4mFt+6V5zdKGczsw=
-  port: 61312
-  server: 129.151.75.247
-  type: ss
-  udp: true
-- name: 🇬🇧 | @WhiteDNS | GB88|21.6MB/s|DNSOK|GPT⁺-GB
-  password: None
+- name: 🇬🇧 | @WhiteDNS | GB62|21.3MB/s|DNSOK|GPT⁺-GB
+  password: ''
   port: 443
   server: 212.102.63.61
   skip-cert-verify: true
@@ -44,43 +37,56 @@ proxies:
   type: http
   username: ''
 - cipher: 2022-blake3-chacha20-poly1305
-  name: 🇬🇧 | @WhiteDNS | GB89|21.6MB/s|DNSOK|GPT⁺-GB
-  password: C9CsokHVcDAp3Y7KMVqQjCNrkZ1EnaIqP27JazfDPP8=
+  name: 🇬🇧 | @WhiteDNS | GB63|21.0MB/s|DNSOK|GPT⁺-GB
+  password: BHkQ13jCKX876J8TVa/Qx/Awfit4mFt+6V5zdKGczsw=
   port: 61312
-  server: 134.65.61.3
+  server: 129.151.75.247
   type: ss
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB90|21.3MB/s|DNSOK|GPT⁺-GB
-  network: tcp
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB64|20.6MB/s|DNSOK|GPT⁺-GB
+  network: ws
   port: 443
-  reality-opts:
-    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
-    short-id: b19b017d6f453873
-  server: 23.81.34.204
+  server: 108.156.39.79
   tls: true
   type: vless
   udp: true
-  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
-  servername: speed.cloudflare.com
-- name: 🇬🇧 | @WhiteDNS | GB91|21.1MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 443
-  server: 84.17.50.193
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB92|20.6MB/s|DNSOK|GPT⁺-GB
-  password: ''
+  uuid: 720043a3-d5fb-4a94-883c-13e4b628253c
+  ws-opts:
+    headers:
+      Host: lon-rem-2.vip107.cfd
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36
+    path: /
+  xudp: true
+  servername: lon-rem-2.vip107.cfd
+- name: 🇬🇧 | @WhiteDNS | GB65|20.2MB/s|DNSOK|GPT⁺-GB
+  password: None
   port: 443
   server: 212.102.63.1
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB93|20.6MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB66|17.9MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 9443
+  server: 37.120.233.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB67|6.9MB/s|DNSOK|GPT⁺-GB
+  password: zRZNBszYyWo5
+  port: 8388
+  server: 51.77.225.200
+  type: ss
+  udp: true
+- name: 🇬🇧 | @WhiteDNS | GB68|6.4MB/s|DNSOK|GPT⁺-GB
   password: None
   port: 443
   server: 212.102.63.31
@@ -90,33 +96,40 @@ proxies:
   username: ''
 - client-fingerprint: chrome
   encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB94|20.2MB/s|DNSOK|GPT⁺
-  network: ws
+  flow: xtls-rprx-vision
+  name: 🇬🇧 | @WhiteDNS | GB69|6.4MB/s|DNSOK|GPT⁺-GB
+  network: tcp
   port: 443
-  server: rubifen.adaspoloandco.com
+  reality-opts:
+    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
+    short-id: b19b017d6f453873
+  server: 23.81.34.204
   tls: true
   type: vless
   udp: true
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.139 Safari/537.36
-    path: /GOrbEh
+  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
   xudp: true
-  servername: rubifen.adaspoloandco.com
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 | @WhiteDNS | GB95|6.8MB/s|DNSOK|GPT⁺-GB
-  password: zRZNBszYyWo5
-  port: 8388
-  server: 51.77.225.200
-  type: ss
-  udp: true
+  servername: speed.cloudflare.com
+- name: 🇬🇧 | @WhiteDNS | GB70|5.8MB/s|DNSOK|GPT⁺-GB
+  password: None
+  port: 443
+  server: 212.102.63.61
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB71|5.2MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 443
+  server: 84.17.50.193
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB96|5.2MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB72|971KB/s|DNSOK|GPT⁺-GB
   network: tcp
   port: 51595
   reality-opts:
@@ -129,100 +142,22 @@ proxies:
   uuid: c2abb151-f683-46f9-9099-b0455852e6f9
   xudp: true
   servername: play.google.com
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB97|4.9MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 443
-  server: rubifen.adaspoloandco.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/61.0.3163.100 Safari/537.36
-    path: /GOrbEh
-  xudp: true
-  servername: rubifen.adaspoloandco.com
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB98|2.7MB/s|DNSOK|GPT⁺-GB
-  port: 51847
-  reality-opts:
-    public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
-    short-id: 0eec442e7b34d2f2
-  server: 3.9.135.156
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 391a01e9-b664-407b-9158-610fab3f5920
-  network: tcp
-  servername: www.tesla.com
-- client-fingerprint: firefox
-  encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB99|1.6MB/s|DNSOK|GPT⁺-GB
-  network: ws
-  port: 443
-  server: 146.185.143.174
-  tls: true
-  type: vless
-  udp: true
-  uuid: 720043a3-d5fb-4a94-883c-13e4b628253c
-  ws-opts:
-    headers:
-      Host: lom.vip100.cfd
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/34.0.1847.131 Safari/537.36
-    path: /
-  xudp: true
-  servername: lom.vip100.cfd
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB100|991KB/s|DNSOK|GPT⁺-GB
-  network: raw
-  port: 51847
-  reality-opts:
-    public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
-    short-id: 0eec442e7b34d2f2
-  server: 3.9.135.156
-  tls: true
-  type: vless
-  udp: true
-  uuid: 391a01e9-b664-407b-9158-610fab3f5920
-  xudp: true
-  servername: www.tesla.com
-- name: 🇬🇧 | @WhiteDNS | GB101|822KB/s|DNSOK|GPT⁺-FR
-  password: ''
-  port: 1088
-  server: 144.91.121.61
-  skip-cert-verify: true
-  type: socks5
-  username: ''
 proxy-groups:
 - name: GB-Auto
   type: url-test
   proxies:
-  - 🇬🇧 | @WhiteDNS | GB86|23.1MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB87|22.5MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB88|21.6MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB89|21.6MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB90|21.3MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB91|21.1MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB92|20.6MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB93|20.6MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB94|20.2MB/s|DNSOK|GPT⁺
-  - 🇬🇧 | @WhiteDNS | GB95|6.8MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB96|5.2MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB97|4.9MB/s|DNSOK|GPT⁺-DE
-  - 🇬🇧 | @WhiteDNS | GB98|2.7MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB99|1.6MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB100|991KB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB101|822KB/s|DNSOK|GPT⁺-FR
+  - 🇬🇧 | @WhiteDNS | GB61|21.8MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB62|21.3MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB63|21.0MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB64|20.6MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB65|20.2MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB66|17.9MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB67|6.9MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB68|6.4MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB69|6.4MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB70|5.8MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB71|5.2MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB72|971KB/s|DNSOK|GPT⁺-GB
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

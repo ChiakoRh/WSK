@@ -13,22 +13,20 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- fingerprint: ''
-  name: 🇵🇭 | @WhiteDNS | PH4|1.3MB/s|DNSOK|GPT⁺-PH
-  password: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
-  port: 17930
-  server: yazhouany02.downapptwo.cc
-  skip-cert-verify: false
-  sni: flv02.swiftrelay.cc
-  type: anytls
-  udp: true
-  username: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
+- name: 🇨🇾 | @WhiteDNS | CY2|2.3MB/s|DNSOK|GPT⁺-CY
+  password: ''
+  port: 443
+  server: 213.207.130.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 proxy-groups:
-- name: PH-Auto
+- name: CY-Auto
   type: url-test
   proxies:
-  - 🇵🇭 | @WhiteDNS | PH4|1.3MB/s|DNSOK|GPT⁺-PH
+  - 🇨🇾 | @WhiteDNS | CY2|2.3MB/s|DNSOK|GPT⁺-CY
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,PH-Auto
+- MATCH,CY-Auto
