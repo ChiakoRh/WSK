@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇪🇪 | @WhiteDNS | EE31|5.3MB/s|DNSOK|GPT⁺-EE
+- name: 🇪🇪 | @WhiteDNS | EE39|12.9MB/s|DNSOK|GPT⁺-EE
   password: ''
   port: 9443
   server: 95.153.31.66
@@ -21,11 +21,19 @@ proxies:
   tls: true
   type: http
   username: ''
+- name: 🇪🇪 | @WhiteDNS | EE40|2.6MB/s|DNSOK|GPT⁺-EE
+  password: ''
+  port: 1080
+  server: 5.45.119.70
+  skip-cert-verify: true
+  type: socks5
+  username: ''
 proxy-groups:
 - name: EE-Auto
   type: url-test
   proxies:
-  - 🇪🇪 | @WhiteDNS | EE31|5.3MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE39|12.9MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE40|2.6MB/s|DNSOK|GPT⁺-EE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

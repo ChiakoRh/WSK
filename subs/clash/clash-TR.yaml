@@ -1,0 +1,66 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- name: 🇹🇷 | @WhiteDNS | TR22|1.6MB/s|DNSOK|GPT⁺-TR
+  port: 2053
+  server: 145.239.30.17
+  type: vless
+  udp: true
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  network: tcp
+- encryption: none
+  name: 🇹🇷 | @WhiteDNS | TR23|1.1MB/s|DNSOK|GPT⁺-TR
+  network: tcp
+  port: 2053
+  server: test.keoplentuio.xyz
+  type: vless
+  udp: true
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  xudp: true
+- name: 🇹🇷 | @WhiteDNS | TR24|1.1MB/s|DNSOK|GPT⁺-TR
+  network: tcp
+  port: 2053
+  server: 178.83.46.216
+  type: vless
+  udp: true
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  xudp: true
+- name: 🇹🇷 | @WhiteDNS | TR25|897KB/s|DNSOK|GPT⁺-TR
+  port: 2053
+  server: 178.83.46.216
+  type: vless
+  udp: true
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  network: tcp
+- name: 🇹🇷 | @WhiteDNS | TR26|765KB/s|DNSOK|GPT⁺-TR
+  port: 2053
+  server: 169.40.32.73
+  type: vless
+  udp: true
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  network: tcp
+proxy-groups:
+- name: TR-Auto
+  type: url-test
+  proxies:
+  - 🇹🇷 | @WhiteDNS | TR22|1.6MB/s|DNSOK|GPT⁺-TR
+  - 🇹🇷 | @WhiteDNS | TR23|1.1MB/s|DNSOK|GPT⁺-TR
+  - 🇹🇷 | @WhiteDNS | TR24|1.1MB/s|DNSOK|GPT⁺-TR
+  - 🇹🇷 | @WhiteDNS | TR25|897KB/s|DNSOK|GPT⁺-TR
+  - 🇹🇷 | @WhiteDNS | TR26|765KB/s|DNSOK|GPT⁺-TR
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,TR-Auto

@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇱🇻 | @WhiteDNS | LV24|5.2MB/s|DNSOK|GPT⁺-LV
+- name: 🇱🇻 | @WhiteDNS | LV20|5.4MB/s|DNSOK|GPT⁺-LV
   password: ''
   port: 443
   server: 185.219.159.15
@@ -21,7 +21,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇱🇻 | @WhiteDNS | LV25|5.0MB/s|DNSOK|GPT⁺-LV
+- name: 🇱🇻 | @WhiteDNS | LV21|5.1MB/s|DNSOK|GPT⁺-LV
   password: ''
   port: 443
   server: 185.219.159.16
@@ -29,12 +29,44 @@ proxies:
   tls: true
   type: http
   username: ''
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇱🇻 | @WhiteDNS | LV22|5.1MB/s|DNSOK|GPT⁺-LV
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+    short-id: ''
+  server: 85.159.228.223
+  tls: true
+  type: vless
+  udp: true
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  xudp: true
+  servername: example.org
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇱🇻 | @WhiteDNS | LV23|4.8MB/s|DNSOK|GPT⁺-LV
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+    short-id: ''
+  server: lv.monkora.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  xudp: true
+  servername: example.org
 proxy-groups:
 - name: LV-Auto
   type: url-test
   proxies:
-  - 🇱🇻 | @WhiteDNS | LV24|5.2MB/s|DNSOK|GPT⁺-LV
-  - 🇱🇻 | @WhiteDNS | LV25|5.0MB/s|DNSOK|GPT⁺-LV
+  - 🇱🇻 | @WhiteDNS | LV20|5.4MB/s|DNSOK|GPT⁺-LV
+  - 🇱🇻 | @WhiteDNS | LV21|5.1MB/s|DNSOK|GPT⁺-LV
+  - 🇱🇻 | @WhiteDNS | LV22|5.1MB/s|DNSOK|GPT⁺-LV
+  - 🇱🇻 | @WhiteDNS | LV23|4.8MB/s|DNSOK|GPT⁺-LV
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
