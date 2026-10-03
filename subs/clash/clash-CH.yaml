@@ -16,7 +16,38 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇭 | @WhiteDNS | CH27|46.8MB/s|DNSOK|GPT⁺-CH
+  name: 🇨🇭 | @WhiteDNS | CH20|47.1MB/s|DNSOK|GPT⁺-CH
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 8PZTYkhNhSgagVdaI-iqSCPXJwDhHU23IUwZIu08zH4
+    short-id: 9de8ae53dabf1dc2
+  server: 179.237.103.152
+  tls: true
+  type: vless
+  udp: true
+  uuid: e0bd9dfa-0cf9-47c0-92ac-7dba08ebcff8
+  xudp: true
+  servername: www.google.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇨🇭 | @WhiteDNS | CH21|45.7MB/s|DNSOK|GPT⁺-CH
+  port: 443
+  reality-opts:
+    public-key: 8PZTYkhNhSgagVdaI-iqSCPXJwDhHU23IUwZIu08zH4
+    short-id: 9de8ae53dabf1dc2
+  server: 179.237.103.152
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e0bd9dfa-0cf9-47c0-92ac-7dba08ebcff8
+  network: tcp
+  servername: www.google.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇨🇭 | @WhiteDNS | CH22|45.1MB/s|DNSOK|GPT⁺-CH
   network: raw
   port: 443
   reality-opts:
@@ -29,31 +60,7 @@ proxies:
   uuid: e0bd9dfa-0cf9-47c0-92ac-7dba08ebcff8
   xudp: true
   servername: www.google.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇨🇭 | @WhiteDNS | CH28|45.7MB/s|DNSOK|GPT⁺-CH
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 8PZTYkhNhSgagVdaI-iqSCPXJwDhHU23IUwZIu08zH4
-    short-id: 9de8ae53dabf1dc2
-  server: 179.237.103.152
-  tls: true
-  type: vless
-  udp: true
-  uuid: e0bd9dfa-0cf9-47c0-92ac-7dba08ebcff8
-  xudp: true
-  servername: www.google.com
-- name: 🇨🇭 | @WhiteDNS | CH29|38.5MB/s|DNSOK|GPT⁺-CH
-  password: ''
-  port: 9443
-  server: 37.120.213.210
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇭 | @WhiteDNS | CH30|23.1MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH23|22.9MB/s|DNSOK|GPT⁺-CH
   password: ''
   port: 443
   server: 31.7.62.50
@@ -61,25 +68,18 @@ proxies:
   tls: true
   type: http
   username: ''
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇨🇭 | @WhiteDNS | CH31|20.1MB/s|DNSOK|GPT⁺-CH
-  port: 443
-  reality-opts:
-    public-key: 8PZTYkhNhSgagVdaI-iqSCPXJwDhHU23IUwZIu08zH4
-    short-id: 9de8ae53dabf1dc2
-  server: 179.237.103.152
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e0bd9dfa-0cf9-47c0-92ac-7dba08ebcff8
-  network: tcp
-  servername: www.google.com
-- name: 🇨🇭 | @WhiteDNS | CH32|7.1MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH24|7.3MB/s|DNSOK|GPT⁺-CH
   password: ''
   port: 9443
   server: 149.88.27.46
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH25|5.5MB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 9443
+  server: 37.120.213.210
   skip-cert-verify: true
   tls: true
   type: http
@@ -88,12 +88,12 @@ proxy-groups:
 - name: CH-Auto
   type: url-test
   proxies:
-  - 🇨🇭 | @WhiteDNS | CH27|46.8MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH28|45.7MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH29|38.5MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH30|23.1MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH31|20.1MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH32|7.1MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH20|47.1MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH21|45.7MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH22|45.1MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH23|22.9MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH24|7.3MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH25|5.5MB/s|DNSOK|GPT⁺-CH
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

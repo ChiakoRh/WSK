@@ -1,5 +1,5 @@
 proxies:
-- name: 🇵🇱 | @WhiteDNS | PL49|23.6MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL50|23.9MB/s|DNSOK|GPT⁺-PL
   network: ws
   port: 80
   server: 70.34.255.101
@@ -9,19 +9,40 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/52.0.2743.116 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/41.0.2272.76 Safari/537.36
     path: /
   xudp: true
-- name: 🇵🇱 | @WhiteDNS | PL50|6.3MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 151.115.54.133
+- name: 🇵🇱 | @WhiteDNS | PL51|23.6MB/s|DNSOK|GPT⁺-PL
+  network: ws
+  port: 80
+  server: 70.34.252.154
+  type: vless
+  udp: true
+  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G570M) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇵🇱 | @WhiteDNS | PL52|5.4MB/s|DNSOK|GPT⁺-PL
+  port: 2063
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+    short-id: ''
+  server: 31.77.13.19
   skip-cert-verify: true
   tls: true
-  type: http
-  username: ''
-- name: 🇵🇱 | @WhiteDNS | PL51|2.5MB/s|DNSOK|GPT⁺-PL
+  type: vless
+  udp: true
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  network: tcp
+  servername: rusbid.de
+- name: 🇵🇱 | @WhiteDNS | PL53|2.5MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 31.186.220.204
@@ -29,19 +50,26 @@ proxies:
   tls: true
   type: http
   username: ''
-- alterId: 0
-  cipher: auto
-  name: 🇵🇱 | @WhiteDNS | PL52|841KB/s|DNSOK|GPT⁺-PL
-  network: ws
-  port: 80
-  server: 188.114.96.19
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇵🇱 | @WhiteDNS | PL54|1.7MB/s|DNSOK|GPT⁺-PL
+  port: 2063
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+    short-id: ''
+  server: pl-waw.dontblockmepls.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
   udp: true
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  ws-opts:
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-    path: /
-  servername: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  network: tcp
+  servername: rusbid.de
+- name: 🇵🇱 | @WhiteDNS | PL55|913KB/s|DNSOK|GPT⁺-PL
+  password: ''
+  port: 443
+  server: 151.115.54.133
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''

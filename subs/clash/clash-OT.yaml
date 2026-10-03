@@ -13,26 +13,19 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT328|6.6MB/s|DNSOK|GPT⁺-IT
-  port: 1114
-  reality-opts:
-    public-key: WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ
-    short-id: 79a1e14b
-  server: 204.216.216.23
+- name: ❓ | @WhiteDNS | OT329|2.7MB/s|DNSOK|GPT⁺-US
+  password: ''
+  port: 9002
+  server: 138.199.35.196
   skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: 6ba2eac6-0ec9-44ca-a42b-a8e23aafb530
-  network: tcp
-  servername: yahoo.com
+  type: http
+  username: ''
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT328|6.6MB/s|DNSOK|GPT⁺-IT
+  - ❓ | @WhiteDNS | OT329|2.7MB/s|DNSOK|GPT⁺-US
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
