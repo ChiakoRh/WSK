@@ -1,74 +1,24 @@
 proxies:
-- cipher: 2022-blake3-aes-256-gcm
-  name: 🇫🇮 | @WhiteDNS | FI81|18.7MB/s|DNSOK|GPT⁺-FI
-  password: ENKlLe2EN9n9kYUj7CYQpYTNXC9TZ4DTRHCg0lJzQOU=:lsHnibYMh8+9D+pCv+6QQfXVeOroNOlBVwkV/MFrejo=
-  plugin: obfs
-  plugin-opts:
-    host: ''
-    mode: http
-  port: 55384
-  server: 65.109.208.97
-  type: ss
-  udp: true
 - encryption: none
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 🇫🇮 | @WhiteDNS | FI82|18.5MB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 47851
-  server: 65.109.208.97
-  type: vless
-  udp: true
-  uuid: d676e069-4821-4a52-a913-b32140b9a7c3
-  xudp: true
-- alterId: 0
-  cipher: auto
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 🇫🇮 | @WhiteDNS | FI83|18.4MB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 54225
-  server: 65.109.208.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d676e069-4821-4a52-a913-b32140b9a7c3
-  xudp: true
-- cipher: 2022-blake3-aes-256-gcm
-  name: 🇫🇮 | @WhiteDNS | FI84|17.9MB/s|DNSOK|GPT⁺-FI
-  password: IG0aZo90mzwGGzkkQ6kGS9NW0TXCa3Zu3n+Ul6jajMk=:lsHnibYMh8+9D+pCv+6QQfXVeOroNOlBVwkV/MFrejo=
-  plugin: obfs
-  plugin-opts:
-    host: ''
-    mode: http
-  port: 22400
-  server: 65.109.208.97
-  type: ss
-  udp: true
-- encryption: mlkem768x25519plus.native.0rtt.oEfFlk7NfA_QAF1u_5EXbuXfD_8q-oPbaHXmxAjLAS0
-  name: 🇫🇮 | @WhiteDNS | FI85|15.5MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI65|18.1MB/s|DNSOK|GPT⁺-FI
   network: ws
-  port: 80
-  server: Hshsisjshsh.f15.gymyoga.ir
+  port: 1280
+  server: 77.42.28.120
   type: vless
   udp: true
-  uuid: ba9c0361-143e-4ee4-9c5c-22a222988907
+  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
   ws-opts:
     headers:
-      Host: Hshsisjshsh.f15.gymyoga.ir
-      User-Agent: Mozilla/5.0 (X11; U; Linux i586; en-US) AppleWebKit/533.2 (KHTML,
-        like Gecko) Chrome/5.0.342.1 Safari/533.2
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/67.0.3396.87 Safari/537.36
     path: /
   xudp: true
+  servername: is1-ssl.mzstatic.com
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI86|6.4MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI66|17.1MB/s|DNSOK|GPT⁺-FI
   network: tcp
   port: 443
   reality-opts:
@@ -81,24 +31,54 @@ proxies:
   uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
   xudp: true
   servername: web.eitaa.com
-- alterId: 0
-  cipher: auto
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 🇫🇮 | @WhiteDNS | FI87|6.2MB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 38318
-  server: 65.109.208.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI67|7.0MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 1280
+  server: 77.42.28.120
+  type: vless
   udp: true
-  uuid: d676e069-4821-4a52-a913-b32140b9a7c3
+  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
+  ws-opts:
+    headers:
+      Host: is1-ssl.mzstatic.com
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.181 Safari/537.36
+    path: /
   xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI68|6.5MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: i_cD6qpNHvE-j2vFGxEBmXNvX5U8PE4-lBkxcti8Ry8
+    short-id: 714369014b7679bf
+  server: fi1.rovilo.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 452f869f-7720-47c3-a175-b6673e31d3e8
+  xudp: true
+  servername: store.steampowered.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI69|6.2MB/s|DNSOK|GPT⁺-FI
+  port: 443
+  reality-opts:
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  server: 65.108.3.59
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  network: tcp
+  servername: web.eitaa.com
 - encryption: mlkem768x25519plus.native.0rtt.oEfFlk7NfA_QAF1u_5EXbuXfD_8q-oPbaHXmxAjLAS0
-  name: 🇫🇮 | @WhiteDNS | FI88|5.8MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI70|2.8MB/s|DNSOK|GPT⁺-FI
   network: ws
   port: 80
   server: Kashgsgsiajsh.apple.gymyoga.ir
@@ -108,65 +88,23 @@ proxies:
   ws-opts:
     headers:
       Host: Kashgsgsiajsh.apple.gymyoga.ir
-      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like
-        Gecko) Chrome/11.0.696.3 Safari/534.24
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.63 Safari/537.36
     path: /
   xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI89|5.8MB/s|DNSOK|GPT⁺-FI
-  network: raw
-  port: 8443
-  reality-opts:
-    public-key: uYtexW4wx3Ql_q73x3PM2Vbc3xyKxBgEh5FUL0CmogM
-    short-id: 45d28a6346d04a99
-  server: v3.tgphoenix.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6414b234-957e-4777-b39f-9a30080ace9b
-  xudp: true
-  servername: www.aparat.com
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI90|5.7MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: uYtexW4wx3Ql_q73x3PM2Vbc3xyKxBgEh5FUL0CmogM
-    short-id: 45d28a6346d04a99
-  server: v3.tgphoenix.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6414b234-957e-4777-b39f-9a30080ace9b
-  xudp: true
-  servername: www.aparat.com
-- encryption: none
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 🇫🇮 | @WhiteDNS | FI91|5.7MB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 28243
-  server: 65.109.208.97
-  type: vless
-  udp: true
-  uuid: d676e069-4821-4a52-a913-b32140b9a7c3
-  xudp: true
-- encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI92|5.7MB/s|DNSOK|GPT⁺-FI
+- encryption: mlkem768x25519plus.native.0rtt.oEfFlk7NfA_QAF1u_5EXbuXfD_8q-oPbaHXmxAjLAS0
+  name: 🇫🇮 | @WhiteDNS | FI71|992KB/s|DNSOK|GPT⁺-FI
   network: ws
   port: 80
-  server: 146.75.119.82
+  server: support.zoom.us.kashgsgsiajsh.apple.gymyoga.ir
   type: vless
   udp: true
-  uuid: 9b5df664-8725-4f72-acaa-3d9f52e3c69a
+  uuid: a55538b8-801e-4e45-80d6-d8a8eea31e4f
   ws-opts:
     headers:
-      Host: rb24.ir
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M) AppleWebKit/537.36
+      Host: support.zoom.us.kashgsgsiajsh.apple.gymyoga.ir
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G610F Build/NRD90M) AppleWebKit/537.36
         (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
-    path: /ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
+    path: /
   xudp: true
+  servername: support.zoom.us.kashgsgsiajsh.apple.gymyoga.ir

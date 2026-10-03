@@ -16,8 +16,8 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇭 | @WhiteDNS | CH49|37.5MB/s|DNSOK|GPT⁺-CH
-  network: tcp
+  name: 🇨🇭 | @WhiteDNS | CH27|46.8MB/s|DNSOK|GPT⁺-CH
+  network: raw
   port: 443
   reality-opts:
     public-key: 8PZTYkhNhSgagVdaI-iqSCPXJwDhHU23IUwZIu08zH4
@@ -32,8 +32,8 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇭 | @WhiteDNS | CH50|37.0MB/s|DNSOK|GPT⁺-CH
-  network: raw
+  name: 🇨🇭 | @WhiteDNS | CH28|45.7MB/s|DNSOK|GPT⁺-CH
+  network: tcp
   port: 443
   reality-opts:
     public-key: 8PZTYkhNhSgagVdaI-iqSCPXJwDhHU23IUwZIu08zH4
@@ -45,7 +45,15 @@ proxies:
   uuid: e0bd9dfa-0cf9-47c0-92ac-7dba08ebcff8
   xudp: true
   servername: www.google.com
-- name: 🇨🇭 | @WhiteDNS | CH51|33.2MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH29|38.5MB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 9443
+  server: 37.120.213.210
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH30|23.1MB/s|DNSOK|GPT⁺-CH
   password: ''
   port: 443
   server: 31.7.62.50
@@ -55,7 +63,7 @@ proxies:
   username: ''
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇨🇭 | @WhiteDNS | CH52|27.5MB/s|DNSOK|GPT⁺-CH
+  name: 🇨🇭 | @WhiteDNS | CH31|20.1MB/s|DNSOK|GPT⁺-CH
   port: 443
   reality-opts:
     public-key: 8PZTYkhNhSgagVdaI-iqSCPXJwDhHU23IUwZIu08zH4
@@ -68,18 +76,10 @@ proxies:
   uuid: e0bd9dfa-0cf9-47c0-92ac-7dba08ebcff8
   network: tcp
   servername: www.google.com
-- name: 🇨🇭 | @WhiteDNS | CH53|21.8MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH32|7.1MB/s|DNSOK|GPT⁺-CH
   password: ''
   port: 9443
   server: 149.88.27.46
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇭 | @WhiteDNS | CH54|4.8MB/s|DNSOK|GPT⁺-CH
-  password: ''
-  port: 9443
-  server: 37.120.213.210
   skip-cert-verify: true
   tls: true
   type: http
@@ -88,12 +88,12 @@ proxy-groups:
 - name: CH-Auto
   type: url-test
   proxies:
-  - 🇨🇭 | @WhiteDNS | CH49|37.5MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH50|37.0MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH51|33.2MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH52|27.5MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH53|21.8MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH54|4.8MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH27|46.8MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH28|45.7MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH29|38.5MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH30|23.1MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH31|20.1MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH32|7.1MB/s|DNSOK|GPT⁺-CH
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
