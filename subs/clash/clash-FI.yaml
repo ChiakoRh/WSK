@@ -13,63 +13,120 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- encryption: mlkem768x25519plus.native.0rtt.oEfFlk7NfA_QAF1u_5EXbuXfD_8q-oPbaHXmxAjLAS0
-  name: 🇫🇮 | @WhiteDNS | FI85|16.1MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 80
-  server: support.zoom.us.kashgsgsiajsh.apple.gymyoga.ir
-  type: vless
+- cipher: 2022-blake3-aes-256-gcm
+  name: 🇫🇮 | @WhiteDNS | FI125|18.8MB/s|DNSOK|GPT⁺-FI
+  password: olF2/aNyAxEBf0CHoFlkGlAXUdw+ap1CzFd3AL4WuuM=:d8C1FciKoaFD6xRFbCYyFYlT44MV3zYlXvD6DfhsSqo=
+  port: 5566
+  server: foodal.color-shop.ir
+  type: ss
   udp: true
-  uuid: a55538b8-801e-4e45-80d6-d8a8eea31e4f
-  ws-opts:
-    headers:
-      Host: support.zoom.us.kashgsgsiajsh.apple.gymyoga.ir
-      User-Agent: Mozilla/5.0 (Windows NT 5.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /
-  xudp: true
-  servername: support.zoom.us.kashgsgsiajsh.apple.gymyoga.ir
-- encryption: mlkem768x25519plus.native.0rtt.oEfFlk7NfA_QAF1u_5EXbuXfD_8q-oPbaHXmxAjLAS0
-  name: 🇫🇮 | @WhiteDNS | FI86|6.9MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 80
-  server: Kashgsgsiajsh.apple.gymyoga.ir
-  type: vless
-  udp: true
-  uuid: a55538b8-801e-4e45-80d6-d8a8eea31e4f
-  ws-opts:
-    headers:
-      Host: Kashgsgsiajsh.apple.gymyoga.ir
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/62.0.3202.89 Safari/537.36
-    path: /
-  xudp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI87|6.8MB/s|DNSOK|GPT⁺-FI
-  network: xhttp
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI126|5.7MB/s|DNSOK|GPT⁺-FI
   port: 443
-  server: cdn3.alihapp.com
+  reality-opts:
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  server: 65.108.3.59
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: c4394e27-baeb-422d-8905-a93f8e01126f
-  xhttp-opts:
-    host: cdn3.alihapp.com
-    mode: auto
-    path: /
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  network: tcp
+  servername: web.eitaa.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI127|2.8MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  server: 65.108.3.59
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
   xudp: true
-  servername: cdn3.alihapp.com
+  servername: web.eitaa.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI128|2.8MB/s|DNSOK|GPT⁺-FI
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  server: 65.108.3.59
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  xudp: true
+  servername: web.eitaa.com
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇫🇮 | @WhiteDNS | FI129|1.7MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 54225
+  server: 65.109.208.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d6b5858a-5f3f-45e9-a98c-d1c05f171652
+  xudp: true
+- encryption: none
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇫🇮 | @WhiteDNS | FI130|1.5MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 28243
+  server: 65.109.208.97
+  type: vless
+  udp: true
+  uuid: 1240607b-86ed-4ef1-9123-8061144cbdbf
+  xudp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇫🇮 | @WhiteDNS | FI131|812KB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 38318
+  server: 65.109.208.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1240607b-86ed-4ef1-9123-8061144cbdbf
+  xudp: true
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI85|16.1MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI86|6.9MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI87|6.8MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI125|18.8MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI126|5.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI127|2.8MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI128|2.8MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI129|1.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI130|1.5MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI131|812KB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
