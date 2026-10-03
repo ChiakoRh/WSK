@@ -13,9 +13,25 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- client-fingerprint: random
+  encryption: none
+  grpc-opts:
+    grpc-service-name: shop.api.v1.CatalogService
+  name: 🇮🇪 | @WhiteDNS | IE19|17.5MB/s|DNSOK|GPT⁺-IE
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: gojmfVDE3y9OZmqSZqkJBTNGPyD5-sjkDYmcD8tsxCQ
+    short-id: cfa818cb27f59905
+  server: ie.monkora.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  xudp: true
+  servername: www.asus.com
 - client-fingerprint: chrome
-  name: 🇮🇪 | @WhiteDNS | IE52|5.8MB/s|DNSOK|GPT⁺-IE
-  network: tcp
+  name: 🇮🇪 | @WhiteDNS | IE20|15.7MB/s|DNSOK|GPT⁺-IE
   password: Trojan@82164024
   port: 443
   server: ie.tronsg.com
@@ -23,17 +39,8 @@ proxies:
   sni: ie.tronsg.com
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 🇮🇪 | @WhiteDNS | IE53|5.8MB/s|DNSOK|GPT⁺-IE
-  password: Trojan@82164024
-  port: 443
-  server: ie.tronsg.com
-  skip-cert-verify: false
-  sni: ie.tronsg.com
-  type: trojan
-  udp: true
   network: tcp
-- name: 🇮🇪 | @WhiteDNS | IE54|5.1MB/s|DNSOK|GPT⁺-IE
+- name: 🇮🇪 | @WhiteDNS | IE21|6.0MB/s|DNSOK|GPT⁺-IE
   password: ''
   port: 443
   server: 149.88.96.12
@@ -41,13 +48,42 @@ proxies:
   tls: true
   type: http
   username: ''
+- client-fingerprint: chrome
+  name: 🇮🇪 | @WhiteDNS | IE22|5.7MB/s|DNSOK|GPT⁺-IE
+  network: tcp
+  password: Trojan@82164024
+  port: 443
+  server: ie.tronsg.com
+  skip-cert-verify: false
+  sni: ie.tronsg.com
+  type: trojan
+  udp: true
+- client-fingerprint: firefox
+  encryption: none
+  grpc-opts:
+    grpc-service-name: shop.api.v1.CatalogService
+  name: 🇮🇪 | @WhiteDNS | IE23|2.6MB/s|DNSOK|GPT⁺-IE
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: gojmfVDE3y9OZmqSZqkJBTNGPyD5-sjkDYmcD8tsxCQ
+    short-id: cfa818cb27f59905
+  server: 86.54.83.75
+  tls: true
+  type: vless
+  udp: true
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  xudp: true
+  servername: www.asus.com
 proxy-groups:
 - name: IE-Auto
   type: url-test
   proxies:
-  - 🇮🇪 | @WhiteDNS | IE52|5.8MB/s|DNSOK|GPT⁺-IE
-  - 🇮🇪 | @WhiteDNS | IE53|5.8MB/s|DNSOK|GPT⁺-IE
-  - 🇮🇪 | @WhiteDNS | IE54|5.1MB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE19|17.5MB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE20|15.7MB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE21|6.0MB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE22|5.7MB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE23|2.6MB/s|DNSOK|GPT⁺-IE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

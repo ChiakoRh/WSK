@@ -13,84 +13,9 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇩🇪 | @WhiteDNS | DE654|40.2MB/s|DNSOK|GPT⁺-DE
-  password: UX82473651
-  port: 443
-  server: 3.120.109.26
-  skip-cert-verify: true
-  sni: actual-squid.rooster465.autos
-  type: trojan
-  udp: true
-  network: tcp
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪 | @WhiteDNS | DE655|36.6MB/s|DNSOK|GPT⁺-DE
-  password: 2YdE4lFOid5a
-  port: 8388
-  server: 51.195.126.38
-  type: ss
-  udp: true
-- encryption: none
-  http-opts:
-    headers:
-      Host:
-      - play.google.com
-    path:
-    - /
-  name: 🇩🇪 | @WhiteDNS | DE656|35.1MB/s|DNSOK|GPT⁺-DE
-  network: http
-  port: 8080
-  server: 91.107.151.122
-  type: vless
-  udp: true
-  uuid: 39098241-9c6e-4fe7-abbd-7f6f6ed4512c
-  xudp: true
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪 | @WhiteDNS | DE657|35.0MB/s|DNSOK|GPT⁺-DE
-  port: 1234
-  server: 162.19.204.71
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  network: tcp
-  servername: supervpn.super.com
-- encryption: none
-  http-opts:
-    headers:
-      Host:
-      - dynu.com
-    path:
-    - /@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---
-  name: 🇩🇪 | @WhiteDNS | DE658|32.7MB/s|DNSOK|GPT⁺-DE
-  network: http
-  port: 9093
-  server: 91.107.249.200
-  type: vless
-  udp: true
-  uuid: 39a4fc8e-1991-45dc-9a70-89169df89ec9
-  xudp: true
-- client-fingerprint: chrome
-  name: 🇩🇪 | @WhiteDNS | DE659|31.1MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 8443
-  server: 104.21.60.29
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
-  ws-opts:
-    headers:
-      Host: www.large-files.info
-      User-Agent: Mozilla/5.0 (Windows NT 5.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /var/www/html/video/preview/download/i8o0la
-  xudp: true
-  servername: www.large-files.info
 - alterId: 0
   cipher: aes-128-gcm
-  name: 🇩🇪 | @WhiteDNS | DE660|30.5MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE398|34.0MB/s|DNSOK|GPT⁺-DE
   port: 1234
   server: 141.95.65.9
   skip-cert-verify: true
@@ -101,96 +26,35 @@ proxies:
   network: tcp
   servername: supervpn.super.com
 - client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE661|30.2MB/s|DNSOK|GPT⁺-DE
-  network: raw
+  name: 🇩🇪 | @WhiteDNS | DE399|33.0MB/s|DNSOK|GPT⁺-DE
   port: 443
   reality-opts:
-    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
-    short-id: d7de3a6ff4018957
-  server: 31.70.111.146
+    public-key: i1OqphFMJNL_xwV5zES4icJTPBHtSgieOt3FYns9zB0
+    short-id: 2b
+  server: 162.19.230.250
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
-  xudp: true
-  servername: www.apple.com
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE662|28.5MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 8443
-  server: www.large-files.info
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/63.0.3239.132 Safari/537.36
-    path: /var/www/html/video/preview/download/i8o0la
-  xudp: true
-  servername: www.large-files.info
-- client-fingerprint: chrome
-  name: 🇩🇪 | @WhiteDNS | DE663|28.3MB/s|DNSOK|GPT⁺-DE
-  password: UX82473651
-  port: 443
-  server: actual-squid.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
+  uuid: 7017a1ca-7a31-463d-832e-5a7261a3dd62
   network: tcp
-  sni: actual-squid.rooster465.autos
-- name: 🇩🇪 | @WhiteDNS | DE664|27.8MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 24086
-  server: 5.75.192.73
-  type: vless
-  udp: true
-  uuid: f7cf15b1-ae16-4875-954d-66f4ada6b2b2
-  xudp: true
-- name: 🇩🇪 | @WhiteDNS | DE665|27.5MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 443
-  server: 159.69.94.125
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  name: 🇩🇪 | @WhiteDNS | DE666|27.2MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: 3.120.109.26
-  skip-cert-verify: true
-  sni: actual-squid.rooster465.autos
-  type: trojan
-  udp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
+  servername: www.amazon.com
+- encryption: none
   http-opts:
-    headers: {}
+    headers:
+      Host:
+      - dynu.com
     path:
-    - /
-  name: 🇩🇪 | @WhiteDNS | DE667|26.2MB/s|DNSOK|GPT⁺-DE
+    - /@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---
+  name: 🇩🇪 | @WhiteDNS | DE400|32.4MB/s|DNSOK|GPT⁺-DE
   network: http
-  port: 10803
-  server: 5.45.97.147
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+  port: 9093
+  server: 91.107.249.200
+  type: vless
   udp: true
-  uuid: 018fbfb7-721a-49a9-b9f5-fb55d92592b6
+  uuid: 39a4fc8e-1991-45dc-9a70-89169df89ec9
   xudp: true
-- name: 🇩🇪 | @WhiteDNS | DE668|25.6MB/s|DNSOK|GPT⁺-DE
+- name: 🇩🇪 | @WhiteDNS | DE401|31.6MB/s|DNSOK|GPT⁺-DE
   network: ws
   port: 80
   server: 139.162.149.105
@@ -200,14 +64,40 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/37.0.2062.120 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/49.0.2623.112 Safari/537.36
     path: /
   xudp: true
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 | @WhiteDNS | DE402|30.3MB/s|DNSOK|GPT⁺-DE
+  port: 1234
+  server: 162.19.204.71
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  network: tcp
+  servername: supervpn.super.com
 - client-fingerprint: chrome
   encryption: none
+  name: 🇩🇪 | @WhiteDNS | DE403|30.0MB/s|DNSOK|GPT⁺-DE
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: i1OqphFMJNL_xwV5zES4icJTPBHtSgieOt3FYns9zB0
+    short-id: 2b
+  server: 162.19.230.250
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7017a1ca-7a31-463d-832e-5a7261a3dd62
+  xudp: true
+  servername: www.amazon.com
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE669|24.6MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE404|28.8MB/s|DNSOK|GPT⁺-DE
   network: tcp
   port: 443
   reality-opts:
@@ -220,43 +110,22 @@ proxies:
   uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
   xudp: true
   servername: www.apple.com
-- name: 🇩🇪 | @WhiteDNS | DE670|24.3MB/s|DNSOK|GPT⁺-DE
-  password: ''
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇩🇪 | @WhiteDNS | DE405|28.7MB/s|DNSOK|GPT⁺-DE
   port: 443
-  server: 149.36.50.1
+  reality-opts:
+    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
+    short-id: d7de3a6ff4018957
+  server: 31.70.111.146
   skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇩🇪 | @WhiteDNS | DE671|24.2MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 443
-  server: 185.232.70.11
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE672|23.4MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 8443
-  server: www.large-files.info
   tls: true
   type: vless
   udp: true
-  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/57.0.2987.133 Safari/537.36
-    path: /var/www/html/video/preview/download/i8o0la
-  xudp: true
-  servername: www.large-files.info
-- name: 🇩🇪 | @WhiteDNS | DE673|22.7MB/s|DNSOK|GPT⁺-DE
+  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
+  network: tcp
+  servername: www.apple.com
+- name: 🇩🇪 | @WhiteDNS | DE406|23.6MB/s|DNSOK|GPT⁺-DE
   password: ''
   port: 9002
   server: 158.173.154.4
@@ -264,7 +133,15 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇩🇪 | @WhiteDNS | DE674|22.7MB/s|DNSOK|GPT⁺-DE
+- name: 🇩🇪 | @WhiteDNS | DE407|23.4MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 443
+  server: 149.36.50.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇩🇪 | @WhiteDNS | DE408|22.8MB/s|DNSOK|GPT⁺-DE
   password: ''
   port: 9002
   server: 158.173.154.2
@@ -272,7 +149,23 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇩🇪 | @WhiteDNS | DE675|22.6MB/s|DNSOK|GPT⁺-DE
+- name: 🇩🇪 | @WhiteDNS | DE409|22.4MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 443
+  server: 149.36.50.129
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇩🇪 | @WhiteDNS | DE410|22.1MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 9002
+  server: 158.173.154.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇩🇪 | @WhiteDNS | DE411|19.6MB/s|DNSOK|GPT⁺-DE
   password: ''
   port: 9002
   server: 158.173.154.5
@@ -280,149 +173,13 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇩🇪 | @WhiteDNS | DE676|22.5MB/s|DNSOK|GPT⁺-DE
-  password: None
-  port: 443
-  server: 149.36.50.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- encryption: mlkem768x25519plus.native.0rtt.oEfFlk7NfA_QAF1u_5EXbuXfD_8q-oPbaHXmxAjLAS0
-  name: 🇩🇪 | @WhiteDNS | DE677|22.1MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 80
-  server: ispsjabab.g44.gymyoga.ir
-  type: vless
-  udp: true
-  uuid: 403ed5cf-cdb2-4c66-84e0-033545efffe7
-  ws-opts:
-    headers:
-      Host: Ispsjabab.G44.gymyoga.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/65.0.3325.181 Safari/537.36
-    path: /
-  xudp: true
-- encryption: mlkem768x25519plus.native.0rtt.oEfFlk7NfA_QAF1u_5EXbuXfD_8q-oPbaHXmxAjLAS0
-  name: 🇩🇪 | @WhiteDNS | DE678|21.5MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 80
-  server: Ispsjabab.G44.gymyoga.ir
-  type: vless
-  udp: true
-  uuid: 403ed5cf-cdb2-4c66-84e0-033545efffe7
-  ws-opts:
-    headers:
-      Host: Ispsjabab.G44.gymyoga.ir
-      User-Agent: Mozilla/5.0 (Linux; Android 7.1.1; CPH1723 Build/N6F26Q) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36
-    path: /
-  xudp: true
-- name: 🇩🇪 | @WhiteDNS | DE679|21.1MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 9002
-  server: 158.173.154.3
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE680|17.2MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 10570
-  server: 5.75.192.73
-  type: vless
-  udp: true
-  uuid: 38540b36-41c7-417f-af60-2192d5a362fe
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE681|17.1MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-    short-id: ''
-  server: 2.58.66.143
-  tls: true
-  type: vless
-  udp: true
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  xudp: true
-  servername: example.org
-- client-fingerprint: chrome
-  name: 🇩🇪 | @WhiteDNS | DE682|14.2MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: actual-squid.rooster465.autos
-  skip-cert-verify: false
-  sni: actual-squid.rooster465.autos
-  type: trojan
-  udp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE683|13.8MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 443
-  server: 188.114.97.6
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06278d74-9385-42e8-be1b-49c78ebc49ea
-  ws-opts:
-    headers:
-      Host: snapp.matialz.ir
-      User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/69.0.3497.100 Safari/537.36
-    path: /pgcfws-d7k
-  xudp: true
-  servername: snapp.matialz.ir
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE684|13.0MB/s|DNSOK|GPT⁺-DE
-  network: xhttp
-  port: 443
-  server: 151.101.215.97
-  tls: true
-  type: vless
-  udp: true
-  uuid: 26becb32-3d57-4b59-9252-3b046768b1ea
-  xhttp-opts:
-    host: ovd13.global.ssl.fastly.net
-    mode: auto
-    path: /
-  xudp: true
-  servername: accounts.fastly.com
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 🇩🇪 | @WhiteDNS | DE685|12.7MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 443
-  server: megariverport-nayab.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: a337aa84-3152-40f0-87fc-bdcbbb3b3b5d
-  ws-opts:
-    headers:
-      Host: sdxih.maxpixel-hangover.sbs
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /bali
-  xudp: true
-  servername: sdxih.maxpixel-hangover.sbs
 - alpn:
   - h3
   - h2
   - http/1.1
   client-fingerprint: chrome
   encryption: mlkem768x25519plus.native.0rtt.Y0-j5e-CpehUKzhEeat1dTYevroKyHV4g9HML3ujmlQ
-  name: 🇩🇪 | @WhiteDNS | DE686|7.2MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE412|18.8MB/s|DNSOK|GPT⁺-DE
   network: xhttp
   port: 443
   reality-opts:
@@ -439,52 +196,128 @@ proxies:
     path: /
   xudp: true
   servername: germanytest.tulnaro.ir
-- client-fingerprint: chrome
-  name: 🇩🇪 | @WhiteDNS | DE687|6.4MB/s|DNSOK|GPT⁺-DE
+- encryption: none
+  name: 🇩🇪 | @WhiteDNS | DE413|17.4MB/s|DNSOK|GPT⁺-DE
   network: ws
-  password: 0b5fa773-6f37-4134-87d4-0c349742b6f6
-  port: 443
-  server: 172.67.177.105
-  skip-cert-verify: true
-  sni: app-538961.user-y0o4gm.workers.dev
-  type: trojan
+  port: 33483
+  server: apadana.gamingnet.ir
+  type: vless
   udp: true
+  uuid: 758a691a-45d2-4462-a0e8-991248a6994e
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+      Host: apadana.gamingnet.ir
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/57.0.2987.133 Safari/537.36
-    path: /cmh
-- name: 🇩🇪 | @WhiteDNS | DE688|6.2MB/s|DNSOK|GPT⁺-DE
+    path: /
+  xudp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇩🇪 | @WhiteDNS | DE414|16.6MB/s|DNSOK|GPT⁺-DE
+  network: http
+  port: 10803
+  server: 5.45.97.147
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 018fbfb7-721a-49a9-b9f5-fb55d92592b6
+  xudp: true
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - play.google.com
+    path:
+    - /
+  name: 🇩🇪 | @WhiteDNS | DE415|14.8MB/s|DNSOK|GPT⁺-DE
+  network: http
+  port: 8080
+  server: 91.107.151.122
+  type: vless
+  udp: true
+  uuid: 39098241-9c6e-4fe7-abbd-7f6f6ed4512c
+  xudp: true
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇩🇪 | @WhiteDNS | DE416|13.2MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 443
+  server: megariverport-nayab.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: a337aa84-3152-40f0-87fc-bdcbbb3b3b5d
+  ws-opts:
+    headers:
+      Host: sdxih.maxpixel-hangover.sbs
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/63.0.3239.132 Safari/537.36
+    path: /bali
+  xudp: true
+  servername: sdxih.maxpixel-hangover.sbs
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪 | @WhiteDNS | DE417|9.2MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 443
+  server: fast.jkerm.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2e8cd1fa-0dcc-4402-bb99-be3d623fc1d5
+  ws-opts:
+    headers:
+      Host: pokerrr.global.ssl.fastly.net.
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /
+  xudp: true
+  servername: ssl.fastly.com
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪 | @WhiteDNS | DE418|7.6MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: i1OqphFMJNL_xwV5zES4icJTPBHtSgieOt3FYns9zB0
+    short-id: 2b
+  server: 162.19.230.250
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7017a1ca-7a31-463d-832e-5a7261a3dd62
+  xudp: true
+  servername: www.amazon.com
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪 | @WhiteDNS | DE419|7.4MB/s|DNSOK|GPT⁺-DE
+  password: 2YdE4lFOid5a
+  port: 8388
+  server: 51.195.126.38
+  type: ss
+  udp: true
+- name: 🇩🇪 | @WhiteDNS | DE420|7.4MB/s|DNSOK|GPT⁺-DE
   password: ''
-  port: 9002
-  server: 158.173.154.1
+  port: 443
+  server: 159.69.94.125
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- cipher: aes-256-gcm
-  name: 🇩🇪 | @WhiteDNS | DE689|6.2MB/s|DNSOK|GPT⁺-GB
-  password: g5h5jleTRSyO3Rk4
-  port: 80
-  server: 149.102.132.184
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 🇩🇪 | @WhiteDNS | DE690|6.2MB/s|DNSOK|GPT⁺-DE
-  password: UX82473651
-  port: 443
-  server: actual-squid.rooster465.autos
-  skip-cert-verify: true
-  sni: actual-squid.rooster465.autos
-  type: trojan
-  udp: true
-  network: tcp
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE691|5.9MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE421|6.7MB/s|DNSOK|GPT⁺-DE
   network: ws
   port: 443
   server: 172.67.152.162
@@ -495,65 +328,306 @@ proxies:
   ws-opts:
     headers:
       Host: app-q0zc4t.user-4gfyh5.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.94 Safari/537.36
     path: /cmh
   xudp: true
   servername: app-q0zc4t.user-4gfyh5.workers.dev
-- name: 🇩🇪 | @WhiteDNS | DE692|5.9MB/s|DNSOK|GPT⁺-DE
-  password: ''
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇩🇪 | @WhiteDNS | DE422|6.7MB/s|DNSOK|GPT⁺-DE
+  network: raw
   port: 443
-  server: 79.76.126.155
+  reality-opts:
+    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
+    short-id: d7de3a6ff4018957
+  server: 31.70.111.146
+  tls: true
+  type: vless
+  udp: true
+  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
+  xudp: true
+  servername: www.apple.com
+- name: 🇩🇪 | @WhiteDNS | DE423|6.2MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 9002
+  server: 158.173.154.3
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE693|5.8MB/s|DNSOK|GPT⁺
+- encryption: none
+  name: 🇩🇪 | @WhiteDNS | DE424|6.1MB/s|DNSOK|GPT⁺-DE
   network: ws
+  port: 33483
+  server: 49.13.231.249
+  type: vless
+  udp: true
+  uuid: 758a691a-45d2-4462-a0e8-991248a6994e
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/32.0.1700.107 Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪 | @WhiteDNS | DE425|6.1MB/s|DNSOK|GPT⁺-DE
+  network: raw
   port: 443
-  server: 104.21.88.201
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+    short-id: ''
+  server: 62.192.153.132
   tls: true
   type: vless
   udp: true
-  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  xudp: true
+  servername: example.org
+- encryption: none
+  name: 🇩🇪 | @WhiteDNS | DE426|6.0MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 80
+  server: 188.114.97.6
+  type: vless
+  udp: true
+  uuid: NN
   ws-opts:
     headers:
-      Host: app-q0zc4t.user-4gfyh5.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/42.0.2311.90 Safari/537.36
-    path: /cmh
+      Host: msjsi.azazilvpn.sbs.
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/65.0.3325.181 Safari/537.36
+    path: /CooonfigCooonfigCooonfigCooonfigCooonfig
   xudp: true
-  servername: app-q0zc4t.user-4gfyh5.workers.dev
+- client-fingerprint: chrome
+  name: 🇩🇪 | @WhiteDNS | DE427|6.0MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: 3.120.109.26
+  skip-cert-verify: false
+  sni: actual-squid.rooster465.autos
+  type: trojan
+  udp: true
+- name: 🇩🇪 | @WhiteDNS | DE428|5.7MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 443
+  server: 37.203.35.28
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 - cipher: aes-256-gcm
-  name: 🇩🇪 | @WhiteDNS | DE694|5.4MB/s|DNSOK|GPT⁺-GB
+  name: 🇩🇪 | @WhiteDNS | DE429|5.6MB/s|DNSOK|GPT⁺-GB
+  password: LXchLsIwtCeUAUgu
+  port: 80
+  server: 149.102.149.207
+  type: ss
+  udp: true
+- name: 🇩🇪 | @WhiteDNS | DE430|5.5MB/s|DNSOK|GPT⁺
+  password: ''
+  port: 443
+  server: 185.232.70.11
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- encryption: none
+  name: 🇩🇪 | @WhiteDNS | DE431|5.1MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 80
+  server: 104.16.72.70
+  type: vless
+  udp: true
+  uuid: NN
+  ws-opts:
+    headers:
+      Host: msjsi.azazilvpn.sbs.
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; A37fw Build/LMY47V) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+    path: /CooonfigCooonfigCooonfigCooonfigCooonfig
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇩🇪 | @WhiteDNS | DE432|4.8MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+    short-id: ''
+  server: 62.192.153.132
+  tls: true
+  type: vless
+  udp: true
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  xudp: true
+  servername: example.org
+- encryption: none
+  name: 🇩🇪 | @WhiteDNS | DE433|4.7MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 80
+  server: 188.114.98.0
+  type: vless
+  udp: true
+  uuid: NN
+  ws-opts:
+    headers:
+      Host: msjsi.azazilvpn.sbs.
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/49.0.2623.110 Safari/537.36
+    path: /CooonfigCooonfigCooonfigCooonfigCooonfig
+  xudp: true
+- cipher: aes-256-gcm
+  name: 🇩🇪 | @WhiteDNS | DE434|4.5MB/s|DNSOK|GPT⁺-DE
+  password: kKEd0rBrd56Furjz
+  port: 443
+  server: 2.58.81.221
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 🇩🇪 | @WhiteDNS | DE435|3.7MB/s|DNSOK|GPT⁺-DE
+  password: UX82473651
+  port: 443
+  server: actual-squid.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  network: tcp
+  sni: actual-squid.rooster465.autos
+- cipher: aes-256-gcm
+  name: 🇩🇪 | @WhiteDNS | DE436|3.4MB/s|DNSOK|GPT⁺-DE
+  password: kKEd0rBrd56Furjz
+  port: 80
+  server: 2.58.81.221
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇩🇪 | @WhiteDNS | DE437|3.0MB/s|DNSOK|GPT⁺-GB
   password: g5h5jleTRSyO3Rk4
   port: 443
   server: 149.102.132.184
   type: ss
   udp: true
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE695|5.4MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE438|2.5MB/s|DNSOK|GPT⁺-DE
+  password: UX82473651
+  port: 443
+  server: actual-squid.rooster465.autos
+  skip-cert-verify: true
+  sni: actual-squid.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇩🇪 | @WhiteDNS | DE439|1.9MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: actual-squid.rooster465.autos
+  skip-cert-verify: true
+  sni: actual-squid.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇩🇪 | @WhiteDNS | DE440|1.8MB/s|DNSOK|GPT⁺-DE
+  network: raw
+  password: UX82473651
+  port: 443
+  server: actual-squid.rooster465.autos
+  skip-cert-verify: false
+  sni: actual-squid.rooster465.autos
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇩🇪 | @WhiteDNS | DE441|1.7MB/s|DNSOK|GPT⁺-GB
+  password: g5h5jleTRSyO3Rk4
+  port: 80
+  server: 149.102.132.184
+  type: ss
+  udp: true
+- name: 🇩🇪 | @WhiteDNS | DE442|1.6MB/s|DNSOK|GPT⁺-DE
+  password: UX82473651
+  port: 443
+  server: 3.120.109.26
+  skip-cert-verify: true
+  sni: actual-squid.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- encryption: none
+  name: 🇩🇪 | @WhiteDNS | DE443|1.5MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 80
+  server: 188.114.97.8
+  type: vless
+  udp: true
+  uuid: NN
+  ws-opts:
+    headers:
+      Host: msjsi.azazilvpn.sbs.
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /CooonfigCooonfigCooonfigCooonfigCooonfig
+  xudp: true
+- encryption: none
+  name: 🇩🇪 | @WhiteDNS | DE444|1.4MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 80
+  server: 162.159.152.4
+  type: vless
+  udp: true
+  uuid: NN
+  ws-opts:
+    headers:
+      Host: msjsi.azazilvpn.sbs.
+      User-Agent: Mozilla/5.0 (X11; U; Linux i586; en-US) AppleWebKit/533.2 (KHTML,
+        like Gecko) Chrome/5.0.342.1 Safari/533.2
+    path: /CooonfigCooonfigCooonfigCooonfigCooonfig
+  xudp: true
+- cipher: aes-256-gcm
+  name: 🇩🇪 | @WhiteDNS | DE445|1.3MB/s|DNSOK|GPT⁺-GB
+  password: LXchLsIwtCeUAUgu
+  port: 443
+  server: 149.102.149.207
+  type: ss
+  udp: true
+- name: 🇩🇪 | @WhiteDNS | DE446|1.3MB/s|DNSOK|GPT⁺
+  password: ''
+  port: 8443
+  server: 45.142.141.5
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪 | @WhiteDNS | DE447|1004KB/s|DNSOK|GPT⁺-DE
+  network: tcp
   port: 443
   reality-opts:
-    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
-    short-id: d7de3a6ff4018957
-  server: 31.70.111.146
-  skip-cert-verify: true
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+    short-id: ''
+  server: 2.58.66.143
   tls: true
   type: vless
   udp: true
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
-  network: tcp
-  servername: www.apple.com
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  xudp: true
+  servername: example.org
+- name: 🇩🇪 | @WhiteDNS | DE448|552KB/s|DNSOK|GPT⁺-DE
+  password: e4b72b531a2d10900519
+  port: 443
+  server: 167.172.172.190
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: testuser1
 - client-fingerprint: chrome
   encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE696|5.4MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE449|512KB/s|DNSOK|GPT⁺-DE
   network: ws
   port: 443
   server: app-q0zc4t.user-4gfyh5.workers.dev
@@ -564,178 +638,67 @@ proxies:
   ws-opts:
     headers:
       Host: app-q0zc4t.user-4gfyh5.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/47.0.2526.106 Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G570M) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
     path: /cmh
   xudp: true
   servername: app-q0zc4t.user-4gfyh5.workers.dev
-- name: 🇩🇪 | @WhiteDNS | DE697|5.2MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 443
-  server: 37.203.35.28
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  name: 🇩🇪 | @WhiteDNS | DE698|5.0MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  password: 0b5fa773-6f37-4134-87d4-0c349742b6f6
-  port: 443
-  server: app-538961.user-y0o4gm.workers.dev
-  skip-cert-verify: false
-  sni: app-538961.user-y0o4gm.workers.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /
-- client-fingerprint: ios
-  encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE699|4.1MB/s|DNSOK|GPT⁺-DE
-  network: xhttp
-  port: 23411
-  reality-opts:
-    public-key: 59Fl4mMEYwB2pOcBZzX4Bdd0OA4xG8BXjd73RtER_QQ
-    short-id: 16fbfc284dcf4954
-  server: iro.wingerdt.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9f7df0f1-5688-46cc-9bbd-56ae7bdc0882
-  xhttp-opts:
-    mode: auto
-    path: /
-  xudp: true
-  servername: aparat.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE700|4.0MB/s|DNSOK|GPT⁺-DE
-  port: 443
-  reality-opts:
-    public-key: XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE
-    short-id: 5c6481cdd4
-  server: 64.118.158.56
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8af93649-403b-46d8-9966-923d4c58402c
-  network: tcp
-  servername: buckeye-retail-website.amazon.com
-- cipher: aes-256-gcm
-  name: 🇩🇪 | @WhiteDNS | DE701|3.1MB/s|DNSOK|GPT⁺-GB
-  password: LXchLsIwtCeUAUgu
-  port: 443
-  server: 149.102.149.207
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇩🇪 | @WhiteDNS | DE702|2.4MB/s|DNSOK|GPT⁺-GB
-  password: LXchLsIwtCeUAUgu
-  port: 80
-  server: 149.102.149.207
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 🇩🇪 | @WhiteDNS | DE703|1.8MB/s|DNSOK|GPT⁺-DE
-  network: raw
-  password: UX82473651
-  port: 443
-  server: actual-squid.rooster465.autos
-  skip-cert-verify: false
-  sni: actual-squid.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇩🇪 | @WhiteDNS | DE704|992KB/s|DNSOK|GPT⁺-DE
-  network: ws
-  password: 0b5fa773-6f37-4134-87d4-0c349742b6f6
-  port: 443
-  server: 172.64.80.1
-  skip-cert-verify: true
-  sni: app-538961.user-y0o4gm.workers.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Moto G (5) Build/NPPS25.137-93-14)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /cmh
-- cipher: aes-256-gcm
-  name: 🇩🇪 | @WhiteDNS | DE705|794KB/s|DNSOK|GPT⁺-DE
-  password: kKEd0rBrd56Furjz
-  port: 80
-  server: 2.58.81.221
-  type: ss
-  udp: true
-- name: 🇩🇪 | @WhiteDNS | DE706|548KB/s|DNSOK|GPT⁺-DE
-  password: e4b72b531a2d10900519
-  port: 443
-  server: 167.172.172.190
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: testuser1
 proxy-groups:
 - name: DE-Auto
   type: url-test
   proxies:
-  - 🇩🇪 | @WhiteDNS | DE654|40.2MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE655|36.6MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE656|35.1MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE657|35.0MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE658|32.7MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE659|31.1MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE660|30.5MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE661|30.2MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE662|28.5MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE663|28.3MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE664|27.8MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE665|27.5MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE666|27.2MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE667|26.2MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE668|25.6MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE669|24.6MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE670|24.3MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE671|24.2MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE672|23.4MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE673|22.7MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE674|22.7MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE675|22.6MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE676|22.5MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE677|22.1MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE678|21.5MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE679|21.1MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE680|17.2MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE681|17.1MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE682|14.2MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE683|13.8MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE684|13.0MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE685|12.7MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE686|7.2MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE687|6.4MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE688|6.2MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE689|6.2MB/s|DNSOK|GPT⁺-GB
-  - 🇩🇪 | @WhiteDNS | DE690|6.2MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE691|5.9MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE692|5.9MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE693|5.8MB/s|DNSOK|GPT⁺
-  - 🇩🇪 | @WhiteDNS | DE694|5.4MB/s|DNSOK|GPT⁺-GB
-  - 🇩🇪 | @WhiteDNS | DE695|5.4MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE696|5.4MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE697|5.2MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE698|5.0MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE699|4.1MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE700|4.0MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE701|3.1MB/s|DNSOK|GPT⁺-GB
-  - 🇩🇪 | @WhiteDNS | DE702|2.4MB/s|DNSOK|GPT⁺-GB
-  - 🇩🇪 | @WhiteDNS | DE703|1.8MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE704|992KB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE705|794KB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE706|548KB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE398|34.0MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE399|33.0MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE400|32.4MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE401|31.6MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE402|30.3MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE403|30.0MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE404|28.8MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE405|28.7MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE406|23.6MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE407|23.4MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE408|22.8MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE409|22.4MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE410|22.1MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE411|19.6MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE412|18.8MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE413|17.4MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE414|16.6MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE415|14.8MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE416|13.2MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE417|9.2MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE418|7.6MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE419|7.4MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE420|7.4MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE421|6.7MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE422|6.7MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE423|6.2MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE424|6.1MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE425|6.1MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE426|6.0MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE427|6.0MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE428|5.7MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE429|5.6MB/s|DNSOK|GPT⁺-GB
+  - 🇩🇪 | @WhiteDNS | DE430|5.5MB/s|DNSOK|GPT⁺
+  - 🇩🇪 | @WhiteDNS | DE431|5.1MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE432|4.8MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE433|4.7MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE434|4.5MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE435|3.7MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE436|3.4MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE437|3.0MB/s|DNSOK|GPT⁺-GB
+  - 🇩🇪 | @WhiteDNS | DE438|2.5MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE439|1.9MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE440|1.8MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE441|1.7MB/s|DNSOK|GPT⁺-GB
+  - 🇩🇪 | @WhiteDNS | DE442|1.6MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE443|1.5MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE444|1.4MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE445|1.3MB/s|DNSOK|GPT⁺-GB
+  - 🇩🇪 | @WhiteDNS | DE446|1.3MB/s|DNSOK|GPT⁺
+  - 🇩🇪 | @WhiteDNS | DE447|1004KB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE448|552KB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE449|512KB/s|DNSOK|GPT⁺-DE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
