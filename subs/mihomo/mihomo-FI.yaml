@@ -1,23 +1,8 @@
 proxies:
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI60|14.9MB/s|DNSOK|GPT⁺-FI
-  port: 443
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  server: 65.108.3.59
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  network: tcp
-  servername: web.eitaa.com
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI61|6.2MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI99|6.0MB/s|DNSOK|GPT⁺-FI
   network: raw
   port: 443
   reality-opts:
@@ -30,10 +15,24 @@ proxies:
   uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
   xudp: true
   servername: web.eitaa.com
-- client-fingerprint: chrome
-  encryption: none
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI62|5.1MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI100|2.2MB/s|DNSOK|GPT⁺-FI
+  port: 443
+  reality-opts:
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  server: 65.108.3.59
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  network: tcp
+  servername: web.eitaa.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI101|1.2MB/s|DNSOK|GPT⁺-FI
   network: tcp
   port: 443
   reality-opts:
@@ -44,5 +43,19 @@ proxies:
   type: vless
   udp: true
   uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  xudp: true
   servername: web.eitaa.com
+- encryption: mlkem768x25519plus.native.0rtt.oEfFlk7NfA_QAF1u_5EXbuXfD_8q-oPbaHXmxAjLAS0
+  name: 🇫🇮 | @WhiteDNS | FI102|1.2MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 80
+  server: Kashgsgsiajsh.apple.gymyoga.ir
+  type: vless
+  udp: true
+  uuid: a55538b8-801e-4e45-80d6-d8a8eea31e4f
+  ws-opts:
+    headers:
+      Host: Kashgsgsiajsh.apple.gymyoga.ir
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/47.0.2526.106 Safari/537.36
+    path: /
+  xudp: true

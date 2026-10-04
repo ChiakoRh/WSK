@@ -13,14 +13,21 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇦 | @WhiteDNS | CA71|5.4MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA54|5.0MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  port: 8080
+  server: milo.rubinaz.xyz
+  type: vless
+  udp: true
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+- name: 🇨🇦 | @WhiteDNS | CA55|4.8MB/s|DNSOK|GPT⁺-CA
   port: 8080
   server: milo.rubinaz.xyz
   type: vless
   udp: true
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   network: tcp
-- name: 🇨🇦 | @WhiteDNS | CA72|4.6MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA56|4.5MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 443
   server: 23.169.224.34
@@ -28,7 +35,15 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA73|3.8MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA57|3.8MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 9443
+  server: 198.44.157.27
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA58|3.0MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 443
   server: 206.223.183.16
@@ -36,7 +51,38 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA74|3.1MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA59|3.0MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 443
+  server: 206.223.161.47
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA60|3.0MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 443
+  server: 206.223.183.21
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA61|2.4MB/s|DNSOK|GPT⁺-IE
+  port: 4443
+  reality-opts:
+    public-key: 9gYnZLxZAPxIKzu9e-cOLBpbCn9p9og9gBodOCh5HB8
+    short-id: ce6767c3f1
+  server: 198.55.102.59
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7f86f371-5a85-48be-babc-7af1ae7ffb75
+  network: tcp
+  servername: vk.com
+- name: 🇨🇦 | @WhiteDNS | CA62|2.1MB/s|DNSOK|GPT⁺-CA
   network: tcp
   port: 8080
   server: milo.rubinaz.xyz
@@ -45,57 +91,8 @@ proxies:
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   xudp: true
   servername: milo.rubinaz.xyz
-- name: 🇨🇦 | @WhiteDNS | CA75|3.0MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 443
-  server: 206.223.161.47
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 - encryption: none
-  name: 🇨🇦 | @WhiteDNS | CA76|3.0MB/s|DNSOK|GPT⁺-CA
-  network: tcp
-  port: 8080
-  server: milo.rubinaz.xyz
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  xudp: true
-- name: 🇨🇦 | @WhiteDNS | CA77|2.5MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 9443
-  server: 23.169.224.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA78|2.5MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 443
-  server: 206.223.183.21
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA79|1.7MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 9443
-  server: 198.44.157.27
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA80|1.5MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 443
-  server: 206.223.183.13
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- encryption: none
-  name: 🇨🇦 | @WhiteDNS | CA81|763KB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA63|1.4MB/s|DNSOK|GPT⁺-CA
   network: raw
   port: 8080
   server: milo.rubinaz.xyz
@@ -103,21 +100,29 @@ proxies:
   udp: true
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   xudp: true
+- name: 🇨🇦 | @WhiteDNS | CA64|1011KB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 443
+  server: 206.223.183.13
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 proxy-groups:
 - name: CA-Auto
   type: url-test
   proxies:
-  - 🇨🇦 | @WhiteDNS | CA71|5.4MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA72|4.6MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA73|3.8MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA74|3.1MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA75|3.0MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA76|3.0MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA77|2.5MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA78|2.5MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA79|1.7MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA80|1.5MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA81|763KB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA54|5.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA55|4.8MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA56|4.5MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA57|3.8MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA58|3.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA59|3.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA60|3.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA61|2.4MB/s|DNSOK|GPT⁺-IE
+  - 🇨🇦 | @WhiteDNS | CA62|2.1MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA63|1.4MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA64|1011KB/s|DNSOK|GPT⁺-CA
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
