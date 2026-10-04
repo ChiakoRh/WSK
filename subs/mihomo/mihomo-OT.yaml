@@ -1,10 +1,16 @@
 proxies:
-- encryption: none
-  name: ❓ | @WhiteDNS | OT348|1.1MB/s|DNSOK|GPT⁺-IT
-  network: raw
-  port: 10086
-  server: 204.216.216.23
+- name: ❓ | @WhiteDNS | OT373|2.4MB/s|DNSOK|GPT⁺
+  network: ws
+  port: 80
+  server: 57.129.41.216
   type: vless
   udp: true
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  ws-opts:
+    headers:
+      Host: ov-germany1.09vpn.com
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/68.0.3440.75 Safari/537.36
+    path: /vless/
   xudp: true
+  servername: ov-germany1.09vpn.com

@@ -13,74 +13,46 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
   encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI99|6.0MB/s|DNSOK|GPT⁺-FI
-  network: raw
+  name: 🇫🇮 | @WhiteDNS | FI64|5.2MB/s|DNSOK|GPT⁺-FI
+  network: xhttp
   port: 443
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  server: 65.108.3.59
+  server: cdn3.alihapp.com
   tls: true
   type: vless
   udp: true
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  uuid: c4394e27-baeb-422d-8905-a93f8e01126f
+  xhttp-opts:
+    host: cdn3.alihapp.com
+    mode: auto
+    path: /
   xudp: true
-  servername: web.eitaa.com
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI100|2.2MB/s|DNSOK|GPT⁺-FI
-  port: 443
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  server: 65.108.3.59
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  network: tcp
-  servername: web.eitaa.com
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI101|1.2MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  server: 65.108.3.59
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  servername: web.eitaa.com
-- encryption: mlkem768x25519plus.native.0rtt.oEfFlk7NfA_QAF1u_5EXbuXfD_8q-oPbaHXmxAjLAS0
-  name: 🇫🇮 | @WhiteDNS | FI102|1.2MB/s|DNSOK|GPT⁺-FI
+  servername: cdn3.alihapp.com
+- encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI65|1.8MB/s|DNSOK|GPT⁺-FI
   network: ws
-  port: 80
-  server: Kashgsgsiajsh.apple.gymyoga.ir
+  port: 44242
+  server: mainline.proxy.rlwy.net
   type: vless
   udp: true
-  uuid: a55538b8-801e-4e45-80d6-d8a8eea31e4f
+  uuid: ff07a00f-0592-41dc-b0e1-b41b4732aad0
   ws-opts:
     headers:
-      Host: Kashgsgsiajsh.apple.gymyoga.ir
+      Host: mainline.proxy.rlwy.net
       User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/47.0.2526.106 Safari/537.36
+        Gecko) Chrome/50.0.2661.102 Safari/537.36
     path: /
   xudp: true
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI99|6.0MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI100|2.2MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI101|1.2MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI102|1.2MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI64|5.2MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI65|1.8MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
