@@ -1,23 +1,31 @@
 proxies:
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇨🇭 | @WhiteDNS | CH21|44.7MB/s|DNSOK|GPT⁺-CH
+  name: 🇨🇭 | @WhiteDNS | CH61|46.6MB/s|DNSOK|GPT⁺-CH
+  network: tcp
   port: 443
   reality-opts:
     public-key: 8PZTYkhNhSgagVdaI-iqSCPXJwDhHU23IUwZIu08zH4
     short-id: 9de8ae53dabf1dc2
   server: 179.237.103.152
-  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: e0bd9dfa-0cf9-47c0-92ac-7dba08ebcff8
-  network: tcp
+  xudp: true
   servername: www.google.com
+- name: 🇨🇭 | @WhiteDNS | CH62|40.5MB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 9443
+  server: 149.88.27.46
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇭 | @WhiteDNS | CH22|44.2MB/s|DNSOK|GPT⁺-CH
+  name: 🇨🇭 | @WhiteDNS | CH63|32.1MB/s|DNSOK|GPT⁺-CH
   network: raw
   port: 443
   reality-opts:
@@ -30,42 +38,33 @@ proxies:
   uuid: e0bd9dfa-0cf9-47c0-92ac-7dba08ebcff8
   xudp: true
   servername: www.google.com
-- name: 🇨🇭 | @WhiteDNS | CH23|41.6MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH64|26.7MB/s|DNSOK|GPT⁺-CH
   password: ''
-  port: 9443
-  server: 149.88.27.46
+  port: 443
+  server: 31.7.62.50
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- client-fingerprint: chrome
-  encryption: none
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇨🇭 | @WhiteDNS | CH24|8.2MB/s|DNSOK|GPT⁺-CH
-  network: tcp
+  name: 🇨🇭 | @WhiteDNS | CH65|7.4MB/s|DNSOK|GPT⁺-CH
   port: 443
   reality-opts:
     public-key: 8PZTYkhNhSgagVdaI-iqSCPXJwDhHU23IUwZIu08zH4
     short-id: 9de8ae53dabf1dc2
   server: 179.237.103.152
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: e0bd9dfa-0cf9-47c0-92ac-7dba08ebcff8
-  xudp: true
+  network: tcp
   servername: www.google.com
-- name: 🇨🇭 | @WhiteDNS | CH25|7.3MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH66|2.7MB/s|DNSOK|GPT⁺-CH
   password: ''
   port: 9443
   server: 37.120.213.210
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇭 | @WhiteDNS | CH26|7.3MB/s|DNSOK|GPT⁺-CH
-  password: ''
-  port: 443
-  server: 31.7.62.50
   skip-cert-verify: true
   tls: true
   type: http

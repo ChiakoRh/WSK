@@ -1,46 +1,21 @@
 proxies:
-- cipher: 2022-blake3-aes-256-gcm
-  name: 🇫🇮 | @WhiteDNS | FI125|18.8MB/s|DNSOK|GPT⁺-FI
-  password: olF2/aNyAxEBf0CHoFlkGlAXUdw+ap1CzFd3AL4WuuM=:d8C1FciKoaFD6xRFbCYyFYlT44MV3zYlXvD6DfhsSqo=
-  port: 5566
-  server: foodal.color-shop.ir
-  type: ss
-  udp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI126|5.7MB/s|DNSOK|GPT⁺-FI
-  port: 443
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  server: 65.108.3.59
-  skip-cert-verify: true
-  tls: true
+- encryption: none
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇫🇮 | @WhiteDNS | FI113|19.8MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 28243
+  server: 65.109.208.97
   type: vless
   udp: true
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  network: tcp
-  servername: web.eitaa.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI127|2.8MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  server: 65.108.3.59
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  uuid: 1240607b-86ed-4ef1-9123-8061144cbdbf
   xudp: true
-  servername: web.eitaa.com
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI128|2.8MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI114|17.9MB/s|DNSOK|GPT⁺-FI
   network: raw
   port: 443
   reality-opts:
@@ -61,24 +36,74 @@ proxies:
     headers: {}
     path:
     - /
-  name: 🇫🇮 | @WhiteDNS | FI129|1.7MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI115|14.4MB/s|DNSOK|GPT⁺-FI
   network: http
-  port: 54225
+  port: 38318
   server: 65.109.208.97
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: d6b5858a-5f3f-45e9-a98c-d1c05f171652
+  uuid: 1240607b-86ed-4ef1-9123-8061144cbdbf
   xudp: true
 - encryption: none
   http-opts:
     headers: {}
     path:
     - /
-  name: 🇫🇮 | @WhiteDNS | FI130|1.5MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI116|6.2MB/s|DNSOK|GPT⁺-FI
   network: http
-  port: 28243
+  port: 47851
+  server: 65.109.208.97
+  type: vless
+  udp: true
+  uuid: 1240607b-86ed-4ef1-9123-8061144cbdbf
+  xudp: true
+- encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI117|6.1MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 80
+  server: 146.75.119.82
+  type: vless
+  udp: true
+  uuid: 32935e29-def5-4100-96d5-8d1436fa060f
+  ws-opts:
+    headers:
+      Host: rb24.ir
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/58.0.3029.81 Safari/537.36
+    path: /ws/?ed=2048/@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1/?2048
+  xudp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI118|5.9MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  server: 65.108.3.59
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  xudp: true
+  servername: web.eitaa.com
+- cipher: 2022-blake3-aes-256-gcm
+  name: 🇫🇮 | @WhiteDNS | FI119|5.8MB/s|DNSOK|GPT⁺-FI
+  password: olF2/aNyAxEBf0CHoFlkGlAXUdw+ap1CzFd3AL4WuuM=:d8C1FciKoaFD6xRFbCYyFYlT44MV3zYlXvD6DfhsSqo=
+  port: 5566
+  server: foodal.color-shop.ir
+  type: ss
+  udp: true
+- encryption: none
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇫🇮 | @WhiteDNS | FI120|5.8MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 50742
   server: 65.109.208.97
   type: vless
   udp: true
@@ -92,13 +117,28 @@ proxies:
     headers: {}
     path:
     - /
-  name: 🇫🇮 | @WhiteDNS | FI131|812KB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI121|5.3MB/s|DNSOK|GPT⁺-FI
   network: http
-  port: 38318
+  port: 54225
   server: 65.109.208.97
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 1240607b-86ed-4ef1-9123-8061144cbdbf
+  uuid: d6b5858a-5f3f-45e9-a98c-d1c05f171652
   xudp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI122|2.5MB/s|DNSOK|GPT⁺-FI
+  port: 443
+  reality-opts:
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  server: 65.108.3.59
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  network: tcp
+  servername: web.eitaa.com

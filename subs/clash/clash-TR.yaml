@@ -14,7 +14,7 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - encryption: none
-  name: 🇹🇷 | @WhiteDNS | TR17|2.0MB/s|DNSOK|GPT⁺-TR
+  name: 🇹🇷 | @WhiteDNS | TR18|1.7MB/s|DNSOK|GPT⁺-TR
   network: tcp
   port: 8080
   server: tutaim.azad0namah.ir
@@ -22,11 +22,29 @@ proxies:
   udp: true
   uuid: fdc1206a-9d2e-42b7-b615-9ccea8cf70ee
   xudp: true
+- name: 🇹🇷 | @WhiteDNS | TR19|1.3MB/s|DNSOK|GPT⁺-TR
+  port: 2053
+  server: test.keoplentuio.xyz
+  type: vless
+  udp: true
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  network: tcp
+- encryption: none
+  name: 🇹🇷 | @WhiteDNS | TR20|1.1MB/s|DNSOK|GPT⁺-TR
+  network: raw
+  port: 2053
+  server: test.keoplentuio.xyz
+  type: vless
+  udp: true
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  xudp: true
 proxy-groups:
 - name: TR-Auto
   type: url-test
   proxies:
-  - 🇹🇷 | @WhiteDNS | TR17|2.0MB/s|DNSOK|GPT⁺-TR
+  - 🇹🇷 | @WhiteDNS | TR18|1.7MB/s|DNSOK|GPT⁺-TR
+  - 🇹🇷 | @WhiteDNS | TR19|1.3MB/s|DNSOK|GPT⁺-TR
+  - 🇹🇷 | @WhiteDNS | TR20|1.1MB/s|DNSOK|GPT⁺-TR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

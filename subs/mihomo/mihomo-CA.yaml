@@ -1,6 +1,6 @@
 proxies:
 - encryption: none
-  name: 🇨🇦 | @WhiteDNS | CA62|5.4MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA165|5.1MB/s|DNSOK|GPT⁺-CA
   network: raw
   port: 8080
   server: milo.rubinaz.xyz
@@ -8,14 +8,23 @@ proxies:
   udp: true
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   xudp: true
-- name: 🇨🇦 | @WhiteDNS | CA63|5.1MB/s|DNSOK|GPT⁺-CA
+- encryption: none
+  name: 🇨🇦 | @WhiteDNS | CA166|4.9MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  port: 8080
+  server: milo.rubinaz.xyz
+  type: vless
+  udp: true
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  xudp: true
+- name: 🇨🇦 | @WhiteDNS | CA167|4.9MB/s|DNSOK|GPT⁺-CA
   port: 8080
   server: milo.rubinaz.xyz
   type: vless
   udp: true
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   network: tcp
-- name: 🇨🇦 | @WhiteDNS | CA64|4.8MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA168|4.8MB/s|DNSOK|GPT⁺-CA
   network: tcp
   port: 8080
   server: milo.rubinaz.xyz
@@ -24,14 +33,15 @@ proxies:
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   xudp: true
   servername: milo.rubinaz.xyz
-- name: 🇨🇦 | @WhiteDNS | CA65|4.6MB/s|DNSOK|GPT⁺-CA
-  network: tcp
-  port: 8080
-  server: milo.rubinaz.xyz
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-- name: 🇨🇦 | @WhiteDNS | CA66|3.8MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA169|4.5MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 9443
+  server: 23.169.224.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA170|3.0MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 443
   server: 206.223.183.16
@@ -39,15 +49,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA67|3.0MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 443
-  server: 206.223.183.13
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA68|3.0MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA171|3.0MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 443
   server: 206.223.161.47
@@ -55,15 +57,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA69|2.9MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 9443
-  server: 198.44.157.27
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA70|2.4MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA172|2.5MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 443
   server: 23.169.224.34
@@ -71,7 +65,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA71|2.3MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA173|2.5MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 443
   server: 206.223.183.21
@@ -79,9 +73,17 @@ proxies:
   tls: true
   type: http
   username: ''
+- name: 🇨🇦 | @WhiteDNS | CA174|2.5MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 9443
+  server: 198.44.157.27
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA72|1.3MB/s|DNSOK|GPT⁺
+  name: 🇨🇦 | @WhiteDNS | CA175|2.2MB/s|DNSOK|GPT⁺-IE
   port: 4443
   reality-opts:
     public-key: 9gYnZLxZAPxIKzu9e-cOLBpbCn9p9og9gBodOCh5HB8
@@ -94,19 +96,11 @@ proxies:
   uuid: 7f86f371-5a85-48be-babc-7af1ae7ffb75
   network: tcp
   servername: vk.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA73|1.0MB/s|DNSOK|GPT⁺-IE
-  network: tcp
-  port: 4443
-  reality-opts:
-    public-key: 9gYnZLxZAPxIKzu9e-cOLBpbCn9p9og9gBodOCh5HB8
-    short-id: ce6767c3f1
-  server: 198.55.102.59
+- name: 🇨🇦 | @WhiteDNS | CA176|1.5MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 443
+  server: 206.223.183.13
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: 7f86f371-5a85-48be-babc-7af1ae7ffb75
-  xudp: true
-  servername: vk.com
+  type: http
+  username: ''
