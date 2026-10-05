@@ -16,25 +16,25 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇱🇹 | @WhiteDNS | LT9|4.7MB/s|DNSOK|GPT⁺-LT
+  name: 🇷🇺 | @WhiteDNS | RU39|3.0MB/s|DNSOK|GPT⁺-DE
   network: tcp
   port: 443
   reality-opts:
-    public-key: sVhkyiMXvpofflCdSszxQmsqOXV1kg1Ldxq1a9mOPjs
-    short-id: 6a
-  server: 62.77.158.1
+    public-key: qmfrMwVYth3lsYuv7qfr22YlTIlNtVjMl0v4Z5pX7hM
+    short-id: 048fe5c8be4bb687
+  server: 217.18.62.73
   tls: true
   type: vless
   udp: true
-  uuid: 2eceaf2b-a775-5a9c-9990-dad2b3660fb6
+  uuid: 86037609-3790-4901-bd2f-c698092fb1fc
   xudp: true
-  servername: online.1c.ru
+  servername: sp.skfv-mirror.ru
 proxy-groups:
-- name: LT-Auto
+- name: RU-Auto
   type: url-test
   proxies:
-  - 🇱🇹 | @WhiteDNS | LT9|4.7MB/s|DNSOK|GPT⁺-LT
+  - 🇷🇺 | @WhiteDNS | RU39|3.0MB/s|DNSOK|GPT⁺-DE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,LT-Auto
+- MATCH,RU-Auto

@@ -1,0 +1,49 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- encryption: none
+  name: 🇹🇷 | @WhiteDNS | TR26|12.7MB/s|DNSOK|GPT⁺-TR
+  network: ws
+  port: 43233
+  server: cookie.wookshop.ir
+  type: vless
+  udp: true
+  uuid: 568bcbbc-7a90-4164-8b5d-1c0bbeccfa38
+  ws-opts:
+    headers:
+      Host: cookie.wookshop.ir
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /
+  xudp: true
+- encryption: none
+  name: 🇹🇷 | @WhiteDNS | TR27|1.9MB/s|DNSOK|GPT⁺-TR
+  network: raw
+  port: 2053
+  server: test.keoplentuio.xyz
+  type: vless
+  udp: true
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  xudp: true
+proxy-groups:
+- name: TR-Auto
+  type: url-test
+  proxies:
+  - 🇹🇷 | @WhiteDNS | TR26|12.7MB/s|DNSOK|GPT⁺-TR
+  - 🇹🇷 | @WhiteDNS | TR27|1.9MB/s|DNSOK|GPT⁺-TR
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,TR-Auto

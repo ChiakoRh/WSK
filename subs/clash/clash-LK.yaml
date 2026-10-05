@@ -13,7 +13,66 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇱🇰 | @WhiteDNS | LK8|2.6MB/s|DNSOK|GPT⁺-SG
+- name: 🇱🇰 | @WhiteDNS | LK8|3.1MB/s|DNSOK|GPT⁺-SG
+  network: ws
+  port: 80
+  server: support.zoom.us
+  type: vless
+  udp: true
+  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  ws-opts:
+    headers:
+      Host: free.sahanwickramasinghe.me
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/48.0.2564.116 Safari/537.36
+    path: /
+  xudp: true
+- encryption: none
+  name: 🇱🇰 | @WhiteDNS | LK9|2.6MB/s|DNSOK|GPT⁺-SG
+  network: ws
+  port: 80
+  server: 170.114.45.6
+  type: vless
+  udp: true
+  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  ws-opts:
+    headers:
+      Host: free.sahanwickramasinghe.me
+      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/44.0.2403.157 Safari/537.36
+    path: /
+  xudp: true
+- name: 🇱🇰 | @WhiteDNS | LK10|2.6MB/s|DNSOK|GPT⁺-SG
+  network: ws
+  port: 80
+  server: support.zoom.us
+  type: vless
+  udp: true
+  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  ws-opts:
+    headers:
+      Host: free.sahanwickramasinghe.me
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.139 Safari/537.36
+    path: /
+  xudp: true
+  servername: free.sahanwickramasinghe.me
+- encryption: none
+  name: 🇱🇰 | @WhiteDNS | LK11|2.6MB/s|DNSOK|GPT⁺-SG
+  network: ws
+  port: 80
+  server: free.sahanwickramasinghe.me
+  type: vless
+  udp: true
+  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  ws-opts:
+    headers:
+      Host: free.sahanwickramasinghe.me
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1610 Build/MMB29M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
+    path: /
+  xudp: true
+- name: 🇱🇰 | @WhiteDNS | LK12|2.6MB/s|DNSOK|GPT⁺-SG
   network: ws
   port: 80
   server: support.zoom.us
@@ -24,12 +83,27 @@ proxies:
     headers:
       Host: free.sahanwickramasinghe.me
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.102 Safari/537.36
+        like Gecko) Chrome/65.0.3325.162 Safari/537.36
+    path: /
+  xudp: true
+  servername: support.zoom.us
+- name: 🇱🇰 | @WhiteDNS | LK13|2.4MB/s|DNSOK|GPT⁺-SG
+  network: ws
+  port: 80
+  server: free.sahanwickramasinghe.me
+  type: vless
+  udp: true
+  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  ws-opts:
+    headers:
+      Host: free.sahanwickramasinghe.me
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
     path: /
   xudp: true
   servername: free.sahanwickramasinghe.me
 - encryption: none
-  name: 🇱🇰 | @WhiteDNS | LK9|1.7MB/s|DNSOK|GPT⁺-SG
+  name: 🇱🇰 | @WhiteDNS | LK14|1.9MB/s|DNSOK|GPT⁺-SG
   network: ws
   port: 80
   server: 51.75.67.209
@@ -40,31 +114,20 @@ proxies:
     headers:
       Host: ''
       User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0
-    path: /
-  xudp: true
-- encryption: none
-  name: 🇱🇰 | @WhiteDNS | LK10|606KB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 80
-  server: 170.114.45.6
-  type: vless
-  udp: true
-  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
-  ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.me
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/59.0.3071.115 Safari/537.36
+        Gecko) Chrome/56.0.2924.87 Safari/537.36
     path: /
   xudp: true
 proxy-groups:
 - name: LK-Auto
   type: url-test
   proxies:
-  - 🇱🇰 | @WhiteDNS | LK8|2.6MB/s|DNSOK|GPT⁺-SG
-  - 🇱🇰 | @WhiteDNS | LK9|1.7MB/s|DNSOK|GPT⁺-SG
-  - 🇱🇰 | @WhiteDNS | LK10|606KB/s|DNSOK|GPT⁺-SG
+  - 🇱🇰 | @WhiteDNS | LK8|3.1MB/s|DNSOK|GPT⁺-SG
+  - 🇱🇰 | @WhiteDNS | LK9|2.6MB/s|DNSOK|GPT⁺-SG
+  - 🇱🇰 | @WhiteDNS | LK10|2.6MB/s|DNSOK|GPT⁺-SG
+  - 🇱🇰 | @WhiteDNS | LK11|2.6MB/s|DNSOK|GPT⁺-SG
+  - 🇱🇰 | @WhiteDNS | LK12|2.6MB/s|DNSOK|GPT⁺-SG
+  - 🇱🇰 | @WhiteDNS | LK13|2.4MB/s|DNSOK|GPT⁺-SG
+  - 🇱🇰 | @WhiteDNS | LK14|1.9MB/s|DNSOK|GPT⁺-SG
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
