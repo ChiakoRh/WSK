@@ -1,16 +1,38 @@
 proxies:
-- encryption: mlkem768x25519plus.native.0rtt.D1xRBQkquFgasp4flDzeLrN24c5ofxC6iGJkYKy6r10
-  http-opts:
-    headers:
-      Host:
-      - dynu.com
-    path:
-    - /
-  name: 🇫🇮 | @WhiteDNS | FI71|17.1MB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 12168
-  server: finl8.povrak.ir
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI71|7.3MB/s|DNSOK|GPT⁺-FI
+  network: xhttp
+  port: 443
+  server: cdn3.alihapp.com
+  tls: true
   type: vless
   udp: true
-  uuid: 469677f4-acd1-4f1e-82d1-1f92704c0ee7
+  uuid: c4394e27-baeb-422d-8905-a93f8e01126f
+  xhttp-opts:
+    host: cdn3.alihapp.com
+    mode: auto
+    path: /
   xudp: true
+  servername: cdn3.alihapp.com
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI72|5.9MB/s|DNSOK|GPT⁺-FI
+  network: xhttp
+  port: 443
+  server: 172.67.162.39
+  tls: true
+  type: vless
+  udp: true
+  uuid: c4394e27-baeb-422d-8905-a93f8e01126f
+  xhttp-opts:
+    host: cdn3.alihapp.com
+    path: /
+  xudp: true
+  servername: cdn3.alihapp.com

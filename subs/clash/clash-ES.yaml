@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇪🇸 | @WhiteDNS | ES20|6.3MB/s|DNSOK|GPT⁺-ES
+- name: 🇪🇸 | @WhiteDNS | ES21|20.7MB/s|DNSOK|GPT⁺-ES
   password: None
   port: 443
   server: 130.195.250.18
@@ -21,7 +21,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇪🇸 | @WhiteDNS | ES21|6.1MB/s|DNSOK|GPT⁺-ES
+- name: 🇪🇸 | @WhiteDNS | ES22|4.7MB/s|DNSOK|GPT⁺-ES
   password: None
   port: 443
   server: 82.102.17.178
@@ -29,12 +29,22 @@ proxies:
   tls: true
   type: http
   username: ''
+- name: 🇪🇸 | @WhiteDNS | ES23|1.2MB/s|DNSOK|GPT⁺-ES
+  password: i99Cef
+  port: 28165
+  server: 211.20.156.191
+  skip-cert-verify: true
+  sni: ctldl.windowsupdate.com
+  type: trojan
+  udp: true
+  network: tcp
 proxy-groups:
 - name: ES-Auto
   type: url-test
   proxies:
-  - 🇪🇸 | @WhiteDNS | ES20|6.3MB/s|DNSOK|GPT⁺-ES
-  - 🇪🇸 | @WhiteDNS | ES21|6.1MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES21|20.7MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES22|4.7MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES23|1.2MB/s|DNSOK|GPT⁺-ES
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

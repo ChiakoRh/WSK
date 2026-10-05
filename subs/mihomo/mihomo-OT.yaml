@@ -1,9 +1,40 @@
 proxies:
-- name: ❓ | @WhiteDNS | OT350|3.0MB/s|DNSOK|GPT⁺-US
-  password: 'null'
+- name: ❓ | @WhiteDNS | OT330|2.8MB/s|DNSOK|GPT⁺-US
+  password: ''
   port: 9002
-  server: 138.199.35.201
+  server: 138.199.35.220
   skip-cert-verify: true
   tls: true
   type: http
-  username: 'null'
+  username: ''
+- name: ❓ | @WhiteDNS | OT331|1.9MB/s|DNSOK|GPT⁺-SG
+  password: ''
+  port: 9090
+  server: 104.248.151.93
+  skip-cert-verify: true
+  type: http
+  username: ''
+- encryption: none
+  name: ❓ | @WhiteDNS | OT332|1.5MB/s|DNSOK|GPT⁺-TR
+  network: tcp
+  port: 2053
+  server: test.keoplentuio.xyz
+  type: vless
+  udp: true
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  xudp: true
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: ❓ | @WhiteDNS | OT333|1.2MB/s|DNSOK|GPT⁺-JP
+  port: 443
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  server: t9.qifei.app
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+  network: tcp
+  servername: www.amazon.com

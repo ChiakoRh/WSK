@@ -13,42 +13,20 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: 2022-blake3-aes-256-gcm
-  name: 🇹🇷 | @WhiteDNS | TR27|6.3MB/s|DNSOK|GPT⁺-TR
-  password: ADzlhA3ndouUCY3JbLddR/jwgYY7IDGc1T+5DuCix9Y=:KyFe2akGo5hcrswbMkD2+BM52si+D7lzyccZFTd4xaU=
-  port: 25178
-  server: 206.1.100.83
-  type: ss
-  udp: true
 - encryption: none
-  name: 🇹🇷 | @WhiteDNS | TR28|1.8MB/s|DNSOK|GPT⁺-TR
-  network: ws
-  port: 43233
-  server: cookie.wookshop.ir
-  type: vless
-  udp: true
-  uuid: 568bcbbc-7a90-4164-8b5d-1c0bbeccfa38
-  ws-opts:
-    headers:
-      Host: cookie.wookshop.ir
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: /
-  xudp: true
-- name: 🇹🇷 | @WhiteDNS | TR29|976KB/s|DNSOK|GPT⁺-TR
+  name: 🇹🇷 | @WhiteDNS | TR17|1.8MB/s|DNSOK|GPT⁺-TR
+  network: raw
   port: 2053
-  server: 155.117.5.158
+  server: test.keoplentuio.xyz
   type: vless
   udp: true
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  network: tcp
+  xudp: true
 proxy-groups:
 - name: TR-Auto
   type: url-test
   proxies:
-  - 🇹🇷 | @WhiteDNS | TR27|6.3MB/s|DNSOK|GPT⁺-TR
-  - 🇹🇷 | @WhiteDNS | TR28|1.8MB/s|DNSOK|GPT⁺-TR
-  - 🇹🇷 | @WhiteDNS | TR29|976KB/s|DNSOK|GPT⁺-TR
+  - 🇹🇷 | @WhiteDNS | TR17|1.8MB/s|DNSOK|GPT⁺-TR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
