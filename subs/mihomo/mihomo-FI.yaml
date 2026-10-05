@@ -1,118 +1,16 @@
 proxies:
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI135|12.9MB/s|DNSOK|GPT⁺-FI
-  port: 443
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  server: 65.108.3.59
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  network: tcp
-  servername: web.eitaa.com
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI136|7.4MB/s|DNSOK|GPT⁺-FI
-  network: xhttp
-  port: 443
-  server: 104.21.15.100
-  tls: true
-  type: vless
-  udp: true
-  uuid: c4394e27-baeb-422d-8905-a93f8e01126f
-  xhttp-opts:
-    host: cdn3.alihapp.com
-    path: /
-  xudp: true
-  servername: cdn3.alihapp.com
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI137|7.0MB/s|DNSOK|GPT⁺-FI
-  network: xhttp
-  port: 443
-  server: cdn3.alihapp.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: c4394e27-baeb-422d-8905-a93f8e01126f
-  xhttp-opts:
-    host: cdn3.alihapp.com
-    mode: auto
-    path: /
-  xudp: true
-  servername: cdn3.alihapp.com
-- encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI138|6.2MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 80
-  server: 146.75.119.82
-  type: vless
-  udp: true
-  uuid: 430209fa-6f0f-4e1b-8283-5aceb7cb51ab
-  ws-opts:
+- encryption: mlkem768x25519plus.native.0rtt.D1xRBQkquFgasp4flDzeLrN24c5ofxC6iGJkYKy6r10
+  http-opts:
     headers:
-      Host: rb24.ir
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.113 Safari/537.36
-    path: /ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
-  xudp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI139|6.0MB/s|DNSOK|GPT⁺-FI
-  network: xhttp
-  port: 443
-  server: 172.67.162.39
-  tls: true
+      Host:
+      - dynu.com
+    path:
+    - /
+  name: 🇫🇮 | @WhiteDNS | FI71|17.1MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 12168
+  server: finl8.povrak.ir
   type: vless
   udp: true
-  uuid: c4394e27-baeb-422d-8905-a93f8e01126f
-  xhttp-opts:
-    host: cdn3.alihapp.com
-    path: /
+  uuid: 469677f4-acd1-4f1e-82d1-1f92704c0ee7
   xudp: true
-  servername: cdn3.alihapp.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI140|5.9MB/s|DNSOK|GPT⁺-FI
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  server: 65.108.3.59
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  xudp: true
-  servername: web.eitaa.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI141|5.3MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  server: 65.108.3.59
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  xudp: true
-  servername: web.eitaa.com

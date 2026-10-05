@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇵🇱 | @WhiteDNS | PL78|24.2MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL62|24.0MB/s|DNSOK|GPT⁺-PL
   network: ws
   port: 80
   server: 70.34.255.101
@@ -23,11 +23,11 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/58.0.3029.110 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/48.0.2564.116 Safari/537.36
     path: /
   xudp: true
-- name: 🇵🇱 | @WhiteDNS | PL79|22.1MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL63|23.3MB/s|DNSOK|GPT⁺-PL
   network: ws
   port: 80
   server: 70.34.252.154
@@ -37,11 +37,12 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/70.0.3538.102 Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; Redmi Note 5A Build/N2G47H; wv)
+        AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile
+        Safari/537.36
     path: /
   xudp: true
-- name: 🇵🇱 | @WhiteDNS | PL80|5.5MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL64|5.9MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 151.115.54.133
@@ -49,7 +50,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇵🇱 | @WhiteDNS | PL81|2.4MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL65|2.5MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 31.186.220.204
@@ -57,14 +58,33 @@ proxies:
   tls: true
   type: http
   username: ''
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇵🇱 | @WhiteDNS | PL66|1.6MB/s|DNSOK|GPT⁺-PL
+  network: ws
+  port: 80
+  server: 188.114.96.19
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  ws-opts:
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+    path: /
+  xudp: true
 proxy-groups:
 - name: PL-Auto
   type: url-test
   proxies:
-  - 🇵🇱 | @WhiteDNS | PL78|24.2MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL79|22.1MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL80|5.5MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL81|2.4MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL62|24.0MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL63|23.3MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL64|5.9MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL65|2.5MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL66|1.6MB/s|DNSOK|GPT⁺-PL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

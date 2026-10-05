@@ -13,14 +13,14 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇳 | @WhiteDNS | IN30|3.5MB/s|DNSOK|GPT⁺-IN
+- name: 🇮🇳 | @WhiteDNS | IN27|2.6MB/s|DNSOK|GPT⁺-IN
   password: ''
   port: 1088
   server: 144.24.111.128
   skip-cert-verify: true
   type: socks5
   username: ''
-- name: 🇮🇳 | @WhiteDNS | IN31|3.0MB/s|DNSOK|GPT⁺-IN
+- name: 🇮🇳 | @WhiteDNS | IN28|1.7MB/s|DNSOK|GPT⁺-IN
   password: ''
   port: 443
   server: 165.231.253.66
@@ -32,8 +32,8 @@ proxy-groups:
 - name: IN-Auto
   type: url-test
   proxies:
-  - 🇮🇳 | @WhiteDNS | IN30|3.5MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN31|3.0MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN27|2.6MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN28|1.7MB/s|DNSOK|GPT⁺-IN
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
