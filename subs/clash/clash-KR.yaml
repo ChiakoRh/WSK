@@ -13,22 +13,6 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: aes-256-cfb
-  name: 🇰🇷 | @WhiteDNS | KR412|1.7MB/s|DNSOK|GPT⁺-KR
-  password: 1234!@#$
-  port: 1774
-  server: 49.254.204.134
-  type: ss
-  udp: true
-- name: 🇰🇷 | @WhiteDNS | KR413|1.6MB/s|DNSOK|GPT⁺-KR
-  password: i99Cef
-  port: 28157
-  server: 211.20.156.191
-  skip-cert-verify: true
-  sni: download.windowsupdate.com
-  type: trojan
-  udp: true
-  network: tcp
 - alpn:
   - ''
   alterId: '0'
@@ -37,7 +21,7 @@ proxies:
     headers: {}
     path:
     - /
-  name: 🇰🇷 | @WhiteDNS | KR414|1.3MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR115|1.8MB/s|DNSOK|GPT⁺-KR
   network: http
   port: 80
   server: 217.142.138.61
@@ -47,13 +31,27 @@ proxies:
   udp: true
   uuid: ac1b933d-afff-4487-93ef-f57130a55dff
   xudp: true
+- name: 🇰🇷 | @WhiteDNS | KR116|1.8MB/s|DNSOK|GPT⁺-KR
+  password: ''
+  port: 1082
+  server: 220.121.193.144
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- cipher: aes-256-cfb
+  name: 🇰🇷 | @WhiteDNS | KR117|1.2MB/s|DNSOK|GPT⁺-KR
+  password: 1234!@#$
+  port: 1774
+  server: 49.254.204.133
+  type: ss
+  udp: true
 proxy-groups:
 - name: KR-Auto
   type: url-test
   proxies:
-  - 🇰🇷 | @WhiteDNS | KR412|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR413|1.6MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR414|1.3MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR115|1.8MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR116|1.8MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR117|1.2MB/s|DNSOK|GPT⁺-KR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

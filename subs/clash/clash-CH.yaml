@@ -13,23 +13,15 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇭 | @WhiteDNS | CH63|52.2MB/s|DNSOK|GPT⁺-CH
-  password: None
-  port: 443
-  server: 31.7.62.50
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇭 | @WhiteDNS | CH64|45.9MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH25|36.3MB/s|DNSOK|GPT⁺-CH
   password: ''
-  port: 443
-  server: 31.7.62.50
+  port: 9443
+  server: 37.120.213.210
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇨🇭 | @WhiteDNS | CH65|41.2MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH26|33.5MB/s|DNSOK|GPT⁺-CH
   password: ''
   port: 9443
   server: 149.88.27.46
@@ -37,7 +29,23 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇭 | @WhiteDNS | CH66|33.9MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH27|29.3MB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 443
+  server: 31.7.62.50
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH28|20.8MB/s|DNSOK|GPT⁺-CH
+  password: None
+  port: 443
+  server: 31.7.62.50
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH29|7.6MB/s|DNSOK|GPT⁺-CH
   password: None
   port: 9443
   server: 37.120.213.210
@@ -45,30 +53,15 @@ proxies:
   tls: true
   type: http
   username: ''
-- client-fingerprint: chrome
-  name: 🇨🇭 | @WhiteDNS | CH67|5.6MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  password: 0b5fa773-6f37-4134-87d4-0c349742b6f6
-  port: 443
-  server: 172.64.80.1
-  skip-cert-verify: true
-  sni: app-538961.user-y0o4gm.workers.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Moto G (5) Build/NPPS25.137-93-14)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /cmh
 proxy-groups:
 - name: CH-Auto
   type: url-test
   proxies:
-  - 🇨🇭 | @WhiteDNS | CH63|52.2MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH64|45.9MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH65|41.2MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH66|33.9MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH67|5.6MB/s|DNSOK|GPT⁺-DE
+  - 🇨🇭 | @WhiteDNS | CH25|36.3MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH26|33.5MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH27|29.3MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH28|20.8MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH29|7.6MB/s|DNSOK|GPT⁺-CH
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -12,28 +12,11 @@ dns:
   nameserver:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
-proxies:
-- client-fingerprint: random
-  encryption: none
-  flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT260|1.1MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  server: t14.qifei.app
-  tls: true
-  type: vless
-  udp: true
-  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
-  xudp: true
-  servername: www.amazon.com
+proxies: []
 proxy-groups:
 - name: OT-Auto
   type: url-test
-  proxies:
-  - ❓ | @WhiteDNS | OT260|1.1MB/s|DNSOK|GPT⁺-JP
+  proxies: []
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
