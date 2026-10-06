@@ -13,29 +13,29 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇦🇺 | @WhiteDNS | AU7|1.8MB/s|DNSOK|GPT⁺-AU
-  password: None
+- name: 🇷🇸 | @WhiteDNS | RS3|14.2MB/s|DNSOK|GPT⁺-RS
+  password: ''
   port: 443
-  server: 159.13.44.228
+  server: 146.70.221.34
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇦🇺 | @WhiteDNS | AU8|1.8MB/s|DNSOK|GPT⁺-AU
+- name: 🇷🇸 | @WhiteDNS | RS4|6.1MB/s|DNSOK|GPT⁺-RS
   password: ''
   port: 443
-  server: 103.62.50.130
+  server: 146.70.221.18
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
 proxy-groups:
-- name: AU-Auto
+- name: RS-Auto
   type: url-test
   proxies:
-  - 🇦🇺 | @WhiteDNS | AU7|1.8MB/s|DNSOK|GPT⁺-AU
-  - 🇦🇺 | @WhiteDNS | AU8|1.8MB/s|DNSOK|GPT⁺-AU
+  - 🇷🇸 | @WhiteDNS | RS3|14.2MB/s|DNSOK|GPT⁺-RS
+  - 🇷🇸 | @WhiteDNS | RS4|6.1MB/s|DNSOK|GPT⁺-RS
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,AU-Auto
+- MATCH,RS-Auto

@@ -3,7 +3,7 @@ proxies:
   - ''
   alterId: '0'
   cipher: auto
-  name: 🇫🇮 | @WhiteDNS | FI78|19.2MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI139|17.7MB/s|DNSOK|GPT⁺-FI
   network: tcp
   port: 58179
   server: fisgww.povrak.ir
@@ -11,20 +11,59 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 381e0782-92b0-40ef-806f-76ebbcde3a16
+  uuid: e71635b8-53b8-45bc-871d-428efe6eaf7c
   xudp: true
-- encryption: none
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇫🇮 | @WhiteDNS | FI140|17.5MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 58179
+  server: fisgww.povrak.ir
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9371d6ef-97a4-47f3-bfa2-ce10bc50436a
+  xudp: true
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI141|5.9MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 443
+  server: 199.232.239.239
+  tls: true
+  type: vless
+  udp: true
+  uuid: 31608e93-a701-4604-b8de-c55baa393937
+  ws-opts:
+    headers:
+      Host: uol258ehdmsohzh.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/41.0.2272.118 Safari/537.36
+    path: /?ed=2056/?TELEGRAM--BYA--@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud
+  xudp: true
+  servername: ssl.fastly.com
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
   http-opts:
     headers:
       Host:
-      - testspeed-foreign.tci.ir
+      - down-cdn.dingtalk.com
     path:
-    - /@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---
-  name: 🇫🇮 | @WhiteDNS | FI79|743KB/s|DNSOK|GPT⁺-FI
+    - /3x
+  name: 🇫🇮 | @WhiteDNS | FI142|2.7MB/s|DNSOK|GPT⁺-FI
   network: http
-  port: 9090
-  server: 65.109.176.245
-  type: vless
+  port: 52080
+  server: 185.212.149.7
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-  uuid: afd1fb0c-7c51-4c4c-a1ed-07e8493030d2
+  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
   xudp: true

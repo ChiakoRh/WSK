@@ -13,22 +13,64 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇪 | @WhiteDNS | IE23|15.8MB/s|DNSOK|GPT⁺-IE
-  password: ''
+- client-fingerprint: chrome
+  name: 🇮🇪 | @WhiteDNS | IE18|17.2MB/s|DNSOK|GPT⁺-IE
+  password: UX82473651
   port: 443
-  server: 149.88.96.1
+  server: loved-shark.rooster465.autos
   skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇮🇪 | @WhiteDNS | IE24|5.2MB/s|DNSOK|GPT⁺-IE
+  type: trojan
+  udp: true
+  network: tcp
+  sni: loved-shark.rooster465.autos
+- client-fingerprint: chrome
+  name: 🇮🇪 | @WhiteDNS | IE19|16.8MB/s|DNSOK|GPT⁺-IE
+  password: UX82473651
+  port: 443
+  server: sacred-anemone.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+  network: tcp
+  sni: sacred-anemone.rooster465.autos
+- name: 🇮🇪 | @WhiteDNS | IE20|6.6MB/s|DNSOK|GPT⁺-IE
   password: ''
   port: 8080
   server: 54.229.179.244
   skip-cert-verify: true
   type: http
   username: ''
-- name: 🇮🇪 | @WhiteDNS | IE25|4.5MB/s|DNSOK|GPT⁺-IE
+- client-fingerprint: chrome
+  name: 🇮🇪 | @WhiteDNS | IE21|6.3MB/s|DNSOK|GPT⁺-IE
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: sacred-anemone.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  sni: sacred-anemone.rooster465.autos
+- client-fingerprint: chrome
+  name: 🇮🇪 | @WhiteDNS | IE22|6.2MB/s|DNSOK|GPT⁺-IE
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: sacred-anemone.rooster465.autos
+  skip-cert-verify: true
+  sni: sacred-anemone.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇮🇪 | @WhiteDNS | IE23|6.0MB/s|DNSOK|GPT⁺-IE
+  password: UX82473651
+  port: 443
+  server: sacred-anemone.rooster465.autos
+  skip-cert-verify: false
+  sni: sacred-anemone.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- name: 🇮🇪 | @WhiteDNS | IE24|4.4MB/s|DNSOK|GPT⁺-IE
   password: ''
   port: 443
   server: 149.88.96.12
@@ -37,36 +79,46 @@ proxies:
   type: http
   username: ''
 - client-fingerprint: chrome
-  name: 🇮🇪 | @WhiteDNS | IE26|2.7MB/s|DNSOK|GPT⁺-IE
-  network: tcp
-  password: Trojan@82164024
+  name: 🇮🇪 | @WhiteDNS | IE25|2.1MB/s|DNSOK|GPT⁺-IE
+  password: UX82473651
   port: 443
-  server: 3.255.76.207
-  skip-cert-verify: false
-  sni: ie.tronsg.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇮🇪 | @WhiteDNS | IE27|1.5MB/s|DNSOK|GPT⁺-IE
-  password: Trojan@82164024
-  port: 443
-  server: ie.tronsg.com
-  skip-cert-verify: false
-  sni: ie.tronsg.com
+  server: loved-shark.rooster465.autos
+  skip-cert-verify: true
+  sni: loved-shark.rooster465.autos
   type: trojan
   udp: true
   network: tcp
 - client-fingerprint: chrome
-  name: 🇮🇪 | @WhiteDNS | IE28|1.2MB/s|DNSOK|GPT⁺-IE
+  name: 🇮🇪 | @WhiteDNS | IE26|1.7MB/s|DNSOK|GPT⁺-IE
   network: tcp
-  password: Trojan@82164024
+  password: UX82473651
   port: 443
-  server: ie.tronsg.com
-  skip-cert-verify: false
-  sni: ie.tronsg.com
+  server: loved-shark.rooster465.autos
+  skip-cert-verify: true
+  sni: loved-shark.rooster465.autos
   type: trojan
   udp: true
-- name: 🇮🇪 | @WhiteDNS | IE29|1022KB/s|DNSOK|GPT⁺-IE
+- client-fingerprint: chrome
+  name: 🇮🇪 | @WhiteDNS | IE27|1.3MB/s|DNSOK|GPT⁺-IE
+  password: UX82473651
+  port: 443
+  server: 3.253.106.233
+  skip-cert-verify: false
+  sni: loved-shark.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇮🇪 | @WhiteDNS | IE28|851KB/s|DNSOK|GPT⁺-IE
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: 3.253.106.233
+  skip-cert-verify: false
+  sni: loved-shark.rooster465.autos
+  type: trojan
+  udp: true
+- name: 🇮🇪 | @WhiteDNS | IE29|800KB/s|DNSOK|GPT⁺-IE
   password: Trojan@82164024
   port: 443
   server: 3.255.76.207
@@ -79,13 +131,18 @@ proxy-groups:
 - name: IE-Auto
   type: url-test
   proxies:
-  - 🇮🇪 | @WhiteDNS | IE23|15.8MB/s|DNSOK|GPT⁺-IE
-  - 🇮🇪 | @WhiteDNS | IE24|5.2MB/s|DNSOK|GPT⁺-IE
-  - 🇮🇪 | @WhiteDNS | IE25|4.5MB/s|DNSOK|GPT⁺-IE
-  - 🇮🇪 | @WhiteDNS | IE26|2.7MB/s|DNSOK|GPT⁺-IE
-  - 🇮🇪 | @WhiteDNS | IE27|1.5MB/s|DNSOK|GPT⁺-IE
-  - 🇮🇪 | @WhiteDNS | IE28|1.2MB/s|DNSOK|GPT⁺-IE
-  - 🇮🇪 | @WhiteDNS | IE29|1022KB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE18|17.2MB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE19|16.8MB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE20|6.6MB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE21|6.3MB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE22|6.2MB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE23|6.0MB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE24|4.4MB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE25|2.1MB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE26|1.7MB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE27|1.3MB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE28|851KB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE29|800KB/s|DNSOK|GPT⁺-IE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
