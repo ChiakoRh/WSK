@@ -1,25 +1,34 @@
 proxies:
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇫🇮 | @WhiteDNS | FI170|6.0MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 58179
-  server: fisgww.povrak.ir
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - testspeed-foreign.tci.ir
+    path:
+    - /@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---
+  name: 🇫🇮 | @WhiteDNS | FI165|5.1MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 3035
+  server: 65.109.176.245
+  type: vless
   udp: true
-  uuid: af5e3422-337e-43e3-88ca-2687eb379866
+  uuid: afd1fb0c-7c51-4c4c-a1ed-07e8493030d2
   xudp: true
-- name: 🇫🇮 | @WhiteDNS | FI171|5.7MB/s|DNSOK|GPT⁺-FI
-  password: ''
-  port: 8443
-  server: 65.109.176.225
-  skip-cert-verify: true
-  type: http
-  username: ''
+- encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI166|3.2MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 80
+  server: 146.75.119.82
+  type: vless
+  udp: true
+  uuid: 8d3881f9-5aa2-4036-96bb-8db3cb079103
+  ws-opts:
+    headers:
+      Host: rb24.ir
+      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
+  xudp: true
 - alpn:
   - ''
   alterId: '0'
@@ -30,7 +39,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI172|3.8MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI167|2.7MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 52080
   server: 185.212.149.7
@@ -50,7 +59,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI173|3.4MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI168|2.6MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
@@ -59,19 +68,4 @@ proxies:
   type: vmess
   udp: true
   uuid: aeb3c019-ae83-4677-af97-846baa787ad5
-  xudp: true
-- encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI174|2.4MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 80
-  server: 146.75.119.82
-  type: vless
-  udp: true
-  uuid: 72c52aa6-a442-4527-969f-6fdabf5e74c7
-  ws-opts:
-    headers:
-      Host: rb24.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: /ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
   xudp: true
