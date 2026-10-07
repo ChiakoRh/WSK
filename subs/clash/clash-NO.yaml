@@ -13,7 +13,22 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇳🇴 | @WhiteDNS | NO3|4.3MB/s|DNSOK|GPT⁺-NO
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇳🇴 | @WhiteDNS | NO8|17.7MB/s|DNSOK|GPT⁺-NO
+  port: 8765
+  reality-opts:
+    public-key: Da_s-Cgqm5kqaIbCgXVJdrq_KF7fCQveRByRhKUzonc
+    short-id: 7bf47eabf939728b
+  server: 89.185.81.95
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: df9f5aca-eda0-428f-a752-e53866153d12
+  network: tcp
+  servername: r-b8a34c.vless.monster
+- name: 🇳🇴 | @WhiteDNS | NO9|4.6MB/s|DNSOK|GPT⁺-NO
   password: ''
   port: 9443
   server: 146.70.170.210
@@ -25,7 +40,8 @@ proxy-groups:
 - name: NO-Auto
   type: url-test
   proxies:
-  - 🇳🇴 | @WhiteDNS | NO3|4.3MB/s|DNSOK|GPT⁺-NO
+  - 🇳🇴 | @WhiteDNS | NO8|17.7MB/s|DNSOK|GPT⁺-NO
+  - 🇳🇴 | @WhiteDNS | NO9|4.6MB/s|DNSOK|GPT⁺-NO
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -1,0 +1,41 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- client-fingerprint: firefox
+  name: 🇮🇱 | @WhiteDNS | IL5|4.6MB/s|DNSOK|GPT⁺-IL
+  network: ws
+  port: 443
+  server: 177.3.208.65
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  ws-opts:
+    headers:
+      Host: tgmansion.site
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /vless-il
+  xudp: true
+  servername: tgmansion.site
+proxy-groups:
+- name: IL-Auto
+  type: url-test
+  proxies:
+  - 🇮🇱 | @WhiteDNS | IL5|4.6MB/s|DNSOK|GPT⁺-IL
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,IL-Auto
