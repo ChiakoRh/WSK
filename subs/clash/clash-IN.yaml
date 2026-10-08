@@ -15,7 +15,80 @@ dns:
 proxies:
 - alterId: 0
   cipher: auto
-  name: 🇮🇳 | @WhiteDNS | IN31|2.9MB/s|DNSOK|GPT⁺-IN
+  name: 🇮🇳 | @WhiteDNS | IN36|3.3MB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 80
+  server: 152.67.8.205
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  ws-opts:
+    path: /
+  servername: 🇮🇳IN-152.67.8.205-0279 | 3.578MB
+- name: 🇮🇳 | @WhiteDNS | IN37|3.1MB/s|DNSOK|GPT⁺-IN
+  password: ''
+  port: 443
+  server: 165.231.253.210
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- down: ''
+  fingerprint: ''
+  name: 🇮🇳 | @WhiteDNS | IN38|3.1MB/s|DNSOK|GPT⁺-IN
+  obfs: ''
+  obfs-password: ''
+  password: 06133d56-2d98-4ca5-b9d3-bbf2d65bc238
+  port: 51000
+  server: 144.24.109.215
+  skip-cert-verify: true
+  sni: cn.cremedelamer.com
+  type: hysteria2
+  up: ''
+- name: 🇮🇳 | @WhiteDNS | IN39|2.6MB/s|DNSOK|GPT⁺-IN
+  password: ''
+  port: 1088
+  server: 144.24.111.128
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- alterId: 0
+  cipher: auto
+  name: 🇮🇳 | @WhiteDNS | IN40|2.4MB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 80
+  server: 152.67.8.205
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  ws-opts:
+    headers: {}
+    path: /
+  xudp: true
+  servername: 🇮🇳in-152.67.8.205-0282 | 3.796mb
+- alterId: '0'
+  cipher: auto
+  name: 🇮🇳 | @WhiteDNS | IN41|2.4MB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 80
+  server: 152.67.8.205
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  ws-opts:
+    headers: {}
+    path: /
+  xudp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇮🇳 | @WhiteDNS | IN42|1.9MB/s|DNSOK|GPT⁺-IN
   network: ws
   port: 80
   server: 152.67.8.205
@@ -29,44 +102,7 @@ proxies:
     path: /
   xudp: true
   servername: 152.67.8.205
-- name: 🇮🇳 | @WhiteDNS | IN32|2.6MB/s|DNSOK|GPT⁺-IN
-  password: ''
-  port: 443
-  server: 165.231.253.210
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- alterId: 0
-  cipher: auto
-  name: 🇮🇳 | @WhiteDNS | IN33|2.0MB/s|DNSOK|GPT⁺-IN
-  network: ws
-  port: 80
-  server: 152.67.8.205
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  ws-opts:
-    path: /
-  servername: 🇮🇳IN-152.67.8.205-0282 | 3.796MB
-- alterId: '0'
-  cipher: auto
-  name: 🇮🇳 | @WhiteDNS | IN34|2.0MB/s|DNSOK|GPT⁺-IN
-  network: ws
-  port: 80
-  server: 152.67.8.205
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  ws-opts:
-    headers:
-      Host: 152.67.8.205
-    path: /
-  xudp: true
-- name: 🇮🇳 | @WhiteDNS | IN35|1.6MB/s|DNSOK|GPT⁺-IN
+- name: 🇮🇳 | @WhiteDNS | IN43|1.6MB/s|DNSOK|GPT⁺-IN
   password: ''
   port: 443
   server: 165.231.253.66
@@ -78,11 +114,14 @@ proxy-groups:
 - name: IN-Auto
   type: url-test
   proxies:
-  - 🇮🇳 | @WhiteDNS | IN31|2.9MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN32|2.6MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN33|2.0MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN34|2.0MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN35|1.6MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN36|3.3MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN37|3.1MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN38|3.1MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN39|2.6MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN40|2.4MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN41|2.4MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN42|1.9MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN43|1.6MB/s|DNSOK|GPT⁺-IN
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
