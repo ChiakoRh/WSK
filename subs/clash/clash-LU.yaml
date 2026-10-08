@@ -13,7 +13,22 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇱🇺 | @WhiteDNS | LU3|25.8MB/s|DNSOK|GPT⁺-LU
+- client-fingerprint: chrome
+  name: 🇱🇺 | @WhiteDNS | LU3|40.2MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
+  port: 443
+  server: chatgpt.com
+  skip-cert-verify: false
+  sni: mfyousheng.nl.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/58.0.3029.81 Safari/537.36
+    path: /tjwsLhx0SFASG4l9FERJ1g
+- name: 🇱🇺 | @WhiteDNS | LU4|24.6MB/s|DNSOK|GPT⁺-LU
   password: ''
   port: 9443
   server: 185.221.132.226
@@ -25,7 +40,8 @@ proxy-groups:
 - name: LU-Auto
   type: url-test
   proxies:
-  - 🇱🇺 | @WhiteDNS | LU3|25.8MB/s|DNSOK|GPT⁺-LU
+  - 🇱🇺 | @WhiteDNS | LU3|40.2MB/s|DNSOK|GPT⁺-CH
+  - 🇱🇺 | @WhiteDNS | LU4|24.6MB/s|DNSOK|GPT⁺-LU
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

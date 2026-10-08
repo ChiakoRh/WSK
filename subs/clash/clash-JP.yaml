@@ -14,82 +14,46 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP232|2.2MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP603|2.1MB/s|DNSOK|GPT⁺-JP
   password: UX82473651
   port: 443
   server: winning-marten.rooster465.autos
-  skip-cert-verify: true
-  sni: winning-marten.rooster465.autos
-  type: trojan
-  udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP233|2.0MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: winning-marten.rooster465.autos
-  skip-cert-verify: true
-  sni: winning-marten.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP234|2.0MB/s|DNSOK|GPT⁺-JP
-  password: UX82473651
-  port: 443
-  server: 54.65.177.190
-  skip-cert-verify: true
-  sni: winning-marten.rooster465.autos
-  type: trojan
-  udp: true
-  network: tcp
-- alterId: '0'
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP235|1.9MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 80
-  server: 168.138.43.75
   skip-cert-verify: false
-  tls: false
-  type: vmess
+  sni: winning-marten.rooster465.autos
+  type: trojan
   udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  network: tcp
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇯🇵 | @WhiteDNS | JP604|2.0MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 443
+  server: freev2.cloudflare.182682.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
   ws-opts:
     headers:
-      Host: none
-    path: /cctv13.m3u8
+      Host: jp-osa.862400.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/50.0.2661.94 Safari/537.36
+    path: /announcement
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2048
   xudp: true
-- country: 🇯🇵 JP
-  name: 🇯🇵 | @WhiteDNS | JP236|1.8MB/s|DNSOK|GPT⁺-JP
-  password: UX82473651
-  port: 443
-  server: winning-marten.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-  network: tcp
-  sni: winning-marten.rooster465.autos
-- country: 🇯🇵 JP
-  name: 🇯🇵 | @WhiteDNS | JP237|1.8MB/s|DNSOK|GPT⁺-JP
-  password: UX82473651
-  port: 443
-  server: comic-poodle.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-  network: tcp
-  sni: comic-poodle.rooster465.autos
+  servername: jp-osa.862400.xyz
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP238|1.8MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP605|2.0MB/s|DNSOK|GPT⁺-JP
+  network: tcp
   password: UX82473651
   port: 443
-  server: intense-sole.rooster465.autos
+  server: prime-corgi.rooster465.autos
   skip-cert-verify: false
-  sni: intense-sole.rooster465.autos
+  sni: prime-corgi.rooster465.autos
   type: trojan
   udp: true
-  network: tcp
-- name: 🇯🇵 | @WhiteDNS | JP239|1.8MB/s|DNSOK|GPT⁺-JP
+- name: 🇯🇵 | @WhiteDNS | JP606|2.0MB/s|DNSOK|GPT⁺-JP
   password: UX82473651
   port: 443
   server: 54.249.36.167
@@ -99,26 +63,28 @@ proxies:
   udp: true
   network: tcp
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP240|1.8MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP607|1.9MB/s|DNSOK|GPT⁺-JP
   network: tcp
   password: UX82473651
   port: 443
-  server: 43.207.198.39
+  server: intense-sole.rooster465.autos
   skip-cert-verify: false
-  sni: fancy-javelin.rooster465.autos
+  sni: intense-sole.rooster465.autos
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP241|1.7MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP608|1.9MB/s|DNSOK|GPT⁺-JP
   network: tcp
   password: UX82473651
   port: 443
-  server: evolving-platypus.rooster465.autos
+  server: accurate-frog.rooster465.autos
   skip-cert-verify: false
+  sni: accurate-frog.rooster465.autos
   type: trojan
   udp: true
-  sni: evolving-platypus.rooster465.autos
-- name: 🇯🇵 | @WhiteDNS | JP242|1.7MB/s|DNSOK|GPT⁺-JP
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP609|1.8MB/s|DNSOK|GPT⁺-JP
+  network: tcp
   password: UX82473651
   port: 443
   server: 18.176.61.69
@@ -126,49 +92,87 @@ proxies:
   sni: intense-sole.rooster465.autos
   type: trojan
   udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP243|1.7MB/s|DNSOK|GPT⁺-JP
-  network: tcp
+- name: 🇯🇵 | @WhiteDNS | JP610|1.8MB/s|DNSOK|GPT⁺-JP
   password: UX82473651
   port: 443
-  server: fancy-javelin.rooster465.autos
-  skip-cert-verify: false
-  sni: fancy-javelin.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP244|1.7MB/s|DNSOK|GPT⁺-JP
-  password: UX82473651
-  port: 443
-  server: comic-poodle.rooster465.autos
-  skip-cert-verify: false
-  sni: comic-poodle.rooster465.autos
+  server: 3.112.245.255
+  skip-cert-verify: true
+  sni: dynamic-imp.rooster465.autos
   type: trojan
   udp: true
   network: tcp
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP245|1.7MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP611|1.8MB/s|DNSOK|GPT⁺-JP
   network: tcp
   password: UX82473651
   port: 443
-  server: organic-caribou.rooster465.autos
+  server: prime-corgi.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  sni: prime-corgi.rooster465.autos
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP612|1.8MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: accurate-frog.rooster465.autos
   skip-cert-verify: false
   type: trojan
   udp: true
-  sni: organic-caribou.rooster465.autos
+  sni: accurate-frog.rooster465.autos
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP246|1.7MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP613|1.8MB/s|DNSOK|GPT⁺-JP
   network: tcp
+  password: UX82473651
+  port: 443
+  server: assuring-skink.rooster465.autos
+  skip-cert-verify: true
+  sni: assuring-skink.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP614|1.8MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: brief-glider.rooster465.autos
+  skip-cert-verify: false
+  sni: brief-glider.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP615|1.7MB/s|DNSOK|GPT⁺-JP
+  password: UX82473651
+  port: 443
+  server: 54.199.66.128
+  skip-cert-verify: false
+  sni: integral-rodent.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- country: 🇯🇵 JP
+  name: 🇯🇵 | @WhiteDNS | JP616|1.7MB/s|DNSOK|GPT⁺-JP
   password: UX82473651
   port: 443
   server: winning-marten.rooster465.autos
   skip-cert-verify: true
   type: trojan
   udp: true
+  network: tcp
   sni: winning-marten.rooster465.autos
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP247|1.7MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP617|1.7MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: intense-sole.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+  sni: intense-sole.rooster465.autos
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP618|1.7MB/s|DNSOK|GPT⁺-JP
   password: UX82473651
   port: 443
   server: brief-glider.rooster465.autos
@@ -178,27 +182,47 @@ proxies:
   udp: true
   network: tcp
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP248|1.7MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP619|1.7MB/s|DNSOK|GPT⁺-JP
   network: tcp
   password: UX82473651
   port: 443
-  server: musical-terrier.rooster465.autos
+  server: concrete-aardvark.rooster465.autos
   skip-cert-verify: false
+  sni: concrete-aardvark.rooster465.autos
   type: trojan
   udp: true
-  sni: musical-terrier.rooster465.autos
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP249|1.7MB/s|DNSOK|GPT⁺-JP
-  network: tcp
+  name: 🇯🇵 | @WhiteDNS | JP620|1.7MB/s|DNSOK|GPT⁺-JP
   password: UX82473651
   port: 443
-  server: 52.192.45.137
-  skip-cert-verify: true
+  server: promoted-rattler.rooster465.autos
+  skip-cert-verify: false
   sni: promoted-rattler.rooster465.autos
   type: trojan
   udp: true
+  network: tcp
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP250|1.7MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP621|1.7MB/s|DNSOK|GPT⁺-JP
+  password: UX82473651
+  port: 443
+  server: 54.65.177.190
+  skip-cert-verify: true
+  sni: winning-marten.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP622|1.7MB/s|DNSOK|GPT⁺-JP
+  password: UX82473651
+  port: 443
+  server: integral-rodent.rooster465.autos
+  skip-cert-verify: false
+  sni: integral-rodent.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP623|1.7MB/s|DNSOK|GPT⁺-JP
   password: UX82473651
   port: 443
   server: 13.230.139.12
@@ -208,124 +232,7 @@ proxies:
   udp: true
   network: tcp
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP251|1.7MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: promoted-rattler.rooster465.autos
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-  sni: promoted-rattler.rooster465.autos
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP252|1.7MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: integral-rodent.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-  sni: integral-rodent.rooster465.autos
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP253|1.7MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: 52.192.217.187
-  skip-cert-verify: false
-  sni: evolving-platypus.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP254|1.7MB/s|DNSOK|GPT⁺-JP
-  password: UX82473651
-  port: 443
-  server: 52.192.45.137
-  skip-cert-verify: true
-  sni: promoted-rattler.rooster465.autos
-  type: trojan
-  udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP255|1.7MB/s|DNSOK|GPT⁺-JP
-  password: UX82473651
-  port: 443
-  server: evolving-platypus.rooster465.autos
-  skip-cert-verify: true
-  sni: evolving-platypus.rooster465.autos
-  type: trojan
-  udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP256|1.7MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: concrete-aardvark.rooster465.autos
-  skip-cert-verify: false
-  sni: concrete-aardvark.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP257|1.7MB/s|DNSOK|GPT⁺-JP
-  password: UX82473651
-  port: 443
-  server: promoted-rattler.rooster465.autos
-  skip-cert-verify: false
-  sni: promoted-rattler.rooster465.autos
-  type: trojan
-  udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP258|1.7MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: 54.249.36.167
-  skip-cert-verify: false
-  sni: comic-poodle.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP259|1.7MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: brief-glider.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-  sni: brief-glider.rooster465.autos
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP260|1.7MB/s|DNSOK|GPT⁺-JP
-  password: UX82473651
-  port: 443
-  server: concrete-aardvark.rooster465.autos
-  skip-cert-verify: false
-  sni: concrete-aardvark.rooster465.autos
-  type: trojan
-  udp: true
-  network: tcp
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP261|1.6MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: none
-    path: /cctv13.m3u8
-  xudp: true
-  servername: none
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP262|1.6MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP624|1.7MB/s|DNSOK|GPT⁺-JP
   network: tcp
   password: UX82473651
   port: 443
@@ -334,104 +241,19 @@ proxies:
   type: trojan
   udp: true
   sni: concrete-aardvark.rooster465.autos
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP263|1.6MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: jp01.a0a.xyz
-    path: /cctv13.m3u8
-  xudp: true
-  servername: jp01.a0a.xyz
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP264|1.6MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP625|1.7MB/s|DNSOK|GPT⁺-JP
+  network: tcp
   password: UX82473651
   port: 443
-  server: organic-caribou.rooster465.autos
+  server: 3.112.245.255
   skip-cert-verify: true
-  sni: organic-caribou.rooster465.autos
-  type: trojan
-  udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP265|1.6MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: brief-glider.rooster465.autos
-  skip-cert-verify: true
-  sni: brief-glider.rooster465.autos
+  sni: dynamic-imp.rooster465.autos
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP266|1.6MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP626|1.7MB/s|DNSOK|GPT⁺-JP
   network: tcp
-  password: UX82473651
-  port: 443
-  server: 54.65.177.190
-  skip-cert-verify: false
-  sni: winning-marten.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP267|1.6MB/s|DNSOK|GPT⁺-JP
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 45.32.52.173
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP268|1.6MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: 13.230.91.226
-  skip-cert-verify: false
-  sni: musical-terrier.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP269|1.6MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: accurate-frog.rooster465.autos
-  skip-cert-verify: false
-  sni: accurate-frog.rooster465.autos
-  type: trojan
-  udp: true
-- country: 🇯🇵 JP
-  name: 🇯🇵 | @WhiteDNS | JP270|1.6MB/s|DNSOK|GPT⁺-JP
-  password: UX82473651
-  port: 443
-  server: evolving-platypus.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-  network: tcp
-  sni: evolving-platypus.rooster465.autos
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP271|1.6MB/s|DNSOK|GPT⁺-JP
-  password: UX82473651
-  port: 443
-  server: 52.192.217.187
-  skip-cert-verify: false
-  sni: evolving-platypus.rooster465.autos
-  type: trojan
-  udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP272|1.6MB/s|DNSOK|GPT⁺-JP
   password: UX82473651
   port: 443
   server: 13.231.247.130
@@ -439,322 +261,78 @@ proxies:
   sni: concrete-aardvark.rooster465.autos
   type: trojan
   udp: true
-  network: tcp
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP273|1.6MB/s|DNSOK|GPT⁺-JP
-  network: tcp
+  name: 🇯🇵 | @WhiteDNS | JP627|1.7MB/s|DNSOK|GPT⁺-JP
   password: UX82473651
   port: 443
   server: comic-poodle.rooster465.autos
   skip-cert-verify: false
-  type: trojan
-  udp: true
   sni: comic-poodle.rooster465.autos
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP274|1.6MB/s|DNSOK|GPT⁺-JP
-  password: UX82473651
-  port: 443
-  server: musical-terrier.rooster465.autos
-  skip-cert-verify: true
-  sni: musical-terrier.rooster465.autos
   type: trojan
   udp: true
   network: tcp
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP275|1.5MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP628|1.7MB/s|DNSOK|GPT⁺-JP
+  network: tcp
   password: UX82473651
   port: 443
-  server: fancy-javelin.rooster465.autos
+  server: 13.230.139.12
   skip-cert-verify: false
-  sni: fancy-javelin.rooster465.autos
+  sni: brief-glider.rooster465.autos
   type: trojan
   udp: true
-  network: tcp
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP276|1.5MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP629|1.7MB/s|DNSOK|GPT⁺-JP
   network: tcp
   password: UX82473651
   port: 443
-  server: prime-corgi.rooster465.autos
+  server: promoted-rattler.rooster465.autos
   skip-cert-verify: false
-  sni: prime-corgi.rooster465.autos
+  sni: promoted-rattler.rooster465.autos
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP277|1.5MB/s|DNSOK|GPT⁺-JP
-  network: tcp
+  name: 🇯🇵 | @WhiteDNS | JP630|1.7MB/s|DNSOK|GPT⁺-JP
   password: UX82473651
   port: 443
-  server: 13.231.247.130
+  server: concrete-aardvark.rooster465.autos
   skip-cert-verify: false
   sni: concrete-aardvark.rooster465.autos
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP278|1.5MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: fancy-javelin.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-  sni: fancy-javelin.rooster465.autos
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP279|1.5MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: 43.207.89.91
-  skip-cert-verify: true
-  sni: organic-caribou.rooster465.autos
-  type: trojan
-  udp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP280|1.5MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: None
-    path: /cctv13.m3u8
-  xudp: true
-  servername: None
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP281|1.4MB/s|DNSOK|GPT⁺-JP
-  port: 443
-  reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  server: 153.121.36.102
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
-  network: tcp
-  servername: www.amazon.com
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP282|1.3MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: 18.176.61.69
-  skip-cert-verify: true
-  sni: intense-sole.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP283|1.3MB/s|DNSOK|GPT⁺-JP
-  password: UX82473651
-  port: 443
-  server: 43.207.198.39
-  skip-cert-verify: false
-  sni: fancy-javelin.rooster465.autos
-  type: trojan
-  udp: true
-  network: tcp
-- country: 🇦🇺 AU
-  name: 🇯🇵 | @WhiteDNS | JP284|1.3MB/s|DNSOK|GPT⁺-JP
-  password: UX82473651
-  port: 443
-  server: organic-caribou.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-  network: tcp
-  sni: organic-caribou.rooster465.autos
-- name: 🇯🇵 | @WhiteDNS | JP285|1.3MB/s|DNSOK|GPT⁺-JP
-  password: UX82473651
-  port: 443
-  server: 54.199.66.128
-  skip-cert-verify: true
-  sni: integral-rodent.rooster465.autos
-  type: trojan
-  udp: true
   network: tcp
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP286|1.3MB/s|DNSOK|GPT⁺-JP
-  password: UX82473651
-  port: 443
-  server: accurate-frog.rooster465.autos
-  skip-cert-verify: false
-  type: trojan
-  udp: true
+  name: 🇯🇵 | @WhiteDNS | JP631|1.7MB/s|DNSOK|GPT⁺-JP
   network: tcp
-  sni: accurate-frog.rooster465.autos
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP287|1.3MB/s|DNSOK|GPT⁺-JP
   password: UX82473651
   port: 443
   server: promoted-rattler.rooster465.autos
   skip-cert-verify: false
   type: trojan
   udp: true
-  network: tcp
   sni: promoted-rattler.rooster465.autos
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP288|1.3MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP632|1.7MB/s|DNSOK|GPT⁺-JP
   network: tcp
   password: UX82473651
   port: 443
-  server: 54.199.66.128
-  skip-cert-verify: false
-  sni: integral-rodent.rooster465.autos
+  server: winning-marten.rooster465.autos
+  skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP289|1.3MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: 168.138.43.75
-    path: /cctv13.m3u8
-  xudp: true
-  servername: 168.138.43.75
+  sni: winning-marten.rooster465.autos
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP290|1.3MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP633|1.7MB/s|DNSOK|GPT⁺-JP
   network: tcp
   password: UX82473651
   port: 443
-  server: intense-sole.rooster465.autos
+  server: winning-marten.rooster465.autos
   skip-cert-verify: true
-  type: trojan
-  udp: true
-  sni: intense-sole.rooster465.autos
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP291|1.3MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: promoted-rattler.rooster465.autos
-  skip-cert-verify: true
-  sni: promoted-rattler.rooster465.autos
-  type: trojan
-  udp: true
-- country: 🇯🇵 JP
-  name: 🇯🇵 | @WhiteDNS | JP292|1.3MB/s|DNSOK|GPT⁺-JP
-  password: UX82473651
-  port: 443
-  server: prime-corgi.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-  network: tcp
-  sni: prime-corgi.rooster465.autos
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP293|1.3MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: 54.250.237.143
-  skip-cert-verify: true
-  sni: accurate-frog.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP294|1.2MB/s|DNSOK|GPT⁺-JP
-  port: 443
-  reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  server: t9.qifei.app
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
-  network: tcp
-  servername: www.amazon.com
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP295|1.2MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  server: 153.121.36.102
-  tls: true
-  type: vless
-  udp: true
-  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
-  xudp: true
-  servername: www.amazon.com
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP296|1.2MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: obliging-louse.rooster465.autos
-  skip-cert-verify: true
-  sni: obliging-louse.rooster465.autos
+  sni: winning-marten.rooster465.autos
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP297|1.0MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: 54.249.55.154
-  skip-cert-verify: false
-  sni: prime-corgi.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP298|1.0MB/s|DNSOK|GPT⁺-JP
-  password: UX82473651
-  port: 443
-  server: 54.249.55.154
-  skip-cert-verify: true
-  sni: prime-corgi.rooster465.autos
-  type: trojan
-  udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP299|1.0MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 45.32.52.173
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP300|1.0MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  server: t9.qifei.app
-  tls: true
-  type: vless
-  udp: true
-  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
-  servername: www.amazon.com
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP301|1.0MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP634|1.7MB/s|DNSOK|GPT⁺-JP
   network: tcp
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   port: 8886
@@ -763,28 +341,162 @@ proxies:
   sni: 45.32.52.173
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP302|845KB/s|DNSOK|GPT⁺-JP
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP635|1.7MB/s|DNSOK|GPT⁺-JP
+  port: 443
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  server: t9.qifei.app
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+  network: tcp
+  servername: www.amazon.com
+- country: 🇯🇵 JP
+  name: 🇯🇵 | @WhiteDNS | JP636|1.7MB/s|DNSOK|GPT⁺-JP
   password: UX82473651
   port: 443
-  server: integral-rodent.rooster465.autos
+  server: brief-glider.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  network: tcp
+  sni: brief-glider.rooster465.autos
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP637|1.7MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: 52.192.217.187
+  skip-cert-verify: false
+  sni: evolving-platypus.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP638|1.6MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: comic-poodle.rooster465.autos
+  skip-cert-verify: true
+  sni: comic-poodle.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP639|1.6MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: comic-poodle.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  sni: comic-poodle.rooster465.autos
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP640|1.6MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: evolving-platypus.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  sni: evolving-platypus.rooster465.autos
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP641|1.6MB/s|DNSOK|GPT⁺-JP
+  password: UX82473651
+  port: 443
+  server: dynamic-imp.rooster465.autos
+  skip-cert-verify: false
+  sni: dynamic-imp.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP642|1.6MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: brief-glider.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  sni: brief-glider.rooster465.autos
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP643|1.6MB/s|DNSOK|GPT⁺-JP
+  password: UX82473651
+  port: 443
+  server: 176.34.5.100
+  skip-cert-verify: false
+  sni: assuring-skink.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- country: 🇯🇵 JP
+  name: 🇯🇵 | @WhiteDNS | JP644|1.5MB/s|DNSOK|GPT⁺-JP
+  password: UX82473651
+  port: 443
+  server: prime-corgi.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  network: tcp
+  sni: prime-corgi.rooster465.autos
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP645|1.5MB/s|DNSOK|GPT⁺-JP
+  password: UX82473651
+  port: 443
+  server: dynamic-imp.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+  network: tcp
+  sni: dynamic-imp.rooster465.autos
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP646|1.5MB/s|DNSOK|GPT⁺-JP
+  password: UX82473651
+  port: 443
+  server: 13.231.247.130
+  skip-cert-verify: true
+  sni: concrete-aardvark.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- name: 🇯🇵 | @WhiteDNS | JP647|1.5MB/s|DNSOK|GPT⁺-JP
+  password: UX82473651
+  port: 443
+  server: 18.176.61.69
+  skip-cert-verify: true
+  sni: intense-sole.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP648|1.5MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: 54.199.66.128
   skip-cert-verify: false
   sni: integral-rodent.rooster465.autos
   type: trojan
   udp: true
-  network: tcp
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP303|782KB/s|DNSOK|GPT⁺-JP
-  network: tcp
+  name: 🇯🇵 | @WhiteDNS | JP649|1.5MB/s|DNSOK|GPT⁺-JP
   password: UX82473651
   port: 443
-  server: organic-caribou.rooster465.autos
+  server: 54.238.153.132
   skip-cert-verify: true
-  sni: organic-caribou.rooster465.autos
+  sni: obliging-louse.rooster465.autos
   type: trojan
   udp: true
+  network: tcp
 - encryption: none
-  name: 🇯🇵 | @WhiteDNS | JP304|762KB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP650|1.4MB/s|DNSOK|GPT⁺-JP
   network: raw
   port: 47878
   server: 152.69.195.67
@@ -792,29 +504,18 @@ proxies:
   udp: true
   uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
   xudp: true
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP305|658KB/s|DNSOK|GPT⁺-JP
+- encryption: none
+  name: 🇯🇵 | @WhiteDNS | JP651|1.4MB/s|DNSOK|GPT⁺-JP
   network: tcp
-  password: UX82473651
-  port: 443
-  server: comic-poodle.rooster465.autos
-  skip-cert-verify: false
-  sni: comic-poodle.rooster465.autos
-  type: trojan
+  port: 47878
+  server: 152.69.195.67
+  type: vless
   udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  xudp: true
+  servername: 152.69.195.67
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP306|578KB/s|DNSOK|GPT⁺-JP
-  password: UX82473651
-  port: 443
-  server: 54.250.237.143
-  skip-cert-verify: true
-  sni: accurate-frog.rooster465.autos
-  type: trojan
-  udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP307|542KB/s|DNSOK|GPT⁺-JP
-  network: tcp
+  name: 🇯🇵 | @WhiteDNS | JP652|1.4MB/s|DNSOK|GPT⁺-JP
   password: UX82473651
   port: 443
   server: intense-sole.rooster465.autos
@@ -822,86 +523,379 @@ proxies:
   sni: intense-sole.rooster465.autos
   type: trojan
   udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP653|1.4MB/s|DNSOK|GPT⁺-JP
+  password: UX82473651
+  port: 443
+  server: 52.192.217.187
+  skip-cert-verify: false
+  sni: evolving-platypus.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP654|1.3MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: integral-rodent.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  sni: integral-rodent.rooster465.autos
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP655|1.3MB/s|DNSOK|GPT⁺-JP
+  password: UX82473651
+  port: 443
+  server: accurate-frog.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+  network: tcp
+  sni: accurate-frog.rooster465.autos
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP656|1.3MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: 43.207.89.91
+  skip-cert-verify: true
+  sni: organic-caribou.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP657|1.3MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: integral-rodent.rooster465.autos
+  skip-cert-verify: true
+  sni: integral-rodent.rooster465.autos
+  type: trojan
+  udp: true
+- name: 🇯🇵 | @WhiteDNS | JP658|1.3MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  xudp: true
+- country: 🇯🇵 JP
+  name: 🇯🇵 | @WhiteDNS | JP659|1.3MB/s|DNSOK|GPT⁺-JP
+  password: UX82473651
+  port: 443
+  server: intense-sole.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  network: tcp
+  sni: intense-sole.rooster465.autos
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP660|1.3MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  server: 153.121.36.102
+  tls: true
+  type: vless
+  udp: true
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+  xudp: true
+  servername: www.amazon.com
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP661|1.3MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: 54.238.153.132
+  skip-cert-verify: true
+  sni: obliging-louse.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP662|1.3MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: 54.249.55.154
+  skip-cert-verify: false
+  sni: prime-corgi.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP663|1.3MB/s|DNSOK|GPT⁺-JP
+  password: UX82473651
+  port: 443
+  server: 54.249.55.154
+  skip-cert-verify: false
+  sni: prime-corgi.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP664|1.3MB/s|DNSOK|GPT⁺-JP
+  password: UX82473651
+  port: 443
+  server: assuring-skink.rooster465.autos
+  skip-cert-verify: false
+  sni: assuring-skink.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP665|1.3MB/s|DNSOK|GPT⁺-JP
+  password: UX82473651
+  port: 443
+  server: prime-corgi.rooster465.autos
+  skip-cert-verify: false
+  sni: prime-corgi.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP666|1.3MB/s|DNSOK|GPT⁺-JP
+  password: UX82473651
+  port: 443
+  server: accurate-frog.rooster465.autos
+  skip-cert-verify: false
+  sni: accurate-frog.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP667|1.3MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: 52.192.45.137
+  skip-cert-verify: true
+  sni: promoted-rattler.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP668|1.2MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 45.32.52.173
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP669|1.2MB/s|DNSOK|GPT⁺-JP
+  password: UX82473651
+  port: 443
+  server: 43.207.89.91
+  skip-cert-verify: true
+  sni: organic-caribou.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP670|1.2MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: 54.249.36.167
+  skip-cert-verify: true
+  sni: comic-poodle.rooster465.autos
+  type: trojan
+  udp: true
+- country: 🇯🇵 JP
+  name: 🇯🇵 | @WhiteDNS | JP671|1.1MB/s|DNSOK|GPT⁺-JP
+  password: UX82473651
+  port: 443
+  server: comic-poodle.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  network: tcp
+  sni: comic-poodle.rooster465.autos
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP672|1.1MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: fancy-javelin.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+  sni: fancy-javelin.rooster465.autos
+- name: 🇯🇵 | @WhiteDNS | JP673|1.1MB/s|DNSOK|GPT⁺-JP
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP674|1.0MB/s|DNSOK|GPT⁺-JP
+  password: UX82473651
+  port: 443
+  server: 54.250.237.143
+  skip-cert-verify: false
+  sni: accurate-frog.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP675|1.0MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: evolving-platypus.rooster465.autos
+  skip-cert-verify: false
+  sni: evolving-platypus.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP676|1.0MB/s|DNSOK|GPT⁺-JP
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 45.32.52.173
+  skip-cert-verify: true
+  sni: 45.32.52.173
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP677|1.0MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: dynamic-imp.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  sni: dynamic-imp.rooster465.autos
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP678|1.0MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: 54.65.177.190
+  skip-cert-verify: true
+  sni: winning-marten.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP679|993KB/s|DNSOK|GPT⁺-JP
+  password: UX82473651
+  port: 443
+  server: evolving-platypus.rooster465.autos
+  skip-cert-verify: false
+  sni: evolving-platypus.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- country: 🇯🇵 JP
+  name: 🇯🇵 | @WhiteDNS | JP680|843KB/s|DNSOK|GPT⁺-JP
+  password: UX82473651
+  port: 443
+  server: assuring-skink.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  network: tcp
+  sni: assuring-skink.rooster465.autos
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP681|813KB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: organic-caribou.rooster465.autos
+  skip-cert-verify: false
+  sni: organic-caribou.rooster465.autos
+  type: trojan
+  udp: true
 proxy-groups:
 - name: JP-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP232|2.2MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP233|2.0MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP234|2.0MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP235|1.9MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP236|1.8MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP237|1.8MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP238|1.8MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP239|1.8MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP240|1.8MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP241|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP242|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP243|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP244|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP245|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP246|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP247|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP248|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP249|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP250|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP251|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP252|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP253|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP254|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP255|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP256|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP257|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP258|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP259|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP260|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP261|1.6MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP262|1.6MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP263|1.6MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP264|1.6MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP265|1.6MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP266|1.6MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP267|1.6MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP268|1.6MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP269|1.6MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP270|1.6MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP271|1.6MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP272|1.6MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP273|1.6MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP274|1.6MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP275|1.5MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP276|1.5MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP277|1.5MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP278|1.5MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP279|1.5MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP280|1.5MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP281|1.4MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP282|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP283|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP284|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP285|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP286|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP287|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP288|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP289|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP290|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP291|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP292|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP293|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP294|1.2MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP295|1.2MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP296|1.2MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP297|1.0MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP298|1.0MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP299|1.0MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP300|1.0MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP301|1.0MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP302|845KB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP303|782KB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP304|762KB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP305|658KB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP306|578KB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP307|542KB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP603|2.1MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP604|2.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP605|2.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP606|2.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP607|1.9MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP608|1.9MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP609|1.8MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP610|1.8MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP611|1.8MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP612|1.8MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP613|1.8MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP614|1.8MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP615|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP616|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP617|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP618|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP619|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP620|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP621|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP622|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP623|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP624|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP625|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP626|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP627|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP628|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP629|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP630|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP631|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP632|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP633|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP634|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP635|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP636|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP637|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP638|1.6MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP639|1.6MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP640|1.6MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP641|1.6MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP642|1.6MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP643|1.6MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP644|1.5MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP645|1.5MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP646|1.5MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP647|1.5MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP648|1.5MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP649|1.5MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP650|1.4MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP651|1.4MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP652|1.4MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP653|1.4MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP654|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP655|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP656|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP657|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP658|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP659|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP660|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP661|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP662|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP663|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP664|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP665|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP666|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP667|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP668|1.2MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP669|1.2MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP670|1.2MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP671|1.1MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP672|1.1MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP673|1.1MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP674|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP675|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP676|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP677|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP678|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP679|993KB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP680|843KB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP681|813KB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

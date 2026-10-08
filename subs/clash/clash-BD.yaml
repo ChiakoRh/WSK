@@ -13,19 +13,19 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇲 | @WhiteDNS | CM2|1.8MB/s|DNSOK|GPT⁺-CM
+- name: 🇧🇩 | @WhiteDNS | BD2|1.4MB/s|DNSOK|GPT⁺-BD
   password: ''
-  port: 8081
-  server: 102.244.78.61
+  port: 2080
+  server: 118.179.205.174
   skip-cert-verify: true
-  type: http
+  type: socks5
   username: ''
 proxy-groups:
-- name: CM-Auto
+- name: BD-Auto
   type: url-test
   proxies:
-  - 🇨🇲 | @WhiteDNS | CM2|1.8MB/s|DNSOK|GPT⁺-CM
+  - 🇧🇩 | @WhiteDNS | BD2|1.4MB/s|DNSOK|GPT⁺-BD
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,CM-Auto
+- MATCH,BD-Auto
