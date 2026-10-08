@@ -12,38 +12,11 @@ dns:
   nameserver:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
-proxies:
-- encryption: none
-  name: ❓ | @WhiteDNS | OT418|1.3MB/s|DNSOK|GPT⁺-AE
-  network: ws
-  port: 22573
-  server: uae.unixzone.us
-  type: vless
-  udp: true
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  ws-opts:
-    headers:
-      Host: uae.unixzone.us
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/61.0.3163.79 Safari/537.36
-    path: /
-  xudp: true
-- client-fingerprint: chrome
-  name: ❓ | @WhiteDNS | OT419|981KB/s|DNSOK|GPT⁺-SG
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: inviting-ferret.rooster465.autos
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-  sni: inviting-ferret.rooster465.autos
+proxies: []
 proxy-groups:
 - name: OT-Auto
   type: url-test
-  proxies:
-  - ❓ | @WhiteDNS | OT418|1.3MB/s|DNSOK|GPT⁺-AE
-  - ❓ | @WhiteDNS | OT419|981KB/s|DNSOK|GPT⁺-SG
+  proxies: []
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

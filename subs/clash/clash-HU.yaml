@@ -13,21 +13,20 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- encryption: none
-  name: 🇻🇳 | @WhiteDNS | VN15|1.5MB/s|DNSOK|GPT⁺-VN
-  network: tcp
-  port: 2086
-  server: 150.95.109.109
-  type: vless
-  udp: true
-  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
-  xudp: true
+- name: 🇭🇺 | @WhiteDNS | HU2|24.4MB/s|DNSOK|GPT⁺-HU
+  password: ''
+  port: 443
+  server: 146.70.203.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 proxy-groups:
-- name: VN-Auto
+- name: HU-Auto
   type: url-test
   proxies:
-  - 🇻🇳 | @WhiteDNS | VN15|1.5MB/s|DNSOK|GPT⁺-VN
+  - 🇭🇺 | @WhiteDNS | HU2|24.4MB/s|DNSOK|GPT⁺-HU
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,VN-Auto
+- MATCH,HU-Auto
