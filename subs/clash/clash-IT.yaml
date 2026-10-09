@@ -13,15 +13,14 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇹 | @WhiteDNS | IT83|29.3MB/s|DNSOK|GPT⁺-IT
-  password: ''
-  port: 443
-  server: 94.177.163.156
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇮🇹 | @WhiteDNS | IT84|22.8MB/s|DNSOK|GPT⁺-IT
+- cipher: aes-256-gcm
+  name: 🇮🇹 | @WhiteDNS | IT80|52.2MB/s|DNSOK|GPT⁺-IT
+  password: itzvpn@321
+  port: 8388
+  server: 57.131.48.45
+  type: ss
+  udp: true
+- name: 🇮🇹 | @WhiteDNS | IT81|44.2MB/s|DNSOK|GPT⁺-IT
   password: None
   port: 443
   server: 185.183.105.146
@@ -29,10 +28,70 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇮🇹 | @WhiteDNS | IT85|22.5MB/s|DNSOK|GPT⁺-IT
+- name: 🇮🇹 | @WhiteDNS | IT82|34.3MB/s|DNSOK|GPT⁺-IT
   password: ''
   port: 443
   server: 185.183.105.130
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- encryption: none
+  name: 🇮🇹 | @WhiteDNS | IT83|31.4MB/s|DNSOK|GPT⁺-IT
+  network: raw
+  port: 10086
+  server: 204.216.216.23
+  type: vless
+  udp: true
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  xudp: true
+- encryption: none
+  name: 🇮🇹 | @WhiteDNS | IT84|28.7MB/s|DNSOK|GPT⁺-IT
+  network: tcp
+  port: 10086
+  server: 204.216.216.23
+  type: vless
+  udp: true
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  xudp: true
+  servername: /?bia_telegram@marambashi_marambashi_marambashi_marambashi_marambashi
+- encryption: none
+  name: 🇮🇹 | @WhiteDNS | IT85|26.5MB/s|DNSOK|GPT⁺-IT
+  network: tcp
+  port: 10086
+  server: 204.216.216.23
+  type: vless
+  udp: true
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  xudp: true
+  servername: /?BIA_TELEGRAM@MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI
+- name: 🇮🇹 | @WhiteDNS | IT86|7.3MB/s|DNSOK|GPT⁺-IT
+  password: ''
+  port: 443
+  server: 94.177.163.156
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇮🇹 | @WhiteDNS | IT87|5.8MB/s|DNSOK|GPT⁺-IT
+  port: 1114
+  reality-opts:
+    public-key: WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ
+    short-id: 79a1e14b
+  server: 204.216.216.23
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6ba2eac6-0ec9-44ca-a42b-a8e23aafb530
+  network: tcp
+  servername: yahoo.com
+- name: 🇮🇹 | @WhiteDNS | IT88|1008KB/s|DNSOK|GPT⁺-IT
+  password: ''
+  port: 8090
+  server: 93.71.245.84
   skip-cert-verify: true
   tls: true
   type: http
@@ -41,9 +100,15 @@ proxy-groups:
 - name: IT-Auto
   type: url-test
   proxies:
-  - 🇮🇹 | @WhiteDNS | IT83|29.3MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT84|22.8MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT85|22.5MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT80|52.2MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT81|44.2MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT82|34.3MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT83|31.4MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT84|28.7MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT85|26.5MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT86|7.3MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT87|5.8MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT88|1008KB/s|DNSOK|GPT⁺-IT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
