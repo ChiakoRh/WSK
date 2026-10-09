@@ -13,27 +13,27 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇰🇿 | @WhiteDNS | KZ10|546KB/s|DNSOK|GPT⁺-KZ
-  network: raw
-  port: 38065
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇹🇭 | @WhiteDNS | TH14|1.4MB/s|DNSOK|GPT⁺-TH
+  network: tcp
+  port: 21033
   reality-opts:
-    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
-    short-id: fa
-  server: 83.222.23.81
+    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
+    short-id: cbd39bea0805e2
+  server: 154.21.203.106
   tls: true
   type: vless
   udp: true
-  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   xudp: true
-  servername: yahoo.com
+  servername: www.kaidee.com
 proxy-groups:
-- name: KZ-Auto
+- name: TH-Auto
   type: url-test
   proxies:
-  - 🇰🇿 | @WhiteDNS | KZ10|546KB/s|DNSOK|GPT⁺-KZ
+  - 🇹🇭 | @WhiteDNS | TH14|1.4MB/s|DNSOK|GPT⁺-TH
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,KZ-Auto
+- MATCH,TH-Auto
