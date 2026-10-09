@@ -13,9 +13,17 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- name: 🇦🇺 | @WhiteDNS | AU12|1.7MB/s|DNSOK|GPT⁺-AU
+  password: ''
+  port: 443
+  server: 103.62.50.130
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 - down: ''
   fingerprint: ''
-  name: 🇦🇺 | @WhiteDNS | AU7|1.3MB/s|DNSOK|GPT⁺-AU
+  name: 🇦🇺 | @WhiteDNS | AU13|1.3MB/s|DNSOK|GPT⁺-AU
   obfs: salamander
   obfs-password: b42d90fa667942aebc734d60
   password: b42d90fa667942aebc734d60
@@ -29,7 +37,8 @@ proxy-groups:
 - name: AU-Auto
   type: url-test
   proxies:
-  - 🇦🇺 | @WhiteDNS | AU7|1.3MB/s|DNSOK|GPT⁺-AU
+  - 🇦🇺 | @WhiteDNS | AU12|1.7MB/s|DNSOK|GPT⁺-AU
+  - 🇦🇺 | @WhiteDNS | AU13|1.3MB/s|DNSOK|GPT⁺-AU
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
