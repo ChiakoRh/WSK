@@ -13,15 +13,31 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: firefox
+- client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: 🇹🇭 | @WhiteDNS | TH14|1.4MB/s|DNSOK|GPT⁺-TH
+  name: 🇹🇭 | @WhiteDNS | TH22|1.7MB/s|DNSOK|GPT⁺-TH
   network: tcp
   port: 21033
   reality-opts:
     public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
     short-id: cbd39bea0805e2
-  server: 154.21.203.106
+  server: dghk2610.supertoolify.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  xudp: true
+  servername: www.kaidee.com
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇹🇭 | @WhiteDNS | TH23|1.3MB/s|DNSOK|GPT⁺-TH
+  network: tcp
+  port: 21033
+  reality-opts:
+    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
+    short-id: cbd39bea0805e2
+  server: 154.64.251.118
   tls: true
   type: vless
   udp: true
@@ -32,7 +48,8 @@ proxy-groups:
 - name: TH-Auto
   type: url-test
   proxies:
-  - 🇹🇭 | @WhiteDNS | TH14|1.4MB/s|DNSOK|GPT⁺-TH
+  - 🇹🇭 | @WhiteDNS | TH22|1.7MB/s|DNSOK|GPT⁺-TH
+  - 🇹🇭 | @WhiteDNS | TH23|1.3MB/s|DNSOK|GPT⁺-TH
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
