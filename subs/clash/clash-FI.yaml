@@ -13,20 +13,20 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- encryption: mlkem768x25519plus.native.0rtt.KWut9-MlmP77D3iHyRedEYXjtaAhlMfm3UHzqqQwnh4
-  http-opts:
-    headers:
-      Host:
-      - testspeed-foreign.tci.ir
-    path:
-    - /@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---
-  name: 🇫🇮 | @WhiteDNS | FI127|6.1MB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 2091
-  server: 65.109.215.173
+- encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI125|5.5MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 80
+  server: 146.75.119.82
   type: vless
   udp: true
-  uuid: 44bd6953-bb51-422d-bc44-d38ce005bb6e
+  uuid: a2526957-d789-45df-9c4b-3d5fd21d5a4f
+  ws-opts:
+    headers:
+      Host: rb24.ir
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.139 Safari/537.36
+    path: /ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
   xudp: true
 - alpn:
   - ''
@@ -38,27 +38,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI128|2.3MB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 2053
-  server: 185.212.149.7
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: aeb3c019-ae83-4677-af97-846baa787ad5
-  xudp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - down-cdn.dingtalk.com
-    path:
-    - /3x
-  name: 🇫🇮 | @WhiteDNS | FI129|2.3MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI126|5.1MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 52080
   server: 185.212.149.7
@@ -68,13 +48,33 @@ proxies:
   udp: true
   uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
   xudp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    path:
+    - /3x
+  name: 🇫🇮 | @WhiteDNS | FI127|2.3MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 2053
+  server: 185.212.149.7
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: aeb3c019-ae83-4677-af97-846baa787ad5
+  xudp: true
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI127|6.1MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI128|2.3MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI129|2.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI125|5.5MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI126|5.1MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI127|2.3MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
