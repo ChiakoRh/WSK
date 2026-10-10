@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇦🇺 | @WhiteDNS | AU10|1.8MB/s|DNSOK|GPT⁺-AU
+- name: 🇦🇺 | @WhiteDNS | AU14|2.0MB/s|DNSOK|GPT⁺-AU
   password: ''
   port: 443
   server: 103.62.50.130
@@ -21,11 +21,35 @@ proxies:
   tls: true
   type: http
   username: ''
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇦🇺 | @WhiteDNS | AU15|1.7MB/s|DNSOK|GPT⁺-AU
+  network: tcp
+  port: 10002
+  server: sy2.australiacaregroup.site
+  tls: true
+  type: vless
+  udp: true
+  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
+  xudp: true
+  servername: sy2.australiacaregroup.site
+- client-fingerprint: chrome
+  name: 🇦🇺 | @WhiteDNS | AU16|1.6MB/s|DNSOK|GPT⁺-AU
+  network: tcp
+  password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
+  port: 10003
+  server: sy2.australiacaregroup.site
+  skip-cert-verify: false
+  sni: sy2.australiacaregroup.site
+  type: trojan
+  udp: true
 proxy-groups:
 - name: AU-Auto
   type: url-test
   proxies:
-  - 🇦🇺 | @WhiteDNS | AU10|1.8MB/s|DNSOK|GPT⁺-AU
+  - 🇦🇺 | @WhiteDNS | AU14|2.0MB/s|DNSOK|GPT⁺-AU
+  - 🇦🇺 | @WhiteDNS | AU15|1.7MB/s|DNSOK|GPT⁺-AU
+  - 🇦🇺 | @WhiteDNS | AU16|1.6MB/s|DNSOK|GPT⁺-AU
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
