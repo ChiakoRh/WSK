@@ -13,7 +13,23 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇿 | @WhiteDNS | CZ15|5.7MB/s|DNSOK|GPT⁺-CZ
+- name: 🇨🇿 | @WhiteDNS | CZ11|26.0MB/s|DNSOK|GPT⁺-CZ
+  password: ''
+  port: 9443
+  server: 152.233.16.174
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇿 | @WhiteDNS | CZ12|6.0MB/s|DNSOK|GPT⁺-CZ
+  password: ''
+  port: 443
+  server: 185.216.35.130
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇿 | @WhiteDNS | CZ13|5.7MB/s|DNSOK|GPT⁺-CZ
   password: ''
   port: 443
   server: 185.216.35.66
@@ -21,61 +37,13 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇿 | @WhiteDNS | CZ16|5.0MB/s|DNSOK|GPT⁺-CZ
-  password: None
-  port: 443
-  server: 185.216.35.130
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇿 | @WhiteDNS | CZ17|5.0MB/s|DNSOK|GPT⁺-CZ
-  password: ''
-  port: 443
-  server: 185.216.35.130
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- encryption: none
-  name: 🇨🇿 | @WhiteDNS | CZ18|991KB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 2052
-  server: eu02.123450908.xyz
-  type: vless
-  udp: true
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
-  ws-opts:
-    headers:
-      Host: eu02.123450908.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.106 Safari/537.36
-    path: /rain1226
-  xudp: true
-- name: 🇨🇿 | @WhiteDNS | CZ19|891KB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 2052
-  server: 172.64.150.43
-  type: vless
-  udp: true
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
-  ws-opts:
-    headers:
-      Host: eu02.123450908.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.139 Safari/537.36
-    path: /rain1226
-  xudp: true
-  servername: eu02.123450908.xyz
 proxy-groups:
 - name: CZ-Auto
   type: url-test
   proxies:
-  - 🇨🇿 | @WhiteDNS | CZ15|5.7MB/s|DNSOK|GPT⁺-CZ
-  - 🇨🇿 | @WhiteDNS | CZ16|5.0MB/s|DNSOK|GPT⁺-CZ
-  - 🇨🇿 | @WhiteDNS | CZ17|5.0MB/s|DNSOK|GPT⁺-CZ
-  - 🇨🇿 | @WhiteDNS | CZ18|991KB/s|DNSOK|GPT⁺-DE
-  - 🇨🇿 | @WhiteDNS | CZ19|891KB/s|DNSOK|GPT⁺-DE
+  - 🇨🇿 | @WhiteDNS | CZ11|26.0MB/s|DNSOK|GPT⁺-CZ
+  - 🇨🇿 | @WhiteDNS | CZ12|6.0MB/s|DNSOK|GPT⁺-CZ
+  - 🇨🇿 | @WhiteDNS | CZ13|5.7MB/s|DNSOK|GPT⁺-CZ
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
