@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇿 | @WhiteDNS | CZ11|26.0MB/s|DNSOK|GPT⁺-CZ
+- name: 🇨🇿 | @WhiteDNS | CZ14|26.3MB/s|DNSOK|GPT⁺-CZ
   password: ''
   port: 9443
   server: 152.233.16.174
@@ -21,15 +21,15 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇿 | @WhiteDNS | CZ12|6.0MB/s|DNSOK|GPT⁺-CZ
-  password: ''
+- name: 🇨🇿 | @WhiteDNS | CZ15|5.7MB/s|DNSOK|GPT⁺-CZ
+  password: None
   port: 443
   server: 185.216.35.130
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇨🇿 | @WhiteDNS | CZ13|5.7MB/s|DNSOK|GPT⁺-CZ
+- name: 🇨🇿 | @WhiteDNS | CZ16|5.6MB/s|DNSOK|GPT⁺-CZ
   password: ''
   port: 443
   server: 185.216.35.66
@@ -37,13 +37,76 @@ proxies:
   tls: true
   type: http
   username: ''
+- encryption: none
+  name: 🇨🇿 | @WhiteDNS | CZ17|2.3MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 2052
+  server: 104.18.0.181
+  type: vless
+  udp: true
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  ws-opts:
+    headers:
+      Host: eu02.123450908.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/50.0.2661.102 Safari/537.36
+    path: /rain1226
+  xudp: true
+- name: 🇨🇿 | @WhiteDNS | CZ18|1.7MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 2052
+  server: 172.64.229.129
+  type: vless
+  udp: true
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  ws-opts:
+    headers:
+      Host: eu02.123450908.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0
+    path: /rain1226
+  xudp: true
+- name: 🇨🇿 | @WhiteDNS | CZ19|1.7MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 2052
+  server: 104.18.0.181
+  type: vless
+  udp: true
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  ws-opts:
+    headers:
+      Host: eu02.123450908.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/45.0.2454.101 Safari/537.36
+    path: /rain1226
+  xudp: true
+  servername: eu02.123450908.xyz
+- encryption: none
+  name: 🇨🇿 | @WhiteDNS | CZ20|1002KB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 2052
+  server: eu02.123450908.xyz
+  type: vless
+  udp: true
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  ws-opts:
+    headers:
+      Host: eu02.123450908.xyz
+      User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko)
+        Slackware/Chrome/12.0.742.100 Safari/534.30
+    path: /rain1226
+  xudp: true
 proxy-groups:
 - name: CZ-Auto
   type: url-test
   proxies:
-  - 🇨🇿 | @WhiteDNS | CZ11|26.0MB/s|DNSOK|GPT⁺-CZ
-  - 🇨🇿 | @WhiteDNS | CZ12|6.0MB/s|DNSOK|GPT⁺-CZ
-  - 🇨🇿 | @WhiteDNS | CZ13|5.7MB/s|DNSOK|GPT⁺-CZ
+  - 🇨🇿 | @WhiteDNS | CZ14|26.3MB/s|DNSOK|GPT⁺-CZ
+  - 🇨🇿 | @WhiteDNS | CZ15|5.7MB/s|DNSOK|GPT⁺-CZ
+  - 🇨🇿 | @WhiteDNS | CZ16|5.6MB/s|DNSOK|GPT⁺-CZ
+  - 🇨🇿 | @WhiteDNS | CZ17|2.3MB/s|DNSOK|GPT⁺-DE
+  - 🇨🇿 | @WhiteDNS | CZ18|1.7MB/s|DNSOK|GPT⁺-DE
+  - 🇨🇿 | @WhiteDNS | CZ19|1.7MB/s|DNSOK|GPT⁺-DE
+  - 🇨🇿 | @WhiteDNS | CZ20|1002KB/s|DNSOK|GPT⁺-DE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

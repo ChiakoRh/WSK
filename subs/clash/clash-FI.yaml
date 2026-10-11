@@ -13,6 +13,68 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- encryption: mlkem768x25519plus.native.0rtt.ByooheLhY4e4XDprOgalNc5P3ysTB9rV1dvXvb5OtlQ
+  http-opts:
+    headers:
+      Host:
+      - testspeed-foreign.tci.ir
+    path:
+    - /@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---
+  name: 🇫🇮 | @WhiteDNS | FI123|6.4MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 9090
+  server: 65.109.186.220
+  type: vless
+  udp: true
+  uuid: ae450616-d858-420d-9d18-debb63e2c6a0
+  xudp: true
+- encryption: mlkem768x25519plus.native.0rtt.3yYZRBUbOREiit9nPAtdnx2rzs0sFb9skBmEh09XfVo
+  http-opts:
+    headers:
+      Host:
+      - connectivitycheck.android.com
+    path:
+    - /
+  name: 🇫🇮 | @WhiteDNS | FI124|5.9MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 20018
+  server: fi-store.rovilo.ir
+  type: vless
+  udp: true
+  uuid: 5ea90a32-909e-45d2-8525-7e19c0f9d854
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI125|5.3MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  server: 65.108.3.59
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  xudp: true
+  servername: web.eitaa.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI126|2.6MB/s|DNSOK|GPT⁺-FI
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  server: 65.108.3.59
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  xudp: true
+  servername: web.eitaa.com
 - alpn:
   - ''
   alterId: '0'
@@ -23,7 +85,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI119|2.6MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI127|2.5MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 52080
   server: 185.212.149.7
@@ -43,7 +105,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI120|2.5MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI128|2.2MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
@@ -57,8 +119,12 @@ proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI119|2.6MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI120|2.5MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI123|6.4MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI124|5.9MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI125|5.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI126|2.6MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI127|2.5MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI128|2.2MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
