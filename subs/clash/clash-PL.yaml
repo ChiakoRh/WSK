@@ -13,23 +13,23 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇵🇱 | @WhiteDNS | PL75|6.2MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 37.120.156.34
-  skip-cert-verify: true
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇵🇱 | @WhiteDNS | PL78|18.1MB/s|DNSOK|GPT⁺-PL
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: CrczD7yTgleZrusuQSxwWtW9UB6xdwLbz-36XUsIf3A
+    short-id: 52c92aac1925af3b
+  server: pl.illusion-vpn.ru
   tls: true
-  type: http
-  username: ''
-- name: 🇵🇱 | @WhiteDNS | PL76|6.1MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 37.120.156.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇵🇱 | @WhiteDNS | PL77|5.8MB/s|DNSOK|GPT⁺-PL
+  type: vless
+  udp: true
+  uuid: b6492f9d-491a-5a05-bbfd-5e3630f94d00
+  xudp: true
+  servername: pl.illusion-vpn.ru
+- name: 🇵🇱 | @WhiteDNS | PL79|15.2MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 151.115.54.133
@@ -37,32 +37,39 @@ proxies:
   tls: true
   type: http
   username: ''
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇵🇱 | @WhiteDNS | PL78|1.6MB/s|DNSOK|GPT⁺-PL
-  network: ws
+- name: 🇵🇱 | @WhiteDNS | PL80|5.9MB/s|DNSOK|GPT⁺-PL
+  password: ''
   port: 443
-  server: 91.215.43.248
+  server: 37.120.156.34
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
-  ws-opts:
-    headers:
-      Host: my.kempekl.online
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; TRT-LX3 Build/HUAWEITRT-LX3) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
-  xudp: true
-  servername: my.kempekl.online
+  type: http
+  username: ''
+- name: 🇵🇱 | @WhiteDNS | PL81|5.8MB/s|DNSOK|GPT⁺-PL
+  password: ''
+  port: 443
+  server: 37.120.156.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇵🇱 | @WhiteDNS | PL82|2.0MB/s|DNSOK|GPT⁺-PL
+  password: ''
+  port: 443
+  server: 31.186.220.204
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 proxy-groups:
 - name: PL-Auto
   type: url-test
   proxies:
-  - 🇵🇱 | @WhiteDNS | PL75|6.2MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL76|6.1MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL77|5.8MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL78|1.6MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL78|18.1MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL79|15.2MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL80|5.9MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL81|5.8MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL82|2.0MB/s|DNSOK|GPT⁺-PL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
