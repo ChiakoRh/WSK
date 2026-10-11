@@ -13,18 +13,30 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: ❓ | @WhiteDNS | OT385|1.6MB/s|DNSOK|GPT⁺-US
-  password: 792e0bdb-01db-450c-94c4-925151eb396e
-  port: 20006
-  server: ss.045.node-for-bigairport.win
-  type: ss
+- name: ❓ | @WhiteDNS | OT373|3.3MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 443
+  server: 79.76.126.155
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  name: ❓ | @WhiteDNS | OT374|1.1MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: inviting-ferret.rooster465.autos
+  skip-cert-verify: false
+  sni: inviting-ferret.rooster465.autos
+  type: trojan
   udp: true
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT385|1.6MB/s|DNSOK|GPT⁺-US
+  - ❓ | @WhiteDNS | OT373|3.3MB/s|DNSOK|GPT⁺-DE
+  - ❓ | @WhiteDNS | OT374|1.1MB/s|DNSOK|GPT⁺-SG
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

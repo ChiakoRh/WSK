@@ -14,9 +14,10 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - client-fingerprint: firefox
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇹🇭 | @WhiteDNS | TH17|1.6MB/s|DNSOK|GPT⁺-TH
-  network: raw
+  name: 🇹🇭 | @WhiteDNS | TH20|1.7MB/s|DNSOK|GPT⁺-TH
+  network: tcp
   port: 21033
   reality-opts:
     public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
@@ -30,8 +31,8 @@ proxies:
   servername: www.kaidee.com
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇹🇭 | @WhiteDNS | TH18|1.3MB/s|DNSOK|GPT⁺-TH
-  network: tcp
+  name: 🇹🇭 | @WhiteDNS | TH21|1.5MB/s|DNSOK|GPT⁺-TH
+  network: raw
   port: 21033
   reality-opts:
     public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
@@ -47,8 +48,8 @@ proxy-groups:
 - name: TH-Auto
   type: url-test
   proxies:
-  - 🇹🇭 | @WhiteDNS | TH17|1.6MB/s|DNSOK|GPT⁺-TH
-  - 🇹🇭 | @WhiteDNS | TH18|1.3MB/s|DNSOK|GPT⁺-TH
+  - 🇹🇭 | @WhiteDNS | TH20|1.7MB/s|DNSOK|GPT⁺-TH
+  - 🇹🇭 | @WhiteDNS | TH21|1.5MB/s|DNSOK|GPT⁺-TH
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇱🇹 | @WhiteDNS | LT13|16.0MB/s|DNSOK|GPT⁺-LT
+- name: 🇱🇹 | @WhiteDNS | LT14|5.8MB/s|DNSOK|GPT⁺-LT
   password: ''
   port: 443
   server: 89.124.11.9
@@ -21,11 +21,28 @@ proxies:
   tls: true
   type: http
   username: ''
+- client-fingerprint: random
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 🇱🇹 | @WhiteDNS | LT15|5.1MB/s|DNSOK|GPT⁺-LT
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: kxjx6ax6xfttNS6CSzgLVZZlKmvQ8d5EPY9ELQQjvkM
+    short-id: 10600edc6cfa209e
+  server: 185.91.52.86
+  tls: true
+  type: vless
+  udp: true
+  uuid: 54c4bece-fa4f-4ac3-9c19-7c12b379cd0a
+  xudp: true
+  servername: selgw.phantom.direct
 proxy-groups:
 - name: LT-Auto
   type: url-test
   proxies:
-  - 🇱🇹 | @WhiteDNS | LT13|16.0MB/s|DNSOK|GPT⁺-LT
+  - 🇱🇹 | @WhiteDNS | LT14|5.8MB/s|DNSOK|GPT⁺-LT
+  - 🇱🇹 | @WhiteDNS | LT15|5.1MB/s|DNSOK|GPT⁺-LT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

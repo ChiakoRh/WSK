@@ -13,14 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇳 | @WhiteDNS | IN35|2.7MB/s|DNSOK|GPT⁺-IN
-  password: ''
-  port: 1088
-  server: 144.24.111.128
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- name: 🇮🇳 | @WhiteDNS | IN36|2.6MB/s|DNSOK|GPT⁺-IN
+- name: 🇮🇳 | @WhiteDNS | IN35|3.0MB/s|DNSOK|GPT⁺-IN
   password: ''
   port: 9443
   server: 165.231.253.58
@@ -28,14 +21,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇮🇳 | @WhiteDNS | IN37|2.6MB/s|DNSOK|GPT⁺-IN
-  password: ''
-  port: 1088
-  server: 141.148.206.170
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- name: 🇮🇳 | @WhiteDNS | IN38|1.7MB/s|DNSOK|GPT⁺-IN
+- name: 🇮🇳 | @WhiteDNS | IN36|2.7MB/s|DNSOK|GPT⁺-IN
   password: ''
   port: 443
   server: 165.231.253.66
@@ -43,7 +29,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇮🇳 | @WhiteDNS | IN39|1.5MB/s|DNSOK|GPT⁺-IN
+- name: 🇮🇳 | @WhiteDNS | IN37|2.7MB/s|DNSOK|GPT⁺-IN
   password: ''
   port: 443
   server: 165.231.253.210
@@ -51,15 +37,29 @@ proxies:
   tls: true
   type: http
   username: ''
+- name: 🇮🇳 | @WhiteDNS | IN38|2.7MB/s|DNSOK|GPT⁺-IN
+  password: ''
+  port: 1088
+  server: 141.148.206.170
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- name: 🇮🇳 | @WhiteDNS | IN39|2.6MB/s|DNSOK|GPT⁺-IN
+  password: ''
+  port: 1088
+  server: 144.24.111.128
+  skip-cert-verify: true
+  type: socks5
+  username: ''
 proxy-groups:
 - name: IN-Auto
   type: url-test
   proxies:
-  - 🇮🇳 | @WhiteDNS | IN35|2.7MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN36|2.6MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN37|2.6MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN38|1.7MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN39|1.5MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN35|3.0MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN36|2.7MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN37|2.7MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN38|2.7MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN39|2.6MB/s|DNSOK|GPT⁺-IN
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
