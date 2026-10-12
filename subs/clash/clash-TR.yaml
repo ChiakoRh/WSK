@@ -13,21 +13,21 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- encryption: none
-  name: 🇻🇳 | @WhiteDNS | VN8|1.3MB/s|DNSOK|GPT⁺-VN
+- encryption: mlkem768x25519plus.native.0rtt.jZmwFOCIMPQyR4dhhbhXqH1Ky9HYJXam8PK9Ak7FYCw
+  name: 🇹🇷 | @WhiteDNS | TR12|3.1MB/s|DNSOK|GPT⁺-TR
   network: tcp
-  port: 2086
-  server: 150.95.109.109
+  port: 57132
+  server: api.apira98.org
   type: vless
   udp: true
-  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
+  uuid: 0e961427-c505-406b-8156-fbd6c1ea2afc
   xudp: true
 proxy-groups:
-- name: VN-Auto
+- name: TR-Auto
   type: url-test
   proxies:
-  - 🇻🇳 | @WhiteDNS | VN8|1.3MB/s|DNSOK|GPT⁺-VN
+  - 🇹🇷 | @WhiteDNS | TR12|3.1MB/s|DNSOK|GPT⁺-TR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,VN-Auto
+- MATCH,TR-Auto

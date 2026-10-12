@@ -1,5 +1,5 @@
 proxies:
-- name: 🇫🇮 | @WhiteDNS | FI135|25.0MB/s|DNSOK|GPT⁺-FI
+- name: 🇫🇮 | @WhiteDNS | FI168|24.8MB/s|DNSOK|GPT⁺-FI
   network: raw
   port: 2052
   server: edge10.cyrionflare.com
@@ -7,25 +7,28 @@ proxies:
   udp: true
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   xudp: true
-- name: 🇫🇮 | @WhiteDNS | FI136|6.5MB/s|DNSOK|GPT⁺-FI
+- encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI169|2.9MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 80
+  server: 146.75.119.82
+  type: vless
+  udp: true
+  uuid: 94716a61-21c2-482b-8be8-5b6201854caa
+  ws-opts:
+    headers:
+      Host: rb24.ir
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
+  xudp: true
+- name: 🇫🇮 | @WhiteDNS | FI170|2.8MB/s|DNSOK|GPT⁺-FI
   network: tcp
   port: 2052
   server: edge10.cyrionflare.com
   type: vless
   udp: true
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- encryption: mlkem768x25519plus.random.0rtt.swY_aKEuuHUHKO0BHVV2uot-UFbtrXpLWr7g8uZk0xk
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 🇫🇮 | @WhiteDNS | FI137|5.9MB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 443
-  server: 65.108.248.89
-  type: vless
-  udp: true
-  uuid: b7942662-e581-4bee-ab52-02a1bf34e4c4
   xudp: true
 - alpn:
   - ''
@@ -37,7 +40,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI138|2.7MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI171|2.2MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 52080
   server: 185.212.149.7
@@ -57,7 +60,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI139|2.5MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI172|2.0MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
@@ -67,3 +70,10 @@ proxies:
   udp: true
   uuid: aeb3c019-ae83-4677-af97-846baa787ad5
   xudp: true
+- name: 🇫🇮 | @WhiteDNS | FI173|1.7MB/s|DNSOK|GPT⁺-FI
+  port: 2052
+  server: edge10.cyrionflare.com
+  type: vless
+  udp: true
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  network: tcp
