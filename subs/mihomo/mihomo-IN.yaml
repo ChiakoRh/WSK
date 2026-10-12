@@ -1,34 +1,5 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🇮🇳 | @WhiteDNS | IN29|3.2MB/s|DNSOK|GPT⁺-IN
-  network: ws
-  port: 80
-  server: 152.67.8.205
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  ws-opts:
-    path: /
-  servername: 🇮🇳IN-152.67.8.205-0218 | 0.31MB
-- alterId: 0
-  cipher: auto
-  name: 🇮🇳 | @WhiteDNS | IN30|3.2MB/s|DNSOK|GPT⁺-IN
-  network: ws
-  port: 80
-  server: 152.67.8.205
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  ws-opts:
-    headers: {}
-    path: /
-  xudp: true
-  servername: 🇮🇳in-152.67.8.205-0164 | 0.149mb
-- name: 🇮🇳 | @WhiteDNS | IN31|2.6MB/s|DNSOK|GPT⁺-IN
+- name: 🇮🇳 | @WhiteDNS | IN47|3.1MB/s|DNSOK|GPT⁺-IN
   password: ''
   port: 9443
   server: 165.231.253.58
@@ -36,7 +7,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇮🇳 | @WhiteDNS | IN32|2.6MB/s|DNSOK|GPT⁺-IN
+- name: 🇮🇳 | @WhiteDNS | IN48|3.1MB/s|DNSOK|GPT⁺-IN
   password: ''
   port: 443
   server: 165.231.253.66
@@ -44,26 +15,46 @@ proxies:
   tls: true
   type: http
   username: ''
-- alterId: '0'
-  cipher: auto
-  name: 🇮🇳 | @WhiteDNS | IN33|1.5MB/s|DNSOK|GPT⁺-IN
-  network: ws
-  port: 80
-  server: 152.67.8.205
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- name: 🇮🇳 | @WhiteDNS | IN49|2.7MB/s|DNSOK|GPT⁺-IN
+  password: ''
+  port: 1088
+  server: 144.24.111.128
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- name: 🇮🇳 | @WhiteDNS | IN50|2.6MB/s|DNSOK|GPT⁺-IN
+  password: ''
+  port: 443
+  server: 165.231.253.210
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  name: 🇮🇳 | @WhiteDNS | IN51|1.7MB/s|DNSOK|GPT⁺-IN
+  password: Trojan@82164024
+  port: 443
+  server: in.tronsg.com
+  skip-cert-verify: true
+  sni: in.tronsg.com
+  type: trojan
   udp: true
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  ws-opts:
-    headers: {}
-    path: /
-  xudp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇮🇳 | @WhiteDNS | IN52|1.7MB/s|DNSOK|GPT⁺-IN
+  network: tcp
+  password: Trojan@82164024
+  port: 443
+  server: in.tronsg.com
+  skip-cert-verify: true
+  sni: in.tronsg.com
+  type: trojan
+  udp: true
 - alpn:
   - ''
   alterId: '0'
   cipher: auto
-  name: 🇮🇳 | @WhiteDNS | IN34|1.2MB/s|DNSOK|GPT⁺-IN
+  name: 🇮🇳 | @WhiteDNS | IN53|1.0MB/s|DNSOK|GPT⁺-IN
   network: ws
   port: 80
   server: 152.67.8.205
@@ -77,11 +68,3 @@ proxies:
     path: /
   xudp: true
   servername: 152.67.8.205
-- name: 🇮🇳 | @WhiteDNS | IN35|1.2MB/s|DNSOK|GPT⁺-IN
-  password: ''
-  port: 443
-  server: 165.231.253.210
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
