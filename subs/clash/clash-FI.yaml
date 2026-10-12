@@ -13,28 +13,26 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- encryption: mlkem768x25519plus.native.0rtt.ByooheLhY4e4XDprOgalNc5P3ysTB9rV1dvXvb5OtlQ
-  http-opts:
-    headers:
-      Host:
-      - testspeed-foreign.tci.ir
-    path:
-    - /@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---
-  name: 🇫🇮 | @WhiteDNS | FI137|17.9MB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 2091
-  server: 65.109.186.220
-  type: vless
-  udp: true
-  uuid: ae450616-d858-420d-9d18-debb63e2c6a0
-  xudp: true
-- name: 🇫🇮 | @WhiteDNS | FI138|13.8MB/s|DNSOK|GPT⁺-FI
+- name: 🇫🇮 | @WhiteDNS | FI131|6.9MB/s|DNSOK|GPT⁺-FI
   network: tcp
   port: 2052
   server: edge10.cyrionflare.com
   type: vless
   udp: true
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- encryption: mlkem768x25519plus.random.0rtt.swY_aKEuuHUHKO0BHVV2uot-UFbtrXpLWr7g8uZk0xk
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇫🇮 | @WhiteDNS | FI132|6.0MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 443
+  server: 65.108.248.89
+  type: vless
+  udp: true
+  uuid: b7942662-e581-4bee-ab52-02a1bf34e4c4
+  xudp: true
 - alpn:
   - ''
   alterId: '0'
@@ -45,7 +43,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI139|2.7MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI133|2.6MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
@@ -65,7 +63,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI140|2.3MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI134|2.5MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 52080
   server: 185.212.149.7
@@ -75,14 +73,30 @@ proxies:
   udp: true
   uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
   xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI135|1.2MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 38820
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+    short-id: 66ded2
+  server: p1tun0.greewebservices.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: ff3b79c1-1fd9-4e86-95a5-cf3863b3d162
+  xudp: true
+  servername: play.google.com
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI137|17.9MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI138|13.8MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI139|2.7MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI140|2.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI131|6.9MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI132|6.0MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI133|2.6MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI134|2.5MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI135|1.2MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
