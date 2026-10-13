@@ -1,10 +1,27 @@
 proxies:
-- encryption: mlkem768x25519plus.native.0rtt.jZmwFOCIMPQyR4dhhbhXqH1Ky9HYJXam8PK9Ak7FYCw
-  name: 🇹🇷 | @WhiteDNS | TR12|3.1MB/s|DNSOK|GPT⁺-TR
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇹🇷 | @WhiteDNS | TR16|2.5MB/s|DNSOK|GPT⁺-TR
   network: tcp
-  port: 57132
-  server: api.apira98.org
+  port: 17915
+  server: googol.wookshop.ir
+  tls: true
   type: vless
   udp: true
-  uuid: 0e961427-c505-406b-8156-fbd6c1ea2afc
+  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
   xudp: true
+  servername: googol.wookshop.ir
+- client-fingerprint: chrome
+  name: 🇹🇷 | @WhiteDNS | TR17|1.6MB/s|DNSOK|GPT⁺-TR
+  network: tcp
+  port: 17915
+  server: googol.wookshop.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
+  xudp: true
+  servername: googol.wookshop.ir

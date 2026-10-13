@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇪🇪 | @WhiteDNS | EE35|2.6MB/s|DNSOK|GPT⁺-EE
+- name: 🇪🇪 | @WhiteDNS | EE33|5.2MB/s|DNSOK|GPT⁺-EE
   password: ''
   port: 9443
   server: 95.153.31.66
@@ -21,11 +21,28 @@ proxies:
   tls: true
   type: http
   username: ''
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇪🇪 | @WhiteDNS | EE34|5.0MB/s|DNSOK|GPT⁺-EE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
+    short-id: d98e7afec9c0c359
+  server: zahvatpribaltovonline.vvzzkontaktezzvv.garden
+  tls: true
+  type: vless
+  udp: true
+  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
+  xudp: true
+  servername: zahvatpribaltovonline.vvzzkontaktezzvv.garden
 proxy-groups:
 - name: EE-Auto
   type: url-test
   proxies:
-  - 🇪🇪 | @WhiteDNS | EE35|2.6MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE33|5.2MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE34|5.0MB/s|DNSOK|GPT⁺-EE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
