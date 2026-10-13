@@ -13,7 +13,22 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇪🇪 | @WhiteDNS | EE36|5.4MB/s|DNSOK|GPT⁺-EE
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: 🇪🇪 | @WhiteDNS | EE30|5.6MB/s|DNSOK|GPT⁺-EE
+  port: 443
+  reality-opts:
+    public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
+    short-id: d98e7afec9c0c359
+  server: 5.181.201.37
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
+  network: tcp
+  servername: zahvatpribaltovonline.vvzzkontaktezzvv.garden
+- name: 🇪🇪 | @WhiteDNS | EE31|5.4MB/s|DNSOK|GPT⁺-EE
   password: ''
   port: 9443
   server: 95.153.31.66
@@ -21,72 +36,19 @@ proxies:
   tls: true
   type: http
   username: ''
-- client-fingerprint: random
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇪🇪 | @WhiteDNS | EE37|5.2MB/s|DNSOK|GPT⁺-EE
-  network: tcp
+- name: 🇪🇪 | @WhiteDNS | EE32|2.5MB/s|DNSOK|GPT⁺-EE
+  password: ''
   port: 443
-  reality-opts:
-    public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
-    short-id: d98e7afec9c0c359
-  server: 5.181.201.37
-  tls: true
-  type: vless
-  udp: true
-  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
-  xudp: true
-  servername: zahvatpribaltovonline.vvzzkontaktezzvv.garden
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: 🇪🇪 | @WhiteDNS | EE38|4.7MB/s|DNSOK|GPT⁺-EE
-  port: 443
-  reality-opts:
-    public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
-    short-id: d98e7afec9c0c359
-  server: 5.181.201.37
+  server: 95.153.32.2
   skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
-  network: tcp
-  servername: zahvatpribaltovonline.vvzzkontaktezzvv.garden
+  type: http
+  username: ''
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇪🇪 | @WhiteDNS | EE39|4.5MB/s|DNSOK|GPT⁺-EE
+  name: 🇪🇪 | @WhiteDNS | EE33|1.4MB/s|DNSOK|GPT⁺-EE
   network: tcp
-  port: 443
-  reality-opts:
-    public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
-    short-id: d98e7afec9c0c359
-  server: zahvatpribaltovonline.vvzzkontaktezzvv.garden
-  tls: true
-  type: vless
-  udp: true
-  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
-  xudp: true
-  servername: zahvatpribaltovonline.vvzzkontaktezzvv.garden
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: 🇪🇪 | @WhiteDNS | EE40|4.1MB/s|DNSOK|GPT⁺-EE
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
-    short-id: d98e7afec9c0c359
-  server: 5.181.201.37
-  tls: true
-  type: vless
-  udp: true
-  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
-  xudp: true
-  servername: zahvatpribaltovonline.vvzzkontaktezzvv.garden
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇪🇪 | @WhiteDNS | EE41|2.9MB/s|DNSOK|GPT⁺-EE
-  network: raw
   port: 443
   reality-opts:
     public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
@@ -102,12 +64,10 @@ proxy-groups:
 - name: EE-Auto
   type: url-test
   proxies:
-  - 🇪🇪 | @WhiteDNS | EE36|5.4MB/s|DNSOK|GPT⁺-EE
-  - 🇪🇪 | @WhiteDNS | EE37|5.2MB/s|DNSOK|GPT⁺-EE
-  - 🇪🇪 | @WhiteDNS | EE38|4.7MB/s|DNSOK|GPT⁺-EE
-  - 🇪🇪 | @WhiteDNS | EE39|4.5MB/s|DNSOK|GPT⁺-EE
-  - 🇪🇪 | @WhiteDNS | EE40|4.1MB/s|DNSOK|GPT⁺-EE
-  - 🇪🇪 | @WhiteDNS | EE41|2.9MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE30|5.6MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE31|5.4MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE32|2.5MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE33|1.4MB/s|DNSOK|GPT⁺-EE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

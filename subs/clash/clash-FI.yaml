@@ -13,55 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇫🇮 | @WhiteDNS | FI194|28.4MB/s|DNSOK|GPT⁺-FI
-  port: 2052
-  server: edge10.cyrionflare.com
-  type: vless
-  udp: true
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  network: tcp
-- encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI195|24.6MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 2052
-  server: edge10.cyrionflare.com
-  type: vless
-  udp: true
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  xudp: true
-- client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.UZhmQ7SrtJB3vEJ5YZFId-JvYxzxdYlkXl1lQ4hxU08
-  fingerprint: CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E
-  name: 🇫🇮 | @WhiteDNS | FI196|6.3MB/s|DNSOK|GPT⁺-FI
-  network: xhttp
-  port: 443
-  server: no-lim.nomush.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2c5f2d6e-d683-49f7-a12b-a95460b90a92
-  xhttp-opts:
-    host: nolimiraniserv2.global.ssl.fastly.net
-    mode: packet-up
-    path: /nolimitx
-  xudp: true
-  servername: speedtest.net
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI197|6.3MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 11497
-  reality-opts:
-    public-key: J3DhtzId04tRrOF9HmIxpv6QOGY1g6j2wJ_UtVKmimk
-    short-id: b0063cec752e829a
-  server: feow.nomush.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2c5f2d6e-d683-49f7-a12b-a95460b90a92
-  xudp: true
-  servername: dynu.com
-- name: 🇫🇮 | @WhiteDNS | FI198|6.3MB/s|DNSOK|GPT⁺-FI
+- name: 🇫🇮 | @WhiteDNS | FI177|6.0MB/s|DNSOK|GPT⁺-FI
   network: raw
   port: 2052
   server: edge10.cyrionflare.com
@@ -69,28 +21,27 @@ proxies:
   udp: true
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   xudp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇮 | @WhiteDNS | FI199|6.0MB/s|DNSOK|GPT⁺-FI
-  password: K63q-WhHdJoC_AIxT6E4r_IIuGIb6CuV
-  port: 8388
-  server: feow.nomush.ir
-  type: ss
-  udp: true
-- encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI200|4.2MB/s|DNSOK|GPT⁺-FI
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  encryption: none
+  fingerprint: CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E
+  name: 🇫🇮 | @WhiteDNS | FI178|5.3MB/s|DNSOK|GPT⁺-FI
   network: ws
-  port: 80
-  server: 146.75.119.82
+  port: 443
+  server: 199.232.78.159
+  tls: true
   type: vless
   udp: true
-  uuid: ded2e191-ca24-412b-80d8-7d9111b755cf
+  uuid: c0331b33-4a3a-4320-bacb-78601f9795bd
   ws-opts:
     headers:
-      Host: rb24.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.181 Safari/537.36
-    path: /ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
+      Host: az_man-eski_naro_Pesar_jOon.global.ssl.fastly.net.
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/45.0.2454.93 Safari/537.36
+    path: /
   xudp: true
+  servername: google.com
 - alpn:
   - ''
   alterId: '0'
@@ -101,27 +52,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI201|2.6MB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 52080
-  server: 185.212.149.7
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
-  xudp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - down-cdn.dingtalk.com
-    path:
-    - /3x
-  name: 🇫🇮 | @WhiteDNS | FI202|2.6MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI179|3.6MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
@@ -131,19 +62,51 @@ proxies:
   udp: true
   uuid: aeb3c019-ae83-4677-af97-846baa787ad5
   xudp: true
+- name: 🇫🇮 | @WhiteDNS | FI180|2.8MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 2052
+  server: edge10.cyrionflare.com
+  type: vless
+  udp: true
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  xudp: true
+- name: 🇫🇮 | @WhiteDNS | FI181|2.7MB/s|DNSOK|GPT⁺-FI
+  port: 2052
+  server: edge10.cyrionflare.com
+  type: vless
+  udp: true
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  network: tcp
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    path:
+    - /3x
+  name: 🇫🇮 | @WhiteDNS | FI182|1.3MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 52080
+  server: 185.212.149.7
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
+  xudp: true
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI194|28.4MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI195|24.6MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI196|6.3MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI197|6.3MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI198|6.3MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI199|6.0MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI200|4.2MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI201|2.6MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI202|2.6MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI177|6.0MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI178|5.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI179|3.6MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI180|2.8MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI181|2.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI182|1.3MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

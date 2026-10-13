@@ -13,19 +13,22 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: aes-256-gcm
-  name: 🇲🇾 | @WhiteDNS | MY22|1.1MB/s|DNSOK|GPT⁺-MY
-  password: 85590bd2-807b-49b9-af20-1101c18b9eda
-  port: 22035
-  server: ruot.ayucloudservices.nl
-  type: ss
+- fingerprint: ''
+  name: 🇹🇼 | @WhiteDNS | TW16|895KB/s|DNSOK|GPT⁺-TW
+  password: ec74bb6a86c2
+  port: 443
+  server: 684616s4.df6h451rh.xin
+  skip-cert-verify: true
+  sni: px.ads.linkedin.com
+  type: anytls
   udp: true
+  username: ec74bb6a86c2
 proxy-groups:
-- name: MY-Auto
+- name: TW-Auto
   type: url-test
   proxies:
-  - 🇲🇾 | @WhiteDNS | MY22|1.1MB/s|DNSOK|GPT⁺-MY
+  - 🇹🇼 | @WhiteDNS | TW16|895KB/s|DNSOK|GPT⁺-TW
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,MY-Auto
+- MATCH,TW-Auto
