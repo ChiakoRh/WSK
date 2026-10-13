@@ -1,14 +1,69 @@
 proxies:
+- http-opts:
+    headers:
+      Host:
+      - aparat.com
+    method: GET
+    path:
+    - /
+  name: 🇬🇧 | @WhiteDNS | GB81|25.8MB/s|DNSOK|GPT⁺-GB
+  network: http
+  port: 443
+  server: 167.71.136.76
+  tls: false
+  type: vless
+  udp: true
+  uuid: 40992c2a-513e-4837-9594-23411fd42afd
 - cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 | @WhiteDNS | GB102|27.5MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB82|23.0MB/s|DNSOK|GPT⁺-GB
   password: zRZNBszYyWo5
   port: 8388
   server: 51.77.225.200
   type: ss
   udp: true
+- name: 🇬🇧 | @WhiteDNS | GB83|21.5MB/s|DNSOK|GPT⁺-GB
+  password: None
+  port: 443
+  server: 212.102.63.61
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB84|21.3MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 443
+  server: 84.17.50.193
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB85|20.7MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 443
+  server: 185.164.138.156
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB86|20.4MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 9443
+  server: 84.17.50.129
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB87|19.7MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 9443
+  server: 84.233.178.33
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB103|23.5MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB88|19.0MB/s|DNSOK|GPT⁺-GB
   network: raw
   port: 443
   reality-opts:
@@ -21,63 +76,46 @@ proxies:
   uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
   xudp: true
   servername: speed.cloudflare.com
-- name: 🇬🇧 | @WhiteDNS | GB104|22.9MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB89|17.8MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
-  server: 185.164.138.156
+  server: 37.120.233.18
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB105|21.4MB/s|DNSOK|GPT⁺-GB
-  password: ''
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇬🇧 | @WhiteDNS | GB90|6.7MB/s|DNSOK|GPT⁺-GB
+  network: tcp
   port: 443
-  server: 212.102.63.61
-  skip-cert-verify: true
+  reality-opts:
+    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
+    short-id: b19b017d6f453873
+  server: 23.81.34.204
   tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB106|21.2MB/s|DNSOK|GPT⁺-GB
-  password: ''
+  type: vless
+  udp: true
+  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
+  xudp: true
+  servername: speed.cloudflare.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇬🇧 | @WhiteDNS | GB91|6.6MB/s|DNSOK|GPT⁺-GB
   port: 443
-  server: 212.102.63.1
+  reality-opts:
+    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
+    short-id: b19b017d6f453873
+  server: 23.81.34.204
   skip-cert-verify: true
   tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB107|20.9MB/s|DNSOK|GPT⁺-GB
-  password: None
-  port: 443
-  server: 212.102.63.61
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB108|20.8MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 443
-  server: 84.17.50.193
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB109|20.8MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 9443
-  server: 84.17.50.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB110|19.3MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 9443
-  server: 84.233.178.33
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB111|18.7MB/s|DNSOK|GPT⁺
+  type: vless
+  udp: true
+  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
+  network: tcp
+  servername: speed.cloudflare.com
+- name: 🇬🇧 | @WhiteDNS | GB92|6.3MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
   server: 212.102.63.31
@@ -85,46 +123,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB112|17.4MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 443
-  server: 37.120.233.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB113|6.7MB/s|DNSOK|GPT⁺-GB
-  port: 443
-  reality-opts:
-    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
-    short-id: b19b017d6f453873
-  server: 23.81.34.204
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
-  network: tcp
-  servername: speed.cloudflare.com
-- name: 🇬🇧 | @WhiteDNS | GB114|6.1MB/s|DNSOK|GPT⁺-GB
-  password: None
-  port: 443
-  server: 37.120.233.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB115|6.0MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 9443
-  server: 37.120.233.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB116|5.8MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB93|5.8MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
   server: 37.120.233.50
@@ -132,7 +131,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB117|5.7MB/s|DNSOK|GPT⁺-RO
+- name: 🇬🇧 | @WhiteDNS | GB94|5.6MB/s|DNSOK|GPT⁺-RO
   password: ''
   port: 443
   server: 185.163.110.194
@@ -140,34 +139,11 @@ proxies:
   tls: true
   type: http
   username: ''
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB118|5.6MB/s|DNSOK|GPT⁺-GB
-  network: tcp
+- name: 🇬🇧 | @WhiteDNS | GB95|4.4MB/s|DNSOK|GPT⁺-GB
+  password: ''
   port: 443
-  reality-opts:
-    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
-    short-id: b19b017d6f453873
-  server: 23.81.34.204
+  server: 37.120.233.34
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
-  xudp: true
-  servername: speed.cloudflare.com
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB119|4.8MB/s|DNSOK|GPT⁺-GB
-  network: tcp
-  port: 1222
-  reality-opts:
-    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
-    short-id: a25d0f
-  server: 23.81.36.148
-  tls: true
-  type: vless
-  udp: true
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  xudp: true
-  servername: www.forvo.com
+  type: http
+  username: ''
