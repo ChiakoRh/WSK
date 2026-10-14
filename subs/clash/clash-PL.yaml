@@ -13,24 +13,24 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇵🇱 | @WhiteDNS | PL81|20.9MB/s|DNSOK|GPT⁺-PL
-  network: tcp
-  port: 2063
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-    short-id: ''
-  server: 31.77.13.19
+- name: 🇵🇱 | @WhiteDNS | PL82|20.0MB/s|DNSOK|GPT⁺-PL
+  password: ''
+  port: 443
+  server: 37.120.156.18
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  xudp: true
-  servername: rusbid.de
-- name: 🇵🇱 | @WhiteDNS | PL82|20.2MB/s|DNSOK|GPT⁺-PL
+  type: http
+  username: ''
+- name: 🇵🇱 | @WhiteDNS | PL83|19.6MB/s|DNSOK|GPT⁺-PL
   password: None
+  port: 443
+  server: 37.120.156.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇵🇱 | @WhiteDNS | PL84|19.0MB/s|DNSOK|GPT⁺-PL
+  password: ''
   port: 443
   server: 37.120.156.34
   skip-cert-verify: true
@@ -39,7 +39,23 @@ proxies:
   username: ''
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇵🇱 | @WhiteDNS | PL83|20.1MB/s|DNSOK|GPT⁺-PL
+  name: 🇵🇱 | @WhiteDNS | PL85|16.6MB/s|DNSOK|GPT⁺-PL
+  network: raw
+  port: 2063
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+    short-id: ''
+  server: pl-waw.dontblockmepls.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  xudp: true
+  servername: rusbid.de
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇵🇱 | @WhiteDNS | PL86|7.7MB/s|DNSOK|GPT⁺-PL
   network: tcp
   port: 2063
   reality-opts:
@@ -52,31 +68,22 @@ proxies:
   uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
   xudp: true
   servername: rusbid.de
-- name: 🇵🇱 | @WhiteDNS | PL84|19.8MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 37.120.156.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: firefox
-  encryption: none
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇵🇱 | @WhiteDNS | PL85|19.5MB/s|DNSOK|GPT⁺-PL
-  network: raw
+  name: 🇵🇱 | @WhiteDNS | PL87|6.8MB/s|DNSOK|GPT⁺-PL
   port: 2063
   reality-opts:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
     short-id: ''
   server: 31.77.13.19
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  xudp: true
+  network: tcp
   servername: rusbid.de
-- name: 🇵🇱 | @WhiteDNS | PL86|6.3MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL88|6.3MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 151.115.54.133
@@ -86,30 +93,7 @@ proxies:
   username: ''
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇵🇱 | @WhiteDNS | PL87|6.3MB/s|DNSOK|GPT⁺-PL
-  port: 2063
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-    short-id: ''
-  server: pl-waw.dontblockmepls.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  network: tcp
-  servername: rusbid.de
-- name: 🇵🇱 | @WhiteDNS | PL88|6.1MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 37.120.156.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇵🇱 | @WhiteDNS | PL89|5.6MB/s|DNSOK|GPT⁺-PL
+  name: 🇵🇱 | @WhiteDNS | PL89|5.9MB/s|DNSOK|GPT⁺-PL
   port: 2063
   reality-opts:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
@@ -123,9 +107,43 @@ proxies:
   network: tcp
   servername: rusbid.de
 - client-fingerprint: firefox
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇵🇱 | @WhiteDNS | PL90|5.1MB/s|DNSOK|GPT⁺-PL
+  name: 🇵🇱 | @WhiteDNS | PL90|5.7MB/s|DNSOK|GPT⁺-PL
   network: raw
+  port: 2063
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+    short-id: ''
+  server: 31.77.13.19
+  tls: true
+  type: vless
+  udp: true
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  xudp: true
+  servername: rusbid.de
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇵🇱 | @WhiteDNS | PL91|5.7MB/s|DNSOK|GPT⁺-PL
+  port: 2063
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+    short-id: ''
+  server: pl-waw.dontblockmepls.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  network: tcp
+  servername: rusbid.de
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇵🇱 | @WhiteDNS | PL92|5.4MB/s|DNSOK|GPT⁺-PL
+  network: tcp
   port: 2063
   reality-opts:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
@@ -137,7 +155,25 @@ proxies:
   uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
   xudp: true
   servername: rusbid.de
-- name: 🇵🇱 | @WhiteDNS | PL91|1.9MB/s|DNSOK|GPT⁺-PL
+- alpn:
+  - networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-
+  client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇵🇱 | @WhiteDNS | PL93|4.6MB/s|DNSOK|GPT⁺-PL
+  network: tcp
+  port: 2063
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+    short-id: ''
+  server: 31.77.13.19
+  tls: true
+  type: vless
+  udp: true
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  xudp: true
+  servername: rusbid.de
+- name: 🇵🇱 | @WhiteDNS | PL94|2.5MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 31.186.220.204
@@ -149,17 +185,19 @@ proxy-groups:
 - name: PL-Auto
   type: url-test
   proxies:
-  - 🇵🇱 | @WhiteDNS | PL81|20.9MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL82|20.2MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL83|20.1MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL84|19.8MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL85|19.5MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL86|6.3MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL87|6.3MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL88|6.1MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL89|5.6MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL90|5.1MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL91|1.9MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL82|20.0MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL83|19.6MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL84|19.0MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL85|16.6MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL86|7.7MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL87|6.8MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL88|6.3MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL89|5.9MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL90|5.7MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL91|5.7MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL92|5.4MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL93|4.6MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL94|2.5MB/s|DNSOK|GPT⁺-PL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
