@@ -1,23 +1,24 @@
 proxies:
-- name: 🇮🇳 | @WhiteDNS | IN44|3.5MB/s|DNSOK|GPT⁺-IN
+- name: 🇮🇳 | @WhiteDNS | IN37|2.6MB/s|DNSOK|GPT⁺-IN
   password: ''
+  port: 1088
+  server: 144.24.111.128
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- client-fingerprint: chrome
+  name: 🇮🇳 | @WhiteDNS | IN38|2.2MB/s|DNSOK|GPT⁺-IN
+  network: tcp
+  password: Trojan@82164024
   port: 443
-  server: 165.231.253.66
+  server: in.tronsg.com
   skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇮🇳 | @WhiteDNS | IN45|3.3MB/s|DNSOK|GPT⁺-IN
-  password: ''
-  port: 9443
-  server: 165.231.253.58
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+  type: trojan
+  udp: true
+  sni: in.tronsg.com
 - alterId: '0'
   cipher: auto
-  name: 🇮🇳 | @WhiteDNS | IN46|3.1MB/s|DNSOK|GPT⁺-IN
+  name: 🇮🇳 | @WhiteDNS | IN39|1.8MB/s|DNSOK|GPT⁺-IN
   network: ws
   port: 80
   server: 152.67.8.205
@@ -31,31 +32,31 @@ proxies:
       Host: 152.67.8.205
     path: /
   xudp: true
-- name: 🇮🇳 | @WhiteDNS | IN47|2.6MB/s|DNSOK|GPT⁺-IN
-  password: ''
-  port: 1088
-  server: 144.24.111.128
+- country: 🇺🇸US
+  name: 🇮🇳 | @WhiteDNS | IN40|1.5MB/s|DNSOK|GPT⁺-IN
+  password: Trojan@82164024
+  port: 443
+  server: in.tronsg.com
   skip-cert-verify: true
-  type: socks5
-  username: ''
-- alterId: 0
-  cipher: auto
-  name: 🇮🇳 | @WhiteDNS | IN48|2.5MB/s|DNSOK|GPT⁺-IN
-  network: ws
-  port: 80
-  server: 152.67.8.205
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  ws-opts:
-    path: /
-  servername: 🇮🇳IN-152.67.8.205-0193 | 3.806MB
+  type: trojan
+  udp: true
+  network: tcp
+  sni: in.tronsg.com
+- client-fingerprint: chrome
+  name: 🇮🇳 | @WhiteDNS | IN41|1021KB/s|DNSOK|GPT⁺-IN
+  network: tcp
+  password: Trojan@82164024
+  port: 443
+  server: in.tronsg.com
+  skip-cert-verify: true
+  sni: in.tronsg.com
+  type: trojan
+  udp: true
 - alpn:
   - ''
   alterId: '0'
   cipher: auto
-  name: 🇮🇳 | @WhiteDNS | IN49|2.4MB/s|DNSOK|GPT⁺-IN
+  name: 🇮🇳 | @WhiteDNS | IN42|938KB/s|DNSOK|GPT⁺-IN
   network: ws
   port: 80
   server: 152.67.8.205
@@ -69,27 +70,3 @@ proxies:
     path: /
   xudp: true
   servername: 152.67.8.205
-- alterId: 0
-  cipher: auto
-  name: 🇮🇳 | @WhiteDNS | IN50|1.7MB/s|DNSOK|GPT⁺-IN
-  network: ws
-  port: 80
-  server: 152.67.8.205
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  ws-opts:
-    headers: {}
-    path: /
-  xudp: true
-  servername: 🇮🇳in-152.67.8.205-0164 | 0.149mb
-- name: 🇮🇳 | @WhiteDNS | IN51|1.3MB/s|DNSOK|GPT⁺-IN
-  password: ''
-  port: 443
-  server: 165.231.253.210
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''

@@ -1,0 +1,90 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- name: 🇹🇼 | @WhiteDNS | TW18|1.3MB/s|DNSOK|GPT⁺-TW
+  password: ec74bb6a86c2
+  port: 443
+  server: er8u54dh.df6h451rh.xin
+  skip-cert-verify: true
+  sni: px.ads.linkedin.com
+  type: anytls
+  udp: true
+- name: 🇹🇼 | @WhiteDNS | TW19|1.3MB/s|DNSOK|GPT⁺-TW
+  password: 0324fbc29561
+  port: 443
+  server: er8u54dh.df6h451rh.xin
+  skip-cert-verify: true
+  sni: px.ads.linkedin.com
+  type: anytls
+  udp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇹🇼 | @WhiteDNS | TW20|1.3MB/s|DNSOK|GPT⁺-TW
+  network: ws
+  port: 443
+  server: fujrdt.d6f54hd1j.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d877dc6f-7323-4b47-a7dd-14228cbae854
+  ws-opts:
+    headers:
+      Host: fujrdt.d6f54hd1j.cc
+    path: /
+  xudp: true
+  servername: fujrdt.d6f54hd1j.cc
+- alterId: '0'
+  cipher: auto
+  name: 🇹🇼 | @WhiteDNS | TW21|1.3MB/s|DNSOK|GPT⁺-TW
+  network: ws
+  port: 443
+  server: fujrdt.d6f54hd1j.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d877dc6f-7323-4b47-a7dd-14228cbae854
+  ws-opts:
+    headers:
+      Host: fujrdt.d6f54hd1j.cc
+    path: /
+  xudp: true
+  servername: fujrdt.d6f54hd1j.cc
+- fingerprint: ''
+  name: 🇹🇼 | @WhiteDNS | TW22|903KB/s|DNSOK|GPT⁺-TW
+  password: ec74bb6a86c2
+  port: 443
+  server: 684616s4.df6h451rh.xin
+  skip-cert-verify: true
+  sni: px.ads.linkedin.com
+  type: anytls
+  udp: true
+  username: ec74bb6a86c2
+proxy-groups:
+- name: TW-Auto
+  type: url-test
+  proxies:
+  - 🇹🇼 | @WhiteDNS | TW18|1.3MB/s|DNSOK|GPT⁺-TW
+  - 🇹🇼 | @WhiteDNS | TW19|1.3MB/s|DNSOK|GPT⁺-TW
+  - 🇹🇼 | @WhiteDNS | TW20|1.3MB/s|DNSOK|GPT⁺-TW
+  - 🇹🇼 | @WhiteDNS | TW21|1.3MB/s|DNSOK|GPT⁺-TW
+  - 🇹🇼 | @WhiteDNS | TW22|903KB/s|DNSOK|GPT⁺-TW
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,TW-Auto
