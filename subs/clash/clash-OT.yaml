@@ -13,8 +13,35 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- down: ''
+  fingerprint: ''
+  name: ❓ | @WhiteDNS | OT457|4.8MB/s|DNSOK|GPT⁺
+  obfs: salamander
+  obfs-password: HysteriaHowdy
+  password: HowdyHysteria2023w0W
+  port: 8443
+  server: hysteria.udpgw.com
+  skip-cert-verify: true
+  sni: sni-here.com
+  type: hysteria2
+  up: ''
+- name: ❓ | @WhiteDNS | OT458|2.1MB/s|DNSOK|GPT⁺-AE
+  network: ws
+  port: 22573
+  server: uae.unixzone.us
+  type: vless
+  udp: true
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  ws-opts:
+    headers:
+      Host: uae.unixzone.us
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.94 Safari/537.36
+    path: /
+  xudp: true
+  servername: uae.unixzone.us
 - client-fingerprint: chrome
-  name: ❓ | @WhiteDNS | OT589|1.4MB/s|DNSOK|GPT⁺-SG
+  name: ❓ | @WhiteDNS | OT459|1.3MB/s|DNSOK|GPT⁺-SG
   network: tcp
   password: UX82473651
   port: 443
@@ -27,7 +54,9 @@ proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT589|1.4MB/s|DNSOK|GPT⁺-SG
+  - ❓ | @WhiteDNS | OT457|4.8MB/s|DNSOK|GPT⁺
+  - ❓ | @WhiteDNS | OT458|2.1MB/s|DNSOK|GPT⁺-AE
+  - ❓ | @WhiteDNS | OT459|1.3MB/s|DNSOK|GPT⁺-SG
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -13,27 +13,27 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇫🇮 | @WhiteDNS | FI171|19.4MB/s|DNSOK|GPT⁺-FI
-  port: 2052
-  server: edge10.cyrionflare.com
-  type: vless
-  udp: true
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- name: 🇫🇮 | @WhiteDNS | FI172|20.2MB/s|DNSOK|GPT⁺-FI
   network: tcp
-- name: 🇫🇮 | @WhiteDNS | FI172|6.7MB/s|DNSOK|GPT⁺-FI
-  network: raw
   port: 2052
   server: edge10.cyrionflare.com
   type: vless
   udp: true
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   xudp: true
+- name: 🇫🇮 | @WhiteDNS | FI173|6.3MB/s|DNSOK|GPT⁺-FI
+  port: 2052
+  server: edge10.cyrionflare.com
+  type: vless
+  udp: true
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  network: tcp
 - alpn:
   - h2
   client-fingerprint: chrome
   encryption: none
   fingerprint: CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E
-  name: 🇫🇮 | @WhiteDNS | FI173|5.9MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI174|5.6MB/s|DNSOK|GPT⁺-FI
   network: ws
   port: 443
   server: 199.232.78.159
@@ -44,8 +44,8 @@ proxies:
   ws-opts:
     headers:
       Host: az_man-eski_naro_Pesar_jOon.global.ssl.fastly.net.
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Moto C Build/NRD90M.059) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; BLL-L22 Build/HUAWEIBLL-L22) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
     path: /
   xudp: true
   servername: google.com
@@ -59,7 +59,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI174|4.9MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI175|2.6MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 52080
   server: 185.212.149.7
@@ -68,15 +68,6 @@ proxies:
   type: vmess
   udp: true
   uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
-  xudp: true
-- encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI175|4.3MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 2052
-  server: edge10.cyrionflare.com
-  type: vless
-  udp: true
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   xudp: true
 - alpn:
   - ''
@@ -88,7 +79,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI176|2.8MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI176|2.6MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
@@ -98,16 +89,24 @@ proxies:
   udp: true
   uuid: aeb3c019-ae83-4677-af97-846baa787ad5
   xudp: true
+- name: 🇫🇮 | @WhiteDNS | FI177|1.0MB/s|DNSOK|GPT⁺-FI
+  network: raw
+  port: 2052
+  server: edge10.cyrionflare.com
+  type: vless
+  udp: true
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  xudp: true
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI171|19.4MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI172|6.7MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI173|5.9MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI174|4.9MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI175|4.3MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI176|2.8MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI172|20.2MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI173|6.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI174|5.6MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI175|2.6MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI176|2.6MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI177|1.0MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

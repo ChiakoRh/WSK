@@ -13,25 +13,20 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- down: ''
-  fingerprint: ''
-  name: 🇷🇺 | @WhiteDNS | RU45|549KB/s|DNSOK|GPT⁺-US
-  obfs: ''
-  obfs-password: ''
-  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
-  port: 2053
-  server: 194.87.118.184
+- name: 🇲🇾 | @WhiteDNS | MY21|2.1MB/s|DNSOK|GPT⁺-MY
+  password: ''
+  port: 9443
+  server: 152.233.3.14
   skip-cert-verify: true
-  sni: ''
-  type: hysteria2
-  up: ''
-  disable-sni: true
+  tls: true
+  type: http
+  username: ''
 proxy-groups:
-- name: RU-Auto
+- name: MY-Auto
   type: url-test
   proxies:
-  - 🇷🇺 | @WhiteDNS | RU45|549KB/s|DNSOK|GPT⁺-US
+  - 🇲🇾 | @WhiteDNS | MY21|2.1MB/s|DNSOK|GPT⁺-MY
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,RU-Auto
+- MATCH,MY-Auto

@@ -13,7 +13,15 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇱🇺 | @WhiteDNS | LU3|19.7MB/s|DNSOK|GPT⁺-LU
+- name: 🇱🇺 | @WhiteDNS | LU5|23.3MB/s|DNSOK|GPT⁺-LU
+  password: ''
+  port: 443
+  server: 185.221.132.226
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇱🇺 | @WhiteDNS | LU6|20.5MB/s|DNSOK|GPT⁺-LU
   password: ''
   port: 443
   server: 185.221.132.242
@@ -21,20 +29,44 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇱🇺 | @WhiteDNS | LU4|18.1MB/s|DNSOK|GPT⁺-LU
-  password: ''
-  port: 9443
-  server: 185.221.132.226
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+- client-fingerprint: chrome
+  name: 🇱🇺 | @WhiteDNS | LU7|6.8MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
+  port: 443
+  server: mfyousheng.nl.eu.org
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/36.0.1985.143 Safari/537.36
+    path: /tjwsLhx0SFASG4l9FERJ1g
+  sni: mfyousheng.nl.eu.org
+- client-fingerprint: chrome
+  name: 🇱🇺 | @WhiteDNS | LU8|1.6MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
+  port: 443
+  server: 107.189.26.160
+  skip-cert-verify: false
+  sni: mfyousheng.nl.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv) AppleWebKit/537.36
+        (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36
+    path: /tjwsLhx0SFASG4l9FERJ1g
 proxy-groups:
 - name: LU-Auto
   type: url-test
   proxies:
-  - 🇱🇺 | @WhiteDNS | LU3|19.7MB/s|DNSOK|GPT⁺-LU
-  - 🇱🇺 | @WhiteDNS | LU4|18.1MB/s|DNSOK|GPT⁺-LU
+  - 🇱🇺 | @WhiteDNS | LU5|23.3MB/s|DNSOK|GPT⁺-LU
+  - 🇱🇺 | @WhiteDNS | LU6|20.5MB/s|DNSOK|GPT⁺-LU
+  - 🇱🇺 | @WhiteDNS | LU7|6.8MB/s|DNSOK|GPT⁺-CH
+  - 🇱🇺 | @WhiteDNS | LU8|1.6MB/s|DNSOK|GPT⁺-CH
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

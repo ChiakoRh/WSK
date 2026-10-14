@@ -13,18 +13,26 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇪🇪 | @WhiteDNS | EE36|2.3MB/s|DNSOK|GPT⁺-EE
+- name: 🇪🇪 | @WhiteDNS | EE32|5.3MB/s|DNSOK|GPT⁺-EE
   password: ''
   port: 9443
-  server: 95.153.31.66
+  server: 95.153.32.2
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇪🇪 | @WhiteDNS | EE37|1.6MB/s|DNSOK|GPT⁺-EE
+- name: 🇪🇪 | @WhiteDNS | EE33|2.7MB/s|DNSOK|GPT⁺-EE
   password: ''
   port: 443
   server: 95.153.32.2
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇪🇪 | @WhiteDNS | EE34|2.6MB/s|DNSOK|GPT⁺-EE
+  password: ''
+  port: 9443
+  server: 95.153.31.66
   skip-cert-verify: true
   tls: true
   type: http
@@ -33,8 +41,9 @@ proxy-groups:
 - name: EE-Auto
   type: url-test
   proxies:
-  - 🇪🇪 | @WhiteDNS | EE36|2.3MB/s|DNSOK|GPT⁺-EE
-  - 🇪🇪 | @WhiteDNS | EE37|1.6MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE32|5.3MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE33|2.7MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE34|2.6MB/s|DNSOK|GPT⁺-EE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
