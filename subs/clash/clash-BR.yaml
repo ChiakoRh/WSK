@@ -13,22 +13,24 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- fingerprint: ''
-  name: 🇹🇼 | @WhiteDNS | TW16|895KB/s|DNSOK|GPT⁺-TW
-  password: ec74bb6a86c2
-  port: 443
-  server: 684616s4.df6h451rh.xin
-  skip-cert-verify: true
-  sni: px.ads.linkedin.com
-  type: anytls
-  udp: true
-  username: ec74bb6a86c2
+- down: ''
+  fingerprint: ''
+  name: 🇧🇷 | @WhiteDNS | BR9|2.5MB/s|DNSOK|GPT⁺-BR
+  obfs: salamander
+  obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
+  password: CyG0RFxMjzs41uQD4OLuHQ==
+  port: 20000
+  server: 147.15.23.247
+  skip-cert-verify: false
+  sni: rmgyvpn.rest
+  type: hysteria2
+  up: ''
 proxy-groups:
-- name: TW-Auto
+- name: BR-Auto
   type: url-test
   proxies:
-  - 🇹🇼 | @WhiteDNS | TW16|895KB/s|DNSOK|GPT⁺-TW
+  - 🇧🇷 | @WhiteDNS | BR9|2.5MB/s|DNSOK|GPT⁺-BR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,TW-Auto
+- MATCH,BR-Auto

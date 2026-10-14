@@ -1,13 +1,52 @@
 proxies:
-- name: 🇱🇺 | @WhiteDNS | LU3|11.9MB/s|DNSOK|GPT⁺-LU
-  password: ''
+- client-fingerprint: chrome
+  name: 🇱🇺 | @WhiteDNS | LU12|41.2MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
   port: 443
-  server: 185.221.132.242
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇱🇺 | @WhiteDNS | LU4|6.0MB/s|DNSOK|GPT⁺-LU
+  server: mfyousheng.nl.eu.org
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.106 Safari/537.36
+    path: /tjwsLhx0SFASG4l9FERJ1g
+  sni: mfyousheng.nl.eu.org
+- client-fingerprint: chrome
+  name: 🇱🇺 | @WhiteDNS | LU13|37.6MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
+  port: 443
+  server: mfyousheng.nl.eu.org
+  skip-cert-verify: false
+  sni: mfyousheng.nl.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.77 Safari/537.36
+    path: /tjwsLhx0SFASG4l9FERJ1g
+- alpn:
+  - http/1.1
+  client-fingerprint: unsafe
+  name: 🇱🇺 | @WhiteDNS | LU14|26.3MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
+  port: 443
+  server: 31.77.126.2
+  skip-cert-verify: false
+  sni: mfyousheng.nl.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like
+        Gecko) Chrome/26.0.1410.64 Safari/537.31
+    path: /tjwsLhx0SFASG4l9FERJ1g
+- name: 🇱🇺 | @WhiteDNS | LU15|19.5MB/s|DNSOK|GPT⁺-LU
   password: ''
   port: 9443
   server: 185.221.132.226
@@ -15,3 +54,56 @@ proxies:
   tls: true
   type: http
   username: ''
+- name: 🇱🇺 | @WhiteDNS | LU16|18.9MB/s|DNSOK|GPT⁺-LU
+  password: ''
+  port: 443
+  server: 185.221.132.242
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  name: 🇱🇺 | @WhiteDNS | LU17|15.8MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
+  port: 443
+  server: chatgpt.com
+  skip-cert-verify: false
+  sni: mfyousheng.nl.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/58.0.3029.110 Safari/537.36
+    path: /tjwsLhx0SFASG4l9FERJ1g
+- client-fingerprint: chrome
+  name: 🇱🇺 | @WhiteDNS | LU18|7.3MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
+  port: 443
+  server: 188.114.97.3
+  skip-cert-verify: false
+  sni: mfyousheng.nl.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.101 Safari/537.36
+    path: /tjwsLhx0SFASG4l9FERJ1g
+- client-fingerprint: chrome
+  name: 🇱🇺 | @WhiteDNS | LU19|5.8MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
+  port: 443
+  server: 107.189.26.160
+  skip-cert-verify: false
+  sni: mfyousheng.nl.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/68.0.3440.106 Safari/537.36
+    path: /tjwsLhx0SFASG4l9FERJ1g

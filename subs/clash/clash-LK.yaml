@@ -14,7 +14,7 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - encryption: none
-  name: 🇱🇰 | @WhiteDNS | LK2|1.7MB/s|DNSOK|GPT⁺-SG
+  name: 🇱🇰 | @WhiteDNS | LK3|3.9MB/s|DNSOK|GPT⁺-SG
   network: ws
   port: 80
   server: support.zoom.us
@@ -24,15 +24,31 @@ proxies:
   ws-opts:
     headers:
       Host: free.sahanwickramasinghe.me
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/45.0.2454.101 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.77 Safari/537.36
     path: /
   xudp: true
+- client-fingerprint: chrome
+  name: 🇱🇰 | @WhiteDNS | LK4|2.6MB/s|DNSOK|GPT⁺-SG
+  network: ws
+  port: 8443
+  server: centurylink.es
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  ws-opts:
+    headers:
+      Host: free.sahanwickramasinghe.me
+    path: /
+  servername: free.sahanwickramasinghe.me
 proxy-groups:
 - name: LK-Auto
   type: url-test
   proxies:
-  - 🇱🇰 | @WhiteDNS | LK2|1.7MB/s|DNSOK|GPT⁺-SG
+  - 🇱🇰 | @WhiteDNS | LK3|3.9MB/s|DNSOK|GPT⁺-SG
+  - 🇱🇰 | @WhiteDNS | LK4|2.6MB/s|DNSOK|GPT⁺-SG
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

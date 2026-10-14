@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇳 | @WhiteDNS | IN48|3.4MB/s|DNSOK|GPT⁺-IN
+- name: 🇮🇳 | @WhiteDNS | IN88|2.7MB/s|DNSOK|GPT⁺-IN
   password: ''
   port: 9443
   server: 165.231.253.58
@@ -21,14 +21,14 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇮🇳 | @WhiteDNS | IN49|2.6MB/s|DNSOK|GPT⁺-IN
+- name: 🇮🇳 | @WhiteDNS | IN89|2.6MB/s|DNSOK|GPT⁺-IN
   password: ''
   port: 1088
   server: 144.24.111.128
   skip-cert-verify: true
   type: socks5
   username: ''
-- name: 🇮🇳 | @WhiteDNS | IN50|2.4MB/s|DNSOK|GPT⁺-IN
+- name: 🇮🇳 | @WhiteDNS | IN90|2.6MB/s|DNSOK|GPT⁺-IN
   password: ''
   port: 443
   server: 165.231.253.210
@@ -36,7 +36,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇮🇳 | @WhiteDNS | IN51|1.5MB/s|DNSOK|GPT⁺-IN
+- name: 🇮🇳 | @WhiteDNS | IN91|1.5MB/s|DNSOK|GPT⁺-IN
   password: ''
   port: 443
   server: 165.231.253.66
@@ -44,8 +44,19 @@ proxies:
   tls: true
   type: http
   username: ''
+- country: 🇺🇸US
+  name: 🇮🇳 | @WhiteDNS | IN92|1.5MB/s|DNSOK|GPT⁺-IN
+  password: Trojan@82164024
+  port: 443
+  server: in.tronsg.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  network: tcp
+  sni: in.tronsg.com
 - client-fingerprint: chrome
-  name: 🇮🇳 | @WhiteDNS | IN52|1.2MB/s|DNSOK|GPT⁺-IN
+  name: 🇮🇳 | @WhiteDNS | IN93|1.2MB/s|DNSOK|GPT⁺-IN
+  network: tcp
   password: Trojan@82164024
   port: 443
   server: in.tronsg.com
@@ -53,16 +64,16 @@ proxies:
   sni: in.tronsg.com
   type: trojan
   udp: true
-  network: tcp
 proxy-groups:
 - name: IN-Auto
   type: url-test
   proxies:
-  - 🇮🇳 | @WhiteDNS | IN48|3.4MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN49|2.6MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN50|2.4MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN51|1.5MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN52|1.2MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN88|2.7MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN89|2.6MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN90|2.6MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN91|1.5MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN92|1.5MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN93|1.2MB/s|DNSOK|GPT⁺-IN
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
