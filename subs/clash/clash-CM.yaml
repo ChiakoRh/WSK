@@ -13,21 +13,19 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- encryption: none
-  name: 🇻🇳 | @WhiteDNS | VN9|1.7MB/s|DNSOK|GPT⁺-VN
-  network: raw
-  port: 2086
-  server: 150.95.109.109
-  type: vless
-  udp: true
-  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
-  xudp: true
+- name: 🇨🇲 | @WhiteDNS | CM3|1.9MB/s|DNSOK|GPT⁺-CM
+  password: ''
+  port: 8081
+  server: 102.244.78.61
+  skip-cert-verify: true
+  type: http
+  username: ''
 proxy-groups:
-- name: VN-Auto
+- name: CM-Auto
   type: url-test
   proxies:
-  - 🇻🇳 | @WhiteDNS | VN9|1.7MB/s|DNSOK|GPT⁺-VN
+  - 🇨🇲 | @WhiteDNS | CM3|1.9MB/s|DNSOK|GPT⁺-CM
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,VN-Auto
+- MATCH,CM-Auto

@@ -1,28 +1,4 @@
 proxies:
-- name: 🇫🇮 | @WhiteDNS | FI174|19.4MB/s|DNSOK|GPT⁺-FI
-  network: raw
-  port: 2052
-  server: edge10.cyrionflare.com
-  type: vless
-  udp: true
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  xudp: true
-- name: 🇫🇮 | @WhiteDNS | FI175|15.3MB/s|DNSOK|GPT⁺-FI
-  port: 2052
-  server: edge10.cyrionflare.com
-  type: vless
-  udp: true
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  network: tcp
-- encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI176|6.4MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 2052
-  server: edge10.cyrionflare.com
-  type: vless
-  udp: true
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  xudp: true
 - alpn:
   - ''
   alterId: '0'
@@ -33,7 +9,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI177|2.7MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI171|4.2MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 52080
   server: 185.212.149.7
@@ -43,13 +19,22 @@ proxies:
   udp: true
   uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
   xudp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇮 | @WhiteDNS | FI178|2.4MB/s|DNSOK|GPT⁺-FI
-  password: Pzlcb_PeV3uRgiC2NNoNKw
-  port: 39221
-  server: b2a2.velqixa.ir
-  type: ss
+- name: 🇫🇮 | @WhiteDNS | FI172|3.6MB/s|DNSOK|GPT⁺-FI
+  password: ''
+  port: 1080
+  server: 2.29.110.194
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI173|2.8MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 2052
+  server: edge10.cyrionflare.com
+  type: vless
   udp: true
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  xudp: true
 - alpn:
   - ''
   alterId: '0'
@@ -60,7 +45,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI179|2.4MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI174|2.6MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
@@ -69,4 +54,19 @@ proxies:
   type: vmess
   udp: true
   uuid: aeb3c019-ae83-4677-af97-846baa787ad5
+  xudp: true
+- name: 🇫🇮 | @WhiteDNS | FI175|1.7MB/s|DNSOK|GPT⁺-FI
+  port: 2052
+  server: edge10.cyrionflare.com
+  type: vless
+  udp: true
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  network: tcp
+- name: 🇫🇮 | @WhiteDNS | FI176|1.6MB/s|DNSOK|GPT⁺-FI
+  network: raw
+  port: 2052
+  server: edge10.cyrionflare.com
+  type: vless
+  udp: true
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   xudp: true

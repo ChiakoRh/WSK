@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇳 | @WhiteDNS | IN40|2.5MB/s|DNSOK|GPT⁺-IN
+- name: 🇮🇳 | @WhiteDNS | IN30|2.6MB/s|DNSOK|GPT⁺-IN
   password: ''
   port: 1088
   server: 144.24.111.128
@@ -22,26 +22,23 @@ proxies:
   username: ''
 - alterId: 0
   cipher: auto
-  name: 🇮🇳 | @WhiteDNS | IN41|1.1MB/s|DNSOK|GPT⁺-IN
+  name: 🇮🇳 | @WhiteDNS | IN31|733KB/s|DNSOK|GPT⁺
   network: ws
   port: 80
   server: 152.67.8.205
   skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: 9db4c708-aef8-4359-821b-38e47990be0d
   ws-opts:
-    headers: {}
     path: /
-  xudp: true
-  servername: 🇮🇳in-152.67.8.205-0164 | 0.149mb
+  servername: 🇮🇳IN-152.67.8.205-0217 | 0.164MB
 proxy-groups:
 - name: IN-Auto
   type: url-test
   proxies:
-  - 🇮🇳 | @WhiteDNS | IN40|2.5MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN41|1.1MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN30|2.6MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN31|733KB/s|DNSOK|GPT⁺
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

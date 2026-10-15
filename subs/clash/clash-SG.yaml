@@ -13,17 +13,10 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇸🇬 | @WhiteDNS | SG149|2.7MB/s|DNSOK|GPT⁺-SG
-  password: '1234'
-  port: 2080
-  server: 54.169.198.75
-  skip-cert-verify: true
-  type: http
-  username: '1234'
 - alpn:
   - http/1.1
   client-fingerprint: unsafe
-  name: 🇸🇬 | @WhiteDNS | SG150|2.7MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG160|3.5MB/s|DNSOK|GPT⁺-SG
   network: ws
   port: 443
   server: 188.114.98.0
@@ -34,31 +27,50 @@ proxies:
   ws-opts:
     headers:
       Host: free.nadun.store
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1610 Build/MMB29M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/53.0.2785.143 Safari/537.36
     path: /
   xudp: true
   servername: free.nadun.store
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG151|2.7MB/s|DNSOK|GPT⁺-SG
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 139.180.146.200
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-  network: tcp
-- name: 🇸🇬 | @WhiteDNS | SG152|2.7MB/s|DNSOK|GPT⁺-SG
+- name: 🇸🇬 | @WhiteDNS | SG161|2.7MB/s|DNSOK|GPT⁺-SG
   password: '1234'
   port: 2080
-  server: 54.151.160.36
+  server: 54.151.242.187
+  skip-cert-verify: true
+  type: http
+  username: '1234'
+- name: 🇸🇬 | @WhiteDNS | SG162|2.7MB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 14430
+  server: 13.140.56.100
+  type: vless
+  udp: true
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  ws-opts:
+    headers:
+      Host: 13.140.56.100
+    path: /vless
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG163|2.7MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: glorious-glider.rooster465.autos
+  skip-cert-verify: false
+  sni: glorious-glider.rooster465.autos
+  type: trojan
+  udp: true
+- name: 🇸🇬 | @WhiteDNS | SG164|2.7MB/s|DNSOK|GPT⁺-SG
+  password: '1234'
+  port: 2080
+  server: 54.169.228.182
   skip-cert-verify: true
   type: http
   username: '1234'
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG153|2.7MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG165|2.7MB/s|DNSOK|GPT⁺-SG
   network: tcp
   port: 443
   reality-opts:
@@ -72,26 +84,337 @@ proxies:
   xudp: true
   servername: www.changiairport.com
 - client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG154|2.6MB/s|DNSOK|GPT⁺-SG
-  network: ws
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG166|2.6MB/s|DNSOK|GPT⁺-SG
   port: 443
-  server: 188.114.97.6
+  reality-opts:
+    public-key: jpn2pLj_p5lxGwycLht80v2qNeP7jHwh1Gv-nTU8zXY
+    short-id: ddcd71ec09e5893a
+  server: sg3.oh-node.com
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  uuid: 7cfd34ae-edad-4cc5-9d6f-066f7add7829
+  network: tcp
+  servername: www.changiairport.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG167|2.6MB/s|DNSOK|GPT⁺-SG
+  port: 443
+  reality-opts:
+    public-key: wSLW8DGUOMkRuCFWnBs31PYwBtvcHbBUGHu_dDTBYgc
+    short-id: 829330332af8c863
+  server: 172.104.49.9
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d9677f03-95c1-4357-9b31-b35b732bd188
+  network: tcp
+  servername: www.cloudflare.com
+- name: 🇸🇬 | @WhiteDNS | SG168|2.6MB/s|DNSOK|GPT⁺-SG
+  password: '1234'
+  port: 2080
+  server: 18.143.163.241
+  skip-cert-verify: true
+  type: http
+  username: '1234'
+- name: 🇸🇬 | @WhiteDNS | SG169|2.6MB/s|DNSOK|GPT⁺-SG
+  password: '1234'
+  port: 2080
+  server: 13.229.57.163
+  skip-cert-verify: true
+  type: http
+  username: '1234'
+- name: 🇸🇬 | @WhiteDNS | SG170|2.6MB/s|DNSOK|GPT⁺-SG
+  password: '1234'
+  port: 2080
+  server: 54.151.156.21
+  skip-cert-verify: true
+  type: http
+  username: '1234'
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG171|2.6MB/s|DNSOK|GPT⁺-SG
+  password: UX82473651
+  port: 443
+  server: glorious-glider.rooster465.autos
+  skip-cert-verify: false
+  sni: glorious-glider.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- name: 🇸🇬 | @WhiteDNS | SG172|2.5MB/s|DNSOK|GPT⁺-SG
+  password: '1234'
+  port: 2080
+  server: 18.143.167.6
+  skip-cert-verify: true
+  type: http
+  username: '1234'
+- name: 🇸🇬 | @WhiteDNS | SG173|2.4MB/s|DNSOK|GPT⁺-SG
+  password: '1234'
+  port: 2080
+  server: 13.212.90.38
+  skip-cert-verify: true
+  type: http
+  username: '1234'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG174|2.3MB/s|DNSOK|GPT⁺-SG
+  port: 443
+  reality-opts:
+    public-key: vUhHTgZiXSho6Nv84w_JZW7Mo7XjJr0TsOBf19Dpols
+    short-id: 37c94ae25b69a93a
+  server: sg1.oh-node.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7cfd34ae-edad-4cc5-9d6f-066f7add7829
+  network: tcp
+  servername: sg-hyp-api.hoyoverse.com
+- name: 🇸🇬 | @WhiteDNS | SG175|2.3MB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 14430
+  server: 13.140.56.100
+  type: vless
+  udp: true
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
   ws-opts:
     headers:
-      Host: free.nadun.store
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/59.0.3071.115 Safari/537.36
-    path: /
+      Host: 13.140.56.100
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /vless
   xudp: true
-  servername: free.nadun.store
+  servername: 13.140.56.100
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG155|2.6MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG176|2.2MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  port: 19825
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: ''
+  server: sg2-8sb.6121999.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  xudp: true
+  servername: sg2-8sb.6121999.dpdns.org
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG177|2.2MB/s|DNSOK|GPT⁺-SG
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: wSLW8DGUOMkRuCFWnBs31PYwBtvcHbBUGHu_dDTBYgc
+    short-id: 829330332af8c863
+  server: 172.104.49.9
+  tls: true
+  type: vless
+  udp: true
+  uuid: d9677f03-95c1-4357-9b31-b35b732bd188
+  xudp: true
+  servername: www.cloudflare.com
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG178|2.1MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: simple-molly.rooster465.autos
+  skip-cert-verify: false
+  sni: simple-molly.rooster465.autos
+  type: trojan
+  udp: true
+- name: 🇸🇬 | @WhiteDNS | SG179|2.1MB/s|DNSOK|GPT⁺-SG
+  password: ''
+  port: 443
+  server: 156.146.56.97
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG180|2.0MB/s|DNSOK|GPT⁺-SG
+  network: raw
+  port: 19825
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  server: 146.235.16.130
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  xudp: true
+  servername: sg2-8sb.6121999.dpdns.org
+- cipher: rc4-md5
+  name: 🇸🇬 | @WhiteDNS | SG181|2.0MB/s|DNSOK|GPT⁺-SG
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.236
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG182|2.0MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  port: 19825
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  server: 146.235.16.130
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  xudp: true
+  servername: sg2-8sb.6121999.dpdns.org
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG183|2.0MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: 18.141.136.8
+  skip-cert-verify: false
+  sni: musical-mouse.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG184|1.9MB/s|DNSOK|GPT⁺-SG
+  password: UX82473651
+  port: 443
+  server: 56.10.9.77
+  skip-cert-verify: false
+  sni: inviting-ferret.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG185|1.7MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: moral-basilisk.rooster465.autos
+  skip-cert-verify: false
+  sni: moral-basilisk.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG186|1.7MB/s|DNSOK|GPT⁺-SG
+  port: 19825
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  server: sg2-8sb.6121999.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  network: tcp
+  servername: sg2-8sb.6121999.dpdns.org
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG187|1.7MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: 47.131.250.125
+  skip-cert-verify: false
+  sni: simple-molly.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG188|1.7MB/s|DNSOK|GPT⁺-SG
+  password: UX82473651
+  port: 443
+  server: 18.141.136.8
+  skip-cert-verify: false
+  sni: musical-mouse.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG189|1.7MB/s|DNSOK|GPT⁺-SG
+  password: UX82473651
+  port: 443
+  server: moral-basilisk.rooster465.autos
+  skip-cert-verify: false
+  sni: moral-basilisk.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG190|1.7MB/s|DNSOK|GPT⁺-SG
+  password: UX82473651
+  port: 443
+  server: 47.131.250.125
+  skip-cert-verify: false
+  sni: simple-molly.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG191|1.6MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: inviting-ferret.rooster465.autos
+  skip-cert-verify: true
+  sni: inviting-ferret.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG192|1.6MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: 3.1.252.137
+  skip-cert-verify: false
+  sni: brave-tomcat.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG193|1.6MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: wSLW8DGUOMkRuCFWnBs31PYwBtvcHbBUGHu_dDTBYgc
+    short-id: 829330332af8c863
+  server: 172.104.49.9
+  tls: true
+  type: vless
+  udp: true
+  uuid: d9677f03-95c1-4357-9b31-b35b732bd188
+  xudp: true
+  servername: www.cloudflare.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG194|1.6MB/s|DNSOK|GPT⁺-SG
+  port: 443
+  reality-opts:
+    public-key: I2PQq5bidT2RjVCJt2r-eSVpLNY61quSYgS2dseomF8
+    short-id: 1dd8558159ecd0
+  server: sg4.oh-node.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7cfd34ae-edad-4cc5-9d6f-066f7add7829
+  network: tcp
+  servername: www.changiairport.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG195|1.5MB/s|DNSOK|GPT⁺-SG
   network: tcp
   port: 443
   reality-opts:
@@ -105,146 +428,37 @@ proxies:
   xudp: true
   servername: www.changiairport.com
 - client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG156|2.6MB/s|DNSOK|GPT⁺-SG
-  network: tcp
+  name: 🇸🇬 | @WhiteDNS | SG196|1.5MB/s|DNSOK|GPT⁺-SG
   password: UX82473651
   port: 443
-  server: glorious-glider.rooster465.autos
+  server: inviting-ferret.rooster465.autos
   skip-cert-verify: false
-  sni: glorious-glider.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG157|2.5MB/s|DNSOK|GPT⁺-SG
-  password: UX82473651
-  port: 443
-  server: glorious-glider.rooster465.autos
-  skip-cert-verify: false
-  sni: glorious-glider.rooster465.autos
   type: trojan
   udp: true
   network: tcp
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG158|2.5MB/s|DNSOK|GPT⁺-SG
-  network: tcp
-  port: 41688
-  reality-opts:
-    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
-    short-id: 7f342137c20387
-  server: 54.169.200.246
-  tls: true
-  type: vless
+  sni: inviting-ferret.rooster465.autos
+- alpn:
+  - h3
+  congestion-controller: bbr
+  name: 🇸🇬 | @WhiteDNS | SG197|1.4MB/s|DNSOK|GPT⁺-SG
+  password: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  port: 33738
+  server: sg2-8sb.6121999.dpdns.org
+  type: tuic
   udp: true
-  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
-  xudp: true
-  servername: www.intel.com
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG159|2.5MB/s|DNSOK|GPT⁺-SG
-  network: raw
-  port: 24146
-  reality-opts:
-    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
-    short-id: 7205d9079521832c
-  server: 54.251.9.130
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
-  xudp: true
-  servername: www.intel.com
-- client-fingerprint: ios
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG160|2.4MB/s|DNSOK|GPT⁺-SG
-  network: tcp
-  port: 24146
-  reality-opts:
-    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
-    short-id: 7205d9079521832c
-  server: 54.251.9.130
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
-  xudp: true
-  servername: www.intel.com
-- name: 🇸🇬 | @WhiteDNS | SG161|2.4MB/s|DNSOK|GPT⁺-SG
-  password: '1234'
-  port: 2080
-  server: 13.250.21.56
-  skip-cert-verify: true
-  type: http
-  username: '1234'
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG162|2.3MB/s|DNSOK|GPT⁺-SG
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: brave-tomcat.rooster465.autos
-  skip-cert-verify: true
-  sni: brave-tomcat.rooster465.autos
-  type: trojan
-  udp: true
-- name: 🇸🇬 | @WhiteDNS | SG163|2.2MB/s|DNSOK|GPT⁺-SG
-  password: ''
-  port: 443
-  server: 156.146.56.97
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+  udp-relay-mode: quic
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  sni: sg2-8sb.6121999.dpdns.org
+  version: 5
 - cipher: rc4-md5
-  name: 🇸🇬 | @WhiteDNS | SG164|2.1MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG198|1.4MB/s|DNSOK|GPT⁺-SG
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.4
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG165|2.0MB/s|DNSOK|GPT⁺-SG
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: moral-basilisk.rooster465.autos
-  skip-cert-verify: false
-  sni: moral-basilisk.rooster465.autos
-  type: trojan
-  udp: true
-- cipher: rc4-md5
-  name: 🇸🇬 | @WhiteDNS | SG166|2.0MB/s|DNSOK|GPT⁺-SG
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.227.236
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG167|2.0MB/s|DNSOK|GPT⁺-SG
-  network: tcp#🎡88@oneclickvpnkeys
-  port: 24146
-  reality-opts:
-    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
-    short-id: 7205d9079521832c
-  server: 54.251.9.130
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
-  xudp: true
-  servername: www.intel.com
-- cipher: rc4-md5
-  name: 🇸🇬 | @WhiteDNS | SG168|1.8MB/s|DNSOK|GPT⁺-SG
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.227.45
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG169|1.8MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG199|1.3MB/s|DNSOK|GPT⁺-SG
   network: tcp
   password: UX82473651
   port: 443
@@ -254,144 +468,17 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG170|1.8MB/s|DNSOK|GPT⁺-SG
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: wSLW8DGUOMkRuCFWnBs31PYwBtvcHbBUGHu_dDTBYgc
-    short-id: 829330332af8c863
-  server: 172.104.49.9
-  tls: true
-  type: vless
-  udp: true
-  uuid: d9677f03-95c1-4357-9b31-b35b732bd188
-  xudp: true
-  servername: www.cloudflare.com
-- client-fingerprint: qq
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG171|1.8MB/s|DNSOK|GPT⁺-SG
-  network: raw
-  port: 41688
-  reality-opts:
-    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
-    short-id: 7f342137c20387
-  server: 54.169.200.246
-  tls: true
-  type: vless
-  udp: true
-  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
-  xudp: true
-  servername: www.intel.com
-- name: 🇸🇬 | @WhiteDNS | SG172|1.7MB/s|DNSOK|GPT⁺-IN
-  network: ws
-  port: 14430
-  server: 13.140.56.100
-  type: vless
-  udp: true
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  ws-opts:
-    headers:
-      Host: 13.140.56.100
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/40.0.2214.115 Safari/537.36
-    path: /vless
-  xudp: true
-  servername: 13.140.56.100
-- cipher: aes-256-gcm
-  name: 🇸🇬 | @WhiteDNS | SG173|1.7MB/s|DNSOK|GPT⁺-JP
-  password: 3eOFeNssde7PYYMv
-  port: 443
-  server: 84.247.155.196
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG174|1.7MB/s|DNSOK|GPT⁺-SG
-  password: UX82473651
-  port: 443
-  server: 18.141.136.8
-  skip-cert-verify: false
-  sni: musical-mouse.rooster465.autos
-  type: trojan
-  udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG175|1.7MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG200|1.3MB/s|DNSOK|GPT⁺-SG
   network: tcp
   password: UX82473651
   port: 443
-  server: simple-molly.rooster465.autos
-  skip-cert-verify: false
-  sni: simple-molly.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG176|1.6MB/s|DNSOK|GPT⁺-SG
-  port: 443
-  reality-opts:
-    public-key: wSLW8DGUOMkRuCFWnBs31PYwBtvcHbBUGHu_dDTBYgc
-    short-id: 829330332af8c863
-  server: 172.104.49.9
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d9677f03-95c1-4357-9b31-b35b732bd188
-  network: tcp
-  servername: www.cloudflare.com
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG177|1.6MB/s|DNSOK|GPT⁺-SG
-  password: UX82473651
-  port: 443
-  server: moral-basilisk.rooster465.autos
+  server: 54.151.181.75
   skip-cert-verify: false
   sni: moral-basilisk.rooster465.autos
   type: trojan
   udp: true
-  network: tcp
 - client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG178|1.6MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 443
-  server: free.nadun.store
-  tls: true
-  type: vless
-  udp: true
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/41.0.2272.118 Safari/537.36
-    path: /
-  xudp: true
-  servername: free.nadun.store
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG179|1.5MB/s|DNSOK|GPT⁺-SG
-  port: 41688
-  reality-opts:
-    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
-    short-id: 7f342137c20387
-  server: 54.169.200.246
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
-  network: tcp
-  servername: www.intel.com
-- cipher: 2022-blake3-aes-256-gcm
-  name: 🇸🇬 | @WhiteDNS | SG180|1.5MB/s|DNSOK|GPT⁺-SG
-  password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
-  port: 14384
-  server: 129.150.59.74
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG181|1.5MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG201|1.3MB/s|DNSOK|GPT⁺-SG
   network: tcp
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   port: 8886
@@ -401,35 +488,42 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG182|1.4MB/s|DNSOK|GPT⁺-SG
-  password: UX82473651
-  port: 443
-  server: brave-tomcat.rooster465.autos
-  skip-cert-verify: false
-  sni: brave-tomcat.rooster465.autos
+  name: 🇸🇬 | @WhiteDNS | SG202|1.2MB/s|DNSOK|GPT⁺-SG
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 139.180.146.200
+  skip-cert-verify: true
   type: trojan
   udp: true
   network: tcp
 - client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG183|1.4MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG203|1.2MB/s|DNSOK|GPT⁺-SG
+  network: tcp
   password: UX82473651
   port: 443
-  server: simple-molly.rooster465.autos
+  server: inviting-ferret.rooster465.autos
   skip-cert-verify: false
-  sni: simple-molly.rooster465.autos
   type: trojan
   udp: true
-  network: tcp
-- name: 🇸🇬 | @WhiteDNS | SG184|1.3MB/s|DNSOK|GPT⁺-SG
-  password: '8888'
-  port: 1080
-  server: 47.236.168.243
+  sni: inviting-ferret.rooster465.autos
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG204|1.1MB/s|DNSOK|GPT⁺-SG
+  port: 10444
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  server: 147.93.173.45
   skip-cert-verify: true
-  type: socks5
-  username: '8888'
+  tls: true
+  type: vless
+  udp: true
+  uuid: 75c5f51b-d548-4eab-a26e-aa10fc3dbc7b
+  network: tcp
+  servername: video.yandex.ru
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG185|1.3MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG205|1.0MB/s|DNSOK|GPT⁺-SG
   network: tcp
   port: 19825
   reality-opts:
@@ -442,64 +536,23 @@ proxies:
   uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
   xudp: true
   servername: sg2-8sb.6121999.dpdns.org
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG186|1.3MB/s|DNSOK|GPT⁺-SG
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: 3.1.252.137
-  skip-cert-verify: false
-  sni: brave-tomcat.rooster465.autos
-  type: trojan
+- alpn:
+  - h3
+  congestion-controller: bbr
+  name: 🇸🇬 | @WhiteDNS | SG206|1.0MB/s|DNSOK|GPT⁺-SG
+  password: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  port: 33738
+  server: 146.235.16.130
+  sni: sg2-8sb.6121999.dpdns.org
+  type: tuic
   udp: true
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG187|1.3MB/s|DNSOK|GPT⁺-SG
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 139.180.146.200
-  skip-cert-verify: true
-  sni: 139.180.146.200
-  type: trojan
-  udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG188|1.3MB/s|DNSOK|GPT⁺-SG
-  password: UX82473651
-  port: 443
-  server: 3.1.252.137
-  skip-cert-verify: false
-  sni: brave-tomcat.rooster465.autos
-  type: trojan
-  udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG189|1.3MB/s|DNSOK|GPT⁺-SG
-  network: tcp
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 139.180.146.200
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG190|1.3MB/s|DNSOK|GPT⁺-SG
-  port: 24146
-  reality-opts:
-    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
-    short-id: 7205d9079521832c
-  server: 54.251.9.130
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
-  network: tcp
-  servername: www.intel.com
+  udp-relay-mode: bbr
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  version: 5
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG191|1.3MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG207|1021KB/s|DNSOK|GPT⁺-SG
   network: tcp
   port: 443
   reality-opts:
@@ -513,30 +566,53 @@ proxies:
   xudp: true
   servername: sg-hyp-api.hoyoverse.com
 - client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG192|1.3MB/s|DNSOK|GPT⁺-SG
-  password: UX82473651
-  port: 443
-  server: 47.131.250.125
-  skip-cert-verify: false
-  sni: simple-molly.rooster465.autos
-  type: trojan
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG208|984KB/s|DNSOK|GPT⁺-SG
+  network: tcp#🎡88@oneclickvpnkeys
+  port: 24146
+  reality-opts:
+    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
+    short-id: 7205d9079521832c
+  server: 54.251.9.130
+  tls: true
+  type: vless
   udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG193|1.1MB/s|DNSOK|GPT⁺-SG
-  network: tcp
-  password: UX82473651
+  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
+  xudp: true
+  servername: www.intel.com
+- alpn:
+  - h3
+  congestion-controller: bbr
+  name: 🇸🇬 | @WhiteDNS | SG209|930KB/s|DNSOK|GPT⁺-SG
+  password: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  port: 33738
+  server: sg2-8sb.6121999.dpdns.org
+  sni: sg2-8sb.6121999.dpdns.org
+  type: tuic
+  udp: true
+  udp-relay-mode: quic
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  version: 5
+- name: 🇸🇬 | @WhiteDNS | SG210|851KB/s|DNSOK|GPT⁺-SG
+  password: '1234'
+  port: 2080
+  server: 47.129.155.166
+  skip-cert-verify: true
+  type: http
+  username: '1234'
+- cipher: aes-256-gcm
+  name: 🇸🇬 | @WhiteDNS | SG211|784KB/s|DNSOK|GPT⁺-JP
+  password: 3eOFeNssde7PYYMv
   port: 443
-  server: 18.141.136.8
-  skip-cert-verify: false
-  sni: musical-mouse.rooster465.autos
-  type: trojan
+  server: 84.247.155.196
+  type: ss
   udp: true
 - client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG194|1.1MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG212|607KB/s|DNSOK|GPT⁺-SG
   network: ws
   port: 443
-  server: free.nadun.store
+  server: 188.114.97.6
   tls: true
   type: vless
   udp: true
@@ -544,83 +620,79 @@ proxies:
   ws-opts:
     headers:
       Host: free.nadun.store
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G570M Build/NRD90M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/69.0.3497.100 Safari/537.36
     path: /
   xudp: true
   servername: free.nadun.store
 - client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG195|983KB/s|DNSOK|GPT⁺-SG
-  network: tcp
+  name: 🇸🇬 | @WhiteDNS | SG213|573KB/s|DNSOK|GPT⁺-SG
   password: UX82473651
   port: 443
-  server: 47.131.250.125
+  server: musical-mouse.rooster465.autos
   skip-cert-verify: false
-  sni: simple-molly.rooster465.autos
+  sni: musical-mouse.rooster465.autos
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG196|590KB/s|DNSOK|GPT⁺-SG
   network: tcp
-  password: UX82473651
-  port: 443
-  server: 54.151.181.75
-  skip-cert-verify: false
-  sni: moral-basilisk.rooster465.autos
-  type: trojan
-  udp: true
 proxy-groups:
 - name: SG-Auto
   type: url-test
   proxies:
-  - 🇸🇬 | @WhiteDNS | SG149|2.7MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG150|2.7MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG151|2.7MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG152|2.7MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG153|2.7MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG154|2.6MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG155|2.6MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG156|2.6MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG157|2.5MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG158|2.5MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG159|2.5MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG160|2.4MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG161|2.4MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG162|2.3MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG163|2.2MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG164|2.1MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG165|2.0MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG166|2.0MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG167|2.0MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG168|1.8MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG169|1.8MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG170|1.8MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG171|1.8MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG172|1.7MB/s|DNSOK|GPT⁺-IN
-  - 🇸🇬 | @WhiteDNS | SG173|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇸🇬 | @WhiteDNS | SG174|1.7MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG175|1.7MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG176|1.6MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG177|1.6MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG178|1.6MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG179|1.5MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG180|1.5MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG181|1.5MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG182|1.4MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG183|1.4MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG184|1.3MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG185|1.3MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG186|1.3MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG187|1.3MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG188|1.3MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG189|1.3MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG190|1.3MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG191|1.3MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG192|1.3MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG193|1.1MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG194|1.1MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG195|983KB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG196|590KB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG160|3.5MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG161|2.7MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG162|2.7MB/s|DNSOK|GPT⁺-IN
+  - 🇸🇬 | @WhiteDNS | SG163|2.7MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG164|2.7MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG165|2.7MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG166|2.6MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG167|2.6MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG168|2.6MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG169|2.6MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG170|2.6MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG171|2.6MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG172|2.5MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG173|2.4MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG174|2.3MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG175|2.3MB/s|DNSOK|GPT⁺-IN
+  - 🇸🇬 | @WhiteDNS | SG176|2.2MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG177|2.2MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG178|2.1MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG179|2.1MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG180|2.0MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG181|2.0MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG182|2.0MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG183|2.0MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG184|1.9MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG185|1.7MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG186|1.7MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG187|1.7MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG188|1.7MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG189|1.7MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG190|1.7MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG191|1.6MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG192|1.6MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG193|1.6MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG194|1.6MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG195|1.5MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG196|1.5MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG197|1.4MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG198|1.4MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG199|1.3MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG200|1.3MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG201|1.3MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG202|1.2MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG203|1.2MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG204|1.1MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG205|1.0MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG206|1.0MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG207|1021KB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG208|984KB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG209|930KB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG210|851KB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG211|784KB/s|DNSOK|GPT⁺-JP
+  - 🇸🇬 | @WhiteDNS | SG212|607KB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG213|573KB/s|DNSOK|GPT⁺-SG
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

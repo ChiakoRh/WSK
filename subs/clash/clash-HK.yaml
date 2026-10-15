@@ -16,23 +16,7 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇭🇰 | @WhiteDNS | HK101|1.7MB/s|DNSOK|GPT⁺-US
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: KhRbgahSFqlPKB6QNp9QYb4oXMy2SIgi440tm6iFZHA
-    short-id: ea6b43
-  server: hk4.oh-node.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7cfd34ae-edad-4cc5-9d6f-066f7add7829
-  xudp: true
-  servername: hk4e-launcher-static.hoyoverse.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇭🇰 | @WhiteDNS | HK102|1.7MB/s|DNSOK|GPT⁺-US
+  name: 🇭🇰 | @WhiteDNS | HK100|1.7MB/s|DNSOK|GPT⁺-US
   network: tcp
   port: 443
   reality-opts:
@@ -45,12 +29,60 @@ proxies:
   uuid: 7cfd34ae-edad-4cc5-9d6f-066f7add7829
   xudp: true
   servername: hk4e-launcher-static.hoyoverse.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇭🇰 | @WhiteDNS | HK101|1.7MB/s|DNSOK|GPT⁺-US
+  port: 443
+  reality-opts:
+    public-key: zV4Sja0iajpdzkR1iBMbI7RRWL2nlpgwGOtirQSG-zc
+    short-id: b81edf7fdee4
+  server: hk3.oh-node.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7cfd34ae-edad-4cc5-9d6f-066f7add7829
+  network: tcp
+  servername: hk4e-launcher-static.hoyoverse.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇭🇰 | @WhiteDNS | HK102|1.7MB/s|DNSOK|GPT⁺-US
+  port: 443
+  reality-opts:
+    public-key: 2kl8isq7ajNv3BR6Z1EPag_LqJHmsfo2pn0dA7yetko
+    short-id: a2d13d677624197e
+  server: hk6.oh-node.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7cfd34ae-edad-4cc5-9d6f-066f7add7829
+  network: tcp
+  servername: www.hsbc.com.hk
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇭🇰 | @WhiteDNS | HK103|1.3MB/s|DNSOK|GPT⁺-US
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 2kl8isq7ajNv3BR6Z1EPag_LqJHmsfo2pn0dA7yetko
+    short-id: a2d13d677624197e
+  server: hk6.oh-node.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7cfd34ae-edad-4cc5-9d6f-066f7add7829
+  xudp: true
+  servername: www.hsbc.com.hk
 proxy-groups:
 - name: HK-Auto
   type: url-test
   proxies:
+  - 🇭🇰 | @WhiteDNS | HK100|1.7MB/s|DNSOK|GPT⁺-US
   - 🇭🇰 | @WhiteDNS | HK101|1.7MB/s|DNSOK|GPT⁺-US
   - 🇭🇰 | @WhiteDNS | HK102|1.7MB/s|DNSOK|GPT⁺-US
+  - 🇭🇰 | @WhiteDNS | HK103|1.3MB/s|DNSOK|GPT⁺-US
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
