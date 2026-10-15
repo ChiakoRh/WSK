@@ -14,7 +14,7 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - encryption: none
-  name: 🇨🇦 | @WhiteDNS | CA50|4.5MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA50|4.1MB/s|DNSOK|GPT⁺-CA
   network: raw
   port: 8080
   server: milo.rubinaz.xyz
@@ -22,15 +22,15 @@ proxies:
   udp: true
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   xudp: true
-- name: 🇨🇦 | @WhiteDNS | CA51|3.1MB/s|DNSOK|GPT⁺-CA
+- encryption: mlkem768x25519plus.native.0rtt.PAXyKRg91Dfpa4NYm2y6Kipqa8VUrbe4yQigjmQns2I
+  name: 🇨🇦 | @WhiteDNS | CA51|4.1MB/s|DNSOK|GPT⁺-CA
   network: tcp
-  port: 8080
-  server: milo.rubinaz.xyz
+  port: 8880
+  server: 54.39.96.233
   type: vless
   udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  uuid: 94a6d8c1-b6c2-4ac2-a3a8-d181831640c0
   xudp: true
-  servername: milo.rubinaz.xyz
 - name: 🇨🇦 | @WhiteDNS | CA52|3.0MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 9443
@@ -39,7 +39,16 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA53|2.5MB/s|DNSOK|GPT⁺-CA
+- encryption: mlkem768x25519plus.native.0rtt.ZvJ6my0AblNtOoGiI_EMSzijE2I_y8m9WQR2uEbvpTE
+  name: 🇨🇦 | @WhiteDNS | CA53|2.5MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  port: 8880
+  server: 198.100.154.175
+  type: vless
+  udp: true
+  uuid: 3a8b8272-4c56-430a-9943-468f0f58aa99
+  xudp: true
+- name: 🇨🇦 | @WhiteDNS | CA54|2.2MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 443
   server: 206.223.183.13
@@ -47,7 +56,23 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA54|1.3MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA55|1.9MB/s|DNSOK|GPT⁺-CA
+  port: 8080
+  server: milo.rubinaz.xyz
+  type: vless
+  udp: true
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  network: tcp
+- name: 🇨🇦 | @WhiteDNS | CA56|741KB/s|DNSOK|GPT⁺-CA
+  network: raw
+  port: 8080
+  server: milo.rubinaz.xyz
+  type: vless
+  udp: true
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  xudp: true
+  servername: milo.rubinaz.xyz
+- name: 🇨🇦 | @WhiteDNS | CA57|641KB/s|DNSOK|GPT⁺-CA
   network: tcp
   port: 8080
   server: milo.rubinaz.xyz
@@ -55,23 +80,18 @@ proxies:
   udp: true
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   xudp: true
-- name: 🇨🇦 | @WhiteDNS | CA55|1.3MB/s|DNSOK|GPT⁺-CA
-  port: 8080
-  server: milo.rubinaz.xyz
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  network: tcp
 proxy-groups:
 - name: CA-Auto
   type: url-test
   proxies:
-  - 🇨🇦 | @WhiteDNS | CA50|4.5MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA51|3.1MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA50|4.1MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA51|4.1MB/s|DNSOK|GPT⁺-CA
   - 🇨🇦 | @WhiteDNS | CA52|3.0MB/s|DNSOK|GPT⁺-CA
   - 🇨🇦 | @WhiteDNS | CA53|2.5MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA54|1.3MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA55|1.3MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA54|2.2MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA55|1.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA56|741KB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA57|641KB/s|DNSOK|GPT⁺-CA
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -13,23 +13,9 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- alpn:
-  - http/1.1
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE208|34.0MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 443
-  server: 152.53.185.244
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5538eaaa-ac3d-4414-a1f5-280212949ed9
-  xudp: true
-  servername: demethod.chaosnetwork.app
 - alterId: 0
   cipher: auto
-  name: 🇩🇪 | @WhiteDNS | DE209|33.8MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE187|35.7MB/s|DNSOK|GPT⁺-DE
   port: 1234
   server: 162.19.204.71
   skip-cert-verify: true
@@ -39,24 +25,9 @@ proxies:
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   network: tcp
   servername: supervpn.super.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE210|33.5MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE
-    short-id: 0fa4a0e2493392
-  server: 64.118.158.41
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8af93649-403b-46d8-9966-923d4c58402c
-  xudp: true
-  servername: p-y3-www-amazon-com-kalias.amazon.com
 - alterId: 0
   cipher: aes-128-gcm
-  name: 🇩🇪 | @WhiteDNS | DE211|33.1MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE188|31.6MB/s|DNSOK|GPT⁺-DE
   port: 1234
   server: 141.95.65.9
   skip-cert-verify: true
@@ -66,226 +37,9 @@ proxies:
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   network: tcp
   servername: supervpn.super.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE212|32.7MB/s|DNSOK|GPT⁺-DE
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE
-    short-id: 0fa4a0e2493392
-  server: 64.118.158.41
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8af93649-403b-46d8-9966-923d4c58402c
-  xudp: true
-  servername: p-y3-www-amazon-com-kalias.amazon.com
-- name: 🇩🇪 | @WhiteDNS | DE213|31.2MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 9002
-  server: 158.173.154.2
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE214|29.6MB/s|DNSOK|GPT⁺-DE
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
-    short-id: d7de3a6ff4018957
-  server: 31.70.111.146
-  tls: true
-  type: vless
-  udp: true
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
-  xudp: true
-  servername: www.apple.com
-- name: 🇩🇪 | @WhiteDNS | DE215|28.5MB/s|DNSOK|GPT⁺-DE
-  password: None
-  port: 443
-  server: 149.36.50.157
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇩🇪 | @WhiteDNS | DE216|28.4MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 443
-  server: 213.177.229.161
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE217|28.4MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
-    short-id: d7de3a6ff4018957
-  server: 31.70.111.146
-  tls: true
-  type: vless
-  udp: true
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
-  xudp: true
-  servername: www.apple.com
-- name: 🇩🇪 | @WhiteDNS | DE218|28.0MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 443
-  server: 152.233.20.206
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE219|27.9MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 2083
-  server: sino.bestsellers1.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.67 Safari/537.36
-    path: /
-  xudp: true
-  servername: sino.bestsellers1.site
-- client-fingerprint: chrome
-  name: 🇩🇪 | @WhiteDNS | DE220|26.8MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 2083
-  server: sino.bestsellers1.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.7
-        (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
-    path: /
-  xudp: true
-  servername: sino.bestsellers1.site
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 🇩🇪 | @WhiteDNS | DE221|25.6MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 2083
-  server: 91.107.247.173
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/63.0.3239.132 Safari/537.36
-    path: /
-  xudp: true
-  servername: sino.bestsellers1.site
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE222|25.3MB/s|DNSOK|GPT⁺-DE
-  port: 443
-  reality-opts:
-    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
-    short-id: d7de3a6ff4018957
-  server: 31.70.111.146
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
-  network: tcp
-  servername: www.apple.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE223|24.9MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE
-    short-id: 0fa4a0e2493392
-  server: defrnode.xyy123.bid
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8af93649-403b-46d8-9966-923d4c58402c
-  xudp: true
-  servername: p-y3-www-amazon-com-kalias.amazon.com
-- client-fingerprint: chrome
-  encryption: none
-  fingerprint: CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E
-  name: 🇩🇪 | @WhiteDNS | DE224|22.3MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 443
-  server: wwww.qarvian.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: 37857ebf-94bb-49a0-8ab9-548e64e57311
-  ws-opts:
-    headers:
-      Host: azdddaiji5.global.ssl.fastly.net.
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/67.0.3396.99 Safari/537.36
-    path: /
-  xudp: true
-  servername: google.com
-- name: 🇩🇪 | @WhiteDNS | DE225|22.2MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 443
-  server: 213.109.163.119
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE226|21.3MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 2087
-  server: tuyiuoyuthgfdbf.localip.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  ws-opts:
-    headers:
-      Host: tuyiuoyuthgfdbf.localip.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/41.0.2272.118 Safari/537.36
-    path: /hokm
-  xudp: true
-  servername: tuyiuoyuthgfdbf.localip.ir
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE227|19.9MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE189|31.4MB/s|DNSOK|GPT⁺-DE
   port: 443
   reality-opts:
     public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
@@ -298,38 +52,53 @@ proxies:
   uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
   network: tcp
   servername: github.com
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE228|18.3MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE190|30.1MB/s|DNSOK|GPT⁺-DE
   network: tcp
   port: 443
   reality-opts:
-    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
-    short-id: 9e4eced6e98ed4d4
-  server: 130.17.25.67
+    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
+    short-id: d7de3a6ff4018957
+  server: 31.70.111.146
   tls: true
   type: vless
   udp: true
-  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
+  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
   xudp: true
-  servername: github.com
+  servername: www.apple.com
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE229|9.0MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE191|29.9MB/s|DNSOK|GPT⁺-DE
   network: raw
   port: 443
   reality-opts:
-    public-key: XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE
-    short-id: 0fa4a0e2493392
-  server: defrnode.xyy123.bid
+    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
+    short-id: d7de3a6ff4018957
+  server: 31.70.111.146
   tls: true
   type: vless
   udp: true
-  uuid: 8af93649-403b-46d8-9966-923d4c58402c
+  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
   xudp: true
-  servername: p-y3-www-amazon-com-kalias.amazon.com
-- name: 🇩🇪 | @WhiteDNS | DE230|6.0MB/s|DNSOK|GPT⁺-DE
+  servername: www.apple.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇩🇪 | @WhiteDNS | DE192|29.6MB/s|DNSOK|GPT⁺-DE
+  port: 443
+  reality-opts:
+    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
+    short-id: d7de3a6ff4018957
+  server: 31.70.111.146
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
+  network: tcp
+  servername: www.apple.com
+- name: 🇩🇪 | @WhiteDNS | DE193|29.2MB/s|DNSOK|GPT⁺-DE
   password: None
   port: 443
   server: 149.36.50.129
@@ -345,7 +114,7 @@ proxies:
     headers: {}
     path:
     - /
-  name: 🇩🇪 | @WhiteDNS | DE231|5.3MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE194|28.2MB/s|DNSOK|GPT⁺-DE
   network: http
   port: 10803
   server: 5.45.97.147
@@ -355,31 +124,154 @@ proxies:
   udp: true
   uuid: 018fbfb7-721a-49a9-b9f5-fb55d92592b6
   xudp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE232|3.9MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 2087
-  server: 46.225.46.136
+- encryption: mlkem768x25519plus.native.0rtt.jIps_MB5K6LbgZo2P0kiiYniT7R97y7f6OSCHhkiVh8
+  name: 🇩🇪 | @WhiteDNS | DE195|26.5MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 8880
+  server: 51.38.127.93
+  type: vless
+  udp: true
+  uuid: 496dad36-5f9a-4574-9173-a2f80dde6660
+  xudp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇩🇪 | @WhiteDNS | DE196|26.4MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
+    short-id: 9e4eced6e98ed4d4
+  server: 130.17.25.67
   tls: true
   type: vless
   udp: true
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
+  xudp: true
+  servername: github.com
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇩🇪 | @WhiteDNS | DE197|25.3MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 2083
+  server: 91.107.247.173
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
   ws-opts:
     headers:
-      Host: hoert1rert.localip.ir
+      Host: ''
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J111M Build/LMY47V) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /
+  xudp: true
+  servername: sino.bestsellers1.site
+- client-fingerprint: chrome
+  name: 🇩🇪 | @WhiteDNS | DE198|24.3MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 2083
+  server: sino.bestsellers1.site
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  ws-opts:
+    headers:
+      Host: ''
       User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
         Chrome/41.0.2228.0 Safari/537.36
-    path: /hokm
+    path: /
   xudp: true
-  servername: hoert1rert.localip.ir
+  servername: sino.bestsellers1.site
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪 | @WhiteDNS | DE199|22.6MB/s|DNSOK|GPT⁺-DE
+  network: xhttp
+  port: 36393
+  reality-opts:
+    public-key: Gg7pyN2jbRUntSFM_lPGN6vALgaxGxQBiMtn78IXe1s
+    short-id: af25420695d47225
+  server: gerall-1.povrak.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: d497333b-e13d-427a-be58-d8b33711bb84
+  xhttp-opts:
+    host: speedtest.net
+    mode: auto
+    path: /
+  xudp: true
+  servername: speedtest.net
+- name: 🇩🇪 | @WhiteDNS | DE200|21.0MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 9002
+  server: 158.173.154.2
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇩🇪 | @WhiteDNS | DE201|19.2MB/s|DNSOK|GPT⁺-DE
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE
+    short-id: 0fa4a0e2493392
+  server: defrnode.xyy123.bid
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8af93649-403b-46d8-9966-923d4c58402c
+  xudp: true
+  servername: p-y3-www-amazon-com-kalias.amazon.com
+- client-fingerprint: chrome
+  encryption: none
+  fingerprint: CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E
+  name: 🇩🇪 | @WhiteDNS | DE202|16.2MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 443
+  server: wwww.qarvian.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 37857ebf-94bb-49a0-8ab9-548e64e57311
+  ws-opts:
+    headers:
+      Host: azdddaiji5.global.ssl.fastly.net.
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.71 Safari/537.36
+    path: /
+  xudp: true
+  servername: google.com
+- client-fingerprint: chrome
+  encryption: none
+  fingerprint: CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E
+  name: 🇩🇪 | @WhiteDNS | DE203|14.3MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 443
+  server: 146.75.59.186
+  tls: true
+  type: vless
+  udp: true
+  uuid: 37857ebf-94bb-49a0-8ab9-548e64e57311
+  ws-opts:
+    headers:
+      Host: pan2e.global.ssl.fastly.net.
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/67.0.3396.99 Safari/537.36
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+  xudp: true
+  servername: google.com
 - alpn:
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE233|3.9MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE204|7.7MB/s|DNSOK|GPT⁺-DE
   network: ws
   port: 2087
   server: hoert1rert.localip.ir
@@ -390,41 +282,142 @@ proxies:
   ws-opts:
     headers:
       Host: hoert1rert.localip.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/43.0.2357.65 Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; CPH1607 Build/MMB29M; wv) AppleWebKit/537.36
+        (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36
     path: /hokm
   xudp: true
   servername: hoert1rert.localip.ir
+- name: 🇩🇪 | @WhiteDNS | DE205|7.5MB/s|DNSOK|GPT⁺-DE
+  password: None
+  port: 443
+  server: 149.36.50.157
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇩🇪 | @WhiteDNS | DE206|7.1MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 443
+  server: 213.177.229.161
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇩🇪 | @WhiteDNS | DE207|7.0MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE
+    short-id: 0fa4a0e2493392
+  server: 64.118.158.41
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8af93649-403b-46d8-9966-923d4c58402c
+  xudp: true
+  servername: p-y3-www-amazon-com-kalias.amazon.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇩🇪 | @WhiteDNS | DE208|6.3MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE
+    short-id: 0fa4a0e2493392
+  server: defrnode.xyy123.bid
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8af93649-403b-46d8-9966-923d4c58402c
+  xudp: true
+  servername: p-y3-www-amazon-com-kalias.amazon.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇩🇪 | @WhiteDNS | DE209|6.3MB/s|DNSOK|GPT⁺-DE
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE
+    short-id: 0fa4a0e2493392
+  server: 64.118.158.41
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8af93649-403b-46d8-9966-923d4c58402c
+  xudp: true
+  servername: p-y3-www-amazon-com-kalias.amazon.com
+- cipher: aes-128-gcm
+  name: 🇩🇪 | @WhiteDNS | DE210|5.9MB/s|DNSOK|GPT⁺-FR
+  password: 6163d9d532e40f417dd8ebb5f9716495
+  port: 12238
+  server: 37.148.203.124
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 🇩🇪 | @WhiteDNS | DE211|1.6MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 2083
+  server: sino.bestsellers1.site
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/58.0.3029.110 Safari/537.36
+    path: /
+  xudp: true
+  servername: sino.bestsellers1.site
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇩🇪 | @WhiteDNS | DE212|1.3MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 443
+  server: 152.53.185.244
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5538eaaa-ac3d-4414-a1f5-280212949ed9
+  xudp: true
+  servername: demethod.chaosnetwork.app
 proxy-groups:
 - name: DE-Auto
   type: url-test
   proxies:
-  - 🇩🇪 | @WhiteDNS | DE208|34.0MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE209|33.8MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE210|33.5MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE211|33.1MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE212|32.7MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE213|31.2MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE214|29.6MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE215|28.5MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE216|28.4MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE217|28.4MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE218|28.0MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE219|27.9MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE220|26.8MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE221|25.6MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE222|25.3MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE223|24.9MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE224|22.3MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE225|22.2MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE226|21.3MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE227|19.9MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE228|18.3MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE229|9.0MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE230|6.0MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE231|5.3MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE232|3.9MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE233|3.9MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE187|35.7MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE188|31.6MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE189|31.4MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE190|30.1MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE191|29.9MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE192|29.6MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE193|29.2MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE194|28.2MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE195|26.5MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE196|26.4MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE197|25.3MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE198|24.3MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE199|22.6MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE200|21.0MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE201|19.2MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE202|16.2MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE203|14.3MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE204|7.7MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE205|7.5MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE206|7.1MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE207|7.0MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE208|6.3MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE209|6.3MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE210|5.9MB/s|DNSOK|GPT⁺-FR
+  - 🇩🇪 | @WhiteDNS | DE211|1.6MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE212|1.3MB/s|DNSOK|GPT⁺-DE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

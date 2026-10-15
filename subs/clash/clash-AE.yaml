@@ -1,0 +1,55 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- encryption: none
+  name: 🇦🇪 | @WhiteDNS | AE13|2.6MB/s|DNSOK|GPT⁺-AE
+  network: ws
+  port: 14430
+  server: 95.174.68.188
+  type: vless
+  udp: true
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  ws-opts:
+    headers:
+      Host: 95.174.68.188
+      User-Agent: Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/533.2 (KHTML,
+        like Gecko) Chrome/5.0.342.1 Safari/533.2
+    path: /vless
+  xudp: true
+- name: 🇦🇪 | @WhiteDNS | AE14|1.7MB/s|DNSOK|GPT⁺-AE
+  network: ws
+  port: 14430
+  server: 95.174.68.188
+  type: vless
+  udp: true
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  ws-opts:
+    headers:
+      Host: 95.174.68.188
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.77 Safari/537.36
+    path: /vless
+  xudp: true
+  servername: 95.174.68.188
+proxy-groups:
+- name: AE-Auto
+  type: url-test
+  proxies:
+  - 🇦🇪 | @WhiteDNS | AE13|2.6MB/s|DNSOK|GPT⁺-AE
+  - 🇦🇪 | @WhiteDNS | AE14|1.7MB/s|DNSOK|GPT⁺-AE
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,AE-Auto
