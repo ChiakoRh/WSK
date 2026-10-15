@@ -1,5 +1,5 @@
 proxies:
-- name: 🇱🇰 | @WhiteDNS | LK7|3.8MB/s|DNSOK|GPT⁺-SG
+- name: 🇱🇰 | @WhiteDNS | LK8|1.6MB/s|DNSOK|GPT⁺-SG
   network: ws
   port: 80
   server: support.zoom.us
@@ -9,12 +9,30 @@ proxies:
   ws-opts:
     headers:
       Host: free.sahanwickramasinghe.me
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/56.0.2924.87 Safari/537.36
+    path: /
+  xudp: true
+  servername: free.sahanwickramasinghe.me
+- client-fingerprint: chrome
+  name: 🇱🇰 | @WhiteDNS | LK9|1.4MB/s|DNSOK|GPT⁺-SG
+  network: ws
+  port: 8443
+  server: free.sahanwickramasinghe.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  ws-opts:
+    headers:
+      Host: free.sahanwickramasinghe.me
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/62.0.3202.94 Safari/537.36
     path: /
   xudp: true
-  servername: support.zoom.us
-- name: 🇱🇰 | @WhiteDNS | LK8|3.7MB/s|DNSOK|GPT⁺-SG
+  servername: free.sahanwickramasinghe.me
+- encryption: none
+  name: 🇱🇰 | @WhiteDNS | LK10|1.4MB/s|DNSOK|GPT⁺-SG
   network: ws
   port: 80
   server: support.zoom.us
@@ -25,70 +43,6 @@ proxies:
     headers:
       Host: free.sahanwickramasinghe.me
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
-    path: /
-  xudp: true
-  servername: free.sahanwickramasinghe.me
-- name: 🇱🇰 | @WhiteDNS | LK9|2.7MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 80
-  server: free.sahanwickramasinghe.me
-  type: vless
-  udp: true
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
-  ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.me
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J111M Build/LMY47V) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /
-  xudp: true
-- client-fingerprint: chrome
-  name: 🇱🇰 | @WhiteDNS | LK10|2.6MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 8443
-  server: centurylink.es
-  tls: true
-  type: vless
-  udp: true
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.me
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
-    path: /
-  xudp: true
-  servername: free.sahanwickramasinghe.me
-- client-fingerprint: chrome
-  name: 🇱🇰 | @WhiteDNS | LK11|2.6MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 8443
-  server: free.sahanwickramasinghe.me
-  tls: true
-  type: vless
-  udp: true
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.me
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/41.0.2272.101 Safari/537.36
-    path: /
-  xudp: true
-  servername: free.sahanwickramasinghe.me
-- encryption: none
-  name: 🇱🇰 | @WhiteDNS | LK12|2.6MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 80
-  server: support.zoom.us
-  type: vless
-  udp: true
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
-  ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.me
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/41.0.2228.0 Safari/537.36
+        like Gecko) Chrome/70.0.3538.110 Safari/537.36
     path: /
   xudp: true

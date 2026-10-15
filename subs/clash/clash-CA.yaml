@@ -13,14 +13,22 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇦 | @WhiteDNS | CA156|5.4MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA63|4.9MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  port: 8080
+  server: milo.rubinaz.xyz
+  type: vless
+  udp: true
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  xudp: true
+- name: 🇨🇦 | @WhiteDNS | CA64|4.1MB/s|DNSOK|GPT⁺-CA
   port: 8080
   server: milo.rubinaz.xyz
   type: vless
   udp: true
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   network: tcp
-- name: 🇨🇦 | @WhiteDNS | CA157|5.3MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA65|2.9MB/s|DNSOK|GPT⁺-CA
   network: tcp
   port: 8080
   server: milo.rubinaz.xyz
@@ -29,7 +37,15 @@ proxies:
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   xudp: true
   servername: milo.rubinaz.xyz
-- name: 🇨🇦 | @WhiteDNS | CA158|5.0MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA66|2.9MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 9443
+  server: 198.44.157.19
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA67|2.9MB/s|DNSOK|GPT⁺-CA
   network: raw
   port: 8080
   server: milo.rubinaz.xyz
@@ -39,7 +55,7 @@ proxies:
   xudp: true
   servername: milo.rubinaz.xyz
 - encryption: none
-  name: 🇨🇦 | @WhiteDNS | CA159|4.8MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA68|2.6MB/s|DNSOK|GPT⁺-CA
   network: raw
   port: 8080
   server: milo.rubinaz.xyz
@@ -47,94 +63,16 @@ proxies:
   udp: true
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   xudp: true
-- name: 🇨🇦 | @WhiteDNS | CA160|4.3MB/s|DNSOK|GPT⁺-CA
-  network: tcp
-  port: 8080
-  server: milo.rubinaz.xyz
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  xudp: true
-- client-fingerprint: chrome
-  name: 🇨🇦 | @WhiteDNS | CA161|3.2MB/s|DNSOK|GPT⁺-CA
-  password: Trojan@82164024
-  port: 443
-  server: ca.tronsg.com
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-  network: tcp
-  sni: ca.tronsg.com
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  encryption: mlkem768x25519plus.native.0rtt.1ks9w3xheismkmChIQKAyTwfVtL0ctBVR_vK_ePlHRQ
-  name: 🇨🇦 | @WhiteDNS | CA162|3.1MB/s|DNSOK|GPT⁺-TR
-  network: xhttp
-  port: 443
-  server: 92.223.124.62
-  tls: true
-  type: vless
-  udp: true
-  uuid: 03b0a000-a9f1-4ced-8a13-00e807d8b998
-  xhttp-opts:
-    host: gc-mci-98x7a.helllo.com.tr
-    mode: packet-up
-    path: /w10
-    reuse-settings:
-      c-max-reuse-times: '0'
-      h-max-request-times: 800-1200
-      h-max-reusable-secs: 1800-3000
-      max-concurrency: 16-32
-      max-connections: '0'
-    sc-max-each-post-bytes: 1000000
-    sc-min-posts-interval-ms: 5
-    x-padding-bytes: 100-500
-  xudp: true
-  servername: gcore.com
-- client-fingerprint: chrome
-  name: 🇨🇦 | @WhiteDNS | CA163|2.8MB/s|DNSOK|GPT⁺-CA
-  password: Trojan@82164024
-  port: 443
-  server: ca.tronsg.com
-  skip-cert-verify: false
-  sni: ca.tronsg.com
-  type: trojan
-  udp: true
-  network: tcp
-- name: 🇨🇦 | @WhiteDNS | CA164|2.5MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 9443
-  server: 198.44.157.19
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  name: 🇨🇦 | @WhiteDNS | CA165|2.4MB/s|DNSOK|GPT⁺-CA
-  network: tcp
-  password: Trojan@82164024
-  port: 443
-  server: ca.tronsg.com
-  skip-cert-verify: false
-  sni: ca.tronsg.com
-  type: trojan
-  udp: true
 proxy-groups:
 - name: CA-Auto
   type: url-test
   proxies:
-  - 🇨🇦 | @WhiteDNS | CA156|5.4MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA157|5.3MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA158|5.0MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA159|4.8MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA160|4.3MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA161|3.2MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA162|3.1MB/s|DNSOK|GPT⁺-TR
-  - 🇨🇦 | @WhiteDNS | CA163|2.8MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA164|2.5MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA165|2.4MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA63|4.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA64|4.1MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA65|2.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA66|2.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA67|2.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA68|2.6MB/s|DNSOK|GPT⁺-CA
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

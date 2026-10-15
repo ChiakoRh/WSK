@@ -1,7 +1,7 @@
 proxies:
-- alterId: 0
+- alterId: '0'
   cipher: auto
-  name: 🇹🇼 | @WhiteDNS | TW21|1.6MB/s|DNSOK|GPT⁺-TW
+  name: 🇹🇼 | @WhiteDNS | TW17|1.8MB/s|DNSOK|GPT⁺-TW
   network: ws
   port: 443
   server: fujrdt.d6f54hd1j.cc
@@ -16,13 +16,20 @@ proxies:
     path: /
   xudp: true
   servername: fujrdt.d6f54hd1j.cc
-- fingerprint: ''
-  name: 🇹🇼 | @WhiteDNS | TW22|861KB/s|DNSOK|GPT⁺-TW
-  password: ec74bb6a86c2
+- alterId: '0'
+  cipher: auto
+  name: 🇹🇼 | @WhiteDNS | TW18|1.8MB/s|DNSOK|GPT⁺-TW
+  network: ws
   port: 443
-  server: er8u54dh.df6h451rh.xin
-  skip-cert-verify: true
-  sni: px.ads.linkedin.com
-  type: anytls
+  server: fujrdt.d6f54hd1j.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
   udp: true
-  username: ec74bb6a86c2
+  uuid: d877dc6f-7323-4b47-a7dd-14228cbae854
+  ws-opts:
+    headers:
+      Host: fujrdt.d6f54hd1j.cc
+    path: /
+  xudp: true
+  servername: fujrdt.d6f54hd1j.cc
