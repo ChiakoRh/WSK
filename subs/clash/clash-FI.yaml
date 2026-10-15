@@ -13,7 +13,30 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇫🇮 | @WhiteDNS | FI169|21.0MB/s|DNSOK|GPT⁺-FI
+- encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI180|21.1MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 2052
+  server: edge10.cyrionflare.com
+  type: vless
+  udp: true
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  xudp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇮 | @WhiteDNS | FI181|6.2MB/s|DNSOK|GPT⁺-FI
+  password: Pzlcb_PeV3uRgiC2NNoNKw
+  port: 39221
+  server: b2a2.velqixa.ir
+  type: ss
+  udp: true
+- name: 🇫🇮 | @WhiteDNS | FI182|6.1MB/s|DNSOK|GPT⁺-FI
+  port: 2052
+  server: edge10.cyrionflare.com
+  type: vless
+  udp: true
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  network: tcp
+- name: 🇫🇮 | @WhiteDNS | FI183|5.7MB/s|DNSOK|GPT⁺-FI
   network: raw
   port: 2052
   server: edge10.cyrionflare.com
@@ -21,42 +44,22 @@ proxies:
   udp: true
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   xudp: true
-- name: 🇫🇮 | @WhiteDNS | FI170|19.8MB/s|DNSOK|GPT⁺-FI
-  port: 2052
-  server: edge10.cyrionflare.com
-  type: vless
-  udp: true
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  network: tcp
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
+- client-fingerprint: edge
   encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI171|7.2MB/s|DNSOK|GPT⁺-FI
-  network: xhttp
-  port: 443
-  server: b3.mobilleali.ir
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI184|5.0MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 8449
+  reality-opts:
+    public-key: WBkO_JIRKVjfwh7GlIIACmAJaVFobgm_EebPZgk7ijU
+    short-id: c374306818a47741
+  server: 87.242.95.77
   tls: true
   type: vless
   udp: true
-  uuid: 71121d66-efeb-4301-aff1-57986273d279
-  xhttp-opts:
-    host: fanland1.varzeshfotsal.IR
-    mode: auto
-    sc-max-each-post-bytes: 1000000
-    sc-min-posts-interval-ms: 30
-    x-padding-bytes: 100-1000
+  uuid: 30292475-4666-4c26-bcb2-338a0919958b
   xudp: true
-  servername: fanland1.varzeshfotsal.IR
-- name: 🇫🇮 | @WhiteDNS | FI172|6.9MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 2052
-  server: edge10.cyrionflare.com
-  type: vless
-  udp: true
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  xudp: true
+  servername: meadow.lalibobi.online
 - alpn:
   - ''
   alterId: '0'
@@ -67,7 +70,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI173|4.4MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI185|3.0MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 52080
   server: 185.212.149.7
@@ -77,6 +80,21 @@ proxies:
   udp: true
   uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
   xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI186|2.2MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 7879
+  reality-opts:
+    public-key: 0PVs0FZprxXi0bV-YX-SkyAx6a_9GHjSZ6hpCpa1lnE
+    short-id: 63ca289314edc51b
+  server: 79.175.136.238
+  tls: true
+  type: vless
+  udp: true
+  uuid: bd5ea9bc-16ec-408e-b933-4219ed022de1
+  xudp: true
+  servername: account.samsung.com
 - alpn:
   - ''
   alterId: '0'
@@ -87,7 +105,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI174|2.7MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI187|2.0MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
@@ -97,16 +115,34 @@ proxies:
   udp: true
   uuid: aeb3c019-ae83-4677-af97-846baa787ad5
   xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI188|1.2MB/s|DNSOK|GPT⁺-FI
+  network: raw
+  port: 7879
+  reality-opts:
+    public-key: 0PVs0FZprxXi0bV-YX-SkyAx6a_9GHjSZ6hpCpa1lnE
+    short-id: 63ca289314edc51b
+  server: 79.175.136.238
+  tls: true
+  type: vless
+  udp: true
+  uuid: bd5ea9bc-16ec-408e-b933-4219ed022de1
+  xudp: true
+  servername: account.samsung.com
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI169|21.0MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI170|19.8MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI171|7.2MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI172|6.9MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI173|4.4MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI174|2.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI180|21.1MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI181|6.2MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI182|6.1MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI183|5.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI184|5.0MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI185|3.0MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI186|2.2MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI187|2.0MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI188|1.2MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

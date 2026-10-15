@@ -13,9 +13,24 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- encryption: mlkem768x25519plus.native.0rtt.8coDSPak1XyXeVJvAxkcEbuiLNE9MgrZEDKsHRzhCj8
+  http-opts:
+    headers:
+      Host:
+      - Frtls.shopmarket
+    path:
+    - /@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---
+  name: 🇬🇧 | @WhiteDNS | GB65|26.1MB/s|DNSOK|GPT⁺-DE
+  network: http
+  port: 2091
+  server: 2.31.10.158
+  type: vless
+  udp: true
+  uuid: b43bdf55-b43d-4fda-8a30-a55373a5fdf5
+  xudp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB48|21.8MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB66|22.5MB/s|DNSOK|GPT⁺-GB
   network: raw
   port: 443
   reality-opts:
@@ -28,33 +43,33 @@ proxies:
   uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
   xudp: true
   servername: speed.cloudflare.com
-- name: 🇬🇧 | @WhiteDNS | GB49|20.8MB/s|DNSOK|GPT⁺-GB
-  password: None
-  port: 443
-  server: 212.102.63.61
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB50|20.2MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB67|18.3MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 9443
-  server: 84.17.50.129
+  server: 84.233.178.33
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB51|19.0MB/s|DNSOK|GPT⁺-GB
-  password: ''
+- name: 🇬🇧 | @WhiteDNS | GB68|17.1MB/s|DNSOK|GPT⁺-GB
+  password: None
   port: 443
-  server: 84.17.50.193
+  server: 37.120.233.50
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB69|17.1MB/s|DNSOK|GPT⁺-GB
+  password: None
+  port: 443
+  server: 37.120.233.18
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB52|7.3MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB70|6.7MB/s|DNSOK|GPT⁺-GB
   port: 443
   reality-opts:
     public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
@@ -68,8 +83,9 @@ proxies:
   network: tcp
   servername: speed.cloudflare.com
 - client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB53|6.4MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB71|6.5MB/s|DNSOK|GPT⁺-GB
   network: tcp
   port: 443
   reality-opts:
@@ -82,52 +98,32 @@ proxies:
   uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
   xudp: true
   servername: speed.cloudflare.com
-- name: 🇬🇧 | @WhiteDNS | GB54|6.4MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 443
-  server: 185.164.138.156
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB55|6.3MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 9443
-  server: 84.233.178.33
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB56|5.3MB/s|DNSOK|GPT⁺-GB
-  password: None
-  port: 443
-  server: 37.120.233.50
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB57|2.4MB/s|DNSOK|GPT⁺-RO
-  password: ''
-  port: 443
-  server: 185.163.110.194
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+- alpn:
+  - ''
+  alterId: '2'
+  cipher: auto
+  name: 🇬🇧 | @WhiteDNS | GB72|622KB/s|DNSOK|GPT⁺-GB
+  network: tcp
+  port: 30836
+  server: v36.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
 proxy-groups:
 - name: GB-Auto
   type: url-test
   proxies:
-  - 🇬🇧 | @WhiteDNS | GB48|21.8MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB49|20.8MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB50|20.2MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB51|19.0MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB52|7.3MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB53|6.4MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB54|6.4MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB55|6.3MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB56|5.3MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB57|2.4MB/s|DNSOK|GPT⁺-RO
+  - 🇬🇧 | @WhiteDNS | GB65|26.1MB/s|DNSOK|GPT⁺-DE
+  - 🇬🇧 | @WhiteDNS | GB66|22.5MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB67|18.3MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB68|17.1MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB69|17.1MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB70|6.7MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB71|6.5MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB72|622KB/s|DNSOK|GPT⁺-GB
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

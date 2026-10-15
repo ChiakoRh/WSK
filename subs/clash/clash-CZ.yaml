@@ -13,15 +13,68 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇿 | @WhiteDNS | CZ7|5.3MB/s|DNSOK|GPT⁺-CZ
-  password: None
-  port: 443
-  server: 185.216.35.66
+- name: 🇨🇿 | @WhiteDNS | CZ10|26.4MB/s|DNSOK|GPT⁺-CZ
+  password: ''
+  port: 9443
+  server: 152.233.16.174
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇨🇿 | @WhiteDNS | CZ8|1.2MB/s|DNSOK|GPT⁺-DE
+- name: 🇨🇿 | @WhiteDNS | CZ11|5.7MB/s|DNSOK|GPT⁺-CZ
+  password: ''
+  port: 443
+  server: 185.216.35.130
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- encryption: none
+  name: 🇨🇿 | @WhiteDNS | CZ12|2.2MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 2052
+  server: 172.64.150.43
+  type: vless
+  udp: true
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  ws-opts:
+    headers:
+      Host: eu02.123450908.xyz
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J730GM Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /rain1226
+  xudp: true
+  servername: eu02.123450908.xyz
+- name: 🇨🇿 | @WhiteDNS | CZ13|1.7MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 2052
+  server: 172.64.229.129
+  type: vless
+  udp: true
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  ws-opts:
+    headers:
+      Host: eu02.123450908.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.117 Safari/537.36
+    path: /rain1226
+  xudp: true
+- encryption: none
+  name: 🇨🇿 | @WhiteDNS | CZ14|1.7MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 2052
+  server: eu02.123450908.xyz
+  type: vless
+  udp: true
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  ws-opts:
+    headers:
+      Host: eu02.123450908.xyz
+      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/42.0.2311.135 Safari/537.36
+    path: /rain1226
+  xudp: true
+- name: 🇨🇿 | @WhiteDNS | CZ15|985KB/s|DNSOK|GPT⁺-DE
   network: ws
   port: 2052
   server: 104.18.0.181
@@ -31,17 +84,20 @@ proxies:
   ws-opts:
     headers:
       Host: eu02.123450908.xyz
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G610M Build/NRD90M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/67.0.3396.87 Safari/537.36
     path: /rain1226
   xudp: true
-  servername: eu02.123450908.xyz
 proxy-groups:
 - name: CZ-Auto
   type: url-test
   proxies:
-  - 🇨🇿 | @WhiteDNS | CZ7|5.3MB/s|DNSOK|GPT⁺-CZ
-  - 🇨🇿 | @WhiteDNS | CZ8|1.2MB/s|DNSOK|GPT⁺-DE
+  - 🇨🇿 | @WhiteDNS | CZ10|26.4MB/s|DNSOK|GPT⁺-CZ
+  - 🇨🇿 | @WhiteDNS | CZ11|5.7MB/s|DNSOK|GPT⁺-CZ
+  - 🇨🇿 | @WhiteDNS | CZ12|2.2MB/s|DNSOK|GPT⁺-DE
+  - 🇨🇿 | @WhiteDNS | CZ13|1.7MB/s|DNSOK|GPT⁺-DE
+  - 🇨🇿 | @WhiteDNS | CZ14|1.7MB/s|DNSOK|GPT⁺-DE
+  - 🇨🇿 | @WhiteDNS | CZ15|985KB/s|DNSOK|GPT⁺-DE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -1,0 +1,51 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 🇭🇳 | @WhiteDNS | HN3|21.1MB/s|DNSOK|GPT⁺-NL
+  network: grpc
+  port: 443
+  server: media-origin.lovkisport.blog
+  tls: true
+  type: vless
+  udp: true
+  uuid: f310a861-cca2-4f6f-8db2-30102fccd0ae
+  xudp: true
+  servername: media-origin.lovkisport.blog
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 🇭🇳 | @WhiteDNS | HN4|11.9MB/s|DNSOK|GPT⁺-NL
+  network: grpc
+  port: 443
+  server: 150.129.10.133
+  tls: true
+  type: vless
+  udp: true
+  uuid: f310a861-cca2-4f6f-8db2-30102fccd0ae
+  xudp: true
+  servername: media-origin.lovkisport.blog
+proxy-groups:
+- name: HN-Auto
+  type: url-test
+  proxies:
+  - 🇭🇳 | @WhiteDNS | HN3|21.1MB/s|DNSOK|GPT⁺-NL
+  - 🇭🇳 | @WhiteDNS | HN4|11.9MB/s|DNSOK|GPT⁺-NL
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,HN-Auto
