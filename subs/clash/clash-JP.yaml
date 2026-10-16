@@ -13,38 +13,22 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP122|1.6MB/s|DNSOK|GPT⁺-JP
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: 9ZCYjybxMQ7JpE39B8u_Bo-alI1LIbt5ER0E-4yMjiM
-    short-id: ea36c03d86f91287
-  server: 142.91.108.25
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
-  xudp: true
-  servername: jp3.nztvpn.com
 - client-fingerprint: ios
-  name: 🇯🇵 | @WhiteDNS | JP123|1.6MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP421|1.7MB/s|DNSOK|GPT⁺-JP
+  network: tcp
   port: 443
   reality-opts:
     public-key: hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI
     short-id: b51e057820d3e14c
   server: 43.167.232.174
-  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: 0fd46529-707f-4d33-899b-598f5f4acffa
-  network: tcp
+  xudp: true
   servername: www.microsoft.com
 - client-fingerprint: random
-  name: 🇯🇵 | @WhiteDNS | JP124|1.5MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP422|1.6MB/s|DNSOK|GPT⁺-JP
   network: raw
   port: 443
   reality-opts:
@@ -59,7 +43,7 @@ proxies:
   servername: www.microsoft.com
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP125|1.5MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP423|1.3MB/s|DNSOK|GPT⁺-JP
   port: 443
   reality-opts:
     public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
@@ -75,8 +59,8 @@ proxies:
 - client-fingerprint: random
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP126|1.3MB/s|DNSOK|GPT⁺-JP
-  network: raw
+  name: 🇯🇵 | @WhiteDNS | JP424|1.3MB/s|DNSOK|GPT⁺-JP
+  network: tcp
   port: 443
   reality-opts:
     public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
@@ -88,22 +72,46 @@ proxies:
   uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
   xudp: true
   servername: www.amazon.com
+- name: 🇯🇵 | @WhiteDNS | JP425|1.3MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 20802
+  server: 152.69.192.144
+  type: vless
+  udp: true
+  uuid: ac76a374-7447-4dab-bfa9-b7f83a7a7946
+  xudp: true
 - client-fingerprint: ios
-  name: 🇯🇵 | @WhiteDNS | JP127|1.3MB/s|DNSOK|GPT⁺-JP
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP426|1.3MB/s|DNSOK|GPT⁺-JP
   network: tcp
   port: 443
   reality-opts:
-    public-key: hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI
-    short-id: b51e057820d3e14c
-  server: 43.167.232.174
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  server: 153.121.36.102
   tls: true
   type: vless
   udp: true
-  uuid: 0fd46529-707f-4d33-899b-598f5f4acffa
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
   xudp: true
-  servername: www.microsoft.com
+  servername: www.amazon.com
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP427|1.2MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 35544
+  reality-opts:
+    public-key: HrcXRHtsitc_AVlN-_8fZuRgaP-Mqa_9JJotI9OnkVc
+    short-id: 25c79e5856c7
+  server: funagfrdfs.alixxplay.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  xudp: true
+  servername: iosapps.itunes.apple.com
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP128|1.0MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP428|1.2MB/s|DNSOK|GPT⁺-JP
   network: tcp
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   port: 8886
@@ -112,17 +120,34 @@ proxies:
   sni: 45.32.52.173
   type: trojan
   udp: true
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP429|1.0MB/s|DNSOK|GPT⁺-JP
+  port: 443
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  server: t9.qifei.app
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+  network: tcp
+  servername: www.amazon.com
 proxy-groups:
 - name: JP-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP122|1.6MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP123|1.6MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP124|1.5MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP125|1.5MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP126|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP127|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP128|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP421|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP422|1.6MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP423|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP424|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP425|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP426|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP427|1.2MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP428|1.2MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP429|1.0MB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

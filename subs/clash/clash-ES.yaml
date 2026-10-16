@@ -13,22 +13,26 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- down: ''
-  fingerprint: ''
-  name: 🇪🇸 | @WhiteDNS | ES13|15.0MB/s|DNSOK|GPT⁺-ES
-  obfs: ''
-  obfs-password: ''
-  password: 8b64b840-a48d-4ac0-b10f-8f7d7081a0f1
-  port: 18333
-  server: es2.xiaoliyu.cyou
-  skip-cert-verify: true
-  sni: es2.xiaoliyu.cyou
-  type: hysteria2
-  up: ''
-- name: 🇪🇸 | @WhiteDNS | ES14|6.5MB/s|DNSOK|GPT⁺-ES
+- name: 🇪🇸 | @WhiteDNS | ES16|21.4MB/s|DNSOK|GPT⁺-ES
   password: ''
   port: 443
   server: 130.195.250.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇪🇸 | @WhiteDNS | ES17|20.6MB/s|DNSOK|GPT⁺-ES
+  password: None
+  port: 443
+  server: 130.195.250.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇪🇸 | @WhiteDNS | ES18|6.0MB/s|DNSOK|GPT⁺-ES
+  password: None
+  port: 443
+  server: 82.102.17.178
   skip-cert-verify: true
   tls: true
   type: http
@@ -37,8 +41,9 @@ proxy-groups:
 - name: ES-Auto
   type: url-test
   proxies:
-  - 🇪🇸 | @WhiteDNS | ES13|15.0MB/s|DNSOK|GPT⁺-ES
-  - 🇪🇸 | @WhiteDNS | ES14|6.5MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES16|21.4MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES17|20.6MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES18|6.0MB/s|DNSOK|GPT⁺-ES
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
