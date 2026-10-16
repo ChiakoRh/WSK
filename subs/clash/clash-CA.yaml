@@ -13,15 +13,16 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇦 | @WhiteDNS | CA65|3.8MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 9443
-  server: 198.44.157.19
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA66|3.7MB/s|DNSOK|GPT⁺-CA
+- encryption: none
+  name: 🇨🇦 | @WhiteDNS | CA57|4.5MB/s|DNSOK|GPT⁺-CA
+  network: raw
+  port: 8080
+  server: milo.rubinaz.xyz
+  type: vless
+  udp: true
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  xudp: true
+- name: 🇨🇦 | @WhiteDNS | CA58|4.1MB/s|DNSOK|GPT⁺-CA
   network: tcp
   port: 8080
   server: milo.rubinaz.xyz
@@ -29,15 +30,43 @@ proxies:
   udp: true
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   xudp: true
-- name: 🇨🇦 | @WhiteDNS | CA67|3.0MB/s|DNSOK|GPT⁺-CA
+- client-fingerprint: chrome
+  name: 🇨🇦 | @WhiteDNS | CA59|3.9MB/s|DNSOK|GPT⁺-CA
+  password: Trojan@82164024
+  port: 443
+  server: ca.tronsg.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  network: tcp
+  sni: ca.tronsg.com
+- name: 🇨🇦 | @WhiteDNS | CA60|3.0MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 443
-  server: 206.223.161.47
+  server: 206.223.183.16
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA68|2.9MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA61|3.0MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 9443
+  server: 198.44.157.27
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  name: 🇨🇦 | @WhiteDNS | CA62|2.8MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  password: Trojan@82164024
+  port: 443
+  server: ca.tronsg.com
+  skip-cert-verify: false
+  sni: ca.tronsg.com
+  type: trojan
+  udp: true
+- name: 🇨🇦 | @WhiteDNS | CA63|2.5MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 443
   server: 23.169.224.34
@@ -45,7 +74,50 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA69|2.7MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA64|2.4MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 9443
+  server: 198.44.157.19
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  name: 🇨🇦 | @WhiteDNS | CA65|2.4MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  password: Trojan@82164024
+  port: 443
+  server: ca.tronsg.com
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+  sni: ca.tronsg.com
+- name: 🇨🇦 | @WhiteDNS | CA66|2.2MB/s|DNSOK|GPT⁺-CA
+  port: 8080
+  server: milo.rubinaz.xyz
+  type: vless
+  udp: true
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  network: tcp
+- name: 🇨🇦 | @WhiteDNS | CA67|1.5MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 443
+  server: 206.223.161.47
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  name: 🇨🇦 | @WhiteDNS | CA68|1.3MB/s|DNSOK|GPT⁺-CA
+  password: Trojan@82164024
+  port: 443
+  server: ca.tronsg.com
+  skip-cert-verify: false
+  sni: ca.tronsg.com
+  type: trojan
+  udp: true
+  network: tcp
+- name: 🇨🇦 | @WhiteDNS | CA69|1.3MB/s|DNSOK|GPT⁺-CA
   network: tcp
   port: 8080
   server: milo.rubinaz.xyz
@@ -54,38 +126,7 @@ proxies:
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   xudp: true
   servername: milo.rubinaz.xyz
-- name: 🇨🇦 | @WhiteDNS | CA70|2.5MB/s|DNSOK|GPT⁺-CA
-  port: 8080
-  server: milo.rubinaz.xyz
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  network: tcp
-- name: 🇨🇦 | @WhiteDNS | CA71|2.5MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 9443
-  server: 198.44.157.27
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- encryption: none
-  name: 🇨🇦 | @WhiteDNS | CA72|2.5MB/s|DNSOK|GPT⁺-CA
-  network: raw
-  port: 8080
-  server: milo.rubinaz.xyz
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  xudp: true
-- name: 🇨🇦 | @WhiteDNS | CA73|1.7MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 1080
-  server: 149.248.18.106
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA74|1.5MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA70|1.0MB/s|DNSOK|GPT⁺-CA
   network: raw
   port: 8080
   server: milo.rubinaz.xyz
@@ -98,16 +139,20 @@ proxy-groups:
 - name: CA-Auto
   type: url-test
   proxies:
-  - 🇨🇦 | @WhiteDNS | CA65|3.8MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA66|3.7MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA67|3.0MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA68|2.9MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA69|2.7MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA70|2.5MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA71|2.5MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA72|2.5MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA73|1.7MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA74|1.5MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA57|4.5MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA58|4.1MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA59|3.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA60|3.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA61|3.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA62|2.8MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA63|2.5MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA64|2.4MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA65|2.4MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA66|2.2MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA67|1.5MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA68|1.3MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA69|1.3MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA70|1.0MB/s|DNSOK|GPT⁺-CA
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

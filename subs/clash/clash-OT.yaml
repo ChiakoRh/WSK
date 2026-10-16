@@ -13,18 +13,31 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: ❓ | @WhiteDNS | OT574|2.4MB/s|DNSOK|GPT⁺
-  password: '1234'
-  port: 2080
-  server: 13.212.90.38
-  skip-cert-verify: true
-  type: http
-  username: '1234'
+- encryption: none
+  name: ❓ | @WhiteDNS | OT454|32.7MB/s|DNSOK|GPT⁺
+  network: raw
+  port: 10086
+  server: 204.216.216.23
+  type: vless
+  udp: true
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  xudp: true
+- client-fingerprint: chrome
+  name: ❓ | @WhiteDNS | OT455|1.1MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: inviting-ferret.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+  sni: inviting-ferret.rooster465.autos
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT574|2.4MB/s|DNSOK|GPT⁺
+  - ❓ | @WhiteDNS | OT454|32.7MB/s|DNSOK|GPT⁺
+  - ❓ | @WhiteDNS | OT455|1.1MB/s|DNSOK|GPT⁺-SG
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

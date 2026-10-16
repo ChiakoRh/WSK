@@ -1,7 +1,16 @@
 proxies:
-- alterId: '0'
+- name: 🇮🇳 | @WhiteDNS | IN39|2.6MB/s|DNSOK|GPT⁺-IN
+  password: ''
+  port: 1088
+  server: 144.24.111.128
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- alpn:
+  - ''
+  alterId: '0'
   cipher: auto
-  name: 🇮🇳 | @WhiteDNS | IN32|2.8MB/s|DNSOK|GPT⁺-IN
+  name: 🇮🇳 | @WhiteDNS | IN40|1.4MB/s|DNSOK|GPT⁺
   network: ws
   port: 80
   server: 152.67.8.205
@@ -14,10 +23,20 @@ proxies:
     headers: {}
     path: /
   xudp: true
-- name: 🇮🇳 | @WhiteDNS | IN33|2.1MB/s|DNSOK|GPT⁺-IN
-  password: ''
-  port: 1088
-  server: 144.24.111.128
-  skip-cert-verify: true
-  type: socks5
-  username: ''
+  servername: 152.67.8.205
+- alterId: '0'
+  cipher: auto
+  name: 🇮🇳 | @WhiteDNS | IN41|680KB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 80
+  server: 152.67.8.205
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  ws-opts:
+    headers:
+      Host: 152.67.8.205
+    path: /
+  xudp: true

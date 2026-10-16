@@ -13,20 +13,24 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇧🇬 | @WhiteDNS | BG9|6.0MB/s|DNSOK|GPT⁺-BG
-  password: None
-  port: 443
-  server: 185.94.192.210
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+- down: ''
+  fingerprint: ''
+  name: 🇧🇷 | @WhiteDNS | BR27|1.2MB/s|DNSOK|GPT⁺-BR
+  obfs: salamander
+  obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
+  password: CyG0RFxMjzs41uQD4OLuHQ==
+  port: 20000
+  server: 137.131.171.249
+  skip-cert-verify: false
+  sni: rmgyvpn.rest
+  type: hysteria2
+  up: ''
 proxy-groups:
-- name: BG-Auto
+- name: BR-Auto
   type: url-test
   proxies:
-  - 🇧🇬 | @WhiteDNS | BG9|6.0MB/s|DNSOK|GPT⁺-BG
+  - 🇧🇷 | @WhiteDNS | BR27|1.2MB/s|DNSOK|GPT⁺-BR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,BG-Auto
+- MATCH,BR-Auto
