@@ -1,22 +1,40 @@
 proxies:
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP123|1.5MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  server: 153.121.36.102
-  tls: true
-  type: vless
+- alterId: '0'
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP125|1.7MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: none
+    path: /cctv13.m3u8
   xudp: true
-  servername: www.amazon.com
-- client-fingerprint: random
-  name: 🇯🇵 | @WhiteDNS | JP124|1.5MB/s|DNSOK|GPT⁺-JP
-  network: raw
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP126|1.7MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: jp01.a0a.xyz
+    path: /cctv13.m3u8
+  xudp: true
+  servername: jp01.a0a.xyz
+- client-fingerprint: ios
+  name: 🇯🇵 | @WhiteDNS | JP127|1.5MB/s|DNSOK|GPT⁺-JP
+  network: tcp
   port: 443
   reality-opts:
     public-key: hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI
@@ -28,25 +46,9 @@ proxies:
   uuid: 0fd46529-707f-4d33-899b-598f5f4acffa
   xudp: true
   servername: www.microsoft.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP125|1.4MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  server: t9.qifei.app
-  tls: true
-  type: vless
-  udp: true
-  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
-  xudp: true
-  servername: www.amazon.com
 - client-fingerprint: random
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP126|1.3MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP128|1.4MB/s|DNSOK|GPT⁺-JP
   port: 443
   reality-opts:
     public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
@@ -59,22 +61,9 @@ proxies:
   uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
   network: tcp
   servername: www.amazon.com
-- client-fingerprint: ios
-  name: 🇯🇵 | @WhiteDNS | JP127|1.3MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI
-    short-id: b51e057820d3e14c
-  server: 43.167.232.174
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0fd46529-707f-4d33-899b-598f5f4acffa
-  servername: www.microsoft.com
 - client-fingerprint: random
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP128|1.3MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP129|1.4MB/s|DNSOK|GPT⁺-JP
   port: 443
   reality-opts:
     public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
@@ -88,39 +77,9 @@ proxies:
   network: tcp
   servername: s3.ap-east-1.amazonaws.com
 - client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP129|1.2MB/s|DNSOK|GPT⁺-JP
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  server: 133.242.187.161
-  tls: true
-  type: vless
-  udp: true
-  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
-  xudp: true
-  servername: s3.ap-east-1.amazonaws.com
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP130|1.2MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  server: 133.242.187.161
-  tls: true
-  type: vless
-  udp: true
-  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
-  xudp: true
-  servername: s3.ap-east-1.amazonaws.com
-- client-fingerprint: random
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP131|1.2MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP130|1.3MB/s|DNSOK|GPT⁺-JP
   network: raw
   port: 443
   reality-opts:
@@ -133,24 +92,9 @@ proxies:
   uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
   xudp: true
   servername: www.amazon.com
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP132|1.2MB/s|DNSOK|GPT⁺-JP
-  port: 443
-  reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  server: 153.121.36.102
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
-  network: tcp
-  servername: www.amazon.com
 - client-fingerprint: random
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP133|1.2MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP131|1.3MB/s|DNSOK|GPT⁺-JP
   port: 443
   reality-opts:
     public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
@@ -163,8 +107,51 @@ proxies:
   uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
   network: tcp
   servername: s3.ap-east-1.amazonaws.com
+- client-fingerprint: ios
+  name: 🇯🇵 | @WhiteDNS | JP132|1.3MB/s|DNSOK|GPT⁺-JP
+  port: 443
+  reality-opts:
+    public-key: hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI
+    short-id: b51e057820d3e14c
+  server: 43.167.232.174
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0fd46529-707f-4d33-899b-598f5f4acffa
+  network: tcp
+  servername: www.microsoft.com
 - client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP133|1.2MB/s|DNSOK|GPT⁺-JP
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 45.32.52.173
+  skip-cert-verify: true
+  sni: 45.32.52.173
+  type: trojan
+  udp: true
+  network: tcp
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
   name: 🇯🇵 | @WhiteDNS | JP134|1.2MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: None
+    path: /cctv13.m3u8
+  xudp: true
+  servername: None
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP135|1.0MB/s|DNSOK|GPT⁺-JP
   network: tcp
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   port: 8886
@@ -174,32 +161,16 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: random
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP135|1.0MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  server: t5.qifei.app
-  tls: true
-  type: vless
-  udp: true
-  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
-  xudp: true
-  servername: s3.ap-east-1.amazonaws.com
-- client-fingerprint: ios
-  name: 🇯🇵 | @WhiteDNS | JP136|622KB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP136|1.0MB/s|DNSOK|GPT⁺-JP
+  network: raw
   port: 443
   reality-opts:
     public-key: hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI
     short-id: b51e057820d3e14c
   server: 43.167.232.174
-  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: 0fd46529-707f-4d33-899b-598f5f4acffa
-  network: tcp
+  xudp: true
   servername: www.microsoft.com

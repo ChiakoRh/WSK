@@ -13,14 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: aes-256-gcm
-  name: 🇵🇱 | @WhiteDNS | PL78|21.8MB/s|DNSOK|GPT⁺-PL
-  password: itzvpn@321
-  port: 8388
-  server: 51.83.192.80
-  type: ss
-  udp: true
-- name: 🇵🇱 | @WhiteDNS | PL79|18.8MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL58|19.5MB/s|DNSOK|GPT⁺-PL
   password: None
   port: 443
   server: 37.120.156.34
@@ -28,21 +21,19 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇵🇱 | @WhiteDNS | PL80|6.2MB/s|DNSOK|GPT⁺-PL
-  password: None
-  port: 443
-  server: 37.120.156.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+- cipher: aes-256-gcm
+  name: 🇵🇱 | @WhiteDNS | PL59|6.2MB/s|DNSOK|GPT⁺-PL
+  password: itzvpn@321
+  port: 8388
+  server: 51.83.192.80
+  type: ss
+  udp: true
 proxy-groups:
 - name: PL-Auto
   type: url-test
   proxies:
-  - 🇵🇱 | @WhiteDNS | PL78|21.8MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL79|18.8MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL80|6.2MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL58|19.5MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL59|6.2MB/s|DNSOK|GPT⁺-PL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
