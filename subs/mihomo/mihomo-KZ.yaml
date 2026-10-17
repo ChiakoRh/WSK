@@ -1,29 +1,18 @@
 proxies:
-- client-fingerprint: chrome
-  name: 🇰🇿 | @WhiteDNS | KZ20|613KB/s|DNSOK|GPT⁺-KZ
-  port: 35728
-  reality-opts:
-    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
-    short-id: 69a2
-  server: 178.236.16.98
-  skip-cert-verify: true
-  tls: true
-  type: vless
+- alterId: 0
+  cipher: auto
+  name: 🇰🇿 | @WhiteDNS | KZ14|1.6MB/s|DNSOK|GPT⁺-KZ
+  network: ws
+  port: 80
+  server: 38.107.234.57
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
-  network: tcp
-  servername: yahoo.com
-- client-fingerprint: chrome
-  name: 🇰🇿 | @WhiteDNS | KZ21|519KB/s|DNSOK|GPT⁺-KZ
-  network: raw
-  port: 38065
-  reality-opts:
-    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
-    short-id: fa
-  server: 83.222.23.81
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  ws-opts:
+    headers:
+      Host: 38.107.234.57
+    path: /vmess/
   xudp: true
-  servername: yahoo.com
+  servername: 38.107.234.57

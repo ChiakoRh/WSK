@@ -13,26 +13,24 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- alpn:
-  - h3
-  down: ''
+- down: ''
   fingerprint: ''
-  name: 🇷🇺 | @WhiteDNS | RU38|3.4MB/s|DNSOK|GPT⁺-US
-  obfs: ''
-  obfs-password: ''
-  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
-  port: 2053
-  server: 194.87.118.184
-  skip-cert-verify: false
-  sni: match-stream.lovkisport.blog
+  name: 🇧🇷 | @WhiteDNS | BR9|1.5MB/s|DNSOK|GPT⁺-BR
+  obfs: salamander
+  obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
+  password: CyG0RFxMjzs41uQD4OLuHQ==
+  port: 20000
+  server: 137.131.171.249
+  skip-cert-verify: true
+  sni: rmgyvpn.rest
   type: hysteria2
   up: ''
 proxy-groups:
-- name: RU-Auto
+- name: BR-Auto
   type: url-test
   proxies:
-  - 🇷🇺 | @WhiteDNS | RU38|3.4MB/s|DNSOK|GPT⁺-US
+  - 🇧🇷 | @WhiteDNS | BR9|1.5MB/s|DNSOK|GPT⁺-BR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,RU-Auto
+- MATCH,BR-Auto

@@ -13,7 +13,21 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇹 | @WhiteDNS | IT388|30.4MB/s|DNSOK|GPT⁺-IT
+- client-fingerprint: chrome
+  name: 🇮🇹 | @WhiteDNS | IT128|37.8MB/s|DNSOK|GPT⁺-IT
+  port: 443
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  server: 195.231.37.150
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 244d9eab-3311-40c7-b47f-4968dc3088a6
+  network: tcp
+  servername: tcpit3.figurapn.ru
+- name: 🇮🇹 | @WhiteDNS | IT129|35.1MB/s|DNSOK|GPT⁺-IT
   password: ''
   port: 443
   server: 185.183.105.130
@@ -21,73 +35,28 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇮🇹 | @WhiteDNS | IT389|8.0MB/s|DNSOK|GPT⁺-IT
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇮🇹 | @WhiteDNS | IT130|8.0MB/s|DNSOK|GPT⁺-IT
   network: tcp
-  port: 10086
-  server: 204.216.216.23
+  port: 443
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  server: 195.231.37.150
+  tls: true
   type: vless
   udp: true
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  uuid: 244d9eab-3311-40c7-b47f-4968dc3088a6
   xudp: true
-- name: 🇮🇹 | @WhiteDNS | IT390|7.0MB/s|DNSOK|GPT⁺-IT
-  network: tcp
-  port: 10086
-  server: 204.216.216.23
-  type: vless
-  udp: true
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  xudp: true
-  servername: /?v2raynplus
-- encryption: none
-  name: 🇮🇹 | @WhiteDNS | IT391|5.8MB/s|DNSOK|GPT⁺-IT
-  network: tcp
-  port: 10086
-  server: 204.216.216.23
-  type: vless
-  udp: true
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  xudp: true
-  servername: /?bia_telegram@marambashi_marambashi_marambashi_marambashi
-- encryption: none
-  name: 🇮🇹 | @WhiteDNS | IT392|2.8MB/s|DNSOK|GPT⁺-IT
-  network: tcp
-  port: 10086
-  server: 204.216.216.23
-  type: vless
-  udp: true
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  xudp: true
-  servername: /?BIA_TELEGRAM@MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI
-- encryption: none
-  name: 🇮🇹 | @WhiteDNS | IT393|2.1MB/s|DNSOK|GPT⁺-IT
-  network: tcp
-  port: 10086
-  server: 204.216.216.23
-  type: vless
-  udp: true
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  xudp: true
-  servername: /
-- encryption: none
-  name: 🇮🇹 | @WhiteDNS | IT394|1.2MB/s|DNSOK|GPT⁺-IT
-  network: raw
-  port: 10086
-  server: 204.216.216.23
-  type: vless
-  udp: true
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  xudp: true
+  servername: tcpit3.figurapn.ru
 proxy-groups:
 - name: IT-Auto
   type: url-test
   proxies:
-  - 🇮🇹 | @WhiteDNS | IT388|30.4MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT389|8.0MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT390|7.0MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT391|5.8MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT392|2.8MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT393|2.1MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT394|1.2MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT128|37.8MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT129|35.1MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT130|8.0MB/s|DNSOK|GPT⁺-IT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
