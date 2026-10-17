@@ -13,20 +13,24 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇬🇪 | @WhiteDNS | GE2|5.4MB/s|DNSOK|GPT⁺-GE
-  password: ''
-  port: 443
-  server: 195.54.178.210
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+- down: ''
+  fingerprint: ''
+  name: 🇦🇺 | @WhiteDNS | AU13|1.5MB/s|DNSOK|GPT⁺-AU
+  obfs: salamander
+  obfs-password: b42d90fa667942aebc734d60
+  password: b42d90fa667942aebc734d60
+  port: 20000
+  server: 137.23.2.56
+  skip-cert-verify: false
+  sni: rmgyvpn.rest
+  type: hysteria2
+  up: ''
 proxy-groups:
-- name: GE-Auto
+- name: AU-Auto
   type: url-test
   proxies:
-  - 🇬🇪 | @WhiteDNS | GE2|5.4MB/s|DNSOK|GPT⁺-GE
+  - 🇦🇺 | @WhiteDNS | AU13|1.5MB/s|DNSOK|GPT⁺-AU
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,GE-Auto
+- MATCH,AU-Auto
