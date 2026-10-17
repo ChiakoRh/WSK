@@ -1,23 +1,24 @@
 proxies:
 - client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇮🇩 | @WhiteDNS | ID22|2.1MB/s|DNSOK|GPT⁺-ID
-  port: 16006
+  name: 🇮🇩 | @WhiteDNS | ID18|2.4MB/s|DNSOK|GPT⁺-ID
+  network: tcp
+  port: 29172
   reality-opts:
-    public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
+    public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
     short-id: ''
-  server: 103.172.197.3
-  skip-cert-verify: true
+  server: 103.172.197.2
   tls: true
   type: vless
   udp: true
-  uuid: f8c9d2a1-da40-4f90-b671-11772a0b13d6
-  network: tcp
-  servername: www.cloudflare.com
+  uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
+  xudp: true
+  servername: aws.amazon.com
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇮🇩 | @WhiteDNS | ID23|1.9MB/s|DNSOK|GPT⁺-ID
+  name: 🇮🇩 | @WhiteDNS | ID19|2.4MB/s|DNSOK|GPT⁺-ID
   network: raw
   port: 16006
   reality-opts:
@@ -32,7 +33,7 @@ proxies:
   servername: www.cloudflare.com
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇮🇩 | @WhiteDNS | ID24|1.7MB/s|DNSOK|GPT⁺-ID
+  name: 🇮🇩 | @WhiteDNS | ID20|2.2MB/s|DNSOK|GPT⁺-ID
   network: tcp
   port: 16006
   reality-opts:
@@ -43,5 +44,50 @@ proxies:
   type: vless
   udp: true
   uuid: f8c9d2a1-da40-4f90-b671-11772a0b13d6
-  xudp: true
   servername: www.cloudflare.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇮🇩 | @WhiteDNS | ID21|1.7MB/s|DNSOK|GPT⁺-ID
+  port: 29172
+  reality-opts:
+    public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
+    short-id: ''
+  server: 103.172.197.2
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
+  network: tcp
+  servername: aws.amazon.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇮🇩 | @WhiteDNS | ID22|1.1MB/s|DNSOK|GPT⁺-ID
+  port: 16006
+  reality-opts:
+    public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
+    short-id: ''
+  server: 103.172.197.3
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: f8c9d2a1-da40-4f90-b671-11772a0b13d6
+  network: tcp
+  servername: www.cloudflare.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇮🇩 | @WhiteDNS | ID23|1023KB/s|DNSOK|GPT⁺-ID
+  network: raw
+  port: 29172
+  reality-opts:
+    public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
+    short-id: ''
+  server: 103.172.197.2
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
+  xudp: true
+  servername: aws.amazon.com
