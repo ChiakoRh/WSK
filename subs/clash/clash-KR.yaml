@@ -14,37 +14,38 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR84|2.1MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR92|2.0MB/s|DNSOK|GPT⁺-KR
   network: tcp
   password: UX82473651
   port: 443
-  server: central-jawfish.rooster465.autos
+  server: pure-kodiak.rooster465.autos
   skip-cert-verify: false
-  sni: central-jawfish.rooster465.autos
+  sni: pure-kodiak.rooster465.autos
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR85|1.8MB/s|DNSOK|GPT⁺-KR
-  network: raw
+  name: 🇰🇷 | @WhiteDNS | KR93|1.8MB/s|DNSOK|GPT⁺-KR
   password: UX82473651
   port: 443
-  server: main-fawn.rooster465.autos
+  server: pure-kodiak.rooster465.autos
   skip-cert-verify: false
-  sni: main-fawn.rooster465.autos
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR86|1.8MB/s|DNSOK|GPT⁺-KR
   network: tcp
+  sni: pure-kodiak.rooster465.autos
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR94|1.8MB/s|DNSOK|GPT⁺-KR
   password: UX82473651
   port: 443
-  server: main-fawn.rooster465.autos
+  server: 3.34.131.153
   skip-cert-verify: false
-  sni: main-fawn.rooster465.autos
+  sni: pretty-rat.rooster465.autos
   type: trojan
   udp: true
+  network: tcp
 - client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR87|1.8MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR95|1.8MB/s|DNSOK|GPT⁺-KR
+  network: tcp
   password: UX82473651
   port: 443
   server: noted-cougar.rooster465.autos
@@ -52,9 +53,68 @@ proxies:
   sni: noted-cougar.rooster465.autos
   type: trojan
   udp: true
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR96|1.8MB/s|DNSOK|GPT⁺-KR
+  password: UX82473651
+  port: 443
+  server: noted-cougar.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+  network: tcp
+  sni: noted-cougar.rooster465.autos
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR97|1.8MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: 3.34.131.153
+  skip-cert-verify: false
+  sni: pretty-rat.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR98|1.8MB/s|DNSOK|GPT⁺-KR
+  password: UX82473651
+  port: 443
+  server: pure-kodiak.rooster465.autos
+  skip-cert-verify: false
+  sni: pure-kodiak.rooster465.autos
+  type: trojan
+  udp: true
   network: tcp
 - client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR88|1.8MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR99|1.8MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: main-fawn.rooster465.autos
+  skip-cert-verify: false
+  sni: main-fawn.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR100|1.8MB/s|DNSOK|GPT⁺-KR
+  password: UX82473651
+  port: 443
+  server: main-fawn.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  network: tcp
+  sni: main-fawn.rooster465.autos
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR101|1.7MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: optimum-snapper.rooster465.autos
+  skip-cert-verify: false
+  sni: optimum-snapper.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR102|1.7MB/s|DNSOK|GPT⁺-KR
   password: UX82473651
   port: 443
   server: optimum-snapper.rooster465.autos
@@ -63,9 +123,11 @@ proxies:
   type: trojan
   udp: true
   network: tcp
-- alterId: '0'
+- alpn:
+  - ''
+  alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR89|1.8MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR103|1.7MB/s|DNSOK|GPT⁺-KR
   network: ws
   port: 80
   server: 132.145.80.230
@@ -75,12 +137,72 @@ proxies:
   udp: true
   uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
   ws-opts:
-    headers:
-      Host: kr02.a0a.xyz
+    headers: {}
     path: /cctv13.m3u8
   xudp: true
 - client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR90|1.8MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR104|1.7MB/s|DNSOK|GPT⁺-KR
+  network: raw
+  password: UX82473651
+  port: 443
+  server: main-fawn.rooster465.autos
+  skip-cert-verify: false
+  sni: main-fawn.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR105|1.7MB/s|DNSOK|GPT⁺-KR
+  password: UX82473651
+  port: 443
+  server: pretty-rat.rooster465.autos
+  skip-cert-verify: true
+  sni: pretty-rat.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR106|1.7MB/s|DNSOK|GPT⁺-KR
+  password: UX82473651
+  port: 443
+  server: central-jawfish.rooster465.autos
+  skip-cert-verify: false
+  sni: central-jawfish.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR107|1.7MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: 3.35.168.225
+  skip-cert-verify: false
+  sni: noted-cougar.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR108|1.7MB/s|DNSOK|GPT⁺-KR
+  password: UX82473651
+  port: 443
+  server: 3.35.168.225
+  skip-cert-verify: true
+  sni: noted-cougar.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR109|1.7MB/s|DNSOK|GPT⁺-KR
+  password: UX82473651
+  port: 443
+  server: 43.201.100.203
+  skip-cert-verify: true
+  sni: optimum-snapper.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR110|1.7MB/s|DNSOK|GPT⁺-KR
+  network: tcp
   password: UX82473651
   port: 443
   server: pretty-rat.rooster465.autos
@@ -88,9 +210,120 @@ proxies:
   sni: pretty-rat.rooster465.autos
   type: trojan
   udp: true
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR111|1.7MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: 43.201.100.203
+  skip-cert-verify: false
+  sni: optimum-snapper.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR112|1.7MB/s|DNSOK|GPT⁺-KR
+  password: UX82473651
+  port: 443
+  server: main-fawn.rooster465.autos
+  skip-cert-verify: false
+  sni: main-fawn.rooster465.autos
+  type: trojan
+  udp: true
   network: tcp
 - client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR91|1.7MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR113|1.7MB/s|DNSOK|GPT⁺-KR
+  password: UX82473651
+  port: 443
+  server: optimum-snapper.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  network: tcp
+  sni: optimum-snapper.rooster465.autos
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR114|1.7MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: 3.35.207.188
+  skip-cert-verify: false
+  sni: main-fawn.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR115|1.6MB/s|DNSOK|GPT⁺-KR
+  password: UX82473651
+  port: 443
+  server: noted-cougar.rooster465.autos
+  skip-cert-verify: false
+  sni: noted-cougar.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- name: 🇰🇷 | @WhiteDNS | KR116|1.6MB/s|DNSOK|GPT⁺-KR
+  password: UX82473651
+  port: 443
+  server: 3.34.192.47
+  sni: central-jawfish.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR117|1.6MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: 3.36.50.213
+  skip-cert-verify: false
+  sni: pure-kodiak.rooster465.autos
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 🇰🇷 | @WhiteDNS | KR118|1.6MB/s|DNSOK|GPT⁺-KR
+  password: 1234!@#$
+  port: 1774
+  server: 49.254.204.134
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR119|1.5MB/s|DNSOK|GPT⁺-KR
+  network: raw
+  password: UX82473651
+  port: 443
+  server: optimum-snapper.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+  sni: optimum-snapper.rooster465.autos
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR120|1.4MB/s|DNSOK|GPT⁺-KR
+  network: raw
+  password: UX82473651
+  port: 443
+  server: optimum-snapper.rooster465.autos
+  skip-cert-verify: false
+  sni: optimum-snapper.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR121|1.4MB/s|DNSOK|GPT⁺-KR
+  password: UX82473651
+  port: 443
+  server: 3.35.207.188
+  skip-cert-verify: false
+  sni: main-fawn.rooster465.autos
+  type: trojan
+  udp: true
+  network: tcp
+- cipher: aes-256-cfb
+  name: 🇰🇷 | @WhiteDNS | KR122|1.3MB/s|DNSOK|GPT⁺-KR
+  password: 1234!@#$
+  port: 1774
+  server: 49.254.204.133
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR123|1.3MB/s|DNSOK|GPT⁺-KR
   network: raw
   password: UX82473651
   port: 443
@@ -99,21 +332,11 @@ proxies:
   sni: noted-cougar.rooster465.autos
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR92|1.7MB/s|DNSOK|GPT⁺-KR
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: noted-cougar.rooster465.autos
-  skip-cert-verify: true
-  sni: noted-cougar.rooster465.autos
-  type: trojan
-  udp: true
 - alpn:
   - ''
   alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR93|1.7MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR124|1.3MB/s|DNSOK|GPT⁺-KR
   network: ws
   port: 80
   server: 132.145.80.230
@@ -128,215 +351,8 @@ proxies:
   xudp: true
   servername: kr02.a0a.xyz
 - client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR94|1.7MB/s|DNSOK|GPT⁺-KR
-  password: UX82473651
-  port: 443
-  server: 3.35.207.188
-  skip-cert-verify: false
-  sni: main-fawn.rooster465.autos
-  type: trojan
-  udp: true
-  network: tcp
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 🇰🇷 | @WhiteDNS | KR95|1.7MB/s|DNSOK|GPT⁺-KR
-  network: http
-  port: 80
-  server: 217.142.138.61
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ac1b933d-afff-4487-93ef-f57130a55dff
-  xudp: true
-- client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR96|1.7MB/s|DNSOK|GPT⁺-KR
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: 3.35.207.188
-  skip-cert-verify: false
-  sni: main-fawn.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR97|1.7MB/s|DNSOK|GPT⁺-KR
-  password: UX82473651
-  port: 443
-  server: 3.35.168.225
-  skip-cert-verify: true
-  sni: noted-cougar.rooster465.autos
-  type: trojan
-  udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR98|1.7MB/s|DNSOK|GPT⁺-KR
-  password: UX82473651
-  port: 443
-  server: pretty-rat.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-  network: tcp
-  sni: pretty-rat.rooster465.autos
-- client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR99|1.7MB/s|DNSOK|GPT⁺-KR
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: optimum-snapper.rooster465.autos
-  skip-cert-verify: false
-  sni: optimum-snapper.rooster465.autos
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇰🇷 | @WhiteDNS | KR100|1.7MB/s|DNSOK|GPT⁺-KR
-  password: 1234!@#$
-  port: 1774
-  server: 49.254.204.133
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR101|1.6MB/s|DNSOK|GPT⁺-KR
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: 3.34.131.153
-  skip-cert-verify: false
-  sni: pretty-rat.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR102|1.5MB/s|DNSOK|GPT⁺-KR
-  network: raw
-  password: UX82473651
-  port: 443
-  server: optimum-snapper.rooster465.autos
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-  sni: optimum-snapper.rooster465.autos
-- client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR103|1.5MB/s|DNSOK|GPT⁺-KR
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: pretty-rat.rooster465.autos
-  skip-cert-verify: true
-  sni: pretty-rat.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR104|1.5MB/s|DNSOK|GPT⁺-KR
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: 3.34.192.47
-  skip-cert-verify: false
-  sni: central-jawfish.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR105|1.5MB/s|DNSOK|GPT⁺-KR
-  network: raw
-  password: UX82473651
-  port: 443
-  server: optimum-snapper.rooster465.autos
-  skip-cert-verify: false
-  sni: optimum-snapper.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR106|1.5MB/s|DNSOK|GPT⁺-KR
-  password: UX82473651
-  port: 443
-  server: main-fawn.rooster465.autos
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-  network: tcp
-  sni: main-fawn.rooster465.autos
-- alterId: 0
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR107|1.3MB/s|DNSOK|GPT⁺-KR
-  port: 443
-  server: 140.238.2.250
-  type: vmess
-  udp: true
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR108|1.3MB/s|DNSOK|GPT⁺-KR
-  password: UX82473651
-  port: 443
-  server: 3.34.131.153
-  skip-cert-verify: false
-  sni: pretty-rat.rooster465.autos
-  type: trojan
-  udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR109|1.3MB/s|DNSOK|GPT⁺-KR
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: 3.35.168.225
-  skip-cert-verify: false
-  sni: noted-cougar.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR110|1.3MB/s|DNSOK|GPT⁺-KR
-  password: UX82473651
-  port: 443
-  server: 43.201.100.203
-  skip-cert-verify: true
-  sni: optimum-snapper.rooster465.autos
-  type: trojan
-  udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR111|1.3MB/s|DNSOK|GPT⁺-KR
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: 43.201.100.203
-  skip-cert-verify: false
-  sni: optimum-snapper.rooster465.autos
-  type: trojan
-  udp: true
-- name: 🇰🇷 | @WhiteDNS | KR112|1.3MB/s|DNSOK|GPT⁺-KR
-  password: UX82473651
-  port: 443
-  server: 3.34.192.47
-  sni: central-jawfish.rooster465.autos
-  type: trojan
-  udp: true
-  network: tcp
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇰🇷 | @WhiteDNS | KR113|1.3MB/s|DNSOK|GPT⁺-KR
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
-    short-id: ca193e889d958f81
-  server: 64.176.231.183
-  tls: true
-  type: vless
-  udp: true
-  uuid: 583cc910-b57c-4dd0-a4a7-cea51a30b032
-  xudp: true
-  servername: www.apple.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇰🇷 | @WhiteDNS | KR114|1.3MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR125|1.3MB/s|DNSOK|GPT⁺-KR
   port: 443
   reality-opts:
     public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
@@ -350,22 +366,7 @@ proxies:
   network: tcp
   servername: www.apple.com
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇰🇷 | @WhiteDNS | KR115|1.3MB/s|DNSOK|GPT⁺-KR
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
-    short-id: ca193e889d958f81
-  server: 64.176.231.183
-  tls: true
-  type: vless
-  udp: true
-  uuid: 583cc910-b57c-4dd0-a4a7-cea51a30b032
-  xudp: true
-  servername: www.apple.com
-- client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR116|1.3MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR126|1.3MB/s|DNSOK|GPT⁺-KR
   network: tcp
   password: UX82473651
   port: 443
@@ -375,37 +376,18 @@ proxies:
   udp: true
   sni: main-fawn.rooster465.autos
 - client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR117|1.1MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR127|1.3MB/s|DNSOK|GPT⁺-KR
   password: UX82473651
   port: 443
-  server: pure-kodiak.rooster465.autos
+  server: 3.36.50.213
   skip-cert-verify: false
   sni: pure-kodiak.rooster465.autos
   type: trojan
   udp: true
   network: tcp
 - client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR118|1.1MB/s|DNSOK|GPT⁺-KR
-  password: UX82473651
-  port: 443
-  server: pure-kodiak.rooster465.autos
-  skip-cert-verify: false
-  type: trojan
-  udp: true
+  name: 🇰🇷 | @WhiteDNS | KR128|1.2MB/s|DNSOK|GPT⁺-KR
   network: tcp
-  sni: pure-kodiak.rooster465.autos
-- client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR119|845KB/s|DNSOK|GPT⁺-KR
-  password: UX82473651
-  port: 443
-  server: noted-cougar.rooster465.autos
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-  network: tcp
-  sni: noted-cougar.rooster465.autos
-- client-fingerprint: chrome
-  name: 🇰🇷 | @WhiteDNS | KR120|585KB/s|DNSOK|GPT⁺-KR
   password: UX82473651
   port: 443
   server: central-jawfish.rooster465.autos
@@ -413,48 +395,91 @@ proxies:
   sni: central-jawfish.rooster465.autos
   type: trojan
   udp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇰🇷 | @WhiteDNS | KR129|1.2MB/s|DNSOK|GPT⁺-KR
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
+    short-id: ca193e889d958f81
+  server: 64.176.231.183
+  tls: true
+  type: vless
+  udp: true
+  uuid: 583cc910-b57c-4dd0-a4a7-cea51a30b032
+  xudp: true
+  servername: www.apple.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇰🇷 | @WhiteDNS | KR130|1.0MB/s|DNSOK|GPT⁺-KR
   network: tcp
+  port: 443
+  reality-opts:
+    public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
+    short-id: ca193e889d958f81
+  server: 64.176.231.183
+  tls: true
+  type: vless
+  udp: true
+  uuid: 583cc910-b57c-4dd0-a4a7-cea51a30b032
+  xudp: true
+  servername: www.apple.com
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR131|899KB/s|DNSOK|GPT⁺-KR
+  network: raw
+  password: UX82473651
+  port: 443
+  server: central-jawfish.rooster465.autos
+  skip-cert-verify: false
+  sni: central-jawfish.rooster465.autos
+  type: trojan
+  udp: true
 proxy-groups:
 - name: KR-Auto
   type: url-test
   proxies:
-  - 🇰🇷 | @WhiteDNS | KR84|2.1MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR85|1.8MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR86|1.8MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR87|1.8MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR88|1.8MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR89|1.8MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR90|1.8MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR91|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR92|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR93|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR94|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR95|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR96|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR97|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR98|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR99|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR100|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR101|1.6MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR102|1.5MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR103|1.5MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR104|1.5MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR105|1.5MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR106|1.5MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR107|1.3MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR108|1.3MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR109|1.3MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR110|1.3MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR111|1.3MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR112|1.3MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR113|1.3MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR114|1.3MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR115|1.3MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR116|1.3MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR117|1.1MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR118|1.1MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR119|845KB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR120|585KB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR92|2.0MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR93|1.8MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR94|1.8MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR95|1.8MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR96|1.8MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR97|1.8MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR98|1.8MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR99|1.8MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR100|1.8MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR101|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR102|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR103|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR104|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR105|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR106|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR107|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR108|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR109|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR110|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR111|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR112|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR113|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR114|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR115|1.6MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR116|1.6MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR117|1.6MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR118|1.6MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR119|1.5MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR120|1.4MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR121|1.4MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR122|1.3MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR123|1.3MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR124|1.3MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR125|1.3MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR126|1.3MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR127|1.3MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR128|1.2MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR129|1.2MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR130|1.0MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR131|899KB/s|DNSOK|GPT⁺-KR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
