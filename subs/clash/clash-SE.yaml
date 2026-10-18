@@ -13,15 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇸🇪 | @WhiteDNS | SE23|6.0MB/s|DNSOK|GPT⁺-SE
-  password: None
-  port: 443
-  server: 146.70.242.130
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇸🇪 | @WhiteDNS | SE24|6.0MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE26|5.7MB/s|DNSOK|GPT⁺-SE
   password: ''
   port: 443
   server: 149.50.216.65
@@ -29,32 +21,20 @@ proxies:
   tls: true
   type: http
   username: ''
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇸🇪 | @WhiteDNS | SE25|1.5MB/s|DNSOK|GPT⁺-SE
-  network: xhttp
-  port: 2083
-  server: pp-cx1.firelinkservers.ir
+- name: 🇸🇪 | @WhiteDNS | SE27|5.2MB/s|DNSOK|GPT⁺-SE
+  password: None
+  port: 443
+  server: 146.70.242.130
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: 0a5767ae-083a-4ca0-a041-f96905ba3158
-  xhttp-opts:
-    mode: auto
-    path: /
-  xudp: true
-  servername: hitdsf.varzeshfotsal.ir
+  type: http
+  username: ''
 proxy-groups:
 - name: SE-Auto
   type: url-test
   proxies:
-  - 🇸🇪 | @WhiteDNS | SE23|6.0MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE24|6.0MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE25|1.5MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE26|5.7MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE27|5.2MB/s|DNSOK|GPT⁺-SE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

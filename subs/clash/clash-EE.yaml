@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇪🇪 | @WhiteDNS | EE17|2.7MB/s|DNSOK|GPT⁺-EE
+- name: 🇪🇪 | @WhiteDNS | EE23|5.5MB/s|DNSOK|GPT⁺-EE
   password: ''
   port: 9443
   server: 95.153.32.2
@@ -21,7 +21,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇪🇪 | @WhiteDNS | EE18|2.5MB/s|DNSOK|GPT⁺-EE
+- name: 🇪🇪 | @WhiteDNS | EE24|5.5MB/s|DNSOK|GPT⁺-EE
   password: ''
   port: 9443
   server: 95.153.31.66
@@ -29,12 +29,26 @@ proxies:
   tls: true
   type: http
   username: ''
+- down: ''
+  fingerprint: ''
+  name: 🇪🇪 | @WhiteDNS | EE25|5.4MB/s|DNSOK|GPT⁺-EE
+  obfs: ''
+  obfs-password: ''
+  password: 43212c32-01f2-4356-b216-67dc1c178262
+  port: 5443
+  server: ees92.shhflow.xyz
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+  up: ''
+  disable-sni: true
 proxy-groups:
 - name: EE-Auto
   type: url-test
   proxies:
-  - 🇪🇪 | @WhiteDNS | EE17|2.7MB/s|DNSOK|GPT⁺-EE
-  - 🇪🇪 | @WhiteDNS | EE18|2.5MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE23|5.5MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE24|5.5MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE25|5.4MB/s|DNSOK|GPT⁺-EE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
