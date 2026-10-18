@@ -13,25 +13,10 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇮🇩 | @WhiteDNS | ID19|2.5MB/s|DNSOK|GPT⁺-ID
-  port: 16006
-  reality-opts:
-    public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
-    short-id: ''
-  server: 103.172.197.3
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: f8c9d2a1-da40-4f90-b671-11772a0b13d6
-  network: tcp
-  servername: www.cloudflare.com
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇮🇩 | @WhiteDNS | ID20|1.8MB/s|DNSOK|GPT⁺-ID
+  name: 🇮🇩 | @WhiteDNS | ID16|2.2MB/s|DNSOK|GPT⁺-ID
   network: raw
   port: 16006
   reality-opts:
@@ -46,22 +31,7 @@ proxies:
   servername: www.cloudflare.com
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇮🇩 | @WhiteDNS | ID21|1.7MB/s|DNSOK|GPT⁺-ID
-  network: tcp
-  port: 16006
-  reality-opts:
-    public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
-    short-id: ''
-  server: 103.172.197.3
-  tls: true
-  type: vless
-  udp: true
-  uuid: f8c9d2a1-da40-4f90-b671-11772a0b13d6
-  xudp: true
-  servername: www.cloudflare.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇮🇩 | @WhiteDNS | ID22|1.7MB/s|DNSOK|GPT⁺-ID
+  name: 🇮🇩 | @WhiteDNS | ID17|2.0MB/s|DNSOK|GPT⁺-ID
   port: 29172
   reality-opts:
     public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
@@ -77,7 +47,36 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇮🇩 | @WhiteDNS | ID23|1.0MB/s|DNSOK|GPT⁺-ID
+  name: 🇮🇩 | @WhiteDNS | ID18|1.7MB/s|DNSOK|GPT⁺-ID
+  network: raw
+  port: 29172
+  reality-opts:
+    public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
+    short-id: ''
+  server: 103.172.197.2
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
+  xudp: true
+  servername: aws.amazon.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇮🇩 | @WhiteDNS | ID19|1.6MB/s|DNSOK|GPT⁺-ID
+  network: tcp
+  port: 16006
+  reality-opts:
+    public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
+    short-id: ''
+  server: 103.172.197.3
+  tls: true
+  type: vless
+  udp: true
+  uuid: f8c9d2a1-da40-4f90-b671-11772a0b13d6
+  servername: www.cloudflare.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇮🇩 | @WhiteDNS | ID20|1.2MB/s|DNSOK|GPT⁺-ID
   network: tcp
   port: 29172
   reality-opts:
@@ -90,15 +89,31 @@ proxies:
   uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
   xudp: true
   servername: aws.amazon.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇮🇩 | @WhiteDNS | ID21|1023KB/s|DNSOK|GPT⁺-ID
+  port: 16006
+  reality-opts:
+    public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
+    short-id: ''
+  server: 103.172.197.3
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: f8c9d2a1-da40-4f90-b671-11772a0b13d6
+  network: tcp
+  servername: www.cloudflare.com
 proxy-groups:
 - name: ID-Auto
   type: url-test
   proxies:
-  - 🇮🇩 | @WhiteDNS | ID19|2.5MB/s|DNSOK|GPT⁺-ID
-  - 🇮🇩 | @WhiteDNS | ID20|1.8MB/s|DNSOK|GPT⁺-ID
-  - 🇮🇩 | @WhiteDNS | ID21|1.7MB/s|DNSOK|GPT⁺-ID
-  - 🇮🇩 | @WhiteDNS | ID22|1.7MB/s|DNSOK|GPT⁺-ID
-  - 🇮🇩 | @WhiteDNS | ID23|1.0MB/s|DNSOK|GPT⁺-ID
+  - 🇮🇩 | @WhiteDNS | ID16|2.2MB/s|DNSOK|GPT⁺-ID
+  - 🇮🇩 | @WhiteDNS | ID17|2.0MB/s|DNSOK|GPT⁺-ID
+  - 🇮🇩 | @WhiteDNS | ID18|1.7MB/s|DNSOK|GPT⁺-ID
+  - 🇮🇩 | @WhiteDNS | ID19|1.6MB/s|DNSOK|GPT⁺-ID
+  - 🇮🇩 | @WhiteDNS | ID20|1.2MB/s|DNSOK|GPT⁺-ID
+  - 🇮🇩 | @WhiteDNS | ID21|1023KB/s|DNSOK|GPT⁺-ID
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

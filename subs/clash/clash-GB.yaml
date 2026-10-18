@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇬🇧 | @WhiteDNS | GB96|22.4MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB71|23.7MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
   server: 185.164.138.156
@@ -21,7 +21,15 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB97|21.5MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB72|21.3MB/s|DNSOK|GPT⁺-GB
+  password: None
+  port: 443
+  server: 212.102.63.61
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB73|20.9MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
   server: 212.102.63.31
@@ -29,15 +37,35 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB98|20.0MB/s|DNSOK|GPT⁺-GB
-  password: None
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB74|20.9MB/s|DNSOK|GPT⁺-GB
+  network: ws
   port: 443
-  server: 212.102.63.1
+  server: reaza.localip.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: ed6c724c-435f-4f83-a781-f57579af320b
+  ws-opts:
+    headers:
+      Host: gbi.els1v0u3t31v.info
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; CAM-L03 Build/HUAWEICAM-L03) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /9d9fdbc18c834cffab4276811501fbae
+  xudp: true
+  servername: gbi.els1v0u3t31v.info
+- name: 🇬🇧 | @WhiteDNS | GB75|20.5MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 443
+  server: 212.102.63.61
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB99|20.0MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB76|20.4MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
   server: 212.102.63.1
@@ -45,31 +73,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB100|19.9MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 443
-  server: 84.17.50.193
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB101|19.5MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 9443
-  server: 84.233.178.33
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB102|18.5MB/s|DNSOK|GPT⁺-GB
-  password: None
-  port: 443
-  server: 37.120.233.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB103|17.7MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB77|17.6MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 9443
   server: 37.120.233.34
@@ -77,23 +81,15 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB104|13.8MB/s|DNSOK|GPT⁺-RO
+- name: 🇬🇧 | @WhiteDNS | GB78|17.4MB/s|DNSOK|GPT⁺-GB
   password: ''
-  port: 443
-  server: 185.163.110.194
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB105|7.1MB/s|DNSOK|GPT⁺-GB
-  password: None
   port: 443
   server: 37.120.233.50
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB106|6.6MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB79|6.5MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 9443
   server: 84.17.50.129
@@ -101,16 +97,40 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB107|5.9MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB80|6.5MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
-  server: 37.120.233.50
+  server: 84.17.50.193
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB81|6.2MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 9443
+  server: 84.233.178.33
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB82|5.5MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 443
+  server: 37.120.233.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB83|4.5MB/s|DNSOK|GPT⁺-RO
+  password: ''
+  port: 443
+  server: 185.163.110.194
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
 - client-fingerprint: chrome
-  name: 🇬🇧 | @WhiteDNS | GB108|4.3MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB84|1.2MB/s|DNSOK|GPT⁺-GB
   port: 1222
   reality-opts:
     public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
@@ -123,38 +143,24 @@ proxies:
   uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
   network: tcp
   servername: play.google.com
-- client-fingerprint: chrome
-  name: 🇬🇧 | @WhiteDNS | GB109|2.3MB/s|DNSOK|GPT⁺-GB
-  network: tcp
-  port: 1222
-  reality-opts:
-    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
-    short-id: a25d0f
-  server: 23.81.36.148
-  tls: true
-  type: vless
-  udp: true
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  xudp: true
-  servername: play.google.com
 proxy-groups:
 - name: GB-Auto
   type: url-test
   proxies:
-  - 🇬🇧 | @WhiteDNS | GB96|22.4MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB97|21.5MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB98|20.0MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB99|20.0MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB100|19.9MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB101|19.5MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB102|18.5MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB103|17.7MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB104|13.8MB/s|DNSOK|GPT⁺-RO
-  - 🇬🇧 | @WhiteDNS | GB105|7.1MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB106|6.6MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB107|5.9MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB108|4.3MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB109|2.3MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB71|23.7MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB72|21.3MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB73|20.9MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB74|20.9MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB75|20.5MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB76|20.4MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB77|17.6MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB78|17.4MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB79|6.5MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB80|6.5MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB81|6.2MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB82|5.5MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB83|4.5MB/s|DNSOK|GPT⁺-RO
+  - 🇬🇧 | @WhiteDNS | GB84|1.2MB/s|DNSOK|GPT⁺-GB
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -13,7 +13,22 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇪🇪 | @WhiteDNS | EE23|5.5MB/s|DNSOK|GPT⁺-EE
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: 🇪🇪 | @WhiteDNS | EE20|13.0MB/s|DNSOK|GPT⁺-EE
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: h1xVB_-djXL6A7tvnnVbjV4bYKplHOuN0bgmFJQE6AE
+    short-id: 7f3a91c2d8e640ab
+  server: ees92.shhflow.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 43212c32-01f2-4356-b216-67dc1c178262
+  xudp: true
+  servername: ees92.shhflow.xyz
+- name: 🇪🇪 | @WhiteDNS | EE21|5.3MB/s|DNSOK|GPT⁺-EE
   password: ''
   port: 9443
   server: 95.153.32.2
@@ -21,7 +36,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇪🇪 | @WhiteDNS | EE24|5.5MB/s|DNSOK|GPT⁺-EE
+- name: 🇪🇪 | @WhiteDNS | EE22|2.8MB/s|DNSOK|GPT⁺-EE
   password: ''
   port: 9443
   server: 95.153.31.66
@@ -29,26 +44,13 @@ proxies:
   tls: true
   type: http
   username: ''
-- down: ''
-  fingerprint: ''
-  name: 🇪🇪 | @WhiteDNS | EE25|5.4MB/s|DNSOK|GPT⁺-EE
-  obfs: ''
-  obfs-password: ''
-  password: 43212c32-01f2-4356-b216-67dc1c178262
-  port: 5443
-  server: ees92.shhflow.xyz
-  skip-cert-verify: true
-  sni: ''
-  type: hysteria2
-  up: ''
-  disable-sni: true
 proxy-groups:
 - name: EE-Auto
   type: url-test
   proxies:
-  - 🇪🇪 | @WhiteDNS | EE23|5.5MB/s|DNSOK|GPT⁺-EE
-  - 🇪🇪 | @WhiteDNS | EE24|5.5MB/s|DNSOK|GPT⁺-EE
-  - 🇪🇪 | @WhiteDNS | EE25|5.4MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE20|13.0MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE21|5.3MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE22|2.8MB/s|DNSOK|GPT⁺-EE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

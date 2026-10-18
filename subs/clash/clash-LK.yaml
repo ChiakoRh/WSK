@@ -13,37 +13,8 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇱🇰 | @WhiteDNS | LK9|2.5MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 80
-  server: support.zoom.us
-  type: vless
-  udp: true
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
-  ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.me
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/64.0.3282.186 Safari/537.36
-    path: /
-  xudp: true
-  servername: free.sahanwickramasinghe.me
-- name: 🇱🇰 | @WhiteDNS | LK10|2.2MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 80
-  server: support.zoom.us
-  type: vless
-  udp: true
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
-  ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.me
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/69.0.3497.100 Safari/537.36
-    path: /
-  xudp: true
 - client-fingerprint: firefox
-  name: 🇱🇰 | @WhiteDNS | LK11|1.9MB/s|DNSOK|GPT⁺-SG
+  name: 🇱🇰 | @WhiteDNS | LK8|1.3MB/s|DNSOK|GPT⁺-SG
   network: ws
   port: 8443
   server: 51.75.67.209
@@ -54,31 +25,13 @@ proxies:
   ws-opts:
     headers:
       Host: free.sahanwickramasinghe.me
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/62.0.3202.89 Safari/537.36
+      User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko)
+        Chrome/12.0.742.100 Safari/534.30
     path: /
   xudp: true
   servername: free.sahanwickramasinghe.me
 - client-fingerprint: chrome
-  encryption: none
-  name: 🇱🇰 | @WhiteDNS | LK12|1.8MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 8443
-  server: centurylink.es
-  tls: true
-  type: vless
-  udp: true
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.me
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/55.0.2883.87 Safari/537.36
-    path: /
-  xudp: true
-  servername: free.sahanwickramasinghe.me
-- client-fingerprint: chrome
-  name: 🇱🇰 | @WhiteDNS | LK13|1.7MB/s|DNSOK|GPT⁺-SG
+  name: 🇱🇰 | @WhiteDNS | LK9|1.0MB/s|DNSOK|GPT⁺-SG
   network: ws
   port: 8443
   server: free.sahanwickramasinghe.me
@@ -89,51 +42,17 @@ proxies:
   ws-opts:
     headers:
       Host: free.sahanwickramasinghe.me
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/57.0.2987.133 Safari/537.36
+      User-Agent: Mozilla/5.0 (Unknown; Linux) AppleWebKit/538.1 (KHTML, like Gecko)
+        Chrome/v1.0.0 Safari/538.1
     path: /
   xudp: true
   servername: free.sahanwickramasinghe.me
-- name: 🇱🇰 | @WhiteDNS | LK14|1.3MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 80
-  server: free.sahanwickramasinghe.me
-  type: vless
-  udp: true
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
-  ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.me
-      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/44.0.2403.157 Safari/537.36
-    path: /
-  xudp: true
-- name: 🇱🇰 | @WhiteDNS | LK15|1.3MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 80
-  server: support.zoom.us
-  type: vless
-  udp: true
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
-  ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.me
-      User-Agent: Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.106 Safari/537.36
-    path: /
-  xudp: true
-  servername: support.zoom.us
 proxy-groups:
 - name: LK-Auto
   type: url-test
   proxies:
-  - 🇱🇰 | @WhiteDNS | LK9|2.5MB/s|DNSOK|GPT⁺-SG
-  - 🇱🇰 | @WhiteDNS | LK10|2.2MB/s|DNSOK|GPT⁺-SG
-  - 🇱🇰 | @WhiteDNS | LK11|1.9MB/s|DNSOK|GPT⁺-SG
-  - 🇱🇰 | @WhiteDNS | LK12|1.8MB/s|DNSOK|GPT⁺-SG
-  - 🇱🇰 | @WhiteDNS | LK13|1.7MB/s|DNSOK|GPT⁺-SG
-  - 🇱🇰 | @WhiteDNS | LK14|1.3MB/s|DNSOK|GPT⁺-SG
-  - 🇱🇰 | @WhiteDNS | LK15|1.3MB/s|DNSOK|GPT⁺-SG
+  - 🇱🇰 | @WhiteDNS | LK8|1.3MB/s|DNSOK|GPT⁺-SG
+  - 🇱🇰 | @WhiteDNS | LK9|1.0MB/s|DNSOK|GPT⁺-SG
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
