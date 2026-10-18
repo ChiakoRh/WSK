@@ -13,11 +13,11 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: firefox
-  name: 🇱🇰 | @WhiteDNS | LK8|1.3MB/s|DNSOK|GPT⁺-SG
+- client-fingerprint: chrome
+  name: 🇱🇰 | @WhiteDNS | LK7|1.2MB/s|DNSOK|GPT⁺-SG
   network: ws
   port: 8443
-  server: 51.75.67.209
+  server: 104.17.70.206
   tls: true
   type: vless
   udp: true
@@ -25,16 +25,17 @@ proxies:
   ws-opts:
     headers:
       Host: free.sahanwickramasinghe.me
-      User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko)
-        Chrome/12.0.742.100 Safari/534.30
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/58.0.3029.81 Safari/537.36
     path: /
   xudp: true
   servername: free.sahanwickramasinghe.me
 - client-fingerprint: chrome
-  name: 🇱🇰 | @WhiteDNS | LK9|1.0MB/s|DNSOK|GPT⁺-SG
+  encryption: none
+  name: 🇱🇰 | @WhiteDNS | LK8|1.1MB/s|DNSOK|GPT⁺-SG
   network: ws
   port: 8443
-  server: free.sahanwickramasinghe.me
+  server: centurylink.es
   tls: true
   type: vless
   udp: true
@@ -42,8 +43,8 @@ proxies:
   ws-opts:
     headers:
       Host: free.sahanwickramasinghe.me
-      User-Agent: Mozilla/5.0 (Unknown; Linux) AppleWebKit/538.1 (KHTML, like Gecko)
-        Chrome/v1.0.0 Safari/538.1
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.181 Safari/537.36
     path: /
   xudp: true
   servername: free.sahanwickramasinghe.me
@@ -51,8 +52,8 @@ proxy-groups:
 - name: LK-Auto
   type: url-test
   proxies:
-  - 🇱🇰 | @WhiteDNS | LK8|1.3MB/s|DNSOK|GPT⁺-SG
-  - 🇱🇰 | @WhiteDNS | LK9|1.0MB/s|DNSOK|GPT⁺-SG
+  - 🇱🇰 | @WhiteDNS | LK7|1.2MB/s|DNSOK|GPT⁺-SG
+  - 🇱🇰 | @WhiteDNS | LK8|1.1MB/s|DNSOK|GPT⁺-SG
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

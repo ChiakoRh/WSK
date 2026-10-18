@@ -1,20 +1,59 @@
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  grpc-opts:
-    grpc-service-name: framefeed
-  name: 🇵🇱 | @WhiteDNS | PL89|25.9MB/s|DNSOK|GPT⁺-PL
-  network: grpc
-  port: 443
-  server: 83.168.91.16
-  tls: true
-  type: vless
+- cipher: aes-256-gcm
+  name: 🇵🇱 | @WhiteDNS | PL73|23.4MB/s|DNSOK|GPT⁺-PL
+  password: itzvpn@321
+  port: 8388
+  server: 51.83.192.80
+  type: ss
   udp: true
-  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
-  xudp: true
-  servername: pl-exit-02.10media.top
-- name: 🇵🇱 | @WhiteDNS | PL90|20.2MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL74|19.2MB/s|DNSOK|GPT⁺-PL
+  password: None
+  port: 443
+  server: 37.120.156.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇵🇱 | @WhiteDNS | PL75|6.5MB/s|DNSOK|GPT⁺-PL
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: pl1.dedushka.top
+  skip-cert-verify: true
+  sni: pl1.dedushka.top
+  type: trojan
+  udp: true
+  network: tcp
+- name: 🇵🇱 | @WhiteDNS | PL76|6.4MB/s|DNSOK|GPT⁺-PL
   password: ''
+  port: 443
+  server: 151.115.54.133
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: 🇵🇱 | @WhiteDNS | PL77|6.2MB/s|DNSOK|GPT⁺-PL
+  network: tcp
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: pl2.dedushka.top
+  skip-cert-verify: false
+  sni: pl2.dedushka.top
+  type: trojan
+  udp: true
+- name: 🇵🇱 | @WhiteDNS | PL78|6.2MB/s|DNSOK|GPT⁺-PL
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: pl2.dedushka.top
+  skip-cert-verify: true
+  sni: pl2.dedushka.top
+  type: trojan
+  udp: true
+  network: tcp
+- name: 🇵🇱 | @WhiteDNS | PL79|6.1MB/s|DNSOK|GPT⁺-PL
+  password: None
   port: 443
   server: 37.120.156.18
   skip-cert-verify: true
@@ -24,19 +63,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: firefox
-  name: 🇵🇱 | @WhiteDNS | PL91|18.2MB/s|DNSOK|GPT⁺-PL
-  network: tcp
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  port: 443
-  server: pl2.dedushka.top
-  skip-cert-verify: false
-  sni: pl2.dedushka.top
-  type: trojan
-  udp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: firefox
-  name: 🇵🇱 | @WhiteDNS | PL92|17.8MB/s|DNSOK|GPT⁺-PL
+  name: 🇵🇱 | @WhiteDNS | PL80|5.9MB/s|DNSOK|GPT⁺-PL
   network: tcp
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
@@ -45,15 +72,7 @@ proxies:
   sni: pl1.dedushka.top
   type: trojan
   udp: true
-- name: 🇵🇱 | @WhiteDNS | PL93|15.5MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 37.120.156.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇵🇱 | @WhiteDNS | PL94|3.8MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL81|2.9MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 31.186.220.204
@@ -61,11 +80,17 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇵🇱 | @WhiteDNS | PL95|2.8MB/s|DNSOK|GPT⁺-PL
-  password: ''
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: framefeed
+  name: 🇵🇱 | @WhiteDNS | PL82|2.3MB/s|DNSOK|GPT⁺-PL
+  network: grpc
   port: 443
-  server: 151.115.54.133
-  skip-cert-verify: true
+  server: 83.168.91.16
   tls: true
-  type: http
-  username: ''
+  type: vless
+  udp: true
+  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
+  xudp: true
+  servername: pl-exit-02.10media.top

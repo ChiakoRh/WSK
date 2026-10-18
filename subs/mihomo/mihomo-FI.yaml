@@ -1,4 +1,23 @@
 proxies:
+- client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.Zb6-NCLm820-hYQhDpS15UQ6ofGGJ5BnQ7cxc3c4Pg8
+  fingerprint: cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e
+  name: 🇫🇮 | @WhiteDNS | FI121|6.7MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 443
+  server: 199.232.237.79
+  tls: true
+  type: vless
+  udp: true
+  uuid: 785f86f0-0de3-44cb-abc9-0450947214fe
+  ws-opts:
+    headers:
+      Host: Spectrally-timablesn-ibis-kepler.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/67.0.3396.87 Safari/537.36
+    path: /
+  xudp: true
+  servername: play.google.com
 - alpn:
   - ''
   alterId: '0'
@@ -9,7 +28,27 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI115|2.1MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI122|2.4MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 52080
+  server: 185.212.149.7
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
+  xudp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    path:
+    - /3x
+  name: 🇫🇮 | @WhiteDNS | FI123|2.3MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
@@ -20,22 +59,23 @@ proxies:
   uuid: aeb3c019-ae83-4677-af97-846baa787ad5
   xudp: true
 - alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - down-cdn.dingtalk.com
-    path:
-    - /3x
-  name: 🇫🇮 | @WhiteDNS | FI116|1.7MB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 52080
-  server: 185.212.149.7
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+  - h2
+  client-fingerprint: chrome
+  encryption: none
+  fingerprint: cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e
+  name: 🇫🇮 | @WhiteDNS | FI124|742KB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 443
+  server: simpleone.asan-ps.ir
+  tls: true
+  type: vless
   udp: true
-  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
+  uuid: ba33c872-d552-4c44-b0f2-b9bd8669d70c
+  ws-opts:
+    headers:
+      Host: henzooo.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /
   xudp: true
+  servername: default.ssl.fastly.net
