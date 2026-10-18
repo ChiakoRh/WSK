@@ -14,13 +14,21 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - cipher: aes-256-gcm
-  name: 🇵🇱 | @WhiteDNS | PL73|23.4MB/s|DNSOK|GPT⁺-PL
+  name: 🇵🇱 | @WhiteDNS | PL73|21.0MB/s|DNSOK|GPT⁺-PL
   password: itzvpn@321
   port: 8388
   server: 51.83.192.80
   type: ss
   udp: true
-- name: 🇵🇱 | @WhiteDNS | PL74|19.2MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL74|19.7MB/s|DNSOK|GPT⁺-PL
+  password: ''
+  port: 443
+  server: 37.120.156.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇵🇱 | @WhiteDNS | PL75|16.9MB/s|DNSOK|GPT⁺-PL
   password: None
   port: 443
   server: 37.120.156.34
@@ -28,56 +36,20 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇵🇱 | @WhiteDNS | PL75|6.5MB/s|DNSOK|GPT⁺-PL
+- client-fingerprint: chrome
+  name: 🇵🇱 | @WhiteDNS | PL76|11.3MB/s|DNSOK|GPT⁺-PL
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
   server: pl1.dedushka.top
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: pl1.dedushka.top
   type: trojan
   udp: true
   network: tcp
-- name: 🇵🇱 | @WhiteDNS | PL76|6.4MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 151.115.54.133
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 - alpn:
   - http/1.1
   client-fingerprint: firefox
-  name: 🇵🇱 | @WhiteDNS | PL77|6.2MB/s|DNSOK|GPT⁺-PL
-  network: tcp
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  port: 443
-  server: pl2.dedushka.top
-  skip-cert-verify: false
-  sni: pl2.dedushka.top
-  type: trojan
-  udp: true
-- name: 🇵🇱 | @WhiteDNS | PL78|6.2MB/s|DNSOK|GPT⁺-PL
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  port: 443
-  server: pl2.dedushka.top
-  skip-cert-verify: true
-  sni: pl2.dedushka.top
-  type: trojan
-  udp: true
-  network: tcp
-- name: 🇵🇱 | @WhiteDNS | PL79|6.1MB/s|DNSOK|GPT⁺-PL
-  password: None
-  port: 443
-  server: 37.120.156.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- alpn:
-  - http/1.1
-  client-fingerprint: firefox
-  name: 🇵🇱 | @WhiteDNS | PL80|5.9MB/s|DNSOK|GPT⁺-PL
+  name: 🇵🇱 | @WhiteDNS | PL77|5.7MB/s|DNSOK|GPT⁺-PL
   network: tcp
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
@@ -86,7 +58,29 @@ proxies:
   sni: pl1.dedushka.top
   type: trojan
   udp: true
-- name: 🇵🇱 | @WhiteDNS | PL81|2.9MB/s|DNSOK|GPT⁺-PL
+- client-fingerprint: chrome
+  name: 🇵🇱 | @WhiteDNS | PL78|5.0MB/s|DNSOK|GPT⁺-PL
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: pl2.dedushka.top
+  skip-cert-verify: false
+  sni: pl2.dedushka.top
+  type: trojan
+  udp: true
+  network: tcp
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: 🇵🇱 | @WhiteDNS | PL79|5.0MB/s|DNSOK|GPT⁺-PL
+  network: tcp
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: pl2.dedushka.top
+  skip-cert-verify: false
+  sni: pl2.dedushka.top
+  type: trojan
+  udp: true
+- name: 🇵🇱 | @WhiteDNS | PL80|2.7MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 31.186.220.204
@@ -94,34 +88,27 @@ proxies:
   tls: true
   type: http
   username: ''
-- client-fingerprint: chrome
-  encryption: none
-  grpc-opts:
-    grpc-service-name: framefeed
-  name: 🇵🇱 | @WhiteDNS | PL82|2.3MB/s|DNSOK|GPT⁺-PL
-  network: grpc
+- name: 🇵🇱 | @WhiteDNS | PL81|1.3MB/s|DNSOK|GPT⁺-PL
+  password: ''
   port: 443
-  server: 83.168.91.16
+  server: 151.115.54.133
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
-  xudp: true
-  servername: pl-exit-02.10media.top
+  type: http
+  username: ''
 proxy-groups:
 - name: PL-Auto
   type: url-test
   proxies:
-  - 🇵🇱 | @WhiteDNS | PL73|23.4MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL74|19.2MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL75|6.5MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL76|6.4MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL77|6.2MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL78|6.2MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL79|6.1MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL80|5.9MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL81|2.9MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL82|2.3MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL73|21.0MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL74|19.7MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL75|16.9MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL76|11.3MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL77|5.7MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL78|5.0MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL79|5.0MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL80|2.7MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL81|1.3MB/s|DNSOK|GPT⁺-PL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

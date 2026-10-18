@@ -13,24 +13,64 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP160|1.8MB/s|DNSOK|GPT⁺-JP
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP138|1.9MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: none
+    path: /cctv13.m3u8
+  xudp: true
+  servername: none
+- client-fingerprint: ios
+  name: 🇯🇵 | @WhiteDNS | JP139|1.5MB/s|DNSOK|GPT⁺-JP
   network: tcp
   port: 443
   reality-opts:
-    public-key: TYc78nIrek2q0MpFxzdEw7aKN2sUUO-oF_VRlX5zezM
-    short-id: 28f369c9
-  server: jp2.2149555.xyz
+    public-key: hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI
+    short-id: b51e057820d3e14c
+  server: 43.167.232.174
   tls: true
   type: vless
   udp: true
-  uuid: f4e0bc7b-b58f-41c8-a858-3836337facdf
+  uuid: 0fd46529-707f-4d33-899b-598f5f4acffa
+  servername: www.microsoft.com
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP140|1.5MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: jp01.a0a.xyz
+    path: /cctv13.m3u8
   xudp: true
-  servername: www.icloud.com
+  servername: jp01.a0a.xyz
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP141|1.3MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 45.32.52.173
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - client-fingerprint: ios
-  name: 🇯🇵 | @WhiteDNS | JP161|1.5MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP142|1.3MB/s|DNSOK|GPT⁺-JP
   port: 443
   reality-opts:
     public-key: hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI
@@ -43,22 +83,8 @@ proxies:
   uuid: 0fd46529-707f-4d33-899b-598f5f4acffa
   network: tcp
   servername: www.microsoft.com
-- client-fingerprint: ios
-  name: 🇯🇵 | @WhiteDNS | JP162|1.5MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI
-    short-id: b51e057820d3e14c
-  server: 43.167.232.174
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0fd46529-707f-4d33-899b-598f5f4acffa
-  xudp: true
-  servername: www.microsoft.com
 - client-fingerprint: random
-  name: 🇯🇵 | @WhiteDNS | JP163|1.3MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP143|1.3MB/s|DNSOK|GPT⁺-JP
   network: raw
   port: 443
   reality-opts:
@@ -72,45 +98,26 @@ proxies:
   xudp: true
   servername: www.microsoft.com
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP164|1.2MB/s|DNSOK|GPT⁺-JP
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 45.32.52.173
-  skip-cert-verify: true
-  sni: 45.32.52.173
-  type: trojan
-  udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP165|1.0MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP144|1021KB/s|DNSOK|GPT⁺-JP
   network: tcp
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   port: 8886
   server: 45.32.52.173
   skip-cert-verify: true
   sni: 45.32.52.173
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP166|983KB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 45.32.52.173
-  skip-cert-verify: true
   type: trojan
   udp: true
 proxy-groups:
 - name: JP-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP160|1.8MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP161|1.5MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP162|1.5MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP163|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP164|1.2MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP165|1.0MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP166|983KB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP138|1.9MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP139|1.5MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP140|1.5MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP141|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP142|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP143|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP144|1021KB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
