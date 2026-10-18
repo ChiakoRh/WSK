@@ -13,10 +13,24 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇮🇩 | @WhiteDNS | ID43|2.4MB/s|DNSOK|GPT⁺-ID
+  network: tcp
+  port: 29172
+  reality-opts:
+    public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
+    short-id: ''
+  server: 103.172.197.2
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
+  servername: aws.amazon.com
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇮🇩 | @WhiteDNS | ID35|2.5MB/s|DNSOK|GPT⁺-ID
+  name: 🇮🇩 | @WhiteDNS | ID44|2.4MB/s|DNSOK|GPT⁺-ID
   network: raw
   port: 16006
   reality-opts:
@@ -29,23 +43,16 @@ proxies:
   uuid: f8c9d2a1-da40-4f90-b671-11772a0b13d6
   xudp: true
   servername: www.cloudflare.com
+- name: 🇮🇩 | @WhiteDNS | ID45|2.3MB/s|DNSOK|GPT⁺-ID
+  password: ''
+  port: 8089
+  server: 162.4.96.18
+  skip-cert-verify: true
+  type: http
+  username: ''
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇮🇩 | @WhiteDNS | ID36|1.9MB/s|DNSOK|GPT⁺-ID
-  network: tcp
-  port: 29172
-  reality-opts:
-    public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
-    short-id: ''
-  server: 103.172.197.2
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
-  servername: aws.amazon.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇮🇩 | @WhiteDNS | ID37|1.9MB/s|DNSOK|GPT⁺-ID
+  name: 🇮🇩 | @WhiteDNS | ID46|1.8MB/s|DNSOK|GPT⁺-ID
   network: tcp
   port: 16006
   reality-opts:
@@ -58,25 +65,16 @@ proxies:
   uuid: f8c9d2a1-da40-4f90-b671-11772a0b13d6
   xudp: true
   servername: www.cloudflare.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇮🇩 | @WhiteDNS | ID38|1.4MB/s|DNSOK|GPT⁺-ID
-  network: raw
-  port: 29172
-  reality-opts:
-    public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
-    short-id: ''
-  server: 103.172.197.2
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
-  xudp: true
-  servername: aws.amazon.com
+- name: 🇮🇩 | @WhiteDNS | ID47|1.7MB/s|DNSOK|GPT⁺-ID
+  password: ''
+  port: 800
+  server: 202.58.77.73
+  skip-cert-verify: true
+  type: http
+  username: ''
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇮🇩 | @WhiteDNS | ID39|1.2MB/s|DNSOK|GPT⁺-ID
+  name: 🇮🇩 | @WhiteDNS | ID48|1.3MB/s|DNSOK|GPT⁺-ID
   port: 16006
   reality-opts:
     public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
@@ -90,8 +88,24 @@ proxies:
   network: tcp
   servername: www.cloudflare.com
 - client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇮🇩 | @WhiteDNS | ID40|1.1MB/s|DNSOK|GPT⁺-ID
+  name: 🇮🇩 | @WhiteDNS | ID49|1.2MB/s|DNSOK|GPT⁺-ID
+  network: raw
+  port: 29172
+  reality-opts:
+    public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
+    short-id: ''
+  server: 103.172.197.2
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
+  xudp: true
+  servername: aws.amazon.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇮🇩 | @WhiteDNS | ID50|792KB/s|DNSOK|GPT⁺-ID
   port: 29172
   reality-opts:
     public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
@@ -108,12 +122,14 @@ proxy-groups:
 - name: ID-Auto
   type: url-test
   proxies:
-  - 🇮🇩 | @WhiteDNS | ID35|2.5MB/s|DNSOK|GPT⁺-ID
-  - 🇮🇩 | @WhiteDNS | ID36|1.9MB/s|DNSOK|GPT⁺-ID
-  - 🇮🇩 | @WhiteDNS | ID37|1.9MB/s|DNSOK|GPT⁺-ID
-  - 🇮🇩 | @WhiteDNS | ID38|1.4MB/s|DNSOK|GPT⁺-ID
-  - 🇮🇩 | @WhiteDNS | ID39|1.2MB/s|DNSOK|GPT⁺-ID
-  - 🇮🇩 | @WhiteDNS | ID40|1.1MB/s|DNSOK|GPT⁺-ID
+  - 🇮🇩 | @WhiteDNS | ID43|2.4MB/s|DNSOK|GPT⁺-ID
+  - 🇮🇩 | @WhiteDNS | ID44|2.4MB/s|DNSOK|GPT⁺-ID
+  - 🇮🇩 | @WhiteDNS | ID45|2.3MB/s|DNSOK|GPT⁺-ID
+  - 🇮🇩 | @WhiteDNS | ID46|1.8MB/s|DNSOK|GPT⁺-ID
+  - 🇮🇩 | @WhiteDNS | ID47|1.7MB/s|DNSOK|GPT⁺-ID
+  - 🇮🇩 | @WhiteDNS | ID48|1.3MB/s|DNSOK|GPT⁺-ID
+  - 🇮🇩 | @WhiteDNS | ID49|1.2MB/s|DNSOK|GPT⁺-ID
+  - 🇮🇩 | @WhiteDNS | ID50|792KB/s|DNSOK|GPT⁺-ID
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -13,19 +13,21 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇿🇦 | @WhiteDNS | ZA5|2.6MB/s|DNSOK|GPT⁺-ZA
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-  port: 16233
-  server: 102.133.165.160
-  type: ss
+- encryption: none
+  name: 🇻🇳 | @WhiteDNS | VN27|2.0MB/s|DNSOK|GPT⁺-VN
+  network: raw
+  port: 2086
+  server: 150.95.109.109
+  type: vless
   udp: true
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
+  xudp: true
 proxy-groups:
-- name: ZA-Auto
+- name: VN-Auto
   type: url-test
   proxies:
-  - 🇿🇦 | @WhiteDNS | ZA5|2.6MB/s|DNSOK|GPT⁺-ZA
+  - 🇻🇳 | @WhiteDNS | VN27|2.0MB/s|DNSOK|GPT⁺-VN
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,ZA-Auto
+- MATCH,VN-Auto

@@ -1,7 +1,63 @@
 proxies:
-- alterId: 0
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP162|1.8MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: TYc78nIrek2q0MpFxzdEw7aKN2sUUO-oF_VRlX5zezM
+    short-id: 28f369c9
+  server: jp2.2149555.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: f4e0bc7b-b58f-41c8-a858-3836337facdf
+  xudp: true
+  servername: www.icloud.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP163|1.7MB/s|DNSOK|GPT⁺-JP
+  port: 443
+  reality-opts:
+    public-key: 9ZCYjybxMQ7JpE39B8u_Bo-alI1LIbt5ER0E-4yMjiM
+    short-id: ea36c03d86f91287
+  server: 142.91.108.25
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+  network: tcp
+  servername: jp3.nztvpn.com
+- name: 🇯🇵 | @WhiteDNS | JP164|1.7MB/s|DNSOK|GPT⁺-JP
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  network: tcp
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP165|1.7MB/s|DNSOK|GPT⁺-JP
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: 9ZCYjybxMQ7JpE39B8u_Bo-alI1LIbt5ER0E-4yMjiM
+    short-id: ea36c03d86f91287
+  server: 142.91.108.25
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+  xudp: true
+  servername: jp3.nztvpn.com
+- alpn:
+  - ''
+  alterId: '0'
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP138|1.9MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP166|1.6MB/s|DNSOK|GPT⁺-JP
   network: ws
   port: 80
   server: 168.138.43.75
@@ -12,26 +68,37 @@ proxies:
   uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
   ws-opts:
     headers:
-      Host: none
+      Host: None
     path: /cctv13.m3u8
   xudp: true
-  servername: none
+  servername: None
 - client-fingerprint: ios
-  name: 🇯🇵 | @WhiteDNS | JP139|1.5MB/s|DNSOK|GPT⁺-JP
-  network: tcp
+  name: 🇯🇵 | @WhiteDNS | JP167|1.6MB/s|DNSOK|GPT⁺-JP
   port: 443
   reality-opts:
     public-key: hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI
     short-id: b51e057820d3e14c
   server: 43.167.232.174
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: 0fd46529-707f-4d33-899b-598f5f4acffa
+  network: tcp
   servername: www.microsoft.com
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP168|1.3MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 45.32.52.173
+  skip-cert-verify: true
+  sni: 45.32.52.173
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP140|1.5MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP169|1.3MB/s|DNSOK|GPT⁺-JP
   network: ws
   port: 80
   server: 168.138.43.75
@@ -46,31 +113,39 @@ proxies:
     path: /cctv13.m3u8
   xudp: true
   servername: jp01.a0a.xyz
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP141|1.3MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 45.32.52.173
-  skip-cert-verify: true
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP170|1.3MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: 168.138.43.75
+    path: /cctv13.m3u8
+  xudp: true
+  servername: 168.138.43.75
 - client-fingerprint: ios
-  name: 🇯🇵 | @WhiteDNS | JP142|1.3MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP171|1.3MB/s|DNSOK|GPT⁺-JP
+  network: tcp
   port: 443
   reality-opts:
     public-key: hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI
     short-id: b51e057820d3e14c
   server: 43.167.232.174
-  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: 0fd46529-707f-4d33-899b-598f5f4acffa
-  network: tcp
   servername: www.microsoft.com
 - client-fingerprint: random
-  name: 🇯🇵 | @WhiteDNS | JP143|1.3MB/s|DNSOK|GPT⁺-JP
+  encryption: none
+  name: 🇯🇵 | @WhiteDNS | JP172|1.3MB/s|DNSOK|GPT⁺-JP
   network: raw
   port: 443
   reality-opts:
@@ -84,8 +159,16 @@ proxies:
   xudp: true
   servername: www.microsoft.com
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP144|1021KB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP173|1.2MB/s|DNSOK|GPT⁺-JP
   network: tcp
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 45.32.52.173
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP174|1.1MB/s|DNSOK|GPT⁺-JP
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   port: 8886
   server: 45.32.52.173
@@ -93,3 +176,23 @@ proxies:
   sni: 45.32.52.173
   type: trojan
   udp: true
+  network: tcp
+- encryption: none
+  name: 🇯🇵 | @WhiteDNS | JP175|1.0MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  xudp: true
+- encryption: none
+  name: 🇯🇵 | @WhiteDNS | JP176|1.0MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  xudp: true
+  servername: 152.69.195.67
