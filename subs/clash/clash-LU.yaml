@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇱🇺 | @WhiteDNS | LU4|24.3MB/s|DNSOK|GPT⁺-LU
+- name: 🇱🇺 | @WhiteDNS | LU3|19.5MB/s|DNSOK|GPT⁺-LU
   password: ''
   port: 443
   server: 185.221.132.242
@@ -21,20 +21,20 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇱🇺 | @WhiteDNS | LU5|1.4MB/s|DNSOK|GPT⁺-CH
-  password: 21b60363-271b-49f0-975b-dbe315215164
-  port: 32085
-  server: aw-22t.wjwhi90.com
+- name: 🇱🇺 | @WhiteDNS | LU4|7.1MB/s|DNSOK|GPT⁺-LU
+  password: ''
+  port: 443
+  server: 185.221.132.226
   skip-cert-verify: true
-  sni: byrz.9dai.xyz
-  type: anytls
-  udp: true
+  tls: true
+  type: http
+  username: ''
 proxy-groups:
 - name: LU-Auto
   type: url-test
   proxies:
-  - 🇱🇺 | @WhiteDNS | LU4|24.3MB/s|DNSOK|GPT⁺-LU
-  - 🇱🇺 | @WhiteDNS | LU5|1.4MB/s|DNSOK|GPT⁺-CH
+  - 🇱🇺 | @WhiteDNS | LU3|19.5MB/s|DNSOK|GPT⁺-LU
+  - 🇱🇺 | @WhiteDNS | LU4|7.1MB/s|DNSOK|GPT⁺-LU
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -13,19 +13,20 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇿🇦 | @WhiteDNS | ZA6|2.4MB/s|DNSOK|GPT⁺-ZA
-  password: aduB9HGxQHjA2SBMRjkHX6
+- name: 🇨🇾 | @WhiteDNS | CY2|4.4MB/s|DNSOK|GPT⁺-CY
+  password: ''
   port: 443
-  server: 102.37.156.224
-  type: ss
-  udp: true
+  server: 213.207.130.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 proxy-groups:
-- name: ZA-Auto
+- name: CY-Auto
   type: url-test
   proxies:
-  - 🇿🇦 | @WhiteDNS | ZA6|2.4MB/s|DNSOK|GPT⁺-ZA
+  - 🇨🇾 | @WhiteDNS | CY2|4.4MB/s|DNSOK|GPT⁺-CY
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,ZA-Auto
+- MATCH,CY-Auto
