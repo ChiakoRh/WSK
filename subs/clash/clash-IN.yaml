@@ -13,18 +13,107 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇳 | @WhiteDNS | IN45|2.6MB/s|DNSOK|GPT⁺-IN
+- name: 🇮🇳 | @WhiteDNS | IN60|2.6MB/s|DNSOK|GPT⁺-IN
   password: ''
   port: 1088
   server: 144.24.111.128
   skip-cert-verify: true
   type: socks5
   username: ''
+- alterId: 0
+  cipher: auto
+  name: 🇮🇳 | @WhiteDNS | IN61|2.3MB/s|DNSOK|GPT⁺
+  network: ws
+  port: 80
+  server: 152.67.8.205
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  ws-opts:
+    headers: {}
+    path: /
+  xudp: true
+  servername: 🇮🇳in-152.67.8.205-0132 | 3.18mb
+- name: 🇮🇳 | @WhiteDNS | IN62|2.0MB/s|DNSOK|GPT⁺-IN
+  password: Trojan@82164024
+  port: 443
+  server: in.tronsg.com
+  skip-cert-verify: true
+  sni: in.tronsg.com
+  type: trojan
+  udp: true
+  network: tcp
+- alterId: 0
+  cipher: auto
+  name: 🇮🇳 | @WhiteDNS | IN63|2.0MB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 80
+  server: 152.67.8.205
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  ws-opts:
+    headers: {}
+    path: /
+  xudp: true
+  servername: 🇮🇳in-152.67.8.205-0138 | 0.0mb
+- client-fingerprint: chrome
+  name: 🇮🇳 | @WhiteDNS | IN64|1.7MB/s|DNSOK|GPT⁺-IN
+  network: tcp
+  password: Trojan@82164024
+  port: 443
+  server: in.tronsg.com
+  skip-cert-verify: true
+  sni: in.tronsg.com
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇮🇳 | @WhiteDNS | IN65|1.2MB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 80
+  server: 152.67.8.205
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  ws-opts:
+    headers: {}
+    path: /
+  xudp: true
+  servername: 🇮🇳in-152.67.8.205-0158 | 0.0mb
+- alterId: 0
+  cipher: auto
+  name: 🇮🇳 | @WhiteDNS | IN66|640KB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 80
+  server: 152.67.8.205
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  ws-opts:
+    headers: {}
+    path: /
+  xudp: true
+  servername: 🇮🇳in-152.67.8.205-0179 | 0.1mb
 proxy-groups:
 - name: IN-Auto
   type: url-test
   proxies:
-  - 🇮🇳 | @WhiteDNS | IN45|2.6MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN60|2.6MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN61|2.3MB/s|DNSOK|GPT⁺
+  - 🇮🇳 | @WhiteDNS | IN62|2.0MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN63|2.0MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN64|1.7MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN65|1.2MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN66|640KB/s|DNSOK|GPT⁺-IN
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

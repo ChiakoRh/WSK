@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇿 | @WhiteDNS | CZ17|27.0MB/s|DNSOK|GPT⁺-CZ
+- name: 🇨🇿 | @WhiteDNS | CZ19|25.7MB/s|DNSOK|GPT⁺-CZ
   password: ''
   port: 9443
   server: 152.233.16.174
@@ -21,7 +21,15 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇿 | @WhiteDNS | CZ18|5.5MB/s|DNSOK|GPT⁺-CZ
+- name: 🇨🇿 | @WhiteDNS | CZ20|5.6MB/s|DNSOK|GPT⁺-CZ
+  password: None
+  port: 443
+  server: 185.216.35.130
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇿 | @WhiteDNS | CZ21|5.4MB/s|DNSOK|GPT⁺-CZ
   password: ''
   port: 443
   server: 185.216.35.130
@@ -29,7 +37,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇿 | @WhiteDNS | CZ19|5.0MB/s|DNSOK|GPT⁺-CZ
+- name: 🇨🇿 | @WhiteDNS | CZ22|4.8MB/s|DNSOK|GPT⁺-CZ
   password: ''
   port: 443
   server: 185.216.35.66
@@ -41,9 +49,10 @@ proxy-groups:
 - name: CZ-Auto
   type: url-test
   proxies:
-  - 🇨🇿 | @WhiteDNS | CZ17|27.0MB/s|DNSOK|GPT⁺-CZ
-  - 🇨🇿 | @WhiteDNS | CZ18|5.5MB/s|DNSOK|GPT⁺-CZ
-  - 🇨🇿 | @WhiteDNS | CZ19|5.0MB/s|DNSOK|GPT⁺-CZ
+  - 🇨🇿 | @WhiteDNS | CZ19|25.7MB/s|DNSOK|GPT⁺-CZ
+  - 🇨🇿 | @WhiteDNS | CZ20|5.6MB/s|DNSOK|GPT⁺-CZ
+  - 🇨🇿 | @WhiteDNS | CZ21|5.4MB/s|DNSOK|GPT⁺-CZ
+  - 🇨🇿 | @WhiteDNS | CZ22|4.8MB/s|DNSOK|GPT⁺-CZ
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

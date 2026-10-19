@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇭🇺 | @WhiteDNS | HU12|24.6MB/s|DNSOK|GPT⁺-HU
+- name: 🇭🇺 | @WhiteDNS | HU14|23.0MB/s|DNSOK|GPT⁺-HU
   password: None
   port: 443
   server: 146.70.203.18
@@ -21,11 +21,19 @@ proxies:
   tls: true
   type: http
   username: ''
+- name: 🇭🇺 | @WhiteDNS | HU15|1.2MB/s|DNSOK|GPT⁺-HU
+  password: ''
+  port: 18080
+  server: 87.97.94.229
+  skip-cert-verify: true
+  type: http
+  username: ''
 proxy-groups:
 - name: HU-Auto
   type: url-test
   proxies:
-  - 🇭🇺 | @WhiteDNS | HU12|24.6MB/s|DNSOK|GPT⁺-HU
+  - 🇭🇺 | @WhiteDNS | HU14|23.0MB/s|DNSOK|GPT⁺-HU
+  - 🇭🇺 | @WhiteDNS | HU15|1.2MB/s|DNSOK|GPT⁺-HU
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
