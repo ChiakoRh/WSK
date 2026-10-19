@@ -1,8 +1,38 @@
 proxies:
+- cipher: aes-256-gcm
+  name: 🇵🇱 | @WhiteDNS | PL65|18.3MB/s|DNSOK|GPT⁺-PL
+  password: itzvpn@321
+  port: 8388
+  server: 51.83.192.80
+  type: ss
+  udp: true
 - client-fingerprint: chrome
+  name: 🇵🇱 | @WhiteDNS | PL66|18.1MB/s|DNSOK|GPT⁺-PL
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: pl1.dedushka.top
+  skip-cert-verify: false
+  sni: pl1.dedushka.top
+  type: trojan
+  udp: true
+  network: tcp
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇵🇱 | @WhiteDNS | PL67|6.9MB/s|DNSOK|GPT⁺-PL
+  network: tcp
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: pl2.dedushka.top
+  skip-cert-verify: false
+  sni: pl2.dedushka.top
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
   grpc-opts:
     grpc-service-name: framefeed
-  name: 🇵🇱 | @WhiteDNS | PL77|25.0MB/s|DNSOK|GPT⁺-PL
+  name: 🇵🇱 | @WhiteDNS | PL68|6.6MB/s|DNSOK|GPT⁺-PL
   network: grpc
   port: 443
   server: 83.168.91.16
@@ -12,23 +42,25 @@ proxies:
   uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
   xudp: true
   servername: pl-exit-02.10media.top
-- alpn:
-  - h2
-  client-fingerprint: safari
-  encryption: none
-  grpc-opts:
-    grpc-service-name: framefeed
-  name: 🇵🇱 | @WhiteDNS | PL78|23.4MB/s|DNSOK|GPT⁺-PL
-  network: grpc
+- name: 🇵🇱 | @WhiteDNS | PL69|6.3MB/s|DNSOK|GPT⁺-PL
+  password: ''
   port: 443
-  server: stratafolio.10media.top
+  server: 151.115.54.133
+  skip-cert-verify: true
   tls: true
-  type: vless
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  name: 🇵🇱 | @WhiteDNS | PL70|5.9MB/s|DNSOK|GPT⁺-PL
+  network: tcp
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: pl1.dedushka.top
+  skip-cert-verify: false
+  sni: pl1.dedushka.top
+  type: trojan
   udp: true
-  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
-  xudp: true
-  servername: stratafolio.10media.top
-- name: 🇵🇱 | @WhiteDNS | PL79|19.5MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL71|5.5MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 37.120.156.18
@@ -36,78 +68,28 @@ proxies:
   tls: true
   type: http
   username: ''
-- client-fingerprint: chrome
-  name: 🇵🇱 | @WhiteDNS | PL80|17.6MB/s|DNSOK|GPT⁺-PL
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: framefeed
+  name: 🇵🇱 | @WhiteDNS | PL72|4.8MB/s|DNSOK|GPT⁺-PL
+  network: grpc
   port: 443
-  server: pl2.dedushka.top
-  skip-cert-verify: false
-  sni: pl2.dedushka.top
-  type: trojan
+  server: 83.168.91.16
+  tls: true
+  type: vless
   udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇵🇱 | @WhiteDNS | PL81|17.0MB/s|DNSOK|GPT⁺-PL
-  network: tcp
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  port: 443
-  server: pl1.dedushka.top
-  skip-cert-verify: false
-  sni: pl1.dedushka.top
-  type: trojan
-  udp: true
-- name: 🇵🇱 | @WhiteDNS | PL82|14.6MB/s|DNSOK|GPT⁺-PL
+  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
+  xudp: true
+  servername: stratafolio.10media.top
+- name: 🇵🇱 | @WhiteDNS | PL73|4.7MB/s|DNSOK|GPT⁺-PL
   password: None
-  port: 443
-  server: 151.115.54.133
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- cipher: aes-256-gcm
-  name: 🇵🇱 | @WhiteDNS | PL83|8.6MB/s|DNSOK|GPT⁺-PL
-  password: itzvpn@321
-  port: 8388
-  server: 51.83.192.80
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 🇵🇱 | @WhiteDNS | PL84|6.4MB/s|DNSOK|GPT⁺-PL
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  port: 443
-  server: pl1.dedushka.top
-  skip-cert-verify: false
-  sni: pl1.dedushka.top
-  type: trojan
-  udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇵🇱 | @WhiteDNS | PL85|6.1MB/s|DNSOK|GPT⁺-PL
-  network: tcp
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  port: 443
-  server: pl2.dedushka.top
-  skip-cert-verify: false
-  sni: pl2.dedushka.top
-  type: trojan
-  udp: true
-- name: 🇵🇱 | @WhiteDNS | PL86|6.1MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 151.115.54.133
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇵🇱 | @WhiteDNS | PL87|6.1MB/s|DNSOK|GPT⁺-PL
-  password: ''
   port: 443
   server: 37.120.156.34
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇵🇱 | @WhiteDNS | PL88|1.8MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL74|2.5MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 31.186.220.204

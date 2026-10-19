@@ -13,14 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇭 | @WhiteDNS | CH66|56.9MB/s|DNSOK|GPT⁺-CH
-  password: ''
-  port: 8800
-  server: 147.161.246.36
-  skip-cert-verify: true
-  type: http
-  username: ''
-- name: 🇨🇭 | @WhiteDNS | CH67|48.5MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH57|44.7MB/s|DNSOK|GPT⁺-CH
   password: ''
   port: 9443
   server: 149.88.27.46
@@ -28,24 +21,16 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇭 | @WhiteDNS | CH68|23.4MB/s|DNSOK|GPT⁺-CH
-  password: ''
-  port: 443
-  server: 31.7.62.50
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇭 | @WhiteDNS | CH69|7.7MB/s|DNSOK|GPT⁺-CH
-  password: ''
-  port: 9443
-  server: 149.88.27.33
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇭 | @WhiteDNS | CH70|7.3MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH58|31.5MB/s|DNSOK|GPT⁺-CH
   password: None
+  port: 9443
+  server: 37.120.213.210
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH59|6.3MB/s|DNSOK|GPT⁺-CH
+  password: ''
   port: 9443
   server: 37.120.213.210
   skip-cert-verify: true
@@ -56,11 +41,9 @@ proxy-groups:
 - name: CH-Auto
   type: url-test
   proxies:
-  - 🇨🇭 | @WhiteDNS | CH66|56.9MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH67|48.5MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH68|23.4MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH69|7.7MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH70|7.3MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH57|44.7MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH58|31.5MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH59|6.3MB/s|DNSOK|GPT⁺-CH
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
