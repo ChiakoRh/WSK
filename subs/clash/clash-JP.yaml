@@ -13,9 +13,33 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP167|1.8MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 35544
+  reality-opts:
+    public-key: HrcXRHtsitc_AVlN-_8fZuRgaP-Mqa_9JJotI9OnkVc
+    short-id: 25c79e5856c7
+  server: funagfrdfs.alixxplay.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  xudp: true
+  servername: iosapps.itunes.apple.com
+- name: 🇯🇵 | @WhiteDNS | JP168|1.5MB/s|DNSOK|GPT⁺-JP
+  password: ''
+  port: 343
+  server: 133.18.200.207
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP157|1.8MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP169|1008KB/s|DNSOK|GPT⁺-JP
   port: 443
   reality-opts:
     public-key: 9ZCYjybxMQ7JpE39B8u_Bo-alI1LIbt5ER0E-4yMjiM
@@ -30,48 +54,27 @@ proxies:
   servername: jp3.nztvpn.com
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP158|1.0MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 443
+  name: 🇯🇵 | @WhiteDNS | JP170|746KB/s|DNSOK|GPT⁺-JP
+  port: 28573
   reality-opts:
-    public-key: 9ZCYjybxMQ7JpE39B8u_Bo-alI1LIbt5ER0E-4yMjiM
-    short-id: ea36c03d86f91287
-  server: 142.91.108.25
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  server: 18.183.215.124
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
-  servername: jp3.nztvpn.com
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP159|959KB/s|DNSOK|GPT⁺
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: 9ZCYjybxMQ7JpE39B8u_Bo-alI1LIbt5ER0E-4yMjiM
-    short-id: ea36c03d86f91287
-  server: 142.91.108.25
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
-  xudp: true
-  servername: jp3.nztvpn.com
-- name: 🇯🇵 | @WhiteDNS | JP160|793KB/s|DNSOK|GPT⁺-JP
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
   network: tcp
-  port: 47878
-  server: 152.69.195.67
-  type: vless
-  udp: true
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  servername: www.sony.com
 proxy-groups:
 - name: JP-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP157|1.8MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP158|1.0MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP159|959KB/s|DNSOK|GPT⁺
-  - 🇯🇵 | @WhiteDNS | JP160|793KB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP167|1.8MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP168|1.5MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP169|1008KB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP170|746KB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

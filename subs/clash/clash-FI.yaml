@@ -13,10 +13,62 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  fingerprint: cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e
+  name: 🇫🇮 | @WhiteDNS | FI96|16.7MB/s|DNSOK|GPT⁺-FI
+  network: xhttp
+  port: 443
+  server: 146.75.59.186
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4fa75902-b55b-44cb-b1b9-496a6e1c0f4f
+  xhttp-opts:
+    host: zehnix.global.ssl.fastly.net
+    mode: auto
+    path: /
+  xudp: true
+  servername: firefox.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI97|6.4MB/s|DNSOK|GPT⁺-FI
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  server: 65.108.3.59
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  xudp: true
+  servername: web.eitaa.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI98|6.4MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  server: 65.108.3.59
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  xudp: true
+  servername: web.eitaa.com
 - client-fingerprint: chrome
   encryption: mlkem768x25519plus.native.0rtt.Zb6-NCLm820-hYQhDpS15UQ6ofGGJ5BnQ7cxc3c4Pg8
   fingerprint: cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e
-  name: 🇫🇮 | @WhiteDNS | FI109|6.1MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI99|5.6MB/s|DNSOK|GPT⁺-FI
   network: ws
   port: 443
   server: 199.232.237.79
@@ -28,7 +80,7 @@ proxies:
     headers:
       Host: Spectrally-timablesn-ibis-kepler.global.ssl.fastly.net
       User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/43.0.2357.65 Safari/537.36
+        Gecko) Chrome/51.0.2704.106 Safari/537.36
     path: /
   xudp: true
   servername: play.google.com
@@ -42,15 +94,15 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI110|3.7MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI100|3.7MB/s|DNSOK|GPT⁺-FI
   network: http
-  port: 52080
+  port: 2053
   server: 185.212.149.7
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
+  uuid: aeb3c019-ae83-4677-af97-846baa787ad5
   xudp: true
 - alpn:
   - ''
@@ -62,23 +114,26 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI111|2.6MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI101|2.4MB/s|DNSOK|GPT⁺-FI
   network: http
-  port: 2053
+  port: 52080
   server: 185.212.149.7
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: aeb3c019-ae83-4677-af97-846baa787ad5
+  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
   xudp: true
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI109|6.1MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI110|3.7MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI111|2.6MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI96|16.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI97|6.4MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI98|6.4MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI99|5.6MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI100|3.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI101|2.4MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
