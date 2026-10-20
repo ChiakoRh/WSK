@@ -13,15 +13,17 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇬🇧 | @WhiteDNS | GB81|24.8MB/s|DNSOK|GPT⁺-GB
+- encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB89|28.1MB/s|DNSOK|GPT⁺-GB
   network: tcp
-  port: 10002
-  server: connect.hondamotor.site
+  port: 22224
+  server: 16.61.117.36
   type: vless
   udp: true
-  uuid: c6362720-0931-4b91-b187-d8ecf3149734
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   xudp: true
-- name: 🇬🇧 | @WhiteDNS | GB82|24.6MB/s|DNSOK|GPT⁺-GB
+- encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB90|27.9MB/s|DNSOK|GPT⁺-GB
   network: tcp
   port: 22224
   server: 51.24.54.202
@@ -29,7 +31,40 @@ proxies:
   udp: true
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   xudp: true
-- name: 🇬🇧 | @WhiteDNS | GB83|21.8MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB91|27.8MB/s|DNSOK|GPT⁺-GB
+  port: 10002
+  server: connect.hondamotor.site
+  type: vless
+  udp: true
+  uuid: c6362720-0931-4b91-b187-d8ecf3149734
+  network: tcp
+- encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB92|27.3MB/s|DNSOK|GPT⁺-GB
+  network: tcp
+  port: 22223
+  server: 16.61.117.36
+  type: vless
+  udp: true
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  xudp: true
+- name: 🇬🇧 | @WhiteDNS | GB93|26.8MB/s|DNSOK|GPT⁺-GB
+  network: tcp
+  port: 10002
+  server: connect.hondamotor.site
+  type: vless
+  udp: true
+  uuid: c6362720-0931-4b91-b187-d8ecf3149734
+  xudp: true
+- encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB94|26.8MB/s|DNSOK|GPT⁺-GB
+  network: tcp
+  port: 22223
+  server: 51.24.54.202
+  type: vless
+  udp: true
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  xudp: true
+- name: 🇬🇧 | @WhiteDNS | GB95|21.9MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
   server: 185.164.138.156
@@ -37,48 +72,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB84|21.1MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 443
-  server: 84.17.50.193
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB85|20.6MB/s|DNSOK|GPT⁺-GB
-  network: tcp
-  port: 22222
-  server: 51.24.54.202
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  xudp: true
-- name: 🇬🇧 | @WhiteDNS | GB86|19.0MB/s|DNSOK|GPT⁺
-  password: ''
-  port: 9443
-  server: 84.17.50.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB87|17.4MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 9443
-  server: 37.120.233.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB88|16.0MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 443
-  server: 37.120.233.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB89|12.7MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB96|21.6MB/s|DNSOK|GPT⁺-GB
   password: None
   port: 443
   server: 212.102.63.1
@@ -86,7 +80,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB90|6.5MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB97|21.4MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
   server: 212.102.63.61
@@ -94,7 +88,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB91|6.4MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB98|20.9MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
   server: 212.102.63.31
@@ -102,15 +96,89 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB92|4.8MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB99|20.8MB/s|DNSOK|GPT⁺-GB
   password: ''
+  port: 9443
+  server: 84.17.50.129
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB100|20.1MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 443
+  server: 212.102.63.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB101|18.3MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 443
+  server: 37.120.233.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB102|18.1MB/s|DNSOK|GPT⁺-GB
+  password: None
+  port: 443
+  server: 37.120.233.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB103|18.1MB/s|DNSOK|GPT⁺-GB
+  password: None
   port: 443
   server: 37.120.233.50
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB93|4.6MB/s|DNSOK|GPT⁺-RO
+- name: 🇬🇧 | @WhiteDNS | GB104|17.8MB/s|DNSOK|GPT⁺-GB
+  password: None
+  port: 9443
+  server: 37.120.233.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB105|13.3MB/s|DNSOK|GPT⁺-GB
+  network: raw
+  port: 10002
+  server: connect.hondamotor.site
+  type: vless
+  udp: true
+  uuid: c6362720-0931-4b91-b187-d8ecf3149734
+  xudp: true
+- encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB106|7.4MB/s|DNSOK|GPT⁺-GB
+  network: tcp
+  port: 22222
+  server: 16.61.117.36
+  type: vless
+  udp: true
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  xudp: true
+- name: 🇬🇧 | @WhiteDNS | GB107|6.5MB/s|DNSOK|GPT⁺-GB
+  password: None
+  port: 443
+  server: 212.102.63.61
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB108|5.9MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 443
+  server: 84.17.50.193
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB109|5.5MB/s|DNSOK|GPT⁺-RO
   password: ''
   port: 443
   server: 185.163.110.194
@@ -118,39 +186,70 @@ proxies:
   tls: true
   type: http
   username: ''
+- name: 🇬🇧 | @WhiteDNS | GB110|4.7MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 1080
+  server: 57.129.182.181
+  skip-cert-verify: true
+  type: socks5
+  username: ''
 - client-fingerprint: chrome
-  encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB94|988KB/s|DNSOK|GPT⁺-GB
-  network: tcp
-  port: 44512
+  name: 🇬🇧 | @WhiteDNS | GB111|2.9MB/s|DNSOK|GPT⁺-GB
+  port: 1222
   reality-opts:
-    public-key: woId47r1U8pEuDwHoC026bJHVWha2RHjufq1Kw3QoRU
-    short-id: ca4134a0ed2592b6
-  server: tun2.w-ert.org
+    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
+    short-id: a25d0f
+  server: 23.81.36.148
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 2a1acb4b-fe6e-487c-ac63-c83b84c657ac
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  network: tcp
+  servername: play.google.com
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB112|2.7MB/s|DNSOK|GPT⁺-GB
+  network: tcp
+  port: 1222
+  reality-opts:
+    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
+    short-id: a25d0f
+  server: 23.81.36.148
+  tls: true
+  type: vless
+  udp: true
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
   xudp: true
-  servername: www.aparat.com
+  servername: play.google.com
 proxy-groups:
 - name: GB-Auto
   type: url-test
   proxies:
-  - 🇬🇧 | @WhiteDNS | GB81|24.8MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB82|24.6MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB83|21.8MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB84|21.1MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB85|20.6MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB86|19.0MB/s|DNSOK|GPT⁺
-  - 🇬🇧 | @WhiteDNS | GB87|17.4MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB88|16.0MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB89|12.7MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB90|6.5MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB91|6.4MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB92|4.8MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB93|4.6MB/s|DNSOK|GPT⁺-RO
-  - 🇬🇧 | @WhiteDNS | GB94|988KB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB89|28.1MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB90|27.9MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB91|27.8MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB92|27.3MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB93|26.8MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB94|26.8MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB95|21.9MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB96|21.6MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB97|21.4MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB98|20.9MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB99|20.8MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB100|20.1MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB101|18.3MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB102|18.1MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB103|18.1MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB104|17.8MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB105|13.3MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB106|7.4MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB107|6.5MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB108|5.9MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB109|5.5MB/s|DNSOK|GPT⁺-RO
+  - 🇬🇧 | @WhiteDNS | GB110|4.7MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB111|2.9MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB112|2.7MB/s|DNSOK|GPT⁺-GB
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
