@@ -13,42 +13,21 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT640|2.2MB/s|DNSOK|GPT⁺-KR
-  port: 443
-  reality-opts:
-    public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
-    short-id: ca193e889d958f81
-  server: 64.176.231.183
-  skip-cert-verify: true
-  tls: true
+- encryption: none
+  name: ❓ | @WhiteDNS | OT535|512KB/s|DNSOK|GPT⁺-IT
+  network: tcp
+  port: 10086
+  server: 204.216.216.23
   type: vless
   udp: true
-  uuid: 583cc910-b57c-4dd0-a4a7-cea51a30b032
-  network: tcp
-  servername: www.apple.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT641|2.0MB/s|DNSOK|GPT⁺-FR
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0
-    short-id: e6
-  server: ww3.levikogjgfdd.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
   xudp: true
-  servername: passport.yandex.ru
+  servername: /?v2rayNplus
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT640|2.2MB/s|DNSOK|GPT⁺-KR
-  - ❓ | @WhiteDNS | OT641|2.0MB/s|DNSOK|GPT⁺-FR
+  - ❓ | @WhiteDNS | OT535|512KB/s|DNSOK|GPT⁺-IT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

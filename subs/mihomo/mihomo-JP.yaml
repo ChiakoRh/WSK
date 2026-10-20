@@ -1,27 +1,7 @@
 proxies:
-- client-fingerprint: random
-  encryption: none
-  name: 🇯🇵 | @WhiteDNS | JP153|2.4MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 443
-  server: freev2.cloudflare.182682.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: ed6ae8d0-0ad4-4828-8fee-621a650abb39
-  ws-opts:
-    headers:
-      Host: jp-osa.862400.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /announcement
-    early-data-header-name: Sec-WebSocket-Protocol
-    max-early-data: 2048
-  xudp: true
-  servername: jp-osa.862400.xyz
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP154|1.9MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP157|1.8MB/s|DNSOK|GPT⁺-JP
   port: 443
   reality-opts:
     public-key: 9ZCYjybxMQ7JpE39B8u_Bo-alI1LIbt5ER0E-4yMjiM
@@ -34,24 +14,9 @@ proxies:
   uuid: ee18d188-14cc-417e-beb1-70e4add6d023
   network: tcp
   servername: jp3.nztvpn.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP155|1.7MB/s|DNSOK|GPT⁺-JP
-  port: 443
-  reality-opts:
-    public-key: TYc78nIrek2q0MpFxzdEw7aKN2sUUO-oF_VRlX5zezM
-    short-id: 28f369c9
-  server: jp2.2149555.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: f4e0bc7b-b58f-41c8-a858-3836337facdf
-  network: tcp
-  servername: www.icloud.com
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP156|1.7MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP158|1.0MB/s|DNSOK|GPT⁺-JP
   network: tcp
   port: 443
   reality-opts:
@@ -62,11 +27,10 @@ proxies:
   type: vless
   udp: true
   uuid: ee18d188-14cc-417e-beb1-70e4add6d023
-  xudp: true
   servername: jp3.nztvpn.com
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP157|1.0MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP159|959KB/s|DNSOK|GPT⁺
   network: raw
   port: 443
   reality-opts:
@@ -79,21 +43,10 @@ proxies:
   uuid: ee18d188-14cc-417e-beb1-70e4add6d023
   xudp: true
   servername: jp3.nztvpn.com
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP158|614KB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- name: 🇯🇵 | @WhiteDNS | JP160|793KB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 47878
+  server: 152.69.195.67
+  type: vless
   udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: 168.138.43.75
-    path: /cctv13.m3u8
-  xudp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
