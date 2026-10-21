@@ -13,15 +13,23 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇸🇪 | @WhiteDNS | SE16|16.4MB/s|DNSOK|GPT⁺-SE
-  password: ''
-  port: 9443
+- name: 🇸🇪 | @WhiteDNS | SE21|15.7MB/s|DNSOK|GPT⁺-SE
+  password: None
+  port: 443
   server: 146.70.242.146
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇸🇪 | @WhiteDNS | SE17|15.9MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE22|6.1MB/s|DNSOK|GPT⁺-SE
+  password: None
+  port: 443
+  server: 146.70.242.130
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇸🇪 | @WhiteDNS | SE23|6.1MB/s|DNSOK|GPT⁺-SE
   password: ''
   port: 443
   server: 149.50.216.65
@@ -29,24 +37,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- client-fingerprint: chrome
-  encryption: none
-  grpc-opts:
-    grpc-service-name: moktana.net.v1.StreamService
-  name: 🇸🇪 | @WhiteDNS | SE18|6.4MB/s|DNSOK|GPT⁺-SE
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
-    short-id: a1b2c3d4e5f6a7b8
-  server: multirouterapp.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: af381781-3a00-4565-b1bc-4df0275eb4b9
-  xudp: true
-  servername: lunarchaff.com
-- name: 🇸🇪 | @WhiteDNS | SE19|5.0MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE24|6.0MB/s|DNSOK|GPT⁺-SE
   password: ''
   port: 443
   server: 146.70.242.130
@@ -54,14 +45,31 @@ proxies:
   tls: true
   type: http
   username: ''
+- name: 🇸🇪 | @WhiteDNS | SE25|5.9MB/s|DNSOK|GPT⁺-SE
+  password: ''
+  port: 9443
+  server: 146.70.242.146
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇸🇪 | @WhiteDNS | SE26|780KB/s|DNSOK|GPT⁺-SE
+  password: ''
+  port: 1080
+  server: 37.27.245.106
+  skip-cert-verify: true
+  type: socks5
+  username: ''
 proxy-groups:
 - name: SE-Auto
   type: url-test
   proxies:
-  - 🇸🇪 | @WhiteDNS | SE16|16.4MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE17|15.9MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE18|6.4MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE19|5.0MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE21|15.7MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE22|6.1MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE23|6.1MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE24|6.0MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE25|5.9MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE26|780KB/s|DNSOK|GPT⁺-SE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

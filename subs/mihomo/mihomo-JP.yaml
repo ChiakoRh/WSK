@@ -1,64 +1,22 @@
 proxies:
-- name: 🇯🇵 | @WhiteDNS | JP373|1.3MB/s|DNSOK|GPT⁺-JP
-  password: ''
-  port: 343
-  server: 133.18.200.207
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- encryption: none
-  name: 🇯🇵 | @WhiteDNS | JP374|1.1MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 47878
-  server: 152.69.195.67
-  type: vless
-  udp: true
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-  xudp: true
-  servername: 152.69.195.67
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP375|1.1MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: 168.138.43.75
-    path: /cctv13.m3u8
-  xudp: true
-  servername: 168.138.43.75
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP376|1.0MB/s|DNSOK|GPT⁺-JP
-  network: tcp
+  name: 🇯🇵 | @WhiteDNS | JP308|1.7MB/s|DNSOK|GPT⁺-JP
   port: 443
   reality-opts:
     public-key: 9ZCYjybxMQ7JpE39B8u_Bo-alI1LIbt5ER0E-4yMjiM
     short-id: ea36c03d86f91287
   server: 142.91.108.25
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: ee18d188-14cc-417e-beb1-70e4add6d023
-  xudp: true
-  servername: jp3.nztvpn.com
-- name: 🇯🇵 | @WhiteDNS | JP377|1.0MB/s|DNSOK|GPT⁺-JP
   network: tcp
-  port: 47878
-  server: 152.69.195.67
-  type: vless
-  udp: true
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  servername: jp3.nztvpn.com
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP378|985KB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP309|1.0MB/s|DNSOK|GPT⁺-JP
   network: raw
   port: 443
   reality-opts:
@@ -71,18 +29,10 @@ proxies:
   uuid: ee18d188-14cc-417e-beb1-70e4add6d023
   xudp: true
   servername: jp3.nztvpn.com
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP379|569KB/s|DNSOK|GPT⁺-JP
-  port: 443
-  reality-opts:
-    public-key: 9ZCYjybxMQ7JpE39B8u_Bo-alI1LIbt5ER0E-4yMjiM
-    short-id: ea36c03d86f91287
-  server: 142.91.108.25
+- name: 🇯🇵 | @WhiteDNS | JP310|1.0MB/s|DNSOK|GPT⁺-JP
+  password: ''
+  port: 1080
+  server: 58.89.82.209
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
-  network: tcp
-  servername: jp3.nztvpn.com
+  type: socks5
+  username: ''
