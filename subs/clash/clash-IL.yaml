@@ -13,7 +13,14 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇱 | @WhiteDNS | IL3|4.9MB/s|DNSOK|GPT⁺-IL
+- name: 🇮🇱 | @WhiteDNS | IL6|5.3MB/s|DNSOK|GPT⁺-IL
+  password: ''
+  port: 1080
+  server: 64.176.166.106
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- name: 🇮🇱 | @WhiteDNS | IL7|4.5MB/s|DNSOK|GPT⁺-IL
   password: ''
   port: 443
   server: 169.150.248.17
@@ -25,7 +32,8 @@ proxy-groups:
 - name: IL-Auto
   type: url-test
   proxies:
-  - 🇮🇱 | @WhiteDNS | IL3|4.9MB/s|DNSOK|GPT⁺-IL
+  - 🇮🇱 | @WhiteDNS | IL6|5.3MB/s|DNSOK|GPT⁺-IL
+  - 🇮🇱 | @WhiteDNS | IL7|4.5MB/s|DNSOK|GPT⁺-IL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
