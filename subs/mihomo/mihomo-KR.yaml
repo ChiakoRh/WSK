@@ -1,7 +1,37 @@
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇰🇷 | @WhiteDNS | KR72|1.8MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR75|1.8MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
+    short-id: ca193e889d958f81
+  server: 64.176.231.183
+  tls: true
+  type: vless
+  udp: true
+  uuid: 583cc910-b57c-4dd0-a4a7-cea51a30b032
+  xudp: true
+  servername: www.apple.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇰🇷 | @WhiteDNS | KR76|1.7MB/s|DNSOK|GPT⁺-KR
+  port: 443
+  reality-opts:
+    public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
+    short-id: ca193e889d958f81
+  server: 64.176.231.183
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 583cc910-b57c-4dd0-a4a7-cea51a30b032
+  network: tcp
+  servername: www.apple.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇰🇷 | @WhiteDNS | KR77|1.7MB/s|DNSOK|GPT⁺-KR
   network: raw
   port: 443
   reality-opts:
@@ -14,35 +44,10 @@ proxies:
   uuid: 583cc910-b57c-4dd0-a4a7-cea51a30b032
   xudp: true
   servername: www.apple.com
-- cipher: aes-256-cfb
-  name: 🇰🇷 | @WhiteDNS | KR73|1.7MB/s|DNSOK|GPT⁺-KR
-  password: 1234!@#$
-  port: 1774
-  server: 49.254.204.133
-  type: ss
-  udp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 🇰🇷 | @WhiteDNS | KR74|1.6MB/s|DNSOK|GPT⁺-KR
-  network: http
-  port: 80
-  server: 217.142.138.61
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ac1b933d-afff-4487-93ef-f57130a55dff
-  xudp: true
-- name: 🇰🇷 | @WhiteDNS | KR75|1.1MB/s|DNSOK|GPT⁺-KR
+- name: 🇰🇷 | @WhiteDNS | KR78|1.6MB/s|DNSOK|GPT⁺-KR
   password: ''
   port: 1080
-  server: 14.36.232.55
+  server: 144.24.94.153
   skip-cert-verify: true
-  type: socks5
+  type: http
   username: ''
