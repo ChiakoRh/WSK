@@ -13,23 +13,14 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇹 | @WhiteDNS | IT79|23.8MB/s|DNSOK|GPT⁺-IT
-  password: None
-  port: 443
-  server: 185.183.105.146
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇮🇹 | @WhiteDNS | IT80|23.5MB/s|DNSOK|GPT⁺-IT
-  password: ''
-  port: 443
-  server: 185.183.105.130
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇮🇹 | @WhiteDNS | IT81|6.5MB/s|DNSOK|GPT⁺-IT
+- cipher: aes-256-gcm
+  name: 🇮🇹 | @WhiteDNS | IT370|45.7MB/s|DNSOK|GPT⁺-IT
+  password: itzvpn@321
+  port: 8388
+  server: 57.131.48.45
+  type: ss
+  udp: true
+- name: 🇮🇹 | @WhiteDNS | IT371|32.6MB/s|DNSOK|GPT⁺-IT
   password: ''
   port: 443
   server: 94.177.163.156
@@ -37,13 +28,64 @@ proxies:
   tls: true
   type: http
   username: ''
+- name: 🇮🇹 | @WhiteDNS | IT372|25.6MB/s|DNSOK|GPT⁺-IT
+  password: None
+  port: 443
+  server: 185.183.105.146
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇮🇹 | @WhiteDNS | IT373|7.3MB/s|DNSOK|GPT⁺-IT
+  password: ''
+  port: 443
+  server: 185.183.105.130
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇮🇹 | @WhiteDNS | IT374|744KB/s|DNSOK|GPT⁺-IT
+  port: 10086
+  server: 204.216.216.23
+  type: vless
+  udp: true
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  network: tcp
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇮🇹 | @WhiteDNS | IT375|582KB/s|DNSOK|GPT⁺-IT
+  port: 1114
+  reality-opts:
+    public-key: WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ
+    short-id: 79a1e14b
+  server: 204.216.216.23
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6ba2eac6-0ec9-44ca-a42b-a8e23aafb530
+  network: tcp
+  servername: yahoo.com
+- encryption: none
+  name: 🇮🇹 | @WhiteDNS | IT376|536KB/s|DNSOK|GPT⁺-IT
+  network: tcp
+  port: 10086
+  server: 204.216.216.23
+  type: vless
+  udp: true
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  xudp: true
 proxy-groups:
 - name: IT-Auto
   type: url-test
   proxies:
-  - 🇮🇹 | @WhiteDNS | IT79|23.8MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT80|23.5MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT81|6.5MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT370|45.7MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT371|32.6MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT372|25.6MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT373|7.3MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT374|744KB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT375|582KB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT376|536KB/s|DNSOK|GPT⁺-IT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
