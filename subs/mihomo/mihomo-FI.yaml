@@ -1,15 +1,23 @@
 proxies:
-- alterId: '0'
+- alpn:
+  - ''
+  alterId: '0'
   cipher: auto
-  name: 🇫🇮 | @WhiteDNS | FI46|17.5MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 16911
-  server: 65.109.209.239
+  http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    path:
+    - /3x
+  name: 🇫🇮 | @WhiteDNS | FI44|2.6MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 52080
+  server: 185.212.149.7
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: c5f59d68-5a26-40b8-a086-2f531e06737c
+  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
   xudp: true
 - alpn:
   - ''
@@ -21,7 +29,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI47|2.9MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI45|2.5MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
@@ -31,23 +39,15 @@ proxies:
   udp: true
   uuid: aeb3c019-ae83-4677-af97-846baa787ad5
   xudp: true
-- alpn:
-  - ''
-  alterId: '0'
+- alterId: 0
   cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - down-cdn.dingtalk.com
-    path:
-    - /3x
-  name: 🇫🇮 | @WhiteDNS | FI48|2.6MB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 52080
-  server: 185.212.149.7
+  name: 🇫🇮 | @WhiteDNS | FI46|1.8MB/s|DNSOK|GPT⁺-FI
+  network: raw
+  port: 16911
+  server: 65.109.209.239
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
+  uuid: c5f59d68-5a26-40b8-a086-2f531e06737c
   xudp: true
