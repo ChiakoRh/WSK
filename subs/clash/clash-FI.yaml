@@ -13,61 +13,18 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  http-opts:
-    headers:
-      Host:
-      - play.google.com
-    path:
-    - /
-  name: 🇫🇮 | @WhiteDNS | FI58|26.3MB/s|DNSOK|GPT⁺-DE
-  network: http
-  port: 2083
-  server: de4w5oeehlkqd7wq0i9cfhq87oe2lwd7b.nodenix.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: bfd2ae15-1742-4d75-9e3a-495112b7b405
-  xudp: true
-  servername: de4xw5oeehlkqd7wq0i9cfhq87oe2lwd7b.nodenix.ir
-- encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI59|6.9MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 30079
-  server: 65.109.209.239
-  type: vless
-  udp: true
-  uuid: 0a9dfb0b-4fe1-40fe-b74c-0367e666ca96
-  xudp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.Zb6-NCLm820-hYQhDpS15UQ6ofGGJ5BnQ7cxc3c4Pg8
-  fingerprint: cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e
-  name: 🇫🇮 | @WhiteDNS | FI60|5.5MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 443
-  server: 199.232.237.79
-  tls: true
-  type: vless
-  udp: true
-  uuid: 785f86f0-0de3-44cb-abc9-0450947214fe
-  ws-opts:
-    headers:
-      Host: Spectrally-timablesn-ibis-kepler.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.77 Safari/537.36
-    path: /?TELEGRAM-TOOTFFARANGI
-  xudp: true
-  servername: Firefox.com
 - cipher: chacha20-ietf-poly1305
-  name: 🇫🇮 | @WhiteDNS | FI61|4.9MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI66|6.7MB/s|DNSOK|GPT⁺-FI
   password: QoYjvkIZ7-bMIYfVI9IzRXUx5A1o3kj7
   port: 53731
   server: fn1s.sublinkplas.ir
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇮 | @WhiteDNS | FI67|6.4MB/s|DNSOK|GPT⁺-FI
+  password: QoYjvkIZ7-bMIYfVI9IzRXUx5A1o3kj7
+  port: 53731
+  server: 65.21.52.113
   type: ss
   udp: true
 - alpn:
@@ -80,7 +37,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI62|2.3MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI68|2.6MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
@@ -100,7 +57,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI63|1.9MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI69|2.3MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 52080
   server: 185.212.149.7
@@ -114,12 +71,10 @@ proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI58|26.3MB/s|DNSOK|GPT⁺-DE
-  - 🇫🇮 | @WhiteDNS | FI59|6.9MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI60|5.5MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI61|4.9MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI62|2.3MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI63|1.9MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI66|6.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI67|6.4MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI68|2.6MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI69|2.3MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

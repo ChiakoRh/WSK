@@ -13,15 +13,15 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇦🇹 | @WhiteDNS | AT7|20.0MB/s|DNSOK|GPT⁺-AT
+- name: 🇦🇹 | @WhiteDNS | AT16|24.8MB/s|DNSOK|GPT⁺-AT
   password: ''
   port: 443
-  server: 146.70.244.2
+  server: 146.70.244.18
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇦🇹 | @WhiteDNS | AT8|19.5MB/s|DNSOK|GPT⁺-AT
+- name: 🇦🇹 | @WhiteDNS | AT17|23.8MB/s|DNSOK|GPT⁺-AT
   password: None
   port: 443
   server: 146.70.244.2
@@ -29,10 +29,10 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇦🇹 | @WhiteDNS | AT9|6.3MB/s|DNSOK|GPT⁺-AT
+- name: 🇦🇹 | @WhiteDNS | AT18|19.2MB/s|DNSOK|GPT⁺-AT
   password: ''
   port: 443
-  server: 146.70.244.18
+  server: 146.70.244.2
   skip-cert-verify: true
   tls: true
   type: http
@@ -41,9 +41,9 @@ proxy-groups:
 - name: AT-Auto
   type: url-test
   proxies:
-  - 🇦🇹 | @WhiteDNS | AT7|20.0MB/s|DNSOK|GPT⁺-AT
-  - 🇦🇹 | @WhiteDNS | AT8|19.5MB/s|DNSOK|GPT⁺-AT
-  - 🇦🇹 | @WhiteDNS | AT9|6.3MB/s|DNSOK|GPT⁺-AT
+  - 🇦🇹 | @WhiteDNS | AT16|24.8MB/s|DNSOK|GPT⁺-AT
+  - 🇦🇹 | @WhiteDNS | AT17|23.8MB/s|DNSOK|GPT⁺-AT
+  - 🇦🇹 | @WhiteDNS | AT18|19.2MB/s|DNSOK|GPT⁺-AT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
