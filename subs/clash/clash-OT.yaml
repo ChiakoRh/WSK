@@ -12,32 +12,11 @@ dns:
   nameserver:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
-proxies:
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - tms.dingtalk.com
-    path:
-    - /
-  name: ❓ | @WhiteDNS | OT558|1.1MB/s|DNSOK|GPT⁺
-  network: http
-  port: 59236
-  server: 54.229.151.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2387bfbc-10a6-4bd7-dc55-7cba954ce6e8
-  xudp: true
+proxies: []
 proxy-groups:
 - name: OT-Auto
   type: url-test
-  proxies:
-  - ❓ | @WhiteDNS | OT558|1.1MB/s|DNSOK|GPT⁺
+  proxies: []
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
