@@ -13,18 +13,40 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇳 | @WhiteDNS | IN47|2.6MB/s|DNSOK|GPT⁺-IN
+- country: 🇺🇸US
+  name: 🇮🇳 | @WhiteDNS | IN51|1.9MB/s|DNSOK|GPT⁺-IN
+  password: Trojan@82164024
+  port: 443
+  server: in.tronsg.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  network: tcp
+  sni: in.tronsg.com
+- name: 🇮🇳 | @WhiteDNS | IN52|1.7MB/s|DNSOK|GPT⁺-IN
   password: ''
   port: 1088
   server: 144.24.111.128
   skip-cert-verify: true
   type: socks5
   username: ''
+- client-fingerprint: chrome
+  name: 🇮🇳 | @WhiteDNS | IN53|1.6MB/s|DNSOK|GPT⁺-IN
+  network: tcp
+  password: Trojan@82164024
+  port: 443
+  server: in.tronsg.com
+  skip-cert-verify: true
+  sni: in.tronsg.com
+  type: trojan
+  udp: true
 proxy-groups:
 - name: IN-Auto
   type: url-test
   proxies:
-  - 🇮🇳 | @WhiteDNS | IN47|2.6MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN51|1.9MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN52|1.7MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN53|1.6MB/s|DNSOK|GPT⁺-IN
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

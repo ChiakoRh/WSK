@@ -13,20 +13,19 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇬🇪 | @WhiteDNS | GE2|4.2MB/s|DNSOK|GPT⁺-GE
+- name: 🇧🇩 | @WhiteDNS | BD5|1.4MB/s|DNSOK|GPT⁺-BD
   password: ''
-  port: 443
-  server: 195.54.178.210
+  port: 1080
+  server: 202.44.106.141
   skip-cert-verify: true
-  tls: true
-  type: http
+  type: socks5
   username: ''
 proxy-groups:
-- name: GE-Auto
+- name: BD-Auto
   type: url-test
   proxies:
-  - 🇬🇪 | @WhiteDNS | GE2|4.2MB/s|DNSOK|GPT⁺-GE
+  - 🇧🇩 | @WhiteDNS | BD5|1.4MB/s|DNSOK|GPT⁺-BD
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,GE-Auto
+- MATCH,BD-Auto
