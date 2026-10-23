@@ -13,46 +13,27 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇰🇷 | @WhiteDNS | KR89|1.7MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 2052
-  server: 172.64.229.129
+- client-fingerprint: ios
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇰🇷 | @WhiteDNS | KR77|1.7MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  server: t11.qifei.app
+  tls: true
   type: vless
   udp: true
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
-  ws-opts:
-    headers:
-      Host: eu02.123450908.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/45.0.2454.93 Safari/537.36
-    path: /rain1226
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
   xudp: true
-- cipher: aes-256-cfb
-  name: 🇰🇷 | @WhiteDNS | KR90|1.6MB/s|DNSOK|GPT⁺-KR
-  password: 1234!@#$
-  port: 1774
-  server: 49.254.204.133
-  type: ss
-  udp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR91|1.3MB/s|DNSOK|GPT⁺-KR
-  network: raw
-  port: 443
-  server: 140.238.2.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  xudp: true
+  servername: www.amazon.com
 proxy-groups:
 - name: KR-Auto
   type: url-test
   proxies:
-  - 🇰🇷 | @WhiteDNS | KR89|1.7MB/s|DNSOK|GPT⁺-DE
-  - 🇰🇷 | @WhiteDNS | KR90|1.6MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR91|1.3MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR77|1.7MB/s|DNSOK|GPT⁺-KR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

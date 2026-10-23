@@ -13,20 +13,21 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇫🇮 | @WhiteDNS | FI46|1.8MB/s|DNSOK|GPT⁺-FI
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI41|4.8MB/s|DNSOK|GPT⁺-FI
   network: tcp
-  port: 16911
-  server: 65.109.209.239
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+  port: 2425
+  reality-opts:
+    public-key: MnPGY1Vo4ZbYdpLRTYHoolv5s_pwO41karyJfnQ0F3o
+    short-id: 9b60d3
+  server: areal1.greewebservices.ir
+  tls: true
+  type: vless
   udp: true
-  uuid: c5f59d68-5a26-40b8-a086-2f531e06737c
+  uuid: 2582857a-632b-4c4e-9b67-96213cbaf58c
   xudp: true
+  servername: play.googleapis.com
 - alpn:
   - ''
   alterId: '0'
@@ -37,7 +38,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI47|1.3MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI42|2.8MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
@@ -57,7 +58,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI48|853KB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI43|2.6MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 52080
   server: 185.212.149.7
@@ -71,9 +72,9 @@ proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI46|1.8MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI47|1.3MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI48|853KB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI41|4.8MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI42|2.8MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI43|2.6MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
