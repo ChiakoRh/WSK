@@ -13,44 +13,53 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP294|2.0MB/s|DNSOK|GPT⁺-JP
+- name: 🇯🇵 | @WhiteDNS | JP152|1.4MB/s|DNSOK|GPT⁺-JP
+  password: ''
+  port: 3128
+  server: 116.80.65.235
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇯🇵 | @WhiteDNS | JP153|1.0MB/s|DNSOK|GPT⁺-JP
   network: tcp
-  port: 443
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+- name: 🇯🇵 | @WhiteDNS | JP154|893KB/s|DNSOK|GPT⁺
+  password: ''
+  port: 343
+  server: 133.18.200.207
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP155|652KB/s|DNSOK|GPT⁺-JP
+  network: raw
+  port: 28573
   reality-opts:
-    public-key: 3yorIs_psiYbIeESwMdne5mPe2JVzeNOpDa2IJxQ-Es
-    short-id: 21fa8a1ebf
-  server: jp2.oh-node.com
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  server: 18.183.215.124
   tls: true
   type: vless
   udp: true
-  uuid: 8c88c56d-5efb-4218-8753-0c2365dfe96a
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
   xudp: true
-  servername: www.capcom.co.jp
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP295|926KB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers: {}
-    path: /cctv13.m3u8
-  xudp: true
-  servername: jp01.a0a.xyz
+  servername: www.sony.com
 proxy-groups:
 - name: JP-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP294|2.0MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP295|926KB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP152|1.4MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP153|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP154|893KB/s|DNSOK|GPT⁺
+  - 🇯🇵 | @WhiteDNS | JP155|652KB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -13,25 +13,59 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇵🇱 | @WhiteDNS | PL65|19.6MB/s|DNSOK|GPT⁺-PL
+- encryption: mlkem768x25519plus.native.0rtt.Ugjk5eGoAZFbowp9QBKMLIKaJ-AdQOx2UE5ymx5lgW0
+  http-opts:
+    headers:
+      Host:
+      - netmeli.korluma.ir
+    path:
+    - /
+  name: 🇵🇱 | @WhiteDNS | PL62|22.1MB/s|DNSOK|GPT⁺-PL
+  network: http
+  port: 45780
+  server: 45.144.48.81
+  type: vless
+  udp: true
+  uuid: e7e1e726-b30f-477a-a308-3138e62a8d21
+  xudp: true
+- client-fingerprint: chrome
+  name: 🇵🇱 | @WhiteDNS | PL63|17.8MB/s|DNSOK|GPT⁺-PL
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: pl1.dedushka.top
+  skip-cert-verify: false
+  sni: pl1.dedushka.top
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇵🇱 | @WhiteDNS | PL64|17.5MB/s|DNSOK|GPT⁺-PL
+  network: tcp
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: pl2.dedushka.top
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  sni: pl2.dedushka.top
+- name: 🇵🇱 | @WhiteDNS | PL65|17.0MB/s|DNSOK|GPT⁺-PL
+  password: 'null'
+  port: 443
+  server: 151.115.54.133
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+- name: 🇵🇱 | @WhiteDNS | PL66|16.4MB/s|DNSOK|GPT⁺-PL
   password: None
   port: 443
-  server: 37.120.156.34
+  server: 37.120.156.18
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
 - client-fingerprint: chrome
-  name: 🇵🇱 | @WhiteDNS | PL66|18.1MB/s|DNSOK|GPT⁺-PL
-  network: tcp
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  port: 443
-  server: 31.133.0.186
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇵🇱 | @WhiteDNS | PL67|17.9MB/s|DNSOK|GPT⁺-PL
+  name: 🇵🇱 | @WhiteDNS | PL67|16.3MB/s|DNSOK|GPT⁺-PL
   network: tcp
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
@@ -40,8 +74,77 @@ proxies:
   sni: 31.133.0.186
   type: trojan
   udp: true
+- name: 🇵🇱 | @WhiteDNS | PL68|16.0MB/s|DNSOK|GPT⁺-PL
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: 31.133.0.186
+  skip-cert-verify: true
+  sni: pl2.dedushka.top
+  type: trojan
+  udp: true
+  network: tcp
+- name: 🇵🇱 | @WhiteDNS | PL69|14.3MB/s|DNSOK|GPT⁺-PL
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: 31.133.0.182
+  skip-cert-verify: true
+  sni: pl1.dedushka.top
+  type: trojan
+  udp: true
+  network: tcp
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: 🇵🇱 | @WhiteDNS | PL70|6.6MB/s|DNSOK|GPT⁺-PL
+  network: tcp
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: pl2.dedushka.top
+  skip-cert-verify: false
+  sni: pl2.dedushka.top
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
-  name: 🇵🇱 | @WhiteDNS | PL68|6.4MB/s|DNSOK|GPT⁺-PL
+  name: 🇵🇱 | @WhiteDNS | PL71|6.4MB/s|DNSOK|GPT⁺-PL
+  network: tcp
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: 31.133.0.186
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇵🇱 | @WhiteDNS | PL72|6.2MB/s|DNSOK|GPT⁺-PL
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: pl2.dedushka.top
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+  network: tcp
+  sni: pl2.dedushka.top
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: 🇵🇱 | @WhiteDNS | PL73|6.2MB/s|DNSOK|GPT⁺-PL
+  network: tcp
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: 31.133.0.186
+  skip-cert-verify: false
+  sni: pl2.dedushka.top
+  type: trojan
+  udp: true
+- name: 🇵🇱 | @WhiteDNS | PL74|6.0MB/s|DNSOK|GPT⁺-PL
+  password: ''
+  port: 443
+  server: 37.120.156.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  name: 🇵🇱 | @WhiteDNS | PL75|6.0MB/s|DNSOK|GPT⁺-PL
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
   server: 31.133.0.186
@@ -50,7 +153,7 @@ proxies:
   udp: true
   network: tcp
 - client-fingerprint: chrome
-  name: 🇵🇱 | @WhiteDNS | PL69|6.4MB/s|DNSOK|GPT⁺-PL
+  name: 🇵🇱 | @WhiteDNS | PL76|5.8MB/s|DNSOK|GPT⁺-PL
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
   server: pl2.dedushka.top
@@ -59,46 +162,37 @@ proxies:
   type: trojan
   udp: true
   network: tcp
-- name: 🇵🇱 | @WhiteDNS | PL70|6.1MB/s|DNSOK|GPT⁺-PL
-  password: ''
+- client-fingerprint: chrome
+  name: 🇵🇱 | @WhiteDNS | PL77|5.5MB/s|DNSOK|GPT⁺-PL
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
-  server: 37.120.156.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇵🇱 | @WhiteDNS | PL71|6.0MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 37.120.156.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇵🇱 | @WhiteDNS | PL72|5.9MB/s|DNSOK|GPT⁺-PL
-  password: 'null'
-  port: 443
-  server: 151.115.54.133
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- encryption: mlkem768x25519plus.native.0rtt.Ugjk5eGoAZFbowp9QBKMLIKaJ-AdQOx2UE5ymx5lgW0
-  http-opts:
-    headers:
-      Host:
-      - netmeli.korluma.ir
-    path:
-    - /
-  name: 🇵🇱 | @WhiteDNS | PL73|5.0MB/s|DNSOK|GPT⁺-PL
-  network: http
-  port: 45780
-  server: 45.144.48.81
-  type: vless
+  server: pl1.dedushka.top
+  skip-cert-verify: false
+  type: trojan
   udp: true
-  uuid: e7e1e726-b30f-477a-a308-3138e62a8d21
-  xudp: true
-- name: 🇵🇱 | @WhiteDNS | PL74|3.2MB/s|DNSOK|GPT⁺-PL
+  network: tcp
+  sni: pl1.dedushka.top
+- client-fingerprint: chrome
+  name: 🇵🇱 | @WhiteDNS | PL78|2.6MB/s|DNSOK|GPT⁺-PL
+  network: tcp
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: 31.133.0.182
+  skip-cert-verify: false
+  sni: pl1.dedushka.top
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇵🇱 | @WhiteDNS | PL79|2.4MB/s|DNSOK|GPT⁺-PL
+  network: tcp
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: pl1.dedushka.top
+  skip-cert-verify: false
+  sni: pl1.dedushka.top
+  type: trojan
+  udp: true
+- name: 🇵🇱 | @WhiteDNS | PL80|1.9MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 31.186.220.204
@@ -110,16 +204,25 @@ proxy-groups:
 - name: PL-Auto
   type: url-test
   proxies:
-  - 🇵🇱 | @WhiteDNS | PL65|19.6MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL66|18.1MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL67|17.9MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL68|6.4MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL69|6.4MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL70|6.1MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL71|6.0MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL72|5.9MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL73|5.0MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL74|3.2MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL62|22.1MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL63|17.8MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL64|17.5MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL65|17.0MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL66|16.4MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL67|16.3MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL68|16.0MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL69|14.3MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL70|6.6MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL71|6.4MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL72|6.2MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL73|6.2MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL74|6.0MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL75|6.0MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL76|5.8MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL77|5.5MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL78|2.6MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL79|2.4MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL80|1.9MB/s|DNSOK|GPT⁺-PL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

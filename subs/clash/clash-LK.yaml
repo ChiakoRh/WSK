@@ -14,29 +14,28 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - client-fingerprint: chrome
-  encryption: none
-  name: 🇪🇬 | @WhiteDNS | EG13|3.6MB/s|DNSOK|GPT⁺-US
+  name: 🇱🇰 | @WhiteDNS | LK10|1.2MB/s|DNSOK|GPT⁺-SG
   network: ws
-  port: 443
-  server: ccs2g.pai50288.uk
+  port: 8443
+  server: 104.17.73.206
   tls: true
   type: vless
   udp: true
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   ws-opts:
     headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/41.0.2272.118 Safari/537.36
-    path: /pai50288
+      Host: free.sahanwickramasinghe.me
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /
   xudp: true
-  servername: ccs2g.pai50288.uk
+  servername: free.sahanwickramasinghe.me
 proxy-groups:
-- name: EG-Auto
+- name: LK-Auto
   type: url-test
   proxies:
-  - 🇪🇬 | @WhiteDNS | EG13|3.6MB/s|DNSOK|GPT⁺-US
+  - 🇱🇰 | @WhiteDNS | LK10|1.2MB/s|DNSOK|GPT⁺-SG
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,EG-Auto
+- MATCH,LK-Auto
