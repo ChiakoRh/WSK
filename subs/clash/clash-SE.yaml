@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇸🇪 | @WhiteDNS | SE14|16.4MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE15|15.8MB/s|DNSOK|GPT⁺-SE
   password: None
   port: 443
   server: 149.50.216.65
@@ -21,16 +21,8 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇸🇪 | @WhiteDNS | SE15|15.6MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE16|15.6MB/s|DNSOK|GPT⁺-SE
   password: None
-  port: 443
-  server: 146.70.242.130
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇸🇪 | @WhiteDNS | SE16|13.9MB/s|DNSOK|GPT⁺-SE
-  password: ''
   port: 443
   server: 146.70.242.130
   skip-cert-verify: true
@@ -38,6 +30,14 @@ proxies:
   type: http
   username: ''
 - name: 🇸🇪 | @WhiteDNS | SE17|6.0MB/s|DNSOK|GPT⁺-SE
+  password: ''
+  port: 443
+  server: 146.70.242.146
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇸🇪 | @WhiteDNS | SE18|5.8MB/s|DNSOK|GPT⁺-SE
   password: None
   port: 443
   server: 146.70.242.146
@@ -45,31 +45,23 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇸🇪 | @WhiteDNS | SE18|5.6MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE19|5.0MB/s|DNSOK|GPT⁺-SE
   password: ''
   port: 443
-  server: 146.70.242.146
+  server: 146.70.242.130
   skip-cert-verify: true
   tls: true
   type: http
-  username: ''
-- name: 🇸🇪 | @WhiteDNS | SE19|729KB/s|DNSOK|GPT⁺-SE
-  password: ''
-  port: 1080
-  server: 37.27.245.106
-  skip-cert-verify: true
-  type: socks5
   username: ''
 proxy-groups:
 - name: SE-Auto
   type: url-test
   proxies:
-  - 🇸🇪 | @WhiteDNS | SE14|16.4MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE15|15.6MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE16|13.9MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE15|15.8MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE16|15.6MB/s|DNSOK|GPT⁺-SE
   - 🇸🇪 | @WhiteDNS | SE17|6.0MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE18|5.6MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE19|729KB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE18|5.8MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE19|5.0MB/s|DNSOK|GPT⁺-SE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

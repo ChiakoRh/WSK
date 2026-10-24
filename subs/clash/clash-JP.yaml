@@ -13,31 +13,31 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- down: ''
-  fingerprint: ''
-  name: 🇯🇵 | @WhiteDNS | JP207|1.6MB/s|DNSOK|GPT⁺-JP
-  obfs: ''
-  obfs-password: ''
-  password: 65c71bac-64fb-470d-950e-de193a509811
-  port: 8443
-  server: 7a322d16.459292.xyz
-  skip-cert-verify: true
-  sni: 7a322d16.459292.xyz
-  type: hysteria2
-  up: ''
-- name: 🇯🇵 | @WhiteDNS | JP208|1.4MB/s|DNSOK|GPT⁺
-  password: ''
-  port: 3128
-  server: 116.80.65.235
-  skip-cert-verify: true
-  type: http
-  username: ''
+- client-fingerprint: random
+  encryption: none
+  name: 🇯🇵 | @WhiteDNS | JP120|2.4MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 443
+  server: ct.877774.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: d884354e-17ce-4843-b174-36bca3c1ccc6
+  ws-opts:
+    headers:
+      Host: jp-osa.862400.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /announcement
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2048
+  xudp: true
+  servername: jp-osa.862400.xyz
 proxy-groups:
 - name: JP-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP207|1.6MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP208|1.4MB/s|DNSOK|GPT⁺
+  - 🇯🇵 | @WhiteDNS | JP120|2.4MB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

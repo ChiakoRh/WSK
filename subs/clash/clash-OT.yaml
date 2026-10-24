@@ -13,18 +13,23 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: ❓ | @WhiteDNS | OT513|2.1MB/s|DNSOK|GPT⁺
-  password: '1234'
-  port: 2080
-  server: 18.143.163.241
+- down: ''
+  fingerprint: ''
+  name: ❓ | @WhiteDNS | OT614|3.4MB/s|DNSOK|GPT⁺-US
+  obfs: ''
+  obfs-password: ''
+  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
+  port: 2053
+  server: 194.87.118.184
   skip-cert-verify: true
-  type: http
-  username: '1234'
+  sni: match-stream.lovkisport.blog
+  type: hysteria2
+  up: ''
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT513|2.1MB/s|DNSOK|GPT⁺
+  - ❓ | @WhiteDNS | OT614|3.4MB/s|DNSOK|GPT⁺-US
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
