@@ -13,16 +13,24 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇩🇰 | @WhiteDNS | DK4|19.0MB/s|DNSOK|GPT⁺-DK
+- name: 🇩🇰 | @WhiteDNS | DK5|19.3MB/s|DNSOK|GPT⁺-DK
   password: None
-  port: 443
+  port: 9443
+  server: 185.245.84.50
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇩🇰 | @WhiteDNS | DK6|19.2MB/s|DNSOK|GPT⁺-DK
+  password: ''
+  port: 9443
   server: 185.245.84.50
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
 - cipher: aes-256-gcm
-  name: 🇩🇰 | @WhiteDNS | DK5|17.8MB/s|DNSOK|GPT⁺-DK
+  name: 🇩🇰 | @WhiteDNS | DK7|6.1MB/s|DNSOK|GPT⁺-DK
   password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
   port: 17001
   server: 141.227.172.132
@@ -32,8 +40,9 @@ proxy-groups:
 - name: DK-Auto
   type: url-test
   proxies:
-  - 🇩🇰 | @WhiteDNS | DK4|19.0MB/s|DNSOK|GPT⁺-DK
-  - 🇩🇰 | @WhiteDNS | DK5|17.8MB/s|DNSOK|GPT⁺-DK
+  - 🇩🇰 | @WhiteDNS | DK5|19.3MB/s|DNSOK|GPT⁺-DK
+  - 🇩🇰 | @WhiteDNS | DK6|19.2MB/s|DNSOK|GPT⁺-DK
+  - 🇩🇰 | @WhiteDNS | DK7|6.1MB/s|DNSOK|GPT⁺-DK
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
