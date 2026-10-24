@@ -13,106 +13,42 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇦 | @WhiteDNS | CA211|5.5MB/s|DNSOK|GPT⁺-CA
-  network: tcp
-  port: 8080
-  server: milo.rubinaz.xyz
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  xudp: true
-  servername: milo.rubinaz.xyz
-- name: 🇨🇦 | @WhiteDNS | CA212|5.0MB/s|DNSOK|GPT⁺-CA
-  network: raw
-  port: 8080
-  server: milo.networkforexir.site
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  xudp: true
-- name: 🇨🇦 | @WhiteDNS | CA213|5.0MB/s|DNSOK|GPT⁺-CA
-  network: tcp
-  port: 8080
-  server: milo.rubinaz.xyz
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  xudp: true
-- name: 🇨🇦 | @WhiteDNS | CA214|4.8MB/s|DNSOK|GPT⁺-CA
-  port: 8080
-  server: milo.rubinaz.xyz
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  network: tcp
-- name: 🇨🇦 | @WhiteDNS | CA215|4.6MB/s|DNSOK|GPT⁺-CA
-  network: tcp
-  port: 8080
-  server: milo.networkforexir.site
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  xudp: true
-- name: 🇨🇦 | @WhiteDNS | CA216|4.4MB/s|DNSOK|GPT⁺-CA
-  password: ''
+- name: 🇨🇦 | @WhiteDNS | CA201|3.1MB/s|DNSOK|GPT⁺-CA
+  password: None
   port: 443
-  server: 23.169.224.34
+  server: 206.223.183.13
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA217|3.0MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA202|3.0MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 9443
+  server: 198.44.157.19
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA203|3.0MB/s|DNSOK|GPT⁺-CA
   password: None
+  port: 443
+  server: 206.223.183.16
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA204|3.0MB/s|DNSOK|GPT⁺-CA
+  password: ''
   port: 9443
   server: 149.88.98.81
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA218|2.9MB/s|DNSOK|GPT⁺-CA
-  network: raw
-  port: 8080
-  server: milo.rubinaz.xyz
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  xudp: true
-- name: 🇨🇦 | @WhiteDNS | CA219|2.6MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA205|2.5MB/s|DNSOK|GPT⁺-CA
   password: ''
-  port: 443
-  server: 206.223.183.21
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA220|2.1MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 443
-  server: 4.172.245.121
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA221|1.6MB/s|DNSOK|GPT⁺-CA
-  password: None
   port: 443
   server: 23.169.224.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA222|1.6MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 9443
-  server: 198.44.157.27
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA223|1.5MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 443
-  server: 206.223.183.16
   skip-cert-verify: true
   tls: true
   type: http
@@ -121,19 +57,11 @@ proxy-groups:
 - name: CA-Auto
   type: url-test
   proxies:
-  - 🇨🇦 | @WhiteDNS | CA211|5.5MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA212|5.0MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA213|5.0MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA214|4.8MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA215|4.6MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA216|4.4MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA217|3.0MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA218|2.9MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA219|2.6MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA220|2.1MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA221|1.6MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA222|1.6MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA223|1.5MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA201|3.1MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA202|3.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA203|3.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA204|3.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA205|2.5MB/s|DNSOK|GPT⁺-CA
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
