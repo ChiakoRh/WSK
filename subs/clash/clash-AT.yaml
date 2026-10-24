@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇦🇹 | @WhiteDNS | AT9|22.8MB/s|DNSOK|GPT⁺-AT
+- name: 🇦🇹 | @WhiteDNS | AT6|25.3MB/s|DNSOK|GPT⁺-AT
   password: ''
   port: 443
   server: 146.70.244.2
@@ -21,18 +21,34 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇦🇹 | @WhiteDNS | AT10|7.1MB/s|DNSOK|GPT⁺-AT
+- name: 🇦🇹 | @WhiteDNS | AT7|23.4MB/s|DNSOK|GPT⁺-AT
   password: None
   port: 443
-  server: 146.70.244.2
+  server: 146.70.244.18
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇦🇹 | @WhiteDNS | AT11|5.9MB/s|DNSOK|GPT⁺-AT
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇦🇹 | @WhiteDNS | AT8|8.3MB/s|DNSOK|GPT⁺-AT
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: e0RV9wRJdsQbQ0ugn5QUhJcTgWsSTVsKQTXMKweMDUg
+    short-id: ''
+  server: 152.53.102.127
+  tls: true
+  type: vless
+  udp: true
+  uuid: 21f5ba17-28ea-4fd0-9c8f-80e2b91df5f1
+  xudp: true
+  servername: lstu.ru
+- name: 🇦🇹 | @WhiteDNS | AT9|6.4MB/s|DNSOK|GPT⁺-AT
   password: None
   port: 443
-  server: 146.70.244.18
+  server: 146.70.244.2
   skip-cert-verify: true
   tls: true
   type: http
@@ -41,9 +57,10 @@ proxy-groups:
 - name: AT-Auto
   type: url-test
   proxies:
-  - 🇦🇹 | @WhiteDNS | AT9|22.8MB/s|DNSOK|GPT⁺-AT
-  - 🇦🇹 | @WhiteDNS | AT10|7.1MB/s|DNSOK|GPT⁺-AT
-  - 🇦🇹 | @WhiteDNS | AT11|5.9MB/s|DNSOK|GPT⁺-AT
+  - 🇦🇹 | @WhiteDNS | AT6|25.3MB/s|DNSOK|GPT⁺-AT
+  - 🇦🇹 | @WhiteDNS | AT7|23.4MB/s|DNSOK|GPT⁺-AT
+  - 🇦🇹 | @WhiteDNS | AT8|8.3MB/s|DNSOK|GPT⁺-AT
+  - 🇦🇹 | @WhiteDNS | AT9|6.4MB/s|DNSOK|GPT⁺-AT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

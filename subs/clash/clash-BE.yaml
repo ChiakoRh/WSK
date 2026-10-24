@@ -14,21 +14,28 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇧🇪 | @WhiteDNS | BE20|23.3MB/s|DNSOK|GPT⁺-DE
+  name: 🇧🇪 | @WhiteDNS | BE16|21.8MB/s|DNSOK|GPT⁺-DE
   password: eLXzVwBgkN77aIof2pEhaYmpATVZVIlh
   port: 8044
   server: dns2.m3hrzd.ir
   type: ss
   udp: true
-- name: 🇧🇪 | @WhiteDNS | BE21|16.9MB/s|DNSOK|GPT⁺-BE
-  password: None
-  port: 443
-  server: 146.70.123.98
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇧🇪 | @WhiteDNS | BE22|6.0MB/s|DNSOK|GPT⁺-BE
+- name: 🇧🇪 | @WhiteDNS | BE17|21.1MB/s|DNSOK|GPT⁺-BE
+  network: ws
+  port: 2086
+  server: 104.21.64.198
+  type: vless
+  udp: true
+  uuid: 73796e63-0000-4000-8000-000000000007
+  ws-opts:
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.181 Safari/537.36
+    path: /sync
+  xudp: true
+  servername: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: 🇧🇪 | @WhiteDNS | BE18|17.1MB/s|DNSOK|GPT⁺-BE
   password: ''
   port: 443
   server: 146.70.176.242
@@ -36,13 +43,38 @@ proxies:
   tls: true
   type: http
   username: ''
+- name: 🇧🇪 | @WhiteDNS | BE19|16.6MB/s|DNSOK|GPT⁺-BE
+  password: ''
+  port: 443
+  server: 146.70.123.98
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- encryption: none
+  name: 🇧🇪 | @WhiteDNS | BE20|1.9MB/s|DNSOK|GPT⁺-BE
+  network: ws
+  port: 2086
+  server: 172.67.155.136
+  type: vless
+  udp: true
+  uuid: 73796e63-0000-4000-8000-000000000007
+  ws-opts:
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /sync
+  xudp: true
 proxy-groups:
 - name: BE-Auto
   type: url-test
   proxies:
-  - 🇧🇪 | @WhiteDNS | BE20|23.3MB/s|DNSOK|GPT⁺-DE
-  - 🇧🇪 | @WhiteDNS | BE21|16.9MB/s|DNSOK|GPT⁺-BE
-  - 🇧🇪 | @WhiteDNS | BE22|6.0MB/s|DNSOK|GPT⁺-BE
+  - 🇧🇪 | @WhiteDNS | BE16|21.8MB/s|DNSOK|GPT⁺-DE
+  - 🇧🇪 | @WhiteDNS | BE17|21.1MB/s|DNSOK|GPT⁺-BE
+  - 🇧🇪 | @WhiteDNS | BE18|17.1MB/s|DNSOK|GPT⁺-BE
+  - 🇧🇪 | @WhiteDNS | BE19|16.6MB/s|DNSOK|GPT⁺-BE
+  - 🇧🇪 | @WhiteDNS | BE20|1.9MB/s|DNSOK|GPT⁺-BE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

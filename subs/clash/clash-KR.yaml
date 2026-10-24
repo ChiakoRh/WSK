@@ -13,11 +13,28 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 🇰🇷 | @WhiteDNS | KR99|1.9MB/s|DNSOK|GPT⁺-KR
+  network: ws
+  port: 80
+  server: 132.145.80.230
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  ws-opts:
+    headers:
+      Host: 132.145.80.230
+    path: /cctv13.m3u8
+  xudp: true
+  servername: 132.145.80.230
 - alpn:
   - ''
   alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR95|2.0MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR100|1.8MB/s|DNSOK|GPT⁺-KR
   network: ws
   port: 80
   server: 132.145.80.230
@@ -31,8 +48,26 @@ proxies:
     path: /cctv13.m3u8
   xudp: true
   servername: kr02.a0a.xyz
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇰🇷 | @WhiteDNS | KR101|1.8MB/s|DNSOK|GPT⁺-KR
+  network: http
+  port: 80
+  server: 217.142.138.61
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ac1b933d-afff-4487-93ef-f57130a55dff
+  xudp: true
 - cipher: aes-256-cfb
-  name: 🇰🇷 | @WhiteDNS | KR96|1.9MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR102|1.6MB/s|DNSOK|GPT⁺-KR
   password: 1234!@#$
   port: 1774
   server: 49.254.204.134
@@ -42,7 +77,7 @@ proxies:
   - ''
   alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR97|1.7MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR103|1.3MB/s|DNSOK|GPT⁺-KR
   network: ws
   port: 80
   server: 132.145.80.230
@@ -55,56 +90,33 @@ proxies:
     headers: {}
     path: /cctv13.m3u8
   xudp: true
-- cipher: aes-256-cfb
-  name: 🇰🇷 | @WhiteDNS | KR98|1.7MB/s|DNSOK|GPT⁺-KR
-  password: 1234!@#$
-  port: 1774
-  server: 49.254.204.133
-  type: ss
-  udp: true
 - alpn:
   - ''
   alterId: '0'
   cipher: auto
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 🇰🇷 | @WhiteDNS | KR99|1.3MB/s|DNSOK|GPT⁺-KR
-  network: http
-  port: 80
-  server: 217.142.138.61
+  name: 🇰🇷 | @WhiteDNS | KR104|1.3MB/s|DNSOK|GPT⁺-KR
+  network: ws
+  port: 20086
+  server: 183.109.131.75
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: ac1b933d-afff-4487-93ef-f57130a55dff
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  ws-opts:
+    headers: {}
+    path: /
   xudp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇰🇷 | @WhiteDNS | KR100|1.0MB/s|DNSOK|GPT⁺-KR
-  port: 443
-  reality-opts:
-    public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
-    short-id: ca193e889d958f81
-  server: 158.247.241.102
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 583cc910-b57c-4dd0-a4a7-cea51a30b032
-  network: tcp
-  servername: www.apple.com
 proxy-groups:
 - name: KR-Auto
   type: url-test
   proxies:
-  - 🇰🇷 | @WhiteDNS | KR95|2.0MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR96|1.9MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR97|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR98|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR99|1.3MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR100|1.0MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR99|1.9MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR100|1.8MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR101|1.8MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR102|1.6MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR103|1.3MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR104|1.3MB/s|DNSOK|GPT⁺-KR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

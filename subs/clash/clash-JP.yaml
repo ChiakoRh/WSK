@@ -13,18 +13,31 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇯🇵 | @WhiteDNS | JP379|1.3MB/s|DNSOK|GPT⁺-JP
-  password: ''
-  port: 1080
-  server: 58.89.82.209
+- down: ''
+  fingerprint: ''
+  name: 🇯🇵 | @WhiteDNS | JP207|1.6MB/s|DNSOK|GPT⁺-JP
+  obfs: ''
+  obfs-password: ''
+  password: 65c71bac-64fb-470d-950e-de193a509811
+  port: 8443
+  server: 7a322d16.459292.xyz
   skip-cert-verify: true
-  type: socks5
+  sni: 7a322d16.459292.xyz
+  type: hysteria2
+  up: ''
+- name: 🇯🇵 | @WhiteDNS | JP208|1.4MB/s|DNSOK|GPT⁺
+  password: ''
+  port: 3128
+  server: 116.80.65.235
+  skip-cert-verify: true
+  type: http
   username: ''
 proxy-groups:
 - name: JP-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP379|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP207|1.6MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP208|1.4MB/s|DNSOK|GPT⁺
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

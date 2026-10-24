@@ -15,7 +15,7 @@ dns:
 proxies:
 - down: ''
   fingerprint: ''
-  name: 🇬🇦 | @WhiteDNS | GA2|4.5MB/s|DNSOK|GPT⁺-US
+  name: 🇬🇦 | @WhiteDNS | GA3|4.3MB/s|DNSOK|GPT⁺-US
   obfs: ''
   obfs-password: ''
   password: 672445a0-a669-4978-8eb1-cfa5e6cdead4
@@ -25,11 +25,25 @@ proxies:
   sni: 127.0.0.1
   type: hysteria2
   up: ''
+- down: ''
+  fingerprint: ''
+  name: 🇬🇦 | @WhiteDNS | GA4|2.7MB/s|DNSOK|GPT⁺-US
+  obfs: ''
+  obfs-password: ''
+  password: 672445a0-a669-4978-8eb1-cfa5e6cdead4
+  port: 18333
+  server: us3.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+  up: ''
+  disable-sni: true
 proxy-groups:
 - name: GA-Auto
   type: url-test
   proxies:
-  - 🇬🇦 | @WhiteDNS | GA2|4.5MB/s|DNSOK|GPT⁺-US
+  - 🇬🇦 | @WhiteDNS | GA3|4.3MB/s|DNSOK|GPT⁺-US
+  - 🇬🇦 | @WhiteDNS | GA4|2.7MB/s|DNSOK|GPT⁺-US
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

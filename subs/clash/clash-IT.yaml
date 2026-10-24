@@ -13,7 +13,14 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇹 | @WhiteDNS | IT416|33.6MB/s|DNSOK|GPT⁺-IT
+- cipher: aes-256-gcm
+  name: 🇮🇹 | @WhiteDNS | IT215|44.4MB/s|DNSOK|GPT⁺-IT
+  password: itzvpn@321
+  port: 8388
+  server: 57.131.48.45
+  type: ss
+  udp: true
+- name: 🇮🇹 | @WhiteDNS | IT216|29.0MB/s|DNSOK|GPT⁺-IT
   password: ''
   port: 443
   server: 185.183.105.146
@@ -21,7 +28,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇮🇹 | @WhiteDNS | IT417|28.5MB/s|DNSOK|GPT⁺-IT
+- name: 🇮🇹 | @WhiteDNS | IT217|25.5MB/s|DNSOK|GPT⁺-IT
   password: None
   port: 443
   server: 185.183.105.130
@@ -29,23 +36,46 @@ proxies:
   tls: true
   type: http
   username: ''
-- cipher: aes-256-gcm
-  name: 🇮🇹 | @WhiteDNS | IT418|27.0MB/s|DNSOK|GPT⁺-IT
-  password: itzvpn@321
-  port: 8388
-  server: 57.131.48.45
-  type: ss
+- name: 🇮🇹 | @WhiteDNS | IT218|1.0MB/s|DNSOK|GPT⁺
+  network: tcp
+  port: 10086
+  server: 204.216.216.23
+  type: vless
   udp: true
-- name: 🇮🇹 | @WhiteDNS | IT419|26.3MB/s|DNSOK|GPT⁺-IT
-  password: ''
-  port: 443
-  server: 185.183.105.130
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  xudp: true
+  servername: /?bia_telegram@marambashi_marambashi_marambashi_marambashi
 - encryption: none
-  name: 🇮🇹 | @WhiteDNS | IT420|1.2MB/s|DNSOK|GPT⁺-IT
+  name: 🇮🇹 | @WhiteDNS | IT219|668KB/s|DNSOK|GPT⁺-IT
+  network: tcp
+  port: 10086
+  server: 204.216.216.23
+  type: vless
+  udp: true
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  xudp: true
+  servername: /
+- encryption: none
+  name: 🇮🇹 | @WhiteDNS | IT220|657KB/s|DNSOK|GPT⁺-IT
+  network: tcp
+  port: 10086
+  server: 204.216.216.23
+  type: vless
+  udp: true
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  xudp: true
+- encryption: none
+  name: 🇮🇹 | @WhiteDNS | IT221|626KB/s|DNSOK|GPT⁺-IT
+  network: tcp
+  port: 10086
+  server: 204.216.216.23
+  type: vless
+  udp: true
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  xudp: true
+  servername: /?v2rayNplus
+- encryption: none
+  name: 🇮🇹 | @WhiteDNS | IT222|582KB/s|DNSOK|GPT⁺-IT
   network: tcp
   port: 10086
   server: 204.216.216.23
@@ -58,11 +88,14 @@ proxy-groups:
 - name: IT-Auto
   type: url-test
   proxies:
-  - 🇮🇹 | @WhiteDNS | IT416|33.6MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT417|28.5MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT418|27.0MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT419|26.3MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT420|1.2MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT215|44.4MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT216|29.0MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT217|25.5MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT218|1.0MB/s|DNSOK|GPT⁺
+  - 🇮🇹 | @WhiteDNS | IT219|668KB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT220|657KB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT221|626KB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT222|582KB/s|DNSOK|GPT⁺-IT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

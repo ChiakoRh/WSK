@@ -13,23 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇸🇪 | @WhiteDNS | SE18|15.8MB/s|DNSOK|GPT⁺-SE
-  password: ''
-  port: 443
-  server: 146.70.242.146
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇸🇪 | @WhiteDNS | SE19|5.8MB/s|DNSOK|GPT⁺-SE
-  password: None
-  port: 443
-  server: 146.70.242.130
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇸🇪 | @WhiteDNS | SE20|5.7MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE14|16.4MB/s|DNSOK|GPT⁺-SE
   password: None
   port: 443
   server: 149.50.216.65
@@ -37,66 +21,55 @@ proxies:
   tls: true
   type: http
   username: ''
-- client-fingerprint: chrome
-  encryption: none
-  grpc-opts:
-    grpc-service-name: moktana.net.v1.StreamService
-  name: 🇸🇪 | @WhiteDNS | SE21|5.5MB/s|DNSOK|GPT⁺-SE
-  network: grpc
+- name: 🇸🇪 | @WhiteDNS | SE15|15.6MB/s|DNSOK|GPT⁺-SE
+  password: None
   port: 443
-  reality-opts:
-    public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
-    short-id: a1b2c3d4e5f6a7b8
-  server: toggle.skelmoridianservice.com
+  server: 146.70.242.130
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: 2c7332d6-01e0-462e-843f-8253d7e1b920
-  xudp: true
-  servername: hexagonicfield.com
-- client-fingerprint: chrome
-  encryption: none
-  grpc-opts:
-    grpc-service-name: moktana.net.v1.StreamService
-  name: 🇸🇪 | @WhiteDNS | SE22|5.5MB/s|DNSOK|GPT⁺-SE
-  network: grpc
+  type: http
+  username: ''
+- name: 🇸🇪 | @WhiteDNS | SE16|13.9MB/s|DNSOK|GPT⁺-SE
+  password: ''
   port: 443
-  reality-opts:
-    public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
-    short-id: a1b2c3d4e5f6a7b8
-  server: toggle.skelmoridianservice.com
+  server: 146.70.242.130
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: 26dd886d-3eae-4eda-a92d-dc5d5e7e036e
-  xudp: true
-  servername: my.hexagonicfield.com
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: moktana.net.v1.StreamService
-  name: 🇸🇪 | @WhiteDNS | SE23|5.0MB/s|DNSOK|GPT⁺-SE
-  network: grpc
+  type: http
+  username: ''
+- name: 🇸🇪 | @WhiteDNS | SE17|6.0MB/s|DNSOK|GPT⁺-SE
+  password: None
   port: 443
-  reality-opts:
-    public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
-    short-id: a1b2c3d4e5f6a7b8
-  server: toggle.skelmoridianservice.com
+  server: 146.70.242.146
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: 27926680-f006-4805-ad00-2fb5e55e87c7
-  xudp: true
-  servername: my.hexagonicfield.com
+  type: http
+  username: ''
+- name: 🇸🇪 | @WhiteDNS | SE18|5.6MB/s|DNSOK|GPT⁺-SE
+  password: ''
+  port: 443
+  server: 146.70.242.146
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇸🇪 | @WhiteDNS | SE19|729KB/s|DNSOK|GPT⁺-SE
+  password: ''
+  port: 1080
+  server: 37.27.245.106
+  skip-cert-verify: true
+  type: socks5
+  username: ''
 proxy-groups:
 - name: SE-Auto
   type: url-test
   proxies:
-  - 🇸🇪 | @WhiteDNS | SE18|15.8MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE19|5.8MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE20|5.7MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE21|5.5MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE22|5.5MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE23|5.0MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE14|16.4MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE15|15.6MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE16|13.9MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE17|6.0MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE18|5.6MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE19|729KB/s|DNSOK|GPT⁺-SE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
