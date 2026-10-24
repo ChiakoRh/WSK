@@ -13,15 +13,32 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇦 | @WhiteDNS | CA201|3.1MB/s|DNSOK|GPT⁺-CA
-  password: None
-  port: 443
-  server: 206.223.183.13
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA202|3.0MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA62|4.3MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  port: 8080
+  server: milo.networkforexir.site
+  type: vless
+  udp: true
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  xudp: true
+- name: 🇨🇦 | @WhiteDNS | CA63|3.1MB/s|DNSOK|GPT⁺-CA
+  network: raw
+  port: 8080
+  server: milo.rubinaz.xyz
+  type: vless
+  udp: true
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  xudp: true
+- name: 🇨🇦 | @WhiteDNS | CA64|3.0MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  port: 8080
+  server: milo.rubinaz.xyz
+  type: vless
+  udp: true
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  xudp: true
+  servername: milo.rubinaz.xyz
+- name: 🇨🇦 | @WhiteDNS | CA65|3.0MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 9443
   server: 198.44.157.19
@@ -29,15 +46,25 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA203|3.0MB/s|DNSOK|GPT⁺-CA
-  password: None
+- name: 🇨🇦 | @WhiteDNS | CA66|2.9MB/s|DNSOK|GPT⁺-CA
+  network: raw
+  port: 8080
+  server: milo.networkforexir.site
+  type: vless
+  udp: true
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  xudp: true
+- client-fingerprint: chrome
+  name: 🇨🇦 | @WhiteDNS | CA67|2.5MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  password: Trojan@82164024
   port: 443
-  server: 206.223.183.16
+  server: ca.tronsg.com
   skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA204|3.0MB/s|DNSOK|GPT⁺-CA
+  sni: ca.tronsg.com
+  type: trojan
+  udp: true
+- name: 🇨🇦 | @WhiteDNS | CA68|2.5MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 9443
   server: 149.88.98.81
@@ -45,10 +72,10 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA205|2.5MB/s|DNSOK|GPT⁺-CA
-  password: ''
+- name: 🇨🇦 | @WhiteDNS | CA69|1.3MB/s|DNSOK|GPT⁺-CA
+  password: None
   port: 443
-  server: 23.169.224.34
+  server: 206.223.183.16
   skip-cert-verify: true
   tls: true
   type: http
@@ -57,11 +84,14 @@ proxy-groups:
 - name: CA-Auto
   type: url-test
   proxies:
-  - 🇨🇦 | @WhiteDNS | CA201|3.1MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA202|3.0MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA203|3.0MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA204|3.0MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA205|2.5MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA62|4.3MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA63|3.1MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA64|3.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA65|3.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA66|2.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA67|2.5MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA68|2.5MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA69|1.3MB/s|DNSOK|GPT⁺-CA
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -13,6 +13,43 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- client-fingerprint: chrome
+  name: 🇫🇮 | @WhiteDNS | FI62|6.3MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 465
+  server: hw3.divarkhaghazi.com.
+  tls: true
+  type: vless
+  udp: true
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  ws-opts:
+    headers:
+      Host: hw3.divarkhaghazi.com.
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /
+  xudp: true
+  servername: hw3.divarkhaghazi.com.
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI63|6.0MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 465
+  server: hw3.divarkhaghazi.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  ws-opts:
+    headers:
+      Host: hw3.divarkhaghazi.com.
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/67.0.3396.99 Safari/537.36
+    path: /
+  xudp: true
+  servername: hw3.divarkhaghazi.com.
 - alpn:
   - ''
   alterId: '0'
@@ -23,7 +60,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI40|2.7MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI64|2.7MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
@@ -33,21 +70,6 @@ proxies:
   udp: true
   uuid: aeb3c019-ae83-4677-af97-846baa787ad5
   xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI41|2.5MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 2425
-  reality-opts:
-    public-key: MnPGY1Vo4ZbYdpLRTYHoolv5s_pwO41karyJfnQ0F3o
-    short-id: 9b60d3
-  server: areal1.greewebservices.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7c4e57be-ff6f-4ef7-ba17-f839351d9af9
-  xudp: true
-  servername: play.googleapis.com
 - alpn:
   - ''
   alterId: '0'
@@ -58,7 +80,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI42|2.5MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI65|2.6MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 52080
   server: 185.212.149.7
@@ -72,9 +94,10 @@ proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI40|2.7MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI41|2.5MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI42|2.5MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI62|6.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI63|6.0MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI64|2.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI65|2.6MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
