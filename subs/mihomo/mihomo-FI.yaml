@@ -1,16 +1,18 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇮 | @WhiteDNS | FI53|13.6MB/s|DNSOK|GPT⁺-FI
-  password: 5uDrCF_iLoxCiRkKku6f7A
-  port: 145
-  server: 46.62.147.53
-  type: ss
+- encryption: mlkem768x25519plus.native.0rtt.8r8CvArz4Q30FHE7vj9EgYbjcte19PRaSf4T15L8FE4
+  name: 🇫🇮 | @WhiteDNS | FI48|16.9MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 58495
+  server: 65.109.185.243
+  type: vless
   udp: true
+  uuid: 3912d56a-effa-4aa3-b4f8-874a3a3ab085
+  xudp: true
 - client-fingerprint: chrome
-  name: 🇫🇮 | @WhiteDNS | FI54|6.3MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI49|6.1MB/s|DNSOK|GPT⁺-FI
   network: ws
   port: 465
-  server: hw3.divarkhaghazi.com.
+  server: 65.109.212.121
   tls: true
   type: vless
   udp: true
@@ -19,12 +21,15 @@ proxies:
     headers:
       Host: hw3.divarkhaghazi.com.
       User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.63 Safari/537.36
+        Gecko) Chrome/69.0.3497.100 Safari/537.36
     path: /
   xudp: true
   servername: hw3.divarkhaghazi.com.
-- client-fingerprint: chrome
-  name: 🇫🇮 | @WhiteDNS | FI55|6.2MB/s|DNSOK|GPT⁺-FI
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI50|5.8MB/s|DNSOK|GPT⁺-FI
   network: ws
   port: 465
   server: hw3.divarkhaghazi.com
@@ -36,15 +41,15 @@ proxies:
     headers:
       Host: hw3.divarkhaghazi.com.
       User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
+        Gecko) Chrome/70.0.3538.67 Safari/537.36
     path: /
   xudp: true
   servername: hw3.divarkhaghazi.com.
 - client-fingerprint: chrome
-  name: 🇫🇮 | @WhiteDNS | FI56|6.0MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI51|5.5MB/s|DNSOK|GPT⁺-FI
   network: ws
   port: 465
-  server: 65.109.212.121
+  server: hw3.divarkhaghazi.com.
   tls: true
   type: vless
   udp: true
@@ -52,8 +57,8 @@ proxies:
   ws-opts:
     headers:
       Host: hw3.divarkhaghazi.com.
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/65.0.3325.162 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/54.0.2840.71 Safari/537.36
     path: /
   xudp: true
   servername: hw3.divarkhaghazi.com.
@@ -67,44 +72,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI57|2.4MB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 52080
-  server: 185.212.149.7
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
-  xudp: true
-- client-fingerprint: chrome
-  name: 🇫🇮 | @WhiteDNS | FI58|2.4MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 8081
-  server: ang-el.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9db9a16c-0cce-4b67-a7cc-7bc2cbd5c7dd
-  ws-opts:
-    headers:
-      Host: ang-el.ir
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1; A37f Build/LMY47V) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36
-    path: /
-  xudp: true
-  servername: ang-el.ir
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - down-cdn.dingtalk.com
-    path:
-    - /3x
-  name: 🇫🇮 | @WhiteDNS | FI59|1.8MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI52|4.2MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
@@ -113,4 +81,24 @@ proxies:
   type: vmess
   udp: true
   uuid: aeb3c019-ae83-4677-af97-846baa787ad5
+  xudp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    path:
+    - /3x
+  name: 🇫🇮 | @WhiteDNS | FI53|2.6MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 52080
+  server: 185.212.149.7
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
   xudp: true

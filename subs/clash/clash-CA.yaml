@@ -13,38 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇦 | @WhiteDNS | CA74|5.2MB/s|DNSOK|GPT⁺-CA
-  port: 8080
-  server: milo.networkforexir.site
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  network: tcp
-- name: 🇨🇦 | @WhiteDNS | CA75|5.2MB/s|DNSOK|GPT⁺-CA
-  network: raw
-  port: 8080
-  server: milo.networkforexir.site
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  xudp: true
-- name: 🇨🇦 | @WhiteDNS | CA76|5.0MB/s|DNSOK|GPT⁺-CA
-  network: raw
-  port: 8080
-  server: milo.rubinaz.xyz
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  xudp: true
-- name: 🇨🇦 | @WhiteDNS | CA77|3.8MB/s|DNSOK|GPT⁺-CA
-  password: None
-  port: 443
-  server: 206.223.183.13
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA78|3.0MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA75|5.4MB/s|DNSOK|GPT⁺-CA
   network: tcp
   port: 8080
   server: milo.rubinaz.xyz
@@ -53,46 +22,40 @@ proxies:
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   xudp: true
   servername: milo.rubinaz.xyz
-- name: 🇨🇦 | @WhiteDNS | CA79|3.0MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 9443
-  server: 149.88.98.81
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA80|2.5MB/s|DNSOK|GPT⁺-CA
-  password: ''
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇦 | @WhiteDNS | CA76|4.9MB/s|DNSOK|GPT⁺-CA
+  network: ws
   port: 443
-  server: 4.172.245.121
-  skip-cert-verify: true
+  server: www.windowsmsidownloads.com
+  skip-cert-verify: false
   tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA81|2.5MB/s|DNSOK|GPT⁺-CA
-  password: None
-  port: 443
-  server: 206.223.183.21
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA82|2.2MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 9443
-  server: 198.44.157.19
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA83|1.9MB/s|DNSOK|GPT⁺-CA
-  port: 8080
-  server: milo.rubinaz.xyz
-  type: vless
+  type: vmess
   udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  network: tcp
-- name: 🇨🇦 | @WhiteDNS | CA84|1.7MB/s|DNSOK|GPT⁺-CA
+  uuid: 80be2deb-3b27-4775-9bd1-7f2a2b9c261b
+  ws-opts:
+    headers:
+      Host: www.windowsmsidownloads.com
+    path: /truth
+  xudp: true
+  servername: www.windowsmsidownloads.com
+- name: 🇨🇦 | @WhiteDNS | CA77|3.9MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 443
+  server: 206.223.161.47
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA78|3.5MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 443
+  server: 142.44.210.129
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA79|3.0MB/s|DNSOK|GPT⁺-CA
   password: None
   port: 443
   server: 206.223.183.16
@@ -100,16 +63,46 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA85|1.7MB/s|DNSOK|GPT⁺-CA
-  network: raw
+- name: 🇨🇦 | @WhiteDNS | CA80|2.6MB/s|DNSOK|GPT⁺-CA
   port: 8080
   server: milo.rubinaz.xyz
   type: vless
   udp: true
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  xudp: true
-  servername: milo.rubinaz.xyz
-- name: 🇨🇦 | @WhiteDNS | CA86|1.5MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+- name: 🇨🇦 | @WhiteDNS | CA81|2.6MB/s|DNSOK|GPT⁺-CA
+  password: None
+  port: 443
+  server: 206.223.183.21
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA82|2.5MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 443
+  server: 206.223.183.21
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA83|2.5MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 9443
+  server: 149.88.98.81
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA84|2.5MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 9443
+  server: 198.44.157.19
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA85|1.7MB/s|DNSOK|GPT⁺-CA
   network: tcp
   port: 8080
   server: milo.networkforexir.site
@@ -117,7 +110,23 @@ proxies:
   udp: true
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   xudp: true
-- name: 🇨🇦 | @WhiteDNS | CA87|1.4MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA86|1.5MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 443
+  server: 206.223.183.13
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA87|1.3MB/s|DNSOK|GPT⁺-CA
+  network: raw
+  port: 8080
+  server: milo.networkforexir.site
+  type: vless
+  udp: true
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  xudp: true
+- name: 🇨🇦 | @WhiteDNS | CA88|1.3MB/s|DNSOK|GPT⁺-CA
   network: tcp
   port: 8080
   server: milo.rubinaz.xyz
@@ -129,20 +138,20 @@ proxy-groups:
 - name: CA-Auto
   type: url-test
   proxies:
-  - 🇨🇦 | @WhiteDNS | CA74|5.2MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA75|5.2MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA76|5.0MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA77|3.8MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA78|3.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA75|5.4MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA76|4.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA77|3.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA78|3.5MB/s|DNSOK|GPT⁺-CA
   - 🇨🇦 | @WhiteDNS | CA79|3.0MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA80|2.5MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA81|2.5MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA82|2.2MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA83|1.9MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA84|1.7MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA80|2.6MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA81|2.6MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA82|2.5MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA83|2.5MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA84|2.5MB/s|DNSOK|GPT⁺-CA
   - 🇨🇦 | @WhiteDNS | CA85|1.7MB/s|DNSOK|GPT⁺-CA
   - 🇨🇦 | @WhiteDNS | CA86|1.5MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA87|1.4MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA87|1.3MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA88|1.3MB/s|DNSOK|GPT⁺-CA
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
