@@ -13,18 +13,28 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇮 | @WhiteDNS | FI77|19.0MB/s|DNSOK|GPT⁺-FI
-  password: QoYjvkIZ7-bMIYfVI9IzRXUx5A1o3kj7
-  port: 53731
-  server: fn1s.sublinkplas.ir
-  type: ss
-  udp: true
 - client-fingerprint: chrome
-  name: 🇫🇮 | @WhiteDNS | FI78|16.9MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI44|17.9MB/s|DNSOK|GPT⁺-FI
   network: ws
   port: 465
-  server: 65.109.212.121
+  server: hw3.divarkhaghazi.com.
+  tls: true
+  type: vless
+  udp: true
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  ws-opts:
+    headers:
+      Host: hw3.divarkhaghazi.com.
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/45.0.2454.93 Safari/537.36
+    path: /
+  xudp: true
+  servername: hw3.divarkhaghazi.com.
+- client-fingerprint: chrome
+  name: 🇫🇮 | @WhiteDNS | FI45|6.2MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 465
+  server: hw3.divarkhaghazi.com
   tls: true
   type: vless
   udp: true
@@ -37,38 +47,11 @@ proxies:
     path: /
   xudp: true
   servername: hw3.divarkhaghazi.com.
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇮 | @WhiteDNS | FI79|16.8MB/s|DNSOK|GPT⁺-FI
-  password: QoYjvkIZ7-bMIYfVI9IzRXUx5A1o3kj7
-  port: 53731
-  server: 65.21.52.113
-  type: ss
-  udp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI80|6.4MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 465
-  server: hw3.divarkhaghazi.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  ws-opts:
-    headers:
-      Host: hw3.divarkhaghazi.com.
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/47.0.2526.106 Safari/537.36
-    path: /
-  xudp: true
-  servername: hw3.divarkhaghazi.com.
 - client-fingerprint: chrome
-  name: 🇫🇮 | @WhiteDNS | FI81|6.2MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI46|6.2MB/s|DNSOK|GPT⁺-FI
   network: ws
   port: 465
-  server: hw3.divarkhaghazi.com.
+  server: 65.109.212.121
   tls: true
   type: vless
   udp: true
@@ -77,7 +60,7 @@ proxies:
     headers:
       Host: hw3.divarkhaghazi.com.
       User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.99 Safari/537.36
+        like Gecko) Chrome/60.0.3112.113 Safari/537.36
     path: /
   xudp: true
   servername: hw3.divarkhaghazi.com.
@@ -91,7 +74,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI82|3.4MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI47|3.4MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 52080
   server: 185.212.149.7
@@ -111,7 +94,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI83|2.7MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI48|2.6MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
@@ -122,7 +105,7 @@ proxies:
   uuid: aeb3c019-ae83-4677-af97-846baa787ad5
   xudp: true
 - client-fingerprint: chrome
-  name: 🇫🇮 | @WhiteDNS | FI84|2.3MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI49|1.5MB/s|DNSOK|GPT⁺-FI
   network: ws
   port: 8081
   server: ang-el.ir
@@ -134,7 +117,7 @@ proxies:
     headers:
       Host: ang-el.ir
       User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/31.0.1650.57 Safari/537.36
+        Gecko) Chrome/47.0.2526.111 Safari/537.36
     path: /
   xudp: true
   servername: ang-el.ir
@@ -142,14 +125,12 @@ proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI77|19.0MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI78|16.9MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI79|16.8MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI80|6.4MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI81|6.2MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI82|3.4MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI83|2.7MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI84|2.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI44|17.9MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI45|6.2MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI46|6.2MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI47|3.4MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI48|2.6MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI49|1.5MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

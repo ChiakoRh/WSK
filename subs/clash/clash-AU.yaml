@@ -13,19 +13,20 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇯🇵 | @WhiteDNS | JP344|1.3MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 47878
-  server: 152.69.195.67
-  type: vless
-  udp: true
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+- name: 🇦🇺 | @WhiteDNS | AU13|1.8MB/s|DNSOK|GPT⁺-AU
+  password: None
+  port: 443
+  server: 159.13.44.228
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 proxy-groups:
-- name: JP-Auto
+- name: AU-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP344|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇦🇺 | @WhiteDNS | AU13|1.8MB/s|DNSOK|GPT⁺-AU
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,JP-Auto
+- MATCH,AU-Auto
