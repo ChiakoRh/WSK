@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇱🇺 | @WhiteDNS | LU3|24.0MB/s|DNSOK|GPT⁺-LU
+- name: 🇱🇺 | @WhiteDNS | LU4|22.4MB/s|DNSOK|GPT⁺-LU
   password: ''
   port: 9443
   server: 185.221.132.226
@@ -21,10 +21,18 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇱🇺 | @WhiteDNS | LU4|22.6MB/s|DNSOK|GPT⁺-LU
+- name: 🇱🇺 | @WhiteDNS | LU5|7.0MB/s|DNSOK|GPT⁺-LU
   password: ''
   port: 443
   server: 185.221.132.242
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇱🇺 | @WhiteDNS | LU6|5.0MB/s|DNSOK|GPT⁺-LU
+  password: ''
+  port: 443
+  server: 185.221.132.226
   skip-cert-verify: true
   tls: true
   type: http
@@ -33,8 +41,9 @@ proxy-groups:
 - name: LU-Auto
   type: url-test
   proxies:
-  - 🇱🇺 | @WhiteDNS | LU3|24.0MB/s|DNSOK|GPT⁺-LU
-  - 🇱🇺 | @WhiteDNS | LU4|22.6MB/s|DNSOK|GPT⁺-LU
+  - 🇱🇺 | @WhiteDNS | LU4|22.4MB/s|DNSOK|GPT⁺-LU
+  - 🇱🇺 | @WhiteDNS | LU5|7.0MB/s|DNSOK|GPT⁺-LU
+  - 🇱🇺 | @WhiteDNS | LU6|5.0MB/s|DNSOK|GPT⁺-LU
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

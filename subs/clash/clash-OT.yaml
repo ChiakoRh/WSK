@@ -14,27 +14,33 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - client-fingerprint: chrome
-  name: ❓ | @WhiteDNS | OT786|3.1MB/s|DNSOK|GPT⁺-US
-  network: ws
+  flow: xtls-rprx-vision
+  name: ❓ | @WhiteDNS | OT568|2.7MB/s|DNSOK|GPT⁺-FR
   port: 443
-  server: 188.114.97.6
+  reality-opts:
+    public-key: 33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0
+    short-id: e6
+  server: ww3.levikogjgfdd.ir
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
-  ws-opts:
-    headers:
-      Host: ccs2g.pai50288.uk
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/56.0.2924.87 Safari/537.36
-    path: /pai50288
-  xudp: true
-  servername: ccs2g.pai50288.uk
+  uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
+  network: tcp
+  servername: passport.yandex.ru
+- name: ❓ | @WhiteDNS | OT569|1.9MB/s|DNSOK|GPT⁺
+  password: ''
+  port: 9090
+  server: 128.199.121.61
+  skip-cert-verify: true
+  type: http
+  username: ''
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT786|3.1MB/s|DNSOK|GPT⁺-US
+  - ❓ | @WhiteDNS | OT568|2.7MB/s|DNSOK|GPT⁺-FR
+  - ❓ | @WhiteDNS | OT569|1.9MB/s|DNSOK|GPT⁺
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
