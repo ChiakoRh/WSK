@@ -13,22 +13,19 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  name: 🇹🇼 | @WhiteDNS | TW11|1.6MB/s|DNSOK|GPT⁺-TW
-  password: e56e752c86a640cd
-  port: 20052
-  server: gu232.izzzzzi.com
-  skip-cert-verify: false
-  sni: gu232.izzzzzi.com
-  type: trojan
-  udp: true
-  network: tcp
+- name: 🇹🇯 | @WhiteDNS | TJ2|581KB/s|DNSOK|GPT⁺-TJ
+  password: ''
+  port: 8080
+  server: 77.95.2.9
+  skip-cert-verify: true
+  type: http
+  username: ''
 proxy-groups:
-- name: TW-Auto
+- name: TJ-Auto
   type: url-test
   proxies:
-  - 🇹🇼 | @WhiteDNS | TW11|1.6MB/s|DNSOK|GPT⁺-TW
+  - 🇹🇯 | @WhiteDNS | TJ2|581KB/s|DNSOK|GPT⁺-TJ
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,TW-Auto
+- MATCH,TJ-Auto

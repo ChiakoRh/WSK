@@ -14,13 +14,21 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - cipher: aes-256-gcm
-  name: 🇮🇹 | @WhiteDNS | IT82|55.2MB/s|DNSOK|GPT⁺-IT
+  name: 🇮🇹 | @WhiteDNS | IT338|53.4MB/s|DNSOK|GPT⁺-IT
   password: itzvpn@321
   port: 8388
   server: 57.131.48.45
   type: ss
   udp: true
-- name: 🇮🇹 | @WhiteDNS | IT83|41.7MB/s|DNSOK|GPT⁺-IT
+- name: 🇮🇹 | @WhiteDNS | IT339|33.8MB/s|DNSOK|GPT⁺-IT
+  password: ''
+  port: 443
+  server: 185.183.105.130
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇮🇹 | @WhiteDNS | IT340|28.5MB/s|DNSOK|GPT⁺-IT
   password: ''
   port: 443
   server: 185.183.105.146
@@ -28,15 +36,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇮🇹 | @WhiteDNS | IT84|32.3MB/s|DNSOK|GPT⁺-IT
-  password: None
-  port: 443
-  server: 185.183.105.130
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇮🇹 | @WhiteDNS | IT85|31.1MB/s|DNSOK|GPT⁺-IT
+- name: 🇮🇹 | @WhiteDNS | IT341|17.7MB/s|DNSOK|GPT⁺-IT
   password: ''
   port: 443
   server: 94.177.163.156
@@ -44,14 +44,72 @@ proxies:
   tls: true
   type: http
   username: ''
+- name: 🇮🇹 | @WhiteDNS | IT342|805KB/s|DNSOK|GPT⁺-IT
+  network: tcp
+  port: 10086
+  server: 204.216.216.23
+  type: vless
+  udp: true
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  xudp: true
+  servername: /?bia_telegram@marambashi_marambashi_marambashi_marambashi_marambashi
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇮🇹 | @WhiteDNS | IT343|645KB/s|DNSOK|GPT⁺-IT
+  network: raw
+  port: 1114
+  reality-opts:
+    public-key: WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ
+    short-id: 79a1e14b
+  server: 204.216.216.23
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6ba2eac6-0ec9-44ca-a42b-a8e23aafb530
+  xudp: true
+  servername: yahoo.com
+- encryption: none
+  name: 🇮🇹 | @WhiteDNS | IT344|622KB/s|DNSOK|GPT⁺-IT
+  network: tcp
+  port: 10086
+  server: 204.216.216.23
+  type: vless
+  udp: true
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  xudp: true
+  servername: /?BIA_TELEGRAM@MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI
+- encryption: none
+  name: 🇮🇹 | @WhiteDNS | IT345|592KB/s|DNSOK|GPT⁺-IT
+  network: tcp
+  port: 10086
+  server: 204.216.216.23
+  type: vless
+  udp: true
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  xudp: true
+- name: 🇮🇹 | @WhiteDNS | IT346|520KB/s|DNSOK|GPT⁺-IT
+  network: tcp
+  port: 10086
+  server: 204.216.216.23
+  type: vless
+  udp: true
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  xudp: true
+  servername: /?bia_telegram@marambashi_marambashi_marambashi_marambashi
 proxy-groups:
 - name: IT-Auto
   type: url-test
   proxies:
-  - 🇮🇹 | @WhiteDNS | IT82|55.2MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT83|41.7MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT84|32.3MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT85|31.1MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT338|53.4MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT339|33.8MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT340|28.5MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT341|17.7MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT342|805KB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT343|645KB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT344|622KB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT345|592KB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT346|520KB/s|DNSOK|GPT⁺-IT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

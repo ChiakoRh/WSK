@@ -13,23 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇵🇱 | @WhiteDNS | PL48|20.2MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 37.120.156.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇵🇱 | @WhiteDNS | PL49|19.7MB/s|DNSOK|GPT⁺-PL
-  password: None
-  port: 443
-  server: 37.120.156.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇵🇱 | @WhiteDNS | PL50|6.4MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL58|21.7MB/s|DNSOK|GPT⁺-PL
   network: tcp
   port: 443
   server: 5.22.221.127
@@ -37,10 +21,34 @@ proxies:
   udp: true
   uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
   xudp: true
-- name: 🇵🇱 | @WhiteDNS | PL51|6.1MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL59|20.0MB/s|DNSOK|GPT⁺-PL
+  password: None
+  port: 443
+  server: 37.120.156.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇵🇱 | @WhiteDNS | PL60|16.6MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 37.120.156.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇵🇱 | @WhiteDNS | PL61|6.3MB/s|DNSOK|GPT⁺-PL
+  password: ''
+  port: 443
+  server: 151.115.54.133
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇵🇱 | @WhiteDNS | PL62|6.1MB/s|DNSOK|GPT⁺-PL
+  password: ''
+  port: 443
+  server: 37.120.156.18
   skip-cert-verify: true
   tls: true
   type: http
@@ -49,10 +57,11 @@ proxy-groups:
 - name: PL-Auto
   type: url-test
   proxies:
-  - 🇵🇱 | @WhiteDNS | PL48|20.2MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL49|19.7MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL50|6.4MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL51|6.1MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL58|21.7MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL59|20.0MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL60|16.6MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL61|6.3MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL62|6.1MB/s|DNSOK|GPT⁺-PL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
