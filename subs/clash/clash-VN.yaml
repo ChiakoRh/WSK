@@ -13,8 +13,9 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇻🇳 | @WhiteDNS | VN20|1.8MB/s|DNSOK|GPT⁺-VN
-  network: tcp
+- encryption: none
+  name: 🇻🇳 | @WhiteDNS | VN10|2.3MB/s|DNSOK|GPT⁺-VN
+  network: raw
   port: 2086
   server: 150.95.109.109
   type: vless
@@ -25,7 +26,7 @@ proxy-groups:
 - name: VN-Auto
   type: url-test
   proxies:
-  - 🇻🇳 | @WhiteDNS | VN20|1.8MB/s|DNSOK|GPT⁺-VN
+  - 🇻🇳 | @WhiteDNS | VN10|2.3MB/s|DNSOK|GPT⁺-VN
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -23,7 +23,7 @@ proxies:
       - tms.dingtalk.com
     path:
     - /
-  name: 🇮🇪 | @WhiteDNS | IE12|17.0MB/s|DNSOK|GPT⁺-IE
+  name: 🇮🇪 | @WhiteDNS | IE7|17.3MB/s|DNSOK|GPT⁺-IE
   network: http
   port: 59236
   server: 54.229.151.97
@@ -33,26 +33,18 @@ proxies:
   udp: true
   uuid: 2387bfbc-10a6-4bd7-dc55-7cba954ce6e8
   xudp: true
-- name: 🇮🇪 | @WhiteDNS | IE13|6.4MB/s|DNSOK|GPT⁺-IE
+- name: 🇮🇪 | @WhiteDNS | IE8|5.9MB/s|DNSOK|GPT⁺-IE
   password: None
-  port: 443
-  server: 149.88.96.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇮🇪 | @WhiteDNS | IE14|6.3MB/s|DNSOK|GPT⁺-IE
-  password: ''
-  port: 443
-  server: 149.88.96.12
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇮🇪 | @WhiteDNS | IE15|4.8MB/s|DNSOK|GPT⁺-IE
-  password: ''
   port: 9443
   server: 149.88.96.12
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇮🇪 | @WhiteDNS | IE9|5.3MB/s|DNSOK|GPT⁺-IE
+  password: ''
+  port: 443
+  server: 149.88.96.1
   skip-cert-verify: true
   tls: true
   type: http
@@ -61,10 +53,9 @@ proxy-groups:
 - name: IE-Auto
   type: url-test
   proxies:
-  - 🇮🇪 | @WhiteDNS | IE12|17.0MB/s|DNSOK|GPT⁺-IE
-  - 🇮🇪 | @WhiteDNS | IE13|6.4MB/s|DNSOK|GPT⁺-IE
-  - 🇮🇪 | @WhiteDNS | IE14|6.3MB/s|DNSOK|GPT⁺-IE
-  - 🇮🇪 | @WhiteDNS | IE15|4.8MB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE7|17.3MB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE8|5.9MB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE9|5.3MB/s|DNSOK|GPT⁺-IE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

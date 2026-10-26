@@ -13,50 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: random
-  encryption: none
-  name: 🇮🇹 | @WhiteDNS | IT101|42.9MB/s|DNSOK|GPT⁺-IT
-  network: ws
-  port: 443
-  server: www.visa.com.hk
-  tls: true
-  type: vless
-  udp: true
-  uuid: ded83071-f858-448c-b832-135db1c9056f
-  ws-opts:
-    headers:
-      Host: it-mil.862400.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.106 Safari/537.36
-    path: /announcement
-    early-data-header-name: Sec-WebSocket-Protocol
-    max-early-data: 2048
-  xudp: true
-  servername: it-mil.862400.xyz
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇮🇹 | @WhiteDNS | IT102|31.0MB/s|DNSOK|GPT⁺-IT
-  network: tcp
-  port: 8129
-  reality-opts:
-    public-key: JlnvZEoMID9Q141MuTnWFaydxs4hmcNxrt4BliNjnGc
-    short-id: a2017345b60f6e7e
-  server: 4.hfrryuu.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: fa6f90f1-f6ea-42c7-8a65-55913bfe2deb
-  xudp: true
-  servername: play.google.com
-- name: 🇮🇹 | @WhiteDNS | IT103|28.6MB/s|DNSOK|GPT⁺-IT
-  password: ''
-  port: 443
-  server: 94.177.163.156
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇮🇹 | @WhiteDNS | IT104|5.2MB/s|DNSOK|GPT⁺-IT
+- name: 🇮🇹 | @WhiteDNS | IT92|39.0MB/s|DNSOK|GPT⁺-IT
   password: ''
   port: 443
   server: 185.183.105.146
@@ -64,7 +21,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇮🇹 | @WhiteDNS | IT105|4.8MB/s|DNSOK|GPT⁺-IT
+- name: 🇮🇹 | @WhiteDNS | IT93|30.1MB/s|DNSOK|GPT⁺-IT
   password: ''
   port: 443
   server: 185.183.105.130
@@ -72,15 +29,37 @@ proxies:
   tls: true
   type: http
   username: ''
+- name: 🇮🇹 | @WhiteDNS | IT94|18.7MB/s|DNSOK|GPT⁺-IT
+  password: ''
+  port: 443
+  server: 94.177.163.156
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- cipher: aes-256-gcm
+  name: 🇮🇹 | @WhiteDNS | IT95|8.0MB/s|DNSOK|GPT⁺-IT
+  password: itzvpn@321
+  port: 8388
+  server: 57.131.48.45
+  type: ss
+  udp: true
+- name: 🇮🇹 | @WhiteDNS | IT96|5.4MB/s|DNSOK|GPT⁺-IT
+  password: ''
+  port: 8080
+  server: 46.30.245.153
+  skip-cert-verify: true
+  type: http
+  username: ''
 proxy-groups:
 - name: IT-Auto
   type: url-test
   proxies:
-  - 🇮🇹 | @WhiteDNS | IT101|42.9MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT102|31.0MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT103|28.6MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT104|5.2MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT105|4.8MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT92|39.0MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT93|30.1MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT94|18.7MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT95|8.0MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT96|5.4MB/s|DNSOK|GPT⁺-IT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
