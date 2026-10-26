@@ -13,40 +13,80 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  name: 🇮🇳 | @WhiteDNS | IN25|1.8MB/s|DNSOK|GPT⁺-IN
-  password: Trojan@82164024
-  port: 443
-  server: in.tronsg.com
-  skip-cert-verify: false
-  sni: in.tronsg.com
-  type: trojan
-  udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇮🇳 | @WhiteDNS | IN26|1.5MB/s|DNSOK|GPT⁺-IN
-  network: tcp
-  password: Trojan@82164024
-  port: 443
-  server: 139.84.132.62
-  skip-cert-verify: false
-  sni: in.tronsg.com
-  type: trojan
-  udp: true
-- name: 🇮🇳 | @WhiteDNS | IN27|1.2MB/s|DNSOK|GPT⁺-IN
+- name: 🇮🇳 | @WhiteDNS | IN30|2.6MB/s|DNSOK|GPT⁺-IN
   password: ''
   port: 1088
   server: 144.24.111.128
   skip-cert-verify: true
   type: socks5
   username: ''
+- alterId: 0
+  cipher: auto
+  name: 🇮🇳 | @WhiteDNS | IN31|1.9MB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 80
+  server: 152.67.8.205
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  ws-opts:
+    headers:
+      Host: in-152.67.8.205-0202
+    path: /
+  xudp: true
+- client-fingerprint: chrome
+  name: 🇮🇳 | @WhiteDNS | IN32|1.8MB/s|DNSOK|GPT⁺-IN
+  network: tcp
+  password: Trojan@82164024
+  port: 443
+  server: in.tronsg.com
+  skip-cert-verify: true
+  sni: in.tronsg.com
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇮🇳 | @WhiteDNS | IN33|1.6MB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 80
+  server: 152.67.8.205
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  ws-opts:
+    headers: {}
+    path: /
+  xudp: true
+  servername: 152.67.8.205
+- alterId: 0
+  cipher: auto
+  name: 🇮🇳 | @WhiteDNS | IN34|962KB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 80
+  server: 152.67.8.205
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  ws-opts:
+    headers: {}
+    path: /
+  xudp: true
+  servername: in-152.67.8.205-0204
 proxy-groups:
 - name: IN-Auto
   type: url-test
   proxies:
-  - 🇮🇳 | @WhiteDNS | IN25|1.8MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN26|1.5MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN27|1.2MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN30|2.6MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN31|1.9MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN32|1.8MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN33|1.6MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN34|962KB/s|DNSOK|GPT⁺-IN
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -15,7 +15,19 @@ dns:
 proxies:
 - down: ''
   fingerprint: ''
-  name: 🇷🇺 | @WhiteDNS | RU54|6.4MB/s|DNSOK|GPT⁺-US
+  name: 🇷🇺 | @WhiteDNS | RU67|11.6MB/s|DNSOK|GPT⁺-US
+  obfs: ''
+  obfs-password: ''
+  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
+  port: 2053
+  server: 194.87.118.184
+  skip-cert-verify: true
+  sni: match-stream.lovkisport.blog
+  type: hysteria2
+  up: ''
+- down: ''
+  fingerprint: ''
+  name: 🇷🇺 | @WhiteDNS | RU68|6.9MB/s|DNSOK|GPT⁺-US
   obfs: ''
   obfs-password: ''
   password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
@@ -25,11 +37,26 @@ proxies:
   sni: 194.87.118.184
   type: hysteria2
   up: ''
+- down: ''
+  fingerprint: ''
+  name: 🇷🇺 | @WhiteDNS | RU69|6.7MB/s|DNSOK|GPT⁺-US
+  obfs: ''
+  obfs-password: ''
+  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
+  port: 2053
+  server: 194.87.118.184
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+  up: ''
+  disable-sni: true
 proxy-groups:
 - name: RU-Auto
   type: url-test
   proxies:
-  - 🇷🇺 | @WhiteDNS | RU54|6.4MB/s|DNSOK|GPT⁺-US
+  - 🇷🇺 | @WhiteDNS | RU67|11.6MB/s|DNSOK|GPT⁺-US
+  - 🇷🇺 | @WhiteDNS | RU68|6.9MB/s|DNSOK|GPT⁺-US
+  - 🇷🇺 | @WhiteDNS | RU69|6.7MB/s|DNSOK|GPT⁺-US
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
