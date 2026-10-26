@@ -13,19 +13,19 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇹🇯 | @WhiteDNS | TJ2|893KB/s|DNSOK|GPT⁺-TJ
+- name: 🇨🇲 | @WhiteDNS | CM9|1.6MB/s|DNSOK|GPT⁺-CM
   password: ''
-  port: 8080
-  server: 77.95.2.9
+  port: 8086
+  server: 102.244.78.61
   skip-cert-verify: true
   type: http
   username: ''
 proxy-groups:
-- name: TJ-Auto
+- name: CM-Auto
   type: url-test
   proxies:
-  - 🇹🇯 | @WhiteDNS | TJ2|893KB/s|DNSOK|GPT⁺-TJ
+  - 🇨🇲 | @WhiteDNS | CM9|1.6MB/s|DNSOK|GPT⁺-CM
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,TJ-Auto
+- MATCH,CM-Auto

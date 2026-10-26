@@ -13,15 +13,23 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇭 | @WhiteDNS | CH99|53.1MB/s|DNSOK|GPT⁺-CH
-  password: None
+- name: 🇨🇭 | @WhiteDNS | CH85|45.5MB/s|DNSOK|GPT⁺-CH
+  password: ''
   port: 443
   server: 31.7.62.50
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇨🇭 | @WhiteDNS | CH100|44.0MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH86|45.1MB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 9443
+  server: 149.88.27.46
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH87|39.0MB/s|DNSOK|GPT⁺-CH
   password: ''
   port: 9443
   server: 149.88.27.33
@@ -29,26 +37,18 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇭 | @WhiteDNS | CH101|41.6MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH88|34.9MB/s|DNSOK|GPT⁺-CH
   password: None
-  port: 9443
-  server: 149.88.27.33
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇭 | @WhiteDNS | CH102|7.7MB/s|DNSOK|GPT⁺-CH
-  password: ''
   port: 9443
   server: 37.120.213.210
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇨🇭 | @WhiteDNS | CH103|7.1MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH89|25.8MB/s|DNSOK|GPT⁺-CH
   password: ''
   port: 9443
-  server: 149.88.27.46
+  server: 37.120.213.210
   skip-cert-verify: true
   tls: true
   type: http
@@ -57,11 +57,11 @@ proxy-groups:
 - name: CH-Auto
   type: url-test
   proxies:
-  - 🇨🇭 | @WhiteDNS | CH99|53.1MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH100|44.0MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH101|41.6MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH102|7.7MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH103|7.1MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH85|45.5MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH86|45.1MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH87|39.0MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH88|34.9MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH89|25.8MB/s|DNSOK|GPT⁺-CH
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
