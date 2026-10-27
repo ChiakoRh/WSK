@@ -14,7 +14,16 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP115|1.2MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP116|1.7MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 45.32.52.173
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP117|1.7MB/s|DNSOK|GPT⁺-JP
   network: tcp
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   port: 8886
@@ -23,8 +32,24 @@ proxies:
   sni: 45.32.52.173
   type: trojan
   udp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP118|1.7MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 35544
+  reality-opts:
+    public-key: HrcXRHtsitc_AVlN-_8fZuRgaP-Mqa_9JJotI9OnkVc
+    short-id: 25c79e5856c7
+  server: funagfrdfs.alixxplay.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  xudp: true
+  servername: iosapps.itunes.apple.com
 - country: 🇯🇵JP
-  name: 🇯🇵 | @WhiteDNS | JP116|1.0MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP119|1.1MB/s|DNSOK|GPT⁺-JP
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   port: 8886
   server: 45.32.52.173
@@ -32,12 +57,25 @@ proxies:
   type: trojan
   udp: true
   network: tcp
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP120|1018KB/s|DNSOK|GPT⁺-JP
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 45.32.52.173
+  skip-cert-verify: true
+  sni: 45.32.52.173
+  type: trojan
+  udp: true
+  network: tcp
 proxy-groups:
 - name: JP-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP115|1.2MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP116|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP116|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP117|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP118|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP119|1.1MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP120|1018KB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -13,8 +13,11 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  name: 🇫🇮 | @WhiteDNS | FI96|6.0MB/s|DNSOK|GPT⁺-FI
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI66|5.8MB/s|DNSOK|GPT⁺-FI
   network: ws
   port: 465
   server: hw3.divarkhaghazi.com
@@ -25,25 +28,8 @@ proxies:
   ws-opts:
     headers:
       Host: hw3.divarkhaghazi.com.
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J730GM Build/NRD90M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
-    path: /
-  xudp: true
-  servername: hw3.divarkhaghazi.com.
-- client-fingerprint: chrome
-  name: 🇫🇮 | @WhiteDNS | FI97|5.8MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 465
-  server: hw3.divarkhaghazi.com.
-  tls: true
-  type: vless
-  udp: true
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  ws-opts:
-    headers:
-      Host: hw3.divarkhaghazi.com.
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.67 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/57.0.2987.133 Safari/537.36
     path: /
   xudp: true
   servername: hw3.divarkhaghazi.com.
@@ -51,7 +37,7 @@ proxies:
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI98|5.7MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI67|5.6MB/s|DNSOK|GPT⁺-FI
   network: ws
   port: 465
   server: 65.109.212.193
@@ -62,8 +48,8 @@ proxies:
   ws-opts:
     headers:
       Host: hw3.divarkhaghazi.com.
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/49.0.2623.87 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.103 Safari/537.36
     path: /
   xudp: true
   servername: hw3.divarkhaghazi.com.
@@ -77,7 +63,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI99|2.8MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI68|3.8MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
@@ -97,7 +83,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI100|1.8MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI69|3.5MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 52080
   server: 185.212.149.7
@@ -107,15 +93,32 @@ proxies:
   udp: true
   uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
   xudp: true
+- client-fingerprint: chrome
+  name: 🇫🇮 | @WhiteDNS | FI70|2.4MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 465
+  server: hw3.divarkhaghazi.com.
+  tls: true
+  type: vless
+  udp: true
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  ws-opts:
+    headers:
+      Host: hw3.divarkhaghazi.com.
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.94 Safari/537.36
+    path: /
+  xudp: true
+  servername: hw3.divarkhaghazi.com.
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI96|6.0MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI97|5.8MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI98|5.7MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI99|2.8MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI100|1.8MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI66|5.8MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI67|5.6MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI68|3.8MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI69|3.5MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI70|2.4MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

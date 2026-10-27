@@ -1,4 +1,18 @@
 proxies:
+- name: 🇰🇷 | @WhiteDNS | KR51|2.1MB/s|DNSOK|GPT⁺-KR
+  password: ''
+  port: 1080
+  server: 144.24.94.153
+  skip-cert-verify: true
+  type: http
+  username: ''
+- cipher: aes-256-cfb
+  name: 🇰🇷 | @WhiteDNS | KR52|1.6MB/s|DNSOK|GPT⁺-KR
+  password: 1234!@#$
+  port: 1774
+  server: 49.254.204.133
+  type: ss
+  udp: true
 - alpn:
   - ''
   alterId: '0'
@@ -7,7 +21,7 @@ proxies:
     headers: {}
     path:
     - /
-  name: 🇰🇷 | @WhiteDNS | KR49|1.6MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR53|1.5MB/s|DNSOK|GPT⁺-KR
   network: http
   port: 80
   server: 217.142.138.61
@@ -17,15 +31,35 @@ proxies:
   udp: true
   uuid: ac1b933d-afff-4487-93ef-f57130a55dff
   xudp: true
-- alterId: 0
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR50|1.4MB/s|DNSOK|GPT⁺-KR
-  network: raw
-  port: 443
-  server: 140.238.2.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇰🇷 | @WhiteDNS | KR54|1.0MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  port: 2053
+  reality-opts:
+    public-key: DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms
+    short-id: 3c4041d3
+  server: 47.80.19.173
+  tls: true
+  type: vless
   udp: true
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  uuid: 319d5ffb-57e8-4bbd-ac0c-5d55d0c253de
   xudp: true
+  servername: gateway.icloud.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇰🇷 | @WhiteDNS | KR55|980KB/s|DNSOK|GPT⁺-KR
+  network: raw
+  port: 2053
+  reality-opts:
+    public-key: DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms
+    short-id: 3c4041d3
+  server: 47.80.19.173
+  tls: true
+  type: vless
+  udp: true
+  uuid: 319d5ffb-57e8-4bbd-ac0c-5d55d0c253de
+  xudp: true
+  servername: gateway.icloud.com
