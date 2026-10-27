@@ -13,30 +13,14 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇹 | @WhiteDNS | IT102|29.0MB/s|DNSOK|GPT⁺-IT
-  password: ''
-  port: 443
-  server: 185.183.105.146
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇮🇹 | @WhiteDNS | IT103|27.3MB/s|DNSOK|GPT⁺-IT
-  password: ''
-  port: 443
-  server: 94.177.163.156
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 - cipher: aes-256-gcm
-  name: 🇮🇹 | @WhiteDNS | IT104|8.3MB/s|DNSOK|GPT⁺-IT
+  name: 🇮🇹 | @WhiteDNS | IT82|52.2MB/s|DNSOK|GPT⁺-IT
   password: itzvpn@321
   port: 8388
   server: 57.131.48.45
   type: ss
   udp: true
-- name: 🇮🇹 | @WhiteDNS | IT105|6.8MB/s|DNSOK|GPT⁺-IT
+- name: 🇮🇹 | @WhiteDNS | IT83|33.8MB/s|DNSOK|GPT⁺-IT
   password: ''
   port: 443
   server: 185.183.105.130
@@ -44,7 +28,15 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇮🇹 | @WhiteDNS | IT106|712KB/s|DNSOK|GPT⁺
+- name: 🇮🇹 | @WhiteDNS | IT84|30.1MB/s|DNSOK|GPT⁺-IT
+  password: ''
+  port: 443
+  server: 185.183.105.146
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇮🇹 | @WhiteDNS | IT85|1.0MB/s|DNSOK|GPT⁺-IT
   password: ''
   port: 8090
   server: 93.71.245.84
@@ -56,11 +48,10 @@ proxy-groups:
 - name: IT-Auto
   type: url-test
   proxies:
-  - 🇮🇹 | @WhiteDNS | IT102|29.0MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT103|27.3MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT104|8.3MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT105|6.8MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT106|712KB/s|DNSOK|GPT⁺
+  - 🇮🇹 | @WhiteDNS | IT82|52.2MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT83|33.8MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT84|30.1MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT85|1.0MB/s|DNSOK|GPT⁺-IT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

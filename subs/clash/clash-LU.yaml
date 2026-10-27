@@ -15,7 +15,7 @@ dns:
 proxies:
 - client-fingerprint: chrome
   encryption: none
-  name: 🇱🇺 | @WhiteDNS | LU7|41.2MB/s|DNSOK|GPT⁺-CH
+  name: 🇱🇺 | @WhiteDNS | LU6|38.8MB/s|DNSOK|GPT⁺-CH
   network: tcp
   port: 32752
   reality-opts:
@@ -29,7 +29,7 @@ proxies:
   xudp: true
   servername: www.apple.com
 - client-fingerprint: chrome
-  name: 🇱🇺 | @WhiteDNS | LU8|40.7MB/s|DNSOK|GPT⁺-CH
+  name: 🇱🇺 | @WhiteDNS | LU7|37.2MB/s|DNSOK|GPT⁺-CH
   port: 32752
   reality-opts:
     public-key: pfFcQxKv4EPhCDUoZMCmTjj4FK7HHQg_me-In3bOejA
@@ -42,9 +42,25 @@ proxies:
   uuid: 4970c1cd-13e1-498a-920a-61d07be2fa65
   network: tcp
   servername: www.apple.com
+- name: 🇱🇺 | @WhiteDNS | LU8|7.5MB/s|DNSOK|GPT⁺-LU
+  password: ''
+  port: 443
+  server: 185.221.132.242
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇱🇺 | @WhiteDNS | LU9|6.3MB/s|DNSOK|GPT⁺-LU
+  password: ''
+  port: 9443
+  server: 185.221.132.226
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 - client-fingerprint: chrome
   encryption: none
-  name: 🇱🇺 | @WhiteDNS | LU9|36.1MB/s|DNSOK|GPT⁺-CH
+  name: 🇱🇺 | @WhiteDNS | LU10|5.9MB/s|DNSOK|GPT⁺-CH
   network: raw
   port: 32752
   reality-opts:
@@ -57,40 +73,15 @@ proxies:
   uuid: 4970c1cd-13e1-498a-920a-61d07be2fa65
   xudp: true
   servername: www.apple.com
-- name: 🇱🇺 | @WhiteDNS | LU10|23.1MB/s|DNSOK|GPT⁺-LU
-  password: ''
-  port: 443
-  server: 185.221.132.242
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇱🇺 | @WhiteDNS | LU11|21.0MB/s|DNSOK|GPT⁺-LU
-  password: ''
-  port: 443
-  server: 185.221.132.226
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇱🇺 | @WhiteDNS | LU12|5.3MB/s|DNSOK|GPT⁺-LU
-  password: ''
-  port: 9443
-  server: 185.221.132.226
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 proxy-groups:
 - name: LU-Auto
   type: url-test
   proxies:
-  - 🇱🇺 | @WhiteDNS | LU7|41.2MB/s|DNSOK|GPT⁺-CH
-  - 🇱🇺 | @WhiteDNS | LU8|40.7MB/s|DNSOK|GPT⁺-CH
-  - 🇱🇺 | @WhiteDNS | LU9|36.1MB/s|DNSOK|GPT⁺-CH
-  - 🇱🇺 | @WhiteDNS | LU10|23.1MB/s|DNSOK|GPT⁺-LU
-  - 🇱🇺 | @WhiteDNS | LU11|21.0MB/s|DNSOK|GPT⁺-LU
-  - 🇱🇺 | @WhiteDNS | LU12|5.3MB/s|DNSOK|GPT⁺-LU
+  - 🇱🇺 | @WhiteDNS | LU6|38.8MB/s|DNSOK|GPT⁺-CH
+  - 🇱🇺 | @WhiteDNS | LU7|37.2MB/s|DNSOK|GPT⁺-CH
+  - 🇱🇺 | @WhiteDNS | LU8|7.5MB/s|DNSOK|GPT⁺-LU
+  - 🇱🇺 | @WhiteDNS | LU9|6.3MB/s|DNSOK|GPT⁺-LU
+  - 🇱🇺 | @WhiteDNS | LU10|5.9MB/s|DNSOK|GPT⁺-CH
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
