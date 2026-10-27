@@ -13,22 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: aes-256-gcm
-  name: 🇮🇹 | @WhiteDNS | IT116|51.7MB/s|DNSOK|GPT⁺-IT
-  password: itzvpn@321
-  port: 8388
-  server: 57.131.48.45
-  type: ss
-  udp: true
-- name: 🇮🇹 | @WhiteDNS | IT117|44.2MB/s|DNSOK|GPT⁺-IT
-  password: ''
-  port: 443
-  server: 185.183.105.146
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇮🇹 | @WhiteDNS | IT118|43.6MB/s|DNSOK|GPT⁺-IT
+- name: 🇮🇹 | @WhiteDNS | IT166|44.2MB/s|DNSOK|GPT⁺-IT
   password: None
   port: 443
   server: 185.183.105.146
@@ -36,15 +21,22 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇮🇹 | @WhiteDNS | IT119|41.4MB/s|DNSOK|GPT⁺-IT
+- cipher: aes-256-gcm
+  name: 🇮🇹 | @WhiteDNS | IT167|43.6MB/s|DNSOK|GPT⁺-IT
+  password: itzvpn@321
+  port: 8388
+  server: 57.131.48.45
+  type: ss
+  udp: true
+- name: 🇮🇹 | @WhiteDNS | IT168|41.2MB/s|DNSOK|GPT⁺-IT
   password: ''
   port: 443
-  server: 185.183.105.130
+  server: 185.183.105.146
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇮🇹 | @WhiteDNS | IT120|28.0MB/s|DNSOK|GPT⁺-IT
+- name: 🇮🇹 | @WhiteDNS | IT169|31.0MB/s|DNSOK|GPT⁺-IT
   password: ''
   port: 443
   server: 94.177.163.156
@@ -52,10 +44,10 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇮🇹 | @WhiteDNS | IT121|1.2MB/s|DNSOK|GPT⁺-IT
+- name: 🇮🇹 | @WhiteDNS | IT170|27.8MB/s|DNSOK|GPT⁺-IT
   password: ''
-  port: 8090
-  server: 93.71.245.84
+  port: 443
+  server: 185.183.105.130
   skip-cert-verify: true
   tls: true
   type: http
@@ -64,12 +56,11 @@ proxy-groups:
 - name: IT-Auto
   type: url-test
   proxies:
-  - 🇮🇹 | @WhiteDNS | IT116|51.7MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT117|44.2MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT118|43.6MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT119|41.4MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT120|28.0MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT121|1.2MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT166|44.2MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT167|43.6MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT168|41.2MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT169|31.0MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT170|27.8MB/s|DNSOK|GPT⁺-IT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

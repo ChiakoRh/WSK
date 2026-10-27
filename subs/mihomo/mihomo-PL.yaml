@@ -1,13 +1,13 @@
 proxies:
-- name: 🇵🇱 | @WhiteDNS | PL47|19.5MB/s|DNSOK|GPT⁺-PL
-  password: None
+- name: 🇵🇱 | @WhiteDNS | PL52|19.9MB/s|DNSOK|GPT⁺-PL
+  password: ''
   port: 443
   server: 37.120.156.34
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇵🇱 | @WhiteDNS | PL48|6.0MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL53|5.7MB/s|DNSOK|GPT⁺-PL
   password: None
   port: 443
   server: 37.120.156.18
@@ -15,7 +15,20 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇵🇱 | @WhiteDNS | PL49|5.4MB/s|DNSOK|GPT⁺-PL
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: beru-pl
+  name: 🇵🇱 | @WhiteDNS | PL54|5.5MB/s|DNSOK|GPT⁺-PL
+  network: grpc
+  port: 8445
+  server: 77.232.135.141
+  tls: true
+  type: vless
+  udp: true
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+  xudp: true
+  servername: ru1.radiolumens.uk
+- name: 🇵🇱 | @WhiteDNS | PL55|4.9MB/s|DNSOK|GPT⁺-PL
   password: 'null'
   port: 443
   server: 151.115.54.133
@@ -29,7 +42,7 @@ proxies:
   client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: beru-pl
-  name: 🇵🇱 | @WhiteDNS | PL50|5.1MB/s|DNSOK|GPT⁺-PL
+  name: 🇵🇱 | @WhiteDNS | PL56|4.9MB/s|DNSOK|GPT⁺-PL
   network: grpc
   port: 8445
   server: ru1.radiolumens.uk
@@ -39,20 +52,7 @@ proxies:
   uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
   xudp: true
   servername: ru1.radiolumens.uk
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: beru-pl
-  name: 🇵🇱 | @WhiteDNS | PL51|2.8MB/s|DNSOK|GPT⁺-PL
-  network: grpc
-  port: 8445
-  server: 77.232.135.141
-  tls: true
-  type: vless
-  udp: true
-  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
-  xudp: true
-  servername: ru1.radiolumens.uk
-- name: 🇵🇱 | @WhiteDNS | PL52|992KB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL57|2.5MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 31.186.220.204
@@ -60,19 +60,3 @@ proxies:
   tls: true
   type: http
   username: ''
-- alterId: 0
-  cipher: auto
-  name: 🇵🇱 | @WhiteDNS | PL53|569KB/s|DNSOK|GPT⁺-PL
-  network: ws
-  port: 80
-  server: 54.37.131.126
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
-  ws-opts:
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-    path: /
-  xudp: true
