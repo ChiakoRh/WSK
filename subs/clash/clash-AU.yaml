@@ -13,8 +13,17 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- name: 🇦🇺 | @WhiteDNS | AU13|1.8MB/s|DNSOK|GPT⁺-AU
+  password: Trojan@82164024
+  port: 443
+  server: au.tronsg.com
+  skip-cert-verify: true
+  sni: au.tronsg.com
+  type: trojan
+  udp: true
+  network: tcp
 - client-fingerprint: chrome
-  name: 🇦🇺 | @WhiteDNS | AU11|1.8MB/s|DNSOK|GPT⁺-AU
+  name: 🇦🇺 | @WhiteDNS | AU14|1.7MB/s|DNSOK|GPT⁺-AU
   network: tcp
   password: Trojan@82164024
   port: 443
@@ -23,7 +32,7 @@ proxies:
   sni: au.tronsg.com
   type: trojan
   udp: true
-- name: 🇦🇺 | @WhiteDNS | AU12|1.8MB/s|DNSOK|GPT⁺-AU
+- name: 🇦🇺 | @WhiteDNS | AU15|1.6MB/s|DNSOK|GPT⁺-AU
   password: ''
   port: 443
   server: 103.62.50.130
@@ -35,8 +44,9 @@ proxy-groups:
 - name: AU-Auto
   type: url-test
   proxies:
-  - 🇦🇺 | @WhiteDNS | AU11|1.8MB/s|DNSOK|GPT⁺-AU
-  - 🇦🇺 | @WhiteDNS | AU12|1.8MB/s|DNSOK|GPT⁺-AU
+  - 🇦🇺 | @WhiteDNS | AU13|1.8MB/s|DNSOK|GPT⁺-AU
+  - 🇦🇺 | @WhiteDNS | AU14|1.7MB/s|DNSOK|GPT⁺-AU
+  - 🇦🇺 | @WhiteDNS | AU15|1.6MB/s|DNSOK|GPT⁺-AU
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

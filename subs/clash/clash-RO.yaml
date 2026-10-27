@@ -13,26 +13,34 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇷🇴 | @WhiteDNS | RO16|6.0MB/s|DNSOK|GPT⁺-RO
+- name: 🇷🇴 | @WhiteDNS | RO15|5.7MB/s|DNSOK|GPT⁺-RO
   password: None
-  port: 9443
-  server: 169.150.199.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇷🇴 | @WhiteDNS | RO17|5.5MB/s|DNSOK|GPT⁺-RO
-  password: ''
   port: 9002
   server: 193.176.84.22
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇷🇴 | @WhiteDNS | RO18|5.4MB/s|DNSOK|GPT⁺-RO
-  password: None
+- name: 🇷🇴 | @WhiteDNS | RO16|5.6MB/s|DNSOK|GPT⁺-RO
+  password: ''
+  port: 9002
+  server: 193.176.84.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇷🇴 | @WhiteDNS | RO17|5.4MB/s|DNSOK|GPT⁺-RO
+  password: ''
   port: 9443
-  server: 135.136.1.2
+  server: 169.150.199.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇷🇴 | @WhiteDNS | RO18|5.3MB/s|DNSOK|GPT⁺-RO
+  password: ''
+  port: 9002
+  server: 193.176.84.22
   skip-cert-verify: true
   tls: true
   type: http
@@ -45,32 +53,15 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇷🇴 | @WhiteDNS | RO20|4.2MB/s|DNSOK|GPT⁺-RO
-  password: None
-  port: 9002
-  server: 193.176.84.22
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇷🇴 | @WhiteDNS | RO21|2.4MB/s|DNSOK|GPT⁺-RO
-  password: ''
-  port: 9002
-  server: 193.176.84.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 proxy-groups:
 - name: RO-Auto
   type: url-test
   proxies:
-  - 🇷🇴 | @WhiteDNS | RO16|6.0MB/s|DNSOK|GPT⁺-RO
-  - 🇷🇴 | @WhiteDNS | RO17|5.5MB/s|DNSOK|GPT⁺-RO
-  - 🇷🇴 | @WhiteDNS | RO18|5.4MB/s|DNSOK|GPT⁺-RO
+  - 🇷🇴 | @WhiteDNS | RO15|5.7MB/s|DNSOK|GPT⁺-RO
+  - 🇷🇴 | @WhiteDNS | RO16|5.6MB/s|DNSOK|GPT⁺-RO
+  - 🇷🇴 | @WhiteDNS | RO17|5.4MB/s|DNSOK|GPT⁺-RO
+  - 🇷🇴 | @WhiteDNS | RO18|5.3MB/s|DNSOK|GPT⁺-RO
   - 🇷🇴 | @WhiteDNS | RO19|4.5MB/s|DNSOK|GPT⁺-RO
-  - 🇷🇴 | @WhiteDNS | RO20|4.2MB/s|DNSOK|GPT⁺-RO
-  - 🇷🇴 | @WhiteDNS | RO21|2.4MB/s|DNSOK|GPT⁺-RO
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
