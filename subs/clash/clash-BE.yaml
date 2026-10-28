@@ -13,30 +13,22 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇧🇪 | @WhiteDNS | BE5|23.1MB/s|DNSOK|GPT⁺-DE
-  password: U5Jk0BhRNKjb5wQBBOXx2wwkWZ_yWU0N
-  port: 8044
-  server: dns8.m3hrzd.ir
-  type: ss
-  udp: true
-- name: 🇧🇪 | @WhiteDNS | BE6|16.1MB/s|DNSOK|GPT⁺-BE
-  password: None
+- name: 🇧🇪 | @WhiteDNS | BE4|6.3MB/s|DNSOK|GPT⁺-BE
+  password: ''
   port: 443
   server: 146.70.123.98
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇧🇪 | @WhiteDNS | BE7|6.1MB/s|DNSOK|GPT⁺-BE
-  password: ''
-  port: 443
-  server: 146.70.176.242
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇧🇪 | @WhiteDNS | BE8|6.1MB/s|DNSOK|GPT⁺-BE
+- cipher: chacha20-ietf-poly1305
+  name: 🇧🇪 | @WhiteDNS | BE5|6.2MB/s|DNSOK|GPT⁺-DE
+  password: U5Jk0BhRNKjb5wQBBOXx2wwkWZ_yWU0N
+  port: 8044
+  server: dns8.m3hrzd.ir
+  type: ss
+  udp: true
+- name: 🇧🇪 | @WhiteDNS | BE6|5.8MB/s|DNSOK|GPT⁺-BE
   password: None
   port: 443
   server: 146.70.176.242
@@ -48,10 +40,9 @@ proxy-groups:
 - name: BE-Auto
   type: url-test
   proxies:
-  - 🇧🇪 | @WhiteDNS | BE5|23.1MB/s|DNSOK|GPT⁺-DE
-  - 🇧🇪 | @WhiteDNS | BE6|16.1MB/s|DNSOK|GPT⁺-BE
-  - 🇧🇪 | @WhiteDNS | BE7|6.1MB/s|DNSOK|GPT⁺-BE
-  - 🇧🇪 | @WhiteDNS | BE8|6.1MB/s|DNSOK|GPT⁺-BE
+  - 🇧🇪 | @WhiteDNS | BE4|6.3MB/s|DNSOK|GPT⁺-BE
+  - 🇧🇪 | @WhiteDNS | BE5|6.2MB/s|DNSOK|GPT⁺-DE
+  - 🇧🇪 | @WhiteDNS | BE6|5.8MB/s|DNSOK|GPT⁺-BE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

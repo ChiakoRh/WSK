@@ -1,33 +1,12 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🇵🇱 | @WhiteDNS | PL62|20.2MB/s|DNSOK|GPT⁺-PL
-  network: tcp
-  port: 8080
-  server: 82.40.62.170
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- cipher: aes-256-gcm
+  name: 🇵🇱 | @WhiteDNS | PL71|21.6MB/s|DNSOK|GPT⁺-PL
+  password: itzvpn@321
+  port: 8388
+  server: 51.83.192.80
+  type: ss
   udp: true
-  uuid: 68b26471-6252-49f0-9b23-0eb5191d4ea8
-  xudp: true
-- name: 🇵🇱 | @WhiteDNS | PL63|19.7MB/s|DNSOK|GPT⁺-PL
-  password: None
-  port: 443
-  server: 37.120.156.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇵🇱 | @WhiteDNS | PL64|6.4MB/s|DNSOK|GPT⁺-PL
-  password: 'null'
-  port: 443
-  server: 151.115.54.133
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 🇵🇱 | @WhiteDNS | PL65|5.7MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL72|18.9MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 37.120.156.34
@@ -35,7 +14,52 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇵🇱 | @WhiteDNS | PL66|732KB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL73|16.9MB/s|DNSOK|GPT⁺-PL
+  password: ''
+  port: 443
+  server: 37.120.156.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇵🇱 | @WhiteDNS | PL74|6.4MB/s|DNSOK|GPT⁺-PL
+  password: 'null'
+  port: 443
+  server: 151.115.54.133
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: beru-pl
+  name: 🇵🇱 | @WhiteDNS | PL75|5.6MB/s|DNSOK|GPT⁺-PL
+  network: grpc
+  port: 8445
+  server: ru1.radiolumens.uk
+  tls: true
+  type: vless
+  udp: true
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+  xudp: true
+  servername: ru1.radiolumens.uk
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: beru-pl
+  name: 🇵🇱 | @WhiteDNS | PL76|5.1MB/s|DNSOK|GPT⁺-PL
+  network: grpc
+  port: 8445
+  server: 77.232.135.141
+  tls: true
+  type: vless
+  udp: true
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+  xudp: true
+  servername: ru1.radiolumens.uk
+- name: 🇵🇱 | @WhiteDNS | PL77|1.9MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 31.186.220.204
