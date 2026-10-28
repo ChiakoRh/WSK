@@ -13,8 +13,10 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  name: 🇮🇳 | @WhiteDNS | IN50|3.1MB/s|DNSOK|GPT⁺-GB
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇮🇳 | @WhiteDNS | IN36|3.4MB/s|DNSOK|GPT⁺-GB
   network: ws
   port: 2096
   server: sinavm.soft10.ir
@@ -25,23 +27,23 @@ proxies:
   ws-opts:
     headers:
       Host: sinavm.soft10.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/61.0.3163.100 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/48.0.2564.109 Safari/537.36
     path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM
   xudp: true
   servername: sinavm.soft10.ir
-- name: 🇮🇳 | @WhiteDNS | IN51|2.7MB/s|DNSOK|GPT⁺-IN
+- name: 🇮🇳 | @WhiteDNS | IN37|2.6MB/s|DNSOK|GPT⁺-IN
   password: ''
   port: 1088
   server: 144.24.111.128
   skip-cert-verify: true
   type: socks5
   username: ''
-- client-fingerprint: chrome
-  name: 🇮🇳 | @WhiteDNS | IN52|1.7MB/s|DNSOK|GPT⁺-IN
+- client-fingerprint: firefox
+  name: 🇮🇳 | @WhiteDNS | IN38|1.7MB/s|DNSOK|GPT⁺-IN
   network: tcp
   port: 46362
-  server: in002.zestapp778.com
+  server: 139.84.145.241
   tls: true
   type: vless
   udp: true
@@ -49,10 +51,21 @@ proxies:
   xudp: true
   servername: in002.zestapp778.com
 - client-fingerprint: firefox
-  name: 🇮🇳 | @WhiteDNS | IN53|1.3MB/s|DNSOK|GPT⁺-IN
+  name: 🇮🇳 | @WhiteDNS | IN39|1.3MB/s|DNSOK|GPT⁺-IN
   network: raw
   port: 46362
   server: 139.84.145.241
+  tls: true
+  type: vless
+  udp: true
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  xudp: true
+  servername: in002.zestapp778.com
+- client-fingerprint: chrome
+  name: 🇮🇳 | @WhiteDNS | IN40|580KB/s|DNSOK|GPT⁺-IN
+  network: tcp
+  port: 46362
+  server: in002.zestapp778.com
   tls: true
   type: vless
   udp: true
@@ -63,10 +76,11 @@ proxy-groups:
 - name: IN-Auto
   type: url-test
   proxies:
-  - 🇮🇳 | @WhiteDNS | IN50|3.1MB/s|DNSOK|GPT⁺-GB
-  - 🇮🇳 | @WhiteDNS | IN51|2.7MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN52|1.7MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN53|1.3MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN36|3.4MB/s|DNSOK|GPT⁺-GB
+  - 🇮🇳 | @WhiteDNS | IN37|2.6MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN38|1.7MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN39|1.3MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN40|580KB/s|DNSOK|GPT⁺-IN
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
