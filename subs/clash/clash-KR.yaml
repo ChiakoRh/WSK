@@ -13,50 +13,30 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇰🇷 | @WhiteDNS | KR70|1.8MB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 443
-  server: 104.17.145.43
-  tls: true
-  type: vless
-  udp: true
-  uuid: 588f7c93-4c95-4852-88ae-4fe22dc9a580
-  ws-opts:
-    headers:
-      Host: hgse.abcai.online
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; MYA-L22 Build/HUAWEIMYA-L22) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
-    path: /
-  xudp: true
-  servername: hgse.abcai.online
-- cipher: aes-256-cfb
-  name: 🇰🇷 | @WhiteDNS | KR71|1.4MB/s|DNSOK|GPT⁺-KR
-  password: 1234!@#$
-  port: 1774
-  server: 49.254.204.133
-  type: ss
-  udp: true
-- alpn:
-  - ''
-  alterId: '0'
+- alterId: '0'
   cipher: auto
   http-opts:
     headers: {}
     path:
     - /
-  name: 🇰🇷 | @WhiteDNS | KR72|1.1MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR57|2.1MB/s|DNSOK|GPT⁺-KR
   network: http
-  port: 80
-  server: 217.142.138.61
+  port: 123
+  server: 43.108.103.167
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: ac1b933d-afff-4487-93ef-f57130a55dff
+  uuid: 35aa0fda-175a-4aec-c468-0231dee1a121
   xudp: true
-- name: 🇰🇷 | @WhiteDNS | KR73|1.0MB/s|DNSOK|GPT⁺-KR
+- cipher: aes-256-cfb
+  name: 🇰🇷 | @WhiteDNS | KR58|1.3MB/s|DNSOK|GPT⁺-KR
+  password: 1234!@#$
+  port: 1774
+  server: 49.254.204.134
+  type: ss
+  udp: true
+- name: 🇰🇷 | @WhiteDNS | KR59|569KB/s|DNSOK|GPT⁺-KR
   network: ws
   port: 25555
   server: 152.69.226.63
@@ -66,18 +46,17 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/50.0.2661.102 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/56.0.2924.87 Safari/537.36
     path: /
   xudp: true
 proxy-groups:
 - name: KR-Auto
   type: url-test
   proxies:
-  - 🇰🇷 | @WhiteDNS | KR70|1.8MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR71|1.4MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR72|1.1MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR73|1.0MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR57|2.1MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR58|1.3MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR59|569KB/s|DNSOK|GPT⁺-KR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -13,40 +13,10 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇦🇺 | @WhiteDNS | AU17|1.8MB/s|DNSOK|GPT⁺-AU
+- name: 🇦🇺 | @WhiteDNS | AU7|1.8MB/s|DNSOK|GPT⁺-AU
   password: ''
   port: 443
   server: 103.62.50.130
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  name: 🇦🇺 | @WhiteDNS | AU18|1.3MB/s|DNSOK|GPT⁺-AU
-  port: 35652
-  server: au001.zestapp778.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  network: tcp
-  servername: au001.zestapp778.com
-- client-fingerprint: chrome
-  name: 🇦🇺 | @WhiteDNS | AU19|1.2MB/s|DNSOK|GPT⁺-AU
-  network: tcp
-  port: 35652
-  server: au001.zestapp778.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  xudp: true
-  servername: au001.zestapp778.com
-- name: 🇦🇺 | @WhiteDNS | AU20|1.2MB/s|DNSOK|GPT⁺
-  password: None
-  port: 443
-  server: 159.13.44.228
   skip-cert-verify: true
   tls: true
   type: http
@@ -55,10 +25,7 @@ proxy-groups:
 - name: AU-Auto
   type: url-test
   proxies:
-  - 🇦🇺 | @WhiteDNS | AU17|1.8MB/s|DNSOK|GPT⁺-AU
-  - 🇦🇺 | @WhiteDNS | AU18|1.3MB/s|DNSOK|GPT⁺-AU
-  - 🇦🇺 | @WhiteDNS | AU19|1.2MB/s|DNSOK|GPT⁺-AU
-  - 🇦🇺 | @WhiteDNS | AU20|1.2MB/s|DNSOK|GPT⁺
+  - 🇦🇺 | @WhiteDNS | AU7|1.8MB/s|DNSOK|GPT⁺-AU
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

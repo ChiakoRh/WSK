@@ -15,7 +15,7 @@ dns:
 proxies:
 - client-fingerprint: chrome
   encryption: none
-  name: 🇱🇺 | @WhiteDNS | LU6|41.4MB/s|DNSOK|GPT⁺-CH
+  name: 🇱🇺 | @WhiteDNS | LU6|40.8MB/s|DNSOK|GPT⁺-CH
   network: raw
   port: 32752
   reality-opts:
@@ -30,7 +30,7 @@ proxies:
   servername: www.apple.com
 - client-fingerprint: chrome
   encryption: none
-  name: 🇱🇺 | @WhiteDNS | LU7|39.8MB/s|DNSOK|GPT⁺-CH
+  name: 🇱🇺 | @WhiteDNS | LU7|39.7MB/s|DNSOK|GPT⁺-CH
   network: tcp
   port: 32752
   reality-opts:
@@ -44,7 +44,7 @@ proxies:
   xudp: true
   servername: www.apple.com
 - client-fingerprint: chrome
-  name: 🇱🇺 | @WhiteDNS | LU8|38.5MB/s|DNSOK|GPT⁺-CH
+  name: 🇱🇺 | @WhiteDNS | LU8|22.2MB/s|DNSOK|GPT⁺-CH
   port: 32752
   reality-opts:
     public-key: pfFcQxKv4EPhCDUoZMCmTjj4FK7HHQg_me-In3bOejA
@@ -57,18 +57,18 @@ proxies:
   uuid: 4970c1cd-13e1-498a-920a-61d07be2fa65
   network: tcp
   servername: www.apple.com
-- name: 🇱🇺 | @WhiteDNS | LU9|22.8MB/s|DNSOK|GPT⁺-LU
+- name: 🇱🇺 | @WhiteDNS | LU9|18.0MB/s|DNSOK|GPT⁺-LU
   password: ''
-  port: 9443
-  server: 185.221.132.226
+  port: 443
+  server: 185.221.132.242
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇱🇺 | @WhiteDNS | LU10|20.1MB/s|DNSOK|GPT⁺-LU
+- name: 🇱🇺 | @WhiteDNS | LU10|6.8MB/s|DNSOK|GPT⁺-LU
   password: ''
   port: 443
-  server: 185.221.132.242
+  server: 185.221.132.226
   skip-cert-verify: true
   tls: true
   type: http
@@ -77,11 +77,11 @@ proxy-groups:
 - name: LU-Auto
   type: url-test
   proxies:
-  - 🇱🇺 | @WhiteDNS | LU6|41.4MB/s|DNSOK|GPT⁺-CH
-  - 🇱🇺 | @WhiteDNS | LU7|39.8MB/s|DNSOK|GPT⁺-CH
-  - 🇱🇺 | @WhiteDNS | LU8|38.5MB/s|DNSOK|GPT⁺-CH
-  - 🇱🇺 | @WhiteDNS | LU9|22.8MB/s|DNSOK|GPT⁺-LU
-  - 🇱🇺 | @WhiteDNS | LU10|20.1MB/s|DNSOK|GPT⁺-LU
+  - 🇱🇺 | @WhiteDNS | LU6|40.8MB/s|DNSOK|GPT⁺-CH
+  - 🇱🇺 | @WhiteDNS | LU7|39.7MB/s|DNSOK|GPT⁺-CH
+  - 🇱🇺 | @WhiteDNS | LU8|22.2MB/s|DNSOK|GPT⁺-CH
+  - 🇱🇺 | @WhiteDNS | LU9|18.0MB/s|DNSOK|GPT⁺-LU
+  - 🇱🇺 | @WhiteDNS | LU10|6.8MB/s|DNSOK|GPT⁺-LU
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

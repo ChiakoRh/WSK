@@ -14,7 +14,7 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP122|1.7MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP107|1.6MB/s|DNSOK|GPT⁺-JP
   network: tcp
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   port: 8886
@@ -22,17 +22,8 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- country: 🇯🇵JP
-  name: 🇯🇵 | @WhiteDNS | JP123|1.2MB/s|DNSOK|GPT⁺-JP
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 45.32.52.173
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-  network: tcp
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP124|1.0MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP108|1.3MB/s|DNSOK|GPT⁺-JP
   network: tcp
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   port: 8886
@@ -41,13 +32,33 @@ proxies:
   sni: 45.32.52.173
   type: trojan
   udp: true
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP109|1.2MB/s|DNSOK|GPT⁺-JP
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 45.32.52.173
+  skip-cert-verify: true
+  sni: 45.32.52.173
+  type: trojan
+  udp: true
+  network: tcp
+- country: 🇯🇵JP
+  name: 🇯🇵 | @WhiteDNS | JP110|1.1MB/s|DNSOK|GPT⁺-JP
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 45.32.52.173
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  network: tcp
 proxy-groups:
 - name: JP-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP122|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP123|1.2MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP124|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP107|1.6MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP108|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP109|1.2MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP110|1.1MB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
