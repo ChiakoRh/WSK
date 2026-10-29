@@ -13,31 +13,21 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇵🇱 | @WhiteDNS | PL70|6.3MB/s|DNSOK|GPT⁺-PL
-  password: ''
+- client-fingerprint: chrome
+  name: 🇵🇱 | @WhiteDNS | PL67|21.9MB/s|DNSOK|GPT⁺-PL
+  network: xhttp
   port: 443
-  server: 37.120.156.34
-  skip-cert-verify: true
+  server: 146.75.35.81
   tls: true
-  type: http
-  username: ''
-- name: 🇵🇱 | @WhiteDNS | PL71|6.2MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 151.115.54.133
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇵🇱 | @WhiteDNS | PL72|6.1MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 37.120.156.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇵🇱 | @WhiteDNS | PL73|5.9MB/s|DNSOK|GPT⁺-PL
+  type: vless
+  udp: true
+  uuid: 751d501f-6164-4820-8873-0558de4f7f1b
+  xhttp-opts:
+    host: ovd9.global.ssl.fastly.net
+    mode: auto
+  xudp: true
+  servername: accounts.fastly.com
+- name: 🇵🇱 | @WhiteDNS | PL68|19.7MB/s|DNSOK|GPT⁺-PL
   password: None
   port: 443
   server: 37.120.156.18
@@ -45,7 +35,67 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇵🇱 | @WhiteDNS | PL74|2.3MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL69|19.1MB/s|DNSOK|GPT⁺-PL
+  password: ''
+  port: 443
+  server: 37.120.156.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇵🇱 | @WhiteDNS | PL70|6.9MB/s|DNSOK|GPT⁺-PL
+  password: ''
+  port: 443
+  server: 37.120.156.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- cipher: aes-256-gcm
+  name: 🇵🇱 | @WhiteDNS | PL71|6.8MB/s|DNSOK|GPT⁺-PL
+  password: itzvpn@321
+  port: 8388
+  server: 51.83.192.80
+  type: ss
+  udp: true
+- name: 🇵🇱 | @WhiteDNS | PL72|6.2MB/s|DNSOK|GPT⁺-PL
+  password: ''
+  port: 443
+  server: 151.115.54.133
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: beru-pl
+  name: 🇵🇱 | @WhiteDNS | PL73|5.5MB/s|DNSOK|GPT⁺-PL
+  network: grpc
+  port: 8445
+  server: 77.232.135.141
+  tls: true
+  type: vless
+  udp: true
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+  xudp: true
+  servername: ru1.radiolumens.uk
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: beru-pl
+  name: 🇵🇱 | @WhiteDNS | PL74|5.3MB/s|DNSOK|GPT⁺-PL
+  network: grpc
+  port: 8445
+  server: ru1.radiolumens.uk
+  tls: true
+  type: vless
+  udp: true
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+  xudp: true
+  servername: ru1.radiolumens.uk
+- name: 🇵🇱 | @WhiteDNS | PL75|2.8MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 31.186.220.204
@@ -57,11 +107,15 @@ proxy-groups:
 - name: PL-Auto
   type: url-test
   proxies:
-  - 🇵🇱 | @WhiteDNS | PL70|6.3MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL71|6.2MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL72|6.1MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL73|5.9MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL74|2.3MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL67|21.9MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL68|19.7MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL69|19.1MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL70|6.9MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL71|6.8MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL72|6.2MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL73|5.5MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL74|5.3MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL75|2.8MB/s|DNSOK|GPT⁺-PL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

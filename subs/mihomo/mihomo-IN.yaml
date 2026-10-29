@@ -1,20 +1,6 @@
 proxies:
-- name: 🇮🇳 | @WhiteDNS | IN82|3.2MB/s|DNSOK|GPT⁺-IN
-  password: ''
-  port: 1088
-  server: 144.24.111.128
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- name: 🇮🇳 | @WhiteDNS | IN83|1.6MB/s|DNSOK|GPT⁺-IN
-  password: ''
-  port: 1080
-  server: 140.238.243.61
-  skip-cert-verify: true
-  type: socks5
-  username: ''
 - country: 🇺🇸US
-  name: 🇮🇳 | @WhiteDNS | IN84|1.3MB/s|DNSOK|GPT⁺-IN
+  name: 🇮🇳 | @WhiteDNS | IN84|1.8MB/s|DNSOK|GPT⁺-IN
   password: Trojan@82164024
   port: 443
   server: in.tronsg.com
@@ -23,35 +9,59 @@ proxies:
   type: trojan
   udp: true
   network: tcp
-- alterId: 0
-  cipher: auto
-  name: 🇮🇳 | @WhiteDNS | IN85|1.1MB/s|DNSOK|GPT⁺-IN
-  network: ws
-  port: 80
-  server: 152.67.8.205
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- country: 🇺🇸US
+  name: 🇮🇳 | @WhiteDNS | IN85|1.8MB/s|DNSOK|GPT⁺-IN
+  password: Trojan@82164024
+  port: 443
+  server: in.tronsg.com
+  skip-cert-verify: true
+  type: trojan
   udp: true
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  ws-opts:
-    headers: {}
-    path: /
-  xudp: true
-  servername: 🇮🇳in-152.67.8.205-0128 | 4.066mb
-- alterId: 0
-  cipher: auto
-  name: 🇮🇳 | @WhiteDNS | IN86|929KB/s|DNSOK|GPT⁺-IN
-  network: ws
-  port: 80
-  server: 152.67.8.205
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+  network: tcp
+  sni: in.tronsg.com
+- name: 🇮🇳 | @WhiteDNS | IN86|1.6MB/s|DNSOK|GPT⁺-IN
+  password: ''
+  port: 1080
+  server: 140.238.243.61
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- client-fingerprint: chrome
+  name: 🇮🇳 | @WhiteDNS | IN87|1.3MB/s|DNSOK|GPT⁺-IN
+  network: tcp
+  password: Trojan@82164024
+  port: 443
+  server: 139.84.132.62
+  skip-cert-verify: true
+  sni: 139.84.132.62
+  type: trojan
   udp: true
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  ws-opts:
-    headers: {}
-    path: /
+- client-fingerprint: chrome
+  name: 🇮🇳 | @WhiteDNS | IN88|1.2MB/s|DNSOK|GPT⁺-IN
+  port: 46362
+  server: in002.zestapp778.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  network: tcp
+  servername: in002.zestapp778.com
+- client-fingerprint: chrome
+  name: 🇮🇳 | @WhiteDNS | IN89|1.2MB/s|DNSOK|GPT⁺-IN
+  network: tcp
+  port: 46362
+  server: in002.zestapp778.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   xudp: true
-  servername: 🇮🇳in-152.67.8.205-0210 | 0.0mb
+  servername: in002.zestapp778.com
+- name: 🇮🇳 | @WhiteDNS | IN90|1.1MB/s|DNSOK|GPT⁺-IN
+  password: ''
+  port: 1088
+  server: 144.24.111.128
+  skip-cert-verify: true
+  type: socks5
+  username: ''

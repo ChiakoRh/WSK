@@ -13,21 +13,22 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇱🇰 | @WhiteDNS | LK4|6.0MB/s|DNSOK|GPT⁺-SG
+- encryption: none
+  name: 🇱🇰 | @WhiteDNS | LK5|5.8MB/s|DNSOK|GPT⁺-SG
   network: ws
   port: 8080
-  server: 170.114.45.6
+  server: support.zoom.us
   type: vless
   udp: true
   uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
   ws-opts:
     headers:
-      Host: free.nadun.store
-      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/42.0.2311.135 Safari/537.36
+      Host: Free.nadun.store
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/39.0.2171.95 Safari/537.36
     path: /
   xudp: true
-- name: 🇱🇰 | @WhiteDNS | LK5|5.8MB/s|DNSOK|GPT⁺-SG
+- name: 🇱🇰 | @WhiteDNS | LK6|5.8MB/s|DNSOK|GPT⁺-SG
   network: ws
   port: 8080
   server: support.zoom.us
@@ -38,32 +39,46 @@ proxies:
     headers:
       Host: free.nadun.store
       User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/56.0.2924.87 Safari/537.36
+        Gecko) Chrome/41.0.2272.118 Safari/537.36
     path: /
   xudp: true
   servername: support.zoom.us
-- encryption: none
-  name: 🇱🇰 | @WhiteDNS | LK6|5.2MB/s|DNSOK|GPT⁺-SG
+- name: 🇱🇰 | @WhiteDNS | LK7|5.7MB/s|DNSOK|GPT⁺-SG
   network: ws
   port: 8080
-  server: support.zoom.us
+  server: 170.114.46.6
   type: vless
   udp: true
   uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
   ws-opts:
     headers:
-      Host: Free.nadun.store
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; CAM-L03 Build/HUAWEICAM-L03) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+      Host: free.nadun.store
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.106 Safari/537.36
+    path: /
+  xudp: true
+- name: 🇱🇰 | @WhiteDNS | LK8|5.7MB/s|DNSOK|GPT⁺-SG
+  network: ws
+  port: 8080
+  server: 170.114.45.6
+  type: vless
+  udp: true
+  uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
+  ws-opts:
+    headers:
+      Host: free.nadun.store
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
     path: /
   xudp: true
 proxy-groups:
 - name: LK-Auto
   type: url-test
   proxies:
-  - 🇱🇰 | @WhiteDNS | LK4|6.0MB/s|DNSOK|GPT⁺-SG
   - 🇱🇰 | @WhiteDNS | LK5|5.8MB/s|DNSOK|GPT⁺-SG
-  - 🇱🇰 | @WhiteDNS | LK6|5.2MB/s|DNSOK|GPT⁺-SG
+  - 🇱🇰 | @WhiteDNS | LK6|5.8MB/s|DNSOK|GPT⁺-SG
+  - 🇱🇰 | @WhiteDNS | LK7|5.7MB/s|DNSOK|GPT⁺-SG
+  - 🇱🇰 | @WhiteDNS | LK8|5.7MB/s|DNSOK|GPT⁺-SG
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

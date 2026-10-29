@@ -1,114 +1,60 @@
 proxies:
-- name: 🇨🇦 | @WhiteDNS | CA67|5.9MB/s|DNSOK|GPT⁺-CA
-  port: 8080
-  server: 168.222.43.53
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  network: tcp
-- name: 🇨🇦 | @WhiteDNS | CA68|5.3MB/s|DNSOK|GPT⁺-CA
-  port: 8080
-  server: milo.networkforexir.site
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  network: tcp
-- name: 🇨🇦 | @WhiteDNS | CA69|5.2MB/s|DNSOK|GPT⁺-CA
-  network: tcp
-  port: 8080
-  server: milo.networkforexir.site
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  xudp: true
-  servername: milo.networkforexir.site
-- name: 🇨🇦 | @WhiteDNS | CA70|5.1MB/s|DNSOK|GPT⁺-CA
-  network: raw
-  port: 8080
-  server: milo.networkforexir.site
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  xudp: true
-- name: 🇨🇦 | @WhiteDNS | CA71|5.0MB/s|DNSOK|GPT⁺-CA
-  port: 8080
-  server: milo.rubinaz.xyz
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  network: tcp
-- name: 🇨🇦 | @WhiteDNS | CA72|5.0MB/s|DNSOK|GPT⁺-CA
-  port: 8080
-  server: 155.117.5.208
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  network: tcp
-- name: 🇨🇦 | @WhiteDNS | CA73|4.9MB/s|DNSOK|GPT⁺-CA
-  network: tcp
-  port: 8080
-  server: milo.networkforexir.site
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  xudp: true
-- name: 🇨🇦 | @WhiteDNS | CA74|4.6MB/s|DNSOK|GPT⁺-CA
-  network: tcp
-  port: 8080
-  server: 155.117.5.208
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  xudp: true
-  servername: 155.117.5.208
-- name: 🇨🇦 | @WhiteDNS | CA75|3.0MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 9443
-  server: 198.44.157.19
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA76|3.0MB/s|DNSOK|GPT⁺-CA
-  network: tcp
-  port: 8080
-  server: 155.117.5.208
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-- name: 🇨🇦 | @WhiteDNS | CA77|2.9MB/s|DNSOK|GPT⁺-CA
-  password: ''
+- alpn:
+  - h2
+  - h3
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.f-FvmAK-XGO6qQTfsxdVq24x-u1cbKcIB-8Sft-ApCQ
+  name: 🇨🇦 | @WhiteDNS | CA222|6.7MB/s|DNSOK|GPT⁺-TR
+  network: xhttp
   port: 443
-  server: 206.223.161.47
-  skip-cert-verify: true
+  server: render.com
   tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA78|2.7MB/s|DNSOK|GPT⁺-CA
-  password: ''
+  type: vless
+  udp: true
+  uuid: V2XNET
+  xhttp-opts:
+    host: btc.sayhisname.dpdns.org
+    mode: auto
+    path: /
+    x-padding-bytes: 100-1000
+  xudp: true
+  servername: btc.sayhisname.dpdns.org
+- alterId: 0
+  cipher: auto
+  name: 🇨🇦 | @WhiteDNS | CA223|5.2MB/s|DNSOK|GPT⁺-CA
+  network: ws
   port: 443
-  server: 4.172.245.121
-  skip-cert-verify: true
+  server: www.windowsmsidownloads.com
+  skip-cert-verify: false
   tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA79|2.5MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 9443
-  server: 149.88.98.81
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA80|2.2MB/s|DNSOK|GPT⁺-CA
-  password: None
+  type: vmess
+  udp: true
+  uuid: 80be2deb-3b27-4775-9bd1-7f2a2b9c261b
+  ws-opts:
+    headers:
+      Host: www.windowsmsidownloads.com
+    path: /truth
+  xudp: true
+  servername: www.windowsmsidownloads.com
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇦 | @WhiteDNS | CA224|4.6MB/s|DNSOK|GPT⁺-CA
+  network: ws
   port: 443
-  server: 206.223.183.21
-  skip-cert-verify: true
+  server: www.windowsmsidownloads.com
+  skip-cert-verify: false
   tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA81|1.7MB/s|DNSOK|GPT⁺-CA
+  type: vmess
+  udp: true
+  uuid: 80be2deb-3b27-4775-9bd1-7f2a2b9c261b
+  ws-opts:
+    headers:
+      Host: www.windowsmsidownloads.com
+    path: /truth
+  xudp: true
+  servername: www.windowsmsidownloads.com
+- name: 🇨🇦 | @WhiteDNS | CA225|4.0MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 9443
   server: 198.44.157.27
@@ -116,7 +62,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA82|1.7MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA226|3.8MB/s|DNSOK|GPT⁺-CA
   password: None
   port: 443
   server: 206.223.183.13
@@ -124,23 +70,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA83|1.6MB/s|DNSOK|GPT⁺-CA
-  password: None
-  port: 443
-  server: 206.223.183.16
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA84|1.3MB/s|DNSOK|GPT⁺-CA
-  network: tcp
-  port: 8080
-  server: 168.222.43.53
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  xudp: true
-- name: 🇨🇦 | @WhiteDNS | CA85|1.2MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA227|3.1MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 443
   server: 142.44.210.129
@@ -148,7 +78,63 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA86|1.2MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA228|3.1MB/s|DNSOK|GPT⁺-CA
+  password: None
+  port: 443
+  server: 206.223.183.21
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA229|3.1MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 443
+  server: 206.223.161.47
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA230|2.9MB/s|DNSOK|GPT⁺-CA
+  password: None
+  port: 9443
+  server: 149.88.98.81
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA231|2.9MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 443
+  server: 4.172.245.121
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA232|2.2MB/s|DNSOK|GPT⁺-CA
+  password: None
+  port: 9443
+  server: 198.44.157.27
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA233|2.1MB/s|DNSOK|GPT⁺-CA
+  password: None
+  port: 9443
+  server: 198.44.157.19
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA234|1.7MB/s|DNSOK|GPT⁺-CA
+  password: None
+  port: 443
+  server: 206.223.183.16
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA235|1.7MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 443
   server: 206.223.183.13
@@ -156,20 +142,30 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA87|994KB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA236|1.6MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 9443
+  server: 149.88.98.81
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA237|578KB/s|DNSOK|GPT⁺-CA
+  password: Trojan@82164024
+  port: 443
+  server: 155.138.138.2
+  skip-cert-verify: true
+  sni: ca.tronsg.com
+  type: trojan
+  udp: true
   network: tcp
-  port: 8080
-  server: milo.rubinaz.xyz
-  type: vless
+- client-fingerprint: chrome
+  name: 🇨🇦 | @WhiteDNS | CA238|576KB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  password: Trojan@82164024
+  port: 443
+  server: ca.tronsg.com
+  skip-cert-verify: true
+  sni: ca.tronsg.com
+  type: trojan
   udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  xudp: true
-  servername: milo.rubinaz.xyz
-- name: 🇨🇦 | @WhiteDNS | CA88|533KB/s|DNSOK|GPT⁺-CA
-  network: raw
-  port: 8080
-  server: 178.83.45.226
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  xudp: true

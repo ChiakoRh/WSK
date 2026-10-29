@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇱🇹 | @WhiteDNS | LT10|5.9MB/s|DNSOK|GPT⁺-LT
+- name: 🇱🇹 | @WhiteDNS | LT13|5.9MB/s|DNSOK|GPT⁺-LT
   password: ''
   port: 443
   server: 89.124.11.9
@@ -21,11 +21,22 @@ proxies:
   tls: true
   type: http
   username: ''
+- client-fingerprint: chrome
+  name: 🇱🇹 | @WhiteDNS | LT14|4.1MB/s|DNSOK|GPT⁺-LT
+  password: UAKWGor-h0woFsxKSWK92HptcM0g2k2h
+  port: 443
+  server: 176.114.95.242
+  skip-cert-verify: false
+  sni: lt-1.1984.love
+  type: trojan
+  udp: true
+  network: tcp
 proxy-groups:
 - name: LT-Auto
   type: url-test
   proxies:
-  - 🇱🇹 | @WhiteDNS | LT10|5.9MB/s|DNSOK|GPT⁺-LT
+  - 🇱🇹 | @WhiteDNS | LT13|5.9MB/s|DNSOK|GPT⁺-LT
+  - 🇱🇹 | @WhiteDNS | LT14|4.1MB/s|DNSOK|GPT⁺-LT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -13,9 +13,53 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- client-fingerprint: chrome
+  name: 🇧🇷 | @WhiteDNS | BR17|2.0MB/s|DNSOK|GPT⁺-BR
+  network: tcp
+  port: 15040
+  server: br001.zestapp778.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  xudp: true
+  servername: br001.zestapp778.com
+- client-fingerprint: chrome
+  name: 🇧🇷 | @WhiteDNS | BR18|2.0MB/s|DNSOK|GPT⁺-BR
+  network: tcp
+  port: 15040
+  server: br001.zestapp778.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  xudp: true
+  servername: br.zestapp778.com
+- client-fingerprint: chrome
+  name: 🇧🇷 | @WhiteDNS | BR19|2.0MB/s|DNSOK|GPT⁺-BR
+  port: 15040
+  server: br001.zestapp778.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  network: tcp
+  servername: br.zestapp778.com
+- client-fingerprint: firefox
+  name: 🇧🇷 | @WhiteDNS | BR20|1.8MB/s|DNSOK|GPT⁺-BR
+  network: tcp
+  port: 15040
+  server: 216.128.173.124
+  tls: true
+  type: vless
+  udp: true
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  xudp: true
+  servername: br001.zestapp778.com
 - down: ''
   fingerprint: ''
-  name: 🇧🇷 | @WhiteDNS | BR7|1.1MB/s|DNSOK|GPT⁺-BR
+  name: 🇧🇷 | @WhiteDNS | BR21|1.6MB/s|DNSOK|GPT⁺-BR
   obfs: salamander
   obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
   password: CyG0RFxMjzs41uQD4OLuHQ==
@@ -25,11 +69,27 @@ proxies:
   sni: rmgyvpn.rest
   type: hysteria2
   up: ''
+- client-fingerprint: chrome
+  name: 🇧🇷 | @WhiteDNS | BR22|1.1MB/s|DNSOK|GPT⁺-BR
+  network: tcp
+  port: 15040
+  server: br001.zestapp778.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  xudp: true
+  servername: br001.zestapp778.com
 proxy-groups:
 - name: BR-Auto
   type: url-test
   proxies:
-  - 🇧🇷 | @WhiteDNS | BR7|1.1MB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR17|2.0MB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR18|2.0MB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR19|2.0MB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR20|1.8MB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR21|1.6MB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR22|1.1MB/s|DNSOK|GPT⁺-BR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
