@@ -13,15 +13,22 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇸🇪 | @WhiteDNS | SE12|15.6MB/s|DNSOK|GPT⁺-SE
-  password: None
+- name: 🇸🇪 | @WhiteDNS | SE21|15.7MB/s|DNSOK|GPT⁺-SE
+  password: ''
   port: 443
   server: 146.70.242.130
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇸🇪 | @WhiteDNS | SE13|5.9MB/s|DNSOK|GPT⁺-SE
+- cipher: aes-256-gcm
+  name: 🇸🇪 | @WhiteDNS | SE22|6.0MB/s|DNSOK|GPT⁺-SE
+  password: AxIYWtskJWIIaefW
+  port: 8388
+  server: 70.34.212.124
+  type: ss
+  udp: true
+- name: 🇸🇪 | @WhiteDNS | SE23|5.7MB/s|DNSOK|GPT⁺-SE
   password: ''
   port: 443
   server: 146.70.242.146
@@ -29,12 +36,29 @@ proxies:
   tls: true
   type: http
   username: ''
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇸🇪 | @WhiteDNS | SE24|5.2MB/s|DNSOK|GPT⁺-SE
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: wRvUAKwcHc4pBNVouIcVjQkVD9aCRR-AmtcFyBV36lU
+    short-id: 0e7741edc378622f
+  server: 31.172.65.4
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9c6e83fc-b755-4ad4-9b0a-14b610153d8f
+  xudp: true
+  servername: www.bing.com
 proxy-groups:
 - name: SE-Auto
   type: url-test
   proxies:
-  - 🇸🇪 | @WhiteDNS | SE12|15.6MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE13|5.9MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE21|15.7MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE22|6.0MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE23|5.7MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE24|5.2MB/s|DNSOK|GPT⁺-SE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

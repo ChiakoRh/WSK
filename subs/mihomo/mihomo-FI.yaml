@@ -1,8 +1,113 @@
 proxies:
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI52|6.2MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 8443
+  server: static.44.128.217.95.clients.your-server.de
+  tls: true
+  type: vless
+  udp: true
+  uuid: 76d8799d-7c1e-4df3-8d3c-f50980283d99
+  xudp: true
+  servername: static.176.222.12.49.clients.your-server.de
+- client-fingerprint: ios
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI53|2.5MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 38820
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+    short-id: 66ded2
+  server: p1tun0.greewebservices.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: f234330e-f9df-46e3-8f60-b2af5173c147
+  xudp: true
+  servername: play.google.com
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI54|2.4MB/s|DNSOK|GPT⁺
+  network: ws
+  port: 465
+  server: hw3.divarkhaghazi.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  ws-opts:
+    headers:
+      Host: hw3.divarkhaghazi.com.
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/51.0.2704.103 Safari/537.36
+    path: /
+  xudp: true
+  servername: hw3.divarkhaghazi.com.
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI55|1.9MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 465
+  server: hw6.divarkhaghazi.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  ws-opts:
+    headers:
+      Host: hw6.divarkhaghazi.com.
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /
+  xudp: true
+  servername: hw6.divarkhaghazi.com.
+- client-fingerprint: firefox
+  name: 🇫🇮 | @WhiteDNS | FI56|1.8MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 465
+  server: 65.109.211.81
+  tls: true
+  type: vless
+  udp: true
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  ws-opts:
+    headers:
+      Host: hw6.divarkhaghazi.com.
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G570M) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
+    path: /
+  xudp: true
+  servername: hw6.divarkhaghazi.com
+- client-fingerprint: firefox
+  name: 🇫🇮 | @WhiteDNS | FI57|1.8MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 465
+  server: 65.109.210.221
+  tls: true
+  type: vless
+  udp: true
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  ws-opts:
+    headers:
+      Host: hw3.divarkhaghazi.com.
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/31.0.1650.57 Safari/537.36
+    path: /
+  xudp: true
+  servername: hw3.divarkhaghazi.com
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI51|2.5MB/s|DNSOK|GPT⁺-FI
-  network: tcp
+  name: 🇫🇮 | @WhiteDNS | FI58|531KB/s|DNSOK|GPT⁺-FI
+  network: raw
   port: 443
   reality-opts:
     public-key: c7optVlBfMEFMJXWwouWqvGWNRkqj4BWIs2laDdXTEg
@@ -14,40 +119,3 @@ proxies:
   uuid: 8bab5583-04b1-4b83-96e8-4ed46062eeb7
   xudp: true
   servername: fi-f1.netfix.app
-- client-fingerprint: firefox
-  name: 🇫🇮 | @WhiteDNS | FI52|2.1MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 465
-  server: 65.109.211.81
-  tls: true
-  type: vless
-  udp: true
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
-  ws-opts:
-    headers:
-      Host: hw6.divarkhaghazi.com.
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.117 Safari/537.36
-    path: /
-  xudp: true
-  servername: hw6.divarkhaghazi.com
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI53|1.2MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 465
-  server: hw6.divarkhaghazi.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
-  ws-opts:
-    headers:
-      Host: hw6.divarkhaghazi.com.
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/63.0.3239.132 Safari/537.36
-    path: /
-  xudp: true
-  servername: hw6.divarkhaghazi.com.

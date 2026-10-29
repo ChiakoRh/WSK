@@ -12,38 +12,11 @@ dns:
   nameserver:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
-proxies:
-- down: ''
-  fingerprint: ''
-  name: ❓ | @WhiteDNS | OT846|7.0MB/s|DNSOK|GPT⁺-US
-  obfs: ''
-  obfs-password: ''
-  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
-  port: 2053
-  server: 194.87.118.184
-  skip-cert-verify: true
-  sni: ''
-  type: hysteria2
-  up: ''
-  disable-sni: true
-- down: ''
-  fingerprint: ''
-  name: ❓ | @WhiteDNS | OT847|3.2MB/s|DNSOK|GPT⁺-NL
-  obfs: salamander
-  obfs-password: HysteriaHowdy
-  password: HowdyHysteria2023w0W
-  port: 8443
-  server: 51.15.19.206
-  skip-cert-verify: true
-  sni: vk.com
-  type: hysteria2
-  up: ''
+proxies: []
 proxy-groups:
 - name: OT-Auto
   type: url-test
-  proxies:
-  - ❓ | @WhiteDNS | OT846|7.0MB/s|DNSOK|GPT⁺-US
-  - ❓ | @WhiteDNS | OT847|3.2MB/s|DNSOK|GPT⁺-NL
+  proxies: []
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

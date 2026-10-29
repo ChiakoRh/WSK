@@ -13,15 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇬🇧 | @WhiteDNS | GB77|22.1MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 443
-  server: 185.164.138.156
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB78|21.6MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB81|21.2MB/s|DNSOK|GPT⁺
   password: None
   port: 443
   server: 212.102.63.61
@@ -29,55 +21,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB79|21.3MB/s|DNSOK|GPT⁺-GB
-  password: None
-  port: 443
-  server: 84.17.50.193
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB80|21.3MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 9443
-  server: 84.17.50.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB81|20.1MB/s|DNSOK|GPT⁺-GB
-  password: None
-  port: 443
-  server: 212.102.63.31
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB82|19.6MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 9443
-  server: 84.233.178.33
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB83|5.7MB/s|DNSOK|GPT⁺-GB
-  password: None
-  port: 443
-  server: 37.120.233.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB84|4.8MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 443
-  server: 37.120.233.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB85|2.3MB/s|DNSOK|GPT⁺-RO
+- name: 🇬🇧 | @WhiteDNS | GB82|4.4MB/s|DNSOK|GPT⁺-RO
   password: ''
   port: 443
   server: 185.163.110.194
@@ -85,27 +29,12 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB86|868KB/s|DNSOK|GPT⁺-FR
-  password: ''
-  port: 1080
-  server: 213.199.47.140
-  skip-cert-verify: true
-  type: socks5
-  username: ''
 proxy-groups:
 - name: GB-Auto
   type: url-test
   proxies:
-  - 🇬🇧 | @WhiteDNS | GB77|22.1MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB78|21.6MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB79|21.3MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB80|21.3MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB81|20.1MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB82|19.6MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB83|5.7MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB84|4.8MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB85|2.3MB/s|DNSOK|GPT⁺-RO
-  - 🇬🇧 | @WhiteDNS | GB86|868KB/s|DNSOK|GPT⁺-FR
+  - 🇬🇧 | @WhiteDNS | GB81|21.2MB/s|DNSOK|GPT⁺
+  - 🇬🇧 | @WhiteDNS | GB82|4.4MB/s|DNSOK|GPT⁺-RO
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
