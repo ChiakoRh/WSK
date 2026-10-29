@@ -13,25 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇦🇪 | @WhiteDNS | AE10|3.3MB/s|DNSOK|GPT⁺-AE
-  network: ws
-  port: 443
-  server: 104.21.108.4
-  tls: true
-  type: vless
-  udp: true
-  uuid: fa45096d-bed0-ad80-c773-23c300000018
-  ws-opts:
-    headers:
-      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/49.0.2623.112 Safari/537.36
-    path: /
-  xudp: true
-  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
-- name: 🇦🇪 | @WhiteDNS | AE11|2.4MB/s|DNSOK|GPT⁺-AE
+- name: 🇦🇪 | @WhiteDNS | AE8|2.7MB/s|DNSOK|GPT⁺-AE
   network: ws
   port: 22573
   server: 84.235.244.108
@@ -41,16 +23,63 @@ proxies:
   ws-opts:
     headers:
       Host: uae.unixzone.us
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/56.0.2924.87 Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
     path: /
   xudp: true
+- encryption: none
+  name: 🇦🇪 | @WhiteDNS | AE9|1.4MB/s|DNSOK|GPT⁺-AE
+  network: ws
+  port: 22573
+  server: uae.unixzone.us
+  type: vless
+  udp: true
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  ws-opts:
+    headers:
+      Host: uae.unixzone.us
+      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like
+        Gecko) Chrome/11.0.696.3 Safari/534.24
+    path: /
+  xudp: true
+- name: 🇦🇪 | @WhiteDNS | AE10|1.4MB/s|DNSOK|GPT⁺-AE
+  network: ws
+  port: 22573
+  server: 84.235.244.108
+  type: vless
+  udp: true
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  ws-opts:
+    headers:
+      Host: uae.unixzone.us
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/49.0.2623.112 Safari/537.36
+    path: /
+  xudp: true
+  servername: uae.unixzone.us
+- name: 🇦🇪 | @WhiteDNS | AE11|730KB/s|DNSOK|GPT⁺-AE
+  network: ws
+  port: 14430
+  server: 95.174.68.188
+  type: vless
+  udp: true
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  ws-opts:
+    headers:
+      Host: 95.174.68.188
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/58.0.3029.81 Safari/537.36
+    path: /vless
+  xudp: true
+  servername: 95.174.68.188
 proxy-groups:
 - name: AE-Auto
   type: url-test
   proxies:
-  - 🇦🇪 | @WhiteDNS | AE10|3.3MB/s|DNSOK|GPT⁺-AE
-  - 🇦🇪 | @WhiteDNS | AE11|2.4MB/s|DNSOK|GPT⁺-AE
+  - 🇦🇪 | @WhiteDNS | AE8|2.7MB/s|DNSOK|GPT⁺-AE
+  - 🇦🇪 | @WhiteDNS | AE9|1.4MB/s|DNSOK|GPT⁺-AE
+  - 🇦🇪 | @WhiteDNS | AE10|1.4MB/s|DNSOK|GPT⁺-AE
+  - 🇦🇪 | @WhiteDNS | AE11|730KB/s|DNSOK|GPT⁺-AE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -13,20 +13,19 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇹🇼 | @WhiteDNS | TW4|1.3MB/s|DNSOK|GPT⁺-TW
-  password: 0324fbc29561
-  port: 443
-  server: 684616s4.df6h451rh.xin
+- name: 🇺🇬 | @WhiteDNS | UG2|1.5MB/s|DNSOK|GPT⁺-UG
+  password: ''
+  port: 8080
+  server: 41.220.217.50
   skip-cert-verify: true
-  sni: px.ads.linkedin.com
-  type: anytls
-  udp: true
+  type: http
+  username: ''
 proxy-groups:
-- name: TW-Auto
+- name: UG-Auto
   type: url-test
   proxies:
-  - 🇹🇼 | @WhiteDNS | TW4|1.3MB/s|DNSOK|GPT⁺-TW
+  - 🇺🇬 | @WhiteDNS | UG2|1.5MB/s|DNSOK|GPT⁺-UG
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,TW-Auto
+- MATCH,UG-Auto
