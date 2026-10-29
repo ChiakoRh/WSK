@@ -13,21 +13,28 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  name: 🇮🇳 | @WhiteDNS | IN46|1.7MB/s|DNSOK|GPT⁺-IN
-  network: tcp
+- name: 🇮🇳 | @WhiteDNS | IN49|2.0MB/s|DNSOK|GPT⁺-IN
+  password: ''
+  port: 1080
+  server: 140.238.243.61
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- name: 🇮🇳 | @WhiteDNS | IN50|771KB/s|DNSOK|GPT⁺-IN
   password: 5t6i121em5lkmsmk
   port: 42733
   server: in002.zestapp778.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: in002.zestapp778.com
   type: trojan
   udp: true
+  network: tcp
 proxy-groups:
 - name: IN-Auto
   type: url-test
   proxies:
-  - 🇮🇳 | @WhiteDNS | IN46|1.7MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN49|2.0MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN50|771KB/s|DNSOK|GPT⁺-IN
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

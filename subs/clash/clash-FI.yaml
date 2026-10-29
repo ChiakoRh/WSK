@@ -14,103 +14,22 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI58|6.0MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 465
-  server: hw3.divarkhaghazi.com.
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI51|2.5MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: c7optVlBfMEFMJXWwouWqvGWNRkqj4BWIs2laDdXTEg
+    short-id: e1016da3
+  server: 185.188.30.203
   tls: true
   type: vless
   udp: true
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  ws-opts:
-    headers:
-      Host: hw3.divarkhaghazi.com.
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Moto G (5) Build/NPPS25.137-93-14)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /
+  uuid: 8bab5583-04b1-4b83-96e8-4ed46062eeb7
   xudp: true
-  servername: hw3.divarkhaghazi.com.
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI59|4.4MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 465
-  server: hw3.divarkhaghazi.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  ws-opts:
-    headers:
-      Host: hw3.divarkhaghazi.com.
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/62.0.3202.89 Safari/537.36
-    path: /
-  xudp: true
-  servername: hw3.divarkhaghazi.com
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - down-cdn.dingtalk.com
-    path:
-    - /3x
-  name: 🇫🇮 | @WhiteDNS | FI60|2.4MB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 52080
-  server: 185.212.149.7
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
-  xudp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - down-cdn.dingtalk.com
-    path:
-    - /3x
-  name: 🇫🇮 | @WhiteDNS | FI61|1.8MB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 2053
-  server: 185.212.149.7
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: aeb3c019-ae83-4677-af97-846baa787ad5
-  xudp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI62|1.4MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 465
-  server: hw3.divarkhaghazi.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  ws-opts:
-    headers:
-      Host: hw3.divarkhaghazi.com.
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/63.0.3239.132 Safari/537.36
-    path: /
-  xudp: true
-  servername: hw3.divarkhaghazi.com.
+  servername: fi-f1.netfix.app
 - client-fingerprint: firefox
-  name: 🇫🇮 | @WhiteDNS | FI63|1.3MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI52|2.1MB/s|DNSOK|GPT⁺-FI
   network: ws
   port: 465
   server: 65.109.211.81
@@ -121,13 +40,16 @@ proxies:
   ws-opts:
     headers:
       Host: hw6.divarkhaghazi.com.
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/57.0.2987.133 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.117 Safari/537.36
     path: /
   xudp: true
   servername: hw6.divarkhaghazi.com
-- client-fingerprint: chrome
-  name: 🇫🇮 | @WhiteDNS | FI64|1.3MB/s|DNSOK|GPT⁺-FI
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI53|1.2MB/s|DNSOK|GPT⁺-FI
   network: ws
   port: 465
   server: hw6.divarkhaghazi.com
@@ -138,38 +60,18 @@ proxies:
   ws-opts:
     headers:
       Host: hw6.divarkhaghazi.com.
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; de-DE) AppleWebKit/534.17
-        (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/63.0.3239.132 Safari/537.36
     path: /
   xudp: true
   servername: hw6.divarkhaghazi.com.
-- client-fingerprint: ios
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI65|1.2MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 38820
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-    short-id: 66ded2
-  server: p1tun0.greewebservices.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: f234330e-f9df-46e3-8f60-b2af5173c147
-  xudp: true
-  servername: play.google.com
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI58|6.0MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI59|4.4MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI60|2.4MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI61|1.8MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI62|1.4MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI63|1.3MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI64|1.3MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI65|1.2MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI51|2.5MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI52|2.1MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI53|1.2MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
