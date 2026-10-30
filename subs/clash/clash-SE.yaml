@@ -13,9 +13,33 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- name: 🇸🇪 | @WhiteDNS | SE21|16.3MB/s|DNSOK|GPT⁺-SE
+  password: ''
+  port: 443
+  server: 146.70.242.130
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇸🇪 | @WhiteDNS | SE22|5.8MB/s|DNSOK|GPT⁺-SE
+  password: ''
+  port: 443
+  server: 146.70.242.146
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇸🇪 | @WhiteDNS | SE23|4.5MB/s|DNSOK|GPT⁺-SE
+  password: None
+  port: 443
+  server: 146.70.242.146
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: 🇸🇪 | @WhiteDNS | SE15|16.5MB/s|DNSOK|GPT⁺-SE
+  name: 🇸🇪 | @WhiteDNS | SE24|2.4MB/s|DNSOK|GPT⁺-SE
   network: tcp
   port: 8443
   reality-opts:
@@ -28,29 +52,30 @@ proxies:
   uuid: 9c6e83fc-b755-4ad4-9b0a-14b610153d8f
   xudp: true
   servername: www.bing.com
-- name: 🇸🇪 | @WhiteDNS | SE16|15.7MB/s|DNSOK|GPT⁺-SE
-  password: ''
-  port: 443
-  server: 146.70.242.146
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇸🇪 | @WhiteDNS | SE25|1.5MB/s|DNSOK|GPT⁺-SE
+  port: 8443
+  reality-opts:
+    public-key: wRvUAKwcHc4pBNVouIcVjQkVD9aCRR-AmtcFyBV36lU
+    short-id: 0e7741edc378622f
+  server: 31.172.65.4
   skip-cert-verify: true
   tls: true
-  type: http
-  username: ''
-- name: 🇸🇪 | @WhiteDNS | SE17|2.9MB/s|DNSOK|GPT⁺-SE
-  password: None
-  port: 443
-  server: 146.70.242.130
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+  type: vless
+  udp: true
+  uuid: 9c6e83fc-b755-4ad4-9b0a-14b610153d8f
+  network: tcp
+  servername: www.bing.com
 proxy-groups:
 - name: SE-Auto
   type: url-test
   proxies:
-  - 🇸🇪 | @WhiteDNS | SE15|16.5MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE16|15.7MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE17|2.9MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE21|16.3MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE22|5.8MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE23|4.5MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE24|2.4MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE25|1.5MB/s|DNSOK|GPT⁺-SE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -13,16 +13,8 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇲🇾 | @WhiteDNS | MY9|1.2MB/s|DNSOK|GPT⁺-MY
+- name: 🇲🇾 | @WhiteDNS | MY8|1.2MB/s|DNSOK|GPT⁺-MY
   password: ''
-  port: 9443
-  server: 152.233.3.14
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇲🇾 | @WhiteDNS | MY10|1021KB/s|DNSOK|GPT⁺-MY
-  password: None
   port: 9443
   server: 152.233.3.14
   skip-cert-verify: true
@@ -33,8 +25,7 @@ proxy-groups:
 - name: MY-Auto
   type: url-test
   proxies:
-  - 🇲🇾 | @WhiteDNS | MY9|1.2MB/s|DNSOK|GPT⁺-MY
-  - 🇲🇾 | @WhiteDNS | MY10|1021KB/s|DNSOK|GPT⁺-MY
+  - 🇲🇾 | @WhiteDNS | MY8|1.2MB/s|DNSOK|GPT⁺-MY
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

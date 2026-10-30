@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇳 | @WhiteDNS | IN65|2.4MB/s|DNSOK|GPT⁺-IN
+- name: 🇮🇳 | @WhiteDNS | IN67|2.7MB/s|DNSOK|GPT⁺-IN
   password: ''
   port: 1080
   server: 140.238.243.61
@@ -21,17 +21,7 @@ proxies:
   type: socks5
   username: ''
 - client-fingerprint: chrome
-  name: 🇮🇳 | @WhiteDNS | IN66|1.8MB/s|DNSOK|GPT⁺-IN
-  network: tcp
-  password: 5t6i121em5lkmsmk
-  port: 42733
-  server: in002.zestapp778.com
-  skip-cert-verify: false
-  sni: in002.zestapp778.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇮🇳 | @WhiteDNS | IN67|1.6MB/s|DNSOK|GPT⁺-IN
+  name: 🇮🇳 | @WhiteDNS | IN68|1.8MB/s|DNSOK|GPT⁺-IN
   network: tcp
   password: 5t6i121em5lkmsmk
   port: 42733
@@ -41,7 +31,18 @@ proxies:
   udp: true
   sni: in002.zestapp778.com
 - client-fingerprint: chrome
-  name: 🇮🇳 | @WhiteDNS | IN68|1.3MB/s|DNSOK|GPT⁺-IN
+  name: 🇮🇳 | @WhiteDNS | IN69|1.8MB/s|DNSOK|GPT⁺-IN
+  password: 5t6i121em5lkmsmk
+  port: 42733
+  server: in002.zestapp778.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  network: tcp
+  sni: in002.zestapp778.com
+- client-fingerprint: chrome
+  name: 🇮🇳 | @WhiteDNS | IN70|1.3MB/s|DNSOK|GPT⁺-IN
+  network: tcp
   password: 5t6i121em5lkmsmk
   port: 42733
   server: in002.zestapp778.com
@@ -49,15 +50,14 @@ proxies:
   sni: in002.zestapp778.com
   type: trojan
   udp: true
-  network: tcp
 proxy-groups:
 - name: IN-Auto
   type: url-test
   proxies:
-  - 🇮🇳 | @WhiteDNS | IN65|2.4MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN66|1.8MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN67|1.6MB/s|DNSOK|GPT⁺-IN
-  - 🇮🇳 | @WhiteDNS | IN68|1.3MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN67|2.7MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN68|1.8MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN69|1.8MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN70|1.3MB/s|DNSOK|GPT⁺-IN
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
