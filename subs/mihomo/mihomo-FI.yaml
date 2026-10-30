@@ -1,31 +1,53 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇮 | @WhiteDNS | FI89|6.2MB/s|DNSOK|GPT⁺-FI
-  password: QoYjvkIZ7-bMIYfVI9IzRXUx5A1o3kj7
-  port: 53731
-  server: 65.21.52.113
-  type: ss
-  udp: true
 - alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - down-cdn.dingtalk.com
-    path:
-    - /3x
-  name: 🇫🇮 | @WhiteDNS | FI90|2.6MB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 52080
-  server: 185.212.149.7
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI79|17.4MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 465
+  server: hw6.divarkhaghazi.com
+  tls: true
+  type: vless
   udp: true
-  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  ws-opts:
+    headers:
+      Host: hw6.divarkhaghazi.com.
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.67 Safari/537.36
+    path: /
   xudp: true
+  servername: hw6.divarkhaghazi.com.
+- name: 🇫🇮 | @WhiteDNS | FI80|6.4MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 465
+  server: 65.109.211.81
+  tls: true
+  type: vless
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  ws-opts:
+    headers:
+      Host: hw6.divarkhaghazi.com.
+    path: /
+  servername: hw6.divarkhaghazi.com.
+- client-fingerprint: firefox
+  name: 🇫🇮 | @WhiteDNS | FI81|6.1MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 465
+  server: 65.109.211.81
+  tls: true
+  type: vless
+  udp: true
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  ws-opts:
+    headers:
+      Host: hw6.divarkhaghazi.com.
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/68.0.3440.106 Safari/537.36
+    path: /
+  xudp: true
+  servername: hw6.divarkhaghazi.com
 - alpn:
   - ''
   alterId: '0'
@@ -36,7 +58,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI91|2.4MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI82|3.8MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
@@ -46,15 +68,38 @@ proxies:
   udp: true
   uuid: aeb3c019-ae83-4677-af97-846baa787ad5
   xudp: true
-- alterId: 0
+- alpn:
+  - ''
+  alterId: '0'
   cipher: auto
-  name: 🇫🇮 | @WhiteDNS | FI92|2.2MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 2044
-  server: tun.xelnivo.ir
+  http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    path:
+    - /3x
+  name: 🇫🇮 | @WhiteDNS | FI83|2.6MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 52080
+  server: 185.212.149.7
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: f6547466-a44a-41e7-9b71-473c5bf05723
+  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
   xudp: true
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI84|2.5MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 40446
+  reality-opts:
+    public-key: EbXSjwJKAI1cmU2TK3af62qS2k58x8Rnct1525c0m1I
+    short-id: d4e5f60718293a4b
+  server: 178.72.185.235
+  tls: true
+  type: vless
+  udp: true
+  uuid: 572b3d30-3ced-4b88-9e06-4241f124cc88
+  xudp: true
+  servername: www.booking.com

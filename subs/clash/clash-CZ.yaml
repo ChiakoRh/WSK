@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇿 | @WhiteDNS | CZ21|25.4MB/s|DNSOK|GPT⁺-CZ
+- name: 🇨🇿 | @WhiteDNS | CZ19|26.5MB/s|DNSOK|GPT⁺-CZ
   password: ''
   port: 9443
   server: 152.233.16.174
@@ -21,15 +21,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇿 | @WhiteDNS | CZ22|5.5MB/s|DNSOK|GPT⁺-CZ
-  password: ''
-  port: 443
-  server: 185.216.35.66
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇿 | @WhiteDNS | CZ23|2.5MB/s|DNSOK|GPT⁺-CZ
+- name: 🇨🇿 | @WhiteDNS | CZ20|13.6MB/s|DNSOK|GPT⁺-CZ
   password: None
   port: 443
   server: 185.216.35.130
@@ -37,8 +29,33 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇿 | @WhiteDNS | CZ24|2.4MB/s|DNSOK|GPT⁺-CZ
+- client-fingerprint: qq
+  name: 🇨🇿 | @WhiteDNS | CZ21|6.7MB/s|DNSOK|GPT⁺-CZ
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: EApxy12MeXpqt-78odxizwcXT6hX9f8XeAcbMDVRAV0
+    short-id: 6ba7b8109dad11d1
+  server: 37.46.209.31
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6a6ac9b3-b336-44f7-a1c4-a03d6c2fae9e
+  xhttp-opts:
+    mode: auto
+    path: /patch
+  xudp: true
+  servername: chek.skysafe.online
+- name: 🇨🇿 | @WhiteDNS | CZ22|5.5MB/s|DNSOK|GPT⁺-CZ
   password: None
+  port: 443
+  server: 185.216.35.66
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇿 | @WhiteDNS | CZ23|2.9MB/s|DNSOK|GPT⁺-CZ
+  password: ''
   port: 443
   server: 185.216.35.66
   skip-cert-verify: true
@@ -49,10 +66,11 @@ proxy-groups:
 - name: CZ-Auto
   type: url-test
   proxies:
-  - 🇨🇿 | @WhiteDNS | CZ21|25.4MB/s|DNSOK|GPT⁺-CZ
+  - 🇨🇿 | @WhiteDNS | CZ19|26.5MB/s|DNSOK|GPT⁺-CZ
+  - 🇨🇿 | @WhiteDNS | CZ20|13.6MB/s|DNSOK|GPT⁺-CZ
+  - 🇨🇿 | @WhiteDNS | CZ21|6.7MB/s|DNSOK|GPT⁺-CZ
   - 🇨🇿 | @WhiteDNS | CZ22|5.5MB/s|DNSOK|GPT⁺-CZ
-  - 🇨🇿 | @WhiteDNS | CZ23|2.5MB/s|DNSOK|GPT⁺-CZ
-  - 🇨🇿 | @WhiteDNS | CZ24|2.4MB/s|DNSOK|GPT⁺-CZ
+  - 🇨🇿 | @WhiteDNS | CZ23|2.9MB/s|DNSOK|GPT⁺-CZ
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

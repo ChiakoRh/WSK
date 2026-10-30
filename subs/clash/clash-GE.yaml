@@ -14,15 +14,15 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - name: 🇬🇪 | @WhiteDNS | GE3|4.7MB/s|DNSOK|GPT⁺-GE
-  password: ''
+  password: None
   port: 443
   server: 195.54.178.210
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇬🇪 | @WhiteDNS | GE4|4.4MB/s|DNSOK|GPT⁺-GE
-  password: None
+- name: 🇬🇪 | @WhiteDNS | GE4|3.1MB/s|DNSOK|GPT⁺-GE
+  password: ''
   port: 443
   server: 195.54.178.210
   skip-cert-verify: true
@@ -34,7 +34,7 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇬🇪 | @WhiteDNS | GE3|4.7MB/s|DNSOK|GPT⁺-GE
-  - 🇬🇪 | @WhiteDNS | GE4|4.4MB/s|DNSOK|GPT⁺-GE
+  - 🇬🇪 | @WhiteDNS | GE4|3.1MB/s|DNSOK|GPT⁺-GE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
