@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇭 | @WhiteDNS | CH49|38.8MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH46|51.7MB/s|DNSOK|GPT⁺-CH
   password: None
   port: 9443
   server: 149.88.27.33
@@ -21,15 +21,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇭 | @WhiteDNS | CH50|38.1MB/s|DNSOK|GPT⁺-CH
-  password: None
-  port: 9443
-  server: 37.120.213.210
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇭 | @WhiteDNS | CH51|9.0MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH47|48.5MB/s|DNSOK|GPT⁺-CH
   password: ''
   port: 9443
   server: 149.88.27.33
@@ -37,7 +29,15 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇭 | @WhiteDNS | CH52|7.8MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH48|43.8MB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 9443
+  server: 37.120.213.210
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH49|40.7MB/s|DNSOK|GPT⁺-CH
   password: ''
   port: 9443
   server: 149.88.27.46
@@ -45,14 +45,34 @@ proxies:
   tls: true
   type: http
   username: ''
+- client-fingerprint: chrome
+  encryption: none
+  fingerprint: CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E
+  name: 🇨🇭 | @WhiteDNS | CH50|28.3MB/s|DNSOK|GPT⁺-CH
+  network: ws
+  port: 443
+  server: 199.232.78.159
+  tls: true
+  type: vless
+  udp: true
+  uuid: c1a3a6ee-34d3-4fcd-8763-c2231adabed6
+  ws-opts:
+    headers:
+      Host: lofinlaoijji.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.106 Safari/537.36
+    path: /
+  xudp: true
+  servername: firefox.com
 proxy-groups:
 - name: CH-Auto
   type: url-test
   proxies:
-  - 🇨🇭 | @WhiteDNS | CH49|38.8MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH50|38.1MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH51|9.0MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH52|7.8MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH46|51.7MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH47|48.5MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH48|43.8MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH49|40.7MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH50|28.3MB/s|DNSOK|GPT⁺-CH
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
