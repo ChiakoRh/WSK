@@ -1,0 +1,39 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇰🇿 | @WhiteDNS | KZ18|649KB/s|DNSOK|GPT⁺-KZ
+  network: raw
+  port: 19747
+  reality-opts:
+    public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
+    short-id: '2001'
+  server: 77.73.232.61
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
+  xudp: true
+  servername: yahoo.com
+proxy-groups:
+- name: KZ-Auto
+  type: url-test
+  proxies:
+  - 🇰🇿 | @WhiteDNS | KZ18|649KB/s|DNSOK|GPT⁺-KZ
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,KZ-Auto

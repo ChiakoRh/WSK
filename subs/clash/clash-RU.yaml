@@ -13,20 +13,25 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇹🇼 | @WhiteDNS | TW5|1.1MB/s|DNSOK|GPT⁺
-  password: 0324fbc29561
-  port: 443
-  server: 684616s4.df6h451rh.xin
+- down: ''
+  fingerprint: ''
+  name: 🇷🇺 | @WhiteDNS | RU34|6.1MB/s|DNSOK|GPT⁺-US
+  obfs: ''
+  obfs-password: ''
+  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
+  port: 2053
+  server: 194.87.118.184
   skip-cert-verify: true
-  sni: px.ads.linkedin.com
-  type: anytls
-  udp: true
+  sni: ''
+  type: hysteria2
+  up: ''
+  disable-sni: true
 proxy-groups:
-- name: TW-Auto
+- name: RU-Auto
   type: url-test
   proxies:
-  - 🇹🇼 | @WhiteDNS | TW5|1.1MB/s|DNSOK|GPT⁺
+  - 🇷🇺 | @WhiteDNS | RU34|6.1MB/s|DNSOK|GPT⁺-US
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,TW-Auto
+- MATCH,RU-Auto
