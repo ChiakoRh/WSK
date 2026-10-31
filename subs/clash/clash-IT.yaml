@@ -15,7 +15,7 @@ dns:
 proxies:
 - client-fingerprint: random
   encryption: none
-  name: 🇮🇹 | @WhiteDNS | IT161|48.0MB/s|DNSOK|GPT⁺-IT
+  name: 🇮🇹 | @WhiteDNS | IT218|49.8MB/s|DNSOK|GPT⁺-IT
   network: ws
   port: 443
   server: www.visa.com.hk
@@ -26,14 +26,14 @@ proxies:
   ws-opts:
     headers:
       Host: it-mil.862400.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/41.0.2272.76 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/58.0.3029.81 Safari/537.36
     path: /announcement
     early-data-header-name: Sec-WebSocket-Protocol
     max-early-data: 2048
   xudp: true
   servername: it-mil.862400.xyz
-- name: 🇮🇹 | @WhiteDNS | IT162|45.3MB/s|DNSOK|GPT⁺-IT
+- name: 🇮🇹 | @WhiteDNS | IT219|27.5MB/s|DNSOK|GPT⁺-IT
   password: None
   port: 443
   server: 185.183.105.130
@@ -41,29 +41,18 @@ proxies:
   tls: true
   type: http
   username: ''
-- client-fingerprint: chrome
-  encryption: none
-  fingerprint: CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E
-  name: 🇮🇹 | @WhiteDNS | IT163|32.0MB/s|DNSOK|GPT⁺-IT
-  network: ws
-  port: 443
-  server: 146.75.59.186
-  tls: true
-  type: vless
-  udp: true
-  uuid: c1a3a6ee-34d3-4fcd-8763-c2231adabed6
-  ws-opts:
-    headers:
-      Host: lrussiaaboijji.global.ssl.fastly.net.
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /
-  xudp: true
-  servername: firefox.com
-- name: 🇮🇹 | @WhiteDNS | IT164|26.0MB/s|DNSOK|GPT⁺-IT
+- name: 🇮🇹 | @WhiteDNS | IT220|25.5MB/s|DNSOK|GPT⁺-IT
   password: ''
   port: 443
   server: 185.183.105.146
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇮🇹 | @WhiteDNS | IT221|910KB/s|DNSOK|GPT⁺
+  password: ''
+  port: 8090
+  server: 93.71.245.84
   skip-cert-verify: true
   tls: true
   type: http
@@ -72,10 +61,10 @@ proxy-groups:
 - name: IT-Auto
   type: url-test
   proxies:
-  - 🇮🇹 | @WhiteDNS | IT161|48.0MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT162|45.3MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT163|32.0MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT164|26.0MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT218|49.8MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT219|27.5MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT220|25.5MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT221|910KB/s|DNSOK|GPT⁺
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

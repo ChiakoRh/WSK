@@ -1,0 +1,84 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- name: 🇱🇰 | @WhiteDNS | LK5|7.1MB/s|DNSOK|GPT⁺
+  network: ws
+  port: 8080
+  server: 170.114.45.6
+  type: vless
+  udp: true
+  uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
+  ws-opts:
+    headers:
+      Host: free.nadun.store
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+    path: /
+  xudp: true
+- name: 🇱🇰 | @WhiteDNS | LK6|5.8MB/s|DNSOK|GPT⁺-SG
+  network: ws
+  port: 8080
+  server: support.zoom.us
+  type: vless
+  udp: true
+  uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
+  ws-opts:
+    headers:
+      Host: free.nadun.store
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.77 Safari/537.36
+    path: /
+  xudp: true
+- name: 🇱🇰 | @WhiteDNS | LK7|4.8MB/s|DNSOK|GPT⁺-SG
+  network: ws
+  port: 8080
+  server: 170.114.46.6
+  type: vless
+  udp: true
+  uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
+  ws-opts:
+    headers:
+      Host: free.nadun.store
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/56.0.2924.87 Safari/537.36
+    path: /
+  xudp: true
+- name: 🇱🇰 | @WhiteDNS | LK8|4.6MB/s|DNSOK|GPT⁺-SG
+  network: ws
+  port: 8080
+  server: support.zoom.us
+  type: vless
+  udp: true
+  uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
+  ws-opts:
+    headers:
+      Host: free.nadun.store
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/50.0.2661.94 Safari/537.36
+    path: /
+  xudp: true
+  servername: support.zoom.us
+proxy-groups:
+- name: LK-Auto
+  type: url-test
+  proxies:
+  - 🇱🇰 | @WhiteDNS | LK5|7.1MB/s|DNSOK|GPT⁺
+  - 🇱🇰 | @WhiteDNS | LK6|5.8MB/s|DNSOK|GPT⁺-SG
+  - 🇱🇰 | @WhiteDNS | LK7|4.8MB/s|DNSOK|GPT⁺-SG
+  - 🇱🇰 | @WhiteDNS | LK8|4.6MB/s|DNSOK|GPT⁺-SG
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,LK-Auto

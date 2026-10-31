@@ -13,15 +13,23 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇪🇪 | @WhiteDNS | EE11|4.2MB/s|DNSOK|GPT⁺-EE
-  password: None
+- name: 🇪🇪 | @WhiteDNS | EE9|5.6MB/s|DNSOK|GPT⁺-EE
+  password: ''
   port: 9443
   server: 95.153.31.66
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇪🇪 | @WhiteDNS | EE12|2.8MB/s|DNSOK|GPT⁺-EE
+- name: 🇪🇪 | @WhiteDNS | EE10|5.0MB/s|DNSOK|GPT⁺-EE
+  password: ''
+  port: 9443
+  server: 95.153.32.2
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇪🇪 | @WhiteDNS | EE11|2.5MB/s|DNSOK|GPT⁺-EE
   password: None
   port: 443
   server: 95.153.32.2
@@ -32,7 +40,23 @@ proxies:
 - client-fingerprint: qq
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇪🇪 | @WhiteDNS | EE13|2.8MB/s|DNSOK|GPT⁺-EE
+  name: 🇪🇪 | @WhiteDNS | EE12|1.7MB/s|DNSOK|GPT⁺-EE
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: 2XyUS3_ONl5REQ7NiwikdJphAe7oJ61-21zuqnN67y8
+    short-id: 2e82d7ac
+  server: 185.225.205.53
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7a0348d6-55d3-4c23-b22f-6277fcb2264c
+  xudp: true
+  servername: addons.mozilla.org
+- client-fingerprint: qq
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇪🇪 | @WhiteDNS | EE13|1.6MB/s|DNSOK|GPT⁺-EE
   network: tcp
   port: 443
   reality-opts:
@@ -49,9 +73,11 @@ proxy-groups:
 - name: EE-Auto
   type: url-test
   proxies:
-  - 🇪🇪 | @WhiteDNS | EE11|4.2MB/s|DNSOK|GPT⁺-EE
-  - 🇪🇪 | @WhiteDNS | EE12|2.8MB/s|DNSOK|GPT⁺-EE
-  - 🇪🇪 | @WhiteDNS | EE13|2.8MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE9|5.6MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE10|5.0MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE11|2.5MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE12|1.7MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE13|1.6MB/s|DNSOK|GPT⁺-EE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
