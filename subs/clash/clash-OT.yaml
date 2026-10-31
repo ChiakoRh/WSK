@@ -12,44 +12,11 @@ dns:
   nameserver:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
-proxies:
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT929|7.1MB/s|DNSOK|GPT⁺-PL
-  network: tcp
-  port: 2063
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-    short-id: ''
-  server: 2.26.231.218
-  tls: true
-  type: vless
-  udp: true
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  xudp: true
-  servername: rusbid.de
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT930|2.0MB/s|DNSOK|GPT⁺-FR
-  port: 443
-  reality-opts:
-    public-key: 33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0
-    short-id: e6
-  server: 161.97.160.224
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
-  network: tcp
-  servername: passport.yandex.ru
+proxies: []
 proxy-groups:
 - name: OT-Auto
   type: url-test
-  proxies:
-  - ❓ | @WhiteDNS | OT929|7.1MB/s|DNSOK|GPT⁺-PL
-  - ❓ | @WhiteDNS | OT930|2.0MB/s|DNSOK|GPT⁺-FR
+  proxies: []
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

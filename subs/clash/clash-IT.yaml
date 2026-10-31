@@ -13,35 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: random
-  encryption: none
-  name: 🇮🇹 | @WhiteDNS | IT218|49.8MB/s|DNSOK|GPT⁺-IT
-  network: ws
-  port: 443
-  server: www.visa.com.hk
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4f735420-0179-45d7-ba4e-ed66d1bf3a89
-  ws-opts:
-    headers:
-      Host: it-mil.862400.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/58.0.3029.81 Safari/537.36
-    path: /announcement
-    early-data-header-name: Sec-WebSocket-Protocol
-    max-early-data: 2048
-  xudp: true
-  servername: it-mil.862400.xyz
-- name: 🇮🇹 | @WhiteDNS | IT219|27.5MB/s|DNSOK|GPT⁺-IT
-  password: None
-  port: 443
-  server: 185.183.105.130
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇮🇹 | @WhiteDNS | IT220|25.5MB/s|DNSOK|GPT⁺-IT
+- name: 🇮🇹 | @WhiteDNS | IT188|29.0MB/s|DNSOK|GPT⁺-IT
   password: ''
   port: 443
   server: 185.183.105.146
@@ -49,7 +21,15 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇮🇹 | @WhiteDNS | IT221|910KB/s|DNSOK|GPT⁺
+- name: 🇮🇹 | @WhiteDNS | IT189|24.9MB/s|DNSOK|GPT⁺-IT
+  password: None
+  port: 443
+  server: 185.183.105.130
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇮🇹 | @WhiteDNS | IT190|910KB/s|DNSOK|GPT⁺-IT
   password: ''
   port: 8090
   server: 93.71.245.84
@@ -61,10 +41,9 @@ proxy-groups:
 - name: IT-Auto
   type: url-test
   proxies:
-  - 🇮🇹 | @WhiteDNS | IT218|49.8MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT219|27.5MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT220|25.5MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT221|910KB/s|DNSOK|GPT⁺
+  - 🇮🇹 | @WhiteDNS | IT188|29.0MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT189|24.9MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT190|910KB/s|DNSOK|GPT⁺-IT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

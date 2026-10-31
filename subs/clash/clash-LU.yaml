@@ -13,15 +13,37 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇱🇺 | @WhiteDNS | LU4|20.6MB/s|DNSOK|GPT⁺-LU
-  password: ''
-  port: 443
-  server: 185.221.132.226
-  skip-cert-verify: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇱🇺 | @WhiteDNS | LU5|37.3MB/s|DNSOK|GPT⁺-CH
+  network: raw
+  port: 32752
+  reality-opts:
+    public-key: pfFcQxKv4EPhCDUoZMCmTjj4FK7HHQg_me-In3bOejA
+    short-id: d758a643034ad90e
+  server: 107.189.7.176
   tls: true
-  type: http
-  username: ''
-- name: 🇱🇺 | @WhiteDNS | LU5|18.8MB/s|DNSOK|GPT⁺-LU
+  type: vless
+  udp: true
+  uuid: 4970c1cd-13e1-498a-920a-61d07be2fa65
+  xudp: true
+  servername: www.apple.com
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇱🇺 | @WhiteDNS | LU6|35.0MB/s|DNSOK|GPT⁺-CH
+  network: tcp
+  port: 32752
+  reality-opts:
+    public-key: pfFcQxKv4EPhCDUoZMCmTjj4FK7HHQg_me-In3bOejA
+    short-id: d758a643034ad90e
+  server: 107.189.7.176
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4970c1cd-13e1-498a-920a-61d07be2fa65
+  xudp: true
+  servername: www.apple.com
+- name: 🇱🇺 | @WhiteDNS | LU7|20.8MB/s|DNSOK|GPT⁺-LU
   password: ''
   port: 9443
   server: 185.221.132.226
@@ -29,7 +51,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇱🇺 | @WhiteDNS | LU6|18.8MB/s|DNSOK|GPT⁺-LU
+- name: 🇱🇺 | @WhiteDNS | LU8|18.3MB/s|DNSOK|GPT⁺-LU
   password: None
   port: 443
   server: 185.221.132.242
@@ -41,9 +63,10 @@ proxy-groups:
 - name: LU-Auto
   type: url-test
   proxies:
-  - 🇱🇺 | @WhiteDNS | LU4|20.6MB/s|DNSOK|GPT⁺-LU
-  - 🇱🇺 | @WhiteDNS | LU5|18.8MB/s|DNSOK|GPT⁺-LU
-  - 🇱🇺 | @WhiteDNS | LU6|18.8MB/s|DNSOK|GPT⁺-LU
+  - 🇱🇺 | @WhiteDNS | LU5|37.3MB/s|DNSOK|GPT⁺-CH
+  - 🇱🇺 | @WhiteDNS | LU6|35.0MB/s|DNSOK|GPT⁺-CH
+  - 🇱🇺 | @WhiteDNS | LU7|20.8MB/s|DNSOK|GPT⁺-LU
+  - 🇱🇺 | @WhiteDNS | LU8|18.3MB/s|DNSOK|GPT⁺-LU
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

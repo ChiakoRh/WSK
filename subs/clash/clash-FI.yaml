@@ -14,25 +14,40 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - down-cdn.dingtalk.com
-    path:
-    - /3x
-  name: 🇫🇮 | @WhiteDNS | FI70|2.4MB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 2053
-  server: 185.212.149.7
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI79|7.2MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 465
+  server: hw6.divarkhaghazi.com
+  tls: true
+  type: vless
   udp: true
-  uuid: aeb3c019-ae83-4677-af97-846baa787ad5
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  ws-opts:
+    headers:
+      Host: hw6.divarkhaghazi.com.
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/37.0.2062.120 Safari/537.36
+    path: /
   xudp: true
+  servername: hw6.divarkhaghazi.com.
+- client-fingerprint: ios
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI80|2.5MB/s|DNSOK|GPT⁺-FI
+  network: raw
+  port: 38820
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+    short-id: 66ded2
+  server: p1tun0.greewebservices.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: f234330e-f9df-46e3-8f60-b2af5173c147
+  xudp: true
+  servername: play.google.com
 - alpn:
   - ''
   alterId: '0'
@@ -43,7 +58,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI71|2.3MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI81|2.4MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 52080
   server: 185.212.149.7
@@ -53,12 +68,87 @@ proxies:
   udp: true
   uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
   xudp: true
+- client-fingerprint: ios
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI82|2.4MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 38820
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+    short-id: 66ded2
+  server: p1tun0.greewebservices.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: f234330e-f9df-46e3-8f60-b2af5173c147
+  xudp: true
+  servername: play.google.com
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    path:
+    - /3x
+  name: 🇫🇮 | @WhiteDNS | FI83|1.7MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 2053
+  server: 185.212.149.7
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: aeb3c019-ae83-4677-af97-846baa787ad5
+  xudp: true
+- client-fingerprint: chrome
+  name: 🇫🇮 | @WhiteDNS | FI84|1.4MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 465
+  server: 65.109.211.81
+  tls: true
+  type: vless
+  udp: true
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  ws-opts:
+    headers:
+      Host: hw6.divarkhaghazi.com.
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.106 Safari/537.36
+    path: /
+  xudp: true
+  servername: hw6.divarkhaghazi.com.
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI85|1013KB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 465
+  server: 65.109.211.81
+  tls: true
+  type: vless
+  udp: true
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  ws-opts:
+    headers:
+      Host: hw6.divarkhaghazi.com.
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like
+        Gecko) Chrome/26.0.1410.64 Safari/537.31
+    path: /
+  xudp: true
+  servername: hw6.divarkhaghazi.com
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI70|2.4MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI71|2.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI79|7.2MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI80|2.5MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI81|2.4MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI82|2.4MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI83|1.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI84|1.4MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI85|1013KB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
