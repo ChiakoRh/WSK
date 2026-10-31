@@ -13,38 +13,21 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇬🇧 | @WhiteDNS | GB77|27.4MB/s|DNSOK|GPT⁺-GB
-  port: 10002
-  server: 155.117.5.208
+- name: 🇬🇧 | @WhiteDNS | GB72|21.1MB/s|DNSOK|GPT⁺-GB
+  network: ws
+  port: 8080
+  server: 23.81.36.148
   type: vless
   udp: true
-  uuid: c6362720-0931-4b91-b187-d8ecf3149734
-  network: tcp
-- name: 🇬🇧 | @WhiteDNS | GB78|22.1MB/s|DNSOK|GPT⁺-GB
-  password: None
-  port: 443
-  server: 185.164.138.156
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB79|21.4MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 443
-  server: 212.102.63.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB80|21.0MB/s|DNSOK|GPT⁺-GB
-  password: None
-  port: 443
-  server: 212.102.63.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB81|20.4MB/s|DNSOK|GPT⁺-GB
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/50.0.2661.102 Safari/537.36
+    path: /
+  xudp: true
+- name: 🇬🇧 | @WhiteDNS | GB73|21.0MB/s|DNSOK|GPT⁺-GB
   password: None
   port: 443
   server: 212.102.63.61
@@ -52,23 +35,34 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB82|6.4MB/s|DNSOK|GPT⁺-GB
-  password: None
-  port: 9443
-  server: 37.120.233.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB83|5.0MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB74|20.2MB/s|DNSOK|GPT⁺
   password: None
   port: 443
-  server: 37.120.233.18
+  server: 212.102.63.1
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB84|4.4MB/s|DNSOK|GPT⁺-GB
+- client-fingerprint: chrome
+  encryption: none
+  fingerprint: CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E
+  name: 🇬🇧 | @WhiteDNS | GB75|18.1MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 443
+  server: wwww.qarvian.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: e3425eb4-e9be-4568-8740-529a031c9315
+  ws-opts:
+    headers:
+      Host: snaanjaai.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/37.0.2062.120 Safari/537.36
+    path: /
+  xudp: true
+  servername: firefox.com
+- name: 🇬🇧 | @WhiteDNS | GB76|15.5MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
   server: 37.120.233.50
@@ -76,24 +70,23 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB85|4.3MB/s|DNSOK|GPT⁺-GB
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB77|6.4MB/s|DNSOK|GPT⁺-GB
   network: tcp
-  port: 10002
-  server: connect.hondamotor.site
+  port: 1222
+  reality-opts:
+    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
+    short-id: a25d0f
+  server: 23.81.36.148
+  tls: true
   type: vless
   udp: true
-  uuid: c6362720-0931-4b91-b187-d8ecf3149734
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
   xudp: true
-  servername: connect.hondamotor.site
-- name: 🇬🇧 | @WhiteDNS | GB86|1.8MB/s|DNSOK|GPT⁺-GB
-  port: 10002
-  server: connect.hondamotor.site
-  type: vless
-  udp: true
-  uuid: c6362720-0931-4b91-b187-d8ecf3149734
-  network: tcp
+  servername: play.google.com
 - cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 | @WhiteDNS | GB87|835KB/s|DNSOK|GPT⁺-DE
+  name: 🇬🇧 | @WhiteDNS | GB78|820KB/s|DNSOK|GPT⁺-DE
   password: hNfeLCN3XzYgLFSAWo_fxOl4HC1gNw0V
   port: 8044
   server: dns23.m3hrzd.ir
@@ -103,17 +96,13 @@ proxy-groups:
 - name: GB-Auto
   type: url-test
   proxies:
-  - 🇬🇧 | @WhiteDNS | GB77|27.4MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB78|22.1MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB79|21.4MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB80|21.0MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB81|20.4MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB82|6.4MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB83|5.0MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB84|4.4MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB85|4.3MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB86|1.8MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB87|835KB/s|DNSOK|GPT⁺-DE
+  - 🇬🇧 | @WhiteDNS | GB72|21.1MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB73|21.0MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB74|20.2MB/s|DNSOK|GPT⁺
+  - 🇬🇧 | @WhiteDNS | GB75|18.1MB/s|DNSOK|GPT⁺-DE
+  - 🇬🇧 | @WhiteDNS | GB76|15.5MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB77|6.4MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB78|820KB/s|DNSOK|GPT⁺-DE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

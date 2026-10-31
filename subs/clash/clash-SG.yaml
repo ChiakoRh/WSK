@@ -13,113 +13,96 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇸🇬 | @WhiteDNS | SG159|3.1MB/s|DNSOK|GPT⁺-IN
-  network: ws
-  port: 14430
-  server: 13.140.56.100
-  type: vless
-  udp: true
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  ws-opts:
-    headers:
-      Host: 13.140.56.100
-      User-Agent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/49.0.2623.112 Safari/537.36
-    path: /vless
-  xudp: true
-- name: 🇸🇬 | @WhiteDNS | SG160|2.6MB/s|DNSOK|GPT⁺-IN
-  network: ws
-  port: 14430
-  server: 13.140.56.100
-  type: vless
-  udp: true
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  ws-opts:
-    headers:
-      Host: 13.140.56.100
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.4
-        (KHTML, like Gecko) Chrome/5.0.375.99 Safari/533.4
-    path: /vless
-  xudp: true
-  servername: 13.140.56.100
-- name: 🇸🇬 | @WhiteDNS | SG161|2.1MB/s|DNSOK|GPT⁺-JP
-  password: ''
-  port: 9443
-  server: 152.233.9.239
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇸🇬 | @WhiteDNS | SG162|2.0MB/s|DNSOK|GPT⁺-SG
-  password: ''
-  port: 9443
-  server: 149.88.99.209
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG163|1.9MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG162|2.7MB/s|DNSOK|GPT⁺-SG
   network: tcp
-  port: 19825
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 139.180.146.200
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 🇸🇬 | @WhiteDNS | SG163|2.6MB/s|DNSOK|GPT⁺-SG
+  password: '1234'
+  port: 2080
+  server: 13.250.21.56
+  skip-cert-verify: true
+  type: http
+  username: '1234'
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG164|2.6MB/s|DNSOK|GPT⁺-SG
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 139.180.146.200
+  skip-cert-verify: true
+  sni: 139.180.146.200
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG165|2.6MB/s|DNSOK|GPT⁺-SG
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 139.180.146.200
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG166|2.4MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  port: 443
   reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  server: sg2-8sb.6121999.dpdns.org
+    public-key: 4tYZTzPnpJQQiG3bExrmT1TBzRMuaBWhFssBRNqrDVU
+    short-id: b1a9832f489b
+  server: vl.033.node-for-bigairport.com
   tls: true
   type: vless
   udp: true
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  uuid: 11bce34b-e248-4af5-a0f1-951c4c5ece45
   xudp: true
-  servername: sg2-8sb.6121999.dpdns.org
+  servername: ap-southeast-1.console.aws.amazon.com
+- name: 🇸🇬 | @WhiteDNS | SG167|2.4MB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 14430
+  server: 13.140.56.100
+  type: vless
+  udp: true
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  ws-opts:
+    headers:
+      Host: 13.140.56.100
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/47.0.2526.111 Safari/537.36
+    path: /vless
+  xudp: true
+- name: 🇸🇬 | @WhiteDNS | SG168|2.2MB/s|DNSOK|GPT⁺-SG
+  password: ''
+  port: 443
+  server: 156.146.56.97
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 - cipher: rc4-md5
-  name: 🇸🇬 | @WhiteDNS | SG164|1.8MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG169|1.8MB/s|DNSOK|GPT⁺-SG
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.236
   type: ss
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG165|1.8MB/s|DNSOK|GPT⁺-SG
-  network: raw
-  port: 19825
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  server: 146.235.16.130
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  xudp: true
-  servername: sg2-8sb.6121999.dpdns.org
-- cipher: rc4-md5
-  name: 🇸🇬 | @WhiteDNS | SG166|1.7MB/s|DNSOK|GPT⁺-SG
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.227.4
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG167|1.6MB/s|DNSOK|GPT⁺-SG
-  port: 19825
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  server: sg2-8sb.6121999.dpdns.org
+- name: 🇸🇬 | @WhiteDNS | SG170|1.7MB/s|DNSOK|GPT⁺-SG
+  password: '1234'
+  port: 2080
+  server: 52.221.234.145
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  network: tcp
-  servername: sg2-8sb.6121999.dpdns.org
+  type: http
+  username: '1234'
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG168|1.6MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG171|1.7MB/s|DNSOK|GPT⁺-SG
   port: 10444
   reality-opts:
     public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
@@ -132,10 +115,42 @@ proxies:
   uuid: 75c5f51b-d548-4eab-a26e-aa10fc3dbc7b
   network: tcp
   servername: video.yandex.ru
-- name: 🇸🇬 | @WhiteDNS | SG169|1.4MB/s|DNSOK|GPT⁺-SG
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG172|1.6MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 139.180.146.200
+  skip-cert-verify: true
+  sni: 139.180.146.200
+  type: trojan
+  udp: true
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG173|1.6MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  port: 10444
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  server: 147.93.173.45
+  tls: true
+  type: vless
+  udp: true
+  uuid: 75c5f51b-d548-4eab-a26e-aa10fc3dbc7b
+  servername: video.yandex.ru
+- name: 🇸🇬 | @WhiteDNS | SG174|1.2MB/s|DNSOK|GPT⁺-JP
   password: ''
-  port: 443
-  server: 156.146.56.97
+  port: 9443
+  server: 152.233.9.239
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇸🇬 | @WhiteDNS | SG175|1.2MB/s|DNSOK|GPT⁺-SG
+  password: ''
+  port: 9443
+  server: 149.88.99.209
   skip-cert-verify: true
   tls: true
   type: http
@@ -143,65 +158,62 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG170|1.4MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG176|984KB/s|DNSOK|GPT⁺-US
   network: tcp
-  port: 19825
+  port: 443
   reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  server: 146.235.16.130
+    public-key: mvgWVqCFiqMKlst2NpfN71iKmD1dFd2iTBEP929UozE
+    short-id: b91971fe98d55eb9
+  server: us.huahua.wiki
   tls: true
   type: vless
   udp: true
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  uuid: b9dd6833-9121-41fc-badc-ecbab952f606
   xudp: true
-  servername: sg2-8sb.6121999.dpdns.org
-- alpn:
-  - h3
-  congestion-controller: bbr
-  name: 🇸🇬 | @WhiteDNS | SG171|1.3MB/s|DNSOK|GPT⁺-SG
-  password: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  port: 33738
-  server: 146.235.16.130
-  sni: sg2-8sb.6121999.dpdns.org
-  type: tuic
-  udp: true
-  udp-relay-mode: quic
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  version: 5
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG172|1.1MB/s|DNSOK|GPT⁺-SG
-  network: tcp%235%f0%9f%90%b2%40oneclickvpnkeys
-  port: 19825
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  server: 146.235.16.130
-  tls: true
+  servername: www.apple.com
+- name: 🇸🇬 | @WhiteDNS | SG177|794KB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 14430
+  server: 13.140.56.100
   type: vless
   udp: true
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  ws-opts:
+    headers:
+      Host: 13.140.56.100
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/49.0.2623.87 Safari/537.36
+    path: /vless
   xudp: true
-  servername: sg2-8sb.6121999.dpdns.org
+  servername: 13.140.56.100
+- name: 🇸🇬 | @WhiteDNS | SG178|568KB/s|DNSOK|GPT⁺-SG
+  password: '8888'
+  port: 1080
+  server: 47.236.168.243
+  skip-cert-verify: true
+  type: socks5
+  username: '8888'
 proxy-groups:
 - name: SG-Auto
   type: url-test
   proxies:
-  - 🇸🇬 | @WhiteDNS | SG159|3.1MB/s|DNSOK|GPT⁺-IN
-  - 🇸🇬 | @WhiteDNS | SG160|2.6MB/s|DNSOK|GPT⁺-IN
-  - 🇸🇬 | @WhiteDNS | SG161|2.1MB/s|DNSOK|GPT⁺-JP
-  - 🇸🇬 | @WhiteDNS | SG162|2.0MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG163|1.9MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG164|1.8MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG165|1.8MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG166|1.7MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG167|1.6MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG168|1.6MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG169|1.4MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG170|1.4MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG171|1.3MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG172|1.1MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG162|2.7MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG163|2.6MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG164|2.6MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG165|2.6MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG166|2.4MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG167|2.4MB/s|DNSOK|GPT⁺-IN
+  - 🇸🇬 | @WhiteDNS | SG168|2.2MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG169|1.8MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG170|1.7MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG171|1.7MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG172|1.6MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG173|1.6MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG174|1.2MB/s|DNSOK|GPT⁺-JP
+  - 🇸🇬 | @WhiteDNS | SG175|1.2MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG176|984KB/s|DNSOK|GPT⁺-US
+  - 🇸🇬 | @WhiteDNS | SG177|794KB/s|DNSOK|GPT⁺-IN
+  - 🇸🇬 | @WhiteDNS | SG178|568KB/s|DNSOK|GPT⁺-SG
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
