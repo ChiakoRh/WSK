@@ -13,20 +13,22 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇱🇹 | @WhiteDNS | LT12|5.9MB/s|DNSOK|GPT⁺-LT
-  password: ''
-  port: 443
-  server: 89.124.11.9
+- client-fingerprint: chrome
+  name: 🇧🇷 | @WhiteDNS | BR7|1.1MB/s|DNSOK|GPT⁺-BR
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  port: 16932
+  server: ench-snet-app.w-ctrip.cn
   skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+  sni: cm.g.doubleclick.net
+  type: trojan
+  udp: true
+  network: tcp
 proxy-groups:
-- name: LT-Auto
+- name: BR-Auto
   type: url-test
   proxies:
-  - 🇱🇹 | @WhiteDNS | LT12|5.9MB/s|DNSOK|GPT⁺-LT
+  - 🇧🇷 | @WhiteDNS | BR7|1.1MB/s|DNSOK|GPT⁺-BR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,LT-Auto
+- MATCH,BR-Auto

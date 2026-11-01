@@ -1,16 +1,16 @@
 proxies:
-- name: ❓ | @WhiteDNS | OT1045|3.3MB/s|DNSOK|GPT⁺-DE
-  password: None
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: ❓ | @WhiteDNS | OT941|539KB/s|DNSOK|GPT⁺-FR
+  network: tcp
   port: 443
-  server: 79.76.126.155
-  skip-cert-verify: true
+  reality-opts:
+    public-key: 7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I
+    short-id: b390e0a721d242b0
+  server: 137.74.16.237
   tls: true
-  type: http
-  username: ''
-- name: ❓ | @WhiteDNS | OT1046|1.8MB/s|DNSOK|GPT⁺
-  password: None
-  port: 9090
-  server: 152.42.170.187
-  skip-cert-verify: true
-  type: http
-  username: ''
+  type: vless
+  udp: true
+  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
+  xudp: true
+  servername: www.icloud.com
