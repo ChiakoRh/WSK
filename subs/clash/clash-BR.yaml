@@ -14,7 +14,7 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - client-fingerprint: chrome
-  name: 🇧🇷 | @WhiteDNS | BR7|1.1MB/s|DNSOK|GPT⁺-BR
+  name: 🇧🇷 | @WhiteDNS | BR8|1.2MB/s|DNSOK|GPT⁺-BR
   password: b17e9b52db9623bd6c16eea3d7adb5b3
   port: 16932
   server: ench-snet-app.w-ctrip.cn
@@ -23,11 +23,22 @@ proxies:
   type: trojan
   udp: true
   network: tcp
+- client-fingerprint: chrome
+  name: 🇧🇷 | @WhiteDNS | BR9|1.2MB/s|DNSOK|GPT⁺-BR
+  network: tcp
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  port: 16932
+  server: ench-snet-app.w-ctrip.cn
+  skip-cert-verify: true
+  sni: cm.g.doubleclick.net
+  type: trojan
+  udp: true
 proxy-groups:
 - name: BR-Auto
   type: url-test
   proxies:
-  - 🇧🇷 | @WhiteDNS | BR7|1.1MB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR8|1.2MB/s|DNSOK|GPT⁺-BR
+  - 🇧🇷 | @WhiteDNS | BR9|1.2MB/s|DNSOK|GPT⁺-BR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

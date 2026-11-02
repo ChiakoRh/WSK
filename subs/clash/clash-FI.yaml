@@ -13,10 +13,22 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- down: ''
+  fingerprint: ''
+  name: 🇫🇮 | @WhiteDNS | FI79|5.6MB/s|DNSOK|GPT⁺-FI
+  obfs: salamander
+  obfs-password: otwmdcyqh98idcxv
+  password: 0zy7kb86chk9ktbn
+  port: 19883
+  server: 212.147.238.253
+  skip-cert-verify: false
+  sni: dlwww.mymuic.ir
+  type: hysteria2
+  up: ''
 - client-fingerprint: chrome
   encryption: mlkem768x25519plus.xorpub.0rtt.pKwH5Q8HeJ7hb8HXaFViO48sbyADPgrR1ylFSUwbtm8
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI70|3.1MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI80|5.3MB/s|DNSOK|GPT⁺-FI
   network: tcp
   port: 4999
   server: multi.videobaazi.ir
@@ -27,6 +39,22 @@ proxies:
   xudp: true
   servername: api4.valdino.ir
 - alpn:
+  - h3
+  - h2
+  - http/1.1
+  down: ''
+  fingerprint: ''
+  name: 🇫🇮 | @WhiteDNS | FI81|4.9MB/s|DNSOK|GPT⁺-FI
+  obfs: salamander
+  obfs-password: otwmdcyqh98idcxv
+  password: 0zy7kb86chk9ktbn
+  port: 19883
+  server: dlwww.mymuic.ir
+  skip-cert-verify: false
+  sni: dlwww.mymuic.ir
+  type: hysteria2
+  up: ''
+- alpn:
   - ''
   alterId: '0'
   cipher: auto
@@ -36,7 +64,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI71|2.5MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI82|2.8MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
@@ -56,7 +84,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI72|2.4MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI83|2.4MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 52080
   server: 185.212.149.7
@@ -70,9 +98,11 @@ proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI70|3.1MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI71|2.5MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI72|2.4MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI79|5.6MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI80|5.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI81|4.9MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI82|2.8MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI83|2.4MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
