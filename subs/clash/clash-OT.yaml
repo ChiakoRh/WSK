@@ -13,19 +13,23 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: ❓ | @WhiteDNS | OT842|812KB/s|DNSOK|GPT⁺
-  password: None
+- alterId: 0
+  cipher: auto
+  country: 🇰🇷KR
+  h2-opts: {}
+  http-opts: {}
+  name: ❓ | @WhiteDNS | OT777|1.4MB/s|DNSOK|GPT⁺-KR
+  network: none
   port: 443
-  server: 84.235.228.156
+  server: 140.238.2.250
   skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+  type: vmess
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT842|812KB/s|DNSOK|GPT⁺
+  - ❓ | @WhiteDNS | OT777|1.4MB/s|DNSOK|GPT⁺-KR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
