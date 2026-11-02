@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇪🇪 | @WhiteDNS | EE17|5.5MB/s|DNSOK|GPT⁺-EE
+- name: 🇪🇪 | @WhiteDNS | EE19|4.6MB/s|DNSOK|GPT⁺-EE
   password: ''
   port: 9443
   server: 95.153.31.66
@@ -21,46 +21,20 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇪🇪 | @WhiteDNS | EE18|5.4MB/s|DNSOK|GPT⁺-EE
+- name: 🇪🇪 | @WhiteDNS | EE20|4.0MB/s|DNSOK|GPT⁺-EE
   password: None
   port: 9443
-  server: 95.153.31.66
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇪🇪 | @WhiteDNS | EE19|5.2MB/s|DNSOK|GPT⁺-EE
-  password: ''
-  port: 443
   server: 95.153.32.2
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇪🇪 | @WhiteDNS | EE20|1.2MB/s|DNSOK|GPT⁺-EE
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 2XyUS3_ONl5REQ7NiwikdJphAe7oJ61-21zuqnN67y8
-    short-id: 2e82d7ac
-  server: 185.225.205.53
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3d526c7f-059c-4e2b-b09a-8569b268935b
-  xudp: true
-  servername: addons.mozilla.org
 proxy-groups:
 - name: EE-Auto
   type: url-test
   proxies:
-  - 🇪🇪 | @WhiteDNS | EE17|5.5MB/s|DNSOK|GPT⁺-EE
-  - 🇪🇪 | @WhiteDNS | EE18|5.4MB/s|DNSOK|GPT⁺-EE
-  - 🇪🇪 | @WhiteDNS | EE19|5.2MB/s|DNSOK|GPT⁺-EE
-  - 🇪🇪 | @WhiteDNS | EE20|1.2MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE19|4.6MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE20|4.0MB/s|DNSOK|GPT⁺-EE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

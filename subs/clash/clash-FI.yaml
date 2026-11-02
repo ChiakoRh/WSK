@@ -13,34 +13,6 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- down: ''
-  fingerprint: ''
-  name: 🇫🇮 | @WhiteDNS | FI50|5.9MB/s|DNSOK|GPT⁺-FI
-  obfs: salamander
-  obfs-password: otwmdcyqh98idcxv
-  password: 0zy7kb86chk9ktbn
-  port: 19883
-  server: 212.147.238.253
-  skip-cert-verify: false
-  sni: dlwww.mymuic.ir
-  type: hysteria2
-  up: ''
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  down: ''
-  fingerprint: ''
-  name: 🇫🇮 | @WhiteDNS | FI51|5.6MB/s|DNSOK|GPT⁺-FI
-  obfs: salamander
-  obfs-password: otwmdcyqh98idcxv
-  password: 0zy7kb86chk9ktbn
-  port: 19883
-  server: dlwww.mymuic.ir
-  skip-cert-verify: false
-  sni: dlwww.mymuic.ir
-  type: hysteria2
-  up: ''
 - alpn:
   - ''
   alterId: '0'
@@ -51,7 +23,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI52|2.8MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI38|4.1MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
@@ -71,7 +43,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI53|2.7MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI39|2.7MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 52080
   server: 185.212.149.7
@@ -85,10 +57,8 @@ proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI50|5.9MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI51|5.6MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI52|2.8MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI53|2.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI38|4.1MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI39|2.7MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

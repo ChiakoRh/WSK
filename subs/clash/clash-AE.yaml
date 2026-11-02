@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇦🇪 | @WhiteDNS | AE4|2.6MB/s|DNSOK|GPT⁺-AE
+- name: 🇦🇪 | @WhiteDNS | AE7|2.6MB/s|DNSOK|GPT⁺-AE
   network: ws
   port: 14430
   server: 95.174.68.188
@@ -23,46 +23,31 @@ proxies:
   ws-opts:
     headers:
       Host: 95.174.68.188
-      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: /vless
-  xudp: true
-- name: 🇦🇪 | @WhiteDNS | AE5|2.6MB/s|DNSOK|GPT⁺-AE
-  network: ws
-  port: 14430
-  server: 95.174.68.188
-  type: vless
-  udp: true
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  ws-opts:
-    headers:
-      Host: 95.174.68.188
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/63.0.3239.132 Safari/537.36
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36
     path: /vless
   xudp: true
   servername: 95.174.68.188
-- name: 🇦🇪 | @WhiteDNS | AE6|2.1MB/s|DNSOK|GPT⁺-AE
+- name: 🇦🇪 | @WhiteDNS | AE8|2.6MB/s|DNSOK|GPT⁺-AE
   network: ws
-  port: 22573
-  server: 84.235.244.108
+  port: 14430
+  server: 95.174.68.188
   type: vless
   udp: true
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
   ws-opts:
     headers:
-      Host: uae.unixzone.us
-      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: /
+      Host: 95.174.68.188
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/56.0.2924.87 Safari/537.36
+    path: /vless
   xudp: true
 proxy-groups:
 - name: AE-Auto
   type: url-test
   proxies:
-  - 🇦🇪 | @WhiteDNS | AE4|2.6MB/s|DNSOK|GPT⁺-AE
-  - 🇦🇪 | @WhiteDNS | AE5|2.6MB/s|DNSOK|GPT⁺-AE
-  - 🇦🇪 | @WhiteDNS | AE6|2.1MB/s|DNSOK|GPT⁺-AE
+  - 🇦🇪 | @WhiteDNS | AE7|2.6MB/s|DNSOK|GPT⁺-AE
+  - 🇦🇪 | @WhiteDNS | AE8|2.6MB/s|DNSOK|GPT⁺-AE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
