@@ -13,22 +13,8 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB64|23.0MB/s|DNSOK|GPT⁺-GB
-  network: tcp
-  port: 1222
-  reality-opts:
-    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
-    short-id: a25d0f
-  server: 23.81.36.148
-  tls: true
-  type: vless
-  udp: true
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  xudp: true
-  servername: play.google.com
-- name: 🇬🇧 | @WhiteDNS | GB65|22.3MB/s|DNSOK|GPT⁺-GB
+- encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB76|22.9MB/s|DNSOK|GPT⁺-GB
   network: ws
   port: 8080
   server: 23.81.36.148
@@ -38,11 +24,11 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/48.0.2564.109 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/46.0.2490.71 Safari/537.36
     path: /
   xudp: true
-- name: 🇬🇧 | @WhiteDNS | GB66|21.0MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB77|21.9MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
   server: 84.17.50.193
@@ -50,17 +36,25 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB67|18.6MB/s|DNSOK|GPT⁺
+- name: 🇬🇧 | @WhiteDNS | GB78|17.2MB/s|DNSOK|GPT⁺
   password: ''
-  port: 9443
-  server: 84.233.178.33
+  port: 443
+  server: 37.120.233.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB79|6.7MB/s|DNSOK|GPT⁺-GB
+  password: None
+  port: 443
+  server: 37.120.233.34
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
 - client-fingerprint: chrome
   encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB68|6.8MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB80|6.6MB/s|DNSOK|GPT⁺-GB
   network: raw
   port: 1222
   reality-opts:
@@ -73,7 +67,30 @@ proxies:
   uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
   xudp: true
   servername: play.google.com
-- name: 🇬🇧 | @WhiteDNS | GB69|5.3MB/s|DNSOK|GPT⁺-RO
+- name: 🇬🇧 | @WhiteDNS | GB81|6.3MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 9443
+  server: 84.233.178.33
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB82|6.1MB/s|DNSOK|GPT⁺-GB
+  network: tcp
+  port: 1222
+  reality-opts:
+    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
+    short-id: a25d0f
+  server: 23.81.36.148
+  tls: true
+  type: vless
+  udp: true
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  xudp: true
+  servername: play.google.com
+- name: 🇬🇧 | @WhiteDNS | GB83|5.6MB/s|DNSOK|GPT⁺-RO
   password: ''
   port: 443
   server: 185.163.110.194
@@ -81,7 +98,15 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB70|1.6MB/s|DNSOK|GPT⁺-FR
+- name: 🇬🇧 | @WhiteDNS | GB84|4.7MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 443
+  server: 37.120.233.50
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB85|1.4MB/s|DNSOK|GPT⁺-FR
   password: ''
   port: 1080
   server: 213.199.47.140
@@ -92,13 +117,16 @@ proxy-groups:
 - name: GB-Auto
   type: url-test
   proxies:
-  - 🇬🇧 | @WhiteDNS | GB64|23.0MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB65|22.3MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB66|21.0MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB67|18.6MB/s|DNSOK|GPT⁺
-  - 🇬🇧 | @WhiteDNS | GB68|6.8MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB69|5.3MB/s|DNSOK|GPT⁺-RO
-  - 🇬🇧 | @WhiteDNS | GB70|1.6MB/s|DNSOK|GPT⁺-FR
+  - 🇬🇧 | @WhiteDNS | GB76|22.9MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB77|21.9MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB78|17.2MB/s|DNSOK|GPT⁺
+  - 🇬🇧 | @WhiteDNS | GB79|6.7MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB80|6.6MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB81|6.3MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB82|6.1MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB83|5.6MB/s|DNSOK|GPT⁺-RO
+  - 🇬🇧 | @WhiteDNS | GB84|4.7MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB85|1.4MB/s|DNSOK|GPT⁺-FR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
