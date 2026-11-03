@@ -13,15 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇱🇺 | @WhiteDNS | LU4|25.0MB/s|DNSOK|GPT⁺-LU
-  password: ''
-  port: 443
-  server: 185.221.132.226
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇱🇺 | @WhiteDNS | LU5|24.2MB/s|DNSOK|GPT⁺-LU
+- name: 🇱🇺 | @WhiteDNS | LU6|23.7MB/s|DNSOK|GPT⁺-LU
   password: None
   port: 443
   server: 185.221.132.226
@@ -29,10 +21,34 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇱🇺 | @WhiteDNS | LU6|17.5MB/s|DNSOK|GPT⁺-LU
+- name: 🇱🇺 | @WhiteDNS | LU7|23.3MB/s|DNSOK|GPT⁺-LU
   password: ''
   port: 443
   server: 185.221.132.242
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇱🇺 | @WhiteDNS | LU8|20.7MB/s|DNSOK|GPT⁺-LU
+  password: None
+  port: 443
+  server: 185.221.132.242
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇱🇺 | @WhiteDNS | LU9|7.3MB/s|DNSOK|GPT⁺-LU
+  password: ''
+  port: 443
+  server: 185.221.132.226
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇱🇺 | @WhiteDNS | LU10|6.1MB/s|DNSOK|GPT⁺-LU
+  password: None
+  port: 9443
+  server: 185.221.132.226
   skip-cert-verify: true
   tls: true
   type: http
@@ -41,9 +57,11 @@ proxy-groups:
 - name: LU-Auto
   type: url-test
   proxies:
-  - 🇱🇺 | @WhiteDNS | LU4|25.0MB/s|DNSOK|GPT⁺-LU
-  - 🇱🇺 | @WhiteDNS | LU5|24.2MB/s|DNSOK|GPT⁺-LU
-  - 🇱🇺 | @WhiteDNS | LU6|17.5MB/s|DNSOK|GPT⁺-LU
+  - 🇱🇺 | @WhiteDNS | LU6|23.7MB/s|DNSOK|GPT⁺-LU
+  - 🇱🇺 | @WhiteDNS | LU7|23.3MB/s|DNSOK|GPT⁺-LU
+  - 🇱🇺 | @WhiteDNS | LU8|20.7MB/s|DNSOK|GPT⁺-LU
+  - 🇱🇺 | @WhiteDNS | LU9|7.3MB/s|DNSOK|GPT⁺-LU
+  - 🇱🇺 | @WhiteDNS | LU10|6.1MB/s|DNSOK|GPT⁺-LU
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

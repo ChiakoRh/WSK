@@ -1,7 +1,33 @@
 proxies:
+- name: 🇯🇵 | @WhiteDNS | JP80|1.4MB/s|DNSOK|GPT⁺-JP
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP81|1.3MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: 9646699a-18b0-4ebc-9f53-453cc1c8e637
+  port: 8443
+  server: 43.167.186.78
+  skip-cert-verify: true
+  sni: 43.167.186.78
+  type: trojan
+  udp: true
+- encryption: none
+  name: 🇯🇵 | @WhiteDNS | JP82|1.1MB/s|DNSOK|GPT⁺-JP
+  network: raw
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  xudp: true
 - alterId: 0
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP102|1.8MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP83|1.1MB/s|DNSOK|GPT⁺-JP
   network: ws
   port: 80
   server: 168.138.43.75
@@ -11,12 +37,32 @@ proxies:
   udp: true
   uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
   ws-opts:
-    headers: {}
+    headers:
+      Host: jp01.a0a.xyz
     path: /cctv13.m3u8
   xudp: true
-  servername: 168.138.43.75
+  servername: jp01.a0a.xyz
+- encryption: none
+  name: 🇯🇵 | @WhiteDNS | JP84|1.0MB/s|DNSOK|GPT⁺
+  network: tcp
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  xudp: true
+  servername: 152.69.195.67
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP85|1.0MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 45.32.52.173
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - country: 🇯🇵JP
-  name: 🇯🇵 | @WhiteDNS | JP103|1.5MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP86|1.0MB/s|DNSOK|GPT⁺-JP
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   port: 8886
   server: 45.32.52.173
@@ -24,9 +70,47 @@ proxies:
   type: trojan
   udp: true
   network: tcp
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP87|1.0MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 45.32.52.173
+  skip-cert-verify: true
+  sni: 45.32.52.173
+  type: trojan
+  udp: true
+- encryption: none
+  name: 🇯🇵 | @WhiteDNS | JP88|1013KB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  xudp: true
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP89|973KB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: 9646699a-18b0-4ebc-9f53-453cc1c8e637
+  port: 8443
+  server: 43.167.186.78
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP90|888KB/s|DNSOK|GPT⁺-JP
+  password: 9646699a-18b0-4ebc-9f53-453cc1c8e637
+  port: 8443
+  server: 43.167.186.78
+  skip-cert-verify: true
+  sni: 43.167.186.78
+  type: trojan
+  udp: true
+  network: tcp
 - alterId: 0
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP104|1.4MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP91|570KB/s|DNSOK|GPT⁺-JP
   network: ws
   port: 80
   server: 168.138.43.75
@@ -41,21 +125,3 @@ proxies:
     path: /cctv13.m3u8
   xudp: true
   servername: none
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP105|1.0MB/s|DNSOK|GPT⁺-JP
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 45.32.52.173
-  skip-cert-verify: true
-  sni: 45.32.52.173
-  type: trojan
-  udp: true
-  network: tcp
-- name: 🇯🇵 | @WhiteDNS | JP106|1.0MB/s|DNSOK|GPT⁺-JP
-  password: ''
-  port: 343
-  server: 133.18.200.207
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''

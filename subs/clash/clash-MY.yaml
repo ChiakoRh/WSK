@@ -21,11 +21,20 @@ proxies:
   tls: true
   type: http
   username: ''
+- name: 🇲🇾 | @WhiteDNS | MY12|1.7MB/s|DNSOK|GPT⁺-MY
+  password: ''
+  port: 9443
+  server: 152.233.3.14
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 proxy-groups:
 - name: MY-Auto
   type: url-test
   proxies:
   - 🇲🇾 | @WhiteDNS | MY11|1.7MB/s|DNSOK|GPT⁺-MY
+  - 🇲🇾 | @WhiteDNS | MY12|1.7MB/s|DNSOK|GPT⁺-MY
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
