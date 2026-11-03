@@ -13,14 +13,6 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇪 | @WhiteDNS | IE16|17.3MB/s|DNSOK|GPT⁺-IE
-  password: None
-  port: 443
-  server: 149.88.96.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 - alpn:
   - ''
   alterId: '0'
@@ -31,7 +23,7 @@ proxies:
       - tms.dingtalk.com
     path:
     - /
-  name: 🇮🇪 | @WhiteDNS | IE17|17.0MB/s|DNSOK|GPT⁺-IE
+  name: 🇮🇪 | @WhiteDNS | IE18|6.1MB/s|DNSOK|GPT⁺-IE
   network: http
   port: 59236
   server: 54.229.151.97
@@ -41,10 +33,18 @@ proxies:
   udp: true
   uuid: 2387bfbc-10a6-4bd7-dc55-7cba954ce6e8
   xudp: true
-- name: 🇮🇪 | @WhiteDNS | IE18|6.0MB/s|DNSOK|GPT⁺-IE
+- name: 🇮🇪 | @WhiteDNS | IE19|6.0MB/s|DNSOK|GPT⁺-IE
   password: None
   port: 443
-  server: 149.88.96.12
+  server: 149.88.96.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇮🇪 | @WhiteDNS | IE20|5.9MB/s|DNSOK|GPT⁺-IE
+  password: ''
+  port: 443
+  server: 149.88.96.1
   skip-cert-verify: true
   tls: true
   type: http
@@ -53,9 +53,9 @@ proxy-groups:
 - name: IE-Auto
   type: url-test
   proxies:
-  - 🇮🇪 | @WhiteDNS | IE16|17.3MB/s|DNSOK|GPT⁺-IE
-  - 🇮🇪 | @WhiteDNS | IE17|17.0MB/s|DNSOK|GPT⁺-IE
-  - 🇮🇪 | @WhiteDNS | IE18|6.0MB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE18|6.1MB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE19|6.0MB/s|DNSOK|GPT⁺-IE
+  - 🇮🇪 | @WhiteDNS | IE20|5.9MB/s|DNSOK|GPT⁺-IE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
