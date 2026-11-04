@@ -13,27 +13,8 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP132|2.0MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 45.32.52.173
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- encryption: none
-  name: 🇯🇵 | @WhiteDNS | JP133|1.0MB/s|DNSOK|GPT⁺
-  network: tcp
-  port: 47878
-  server: 152.69.195.67
-  type: vless
-  udp: true
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-  xudp: true
-  servername: 152.69.195.67
 - country: 🇯🇵JP
-  name: 🇯🇵 | @WhiteDNS | JP134|1.0MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP101|1.0MB/s|DNSOK|GPT⁺-JP
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   port: 8886
   server: 45.32.52.173
@@ -42,7 +23,7 @@ proxies:
   udp: true
   network: tcp
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP135|705KB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP102|1.0MB/s|DNSOK|GPT⁺-JP
   network: tcp
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   port: 8886
@@ -51,23 +32,22 @@ proxies:
   sni: 45.32.52.173
   type: trojan
   udp: true
-- name: 🇯🇵 | @WhiteDNS | JP136|581KB/s|DNSOK|GPT⁺-JP
-  password: None
-  port: 343
-  server: 133.18.200.207
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP103|1.0MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 45.32.52.173
   skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+  type: trojan
+  udp: true
 proxy-groups:
 - name: JP-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP132|2.0MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP133|1.0MB/s|DNSOK|GPT⁺
-  - 🇯🇵 | @WhiteDNS | JP134|1.0MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP135|705KB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP136|581KB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP101|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP102|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP103|1.0MB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
