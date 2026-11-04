@@ -13,18 +13,42 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇳 | @WhiteDNS | IN42|2.7MB/s|DNSOK|GPT⁺-IN
+- name: 🇮🇳 | @WhiteDNS | IN69|3.7MB/s|DNSOK|GPT⁺-IN
   password: ''
   port: 1080
   server: 140.238.243.61
   skip-cert-verify: true
   type: socks5
   username: ''
+- client-fingerprint: chrome
+  name: 🇮🇳 | @WhiteDNS | IN70|2.2MB/s|DNSOK|GPT⁺-IN
+  network: tcp
+  password: 5t6i121em5lkmsmk
+  port: 42733
+  server: in002.zestapp778.com
+  skip-cert-verify: true
+  sni: in002.zestapp778.com
+  type: trojan
+  udp: true
+- down: ''
+  fingerprint: ''
+  name: 🇮🇳 | @WhiteDNS | IN71|1.1MB/s|DNSOK|GPT⁺-IN
+  obfs: ''
+  obfs-password: ''
+  password: d105c6ae-621b-47c1-b85b-075fd6a39aca
+  port: 51000
+  server: 144.24.109.215
+  skip-cert-verify: true
+  sni: cn.cremedelamer.com
+  type: hysteria2
+  up: ''
 proxy-groups:
 - name: IN-Auto
   type: url-test
   proxies:
-  - 🇮🇳 | @WhiteDNS | IN42|2.7MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN69|3.7MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN70|2.2MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN71|1.1MB/s|DNSOK|GPT⁺-IN
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -13,26 +13,37 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT948|1.4MB/s|DNSOK|GPT⁺-SG
-  port: 10444
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  server: 147.93.173.45
+- name: ❓ | @WhiteDNS | OT3|1.7MB/s|DNSOK|GPT⁺
+  password: ''
+  port: 9050
+  server: 45.61.129.165
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- name: ❓ | @WhiteDNS | OT883|1.6MB/s|DNSOK|GPT⁺-KR
+  password: 5t6i121em5lkmsmk
+  port: 48851
+  server: kr002.zestapp778.com
+  skip-cert-verify: true
+  sni: kr002.zestapp778.com
+  type: trojan
+  udp: true
+  network: tcp
+- name: ❓ | @WhiteDNS | OT884|620KB/s|DNSOK|GPT⁺-IT
+  password: ''
+  port: 8090
+  server: 93.71.245.84
   skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: 75c5f51b-d548-4eab-a26e-aa10fc3dbc7b
-  network: tcp
-  servername: video.yandex.ru
+  type: http
+  username: ''
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT948|1.4MB/s|DNSOK|GPT⁺-SG
+  - ❓ | @WhiteDNS | OT3|1.7MB/s|DNSOK|GPT⁺
+  - ❓ | @WhiteDNS | OT883|1.6MB/s|DNSOK|GPT⁺-KR
+  - ❓ | @WhiteDNS | OT884|620KB/s|DNSOK|GPT⁺-IT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

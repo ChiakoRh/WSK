@@ -13,9 +13,82 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 🇰🇷 | @WhiteDNS | KR71|1.8MB/s|DNSOK|GPT⁺
+  network: ws
+  port: 80
+  server: 132.145.80.230
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  ws-opts:
+    headers:
+      Host: 'null'
+    path: /cctv13.m3u8
+  xudp: true
+  servername: 'null'
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇰🇷 | @WhiteDNS | KR72|1.7MB/s|DNSOK|GPT⁺-KR
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: jSvhKKNVMhMQOCERpOyPwfNkzMnHQExIua0oWRdbuB8
+    short-id: ''
+  server: 8.220.241.33
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6dd58a09-430e-4ecf-81eb-95ca94f8b765
+  xudp: true
+  servername: cloudflare.com
+- name: 🇰🇷 | @WhiteDNS | KR73|1.7MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 2052
+  server: 104.16.0.1
+  type: vless
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  ws-opts:
+    headers:
+      Host: eu02.123450908.xyz
+    path: /rain1226
+- cipher: aes-256-cfb
+  name: 🇰🇷 | @WhiteDNS | KR74|1.6MB/s|DNSOK|GPT⁺-KR
+  password: 1234!@#$
+  port: 1774
+  server: 49.254.204.134
+  type: ss
+  udp: true
+- client-fingerprint: firefox
+  name: 🇰🇷 | @WhiteDNS | KR75|1.6MB/s|DNSOK|GPT⁺-KR
+  password: 5t6i121em5lkmsmk
+  port: 48851
+  server: 158.247.255.150
+  skip-cert-verify: false
+  sni: kr002.zestapp778.com
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: firefox
+  name: 🇰🇷 | @WhiteDNS | KR76|1.6MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: jSvhKKNVMhMQOCERpOyPwfNkzMnHQExIua0oWRdbuB8
+    short-id: ''
+  server: 8.220.241.33
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6dd58a09-430e-4ecf-81eb-95ca94f8b765
+  xudp: true
+  servername: cloudflare.com
 - alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR64|1.9MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR77|1.1MB/s|DNSOK|GPT⁺-KR
   network: tcp
   port: 800
   server: 129.154.61.196
@@ -25,96 +98,18 @@ proxies:
   udp: true
   uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
   xudp: true
-- cipher: aes-256-cfb
-  name: 🇰🇷 | @WhiteDNS | KR65|1.8MB/s|DNSOK|GPT⁺-KR
-  password: 1234!@#$
-  port: 1774
-  server: 49.254.204.134
-  type: ss
-  udp: true
-- client-fingerprint: firefox
-  name: 🇰🇷 | @WhiteDNS | KR66|1.7MB/s|DNSOK|GPT⁺-KR
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: jSvhKKNVMhMQOCERpOyPwfNkzMnHQExIua0oWRdbuB8
-    short-id: ''
-  server: 8.220.241.33
-  tls: true
-  type: vless
-  udp: true
-  uuid: f877d913-9f87-45dd-bfe8-d95043081184
-  xudp: true
-  servername: cloudflare.com
-- name: 🇰🇷 | @WhiteDNS | KR67|1.7MB/s|DNSOK|GPT⁺-KR
-  password: ''
-  port: 1080
-  server: 144.24.94.153
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- client-fingerprint: firefox
-  encryption: none
-  name: 🇰🇷 | @WhiteDNS | KR68|1.7MB/s|DNSOK|GPT⁺-KR
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: jSvhKKNVMhMQOCERpOyPwfNkzMnHQExIua0oWRdbuB8
-    short-id: ''
-  server: 8.220.241.33
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6dd58a09-430e-4ecf-81eb-95ca94f8b765
-  xudp: true
-  servername: cloudflare.com
-- cipher: aes-256-cfb
-  name: 🇰🇷 | @WhiteDNS | KR69|1.4MB/s|DNSOK|GPT⁺-KR
-  password: 1234!@#$
-  port: 1774
-  server: 49.254.204.133
-  type: ss
-  udp: true
-- name: 🇰🇷 | @WhiteDNS | KR70|1.3MB/s|DNSOK|GPT⁺-KR
-  password: 5t6i121em5lkmsmk
-  port: 48851
-  server: kr002.zestapp778.com
-  skip-cert-verify: true
-  sni: kr002.zestapp778.com
-  type: trojan
-  udp: true
-  network: tcp
-- client-fingerprint: firefox
-  name: 🇰🇷 | @WhiteDNS | KR71|1.2MB/s|DNSOK|GPT⁺-KR
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: jSvhKKNVMhMQOCERpOyPwfNkzMnHQExIua0oWRdbuB8
-    short-id: ''
-  server: 8.220.241.33
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6dd58a09-430e-4ecf-81eb-95ca94f8b765
-  xudp: true
-  servername: cloudflare.com
-- name: 🇰🇷 | @WhiteDNS | KR72|1.2MB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 25555
-  server: 152.69.226.63
-  type: vless
-  udp: true
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: /
-  xudp: true
 - alterId: 0
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR73|531KB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR78|1.1MB/s|DNSOK|GPT⁺-KR
+  port: 800
+  server: 129.154.61.196
+  type: vmess
+  udp: true
+  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
+  network: tcp
+- alterId: '0'
+  cipher: auto
+  name: 🇰🇷 | @WhiteDNS | KR79|1.1MB/s|DNSOK|GPT⁺-KR
   network: raw
   port: 443
   server: 140.238.2.250
@@ -124,20 +119,44 @@ proxies:
   udp: true
   uuid: 41a7089a-040b-4538-8b8d-010902405bde
   xudp: true
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR80|1.0MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  password: 5t6i121em5lkmsmk
+  port: 48851
+  server: 158.247.255.150
+  skip-cert-verify: false
+  sni: kr002.zestapp778.com
+  type: trojan
+  udp: true
+- name: 🇰🇷 | @WhiteDNS | KR81|898KB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 2052
+  server: 172.64.150.43
+  type: vless
+  udp: true
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  ws-opts:
+    headers:
+      Host: eu02.123450908.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /rain1226
 proxy-groups:
 - name: KR-Auto
   type: url-test
   proxies:
-  - 🇰🇷 | @WhiteDNS | KR64|1.9MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR65|1.8MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR66|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR67|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR68|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR69|1.4MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR70|1.3MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR71|1.2MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR72|1.2MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR73|531KB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR71|1.8MB/s|DNSOK|GPT⁺
+  - 🇰🇷 | @WhiteDNS | KR72|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR73|1.7MB/s|DNSOK|GPT⁺-DE
+  - 🇰🇷 | @WhiteDNS | KR74|1.6MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR75|1.6MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR76|1.6MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR77|1.1MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR78|1.1MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR79|1.1MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR80|1.0MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR81|898KB/s|DNSOK|GPT⁺-DE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
