@@ -13,20 +13,22 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇬🇪 | @WhiteDNS | GE3|6.1MB/s|DNSOK|GPT⁺-GE
-  password: ''
-  port: 443
-  server: 195.54.178.210
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+- client-fingerprint: chrome
+  name: 🇧🇷 | @WhiteDNS | BR11|2.1MB/s|DNSOK|GPT⁺-BR
+  network: tcp
+  password: 5t6i121em5lkmsmk
+  port: 39533
+  server: br001.zestapp778.com
+  skip-cert-verify: false
+  sni: br001.zestapp778.com
+  type: trojan
+  udp: true
 proxy-groups:
-- name: GE-Auto
+- name: BR-Auto
   type: url-test
   proxies:
-  - 🇬🇪 | @WhiteDNS | GE3|6.1MB/s|DNSOK|GPT⁺-GE
+  - 🇧🇷 | @WhiteDNS | BR11|2.1MB/s|DNSOK|GPT⁺-BR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,GE-Auto
+- MATCH,BR-Auto
