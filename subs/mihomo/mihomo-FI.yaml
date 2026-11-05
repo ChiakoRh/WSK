@@ -1,39 +1,30 @@
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI59|23.7MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 3939
-  reality-opts:
-    public-key: dnnN66V_xqEbGoG5P8E_Zqk3TaZt2lM4SI9N7Ana7FA
-    short-id: d9a2600fdecd7be2
-  server: 2.31.22.130
-  tls: true
+- down: ''
+  fingerprint: ''
+  name: 🇫🇮 | @WhiteDNS | FI45|6.2MB/s|DNSOK|GPT⁺-FI
+  obfs: salamander
+  obfs-password: ckwudzzsfoltmbmi
+  password: xo43w4tc13ou2h3x
+  port: 60000
+  server: mein-1.octavia.dpdns.org
+  skip-cert-verify: false
+  sni: main-1.octavia.dpdns.org
+  type: hysteria2
+  up: ''
+- encryption: mlkem768x25519plus.random.0rtt.0hyW1XvQeYqdlsMRw1O7zOvfdRtndSIMP8v_Bk5RCmc
+  http-opts:
+    headers:
+      Host:
+      - amp-api-edge.apps.apple.com
+    path:
+    - /
+  name: 🇫🇮 | @WhiteDNS | FI46|4.3MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 6000
+  server: mein-1.octavia.dpdns.org
   type: vless
   udp: true
-  uuid: 838e8b68-b583-4850-9c06-3ca63b05a936
-  xudp: true
-  servername: ai.android
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - down-cdn.dingtalk.com
-    path:
-    - /3x
-  name: 🇫🇮 | @WhiteDNS | FI60|2.4MB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 52080
-  server: 185.212.149.7
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
+  uuid: e1acad9b-e14e-4995-b2d6-5721823cb0a7
   xudp: true
 - alpn:
   - ''
@@ -45,7 +36,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI61|2.4MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI47|2.7MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
@@ -54,4 +45,24 @@ proxies:
   type: vmess
   udp: true
   uuid: aeb3c019-ae83-4677-af97-846baa787ad5
+  xudp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    path:
+    - /3x
+  name: 🇫🇮 | @WhiteDNS | FI48|2.4MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 52080
+  server: 185.212.149.7
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
   xudp: true

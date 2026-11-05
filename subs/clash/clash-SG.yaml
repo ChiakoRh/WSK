@@ -13,47 +13,81 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG191|2.7MB/s|DNSOK|GPT⁺-SG
-  network: tcp
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 139.180.146.200
+- name: 🇸🇬 | @WhiteDNS | SG170|2.7MB/s|DNSOK|GPT⁺-SG
+  password: ''
+  port: 443
+  server: 156.146.56.97
   skip-cert-verify: true
-  type: trojan
+  tls: true
+  type: http
+  username: ''
+- name: 🇸🇬 | @WhiteDNS | SG171|2.6MB/s|DNSOK|GPT⁺-IN
+  password: ''
+  port: 30001
+  server: 80.65.208.187
+  skip-cert-verify: true
+  type: http
+  username: ''
+- client-fingerprint: firefox
+  name: 🇸🇬 | @WhiteDNS | SG172|2.6MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  port: 443
+  server: 45.76.155.179
+  tls: true
+  type: vless
+  udp: true
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  xudp: true
+  servername: sg003.zestapp778.com
+- alterId: '0'
+  cipher: auto
+  name: 🇸🇬 | @WhiteDNS | SG173|2.3MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  port: 1270
+  server: 15.235.144.92
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  xudp: true
+  servername: xmfhlpy.com
+- cipher: rc4-md5
+  name: 🇸🇬 | @WhiteDNS | SG174|2.2MB/s|DNSOK|GPT⁺-SG
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.4
+  type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 🇸🇬 | @WhiteDNS | SG192|2.3MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG175|2.1MB/s|DNSOK|GPT⁺-SG
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 15.235.182.183
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: 🇸🇬 | @WhiteDNS | SG193|2.2MB/s|DNSOK|GPT⁺-SG
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 51.79.228.131
-  type: ss
+- name: 🇸🇬 | @WhiteDNS | SG176|2.1MB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 14430
+  server: 13.140.56.100
+  type: vless
   udp: true
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/67.0.3396.99 Safari/537.36
+    path: /vless
+  xudp: true
 - cipher: aes-256-gcm
-  name: 🇸🇬 | @WhiteDNS | SG194|2.2MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG177|2.1MB/s|DNSOK|GPT⁺-SG
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 15.235.164.133
   type: ss
   udp: true
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG195|2.0MB/s|DNSOK|GPT⁺-SG
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 139.180.146.200
-  skip-cert-verify: true
-  sni: 139.180.146.200
-  type: trojan
-  udp: true
-  network: tcp
-- name: 🇸🇬 | @WhiteDNS | SG196|1.8MB/s|DNSOK|GPT⁺-SG
+- name: 🇸🇬 | @WhiteDNS | SG178|2.1MB/s|DNSOK|GPT⁺-SG
   password: ''
   port: 9443
   server: 149.88.99.209
@@ -62,36 +96,21 @@ proxies:
   type: http
   username: ''
 - cipher: rc4-md5
-  name: 🇸🇬 | @WhiteDNS | SG197|1.7MB/s|DNSOK|GPT⁺-SG
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.227.4
-  type: ss
-  udp: true
-- name: 🇸🇬 | @WhiteDNS | SG198|1.7MB/s|DNSOK|GPT⁺-IN
-  password: ''
-  port: 30001
-  server: 80.65.208.187
-  skip-cert-verify: true
-  type: http
-  username: ''
-- name: 🇸🇬 | @WhiteDNS | SG199|1.7MB/s|DNSOK|GPT⁺-SG
-  password: ''
-  port: 443
-  server: 156.146.56.97
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- cipher: rc4-md5
-  name: 🇸🇬 | @WhiteDNS | SG200|1.6MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG179|1.7MB/s|DNSOK|GPT⁺-SG
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.236
   type: ss
   udp: true
+- cipher: aes-256-gcm
+  name: 🇸🇬 | @WhiteDNS | SG180|1.6MB/s|DNSOK|GPT⁺-SG
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 51.79.228.131
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG201|1.6MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG181|1.5MB/s|DNSOK|GPT⁺-SG
   network: tcp
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   port: 8886
@@ -100,85 +119,81 @@ proxies:
   sni: 139.180.146.200
   type: trojan
   udp: true
-- cipher: aes-256-gcm
-  name: 🇸🇬 | @WhiteDNS | SG202|1.6MB/s|DNSOK|GPT⁺-JP
-  password: 3eOFeNssde7PYYMv
-  port: 80
-  server: 84.247.155.196
-  type: ss
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG182|1.3MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 139.180.146.200
+  skip-cert-verify: true
+  type: trojan
   udp: true
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG203|1.5MB/s|DNSOK|GPT⁺-SG
-  port: 10444
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  server: 147.93.173.45
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG183|1.3MB/s|DNSOK|GPT⁺-SG
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 139.180.146.200
+  skip-cert-verify: true
+  sni: 139.180.146.200
+  type: trojan
+  udp: true
+  network: tcp
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 | @WhiteDNS | SG184|1.2MB/s|DNSOK|GPT⁺-SG
+  port: 1270
+  server: 15.235.144.92
   skip-cert-verify: true
   tls: true
-  type: vless
+  type: vmess
   udp: true
-  uuid: 75c5f51b-d548-4eab-a26e-aa10fc3dbc7b
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   network: tcp
-  servername: video.yandex.ru
-- name: 🇸🇬 | @WhiteDNS | SG204|1.4MB/s|DNSOK|GPT⁺-SG
+  servername: xmfhlpy.com
+- name: 🇸🇬 | @WhiteDNS | SG185|870KB/s|DNSOK|GPT⁺-SG
+  password: '8888'
+  port: 1080
+  server: 47.236.168.243
+  skip-cert-verify: true
+  type: socks5
+  username: '8888'
+- name: 🇸🇬 | @WhiteDNS | SG186|537KB/s|DNSOK|GPT⁺-IN
   network: ws
-  port: 80
-  server: support.zoom.us
+  port: 14430
+  server: 13.140.56.100
   type: vless
   udp: true
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
   ws-opts:
     headers:
-      Host: u.srilankangrill.online
-      User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; de-de; SAMSUNG GT-I9195 Build/KOT49H)
-        AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile
+      Host: 13.140.56.100
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; TRT-LX2 Build/HUAWEITRT-LX2; wv)
+        AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile
         Safari/537.36
-    path: /
+    path: /vless
   xudp: true
-- cipher: 2022-blake3-aes-256-gcm
-  name: 🇸🇬 | @WhiteDNS | SG205|1.1MB/s|DNSOK|GPT⁺-SG
-  password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
-  port: 14384
-  server: 129.150.59.74
-  type: ss
-  udp: true
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG206|631KB/s|DNSOK|GPT⁺-SG
-  network: tcp
-  port: 10444
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  server: 147.93.173.45
-  tls: true
-  type: vless
-  udp: true
-  uuid: 75c5f51b-d548-4eab-a26e-aa10fc3dbc7b
-  xudp: true
-  servername: video.yandex.ru
+  servername: 13.140.56.100
 proxy-groups:
 - name: SG-Auto
   type: url-test
   proxies:
-  - 🇸🇬 | @WhiteDNS | SG191|2.7MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG192|2.3MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG193|2.2MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG194|2.2MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG195|2.0MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG196|1.8MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG197|1.7MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG198|1.7MB/s|DNSOK|GPT⁺-IN
-  - 🇸🇬 | @WhiteDNS | SG199|1.7MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG200|1.6MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG201|1.6MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG202|1.6MB/s|DNSOK|GPT⁺-JP
-  - 🇸🇬 | @WhiteDNS | SG203|1.5MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG204|1.4MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG205|1.1MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG206|631KB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG170|2.7MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG171|2.6MB/s|DNSOK|GPT⁺-IN
+  - 🇸🇬 | @WhiteDNS | SG172|2.6MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG173|2.3MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG174|2.2MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG175|2.1MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG176|2.1MB/s|DNSOK|GPT⁺-IN
+  - 🇸🇬 | @WhiteDNS | SG177|2.1MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG178|2.1MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG179|1.7MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG180|1.6MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG181|1.5MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG182|1.3MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG183|1.3MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG184|1.2MB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG185|870KB/s|DNSOK|GPT⁺-SG
+  - 🇸🇬 | @WhiteDNS | SG186|537KB/s|DNSOK|GPT⁺-IN
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

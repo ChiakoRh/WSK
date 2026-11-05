@@ -1,94 +1,100 @@
 proxies:
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR70|1.7MB/s|DNSOK|GPT⁺-KR
-  network: tcp
+  name: 🇰🇷 | @WhiteDNS | KR53|2.0MB/s|DNSOK|GPT⁺-KR
   port: 800
   server: 129.154.61.196
-  skip-cert-verify: false
-  tls: false
   type: vmess
   udp: true
   uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
-  xudp: true
-- alterId: 0
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR71|1.7MB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 80
-  server: 132.145.80.230
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇰🇷 | @WhiteDNS | KR54|1.7MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: v5HjgwMvPEsrpqwtgEytMQ3xs-1Cdv2gOCiGMZ2vimc
+    short-id: 68307e
+  server: 43.108.85.54
+  tls: true
+  type: vless
   udp: true
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  ws-opts:
-    headers:
-      Host: 132.145.80.230
-    path: /cctv13.m3u8
+  uuid: e15db5c2-2dca-49fc-857b-aa37a7ba1c79
   xudp: true
-  servername: 132.145.80.230
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR72|1.6MB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 80
-  server: 132.145.80.230
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  ws-opts:
-    headers: {}
-    path: /cctv13.m3u8
-  xudp: true
-  servername: kr02.a0a.xyz
+  servername: cloudflare.com
 - cipher: aes-256-cfb
-  name: 🇰🇷 | @WhiteDNS | KR73|1.6MB/s|DNSOK|GPT⁺-KR
-  password: 1234!@#$
-  port: 1774
-  server: 49.254.204.134
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇰🇷 | @WhiteDNS | KR74|1.6MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR55|1.7MB/s|DNSOK|GPT⁺-KR
   password: 1234!@#$
   port: 1774
   server: 49.254.204.133
   type: ss
   udp: true
-- name: 🇰🇷 | @WhiteDNS | KR75|1.3MB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 25555
-  server: 152.69.226.63
+- alterId: '0'
+  cipher: auto
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇰🇷 | @WhiteDNS | KR56|1.4MB/s|DNSOK|GPT⁺-KR
+  network: http
+  port: 123
+  server: 43.108.103.167
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 35aa0fda-175a-4aec-c468-0231dee1a121
+  xudp: true
+- cipher: aes-256-cfb
+  name: 🇰🇷 | @WhiteDNS | KR57|1.3MB/s|DNSOK|GPT⁺-KR
+  password: 1234!@#$
+  port: 1774
+  server: 49.254.204.134
+  type: ss
+  udp: true
+- client-fingerprint: firefox
+  name: 🇰🇷 | @WhiteDNS | KR58|1.3MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: jSvhKKNVMhMQOCERpOyPwfNkzMnHQExIua0oWRdbuB8
+    short-id: ''
+  server: 8.220.241.33
+  tls: true
   type: vless
   udp: true
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /
+  uuid: f877d913-9f87-45dd-bfe8-d95043081184
   xudp: true
-  servername: 152.69.226.63
-- name: 🇰🇷 | @WhiteDNS | KR76|840KB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 25555
-  server: 152.69.226.63
+  servername: cloudflare.com
+- client-fingerprint: firefox
+  name: 🇰🇷 | @WhiteDNS | KR59|1.3MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: jSvhKKNVMhMQOCERpOyPwfNkzMnHQExIua0oWRdbuB8
+    short-id: ''
+  server: 8.220.241.33
+  tls: true
   type: vless
   udp: true
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J730GM Build/NRD90M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
-    path: /
+  uuid: 6dd58a09-430e-4ecf-81eb-95ca94f8b765
   xudp: true
+  servername: cloudflare.com
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇰🇷 | @WhiteDNS | KR60|1.0MB/s|DNSOK|GPT⁺-KR
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: jSvhKKNVMhMQOCERpOyPwfNkzMnHQExIua0oWRdbuB8
+    short-id: ''
+  server: 8.220.241.33
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6dd58a09-430e-4ecf-81eb-95ca94f8b765
+  xudp: true
+  servername: cloudflare.com
 - alpn:
   - ''
   alterId: '0'
@@ -97,7 +103,7 @@ proxies:
     headers: {}
     path:
     - /
-  name: 🇰🇷 | @WhiteDNS | KR77|612KB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR61|588KB/s|DNSOK|GPT⁺-KR
   network: http
   port: 80
   server: 217.142.138.61

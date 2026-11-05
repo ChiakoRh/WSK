@@ -13,53 +13,38 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: ❓ | @WhiteDNS | OT983|1.9MB/s|DNSOK|GPT⁺
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: ❓ | @WhiteDNS | OT1178|1.7MB/s|DNSOK|GPT⁺
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: None
+    path: /cctv13.m3u8
+  xudp: true
+  servername: None
+- name: ❓ | @WhiteDNS | OT1179|1.6MB/s|DNSOK|GPT⁺
   password: ''
-  port: 9090
-  server: 159.223.41.216
+  port: 7777
+  server: 202.58.75.98
   skip-cert-verify: true
   type: http
   username: ''
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT984|722KB/s|DNSOK|GPT⁺-FR
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0
-    short-id: e6
-  server: 161.97.160.224
-  tls: true
-  type: vless
-  udp: true
-  uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
-  xudp: true
-  servername: passport.yandex.ru
-- client-fingerprint: firefox
-  encryption: none
-  name: ❓ | @WhiteDNS | OT985|515KB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 465
-  server: 91.107.244.35
-  tls: true
-  type: vless
-  udp: true
-  uuid: a356fa77-7199-417a-80dd-0c0925789161
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.86 Safari/537.36
-    path: /
-  xudp: true
-  servername: hw5.roghanmo.com
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT983|1.9MB/s|DNSOK|GPT⁺
-  - ❓ | @WhiteDNS | OT984|722KB/s|DNSOK|GPT⁺-FR
-  - ❓ | @WhiteDNS | OT985|515KB/s|DNSOK|GPT⁺-DE
+  - ❓ | @WhiteDNS | OT1178|1.7MB/s|DNSOK|GPT⁺
+  - ❓ | @WhiteDNS | OT1179|1.6MB/s|DNSOK|GPT⁺
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

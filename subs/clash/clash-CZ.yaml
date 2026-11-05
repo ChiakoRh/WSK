@@ -13,43 +13,18 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇨🇿 | @WhiteDNS | CZ13|16.9MB/s|DNSOK|GPT⁺-CZ
-  network: tcp
-  port: 443
-  server: 178.208.89.21
-  tls: true
-  type: vless
-  udp: true
-  uuid: 689a62e4-37e7-41de-9e6a-f2a56368c9e2
-  xudp: true
-  servername: prod-eu-east-cz6.api-gateway.service-mesh.ingress-observability.speedtestinternet.link
-- name: 🇨🇿 | @WhiteDNS | CZ14|12.9MB/s|DNSOK|GPT⁺-CZ
-  password: ''
-  port: 443
-  server: 185.216.35.66
+- name: 🇨🇿 | @WhiteDNS | CZ11|25.0MB/s|DNSOK|GPT⁺-CZ
+  password: None
+  port: 9443
+  server: 152.233.16.174
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇨🇿 | @WhiteDNS | CZ15|5.9MB/s|DNSOK|GPT⁺-CZ
-  network: raw
-  port: 443
-  server: 178.208.89.21
-  tls: true
-  type: vless
-  udp: true
-  uuid: 689a62e4-37e7-41de-9e6a-f2a56368c9e2
-  xudp: true
-  servername: prod-eu-east-cz6.api-gateway.service-mesh.ingress-observability.speedtestinternet.link
-- name: 🇨🇿 | @WhiteDNS | CZ16|3.7MB/s|DNSOK|GPT⁺-CZ
+- name: 🇨🇿 | @WhiteDNS | CZ12|2.7MB/s|DNSOK|GPT⁺-CZ
   password: ''
-  port: 9443
-  server: 152.233.16.174
+  port: 443
+  server: 185.216.35.66
   skip-cert-verify: true
   tls: true
   type: http
@@ -58,10 +33,8 @@ proxy-groups:
 - name: CZ-Auto
   type: url-test
   proxies:
-  - 🇨🇿 | @WhiteDNS | CZ13|16.9MB/s|DNSOK|GPT⁺-CZ
-  - 🇨🇿 | @WhiteDNS | CZ14|12.9MB/s|DNSOK|GPT⁺-CZ
-  - 🇨🇿 | @WhiteDNS | CZ15|5.9MB/s|DNSOK|GPT⁺-CZ
-  - 🇨🇿 | @WhiteDNS | CZ16|3.7MB/s|DNSOK|GPT⁺-CZ
+  - 🇨🇿 | @WhiteDNS | CZ11|25.0MB/s|DNSOK|GPT⁺-CZ
+  - 🇨🇿 | @WhiteDNS | CZ12|2.7MB/s|DNSOK|GPT⁺-CZ
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

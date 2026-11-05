@@ -13,10 +13,31 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇩 | @WhiteDNS | ID96|1.5MB/s|DNSOK|GPT⁺
+- name: 🇮🇩 | @WhiteDNS | ID107|2.2MB/s|DNSOK|GPT⁺-ID
   password: ''
-  port: 7777
-  server: 163.61.187.18
+  port: 80
+  server: 157.20.253.187
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇮🇩 | @WhiteDNS | ID108|1.7MB/s|DNSOK|GPT⁺-ID
+  password: ''
+  port: 9090
+  server: 157.20.239.237
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇮🇩 | @WhiteDNS | ID109|751KB/s|DNSOK|GPT⁺-ID
+  password: ''
+  port: 1080
+  server: 103.167.156.22
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇮🇩 | @WhiteDNS | ID110|548KB/s|DNSOK|GPT⁺-ID
+  password: ''
+  port: 8080
+  server: 103.124.137.171
   skip-cert-verify: true
   type: http
   username: ''
@@ -24,7 +45,10 @@ proxy-groups:
 - name: ID-Auto
   type: url-test
   proxies:
-  - 🇮🇩 | @WhiteDNS | ID96|1.5MB/s|DNSOK|GPT⁺
+  - 🇮🇩 | @WhiteDNS | ID107|2.2MB/s|DNSOK|GPT⁺-ID
+  - 🇮🇩 | @WhiteDNS | ID108|1.7MB/s|DNSOK|GPT⁺-ID
+  - 🇮🇩 | @WhiteDNS | ID109|751KB/s|DNSOK|GPT⁺-ID
+  - 🇮🇩 | @WhiteDNS | ID110|548KB/s|DNSOK|GPT⁺-ID
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
