@@ -1,15 +1,41 @@
 proxies:
-- name: ❓ | @WhiteDNS | OT994|1.4MB/s|DNSOK|GPT⁺-CM
+- name: ❓ | @WhiteDNS | OT983|1.9MB/s|DNSOK|GPT⁺
   password: ''
-  port: 8081
-  server: 102.244.78.61
+  port: 9090
+  server: 159.223.41.216
   skip-cert-verify: true
   type: http
   username: ''
-- name: ❓ | @WhiteDNS | OT995|1.2MB/s|DNSOK|GPT⁺-US
-  password: ''
-  port: 1080
-  server: 209.50.255.91
-  skip-cert-verify: true
-  type: socks5
-  username: ''
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: ❓ | @WhiteDNS | OT984|722KB/s|DNSOK|GPT⁺-FR
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0
+    short-id: e6
+  server: 161.97.160.224
+  tls: true
+  type: vless
+  udp: true
+  uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
+  xudp: true
+  servername: passport.yandex.ru
+- client-fingerprint: firefox
+  encryption: none
+  name: ❓ | @WhiteDNS | OT985|515KB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 465
+  server: 91.107.244.35
+  tls: true
+  type: vless
+  udp: true
+  uuid: a356fa77-7199-417a-80dd-0c0925789161
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.86 Safari/537.36
+    path: /
+  xudp: true
+  servername: hw5.roghanmo.com

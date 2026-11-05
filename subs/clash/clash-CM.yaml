@@ -13,23 +13,16 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇲 | @WhiteDNS | CM7|1.8MB/s|DNSOK|GPT⁺-CM
-  password: ''
-  port: 8088
-  server: 102.244.78.61
-  skip-cert-verify: true
-  type: http
-  username: ''
-- name: 🇨🇲 | @WhiteDNS | CM8|1.8MB/s|DNSOK|GPT⁺-CM
+- name: 🇨🇲 | @WhiteDNS | CM9|1.9MB/s|DNSOK|GPT⁺-CM
   password: ''
   port: 8090
   server: 102.244.78.61
   skip-cert-verify: true
   type: http
   username: ''
-- name: 🇨🇲 | @WhiteDNS | CM9|1.5MB/s|DNSOK|GPT⁺-CM
+- name: 🇨🇲 | @WhiteDNS | CM10|1.5MB/s|DNSOK|GPT⁺-CM
   password: ''
-  port: 8082
+  port: 8088
   server: 102.244.78.61
   skip-cert-verify: true
   type: http
@@ -38,9 +31,8 @@ proxy-groups:
 - name: CM-Auto
   type: url-test
   proxies:
-  - 🇨🇲 | @WhiteDNS | CM7|1.8MB/s|DNSOK|GPT⁺-CM
-  - 🇨🇲 | @WhiteDNS | CM8|1.8MB/s|DNSOK|GPT⁺-CM
-  - 🇨🇲 | @WhiteDNS | CM9|1.5MB/s|DNSOK|GPT⁺-CM
+  - 🇨🇲 | @WhiteDNS | CM9|1.9MB/s|DNSOK|GPT⁺-CM
+  - 🇨🇲 | @WhiteDNS | CM10|1.5MB/s|DNSOK|GPT⁺-CM
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

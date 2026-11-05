@@ -16,7 +16,7 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI64|31.0MB/s|DNSOK|GPT⁺-DE
+  name: 🇫🇮 | @WhiteDNS | FI59|23.7MB/s|DNSOK|GPT⁺-DE
   network: tcp
   port: 3939
   reality-opts:
@@ -30,41 +30,6 @@ proxies:
   xudp: true
   servername: ai.android
 - alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  fingerprint: cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e
-  name: 🇫🇮 | @WhiteDNS | FI65|5.6MB/s|DNSOK|GPT⁺-FI
-  network: xhttp
-  port: 443
-  server: 199.232.78.199
-  tls: true
-  type: vless
-  udp: true
-  uuid: 42ff4e55-0214-45db-a2a7-02d81afa13e5
-  xhttp-opts:
-    host: zehnix.global.ssl.fastly.net
-    mode: auto
-    path: /
-  xudp: true
-  servername: steamstatic.com
-- client-fingerprint: ios
-  encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI66|5.4MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 2425
-  reality-opts:
-    public-key: MnPGY1Vo4ZbYdpLRTYHoolv5s_pwO41karyJfnQ0F3o
-    short-id: 9b60d3
-  server: areal1.greewebservices.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: fb1d2d8a-d9bd-496f-9d5f-f179cbd00123
-  xudp: true
-  servername: play.googleapis.com
-- alpn:
   - ''
   alterId: '0'
   cipher: auto
@@ -74,27 +39,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI67|2.3MB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 2053
-  server: 185.212.149.7
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: aeb3c019-ae83-4677-af97-846baa787ad5
-  xudp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - down-cdn.dingtalk.com
-    path:
-    - /3x
-  name: 🇫🇮 | @WhiteDNS | FI68|1.7MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI60|2.4MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 52080
   server: 185.212.149.7
@@ -104,15 +49,33 @@ proxies:
   udp: true
   uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
   xudp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    path:
+    - /3x
+  name: 🇫🇮 | @WhiteDNS | FI61|2.4MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 2053
+  server: 185.212.149.7
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: aeb3c019-ae83-4677-af97-846baa787ad5
+  xudp: true
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI64|31.0MB/s|DNSOK|GPT⁺-DE
-  - 🇫🇮 | @WhiteDNS | FI65|5.6MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI66|5.4MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI67|2.3MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI68|1.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI59|23.7MB/s|DNSOK|GPT⁺-DE
+  - 🇫🇮 | @WhiteDNS | FI60|2.4MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI61|2.4MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
