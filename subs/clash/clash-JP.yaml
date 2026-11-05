@@ -13,9 +13,27 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- alterId: '0'
+- name: 🇯🇵 | @WhiteDNS | JP101|1.7MB/s|DNSOK|GPT⁺-JP
+  password: i99Cef
+  port: 28138
+  server: 211.20.156.191
+  skip-cert-verify: true
+  sni: ctldl.windowsupdate.com
+  type: trojan
+  udp: true
+  network: tcp
+- name: 🇯🇵 | @WhiteDNS | JP102|1.5MB/s|DNSOK|GPT⁺-JP
+  password: i99Cef
+  port: 28150
+  server: 211.20.156.191
+  skip-cert-verify: true
+  sni: download.windowsupdate.com
+  type: trojan
+  udp: true
+  network: tcp
+- alterId: 0
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP83|2.0MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP103|1.5MB/s|DNSOK|GPT⁺-JP
   network: ws
   port: 80
   server: 168.138.43.75
@@ -28,47 +46,8 @@ proxies:
     headers: {}
     path: /cctv13.m3u8
   xudp: true
-- name: 🇯🇵 | @WhiteDNS | JP84|1.7MB/s|DNSOK|GPT⁺-JP
-  password: i99Cef
-  port: 27242
-  server: 45.32.57.242
-  skip-cert-verify: true
-  sni: download.windowsupdate.com
-  type: trojan
-  udp: true
-  network: tcp
-- name: 🇯🇵 | @WhiteDNS | JP85|1.4MB/s|DNSOK|GPT⁺-JP
-  password: i99Cef
-  port: 28138
-  server: 211.20.156.191
-  skip-cert-verify: true
-  sni: ctldl.windowsupdate.com
-  type: trojan
-  udp: true
-  network: tcp
-- name: 🇯🇵 | @WhiteDNS | JP86|1.3MB/s|DNSOK|GPT⁺-JP
-  password: ''
-  port: 10800
-  server: 180.222.187.50
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP87|1.2MB/s|DNSOK|GPT⁺-JP
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
-    short-id: 051f20c2344a2dfd
-  server: 45.78.52.26
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0a3432cd-74b8-413a-896d-f51492b030bc
-  xudp: true
-  servername: portal.citygrainla.com
-- name: 🇯🇵 | @WhiteDNS | JP88|972KB/s|DNSOK|GPT⁺-JP
+  servername: 168.138.43.75
+- name: 🇯🇵 | @WhiteDNS | JP104|1.3MB/s|DNSOK|GPT⁺-JP
   password: i99Cef
   port: 28133
   server: 211.20.156.191
@@ -77,16 +56,34 @@ proxies:
   type: trojan
   udp: true
   network: tcp
+- encryption: none
+  name: 🇯🇵 | @WhiteDNS | JP105|1.3MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  xudp: true
+- name: 🇯🇵 | @WhiteDNS | JP106|1.0MB/s|DNSOK|GPT⁺-JP
+  password: i99Cef
+  port: 27242
+  server: 45.32.57.242
+  skip-cert-verify: true
+  sni: download.windowsupdate.com
+  type: trojan
+  udp: true
+  network: tcp
 proxy-groups:
 - name: JP-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP83|2.0MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP84|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP85|1.4MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP86|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP87|1.2MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP88|972KB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP101|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP102|1.5MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP103|1.5MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP104|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP105|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP106|1.0MB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

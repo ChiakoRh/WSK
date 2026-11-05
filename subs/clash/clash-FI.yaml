@@ -13,33 +13,6 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- down: ''
-  fingerprint: ''
-  name: 🇫🇮 | @WhiteDNS | FI45|6.2MB/s|DNSOK|GPT⁺-FI
-  obfs: salamander
-  obfs-password: ckwudzzsfoltmbmi
-  password: xo43w4tc13ou2h3x
-  port: 60000
-  server: mein-1.octavia.dpdns.org
-  skip-cert-verify: false
-  sni: main-1.octavia.dpdns.org
-  type: hysteria2
-  up: ''
-- encryption: mlkem768x25519plus.random.0rtt.0hyW1XvQeYqdlsMRw1O7zOvfdRtndSIMP8v_Bk5RCmc
-  http-opts:
-    headers:
-      Host:
-      - amp-api-edge.apps.apple.com
-    path:
-    - /
-  name: 🇫🇮 | @WhiteDNS | FI46|4.3MB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 6000
-  server: mein-1.octavia.dpdns.org
-  type: vless
-  udp: true
-  uuid: e1acad9b-e14e-4995-b2d6-5721823cb0a7
-  xudp: true
 - alpn:
   - ''
   alterId: '0'
@@ -50,7 +23,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI47|2.7MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI58|1.8MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
@@ -70,7 +43,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI48|2.4MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI59|561KB/s|DNSOK|GPT⁺-FI
   network: http
   port: 52080
   server: 185.212.149.7
@@ -84,10 +57,8 @@ proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI45|6.2MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI46|4.3MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI47|2.7MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI48|2.4MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI58|1.8MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI59|561KB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
