@@ -1,4 +1,53 @@
 proxies:
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI52|2.5MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: AMOBkNsSbIM8YBI6uosUBioGJSOp8eliEpW7vTZ4Mks
+    short-id: 8fd699a1c79e360d
+  server: 104.171.134.135
+  tls: true
+  type: vless
+  udp: true
+  uuid: f9f70641-667b-46f2-a37e-e3858acbcd9b
+  xudp: true
+  servername: 360.yandex.ru
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI53|2.5MB/s|DNSOK|GPT⁺-FI
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: AMOBkNsSbIM8YBI6uosUBioGJSOp8eliEpW7vTZ4Mks
+    short-id: 8fd699a1c79e360d
+  server: 104.171.134.135
+  tls: true
+  type: vless
+  udp: true
+  uuid: f9f70641-667b-46f2-a37e-e3858acbcd9b
+  xhttp-opts:
+    mode: auto
+    path: /vless-xhttp
+  xudp: true
+  servername: 360.yandex.ru
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI54|1.6MB/s|DNSOK|GPT⁺-FI
+  network: raw
+  port: 8443
+  reality-opts:
+    public-key: AMOBkNsSbIM8YBI6uosUBioGJSOp8eliEpW7vTZ4Mks
+    short-id: 8fd699a1c79e360d
+  server: 104.171.134.135
+  tls: true
+  type: vless
+  udp: true
+  uuid: f9f70641-667b-46f2-a37e-e3858acbcd9b
+  xudp: true
+  servername: 360.yandex.ru
 - alpn:
   - ''
   alterId: '0'
@@ -9,7 +58,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI46|866KB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI55|549KB/s|DNSOK|GPT⁺-FI
   network: http
   port: 52080
   server: 185.212.149.7
@@ -18,24 +67,4 @@ proxies:
   type: vmess
   udp: true
   uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
-  xudp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - down-cdn.dingtalk.com
-    path:
-    - /3x
-  name: 🇫🇮 | @WhiteDNS | FI47|844KB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 2053
-  server: 185.212.149.7
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: aeb3c019-ae83-4677-af97-846baa787ad5
   xudp: true

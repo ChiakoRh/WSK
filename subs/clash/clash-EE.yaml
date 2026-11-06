@@ -13,15 +13,23 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇪🇪 | @WhiteDNS | EE14|5.6MB/s|DNSOK|GPT⁺-EE
+- name: 🇪🇪 | @WhiteDNS | EE13|5.6MB/s|DNSOK|GPT⁺-EE
+  password: None
+  port: 9443
+  server: 95.153.31.66
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇪🇪 | @WhiteDNS | EE14|5.5MB/s|DNSOK|GPT⁺-EE
   password: ''
-  port: 443
+  port: 9443
   server: 95.153.32.2
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇪🇪 | @WhiteDNS | EE15|5.4MB/s|DNSOK|GPT⁺-EE
+- name: 🇪🇪 | @WhiteDNS | EE15|2.7MB/s|DNSOK|GPT⁺-EE
   password: ''
   port: 9443
   server: 95.153.31.66
@@ -29,10 +37,10 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇪🇪 | @WhiteDNS | EE16|2.7MB/s|DNSOK|GPT⁺-EE
-  password: None
-  port: 9443
-  server: 95.153.31.66
+- name: 🇪🇪 | @WhiteDNS | EE16|2.4MB/s|DNSOK|GPT⁺-EE
+  password: ''
+  port: 443
+  server: 95.153.32.2
   skip-cert-verify: true
   tls: true
   type: http
@@ -41,9 +49,10 @@ proxy-groups:
 - name: EE-Auto
   type: url-test
   proxies:
-  - 🇪🇪 | @WhiteDNS | EE14|5.6MB/s|DNSOK|GPT⁺-EE
-  - 🇪🇪 | @WhiteDNS | EE15|5.4MB/s|DNSOK|GPT⁺-EE
-  - 🇪🇪 | @WhiteDNS | EE16|2.7MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE13|5.6MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE14|5.5MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE15|2.7MB/s|DNSOK|GPT⁺-EE
+  - 🇪🇪 | @WhiteDNS | EE16|2.4MB/s|DNSOK|GPT⁺-EE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
