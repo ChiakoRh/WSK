@@ -13,15 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇵🇱 | @WhiteDNS | PL108|19.8MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 37.120.156.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇵🇱 | @WhiteDNS | PL109|19.7MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL86|15.3MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 151.115.54.133
@@ -29,31 +21,23 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇵🇱 | @WhiteDNS | PL110|18.0MB/s|DNSOK|GPT⁺-PL
-  password: None
+- name: 🇵🇱 | @WhiteDNS | PL87|5.5MB/s|DNSOK|GPT⁺-PL
+  password: ''
   port: 443
   server: 37.120.156.18
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇵🇱 | @WhiteDNS | PL111|4.3MB/s|DNSOK|GPT⁺-PL
-  network: tcp
-  port: 15443
-  reality-opts:
-    public-key: E1tfRtW_ZKqj9_itbRVEE8Ex0LaHu4Mk0XkgkGN0Kkg
-    short-id: fb5d6c1e1b2b5dd1
-  server: main.globalhost.pro
+- name: 🇵🇱 | @WhiteDNS | PL88|5.2MB/s|DNSOK|GPT⁺-PL
+  password: ''
+  port: 443
+  server: 37.120.156.34
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: 8dddc313-e588-478b-9175-8702da3235bf
-  xudp: true
-  servername: polv1.globalhost.pro
-- name: 🇵🇱 | @WhiteDNS | PL112|3.5MB/s|DNSOK|GPT⁺-PL
+  type: http
+  username: ''
+- name: 🇵🇱 | @WhiteDNS | PL89|2.5MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 31.186.220.204
@@ -61,32 +45,14 @@ proxies:
   tls: true
   type: http
   username: ''
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇵🇱 | @WhiteDNS | PL113|3.2MB/s|DNSOK|GPT⁺-PL
-  network: tcp
-  port: 15443
-  reality-opts:
-    public-key: E1tfRtW_ZKqj9_itbRVEE8Ex0LaHu4Mk0XkgkGN0Kkg
-    short-id: fb5d6c1e1b2b5dd1
-  server: 213.165.57.171
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8dddc313-e588-478b-9175-8702da3235bf
-  xudp: true
-  servername: polv1.globalhost.pro
 proxy-groups:
 - name: PL-Auto
   type: url-test
   proxies:
-  - 🇵🇱 | @WhiteDNS | PL108|19.8MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL109|19.7MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL110|18.0MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL111|4.3MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL112|3.5MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL113|3.2MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL86|15.3MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL87|5.5MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL88|5.2MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL89|2.5MB/s|DNSOK|GPT⁺-PL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

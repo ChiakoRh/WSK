@@ -13,50 +13,6 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI90|6.0MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: h8nmBEOYQ-o2oXAXHvWFfHD-zp6_N8DMOSk21bK8AX4
-    short-id: 56580a8098339f54
-  server: main.globalhost.pro
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8dddc313-e588-478b-9175-8702da3235bf
-  xudp: true
-  servername: fivibe.globalhost.pro
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI91|5.7MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: h8nmBEOYQ-o2oXAXHvWFfHD-zp6_N8DMOSk21bK8AX4
-    short-id: 56580a8098339f54
-  server: 213.165.57.171
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8dddc313-e588-478b-9175-8702da3235bf
-  xudp: true
-  servername: fivibe.globalhost.pro
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI92|5.0MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 8443
-  server: static.44.128.217.95.clients.your-server.de
-  tls: true
-  type: vless
-  udp: true
-  uuid: 32142b38-035b-463a-bf84-a34f1c68c726
-  xudp: true
-  servername: static.44.128.217.95.clients.your-server.de
 - alpn:
   - ''
   alterId: '0'
@@ -67,7 +23,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI93|2.7MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI46|866KB/s|DNSOK|GPT⁺-FI
   network: http
   port: 52080
   server: 185.212.149.7
@@ -87,7 +43,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI94|2.5MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI47|844KB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
@@ -101,11 +57,8 @@ proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI90|6.0MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI91|5.7MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI92|5.0MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI93|2.7MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI94|2.5MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI46|866KB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI47|844KB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

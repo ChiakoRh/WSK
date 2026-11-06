@@ -13,32 +13,60 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE303|40.3MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s
-    short-id: a1b2c3d4b5
-  server: de-4.it-crp.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: 73a0f995-f2f1-4d47-a99d-a6dcc1952bf9
-  xudp: true
-  servername: de-4.it-crp.ru
 - cipher: aes-256-gcm
-  name: 🇩🇪 | @WhiteDNS | DE304|37.2MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE168|36.6MB/s|DNSOK|GPT⁺-DE
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 57.129.76.233
   type: ss
   udp: true
+- name: 🇩🇪 | @WhiteDNS | DE169|34.0MB/s|DNSOK|GPT⁺-DE
+  password: None
+  port: 9002
+  server: 158.173.154.2
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇩🇪 | @WhiteDNS | DE170|33.8MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 443
+  server: 213.109.163.119
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  name: 🇩🇪 | @WhiteDNS | DE171|33.2MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  password: 6cddea99-9b18-4d42-8638-131bd9f5374f
+  port: 443
+  server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
+  skip-cert-verify: true
+  sni: 8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
+  type: trojan
+  udp: true
+- name: 🇩🇪 | @WhiteDNS | DE172|32.2MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 9443
+  server: 79.127.156.177
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  name: 🇩🇪 | @WhiteDNS | DE173|31.6MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  password: 6cddea99-9b18-4d42-8638-131bd9f5374f
+  port: 443
+  server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
+  skip-cert-verify: true
+  sni: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: aes-128-gcm
-  name: 🇩🇪 | @WhiteDNS | DE305|34.8MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE174|31.3MB/s|DNSOK|GPT⁺-DE
   port: 1234
   server: 141.95.65.9
   skip-cert-verify: true
@@ -48,82 +76,25 @@ proxies:
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   network: tcp
   servername: supervpn.super.com
-- name: 🇩🇪 | @WhiteDNS | DE306|33.8MB/s|DNSOK|GPT⁺-DE
-  password: None
-  port: 9002
-  server: 158.173.154.4
+- client-fingerprint: chrome
+  name: 🇩🇪 | @WhiteDNS | DE175|30.5MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  password: 5t6i121em5lkmsmk
+  port: 51520
+  server: de001.zestapp778.com
   skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇩🇪 | @WhiteDNS | DE307|33.0MB/s|DNSOK|GPT⁺-DE
+  sni: de001.zestapp778.com
+  type: trojan
+  udp: true
+- name: 🇩🇪 | @WhiteDNS | DE176|30.1MB/s|DNSOK|GPT⁺-DE
   password: ''
   port: 443
-  server: 149.36.50.129
+  server: 87.249.132.97
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE308|33.0MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 8443
-  server: static.80.222.99.91.clients.your-server.de
-  tls: true
-  type: vless
-  udp: true
-  uuid: 32142b38-035b-463a-bf84-a34f1c68c726
-  xudp: true
-  servername: static.105.32.99.88.clients.your-server.de
-- name: 🇩🇪 | @WhiteDNS | DE309|32.8MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 9443
-  server: 79.127.156.177
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE310|32.8MB/s|DNSOK|GPT⁺-DE
-  network: raw
-  port: 8443
-  server: static.80.222.99.91.clients.your-server.de
-  tls: true
-  type: vless
-  udp: true
-  uuid: 32142b38-035b-463a-bf84-a34f1c68c726
-  xudp: true
-  servername: static.105.32.99.88.clients.your-server.de
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪 | @WhiteDNS | DE311|32.2MB/s|DNSOK|GPT⁺-DE
-  port: 1234
-  server: 162.19.204.71
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  network: tcp
-  servername: supervpn.super.com
-- name: 🇩🇪 | @WhiteDNS | DE312|32.2MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 443
-  server: 149.36.50.157
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- cipher: aes-256-gcm
-  name: 🇩🇪 | @WhiteDNS | DE313|32.1MB/s|DNSOK|GPT⁺-DE
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 57.129.83.85
-  type: ss
-  udp: true
-- name: 🇩🇪 | @WhiteDNS | DE314|31.9MB/s|DNSOK|GPT⁺-DE
+- name: 🇩🇪 | @WhiteDNS | DE177|29.8MB/s|DNSOK|GPT⁺-DE
   password: ''
   port: 9002
   server: 158.173.154.1
@@ -131,49 +102,28 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇩🇪 | @WhiteDNS | DE315|31.9MB/s|DNSOK|GPT⁺-DE
-  password: None
-  port: 443
-  server: 87.249.132.97
+- name: 🇩🇪 | @WhiteDNS | DE178|29.7MB/s|DNSOK|GPT⁺-DE
+  password: 5t6i121em5lkmsmk
+  port: 51520
+  server: de001.zestapp778.com
   skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇩🇪 | @WhiteDNS | DE316|31.4MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 443
-  server: 149.36.50.1
+  sni: de001.zestapp778.com
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇩🇪 | @WhiteDNS | DE179|29.6MB/s|DNSOK|GPT⁺-DE
+  password: 5t6i121em5lkmsmk
+  port: 51520
+  server: de001.zestapp778.com
   skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇩🇪 | @WhiteDNS | DE317|31.3MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 443
-  server: 159.69.94.125
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇩🇪 | @WhiteDNS | DE318|30.3MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 9002
-  server: 158.173.154.3
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇩🇪 | @WhiteDNS | DE319|29.8MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 9002
-  server: 158.173.154.5
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+  type: trojan
+  udp: true
+  network: tcp
+  sni: de001.zestapp778.com
 - down: ''
   fingerprint: ''
-  name: 🇩🇪 | @WhiteDNS | DE320|29.2MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE180|29.6MB/s|DNSOK|GPT⁺-DE
   obfs: ''
   obfs-password: ''
   password: miaoge110
@@ -183,161 +133,15 @@ proxies:
   sni: 5.45.100.100
   type: hysteria2
   up: ''
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE321|28.9MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s
-    short-id: a1b2c3d4b5
-  server: 93.152.223.49
-  tls: true
-  type: vless
-  udp: true
-  uuid: 73a0f995-f2f1-4d47-a99d-a6dcc1952bf9
-  xudp: true
-  servername: de-4.it-crp.ru
-- name: 🇩🇪 | @WhiteDNS | DE322|27.7MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 443
-  server: 116.202.172.99
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE323|27.5MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 10105
-  reality-opts:
-    public-key: PFC3JN1er1JE2vAemwRhNjewz8I4NUWP4XHf2Dza4Es
-    short-id: 12e321badd07906e
-  server: 91.107.179.0
-  tls: true
-  type: vless
-  udp: true
-  uuid: ad3f4a0a-a89f-498e-9869-a93c8fa185b1
-  xudp: true
-  servername: play.google.com
-- name: 🇩🇪 | @WhiteDNS | DE324|26.6MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 443
-  server: 152.233.20.206
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE325|26.5MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 10105
-  reality-opts:
-    public-key: PFC3JN1er1JE2vAemwRhNjewz8I4NUWP4XHf2Dza4Es
-    short-id: 12e321badd07906e
-  server: germany1.xorsand.eu
-  tls: true
-  type: vless
-  udp: true
-  uuid: ad3f4a0a-a89f-498e-9869-a93c8fa185b1
-  xudp: true
-  servername: play.google.com
-- name: 🇩🇪 | @WhiteDNS | DE326|26.4MB/s|DNSOK|GPT⁺-DE
+- name: 🇩🇪 | @WhiteDNS | DE181|29.4MB/s|DNSOK|GPT⁺-DE
   password: None
-  port: 443
-  server: 152.233.20.206
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- down: ''
-  fingerprint: ''
-  name: 🇩🇪 | @WhiteDNS | DE327|23.3MB/s|DNSOK|GPT⁺-DE
-  obfs: ''
-  obfs-password: ''
-  password: mhsl
-  port: 14444
-  server: 88.99.213.222
-  skip-cert-verify: true
-  sni: ''
-  type: hysteria2
-  up: ''
-  disable-sni: true
-- name: 🇩🇪 | @WhiteDNS | DE328|23.1MB/s|DNSOK|GPT⁺-DE
-  password: ''
   port: 443
   server: 87.249.132.97
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE329|23.0MB/s|DNSOK|GPT⁺-DE
-  port: 10105
-  reality-opts:
-    public-key: PFC3JN1er1JE2vAemwRhNjewz8I4NUWP4XHf2Dza4Es
-    short-id: 12e321badd07906e
-  server: 91.107.179.0
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ad3f4a0a-a89f-498e-9869-a93c8fa185b1
-  network: tcp
-  servername: play.google.com
-- name: 🇩🇪 | @WhiteDNS | DE330|7.5MB/s|DNSOK|GPT⁺-DE
-  password: None
-  port: 9002
-  server: 158.173.154.2
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- down: ''
-  fingerprint: ''
-  name: 🇩🇪 | @WhiteDNS | DE331|7.3MB/s|DNSOK|GPT⁺-DE
-  obfs: ''
-  obfs-password: ''
-  password: mhsl
-  port: 14444
-  server: 88.99.213.222
-  skip-cert-verify: true
-  sni: 88.99.213.222
-  type: hysteria2
-  up: ''
-- down: ''
-  fingerprint: ''
-  name: 🇩🇪 | @WhiteDNS | DE332|7.2MB/s|DNSOK|GPT⁺-DE
-  obfs: ''
-  obfs-password: ''
-  password: miaoge110
-  port: 51511
-  server: 5.45.100.100
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  up: ''
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE333|7.0MB/s|DNSOK|GPT⁺-DE
-  port: 10105
-  reality-opts:
-    public-key: PFC3JN1er1JE2vAemwRhNjewz8I4NUWP4XHf2Dza4Es
-    short-id: 12e321badd07906e
-  server: germany1.xorsand.eu
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ad3f4a0a-a89f-498e-9869-a93c8fa185b1
-  network: tcp
-  servername: play.google.com
-- name: 🇩🇪 | @WhiteDNS | DE334|6.4MB/s|DNSOK|GPT⁺-DE
+- name: 🇩🇪 | @WhiteDNS | DE182|28.9MB/s|DNSOK|GPT⁺-DE
   password: ''
   port: 9443
   server: 87.249.132.97
@@ -345,26 +149,81 @@ proxies:
   tls: true
   type: http
   username: ''
-- down: ''
-  fingerprint: ''
-  name: 🇩🇪 | @WhiteDNS | DE335|6.4MB/s|DNSOK|GPT⁺-DE
-  obfs: ''
-  obfs-password: ''
-  password: miaoge110
-  port: 51511
-  server: 5.45.100.100
+- name: 🇩🇪 | @WhiteDNS | DE183|28.9MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 443
+  server: 149.36.50.129
   skip-cert-verify: true
-  sni: ''
-  type: hysteria2
-  up: ''
-  disable-sni: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇩🇪 | @WhiteDNS | DE184|28.7MB/s|DNSOK|GPT⁺-DE
+  password: None
+  port: 9002
+  server: 158.173.154.4
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇩🇪 | @WhiteDNS | DE185|28.7MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 9002
+  server: 158.173.154.3
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇩🇪 | @WhiteDNS | DE186|27.9MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 443
+  server: 159.69.94.125
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 | @WhiteDNS | DE187|27.8MB/s|DNSOK|GPT⁺-DE
+  port: 1234
+  server: 162.19.204.71
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  network: tcp
+  servername: supervpn.super.com
+- name: 🇩🇪 | @WhiteDNS | DE188|27.2MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 443
+  server: 152.233.20.206
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇩🇪 | @WhiteDNS | DE189|27.1MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 9002
+  server: 158.173.154.5
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇩🇪 | @WhiteDNS | DE190|26.8MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 443
+  server: 116.202.172.99
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 - alpn:
   - h3
   - h2
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE336|5.8MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE191|26.4MB/s|DNSOK|GPT⁺-DE
   network: ws
   port: 2083
   server: sino.bestsellers1.site
@@ -375,122 +234,12 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.102 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/45.0.2454.85 Safari/537.36
     path: /
   xudp: true
   servername: sino.bestsellers1.site
-- name: 🇩🇪 | @WhiteDNS | DE337|5.6MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 443
-  server: 213.109.163.119
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE338|5.0MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 12443
-  reality-opts:
-    public-key: 5C1yrE0mxh0Ot38vTCMYQi-NzTE5JKCvjPErA_XD3mM
-    short-id: 227e5c667aba5f3a
-  server: main.globalhost.pro
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8dddc313-e588-478b-9175-8702da3235bf
-  xudp: true
-  servername: gerv1.globalhost.pro
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE339|4.5MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: lAh8y0EGMY_zeBvgsis--OyCjv5hPHzzh-C7iOtU73Q
-    short-id: 56580a8098339f54
-  server: 213.165.57.171
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8dddc313-e588-478b-9175-8702da3235bf
-  xudp: true
-  servername: dehet.globalhost.pro
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE340|3.0MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: lAh8y0EGMY_zeBvgsis--OyCjv5hPHzzh-C7iOtU73Q
-    short-id: 56580a8098339f54
-  server: main.globalhost.pro
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8dddc313-e588-478b-9175-8702da3235bf
-  xudp: true
-  servername: dehet.globalhost.pro
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE341|2.9MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 12443
-  reality-opts:
-    public-key: 5C1yrE0mxh0Ot38vTCMYQi-NzTE5JKCvjPErA_XD3mM
-    short-id: 227e5c667aba5f3a
-  server: 213.165.57.171
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8dddc313-e588-478b-9175-8702da3235bf
-  xudp: true
-  servername: gerv1.globalhost.pro
-- name: 🇩🇪 | @WhiteDNS | DE342|2.7MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 443
-  server: 217.92.132.233
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE343|1.8MB/s|DNSOK|GPT⁺-FR
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: 33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0
-    short-id: e6
-  server: ww3.levikogjgfdd.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
-  xudp: true
-  servername: passport.yandex.ru
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE344|1.7MB/s|DNSOK|GPT⁺-FR
-  port: 443
-  reality-opts:
-    public-key: 33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0
-    short-id: e6
-  server: ww3.levikogjgfdd.ir
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
-  network: tcp
-  servername: passport.yandex.ru
-- name: 🇩🇪 | @WhiteDNS | DE345|1.2MB/s|DNSOK|GPT⁺-DE
+- name: 🇩🇪 | @WhiteDNS | DE192|25.7MB/s|DNSOK|GPT⁺-DE
   password: ''
   port: 443
   server: 213.177.229.161
@@ -498,14 +247,133 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇩🇪 | @WhiteDNS | DE346|998KB/s|DNSOK|GPT⁺
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 | @WhiteDNS | DE193|25.5MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 2053
+  server: 178.63.237.148
+  type: vmess
+  udp: true
+  uuid: c69fd960-c455-4a05-88d1-d83e9431bc76
+  xudp: true
+- client-fingerprint: ios
+  encryption: none
+  name: 🇩🇪 | @WhiteDNS | DE194|25.3MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 1310
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+    short-id: 9b60d3
+  server: p2real1.greewebservices.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: fb1d2d8a-d9bd-496f-9d5f-f179cbd00123
+  xudp: true
+  servername: play.googleapis.com
+- name: 🇩🇪 | @WhiteDNS | DE195|24.8MB/s|DNSOK|GPT⁺-DE
   password: ''
-  port: 9050
-  server: 45.61.129.165
+  port: 443
+  server: 149.36.50.157
   skip-cert-verify: true
-  type: socks5
+  tls: true
+  type: http
   username: ''
-- name: 🇩🇪 | @WhiteDNS | DE347|551KB/s|DNSOK|GPT⁺-DE
+- down: ''
+  fingerprint: ''
+  name: 🇩🇪 | @WhiteDNS | DE196|8.5MB/s|DNSOK|GPT⁺-DE
+  obfs: ''
+  obfs-password: ''
+  password: miaoge110
+  port: 51511
+  server: 5.45.100.100
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  up: ''
+- name: 🇩🇪 | @WhiteDNS | DE197|7.6MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 443
+  server: 149.36.50.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- down: ''
+  fingerprint: ''
+  name: 🇩🇪 | @WhiteDNS | DE198|6.9MB/s|DNSOK|GPT⁺-DE
+  obfs: ''
+  obfs-password: ''
+  password: miaoge110
+  port: 51511
+  server: 5.45.100.100
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+  up: ''
+  disable-sni: true
+- client-fingerprint: edge
+  encryption: none
+  name: 🇩🇪 | @WhiteDNS | DE199|5.7MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 4445
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+    short-id: e3085d4fc679ba12
+  server: areal3.greewebservices.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: fb1d2d8a-d9bd-496f-9d5f-f179cbd00123
+  xudp: true
+  servername: amp-api-edge.apps.apple.com
+- client-fingerprint: ios
+  encryption: none
+  name: 🇩🇪 | @WhiteDNS | DE200|5.6MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 1320
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+    short-id: 9b60d3
+  server: p2real22.greewebservices.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: fb1d2d8a-d9bd-496f-9d5f-f179cbd00123
+  xudp: true
+  servername: play.googleapis.com
+- client-fingerprint: ios
+  encryption: none
+  name: 🇩🇪 | @WhiteDNS | DE201|3.1MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 1330
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+    short-id: 9b60d3
+  server: p2real33.greewebservices.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: fb1d2d8a-d9bd-496f-9d5f-f179cbd00123
+  xudp: true
+  servername: play.googleapis.com
+- cipher: aes-256-gcm
+  name: 🇩🇪 | @WhiteDNS | DE202|1.7MB/s|DNSOK|GPT⁺-DE
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 57.129.83.85
+  type: ss
+  udp: true
+- name: 🇩🇪 | @WhiteDNS | DE203|1.7MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 443
+  server: 217.92.132.233
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇩🇪 | @WhiteDNS | DE204|545KB/s|DNSOK|GPT⁺-DE
   password: e4b72b531a2d10900519
   port: 443
   server: 167.172.172.190
@@ -517,51 +385,43 @@ proxy-groups:
 - name: DE-Auto
   type: url-test
   proxies:
-  - 🇩🇪 | @WhiteDNS | DE303|40.3MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE304|37.2MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE305|34.8MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE306|33.8MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE307|33.0MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE308|33.0MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE309|32.8MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE310|32.8MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE311|32.2MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE312|32.2MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE313|32.1MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE314|31.9MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE315|31.9MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE316|31.4MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE317|31.3MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE318|30.3MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE319|29.8MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE320|29.2MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE321|28.9MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE322|27.7MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE323|27.5MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE324|26.6MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE325|26.5MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE326|26.4MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE327|23.3MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE328|23.1MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE329|23.0MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE330|7.5MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE331|7.3MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE332|7.2MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE333|7.0MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE334|6.4MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE335|6.4MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE336|5.8MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE337|5.6MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE338|5.0MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE339|4.5MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE340|3.0MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE341|2.9MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE342|2.7MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE343|1.8MB/s|DNSOK|GPT⁺-FR
-  - 🇩🇪 | @WhiteDNS | DE344|1.7MB/s|DNSOK|GPT⁺-FR
-  - 🇩🇪 | @WhiteDNS | DE345|1.2MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE346|998KB/s|DNSOK|GPT⁺
-  - 🇩🇪 | @WhiteDNS | DE347|551KB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE168|36.6MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE169|34.0MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE170|33.8MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE171|33.2MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE172|32.2MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE173|31.6MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE174|31.3MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE175|30.5MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE176|30.1MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE177|29.8MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE178|29.7MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE179|29.6MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE180|29.6MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE181|29.4MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE182|28.9MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE183|28.9MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE184|28.7MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE185|28.7MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE186|27.9MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE187|27.8MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE188|27.2MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE189|27.1MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE190|26.8MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE191|26.4MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE192|25.7MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE193|25.5MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE194|25.3MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE195|24.8MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE196|8.5MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE197|7.6MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE198|6.9MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE199|5.7MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE200|5.6MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE201|3.1MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE202|1.7MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE203|1.7MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE204|545KB/s|DNSOK|GPT⁺-DE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
