@@ -13,22 +13,29 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB112|26.1MB/s|DNSOK|GPT⁺-GB
+  password: 51_ydomD0FhsOWX3Y1lULA
+  port: 2055
+  server: 78.141.234.176
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
-  name: 🇬🇧 | @WhiteDNS | GB72|22.6MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB113|22.5MB/s|DNSOK|GPT⁺-GB
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 198.244.202.215
   type: ss
   udp: true
-- name: 🇬🇧 | @WhiteDNS | GB73|20.8MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 443
-  server: 185.164.138.156
+- name: 🇬🇧 | @WhiteDNS | GB114|22.3MB/s|DNSOK|GPT⁺-GB
+  password: None
+  port: 9443
+  server: 84.17.50.129
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB74|20.7MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB115|21.8MB/s|DNSOK|GPT⁺-GB
   password: None
   port: 443
   server: 84.17.50.193
@@ -36,23 +43,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB75|19.4MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 9443
-  server: 84.17.50.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB76|18.9MB/s|DNSOK|GPT⁺-GB
-  password: None
-  port: 443
-  server: 212.102.63.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB77|18.1MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB116|21.5MB/s|DNSOK|GPT⁺-GB
   password: None
   port: 443
   server: 212.102.63.31
@@ -60,15 +51,14 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB78|18.1MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 9443
-  server: 84.233.178.33
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇬🇧 | @WhiteDNS | GB79|17.2MB/s|DNSOK|GPT⁺-GB
+- cipher: aes-256-gcm
+  name: 🇬🇧 | @WhiteDNS | GB117|21.2MB/s|DNSOK|GPT⁺-GB
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 198.244.201.129
+  type: ss
+  udp: true
+- name: 🇬🇧 | @WhiteDNS | GB118|18.2MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
   server: 37.120.233.18
@@ -76,14 +66,47 @@ proxies:
   tls: true
   type: http
   username: ''
-- cipher: aes-256-gcm
-  name: 🇬🇧 | @WhiteDNS | GB80|6.5MB/s|DNSOK|GPT⁺-GB
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 198.244.201.129
-  type: ss
+- name: 🇬🇧 | @WhiteDNS | GB119|6.7MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 443
+  server: 212.102.63.61
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB120|6.1MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 9443
+  server: 84.233.178.33
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB121|4.4MB/s|DNSOK|GPT⁺-GB
+  password: None
+  port: 443
+  server: 212.102.63.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇬🇧 | @WhiteDNS | GB122|3.1MB/s|DNSOK|GPT⁺-GB
+  network: tcp
+  port: 14443
+  reality-opts:
+    public-key: aWXmWqqapYYyonEOWAjXYjVxmUe5vzdXhSOsMk5bZyY
+    short-id: cca618e88d2ccb46
+  server: main.globalhost.pro
+  tls: true
+  type: vless
   udp: true
-- name: 🇬🇧 | @WhiteDNS | GB81|5.0MB/s|DNSOK|GPT⁺-GB
+  uuid: 8dddc313-e588-478b-9175-8702da3235bf
+  xudp: true
+  servername: gbv1.globalhost.pro
+- name: 🇬🇧 | @WhiteDNS | GB123|2.8MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 9443
   server: 37.120.233.34
@@ -91,7 +114,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB82|4.8MB/s|DNSOK|GPT⁺-RO
+- name: 🇬🇧 | @WhiteDNS | GB124|2.3MB/s|DNSOK|GPT⁺-RO
   password: ''
   port: 443
   server: 185.163.110.194
@@ -99,21 +122,40 @@ proxies:
   tls: true
   type: http
   username: ''
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇬🇧 | @WhiteDNS | GB125|1.6MB/s|DNSOK|GPT⁺-GB
+  network: tcp
+  port: 14443
+  reality-opts:
+    public-key: aWXmWqqapYYyonEOWAjXYjVxmUe5vzdXhSOsMk5bZyY
+    short-id: cca618e88d2ccb46
+  server: 213.165.57.171
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8dddc313-e588-478b-9175-8702da3235bf
+  xudp: true
+  servername: gbv1.globalhost.pro
 proxy-groups:
 - name: GB-Auto
   type: url-test
   proxies:
-  - 🇬🇧 | @WhiteDNS | GB72|22.6MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB73|20.8MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB74|20.7MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB75|19.4MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB76|18.9MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB77|18.1MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB78|18.1MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB79|17.2MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB80|6.5MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB81|5.0MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB82|4.8MB/s|DNSOK|GPT⁺-RO
+  - 🇬🇧 | @WhiteDNS | GB112|26.1MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB113|22.5MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB114|22.3MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB115|21.8MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB116|21.5MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB117|21.2MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB118|18.2MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB119|6.7MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB120|6.1MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB121|4.4MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB122|3.1MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB123|2.8MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB124|2.3MB/s|DNSOK|GPT⁺-RO
+  - 🇬🇧 | @WhiteDNS | GB125|1.6MB/s|DNSOK|GPT⁺-GB
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
