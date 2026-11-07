@@ -1,51 +1,53 @@
 proxies:
-- client-fingerprint: chrome
+- client-fingerprint: firefox
+  encryption: none
+  grpc-opts:
+    grpc-service-name: grpc-reality
+  name: 🇫🇮 | @WhiteDNS | FI79|16.0MB/s|DNSOK|GPT⁺-FI
+  network: grpc
+  port: 8444
+  reality-opts:
+    public-key: OQtjO7JAJZLjmTb7QBpEODeX6Vhzs20XTgFUAyrR1BQ
+    short-id: 7366b647f51921e0
+  server: 204.168.135.161
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8e665b34-32ee-4d2f-a240-4f80a74751cc
+  xudp: true
+  servername: 360.yandex.ru
+- client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI52|2.5MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI80|6.0MB/s|DNSOK|GPT⁺-FI
   network: tcp
   port: 8443
   reality-opts:
-    public-key: AMOBkNsSbIM8YBI6uosUBioGJSOp8eliEpW7vTZ4Mks
-    short-id: 8fd699a1c79e360d
-  server: 104.171.134.135
+    public-key: OQtjO7JAJZLjmTb7QBpEODeX6Vhzs20XTgFUAyrR1BQ
+    short-id: 7366b647f51921e0
+  server: 204.168.135.161
   tls: true
   type: vless
   udp: true
-  uuid: f9f70641-667b-46f2-a37e-e3858acbcd9b
+  uuid: 8e665b34-32ee-4d2f-a240-4f80a74751cc
   xudp: true
   servername: 360.yandex.ru
 - client-fingerprint: firefox
   encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI53|2.5MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI81|5.8MB/s|DNSOK|GPT⁺-FI
   network: xhttp
   port: 443
   reality-opts:
-    public-key: AMOBkNsSbIM8YBI6uosUBioGJSOp8eliEpW7vTZ4Mks
-    short-id: 8fd699a1c79e360d
-  server: 104.171.134.135
+    public-key: OQtjO7JAJZLjmTb7QBpEODeX6Vhzs20XTgFUAyrR1BQ
+    short-id: 7366b647f51921e0
+  server: 204.168.135.161
   tls: true
   type: vless
   udp: true
-  uuid: f9f70641-667b-46f2-a37e-e3858acbcd9b
+  uuid: 8e665b34-32ee-4d2f-a240-4f80a74751cc
   xhttp-opts:
     mode: auto
     path: /vless-xhttp
-  xudp: true
-  servername: 360.yandex.ru
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI54|1.6MB/s|DNSOK|GPT⁺-FI
-  network: raw
-  port: 8443
-  reality-opts:
-    public-key: AMOBkNsSbIM8YBI6uosUBioGJSOp8eliEpW7vTZ4Mks
-    short-id: 8fd699a1c79e360d
-  server: 104.171.134.135
-  tls: true
-  type: vless
-  udp: true
-  uuid: f9f70641-667b-46f2-a37e-e3858acbcd9b
   xudp: true
   servername: 360.yandex.ru
 - alpn:
@@ -58,13 +60,13 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI55|549KB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI82|1.6MB/s|DNSOK|GPT⁺-FI
   network: http
-  port: 52080
+  port: 2053
   server: 185.212.149.7
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
+  uuid: aeb3c019-ae83-4677-af97-846baa787ad5
   xudp: true

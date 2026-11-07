@@ -13,15 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇹 | @WhiteDNS | IT43|26.3MB/s|DNSOK|GPT⁺-IT
-  password: ''
-  port: 443
-  server: 185.183.105.146
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇮🇹 | @WhiteDNS | IT44|7.1MB/s|DNSOK|GPT⁺-IT
+- name: 🇮🇹 | @WhiteDNS | IT438|35.0MB/s|DNSOK|GPT⁺-IT
   password: ''
   port: 443
   server: 185.183.105.130
@@ -29,12 +21,40 @@ proxies:
   tls: true
   type: http
   username: ''
+- name: 🇮🇹 | @WhiteDNS | IT439|24.3MB/s|DNSOK|GPT⁺-IT
+  password: ''
+  port: 443
+  server: 185.183.105.146
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  encryption: none
+  fingerprint: CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E
+  name: 🇮🇹 | @WhiteDNS | IT440|22.4MB/s|DNSOK|GPT⁺-IT
+  network: ws
+  port: 443
+  server: 199.232.78.159
+  tls: true
+  type: vless
+  udp: true
+  uuid: a1fb16ab-3126-43ac-b198-c985be6d8d3e
+  ws-opts:
+    headers:
+      Host: italyboijji.global.ssl.fastly.net.
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /?mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn
+  xudp: true
+  servername: community.fastly.steamstatic.com
 proxy-groups:
 - name: IT-Auto
   type: url-test
   proxies:
-  - 🇮🇹 | @WhiteDNS | IT43|26.3MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT44|7.1MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT438|35.0MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT439|24.3MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT440|22.4MB/s|DNSOK|GPT⁺-IT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -16,7 +16,23 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇮🇩 | @WhiteDNS | ID38|1.3MB/s|DNSOK|GPT⁺-ID
+  name: 🇮🇩 | @WhiteDNS | ID64|2.6MB/s|DNSOK|GPT⁺-ID
+  network: tcp
+  port: 29172
+  reality-opts:
+    public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
+    short-id: ''
+  server: 103.172.197.2
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
+  xudp: true
+  servername: aws.amazon.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇮🇩 | @WhiteDNS | ID65|2.0MB/s|DNSOK|GPT⁺-ID
   network: tcp
   port: 16006
   reality-opts:
@@ -33,7 +49,8 @@ proxy-groups:
 - name: ID-Auto
   type: url-test
   proxies:
-  - 🇮🇩 | @WhiteDNS | ID38|1.3MB/s|DNSOK|GPT⁺-ID
+  - 🇮🇩 | @WhiteDNS | ID64|2.6MB/s|DNSOK|GPT⁺-ID
+  - 🇮🇩 | @WhiteDNS | ID65|2.0MB/s|DNSOK|GPT⁺-ID
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

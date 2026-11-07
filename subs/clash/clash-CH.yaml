@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇭 | @WhiteDNS | CH36|47.3MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH72|51.1MB/s|DNSOK|GPT⁺-CH
   password: ''
   port: 443
   server: 31.7.62.50
@@ -21,23 +21,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇭 | @WhiteDNS | CH37|38.5MB/s|DNSOK|GPT⁺-CH
-  password: ''
-  port: 9443
-  server: 149.88.27.46
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇭 | @WhiteDNS | CH38|37.3MB/s|DNSOK|GPT⁺-CH
-  password: ''
-  port: 9443
-  server: 37.120.213.210
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇭 | @WhiteDNS | CH39|6.0MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH73|49.3MB/s|DNSOK|GPT⁺-CH
   password: ''
   port: 9443
   server: 149.88.27.33
@@ -45,14 +29,46 @@ proxies:
   tls: true
   type: http
   username: ''
+- name: 🇨🇭 | @WhiteDNS | CH74|47.3MB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 9443
+  server: 149.88.27.46
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH75|41.4MB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 9443
+  server: 37.120.213.210
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH76|1.1MB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 10926
+  server: 147.161.246.246
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH77|1001KB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 11703
+  server: 147.161.246.246
+  skip-cert-verify: true
+  type: http
+  username: ''
 proxy-groups:
 - name: CH-Auto
   type: url-test
   proxies:
-  - 🇨🇭 | @WhiteDNS | CH36|47.3MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH37|38.5MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH38|37.3MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH39|6.0MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH72|51.1MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH73|49.3MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH74|47.3MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH75|41.4MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH76|1.1MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH77|1001KB/s|DNSOK|GPT⁺-CH
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
