@@ -13,57 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: firefox
-  name: 🇵🇱 | @WhiteDNS | PL94|21.5MB/s|DNSOK|GPT⁺-PL
-  network: ws
-  port: 443
-  server: 194.156.26.125
-  tls: true
-  type: vless
-  udp: true
-  uuid: 86c7af80-c9cf-4265-ab77-da12b0bf8bb6
-  ws-opts:
-    headers:
-      Host: 186.baklajann.ru
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G610M Build/NRD90M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /
-  xudp: true
-  servername: 186.baklajann.ru
-- name: 🇵🇱 | @WhiteDNS | PL95|18.6MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 37.120.156.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇵🇱 | @WhiteDNS | PL96|14.2MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 151.115.54.133
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: firefox
-  name: 🇵🇱 | @WhiteDNS | PL97|6.9MB/s|DNSOK|GPT⁺-PL
-  network: ws
-  port: 443
-  server: 192.200.160.122
-  tls: true
-  type: vless
-  udp: true
-  uuid: 86c7af80-c9cf-4265-ab77-da12b0bf8bb6
-  ws-opts:
-    headers:
-      Host: 51.baklajann.ru
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3 Build/HUAWEIFIG-LX3)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /
-  xudp: true
-  servername: 51.baklajann.ru
-- name: 🇵🇱 | @WhiteDNS | PL98|6.2MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL87|17.0MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 37.120.156.18
@@ -71,7 +21,23 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇵🇱 | @WhiteDNS | PL99|2.6MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL88|6.2MB/s|DNSOK|GPT⁺-PL
+  password: ''
+  port: 443
+  server: 151.115.54.133
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇵🇱 | @WhiteDNS | PL89|6.1MB/s|DNSOK|GPT⁺-PL
+  password: ''
+  port: 443
+  server: 37.120.156.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇵🇱 | @WhiteDNS | PL90|2.5MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 31.186.220.204
@@ -83,12 +49,10 @@ proxy-groups:
 - name: PL-Auto
   type: url-test
   proxies:
-  - 🇵🇱 | @WhiteDNS | PL94|21.5MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL95|18.6MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL96|14.2MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL97|6.9MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL98|6.2MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL99|2.6MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL87|17.0MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL88|6.2MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL89|6.1MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL90|2.5MB/s|DNSOK|GPT⁺-PL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

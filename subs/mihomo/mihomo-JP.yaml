@@ -1,8 +1,24 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP126|1.7MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers: {}
+    path: /cctv13.m3u8
+  xudp: true
+  servername: jp01.a0a.xyz
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP265|1.7MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP127|1.7MB/s|DNSOK|GPT⁺-JP
   network: tcp
   port: 2053
   reality-opts:
@@ -16,27 +32,97 @@ proxies:
   xudp: true
   servername: www.developer.nvidia.com
 - client-fingerprint: chrome
-  encryption: none
-  name: 🇯🇵 | @WhiteDNS | JP266|1.3MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 4433
-  server: 83.147.216.223
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP128|1.4MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: b6ndQ_P82h5fxP4fQkArf8hxVK3gsOTmwLeIPhLBPh4
+    short-id: 9a79ee418c7c1fc3
+  server: 142.91.109.11
   tls: true
   type: vless
   udp: true
-  uuid: b491331e-3be5-4097-8bc1-fa86de978c29
+  uuid: d8cf80f7-e24b-4961-91f6-77d494bcbdab
+  xudp: true
+  servername: www.apple.com.cn
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP129|1.3MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
   ws-opts:
     headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3 Build/HUAWEIFIG-LX3)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /@Marisa_kristi
+      Host: None
+    path: /cctv13.m3u8
   xudp: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 | @WhiteDNS | JP267|1.0MB/s|DNSOK|GPT⁺-JP
-  password: 9AUVPZfOeSHmVCMyLvIvrl1wVLvZf7Jv
-  port: 1080
-  server: 207.148.110.255
-  type: ss
+  servername: None
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP130|1.2MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: none
+    path: /cctv13.m3u8
+  xudp: true
+  servername: none
+- encryption: none
+  name: 🇯🇵 | @WhiteDNS | JP131|1.1MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  xudp: true
+  servername: 152.69.195.67
+- encryption: none
+  name: 🇯🇵 | @WhiteDNS | JP132|1.0MB/s|DNSOK|GPT⁺-JP
+  network: raw
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  xudp: true
+- encryption: none
+  name: 🇯🇵 | @WhiteDNS | JP133|993KB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP134|818KB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers: {}
+    path: /cctv13.m3u8
+  xudp: true
+  servername: 168.138.43.75
