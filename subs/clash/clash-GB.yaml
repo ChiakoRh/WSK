@@ -13,25 +13,10 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- encryption: none
-  http-opts:
-    headers:
-      Host:
-      - firebaseinstallations.googleapis.com
-    path:
-    - /
-  name: 🇬🇧 | @WhiteDNS | GB79|18.0MB/s|DNSOK|GPT⁺-GB
-  network: http
-  port: 2095
-  server: 54.37.5.115
-  type: vless
-  udp: true
-  uuid: 43097d8d-f6f1-41fd-ac7b-f83021cb4fb6
-  xudp: true
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB80|17.0MB/s|DNSOK|GPT⁺-DE
+  name: 🇬🇧 | @WhiteDNS | GB73|25.9MB/s|DNSOK|GPT⁺-DE
   network: tcp
   port: 3939
   reality-opts:
@@ -44,63 +29,39 @@ proxies:
   uuid: 14f70782-0588-4837-b5ff-e8bfb253aec2
   xudp: true
   servername: ai.android
-- name: 🇬🇧 | @WhiteDNS | GB81|14.3MB/s|DNSOK|GPT⁺
-  password: ''
-  port: 443
-  server: 37.120.233.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB82|7.2MB/s|DNSOK|GPT⁺-GB
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 8g5Y5jjFk98cAWWlDOZz9VGoeZrVYbxzgPcWuLZRXnw
-    short-id: d039979ee2559aea
-  server: 172.239.110.64
-  tls: true
-  type: vless
-  udp: true
-  uuid: 24b2489f-0c15-48c4-a578-6dab707fa3f3
-  xudp: true
-  servername: amp-api-edge.apps.apple.com
 - cipher: aes-256-gcm
-  name: 🇬🇧 | @WhiteDNS | GB83|6.1MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB74|16.3MB/s|DNSOK|GPT⁺-GB
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 198.244.202.215
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: 🇬🇧 | @WhiteDNS | GB84|6.0MB/s|DNSOK|GPT⁺-GB
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 198.244.201.129
-  type: ss
-  udp: true
-- name: 🇬🇧 | @WhiteDNS | GB85|1.9MB/s|DNSOK|GPT⁺-RO
-  password: ''
+- client-fingerprint: chrome
+  encryption: none
+  fingerprint: CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E
+  name: 🇬🇧 | @WhiteDNS | GB75|6.0MB/s|DNSOK|GPT⁺-GB
+  network: ws
   port: 443
-  server: 185.163.110.194
-  skip-cert-verify: true
+  server: 146.75.59.186
   tls: true
-  type: http
-  username: ''
+  type: vless
+  udp: true
+  uuid: 921b248d-f094-4a59-a794-cdbab080c26a
+  ws-opts:
+    headers:
+      Host: ukoijji.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (X11; U; Linux i586; en-US) AppleWebKit/533.2 (KHTML,
+        like Gecko) Chrome/5.0.342.1 Safari/533.2
+    path: /
+  xudp: true
+  servername: cdn.akamai.steamstatic.com
 proxy-groups:
 - name: GB-Auto
   type: url-test
   proxies:
-  - 🇬🇧 | @WhiteDNS | GB79|18.0MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB80|17.0MB/s|DNSOK|GPT⁺-DE
-  - 🇬🇧 | @WhiteDNS | GB81|14.3MB/s|DNSOK|GPT⁺
-  - 🇬🇧 | @WhiteDNS | GB82|7.2MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB83|6.1MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB84|6.0MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB85|1.9MB/s|DNSOK|GPT⁺-RO
+  - 🇬🇧 | @WhiteDNS | GB73|25.9MB/s|DNSOK|GPT⁺-DE
+  - 🇬🇧 | @WhiteDNS | GB74|16.3MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB75|6.0MB/s|DNSOK|GPT⁺-GB
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

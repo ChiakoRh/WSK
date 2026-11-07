@@ -13,19 +13,19 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇳 | @WhiteDNS | IN49|2.5MB/s|DNSOK|GPT⁺-IN
-  password: ''
-  port: 1080
-  server: 140.238.243.61
-  skip-cert-verify: true
-  type: socks5
-  username: ''
+- name: 🇻🇳 | @WhiteDNS | VN13|1.7MB/s|DNSOK|GPT⁺-VN
+  port: 2086
+  server: 150.95.109.109
+  type: vless
+  udp: true
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
+  network: tcp
 proxy-groups:
-- name: IN-Auto
+- name: VN-Auto
   type: url-test
   proxies:
-  - 🇮🇳 | @WhiteDNS | IN49|2.5MB/s|DNSOK|GPT⁺-IN
+  - 🇻🇳 | @WhiteDNS | VN13|1.7MB/s|DNSOK|GPT⁺-VN
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,IN-Auto
+- MATCH,VN-Auto

@@ -1,18 +1,11 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇮 | @WhiteDNS | FI38|5.0MB/s|DNSOK|GPT⁺-FI
-  password: tztS0JGqX91pDVi5g8QyffaUPJlPUnWm
-  port: 53731
-  server: fn1s.sublinkplas.ir
-  type: ss
-  udp: true
 - alpn:
   - h2
   - ' http/1.1'
   client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI39|4.0MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI36|5.7MB/s|DNSOK|GPT⁺-FI
   network: tcp
   port: 443
   server: static.117.242.109.65.clients.your-server.de
@@ -22,6 +15,40 @@ proxies:
   uuid: 320536e8-b0d3-4afa-a5ec-de93356ce562
   xudp: true
   servername: static.0.72.42.77.clients.your-server.de
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI37|5.0MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU
+    short-id: b9120cd53ffd7bba
+  server: 5.129.249.155
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  xudp: true
+  servername: assets-59.topp-con.xyz
+- client-fingerprint: chrome
+  encryption: none
+  fingerprint: CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E
+  name: 🇫🇮 | @WhiteDNS | FI38|4.5MB/s|DNSOK|GPT⁺
+  network: ws
+  port: 443
+  server: 199.232.78.159
+  tls: true
+  type: vless
+  udp: true
+  uuid: 921b248d-f094-4a59-a794-cdbab080c26a
+  ws-opts:
+    headers:
+      Host: finalnsdger.global.ssl.fastly.net.
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.94 Safari/537.36
+    path: /
+  xudp: true
+  servername: cdn.akamai.steamstatic.com
 - alpn:
   - ''
   alterId: '0'
@@ -32,7 +59,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI40|1.7MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI39|1.6MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
@@ -41,24 +68,4 @@ proxies:
   type: vmess
   udp: true
   uuid: aeb3c019-ae83-4677-af97-846baa787ad5
-  xudp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - down-cdn.dingtalk.com
-    path:
-    - /3x
-  name: 🇫🇮 | @WhiteDNS | FI41|1.2MB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 52080
-  server: 185.212.149.7
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
   xudp: true
