@@ -13,146 +13,23 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP126|1.7MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 80
-  server: 168.138.43.75
+- down: ''
+  fingerprint: ''
+  name: 🇯🇵 | @WhiteDNS | JP76|2.5MB/s|DNSOK|GPT⁺-JP
+  obfs: salamander
+  obfs-password: MeJA9qgoYMH4UMunHowisrbd
+  password: 02df03e3-3029-4c95-bffe-8f211b480672
+  port: 8445
+  server: edge.hankli1214.xyz
   skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers: {}
-    path: /cctv13.m3u8
-  xudp: true
-  servername: jp01.a0a.xyz
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP127|1.7MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 2053
-  reality-opts:
-    public-key: Uj6mzD2Qjr9PN0nfBCR2-4KyWm-8vddROou39LN6BXM
-    short-id: d7953572
-  server: 64.110.100.50
-  tls: true
-  type: vless
-  udp: true
-  uuid: 226279dd-28b2-4b61-96be-a2a0b1afd522
-  xudp: true
-  servername: www.developer.nvidia.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP128|1.4MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: b6ndQ_P82h5fxP4fQkArf8hxVK3gsOTmwLeIPhLBPh4
-    short-id: 9a79ee418c7c1fc3
-  server: 142.91.109.11
-  tls: true
-  type: vless
-  udp: true
-  uuid: d8cf80f7-e24b-4961-91f6-77d494bcbdab
-  xudp: true
-  servername: www.apple.com.cn
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP129|1.3MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: None
-    path: /cctv13.m3u8
-  xudp: true
-  servername: None
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP130|1.2MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: none
-    path: /cctv13.m3u8
-  xudp: true
-  servername: none
-- encryption: none
-  name: 🇯🇵 | @WhiteDNS | JP131|1.1MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 47878
-  server: 152.69.195.67
-  type: vless
-  udp: true
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-  xudp: true
-  servername: 152.69.195.67
-- encryption: none
-  name: 🇯🇵 | @WhiteDNS | JP132|1.0MB/s|DNSOK|GPT⁺-JP
-  network: raw
-  port: 47878
-  server: 152.69.195.67
-  type: vless
-  udp: true
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-  xudp: true
-- encryption: none
-  name: 🇯🇵 | @WhiteDNS | JP133|993KB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 47878
-  server: 152.69.195.67
-  type: vless
-  udp: true
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-  xudp: true
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP134|818KB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers: {}
-    path: /cctv13.m3u8
-  xudp: true
-  servername: 168.138.43.75
+  sni: hank.hankli1214.xyz
+  type: hysteria2
+  up: ''
 proxy-groups:
 - name: JP-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP126|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP127|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP128|1.4MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP129|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP130|1.2MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP131|1.1MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP132|1.0MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP133|993KB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP134|818KB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP76|2.5MB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

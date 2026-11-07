@@ -13,7 +13,15 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇧🇬 | @WhiteDNS | BG12|24.9MB/s|DNSOK|GPT⁺-BG
+- name: 🇧🇬 | @WhiteDNS | BG17|23.7MB/s|DNSOK|GPT⁺-BG
+  password: ''
+  port: 9443
+  server: 169.150.237.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇧🇬 | @WhiteDNS | BG18|22.9MB/s|DNSOK|GPT⁺-BG
   password: None
   port: 9443
   server: 169.150.237.1
@@ -21,7 +29,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇧🇬 | @WhiteDNS | BG13|22.3MB/s|DNSOK|GPT⁺-BG
+- name: 🇧🇬 | @WhiteDNS | BG19|22.5MB/s|DNSOK|GPT⁺-BG
   password: ''
   port: 443
   server: 109.204.88.17
@@ -29,7 +37,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇧🇬 | @WhiteDNS | BG14|5.7MB/s|DNSOK|GPT⁺-BG
+- name: 🇧🇬 | @WhiteDNS | BG20|15.7MB/s|DNSOK|GPT⁺-BG
   password: ''
   port: 443
   server: 185.94.192.210
@@ -37,7 +45,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇧🇬 | @WhiteDNS | BG15|4.2MB/s|DNSOK|GPT⁺-BG
+- name: 🇧🇬 | @WhiteDNS | BG21|5.8MB/s|DNSOK|GPT⁺-BG
   password: None
   port: 443
   server: 185.94.192.210
@@ -49,10 +57,11 @@ proxy-groups:
 - name: BG-Auto
   type: url-test
   proxies:
-  - 🇧🇬 | @WhiteDNS | BG12|24.9MB/s|DNSOK|GPT⁺-BG
-  - 🇧🇬 | @WhiteDNS | BG13|22.3MB/s|DNSOK|GPT⁺-BG
-  - 🇧🇬 | @WhiteDNS | BG14|5.7MB/s|DNSOK|GPT⁺-BG
-  - 🇧🇬 | @WhiteDNS | BG15|4.2MB/s|DNSOK|GPT⁺-BG
+  - 🇧🇬 | @WhiteDNS | BG17|23.7MB/s|DNSOK|GPT⁺-BG
+  - 🇧🇬 | @WhiteDNS | BG18|22.9MB/s|DNSOK|GPT⁺-BG
+  - 🇧🇬 | @WhiteDNS | BG19|22.5MB/s|DNSOK|GPT⁺-BG
+  - 🇧🇬 | @WhiteDNS | BG20|15.7MB/s|DNSOK|GPT⁺-BG
+  - 🇧🇬 | @WhiteDNS | BG21|5.8MB/s|DNSOK|GPT⁺-BG
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

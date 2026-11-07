@@ -13,31 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇱🇻 | @WhiteDNS | LV17|6.3MB/s|DNSOK|GPT⁺-LV
-  password: ''
-  port: 443
-  server: 185.219.159.15
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇱🇻 | @WhiteDNS | LV18|6.0MB/s|DNSOK|GPT⁺-LV
-  password: None
-  port: 443
-  server: 185.219.159.16
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇱🇻 | @WhiteDNS | LV19|5.9MB/s|DNSOK|GPT⁺-LV
-  password: ''
-  port: 443
-  server: 185.219.159.16
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇱🇻 | @WhiteDNS | LV20|5.6MB/s|DNSOK|GPT⁺-LV
+- name: 🇱🇻 | @WhiteDNS | LV17|15.7MB/s|DNSOK|GPT⁺-LV
   password: ''
   port: 443
   server: 109.248.147.66
@@ -45,7 +21,23 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇱🇻 | @WhiteDNS | LV21|5.2MB/s|DNSOK|GPT⁺-LV
+- name: 🇱🇻 | @WhiteDNS | LV18|14.8MB/s|DNSOK|GPT⁺-LV
+  password: None
+  port: 443
+  server: 185.219.159.16
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇱🇻 | @WhiteDNS | LV19|5.8MB/s|DNSOK|GPT⁺-LV
+  password: ''
+  port: 443
+  server: 185.219.159.16
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇱🇻 | @WhiteDNS | LV20|5.4MB/s|DNSOK|GPT⁺-LV
   password: None
   port: 443
   server: 85.203.39.130
@@ -53,10 +45,18 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇱🇻 | @WhiteDNS | LV22|4.8MB/s|DNSOK|GPT⁺-LV
-  password: ''
+- name: 🇱🇻 | @WhiteDNS | LV21|4.4MB/s|DNSOK|GPT⁺-LV
+  password: None
   port: 443
   server: 109.248.149.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇱🇻 | @WhiteDNS | LV22|582KB/s|DNSOK|GPT⁺-LV
+  password: ''
+  port: 443
+  server: 185.219.159.15
   skip-cert-verify: true
   tls: true
   type: http
@@ -65,12 +65,12 @@ proxy-groups:
 - name: LV-Auto
   type: url-test
   proxies:
-  - 🇱🇻 | @WhiteDNS | LV17|6.3MB/s|DNSOK|GPT⁺-LV
-  - 🇱🇻 | @WhiteDNS | LV18|6.0MB/s|DNSOK|GPT⁺-LV
-  - 🇱🇻 | @WhiteDNS | LV19|5.9MB/s|DNSOK|GPT⁺-LV
-  - 🇱🇻 | @WhiteDNS | LV20|5.6MB/s|DNSOK|GPT⁺-LV
-  - 🇱🇻 | @WhiteDNS | LV21|5.2MB/s|DNSOK|GPT⁺-LV
-  - 🇱🇻 | @WhiteDNS | LV22|4.8MB/s|DNSOK|GPT⁺-LV
+  - 🇱🇻 | @WhiteDNS | LV17|15.7MB/s|DNSOK|GPT⁺-LV
+  - 🇱🇻 | @WhiteDNS | LV18|14.8MB/s|DNSOK|GPT⁺-LV
+  - 🇱🇻 | @WhiteDNS | LV19|5.8MB/s|DNSOK|GPT⁺-LV
+  - 🇱🇻 | @WhiteDNS | LV20|5.4MB/s|DNSOK|GPT⁺-LV
+  - 🇱🇻 | @WhiteDNS | LV21|4.4MB/s|DNSOK|GPT⁺-LV
+  - 🇱🇻 | @WhiteDNS | LV22|582KB/s|DNSOK|GPT⁺-LV
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

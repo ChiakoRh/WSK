@@ -13,13 +13,53 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇮 | @WhiteDNS | FI69|2.4MB/s|DNSOK|GPT⁺-FI
-  password: tztS0JGqX91pDVi5g8QyffaUPJlPUnWm
-  port: 53731
-  server: fn1s.sublinkplas.ir
-  type: ss
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI30|15.1MB/s|DNSOK|GPT⁺-FI
+  port: 8443
+  reality-opts:
+    public-key: OQtjO7JAJZLjmTb7QBpEODeX6Vhzs20XTgFUAyrR1BQ
+    short-id: 7366b647f51921e0
+  server: 204.168.135.161
+  skip-cert-verify: true
+  tls: true
+  type: vless
   udp: true
+  uuid: 8e665b34-32ee-4d2f-a240-4f80a74751cc
+  network: tcp
+  servername: 360.yandex.ru
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI31|5.7MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: OQtjO7JAJZLjmTb7QBpEODeX6Vhzs20XTgFUAyrR1BQ
+    short-id: 7366b647f51921e0
+  server: 204.168.135.161
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8e665b34-32ee-4d2f-a240-4f80a74751cc
+  xudp: true
+  servername: 360.yandex.ru
+- encryption: mlkem768x25519plus.native.0rtt.S9DT4aeuKkc1Qtf8kz7jjGxGkzpzsCArx1CFRpmx4FU
+  flow: xtls-rprx-vision
+  http-opts:
+    headers:
+      Host:
+      - dynu.com
+    path:
+    - /
+  name: 🇫🇮 | @WhiteDNS | FI32|5.0MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 47607
+  server: indigo28.fars-remen.ir
+  type: vless
+  udp: true
+  uuid: dcfc90f0-044b-46b3-9ef2-56ba5d4b155d
+  xudp: true
 - alpn:
   - ''
   alterId: '0'
@@ -30,7 +70,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI70|1.0MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI33|946KB/s|DNSOK|GPT⁺-FI
   network: http
   port: 52080
   server: 185.212.149.7
@@ -50,7 +90,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI71|981KB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI34|923KB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
@@ -64,9 +104,11 @@ proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI69|2.4MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI70|1.0MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI71|981KB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI30|15.1MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI31|5.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI32|5.0MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI33|946KB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI34|923KB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

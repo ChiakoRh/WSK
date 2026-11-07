@@ -13,23 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇵🇱 | @WhiteDNS | PL87|17.0MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 37.120.156.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇵🇱 | @WhiteDNS | PL88|6.2MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 151.115.54.133
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇵🇱 | @WhiteDNS | PL89|6.1MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL79|19.6MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 37.120.156.34
@@ -37,7 +21,23 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇵🇱 | @WhiteDNS | PL90|2.5MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL80|6.3MB/s|DNSOK|GPT⁺-PL
+  password: ''
+  port: 443
+  server: 151.115.54.133
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇵🇱 | @WhiteDNS | PL81|6.3MB/s|DNSOK|GPT⁺-PL
+  password: ''
+  port: 443
+  server: 37.120.156.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇵🇱 | @WhiteDNS | PL82|1.9MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 31.186.220.204
@@ -49,10 +49,10 @@ proxy-groups:
 - name: PL-Auto
   type: url-test
   proxies:
-  - 🇵🇱 | @WhiteDNS | PL87|17.0MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL88|6.2MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL89|6.1MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL90|2.5MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL79|19.6MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL80|6.3MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL81|6.3MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL82|1.9MB/s|DNSOK|GPT⁺-PL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
