@@ -13,29 +13,19 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇳🇴 | @WhiteDNS | NO4|5.6MB/s|DNSOK|GPT⁺-NO
+- name: 🇮🇳 | @WhiteDNS | IN49|2.5MB/s|DNSOK|GPT⁺-IN
   password: ''
-  port: 9443
-  server: 146.70.170.210
+  port: 1080
+  server: 140.238.243.61
   skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇳🇴 | @WhiteDNS | NO5|2.7MB/s|DNSOK|GPT⁺-NO
-  password: None
-  port: 9443
-  server: 146.70.170.210
-  skip-cert-verify: true
-  tls: true
-  type: http
+  type: socks5
   username: ''
 proxy-groups:
-- name: NO-Auto
+- name: IN-Auto
   type: url-test
   proxies:
-  - 🇳🇴 | @WhiteDNS | NO4|5.6MB/s|DNSOK|GPT⁺-NO
-  - 🇳🇴 | @WhiteDNS | NO5|2.7MB/s|DNSOK|GPT⁺-NO
+  - 🇮🇳 | @WhiteDNS | IN49|2.5MB/s|DNSOK|GPT⁺-IN
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,NO-Auto
+- MATCH,IN-Auto

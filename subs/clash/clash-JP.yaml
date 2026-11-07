@@ -13,23 +13,44 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- down: ''
-  fingerprint: ''
-  name: 🇯🇵 | @WhiteDNS | JP76|2.5MB/s|DNSOK|GPT⁺-JP
-  obfs: salamander
-  obfs-password: MeJA9qgoYMH4UMunHowisrbd
-  password: 02df03e3-3029-4c95-bffe-8f211b480672
-  port: 8445
-  server: edge.hankli1214.xyz
-  skip-cert-verify: false
-  sni: hank.hankli1214.xyz
-  type: hysteria2
-  up: ''
+- client-fingerprint: random
+  name: 🇯🇵 | @WhiteDNS | JP86|2.4MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 443
+  server: freev2.cloudflare.182682.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: fc486b2b-8a22-4c93-8a8b-f40e1522ba78
+  ws-opts:
+    headers:
+      Host: jp-osa.862400.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/47.0.2526.106 Safari/537.36
+    path: /announcement
+  xudp: true
+  servername: jp-osa.862400.xyz
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - store.steampowered.com
+    path:
+    - /
+  name: 🇯🇵 | @WhiteDNS | JP87|1.7MB/s|DNSOK|GPT⁺-JP
+  network: http
+  port: 2095
+  server: 172.235.199.46
+  type: vless
+  udp: true
+  uuid: 326f28ad-30b8-4c02-9d1f-2db2969c8a69
+  xudp: true
 proxy-groups:
 - name: JP-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP76|2.5MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP86|2.4MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP87|1.7MB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

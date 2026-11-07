@@ -1,5 +1,5 @@
 proxies:
-- name: 🇨🇦 | @WhiteDNS | CA58|4.2MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA58|4.5MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 9443
   server: 23.169.224.34
@@ -8,30 +8,6 @@ proxies:
   type: http
   username: ''
 - name: 🇨🇦 | @WhiteDNS | CA59|3.9MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 443
-  server: 206.223.161.47
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA60|3.9MB/s|DNSOK|GPT⁺-CA
-  password: None
-  port: 9443
-  server: 198.44.157.27
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA61|3.0MB/s|DNSOK|GPT⁺-CA
-  password: None
-  port: 443
-  server: 206.223.183.21
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA62|2.9MB/s|DNSOK|GPT⁺-CA
   password: None
   port: 9443
   server: 149.88.98.81
@@ -39,7 +15,15 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA63|1.9MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA60|3.6MB/s|DNSOK|GPT⁺-CA
+  password: None
+  port: 9443
+  server: 198.44.157.27
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA61|2.9MB/s|DNSOK|GPT⁺-CA
   password: None
   port: 443
   server: 206.223.183.13
@@ -47,24 +31,57 @@ proxies:
   tls: true
   type: http
   username: ''
+- name: 🇨🇦 | @WhiteDNS | CA62|2.8MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 9443
+  server: 198.44.157.27
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - perf-prod.samsung.com
+    path:
+    - /
+  name: 🇨🇦 | @WhiteDNS | CA63|2.6MB/s|DNSOK|GPT⁺-CA
+  network: http
+  port: 2095
+  server: 51.79.93.51
+  type: vless
+  udp: true
+  uuid: 206a3404-a1d2-4367-a369-69600f0351f0
+  xudp: true
 - name: 🇨🇦 | @WhiteDNS | CA64|1.6MB/s|DNSOK|GPT⁺-CA
-  password: None
+  password: ''
+  port: 443
+  server: 206.223.161.47
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  name: 🇨🇦 | @WhiteDNS | CA65|1.4MB/s|DNSOK|GPT⁺-CA
+  password: 5t6i121em5lkmsmk
+  port: 46977
+  server: ca001.zestapp778.com
+  skip-cert-verify: false
+  sni: ca001.zestapp778.com
+  type: trojan
+  udp: true
+  network: tcp
+- name: 🇨🇦 | @WhiteDNS | CA66|1.3MB/s|DNSOK|GPT⁺-CA
+  password: ''
   port: 443
   server: 206.223.183.16
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA65|1008KB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 443
-  server: 142.44.210.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA66|783KB/s|DNSOK|GPT⁺-CA
-  password: ''
+- name: 🇨🇦 | @WhiteDNS | CA67|1.1MB/s|DNSOK|GPT⁺-CA
+  password: None
   port: 443
   server: 206.223.183.21
   skip-cert-verify: true

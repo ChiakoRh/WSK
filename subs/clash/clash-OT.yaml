@@ -12,29 +12,11 @@ dns:
   nameserver:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
-proxies:
-- alterId: 0
-  cipher: auto
-  name: ❓ | @WhiteDNS | OT995|3.1MB/s|DNSOK|GPT⁺-IN
-  network: ws
-  port: 80
-  server: 152.67.8.205
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  ws-opts:
-    headers:
-      Host: in-152.67.8.205-0200
-    path: /
-  xudp: true
-  servername: in-152.67.8.205-0200
+proxies: []
 proxy-groups:
 - name: OT-Auto
   type: url-test
-  proxies:
-  - ❓ | @WhiteDNS | OT995|3.1MB/s|DNSOK|GPT⁺-IN
+  proxies: []
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
