@@ -14,31 +14,6 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - alpn:
-  - h2
-  - ' http/1.1'
-  client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI36|19.1MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 443
-  server: static.117.242.109.65.clients.your-server.de
-  tls: true
-  type: vless
-  udp: true
-  uuid: 320536e8-b0d3-4afa-a5ec-de93356ce562
-  xudp: true
-  servername: static.0.72.42.77.clients.your-server.de
-- flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI37|6.2MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 443
-  server: 65.109.242.117
-  tls: true
-  type: vless
-  uuid: 320536e8-b0d3-4afa-a5ec-de93356ce562
-  servername: static.0.72.42.77.clients.your-server.de
-- alpn:
   - ''
   alterId: '0'
   cipher: auto
@@ -48,27 +23,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI38|862KB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 2053
-  server: 185.212.149.7
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: aeb3c019-ae83-4677-af97-846baa787ad5
-  xudp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - down-cdn.dingtalk.com
-    path:
-    - /3x
-  name: 🇫🇮 | @WhiteDNS | FI39|677KB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI28|1.6MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 52080
   server: 185.212.149.7
@@ -82,10 +37,7 @@ proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI36|19.1MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI37|6.2MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI38|862KB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI39|677KB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI28|1.6MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
