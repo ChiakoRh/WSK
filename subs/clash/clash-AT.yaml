@@ -13,18 +13,18 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇦🇹 | @WhiteDNS | AT18|24.8MB/s|DNSOK|GPT⁺-AT
+- name: 🇦🇹 | @WhiteDNS | AT9|5.7MB/s|DNSOK|GPT⁺-AT
   password: ''
   port: 443
-  server: 146.70.244.2
+  server: 146.70.244.18
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇦🇹 | @WhiteDNS | AT19|19.2MB/s|DNSOK|GPT⁺-AT
+- name: 🇦🇹 | @WhiteDNS | AT10|5.1MB/s|DNSOK|GPT⁺-AT
   password: ''
   port: 443
-  server: 146.70.244.18
+  server: 146.70.244.2
   skip-cert-verify: true
   tls: true
   type: http
@@ -33,8 +33,8 @@ proxy-groups:
 - name: AT-Auto
   type: url-test
   proxies:
-  - 🇦🇹 | @WhiteDNS | AT18|24.8MB/s|DNSOK|GPT⁺-AT
-  - 🇦🇹 | @WhiteDNS | AT19|19.2MB/s|DNSOK|GPT⁺-AT
+  - 🇦🇹 | @WhiteDNS | AT9|5.7MB/s|DNSOK|GPT⁺-AT
+  - 🇦🇹 | @WhiteDNS | AT10|5.1MB/s|DNSOK|GPT⁺-AT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
