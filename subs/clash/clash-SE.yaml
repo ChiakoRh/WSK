@@ -13,23 +13,14 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇸🇪 | @WhiteDNS | SE21|15.6MB/s|DNSOK|GPT⁺-SE
-  password: ''
-  port: 443
-  server: 146.70.242.130
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇸🇪 | @WhiteDNS | SE22|5.9MB/s|DNSOK|GPT⁺-SE
-  password: None
-  port: 443
-  server: 146.70.242.146
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇸🇪 | @WhiteDNS | SE23|4.2MB/s|DNSOK|GPT⁺-SE
+- cipher: aes-256-gcm
+  name: 🇸🇪 | @WhiteDNS | SE23|6.1MB/s|DNSOK|GPT⁺-SE
+  password: AxIYWtskJWIIaefW
+  port: 8388
+  server: 70.34.212.124
+  type: ss
+  udp: true
+- name: 🇸🇪 | @WhiteDNS | SE24|5.9MB/s|DNSOK|GPT⁺-SE
   password: None
   port: 443
   server: 149.50.216.65
@@ -37,13 +28,52 @@ proxies:
   tls: true
   type: http
   username: ''
+- name: 🇸🇪 | @WhiteDNS | SE25|5.5MB/s|DNSOK|GPT⁺-SE
+  password: None
+  port: 443
+  server: 146.70.242.146
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇸🇪 | @WhiteDNS | SE26|4.6MB/s|DNSOK|GPT⁺-SE
+  password: ''
+  port: 443
+  server: 146.70.242.130
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- alpn:
+  - http/1.1
+  client-fingerprint: unsafe
+  encryption: mlkem768x25519plus.native.0rtt.L0PYWYsIvs5LTqYpjk3nauq1x0u2wUW9JmWQHmKxyD4
+  flow: xtls-rprx-vision
+  name: 🇸🇪 | @WhiteDNS | SE27|3.2MB/s|DNSOK|GPT⁺-SE
+  network: ws
+  port: 443
+  server: chatgpt.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d38296d4-63d2-4d34-862b-efa20f22d171
+  ws-opts:
+    headers:
+      Host: dexter.subgift1.cyou
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Moto C Build/NRD90M.059) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /subgift
+  xudp: true
+  servername: dexter.subgift1.cyou
 proxy-groups:
 - name: SE-Auto
   type: url-test
   proxies:
-  - 🇸🇪 | @WhiteDNS | SE21|15.6MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE22|5.9MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE23|4.2MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE23|6.1MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE24|5.9MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE25|5.5MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE26|4.6MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE27|3.2MB/s|DNSOK|GPT⁺-SE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
