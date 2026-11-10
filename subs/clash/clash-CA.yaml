@@ -13,38 +13,15 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇦 | @WhiteDNS | CA223|3.8MB/s|DNSOK|GPT⁺-CA
-  password: None
-  port: 443
-  server: 206.223.183.21
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA224|3.8MB/s|DNSOK|GPT⁺-CA
-  password: None
+- name: 🇨🇦 | @WhiteDNS | CA74|3.6MB/s|DNSOK|GPT⁺-CA
+  password: ''
   port: 9443
   server: 198.44.157.27
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇨🇦 | @WhiteDNS | CA225|3.3MB/s|DNSOK|GPT⁺-CA
-  network: tcp
-  port: 20016
-  reality-opts:
-    public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
-    short-id: 1ed136481e0ede74
-  server: eu90.cdn77.icu
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2f094d48-7186-47ca-9e57-e977bbac3b08
-  xudp: true
-  servername: eu64.cdn77.icu
-- name: 🇨🇦 | @WhiteDNS | CA226|3.0MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA75|3.0MB/s|DNSOK|GPT⁺-CA
   password: None
   port: 443
   server: 206.223.183.13
@@ -52,15 +29,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA227|3.0MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 443
-  server: 206.223.161.47
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA228|3.0MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA76|2.9MB/s|DNSOK|GPT⁺-CA
   password: None
   port: 9443
   server: 149.88.98.81
@@ -68,31 +37,25 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA229|2.9MB/s|DNSOK|GPT⁺-CA
+- client-fingerprint: firefox
+  name: 🇨🇦 | @WhiteDNS | CA77|2.8MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  password: 5t6i121em5lkmsmk
+  port: 46977
+  server: 216.128.185.90
+  skip-cert-verify: false
+  sni: ca001.zestapp778.com
+  type: trojan
+  udp: true
+- name: 🇨🇦 | @WhiteDNS | CA78|2.5MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 443
-  server: 142.44.210.129
+  server: 206.223.161.47
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA230|2.6MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 443
-  server: 4.172.245.121
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA231|2.5MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 9443
-  server: 198.44.157.27
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA232|2.5MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA79|2.5MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 443
   server: 206.223.183.21
@@ -100,7 +63,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA233|1.7MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA80|2.5MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 9443
   server: 23.169.224.34
@@ -108,10 +71,18 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA234|1.5MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA81|2.5MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 443
   server: 206.223.183.16
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA82|2.3MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 443
+  server: 142.44.210.129
   skip-cert-verify: true
   tls: true
   type: http
@@ -120,18 +91,15 @@ proxy-groups:
 - name: CA-Auto
   type: url-test
   proxies:
-  - 🇨🇦 | @WhiteDNS | CA223|3.8MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA224|3.8MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA225|3.3MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA226|3.0MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA227|3.0MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA228|3.0MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA229|2.9MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA230|2.6MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA231|2.5MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA232|2.5MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA233|1.7MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA234|1.5MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA74|3.6MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA75|3.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA76|2.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA77|2.8MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA78|2.5MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA79|2.5MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA80|2.5MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA81|2.5MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA82|2.3MB/s|DNSOK|GPT⁺-CA
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

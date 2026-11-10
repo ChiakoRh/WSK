@@ -12,19 +12,11 @@ dns:
   nameserver:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
-proxies:
-- cipher: 2022-blake3-aes-256-gcm
-  name: ❓ | @WhiteDNS | OT651|1.1MB/s|DNSOK|GPT⁺-FR
-  password: OfCykwIeres6gv3WyRLQ+9AytWwwY6tqB5wmiF2q3x4=:mB14mq0Ff2EIIBnZEZl5pvVENExUevvxGruVlg65Rs0=
-  port: 20327
-  server: 51.68.34.78
-  type: ss
-  udp: true
+proxies: []
 proxy-groups:
 - name: OT-Auto
   type: url-test
-  proxies:
-  - ❓ | @WhiteDNS | OT651|1.1MB/s|DNSOK|GPT⁺-FR
+  proxies: []
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
