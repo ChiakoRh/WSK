@@ -13,26 +13,20 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  name: 🇮🇸 | @WhiteDNS | IS3|581KB/s|DNSOK|GPT⁺-IS
+- name: 🇻🇳 | @WhiteDNS | VN12|1.9MB/s|DNSOK|GPT⁺-VN
   network: tcp
-  port: 28150
-  reality-opts:
-    public-key: KQW_o2BlCjMC8aH5lkNkO_rmMCAUykQIQCCIIehhsAo
-    short-id: '06'
-  server: 93.95.226.159
-  tls: true
+  port: 2086
+  server: 150.95.109.109
   type: vless
   udp: true
-  uuid: b4e69d67-9d41-417c-b465-ebf1591fb792
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
   xudp: true
-  servername: google.com
 proxy-groups:
-- name: IS-Auto
+- name: VN-Auto
   type: url-test
   proxies:
-  - 🇮🇸 | @WhiteDNS | IS3|581KB/s|DNSOK|GPT⁺-IS
+  - 🇻🇳 | @WhiteDNS | VN12|1.9MB/s|DNSOK|GPT⁺-VN
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,IS-Auto
+- MATCH,VN-Auto

@@ -13,25 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇦🇺 | @WhiteDNS | AU18|1.7MB/s|DNSOK|GPT⁺-AU
-  password: None
-  port: 443
-  server: 103.62.50.130
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  name: 🇦🇺 | @WhiteDNS | AU19|1.6MB/s|DNSOK|GPT⁺-AU
-  password: Trojan@82164024
-  port: 443
-  server: au.tronsg.com
-  skip-cert-verify: false
-  sni: au.tronsg.com
-  type: trojan
-  udp: true
-  network: tcp
-- name: 🇦🇺 | @WhiteDNS | AU20|1.5MB/s|DNSOK|GPT⁺-AU
+- name: 🇦🇺 | @WhiteDNS | AU23|1.8MB/s|DNSOK|GPT⁺-AU
   password: ''
   port: 443
   server: 159.13.44.228
@@ -39,35 +21,20 @@ proxies:
   tls: true
   type: http
   username: ''
-- client-fingerprint: chrome
-  name: 🇦🇺 | @WhiteDNS | AU21|1.3MB/s|DNSOK|GPT⁺-AU
-  network: tcp
-  password: Trojan@82164024
+- name: 🇦🇺 | @WhiteDNS | AU24|1.8MB/s|DNSOK|GPT⁺-AU
+  password: None
   port: 443
-  server: au.tronsg.com
-  skip-cert-verify: false
-  sni: au.tronsg.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇦🇺 | @WhiteDNS | AU22|1.3MB/s|DNSOK|GPT⁺-AU
-  network: tcp
-  password: Trojan@82164024
-  port: 443
-  server: 45.32.241.180
-  skip-cert-verify: false
-  sni: au.tronsg.com
-  type: trojan
-  udp: true
+  server: 103.62.50.130
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 proxy-groups:
 - name: AU-Auto
   type: url-test
   proxies:
-  - 🇦🇺 | @WhiteDNS | AU18|1.7MB/s|DNSOK|GPT⁺-AU
-  - 🇦🇺 | @WhiteDNS | AU19|1.6MB/s|DNSOK|GPT⁺-AU
-  - 🇦🇺 | @WhiteDNS | AU20|1.5MB/s|DNSOK|GPT⁺-AU
-  - 🇦🇺 | @WhiteDNS | AU21|1.3MB/s|DNSOK|GPT⁺-AU
-  - 🇦🇺 | @WhiteDNS | AU22|1.3MB/s|DNSOK|GPT⁺-AU
+  - 🇦🇺 | @WhiteDNS | AU23|1.8MB/s|DNSOK|GPT⁺-AU
+  - 🇦🇺 | @WhiteDNS | AU24|1.8MB/s|DNSOK|GPT⁺-AU
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

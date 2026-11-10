@@ -1,13 +1,30 @@
 proxies:
-- name: 🇸🇪 | @WhiteDNS | SE30|15.9MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE29|16.3MB/s|DNSOK|GPT⁺-SE
   password: None
   port: 443
-  server: 146.70.242.146
+  server: 149.50.216.65
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇸🇪 | @WhiteDNS | SE31|6.0MB/s|DNSOK|GPT⁺-SE
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇸🇪 | @WhiteDNS | SE30|15.0MB/s|DNSOK|GPT⁺-SE
+  network: ws
+  port: 8080
+  server: 13.60.22.249
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f6cef957-27a5-4edb-a805-685d9a089af2
+  ws-opts:
+    headers: {}
+    path: /bp-vmess
+  xudp: true
+- name: 🇸🇪 | @WhiteDNS | SE31|6.1MB/s|DNSOK|GPT⁺-SE
   password: ''
   port: 443
   server: 146.70.242.130
@@ -23,10 +40,10 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇸🇪 | @WhiteDNS | SE33|5.8MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE33|5.9MB/s|DNSOK|GPT⁺-SE
   password: None
   port: 443
-  server: 149.50.216.65
+  server: 146.70.242.146
   skip-cert-verify: true
   tls: true
   type: http

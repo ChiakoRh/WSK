@@ -1,0 +1,39 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: 🇹🇭 | @WhiteDNS | TH12|1.7MB/s|DNSOK|GPT⁺-TH
+  network: tcp
+  port: 11802
+  reality-opts:
+    public-key: FUBjYwXlKIVwF7IuJf5dt_HU2sUnrEt10s4TIlTe8Q4
+    short-id: 6c84fbac2d
+  server: zfapi.zalolink.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  xudp: true
+  servername: psstatic.cdn.bcebos.com
+proxy-groups:
+- name: TH-Auto
+  type: url-test
+  proxies:
+  - 🇹🇭 | @WhiteDNS | TH12|1.7MB/s|DNSOK|GPT⁺-TH
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,TH-Auto
