@@ -13,15 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇸🇪 | @WhiteDNS | SE25|16.2MB/s|DNSOK|GPT⁺-SE
-  password: None
-  port: 443
-  server: 146.70.242.146
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇸🇪 | @WhiteDNS | SE26|16.0MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE19|15.8MB/s|DNSOK|GPT⁺-SE
   password: ''
   port: 443
   server: 146.70.242.130
@@ -29,60 +21,50 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇸🇪 | @WhiteDNS | SE27|6.0MB/s|DNSOK|GPT⁺-SE
-  password: ''
-  port: 443
-  server: 149.50.216.65
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- cipher: 2022-blake3-aes-256-gcm
-  name: 🇸🇪 | @WhiteDNS | SE28|5.9MB/s|DNSOK|GPT⁺-SE
-  password: zUK6nXbPNzQJCYuzw4xOHF+SNUf9JydSJ6FdwJ/Dm0w=:nDWilBlJjxXZ2e/bxyM/VVsUurvl79TDE3OLf8M9ZJE=
-  port: 58317
-  server: 51.21.253.12
-  type: ss
-  udp: true
-- name: 🇸🇪 | @WhiteDNS | SE29|5.8MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE20|15.5MB/s|DNSOK|GPT⁺-SE
   password: None
   port: 443
-  server: 149.50.216.65
+  server: 146.70.242.146
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
+- cipher: aes-256-gcm
+  name: 🇸🇪 | @WhiteDNS | SE21|5.8MB/s|DNSOK|GPT⁺-SE
+  password: AxIYWtskJWIIaefW
+  port: 8388
+  server: 70.34.212.124
+  type: ss
+  udp: true
 - alpn:
   - http/1.1
   client-fingerprint: unsafe
-  encryption: mlkem768x25519plus.native.0rtt.ifXtO6jdes2zj0mjjWtRvKNgJzFbGwrdS-8OZcVgazw
+  encryption: mlkem768x25519plus.native.0rtt.HDdkWDIEmiotDl-mSbZd2FBVV60XytdySgLSy-vR4nE
   flow: xtls-rprx-vision
-  name: 🇸🇪 | @WhiteDNS | SE30|5.2MB/s|DNSOK|GPT⁺-SE
+  name: 🇸🇪 | @WhiteDNS | SE22|5.7MB/s|DNSOK|GPT⁺-SE
   network: ws
   port: 443
   server: chatgpt.com
   tls: true
   type: vless
   udp: true
-  uuid: 883df7e1-1b2b-46c7-acd3-eb8ac2ac8e0d
+  uuid: c0dd2b42-41b1-4e9e-9876-e708b4204a6f
   ws-opts:
     headers:
-      Host: googoosh.subgift.cyou
+      Host: sk.subgift.cyou
       User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/55.0.2883.87 Safari/537.36
     path: /t.me-SubGift
   xudp: true
-  servername: googoosh.subgift.cyou
+  servername: sk.subgift.cyou
 proxy-groups:
 - name: SE-Auto
   type: url-test
   proxies:
-  - 🇸🇪 | @WhiteDNS | SE25|16.2MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE26|16.0MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE27|6.0MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE28|5.9MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE29|5.8MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE30|5.2MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE19|15.8MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE20|15.5MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE21|5.8MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE22|5.7MB/s|DNSOK|GPT⁺-SE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

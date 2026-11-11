@@ -13,20 +13,19 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇾 | @WhiteDNS | CY2|1.0MB/s|DNSOK|GPT⁺-CY
-  password: ''
-  port: 443
-  server: 213.207.130.34
+- name: 🇧🇷 | @WhiteDNS | BR18|1.9MB/s|DNSOK|GPT⁺-BR
+  password: 0wcmn0va70ra
+  port: 9879
+  server: 85.189.216.134
   skip-cert-verify: true
-  tls: true
   type: http
-  username: ''
+  username: hommkiti
 proxy-groups:
-- name: CY-Auto
+- name: BR-Auto
   type: url-test
   proxies:
-  - 🇨🇾 | @WhiteDNS | CY2|1.0MB/s|DNSOK|GPT⁺-CY
+  - 🇧🇷 | @WhiteDNS | BR18|1.9MB/s|DNSOK|GPT⁺-BR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,CY-Auto
+- MATCH,BR-Auto

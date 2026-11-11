@@ -13,19 +13,18 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇱 | @WhiteDNS | IL38|5.1MB/s|DNSOK|GPT⁺-IL
-  password: ''
-  port: 443
-  server: 169.150.248.17
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+- cipher: aes-256-gcm
+  name: 🇮🇱 | @WhiteDNS | IL42|5.5MB/s|DNSOK|GPT⁺-IL
+  password: jfWoSVCVYXRmNBfC
+  port: 8388
+  server: 64.177.66.60
+  type: ss
+  udp: true
 proxy-groups:
 - name: IL-Auto
   type: url-test
   proxies:
-  - 🇮🇱 | @WhiteDNS | IL38|5.1MB/s|DNSOK|GPT⁺-IL
+  - 🇮🇱 | @WhiteDNS | IL42|5.5MB/s|DNSOK|GPT⁺-IL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
