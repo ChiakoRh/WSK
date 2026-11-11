@@ -13,35 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: aes-256-gcm
-  name: 🇸🇪 | @WhiteDNS | SE24|15.9MB/s|DNSOK|GPT⁺-SE
-  password: AxIYWtskJWIIaefW
-  port: 8388
-  server: 70.34.212.124
-  type: ss
-  udp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: unsafe
-  encryption: mlkem768x25519plus.native.0rtt.L0PYWYsIvs5LTqYpjk3nauq1x0u2wUW9JmWQHmKxyD4
-  flow: xtls-rprx-vision
-  name: 🇸🇪 | @WhiteDNS | SE25|6.1MB/s|DNSOK|GPT⁺-SE
-  network: ws
-  port: 443
-  server: chatgpt.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d38296d4-63d2-4d34-862b-efa20f22d171
-  ws-opts:
-    headers:
-      Host: dexter.subgift1.cyou
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/62.0.3202.94 Safari/537.36
-    path: /subgift
-  xudp: true
-  servername: dexter.subgift1.cyou
-- name: 🇸🇪 | @WhiteDNS | SE26|5.9MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE25|16.2MB/s|DNSOK|GPT⁺-SE
   password: None
   port: 443
   server: 146.70.242.146
@@ -49,21 +21,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- encryption: none
-  name: 🇸🇪 | @WhiteDNS | SE27|2.8MB/s|DNSOK|GPT⁺-SE
-  network: xhttp
-  port: 3174
-  server: angelvpn.angelmh.cv
-  type: vless
-  udp: true
-  uuid: 073d862c-6fdf-4dbd-be8c-ecb650bc3e60
-  xhttp-opts:
-    host: firefox.com
-    mode: auto
-    path: /
-    x-padding-bytes: 100-1000
-  xudp: true
-- name: 🇸🇪 | @WhiteDNS | SE28|2.8MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE26|16.0MB/s|DNSOK|GPT⁺-SE
   password: ''
   port: 443
   server: 146.70.242.130
@@ -71,7 +29,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇸🇪 | @WhiteDNS | SE29|2.5MB/s|DNSOK|GPT⁺-SE
+- name: 🇸🇪 | @WhiteDNS | SE27|6.0MB/s|DNSOK|GPT⁺-SE
   password: ''
   port: 443
   server: 149.50.216.65
@@ -79,16 +37,52 @@ proxies:
   tls: true
   type: http
   username: ''
+- cipher: 2022-blake3-aes-256-gcm
+  name: 🇸🇪 | @WhiteDNS | SE28|5.9MB/s|DNSOK|GPT⁺-SE
+  password: zUK6nXbPNzQJCYuzw4xOHF+SNUf9JydSJ6FdwJ/Dm0w=:nDWilBlJjxXZ2e/bxyM/VVsUurvl79TDE3OLf8M9ZJE=
+  port: 58317
+  server: 51.21.253.12
+  type: ss
+  udp: true
+- name: 🇸🇪 | @WhiteDNS | SE29|5.8MB/s|DNSOK|GPT⁺-SE
+  password: None
+  port: 443
+  server: 149.50.216.65
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- alpn:
+  - http/1.1
+  client-fingerprint: unsafe
+  encryption: mlkem768x25519plus.native.0rtt.ifXtO6jdes2zj0mjjWtRvKNgJzFbGwrdS-8OZcVgazw
+  flow: xtls-rprx-vision
+  name: 🇸🇪 | @WhiteDNS | SE30|5.2MB/s|DNSOK|GPT⁺-SE
+  network: ws
+  port: 443
+  server: chatgpt.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 883df7e1-1b2b-46c7-acd3-eb8ac2ac8e0d
+  ws-opts:
+    headers:
+      Host: googoosh.subgift.cyou
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /t.me-SubGift
+  xudp: true
+  servername: googoosh.subgift.cyou
 proxy-groups:
 - name: SE-Auto
   type: url-test
   proxies:
-  - 🇸🇪 | @WhiteDNS | SE24|15.9MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE25|6.1MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE26|5.9MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE27|2.8MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE28|2.8MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE29|2.5MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE25|16.2MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE26|16.0MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE27|6.0MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE28|5.9MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE29|5.8MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE30|5.2MB/s|DNSOK|GPT⁺-SE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
