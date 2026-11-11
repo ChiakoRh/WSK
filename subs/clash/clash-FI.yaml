@@ -14,26 +14,38 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - cipher: 2022-blake3-aes-256-gcm
-  name: 🇫🇮 | @WhiteDNS | FI19|6.4MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI36|1.7MB/s|DNSOK|GPT⁺-FI
+  password: L9F2GjYbyk6gICuLp2LFmHC0lKaEW7HOA32XTf29C6Y=:OvfxPVBCAsZFpN0pIx9AwgxwxV+U3A7XtRagdUwio+U=
+  port: 26412
+  server: oztq9osla2ad.dop15.com
+  type: ss
+  udp: true
+- cipher: 2022-blake3-aes-256-gcm
+  name: 🇫🇮 | @WhiteDNS | FI37|1.2MB/s|DNSOK|GPT⁺-FI
   password: L9F2GjYbyk6gICuLp2LFmHC0lKaEW7HOA32XTf29C6Y=:OvfxPVBCAsZFpN0pIx9AwgxwxV+U3A7XtRagdUwio+U=
   port: 26412
   server: 2.29.138.56
   type: ss
   udp: true
-- encryption: none
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
   http-opts:
     headers:
       Host:
-      - varzesh3.com
+      - down-cdn.dingtalk.com
     path:
-    - /
-  name: 🇫🇮 | @WhiteDNS | FI20|1.6MB/s|DNSOK|GPT⁺-FI
+    - /3x
+  name: 🇫🇮 | @WhiteDNS | FI38|1.2MB/s|DNSOK|GPT⁺-FI
   network: http
-  port: 46940
-  server: finland.starlink6.us
-  type: vless
+  port: 52080
+  server: 185.212.149.7
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-  uuid: 646d9434-8415-4752-8de3-ce082d8d1757
+  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
   xudp: true
 - alpn:
   - ''
@@ -45,23 +57,24 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI21|989KB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI39|541KB/s|DNSOK|GPT⁺-FI
   network: http
-  port: 52080
+  port: 2053
   server: 185.212.149.7
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
+  uuid: aeb3c019-ae83-4677-af97-846baa787ad5
   xudp: true
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI19|6.4MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI20|1.6MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI21|989KB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI36|1.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI37|1.2MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI38|1.2MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI39|541KB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

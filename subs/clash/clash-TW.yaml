@@ -1,0 +1,44 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- name: 🇹🇼 | @WhiteDNS | TW10|1.9MB/s|DNSOK|GPT⁺-TW
+  password: 5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm
+  port: 30502
+  server: 161.114.15.215
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 🇹🇼 | @WhiteDNS | TW11|1.9MB/s|DNSOK|GPT⁺-TW
+  network: tcp
+  password: 5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm
+  port: 30502
+  server: 161.114.15.215
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+proxy-groups:
+- name: TW-Auto
+  type: url-test
+  proxies:
+  - 🇹🇼 | @WhiteDNS | TW10|1.9MB/s|DNSOK|GPT⁺-TW
+  - 🇹🇼 | @WhiteDNS | TW11|1.9MB/s|DNSOK|GPT⁺-TW
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,TW-Auto

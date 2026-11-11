@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇪🇸 | @WhiteDNS | ES37|12.1MB/s|DNSOK|GPT⁺-ES
+- name: 🇪🇸 | @WhiteDNS | ES47|5.8MB/s|DNSOK|GPT⁺-ES
   password: ''
   port: 443
   server: 82.102.17.178
@@ -21,28 +21,11 @@ proxies:
   tls: true
   type: http
   username: ''
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇪🇸 | @WhiteDNS | ES38|6.5MB/s|DNSOK|GPT⁺-ES
-  network: tcp
-  port: 2083
-  reality-opts:
-    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
-    short-id: 0123456789abcdef
-  server: 68.221.177.135
-  tls: true
-  type: vless
-  udp: true
-  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
-  xudp: true
-  servername: www.apple.com
 proxy-groups:
 - name: ES-Auto
   type: url-test
   proxies:
-  - 🇪🇸 | @WhiteDNS | ES37|12.1MB/s|DNSOK|GPT⁺-ES
-  - 🇪🇸 | @WhiteDNS | ES38|6.5MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES47|5.8MB/s|DNSOK|GPT⁺-ES
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

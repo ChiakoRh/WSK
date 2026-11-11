@@ -12,19 +12,11 @@ dns:
   nameserver:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
-proxies:
-- cipher: chacha20-ietf-poly1305
-  name: ❓ | @WhiteDNS | OT695|1.4MB/s|DNSOK|GPT⁺-NL
-  password: H4JHkHU2pIRZ1sbruQ-p39Grh1z6nxY8
-  port: 8044
-  server: 185.4.115.146
-  type: ss
-  udp: true
+proxies: []
 proxy-groups:
 - name: OT-Auto
   type: url-test
-  proxies:
-  - ❓ | @WhiteDNS | OT695|1.4MB/s|DNSOK|GPT⁺-NL
+  proxies: []
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
