@@ -51,6 +51,12 @@ https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-AL.yaml
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-AT.yaml
 ```
 
+**🇧🇦 BA (`BA`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-BA.yaml
+```
+
 **🇧🇪 BE (`BE`)**
 
 ```
@@ -61,12 +67,6 @@ https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-BE.yaml
 
 ```
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-BG.yaml
-```
-
-**🇧🇷 برزیل (`BR`)**
-
-```
-https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-BR.yaml
 ```
 
 **🇨🇦 کانادا (`CA`)**
@@ -147,16 +147,28 @@ https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-GE.yaml
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-GR.yaml
 ```
 
+**🇭🇰 هنگ‌کنگ (`HK`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-HK.yaml
+```
+
 **🇭🇺 HU (`HU`)**
 
 ```
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-HU.yaml
 ```
 
-**🇮🇪 ایرلند (`IE`)**
+**🇮🇱 IL (`IL`)**
 
 ```
-https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-IE.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-IL.yaml
+```
+
+**🇮🇳 IN (`IN`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-IN.yaml
 ```
 
 **🇮🇹 ایتالیا (`IT`)**
@@ -213,6 +225,12 @@ https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-OT.yaml
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-PL.yaml
 ```
 
+**🇵🇹 پرتغال (`PT`)**
+
+```
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-PT.yaml
+```
+
 **🇷🇴 رومانی (`RO`)**
 
 ```
@@ -256,14 +274,14 @@ https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/mihomo/mihomo-ZA.yaml
 ```
 
 <details>
-<summary>🟠 لینک‌های clash کامل (36 کشور)</summary>
+<summary>🟠 لینک‌های clash کامل (39 کشور)</summary>
 
 ```
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-AL.yaml
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-AT.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-BA.yaml
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-BE.yaml
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-BG.yaml
-https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-BR.yaml
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-CA.yaml
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-CH.yaml
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-CM.yaml
@@ -277,8 +295,10 @@ https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-FR.yaml
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-GB.yaml
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-GE.yaml
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-GR.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-HK.yaml
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-HU.yaml
-https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-IE.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-IL.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-IN.yaml
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-IT.yaml
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-JP.yaml
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-KR.yaml
@@ -288,6 +308,7 @@ https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-NL.yaml
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-NO.yaml
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-OT.yaml
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-PL.yaml
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-PT.yaml
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-RO.yaml
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-RS.yaml
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-SE.yaml
@@ -300,16 +321,18 @@ https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/clash/clash-ZA.yaml
 </details>
 
 <details>
-<summary>🔵 لینک‌های base64 (18 کشور)</summary>
+<summary>🔵 لینک‌های base64 (21 کشور)</summary>
 
 ```
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-CA.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-CH.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-DE.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-ES.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-FI.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-FR.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-GB.txt
-https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-HU.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-HK.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-IL.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-IT.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-JP.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-KR.txt
@@ -317,6 +340,7 @@ https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-MX.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-NL.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-OT.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-PL.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-SE.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-SG.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-US.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-VN.txt
@@ -326,16 +350,18 @@ https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/base64/base64-ZA.txt
 </details>
 
 <details>
-<summary>⚪ لینک‌های raw (18 کشور)</summary>
+<summary>⚪ لینک‌های raw (21 کشور)</summary>
 
 ```
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-CA.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-CH.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-DE.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-ES.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-FI.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-FR.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-GB.txt
-https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-HU.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-HK.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-IL.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-IT.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-JP.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-KR.txt
@@ -343,6 +369,7 @@ https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-MX.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-NL.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-OT.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-PL.txt
+https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-SE.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-SG.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-US.txt
 https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-VN.txt
@@ -360,39 +387,42 @@ https://raw.githubusercontent.com/ChiakoRh/WSK/main/subs/raw/raw-ZA.txt
 |---|---|---|---|---|---|---|
 | 🇦🇱 | `AL` | [mihomo-AL.yaml](subs/mihomo/mihomo-AL.yaml) | [clash-AL.yaml](subs/clash/clash-AL.yaml) | — (فقط mihomo) | — | 2 / 0 |
 | 🇦🇹 | `AT` | [mihomo-AT.yaml](subs/mihomo/mihomo-AT.yaml) | [clash-AT.yaml](subs/clash/clash-AT.yaml) | — (فقط mihomo) | — | 1 / 0 |
+| 🇧🇦 | `BA` | [mihomo-BA.yaml](subs/mihomo/mihomo-BA.yaml) | [clash-BA.yaml](subs/clash/clash-BA.yaml) | — (فقط mihomo) | — | 1 / 0 |
 | 🇧🇪 | `BE` | [mihomo-BE.yaml](subs/mihomo/mihomo-BE.yaml) | [clash-BE.yaml](subs/clash/clash-BE.yaml) | — (فقط mihomo) | — | 1 / 0 |
 | 🇧🇬 | `BG` | [mihomo-BG.yaml](subs/mihomo/mihomo-BG.yaml) | [clash-BG.yaml](subs/clash/clash-BG.yaml) | — (فقط mihomo) | — | 1 / 0 |
-| 🇧🇷 | `BR` | [mihomo-BR.yaml](subs/mihomo/mihomo-BR.yaml) | [clash-BR.yaml](subs/clash/clash-BR.yaml) | — (فقط mihomo) | — | 1 / 0 |
-| 🇨🇦 | `CA` | [mihomo-CA.yaml](subs/mihomo/mihomo-CA.yaml) | [clash-CA.yaml](subs/clash/clash-CA.yaml) | [base64-CA.txt](subs/base64/base64-CA.txt) | [raw-CA.txt](subs/raw/raw-CA.txt) | 6 / 3 |
-| 🇨🇭 | `CH` | [mihomo-CH.yaml](subs/mihomo/mihomo-CH.yaml) | [clash-CH.yaml](subs/clash/clash-CH.yaml) | [base64-CH.txt](subs/base64/base64-CH.txt) | [raw-CH.txt](subs/raw/raw-CH.txt) | 5 / 2 |
-| 🇨🇲 | `CM` | [mihomo-CM.yaml](subs/mihomo/mihomo-CM.yaml) | [clash-CM.yaml](subs/clash/clash-CM.yaml) | — (فقط mihomo) | — | 7 / 0 |
-| 🇨🇿 | `CZ` | [mihomo-CZ.yaml](subs/mihomo/mihomo-CZ.yaml) | [clash-CZ.yaml](subs/clash/clash-CZ.yaml) | — (فقط mihomo) | — | 2 / 0 |
-| 🇩🇪 | `DE` | [mihomo-DE.yaml](subs/mihomo/mihomo-DE.yaml) | [clash-DE.yaml](subs/clash/clash-DE.yaml) | [base64-DE.txt](subs/base64/base64-DE.txt) | [raw-DE.txt](subs/raw/raw-DE.txt) | 28 / 21 |
+| 🇨🇦 | `CA` | [mihomo-CA.yaml](subs/mihomo/mihomo-CA.yaml) | [clash-CA.yaml](subs/clash/clash-CA.yaml) | [base64-CA.txt](subs/base64/base64-CA.txt) | [raw-CA.txt](subs/raw/raw-CA.txt) | 11 / 4 |
+| 🇨🇭 | `CH` | [mihomo-CH.yaml](subs/mihomo/mihomo-CH.yaml) | [clash-CH.yaml](subs/clash/clash-CH.yaml) | [base64-CH.txt](subs/base64/base64-CH.txt) | [raw-CH.txt](subs/raw/raw-CH.txt) | 7 / 2 |
+| 🇨🇲 | `CM` | [mihomo-CM.yaml](subs/mihomo/mihomo-CM.yaml) | [clash-CM.yaml](subs/clash/clash-CM.yaml) | — (فقط mihomo) | — | 1 / 0 |
+| 🇨🇿 | `CZ` | [mihomo-CZ.yaml](subs/mihomo/mihomo-CZ.yaml) | [clash-CZ.yaml](subs/clash/clash-CZ.yaml) | — (فقط mihomo) | — | 3 / 0 |
+| 🇩🇪 | `DE` | [mihomo-DE.yaml](subs/mihomo/mihomo-DE.yaml) | [clash-DE.yaml](subs/clash/clash-DE.yaml) | [base64-DE.txt](subs/base64/base64-DE.txt) | [raw-DE.txt](subs/raw/raw-DE.txt) | 28 / 20 |
 | 🇩🇰 | `DK` | [mihomo-DK.yaml](subs/mihomo/mihomo-DK.yaml) | [clash-DK.yaml](subs/clash/clash-DK.yaml) | — (فقط mihomo) | — | 1 / 0 |
 | 🇪🇪 | `EE` | [mihomo-EE.yaml](subs/mihomo/mihomo-EE.yaml) | [clash-EE.yaml](subs/clash/clash-EE.yaml) | — (فقط mihomo) | — | 1 / 0 |
-| 🇪🇸 | `ES` | [mihomo-ES.yaml](subs/mihomo/mihomo-ES.yaml) | [clash-ES.yaml](subs/clash/clash-ES.yaml) | [base64-ES.txt](subs/base64/base64-ES.txt) | [raw-ES.txt](subs/raw/raw-ES.txt) | 3 / 2 |
-| 🇫🇮 | `FI` | [mihomo-FI.yaml](subs/mihomo/mihomo-FI.yaml) | [clash-FI.yaml](subs/clash/clash-FI.yaml) | — (فقط mihomo) | — | 2 / 0 |
-| 🇫🇷 | `FR` | [mihomo-FR.yaml](subs/mihomo/mihomo-FR.yaml) | [clash-FR.yaml](subs/clash/clash-FR.yaml) | [base64-FR.txt](subs/base64/base64-FR.txt) | [raw-FR.txt](subs/raw/raw-FR.txt) | 28 / 17 |
-| 🇬🇧 | `GB` | [mihomo-GB.yaml](subs/mihomo/mihomo-GB.yaml) | [clash-GB.yaml](subs/clash/clash-GB.yaml) | [base64-GB.txt](subs/base64/base64-GB.txt) | [raw-GB.txt](subs/raw/raw-GB.txt) | 9 / 4 |
+| 🇪🇸 | `ES` | [mihomo-ES.yaml](subs/mihomo/mihomo-ES.yaml) | [clash-ES.yaml](subs/clash/clash-ES.yaml) | [base64-ES.txt](subs/base64/base64-ES.txt) | [raw-ES.txt](subs/raw/raw-ES.txt) | 2 / 1 |
+| 🇫🇮 | `FI` | [mihomo-FI.yaml](subs/mihomo/mihomo-FI.yaml) | [clash-FI.yaml](subs/clash/clash-FI.yaml) | [base64-FI.txt](subs/base64/base64-FI.txt) | [raw-FI.txt](subs/raw/raw-FI.txt) | 4 / 2 |
+| 🇫🇷 | `FR` | [mihomo-FR.yaml](subs/mihomo/mihomo-FR.yaml) | [clash-FR.yaml](subs/clash/clash-FR.yaml) | [base64-FR.txt](subs/base64/base64-FR.txt) | [raw-FR.txt](subs/raw/raw-FR.txt) | 17 / 9 |
+| 🇬🇧 | `GB` | [mihomo-GB.yaml](subs/mihomo/mihomo-GB.yaml) | [clash-GB.yaml](subs/clash/clash-GB.yaml) | [base64-GB.txt](subs/base64/base64-GB.txt) | [raw-GB.txt](subs/raw/raw-GB.txt) | 8 / 2 |
 | 🇬🇪 | `GE` | [mihomo-GE.yaml](subs/mihomo/mihomo-GE.yaml) | [clash-GE.yaml](subs/clash/clash-GE.yaml) | — (فقط mihomo) | — | 1 / 0 |
 | 🇬🇷 | `GR` | [mihomo-GR.yaml](subs/mihomo/mihomo-GR.yaml) | [clash-GR.yaml](subs/clash/clash-GR.yaml) | — (فقط mihomo) | — | 2 / 0 |
-| 🇭🇺 | `HU` | [mihomo-HU.yaml](subs/mihomo/mihomo-HU.yaml) | [clash-HU.yaml](subs/clash/clash-HU.yaml) | [base64-HU.txt](subs/base64/base64-HU.txt) | [raw-HU.txt](subs/raw/raw-HU.txt) | 2 / 1 |
-| 🇮🇪 | `IE` | [mihomo-IE.yaml](subs/mihomo/mihomo-IE.yaml) | [clash-IE.yaml](subs/clash/clash-IE.yaml) | — (فقط mihomo) | — | 1 / 0 |
-| 🇮🇹 | `IT` | [mihomo-IT.yaml](subs/mihomo/mihomo-IT.yaml) | [clash-IT.yaml](subs/clash/clash-IT.yaml) | [base64-IT.txt](subs/base64/base64-IT.txt) | [raw-IT.txt](subs/raw/raw-IT.txt) | 2 / 2 |
-| 🇯🇵 | `JP` | [mihomo-JP.yaml](subs/mihomo/mihomo-JP.yaml) | [clash-JP.yaml](subs/clash/clash-JP.yaml) | [base64-JP.txt](subs/base64/base64-JP.txt) | [raw-JP.txt](subs/raw/raw-JP.txt) | 5 / 5 |
-| 🇰🇷 | `KR` | [mihomo-KR.yaml](subs/mihomo/mihomo-KR.yaml) | [clash-KR.yaml](subs/clash/clash-KR.yaml) | [base64-KR.txt](subs/base64/base64-KR.txt) | [raw-KR.txt](subs/raw/raw-KR.txt) | 10 / 3 |
+| 🇭🇰 | `HK` | [mihomo-HK.yaml](subs/mihomo/mihomo-HK.yaml) | [clash-HK.yaml](subs/clash/clash-HK.yaml) | [base64-HK.txt](subs/base64/base64-HK.txt) | [raw-HK.txt](subs/raw/raw-HK.txt) | 1 / 1 |
+| 🇭🇺 | `HU` | [mihomo-HU.yaml](subs/mihomo/mihomo-HU.yaml) | [clash-HU.yaml](subs/clash/clash-HU.yaml) | — (فقط mihomo) | — | 1 / 0 |
+| 🇮🇱 | `IL` | [mihomo-IL.yaml](subs/mihomo/mihomo-IL.yaml) | [clash-IL.yaml](subs/clash/clash-IL.yaml) | [base64-IL.txt](subs/base64/base64-IL.txt) | [raw-IL.txt](subs/raw/raw-IL.txt) | 1 / 1 |
+| 🇮🇳 | `IN` | [mihomo-IN.yaml](subs/mihomo/mihomo-IN.yaml) | [clash-IN.yaml](subs/clash/clash-IN.yaml) | — (فقط mihomo) | — | 5 / 0 |
+| 🇮🇹 | `IT` | [mihomo-IT.yaml](subs/mihomo/mihomo-IT.yaml) | [clash-IT.yaml](subs/clash/clash-IT.yaml) | [base64-IT.txt](subs/base64/base64-IT.txt) | [raw-IT.txt](subs/raw/raw-IT.txt) | 3 / 2 |
+| 🇯🇵 | `JP` | [mihomo-JP.yaml](subs/mihomo/mihomo-JP.yaml) | [clash-JP.yaml](subs/clash/clash-JP.yaml) | [base64-JP.txt](subs/base64/base64-JP.txt) | [raw-JP.txt](subs/raw/raw-JP.txt) | 5 / 3 |
+| 🇰🇷 | `KR` | [mihomo-KR.yaml](subs/mihomo/mihomo-KR.yaml) | [clash-KR.yaml](subs/clash/clash-KR.yaml) | [base64-KR.txt](subs/base64/base64-KR.txt) | [raw-KR.txt](subs/raw/raw-KR.txt) | 11 / 4 |
 | 🇱🇻 | `LV` | [mihomo-LV.yaml](subs/mihomo/mihomo-LV.yaml) | [clash-LV.yaml](subs/clash/clash-LV.yaml) | — (فقط mihomo) | — | 3 / 0 |
 | 🇲🇽 | `MX` | [mihomo-MX.yaml](subs/mihomo/mihomo-MX.yaml) | [clash-MX.yaml](subs/clash/clash-MX.yaml) | [base64-MX.txt](subs/base64/base64-MX.txt) | [raw-MX.txt](subs/raw/raw-MX.txt) | 1 / 1 |
-| 🇳🇱 | `NL` | [mihomo-NL.yaml](subs/mihomo/mihomo-NL.yaml) | [clash-NL.yaml](subs/clash/clash-NL.yaml) | [base64-NL.txt](subs/base64/base64-NL.txt) | [raw-NL.txt](subs/raw/raw-NL.txt) | 47 / 32 |
+| 🇳🇱 | `NL` | [mihomo-NL.yaml](subs/mihomo/mihomo-NL.yaml) | [clash-NL.yaml](subs/clash/clash-NL.yaml) | [base64-NL.txt](subs/base64/base64-NL.txt) | [raw-NL.txt](subs/raw/raw-NL.txt) | 58 / 44 |
 | 🇳🇴 | `NO` | [mihomo-NO.yaml](subs/mihomo/mihomo-NO.yaml) | [clash-NO.yaml](subs/clash/clash-NO.yaml) | — (فقط mihomo) | — | 1 / 0 |
-| ❓ | `OT` | [mihomo-OT.yaml](subs/mihomo/mihomo-OT.yaml) | [clash-OT.yaml](subs/clash/clash-OT.yaml) | [base64-OT.txt](subs/base64/base64-OT.txt) | [raw-OT.txt](subs/raw/raw-OT.txt) | 1 / 32 |
-| 🇵🇱 | `PL` | [mihomo-PL.yaml](subs/mihomo/mihomo-PL.yaml) | [clash-PL.yaml](subs/clash/clash-PL.yaml) | [base64-PL.txt](subs/base64/base64-PL.txt) | [raw-PL.txt](subs/raw/raw-PL.txt) | 4 / 2 |
+| ❓ | `OT` | [mihomo-OT.yaml](subs/mihomo/mihomo-OT.yaml) | [clash-OT.yaml](subs/clash/clash-OT.yaml) | [base64-OT.txt](subs/base64/base64-OT.txt) | [raw-OT.txt](subs/raw/raw-OT.txt) | 0 / 31 |
+| 🇵🇱 | `PL` | [mihomo-PL.yaml](subs/mihomo/mihomo-PL.yaml) | [clash-PL.yaml](subs/clash/clash-PL.yaml) | [base64-PL.txt](subs/base64/base64-PL.txt) | [raw-PL.txt](subs/raw/raw-PL.txt) | 6 / 4 |
+| 🇵🇹 | `PT` | [mihomo-PT.yaml](subs/mihomo/mihomo-PT.yaml) | [clash-PT.yaml](subs/clash/clash-PT.yaml) | — (فقط mihomo) | — | 1 / 0 |
 | 🇷🇴 | `RO` | [mihomo-RO.yaml](subs/mihomo/mihomo-RO.yaml) | [clash-RO.yaml](subs/clash/clash-RO.yaml) | — (فقط mihomo) | — | 8 / 0 |
 | 🇷🇸 | `RS` | [mihomo-RS.yaml](subs/mihomo/mihomo-RS.yaml) | [clash-RS.yaml](subs/clash/clash-RS.yaml) | — (فقط mihomo) | — | 2 / 0 |
-| 🇸🇪 | `SE` | [mihomo-SE.yaml](subs/mihomo/mihomo-SE.yaml) | [clash-SE.yaml](subs/clash/clash-SE.yaml) | — (فقط mihomo) | — | 2 / 0 |
-| 🇸🇬 | `SG` | [mihomo-SG.yaml](subs/mihomo/mihomo-SG.yaml) | [clash-SG.yaml](subs/clash/clash-SG.yaml) | [base64-SG.txt](subs/base64/base64-SG.txt) | [raw-SG.txt](subs/raw/raw-SG.txt) | 15 / 13 |
-| 🇺🇸 | `US` | [mihomo-US.yaml](subs/mihomo/mihomo-US.yaml) | [clash-US.yaml](subs/clash/clash-US.yaml) | [base64-US.txt](subs/base64/base64-US.txt) | [raw-US.txt](subs/raw/raw-US.txt) | 63 / 42 |
-| 🇻🇳 | `VN` | [mihomo-VN.yaml](subs/mihomo/mihomo-VN.yaml) | [clash-VN.yaml](subs/clash/clash-VN.yaml) | [base64-VN.txt](subs/base64/base64-VN.txt) | [raw-VN.txt](subs/raw/raw-VN.txt) | 2 / 2 |
+| 🇸🇪 | `SE` | [mihomo-SE.yaml](subs/mihomo/mihomo-SE.yaml) | [clash-SE.yaml](subs/clash/clash-SE.yaml) | [base64-SE.txt](subs/base64/base64-SE.txt) | [raw-SE.txt](subs/raw/raw-SE.txt) | 4 / 1 |
+| 🇸🇬 | `SG` | [mihomo-SG.yaml](subs/mihomo/mihomo-SG.yaml) | [clash-SG.yaml](subs/clash/clash-SG.yaml) | [base64-SG.txt](subs/base64/base64-SG.txt) | [raw-SG.txt](subs/raw/raw-SG.txt) | 15 / 12 |
+| 🇺🇸 | `US` | [mihomo-US.yaml](subs/mihomo/mihomo-US.yaml) | [clash-US.yaml](subs/clash/clash-US.yaml) | [base64-US.txt](subs/base64/base64-US.txt) | [raw-US.txt](subs/raw/raw-US.txt) | 66 / 50 |
+| 🇻🇳 | `VN` | [mihomo-VN.yaml](subs/mihomo/mihomo-VN.yaml) | [clash-VN.yaml](subs/clash/clash-VN.yaml) | [base64-VN.txt](subs/base64/base64-VN.txt) | [raw-VN.txt](subs/raw/raw-VN.txt) | 1 / 1 |
 | 🇿🇦 | `ZA` | [mihomo-ZA.yaml](subs/mihomo/mihomo-ZA.yaml) | [clash-ZA.yaml](subs/clash/clash-ZA.yaml) | [base64-ZA.txt](subs/base64/base64-ZA.txt) | [raw-ZA.txt](subs/raw/raw-ZA.txt) | 2 / 2 |
 <!-- COUNTRY-TABLE-END -->
 

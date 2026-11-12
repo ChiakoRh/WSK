@@ -15,7 +15,7 @@ dns:
 proxies:
 - down: ''
   fingerprint: ''
-  name: 🇯🇵 | @WhiteDNS | JP112|2.4MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP86|2.3MB/s|DNSOK|GPT⁺-JP
   obfs: ''
   obfs-password: ''
   password: 4ab7d1e3-f2a7-44ca-91bd-45d3c5f423d2
@@ -27,8 +27,7 @@ proxies:
   up: ''
   disable-sni: true
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP113|1.7MB/s|DNSOK|GPT⁺-JP
-  network: tcp
+  name: 🇯🇵 | @WhiteDNS | JP87|1.9MB/s|DNSOK|GPT⁺-JP
   password: F3NzMNuYnG7akU2mSlBY
   port: 8443
   server: 193.123.160.109
@@ -36,8 +35,10 @@ proxies:
   sni: www.microsoft.com
   type: trojan
   udp: true
+  network: tcp
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP114|1.5MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP88|1.7MB/s|DNSOK|GPT⁺-JP
+  network: tcp
   password: F3NzMNuYnG7akU2mSlBY
   port: 8443
   server: 193.123.160.109
@@ -45,41 +46,48 @@ proxies:
   sni: www.microsoft.com
   type: trojan
   udp: true
-  network: tcp
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP115|1.1MB/s|DNSOK|GPT⁺
-  network: tcp
-  port: 43149
-  reality-opts:
-    public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
-    short-id: 15aa0ad4
-  server: zfapi.zalolink.com
-  tls: true
-  type: vless
+- alterId: '0'
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP89|1.4MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: 168.138.43.75
+    path: /cctv13.m3u8
   xudp: true
-  servername: psstatic.cdn.bcebos.com
-- encryption: none
-  name: 🇯🇵 | @WhiteDNS | JP116|1.1MB/s|DNSOK|GPT⁺
-  network: tcp
-  port: 47878
-  server: 152.69.195.67
-  type: vless
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP90|1.1MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: none
+    path: /cctv13.m3u8
   xudp: true
-  servername: 152.69.195.67
+  servername: none
 proxy-groups:
 - name: JP-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP112|2.4MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP113|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP114|1.5MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP115|1.1MB/s|DNSOK|GPT⁺
-  - 🇯🇵 | @WhiteDNS | JP116|1.1MB/s|DNSOK|GPT⁺
+  - 🇯🇵 | @WhiteDNS | JP86|2.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP87|1.9MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP88|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP89|1.4MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP90|1.1MB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

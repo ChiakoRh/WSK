@@ -13,15 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇵🇱 | @WhiteDNS | PL122|6.8MB/s|DNSOK|GPT⁺-PL
-  password: None
-  port: 443
-  server: 37.120.156.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇵🇱 | @WhiteDNS | PL123|6.4MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL125|18.6MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 37.120.156.34
@@ -29,58 +21,77 @@ proxies:
   tls: true
   type: http
   username: ''
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇵🇱 | @WhiteDNS | PL124|1.4MB/s|DNSOK|GPT⁺-PL
-  network: ws
-  port: 443
-  server: 3.169.9.125
-  tls: true
-  type: vless
+- cipher: aes-256-gcm
+  name: 🇵🇱 | @WhiteDNS | PL126|7.6MB/s|DNSOK|GPT⁺-IT
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.63
+  type: ss
   udp: true
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  ws-opts:
-    headers:
-      Host: d3kw8eszm8s6l1.cloudfront.net
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J120M Build/LMY47X) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /
-  xudp: true
-  servername: d3kw8eszm8s6l1.cloudfront.net
+- name: 🇵🇱 | @WhiteDNS | PL127|5.3MB/s|DNSOK|GPT⁺-PL
+  password: None
+  port: 443
+  server: 37.120.156.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 - client-fingerprint: chrome
   encryption: none
-  name: 🇵🇱 | @WhiteDNS | PL125|760KB/s|DNSOK|GPT⁺-PL
-  network: xhttp
-  port: 443
-  server: 151.101.36.227
+  flow: xtls-rprx-vision
+  name: 🇵🇱 | @WhiteDNS | PL128|2.7MB/s|DNSOK|GPT⁺-PL
+  network: tcp
+  port: 2083
+  reality-opts:
+    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
+    short-id: 0123456789abcdef
+  server: 20.215.66.17
   tls: true
   type: vless
   udp: true
-  uuid: 9a46fb8c-fde6-492c-b5c6-8b44af0ce75f
-  xhttp-opts:
-    host: oh1.global.ssl.fastly.net
-    mode: auto
-    no-grpc-header: true
-    path: /
-    reuse-settings:
-      c-max-reuse-times: '0'
-      h-keep-alive-period: 0
-      h-max-request-times: 600-900
-      h-max-reusable-secs: 1800-3000
-      max-connections: '16'
-    x-padding-bytes: 100-1000
+  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
   xudp: true
-  servername: accounts.fastly.com
+  servername: www.apple.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇵🇱 | @WhiteDNS | PL129|2.6MB/s|DNSOK|GPT⁺-PL
+  network: raw
+  port: 2083
+  reality-opts:
+    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
+    short-id: 0123456789abcdef
+  server: 20.215.66.17
+  tls: true
+  type: vless
+  udp: true
+  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
+  xudp: true
+  servername: www.apple.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇵🇱 | @WhiteDNS | PL130|1.6MB/s|DNSOK|GPT⁺-PL
+  port: 2083
+  reality-opts:
+    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
+    short-id: 0123456789abcdef
+  server: 20.215.66.17
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
+  network: tcp
+  servername: www.apple.com
 proxy-groups:
 - name: PL-Auto
   type: url-test
   proxies:
-  - 🇵🇱 | @WhiteDNS | PL122|6.8MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL123|6.4MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL124|1.4MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL125|760KB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL125|18.6MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL126|7.6MB/s|DNSOK|GPT⁺-IT
+  - 🇵🇱 | @WhiteDNS | PL127|5.3MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL128|2.7MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL129|2.6MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL130|1.6MB/s|DNSOK|GPT⁺-PL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
