@@ -1,0 +1,120 @@
+/* CUI style — base components. Import after tokens.css.
+   Quiet bordered surfaces, pill controls, word-blur motion, no shadows. */
+
+/* fonts (relative to the folder containing this css) */
+@font-face { font-family: 'Geist'; src: url('fonts/Geist-Regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Geist'; src: url('fonts/Geist-Medium.woff2') format('woff2'); font-weight: 500; font-display: swap; }
+@font-face { font-family: 'Geist Mono'; src: url('fonts/GeistMono-Regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+
+/* ------------------------------------------------------------- base */
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Geist', Inter, system-ui, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .display {
+  font-family: 'Geist', Inter, system-ui, sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.03em;   /* tight tracking, the CUI signature */
+  line-height: 1.15;
+}
+
+code, pre, .mono {
+  font-family: 'Geist Mono', ui-monospace, monospace;
+}
+
+.text-2 { color: var(--text-2); }
+.text-3 { color: var(--text-3); }
+
+/* --------------------------------------------------------- surfaces */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-card);
+  padding: 24px;
+}
+.card-muted  { background: var(--surface-muted); }
+.card-sunk   { background: var(--surface-sunk); }
+.card-inner  { border-radius: var(--r-inner); }
+
+/* no box shadows in CUI style — surfaces separate by 1px border + brightness */
+
+/* ------------------------------------------------------------- pills */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 17px;
+  border-radius: var(--r-pill);
+  font: 500 14px 'Geist', sans-serif;
+  cursor: pointer;
+  transition: filter 160ms var(--ease), background 160ms var(--ease);
+}
+.btn:hover { filter: brightness(1.08); }
+.btn:active { filter: brightness(0.94); }
+.btn:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+
+.btn-primary { background: var(--fg); color: var(--bg); border: 1px solid var(--fg); }
+.btn-secondary { background: var(--surface); color: var(--fg); border: 1px solid var(--border); }
+.btn-secondary:hover { background: var(--surface-muted); }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  height: 28px;
+  padding: 0 13px;
+  border-radius: var(--r-pill);
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  border: 1px solid var(--border);
+  font-size: 12.5px;
+  color: var(--text-2);
+}
+.badge .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent-red); }
+.badge .sep { color: var(--text-3); }
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  padding: 0 9px;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--border);
+  font: 11px 'Geist Mono', monospace;
+  color: var(--text-3);
+}
+
+.cmd {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 36px;
+  padding: 0 14px;
+  border-radius: var(--r-pill);
+  background: color-mix(in srgb, var(--bg) 78%, transparent);
+  border: 1px solid var(--border);
+  font: 12.5px 'Geist Mono', monospace;
+  color: var(--text-3);
+}
+.cmd b { font-weight: 400; color: var(--text-2); }
+
+/* ----------------------------------------------------------- motion */
+.rise { animation: rise 720ms var(--ease) both; }
+@keyframes rise { 0% { opacity: 0; transform: translateY(14px); } }
+
+.word { animation: word 900ms var(--ease) both; }
+@keyframes word { 0% { opacity: 0; transform: translateY(.32em); filter: blur(10px); } }
+
+.fadein { animation: fadein 1100ms var(--ease) both; }
+@keyframes fadein { 0% { opacity: 0; } }
+
+.grow { transform-box: fill-box; transform-origin: left; animation: grow 1200ms var(--ease) both; }
+@keyframes grow { 0% { transform: scaleX(0); } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
