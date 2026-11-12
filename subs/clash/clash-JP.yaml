@@ -13,18 +13,33 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- encryption: none
-  name: 🇯🇵 | @WhiteDNS | JP110|2.4MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 18453
-  server: 168.110.21.56
-  type: vless
-  udp: true
-  uuid: 1751bebc-1bf1-420c-8b9d-97157aad179b
-  xudp: true
+- down: ''
+  fingerprint: ''
+  name: 🇯🇵 | @WhiteDNS | JP111|2.8MB/s|DNSOK|GPT⁺-JP
+  obfs: ''
+  obfs-password: ''
+  password: 4ab7d1e3-f2a7-44ca-91bd-45d3c5f423d2
+  port: 1985
+  server: 158.101.140.31
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+  up: ''
+  disable-sni: true
+- down: ''
+  fingerprint: ''
+  name: 🇯🇵 | @WhiteDNS | JP112|2.7MB/s|DNSOK|GPT⁺-JP
+  obfs: ''
+  obfs-password: ''
+  password: Hy2OracleTokyo2026Owner
+  port: 30000
+  server: 168.110.16.191
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  up: ''
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP111|2.1MB/s|DNSOK|GPT⁺-JP
-  network: tcp
+  name: 🇯🇵 | @WhiteDNS | JP113|1.9MB/s|DNSOK|GPT⁺-JP
   password: F3NzMNuYnG7akU2mSlBY
   port: 8443
   server: 193.123.160.109
@@ -32,9 +47,10 @@ proxies:
   sni: www.microsoft.com
   type: trojan
   udp: true
+  network: tcp
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP112|1.8MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP114|1.8MB/s|DNSOK|GPT⁺-JP
   network: tcp
   port: 10018
   reality-opts:
@@ -48,7 +64,8 @@ proxies:
   xudp: true
   servername: www.ebay.com
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP113|1.7MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP115|1.8MB/s|DNSOK|GPT⁺-JP
+  network: tcp
   password: F3NzMNuYnG7akU2mSlBY
   port: 8443
   server: 193.123.160.109
@@ -56,42 +73,57 @@ proxies:
   sni: www.microsoft.com
   type: trojan
   udp: true
+- encryption: none
+  name: 🇯🇵 | @WhiteDNS | JP116|1.5MB/s|DNSOK|GPT⁺-JP
   network: tcp
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇯🇵 | @WhiteDNS | JP114|1.2MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 443
-  server: 168-110-32-255.sslip.io
-  tls: true
+  port: 18453
+  server: 168.110.21.56
   type: vless
   udp: true
-  uuid: 9e9e7dee-684e-4065-afc2-1f139faaa6b0
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/51.0.2704.103 Safari/537.36
-    path: /ray
+  uuid: 1751bebc-1bf1-420c-8b9d-97157aad179b
   xudp: true
-  servername: 168-110-32-255.sslip.io
 - cipher: aes-128-gcm
-  name: 🇯🇵 | @WhiteDNS | JP115|1.0MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP117|1.2MB/s|DNSOK|GPT⁺-JP
+  password: Bwlqh7GcFB
+  port: 53758
+  server: jpa.123069.xyz
+  type: ss
+  udp: true
+- name: 🇯🇵 | @WhiteDNS | JP118|1.1MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+- cipher: aes-128-gcm
+  name: 🇯🇵 | @WhiteDNS | JP119|1.0MB/s|DNSOK|GPT⁺-JP
   password: Bwlqh7GcFB
   port: 53758
   server: 168.138.205.100
   type: ss
   udp: true
+- name: 🇯🇵 | @WhiteDNS | JP120|901KB/s|DNSOK|GPT⁺-JP
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  network: tcp
 proxy-groups:
 - name: JP-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP110|2.4MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP111|2.1MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP112|1.8MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP113|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP114|1.2MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP115|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP111|2.8MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP112|2.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP113|1.9MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP114|1.8MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP115|1.8MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP116|1.5MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP117|1.2MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP118|1.1MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP119|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP120|901KB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -13,23 +13,14 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇦 | @WhiteDNS | CA70|4.2MB/s|DNSOK|GPT⁺-CA
-  network: tcp
-  port: 80
-  server: 15.222.9.129
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦 | @WhiteDNS | CA101|4.5MB/s|DNSOK|GPT⁺-CA
+  password: 2cvhpvdg4x7mvbps
+  port: 8080
+  server: 54.39.96.233
+  type: ss
   udp: true
-  uuid: 6daa0b95-9210-4f29-be40-8c6db00bc5bb
-  xudp: true
-- name: 🇨🇦 | @WhiteDNS | CA71|4.1MB/s|DNSOK|GPT⁺-CA
-  password: None
-  port: 9443
-  server: 23.169.224.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA72|3.9MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA102|4.1MB/s|DNSOK|GPT⁺-CA
   network: raw
   port: 80
   server: 15.222.9.129
@@ -37,15 +28,23 @@ proxies:
   udp: true
   uuid: 6daa0b95-9210-4f29-be40-8c6db00bc5bb
   xudp: true
-- name: 🇨🇦 | @WhiteDNS | CA73|3.7MB/s|DNSOK|GPT⁺-CA
-  password: None
-  port: 443
-  server: 206.223.183.21
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA74|3.0MB/s|DNSOK|GPT⁺-CA
+- encryption: none
+  name: 🇨🇦 | @WhiteDNS | CA103|4.0MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  port: 80
+  server: 35.183.244.118
+  type: vless
+  udp: true
+  uuid: 6daa0b95-9210-4f29-be40-8c6db00bc5bb
+  xudp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦 | @WhiteDNS | CA104|3.9MB/s|DNSOK|GPT⁺-CA
+  password: 3h3hb2gptqz6suyt
+  port: 8080
+  server: 198.100.154.175
+  type: ss
+  udp: true
+- name: 🇨🇦 | @WhiteDNS | CA105|3.0MB/s|DNSOK|GPT⁺-CA
   password: None
   port: 9443
   server: 149.88.98.81
@@ -53,15 +52,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇦 | @WhiteDNS | CA75|2.5MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 9443
-  server: 198.44.157.27
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA76|2.4MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA106|3.0MB/s|DNSOK|GPT⁺-CA
   password: None
   port: 443
   server: 206.223.183.13
@@ -69,8 +60,38 @@ proxies:
   tls: true
   type: http
   username: ''
+- name: 🇨🇦 | @WhiteDNS | CA107|3.0MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 9443
+  server: 198.44.157.27
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA108|2.9MB/s|DNSOK|GPT⁺-CA
+  password: 5t6i121em5lkmsmk
+  port: 46977
+  server: 149.248.50.252
+  sni: ca001.zestapp778.com
+  type: trojan
+  udp: true
+  network: tcp
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦 | @WhiteDNS | CA109|2.8MB/s|DNSOK|GPT⁺-CA
+  password: 575hiopq2h28yao6
+  port: 8080
+  server: 15.235.121.109
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦 | @WhiteDNS | CA110|2.5MB/s|DNSOK|GPT⁺-CA
+  password: kxhnt5jtykd328cg
+  port: 8080
+  server: 15.235.57.6
+  type: ss
+  udp: true
 - country: 🇨🇦CA
-  name: 🇨🇦 | @WhiteDNS | CA77|2.4MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA111|2.4MB/s|DNSOK|GPT⁺-CA
   password: Trojan@82164024
   port: 443
   server: ca.tronsg.com
@@ -79,27 +100,90 @@ proxies:
   type: trojan
   udp: true
   network: tcp
-- name: 🇨🇦 | @WhiteDNS | CA78|1.8MB/s|DNSOK|GPT⁺-CA
+- name: 🇨🇦 | @WhiteDNS | CA112|2.4MB/s|DNSOK|GPT⁺-CA
+  password: None
+  port: 9443
+  server: 23.169.224.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  name: 🇨🇦 | @WhiteDNS | CA113|2.3MB/s|DNSOK|GPT⁺-CA
   password: 5t6i121em5lkmsmk
   port: 46977
-  server: 149.248.50.252
+  server: ca001.zestapp778.com
+  skip-cert-verify: false
   sni: ca001.zestapp778.com
   type: trojan
   udp: true
   network: tcp
+- client-fingerprint: chrome
+  name: 🇨🇦 | @WhiteDNS | CA114|1.7MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  password: Trojan@82164024
+  port: 443
+  server: 155.138.138.2
+  skip-cert-verify: true
+  sni: ca.tronsg.com
+  type: trojan
+  udp: true
+- name: 🇨🇦 | @WhiteDNS | CA115|1.7MB/s|DNSOK|GPT⁺-CA
+  password: None
+  port: 443
+  server: 206.223.183.21
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- encryption: none
+  name: 🇨🇦 | @WhiteDNS | CA116|1.2MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  port: 80
+  server: 3.96.205.233
+  type: vless
+  udp: true
+  uuid: 6daa0b95-9210-4f29-be40-8c6db00bc5bb
+  xudp: true
+- name: 🇨🇦 | @WhiteDNS | CA117|1.2MB/s|DNSOK|GPT⁺-JP
+  password: 0wcmn0va70ra
+  port: 9177
+  server: 104.252.87.200
+  skip-cert-verify: true
+  type: http
+  username: hommkiti
+- country: 🇨🇦CA
+  name: 🇨🇦 | @WhiteDNS | CA118|993KB/s|DNSOK|GPT⁺-CA
+  password: Trojan@82164024
+  port: 443
+  server: ca.tronsg.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  network: tcp
+  sni: ca.tronsg.com
 proxy-groups:
 - name: CA-Auto
   type: url-test
   proxies:
-  - 🇨🇦 | @WhiteDNS | CA70|4.2MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA71|4.1MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA72|3.9MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA73|3.7MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA74|3.0MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA75|2.5MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA76|2.4MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA77|2.4MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA78|1.8MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA101|4.5MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA102|4.1MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA103|4.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA104|3.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA105|3.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA106|3.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA107|3.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA108|2.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA109|2.8MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA110|2.5MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA111|2.4MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA112|2.4MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA113|2.3MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA114|1.7MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA115|1.7MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA116|1.2MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA117|1.2MB/s|DNSOK|GPT⁺-JP
+  - 🇨🇦 | @WhiteDNS | CA118|993KB/s|DNSOK|GPT⁺-CA
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

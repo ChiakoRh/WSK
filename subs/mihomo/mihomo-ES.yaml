@@ -1,5 +1,5 @@
 proxies:
-- name: 🇪🇸 | @WhiteDNS | ES48|5.8MB/s|DNSOK|GPT⁺-ES
+- name: 🇪🇸 | @WhiteDNS | ES71|11.6MB/s|DNSOK|GPT⁺-ES
   password: None
   port: 443
   server: 82.102.17.178
@@ -8,9 +8,24 @@ proxies:
   type: http
   username: ''
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇪🇸 | @WhiteDNS | ES72|5.3MB/s|DNSOK|GPT⁺-ES
+  port: 2083
+  reality-opts:
+    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
+    short-id: 0123456789abcdef
+  server: 68.221.177.135
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
+  network: tcp
+  servername: www.apple.com
+- client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇪🇸 | @WhiteDNS | ES49|4.2MB/s|DNSOK|GPT⁺-ES
+  name: 🇪🇸 | @WhiteDNS | ES73|2.6MB/s|DNSOK|GPT⁺-ES
   network: tcp
   port: 2083
   reality-opts:
@@ -22,19 +37,4 @@ proxies:
   udp: true
   uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
   xudp: true
-  servername: www.apple.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇪🇸 | @WhiteDNS | ES50|2.5MB/s|DNSOK|GPT⁺-ES
-  port: 2083
-  reality-opts:
-    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
-    short-id: 0123456789abcdef
-  server: 68.221.177.135
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
-  network: tcp
   servername: www.apple.com

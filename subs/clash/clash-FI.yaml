@@ -13,44 +13,6 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  fingerprint: CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E
-  name: 🇫🇮 | @WhiteDNS | FI40|13.5MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 443
-  server: 199.232.78.120
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8d2cbffd-43d0-458d-906b-7c54b7b51f38
-  ws-opts:
-    headers:
-      Host: finalnsdger.global.ssl.fastly.net.
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
-    path: /
-  xudp: true
-  servername: cdn.akamai.steamstatic.com
-- client-fingerprint: chrome
-  encryption: none
-  fingerprint: CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E
-  name: 🇫🇮 | @WhiteDNS | FI41|6.3MB/s|DNSOK|GPT⁺-FI
-  network: ws
-  port: 443
-  server: 199.232.78.159
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8d2cbffd-43d0-458d-906b-7c54b7b51f38
-  ws-opts:
-    headers:
-      Host: finalnsdger.global.ssl.fastly.net.
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.99 Safari/537.36
-    path: /
-  xudp: true
-  servername: cdn.akamai.steamstatic.com
 - alpn:
   - ''
   alterId: '0'
@@ -61,23 +23,21 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI42|726KB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI54|1.3MB/s|DNSOK|GPT⁺-FI
   network: http
-  port: 2053
+  port: 52080
   server: 185.212.149.7
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: aeb3c019-ae83-4677-af97-846baa787ad5
+  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
   xudp: true
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI40|13.5MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI41|6.3MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI42|726KB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI54|1.3MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -13,15 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇭 | @WhiteDNS | CH43|47.1MB/s|DNSOK|GPT⁺-CH
-  password: None
-  port: 9443
-  server: 149.88.27.33
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇭 | @WhiteDNS | CH44|46.6MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH47|47.1MB/s|DNSOK|GPT⁺-CH
   password: ''
   port: 443
   server: 31.7.62.50
@@ -29,7 +21,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇨🇭 | @WhiteDNS | CH45|6.7MB/s|DNSOK|GPT⁺-CH
+- name: 🇨🇭 | @WhiteDNS | CH48|35.4MB/s|DNSOK|GPT⁺-CH
   password: None
   port: 9443
   server: 37.120.213.210
@@ -37,25 +29,17 @@ proxies:
   tls: true
   type: http
   username: ''
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇨🇭 | @WhiteDNS | CH46|3.1MB/s|DNSOK|GPT⁺-CH
-  network: tcp
-  port: 2083
-  reality-opts:
-    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
-    short-id: 0123456789abcdef
-  server: 74.161.152.237
+- name: 🇨🇭 | @WhiteDNS | CH49|32.6MB/s|DNSOK|GPT⁺-CH
+  password: None
+  port: 9443
+  server: 149.88.27.33
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
-  xudp: true
-  servername: www.apple.com
+  type: http
+  username: ''
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇨🇭 | @WhiteDNS | CH47|1.1MB/s|DNSOK|GPT⁺-CH
+  name: 🇨🇭 | @WhiteDNS | CH50|6.9MB/s|DNSOK|GPT⁺-CH
   port: 2083
   reality-opts:
     public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
@@ -72,11 +56,10 @@ proxy-groups:
 - name: CH-Auto
   type: url-test
   proxies:
-  - 🇨🇭 | @WhiteDNS | CH43|47.1MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH44|46.6MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH45|6.7MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH46|3.1MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH47|1.1MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH47|47.1MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH48|35.4MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH49|32.6MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH50|6.9MB/s|DNSOK|GPT⁺-CH
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

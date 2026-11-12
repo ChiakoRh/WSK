@@ -1,14 +1,39 @@
 proxies:
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG137|2.6MB/s|DNSOK|GPT⁺-SG
-  network: tcp
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 139.180.146.200
-  skip-cert-verify: true
-  type: trojan
+- alterId: '0'
+  cipher: auto
+  name: 🇸🇬 | @WhiteDNS | SG145|4.0MB/s|DNSOK|GPT⁺-SG
+  network: ws
+  port: 8443
+  server: news.zoom.us
+  skip-cert-verify: false
+  tls: true
+  type: vmess
   udp: true
-- name: 🇸🇬 | @WhiteDNS | SG138|2.6MB/s|DNSOK|GPT⁺-IN
+  uuid: bd67fcd2-ec34-40a6-aac6-67731f2d7011
+  ws-opts:
+    headers:
+      Host: matrix.phonicsindia.mobi
+    path: /
+  xudp: true
+  servername: matrix.phonicsindia.mobi
+- alterId: '0'
+  cipher: auto
+  name: 🇸🇬 | @WhiteDNS | SG146|4.0MB/s|DNSOK|GPT⁺-SG
+  network: ws
+  port: 8443
+  server: 141.193.213.21
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: bd67fcd2-ec34-40a6-aac6-67731f2d7011
+  ws-opts:
+    headers:
+      Host: matrix.phonicsindia.mobi
+    path: /
+  xudp: true
+  servername: matrix.phonicsindia.mobi
+- name: 🇸🇬 | @WhiteDNS | SG147|2.7MB/s|DNSOK|GPT⁺-IN
   network: ws
   port: 14430
   server: 13.140.56.100
@@ -18,104 +43,19 @@ proxies:
   ws-opts:
     headers:
       Host: 13.140.56.100
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/64.0.3282.186 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/40.0.2214.115 Safari/537.36
     path: /vless
   xudp: true
   servername: 13.140.56.100
-- cipher: aes-256-gcm
-  name: 🇸🇬 | @WhiteDNS | SG139|2.3MB/s|DNSOK|GPT⁺-SG
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 15.235.164.133
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG140|2.3MB/s|DNSOK|GPT⁺-SG
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 139.180.146.200
-  skip-cert-verify: true
-  sni: 139.180.146.200
-  type: trojan
-  udp: true
-  network: tcp
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG141|2.3MB/s|DNSOK|GPT⁺-SG
-  network: tcp
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 139.180.146.200
-  skip-cert-verify: true
-  sni: 139.180.146.200
-  type: trojan
-  udp: true
-- cipher: rc4-md5
-  name: 🇸🇬 | @WhiteDNS | SG142|2.0MB/s|DNSOK|GPT⁺-SG
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.227.4
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  name: 🇸🇬 | @WhiteDNS | SG143|1.9MB/s|DNSOK|GPT⁺-SG
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.227.236
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 | @WhiteDNS | SG144|1.7MB/s|DNSOK|GPT⁺-SG
-  port: 1270
-  server: 15.235.144.92
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  network: tcp
-  servername: xmfhlpy.com
-- alterId: '0'
-  cipher: auto
-  name: 🇸🇬 | @WhiteDNS | SG145|1.7MB/s|DNSOK|GPT⁺-SG
-  network: tcp
-  port: 1270
-  server: 15.235.144.92
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  xudp: true
-  servername: xmfhlpy.com
-- cipher: aes-256-gcm
-  name: 🇸🇬 | @WhiteDNS | SG146|1.6MB/s|DNSOK|GPT⁺-SG
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 51.79.228.131
-  type: ss
-  udp: true
-- name: 🇸🇬 | @WhiteDNS | SG147|1.6MB/s|DNSOK|GPT⁺-IN
+- name: 🇸🇬 | @WhiteDNS | SG148|2.6MB/s|DNSOK|GPT⁺-IN
   password: ''
   port: 30001
   server: 80.65.208.187
   skip-cert-verify: true
   type: http
   username: ''
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG148|1.3MB/s|DNSOK|GPT⁺-SG
-  port: 8443
-  server: 207.148.124.12
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: bcdb425f-80bc-4ec8-92a5-8edf53639c01
-  network: tcp
-  servername: www.bing.com
-- encryption: none
-  name: 🇸🇬 | @WhiteDNS | SG149|1.2MB/s|DNSOK|GPT⁺-IN
+- name: 🇸🇬 | @WhiteDNS | SG149|2.6MB/s|DNSOK|GPT⁺-IN
   network: ws
   port: 14430
   server: 13.140.56.100
@@ -124,15 +64,43 @@ proxies:
   uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
   ws-opts:
     headers:
-      Host: 13.140.56.100
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/31.0.1650.57 Safari/537.36
     path: /vless
   xudp: true
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇸🇬 | @WhiteDNS | SG150|2.6MB/s|DNSOK|GPT⁺-SG
+  network: ws
+  port: 443
+  server: www.zoom.us
+  tls: true
+  type: vless
+  udp: true
+  uuid: b19c62cc-f2c2-4895-aee1-978a0f58f8c8
+  ws-opts:
+    headers:
+      Host: matrix.phonicsindia.mobi
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /
+  xudp: true
+  servername: matrix.phonicsindia.mobi
+- cipher: aes-256-gcm
+  name: 🇸🇬 | @WhiteDNS | SG151|2.5MB/s|DNSOK|GPT⁺-SG
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 15.235.182.183
+  type: ss
+  udp: true
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG150|1.0MB/s|DNSOK|GPT⁺-SG
-  network: raw
+  name: 🇸🇬 | @WhiteDNS | SG152|1.8MB/s|DNSOK|GPT⁺-SG
+  network: tcp
   port: 46105
   reality-opts:
     public-key: Lk5nwDxC2tr3J7hT8emhUUiMX8cHyKX9TiRj_EnAiik
@@ -144,3 +112,147 @@ proxies:
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   xudp: true
   servername: www.lamer.com.sg
+- alterId: '0'
+  cipher: auto
+  name: 🇸🇬 | @WhiteDNS | SG153|1.7MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  port: 1270
+  server: 15.235.144.92
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  xudp: true
+  servername: xmfhlpy.com
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 | @WhiteDNS | SG154|1.7MB/s|DNSOK|GPT⁺-SG
+  port: 1270
+  server: 15.235.144.92
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  network: tcp
+  servername: xmfhlpy.com
+- cipher: aes-256-gcm
+  name: 🇸🇬 | @WhiteDNS | SG155|1.7MB/s|DNSOK|GPT⁺-SG
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 15.235.164.133
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇸🇬 | @WhiteDNS | SG156|1.6MB/s|DNSOK|GPT⁺-SG
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 51.79.228.131
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇸🇬 | @WhiteDNS | SG157|1.4MB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 443
+  server: xray-h0urp9tx-rapid-summit-2.cloady.io
+  tls: true
+  type: vless
+  udp: true
+  uuid: f1d3c8af71c4ef75625fcf446aa2c15b
+  ws-opts:
+    headers:
+      Host: xray-h0urp9tx-rapid-summit-2.cloady.io
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.94 Safari/537.36
+    path: /050334203cc522a3
+  xudp: true
+  servername: xray-h0urp9tx-rapid-summit-2.cloady.io
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG158|1.3MB/s|DNSOK|GPT⁺-SG
+  port: 8443
+  server: 207.148.124.12
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: bcdb425f-80bc-4ec8-92a5-8edf53639c01
+  network: tcp
+  servername: www.bing.com
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG159|1.2MB/s|DNSOK|GPT⁺-SG
+  port: 46105
+  reality-opts:
+    public-key: Lk5nwDxC2tr3J7hT8emhUUiMX8cHyKX9TiRj_EnAiik
+    short-id: 28f5c1f8f98a
+  server: zfapi.zalolink.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  network: tcp
+  servername: www.lamer.com.sg
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇸🇬 | @WhiteDNS | SG160|1.0MB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 443
+  server: 13.140.253.35
+  tls: true
+  type: vless
+  udp: true
+  uuid: bcd3798c-a56f-6bfc-b738-a17c43bd4a50
+  ws-opts:
+    headers:
+      Host: xray-m0642ki4-silver-nebula-10.cloady.io
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /362b2b2c7197d648
+  xudp: true
+  servername: xray-m0642ki4-silver-nebula-10.cloady.io
+- name: 🇸🇬 | @WhiteDNS | SG161|1.0MB/s|DNSOK|GPT⁺-SG
+  password: '8888'
+  port: 1080
+  server: 47.236.168.243
+  skip-cert-verify: true
+  type: socks5
+  username: '8888'
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇸🇬 | @WhiteDNS | SG162|1006KB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 443
+  server: xray-m0642ki4-silver-nebula-10.cloady.io
+  tls: true
+  type: vless
+  udp: true
+  uuid: bcd3798c-a56f-6bfc-b738-a17c43bd4a50
+  ws-opts:
+    headers:
+      Host: xray-m0642ki4-silver-nebula-10.cloady.io
+      User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; de-de; SAMSUNG GT-I9195 Build/KOT49H)
+        AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile
+        Safari/537.36
+    path: /362b2b2c7197d648
+  xudp: true
+  servername: xray-m0642ki4-silver-nebula-10.cloady.io
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG163|829KB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 443
+  server: xray-bprkdwje-clever-comet-4.cloady.io
+  tls: true
+  type: vless
+  udp: true
+  uuid: f1a7e2c8-b140-50d1-8acf-e62090f96599
+  ws-opts:
+    headers:
+      Host: xray-bprkdwje-clever-comet-4.cloady.io
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like
+        Gecko) Chrome/26.0.1410.64 Safari/537.31
+    path: /27dbf143acdd7bca
+  xudp: true
+  servername: xray-bprkdwje-clever-comet-4.cloady.io
