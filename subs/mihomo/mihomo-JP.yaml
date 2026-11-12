@@ -1,7 +1,7 @@
 proxies:
 - down: ''
   fingerprint: ''
-  name: 🇯🇵 | @WhiteDNS | JP111|2.8MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP112|2.4MB/s|DNSOK|GPT⁺-JP
   obfs: ''
   obfs-password: ''
   password: 4ab7d1e3-f2a7-44ca-91bd-45d3c5f423d2
@@ -12,20 +12,18 @@ proxies:
   type: hysteria2
   up: ''
   disable-sni: true
-- down: ''
-  fingerprint: ''
-  name: 🇯🇵 | @WhiteDNS | JP112|2.7MB/s|DNSOK|GPT⁺-JP
-  obfs: ''
-  obfs-password: ''
-  password: Hy2OracleTokyo2026Owner
-  port: 30000
-  server: 168.110.16.191
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  up: ''
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP113|1.9MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP113|1.7MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: F3NzMNuYnG7akU2mSlBY
+  port: 8443
+  server: 193.123.160.109
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP114|1.5MB/s|DNSOK|GPT⁺-JP
   password: F3NzMNuYnG7akU2mSlBY
   port: 8443
   server: 193.123.160.109
@@ -36,63 +34,26 @@ proxies:
   network: tcp
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP114|1.8MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP115|1.1MB/s|DNSOK|GPT⁺
   network: tcp
-  port: 10018
+  port: 43149
   reality-opts:
-    public-key: YxoFVB0NhCx4BJCgq5Ey5jdteRU2H2toGa-ZKW5XV3c
-    short-id: ''
-  server: 168.110.48.252
+    public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
+    short-id: 15aa0ad4
+  server: zfapi.zalolink.com
   tls: true
   type: vless
   udp: true
-  uuid: d8fc873b-860d-4490-b2f0-300d6ae3c2d3
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   xudp: true
-  servername: www.ebay.com
-- client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP115|1.8MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  password: F3NzMNuYnG7akU2mSlBY
-  port: 8443
-  server: 193.123.160.109
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  type: trojan
-  udp: true
+  servername: psstatic.cdn.bcebos.com
 - encryption: none
-  name: 🇯🇵 | @WhiteDNS | JP116|1.5MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP116|1.1MB/s|DNSOK|GPT⁺
   network: tcp
-  port: 18453
-  server: 168.110.21.56
+  port: 47878
+  server: 152.69.195.67
   type: vless
   udp: true
-  uuid: 1751bebc-1bf1-420c-8b9d-97157aad179b
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
   xudp: true
-- cipher: aes-128-gcm
-  name: 🇯🇵 | @WhiteDNS | JP117|1.2MB/s|DNSOK|GPT⁺-JP
-  password: Bwlqh7GcFB
-  port: 53758
-  server: jpa.123069.xyz
-  type: ss
-  udp: true
-- name: 🇯🇵 | @WhiteDNS | JP118|1.1MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 47878
-  server: 152.69.195.67
-  type: vless
-  udp: true
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-- cipher: aes-128-gcm
-  name: 🇯🇵 | @WhiteDNS | JP119|1.0MB/s|DNSOK|GPT⁺-JP
-  password: Bwlqh7GcFB
-  port: 53758
-  server: 168.138.205.100
-  type: ss
-  udp: true
-- name: 🇯🇵 | @WhiteDNS | JP120|901KB/s|DNSOK|GPT⁺-JP
-  port: 47878
-  server: 152.69.195.67
-  type: vless
-  udp: true
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-  network: tcp
+  servername: 152.69.195.67

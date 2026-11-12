@@ -13,17 +13,9 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇪🇸 | @WhiteDNS | ES71|11.6MB/s|DNSOK|GPT⁺-ES
-  password: None
-  port: 443
-  server: 82.102.17.178
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇪🇸 | @WhiteDNS | ES72|5.3MB/s|DNSOK|GPT⁺-ES
+  name: 🇪🇸 | @WhiteDNS | ES78|19.6MB/s|DNSOK|GPT⁺-ES
   port: 2083
   reality-opts:
     public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
@@ -36,10 +28,17 @@ proxies:
   uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
   network: tcp
   servername: www.apple.com
+- name: 🇪🇸 | @WhiteDNS | ES79|5.9MB/s|DNSOK|GPT⁺-ES
+  password: None
+  port: 443
+  server: 82.102.17.178
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 - client-fingerprint: chrome
-  encryption: none
   flow: xtls-rprx-vision
-  name: 🇪🇸 | @WhiteDNS | ES73|2.6MB/s|DNSOK|GPT⁺-ES
+  name: 🇪🇸 | @WhiteDNS | ES80|3.6MB/s|DNSOK|GPT⁺-ES
   network: tcp
   port: 2083
   reality-opts:
@@ -56,9 +55,9 @@ proxy-groups:
 - name: ES-Auto
   type: url-test
   proxies:
-  - 🇪🇸 | @WhiteDNS | ES71|11.6MB/s|DNSOK|GPT⁺-ES
-  - 🇪🇸 | @WhiteDNS | ES72|5.3MB/s|DNSOK|GPT⁺-ES
-  - 🇪🇸 | @WhiteDNS | ES73|2.6MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES78|19.6MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES79|5.9MB/s|DNSOK|GPT⁺-ES
+  - 🇪🇸 | @WhiteDNS | ES80|3.6MB/s|DNSOK|GPT⁺-ES
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
