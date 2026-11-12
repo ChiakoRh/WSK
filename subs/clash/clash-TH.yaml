@@ -13,27 +13,27 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
+- client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: 🇭🇰 | @WhiteDNS | HK51|2.0MB/s|DNSOK|GPT⁺-US
-  network: tcp
-  port: 443
+  name: 🇹🇭 | @WhiteDNS | TH5|1.2MB/s|DNSOK|GPT⁺-TH
+  port: 11802
   reality-opts:
-    public-key: KhRbgahSFqlPKB6QNp9QYb4oXMy2SIgi440tm6iFZHA
-    short-id: d9268fe1f028239e
-  server: hk4.oh-node.com
+    public-key: FUBjYwXlKIVwF7IuJf5dt_HU2sUnrEt10s4TIlTe8Q4
+    short-id: 6c84fbac2d
+  server: zfapi.zalolink.com
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: a7250cf9-5ea3-429d-93fe-70d0bd9ac845
-  xudp: true
-  servername: hk4e-launcher-static.hoyoverse.com
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  network: tcp
+  servername: psstatic.cdn.bcebos.com
 proxy-groups:
-- name: HK-Auto
+- name: TH-Auto
   type: url-test
   proxies:
-  - 🇭🇰 | @WhiteDNS | HK51|2.0MB/s|DNSOK|GPT⁺-US
+  - 🇹🇭 | @WhiteDNS | TH5|1.2MB/s|DNSOK|GPT⁺-TH
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,HK-Auto
+- MATCH,TH-Auto
