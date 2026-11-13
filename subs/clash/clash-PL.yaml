@@ -13,7 +13,27 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇵🇱 | @WhiteDNS | PL70|16.3MB/s|DNSOK|GPT⁺-PL
+- alpn:
+  - http/1.1
+  client-fingerprint: edge
+  encryption: none
+  name: 🇵🇱 | @WhiteDNS | PL73|18.2MB/s|DNSOK|GPT⁺-PL
+  network: ws
+  port: 443
+  server: 3.168.218.6
+  tls: true
+  type: vless
+  udp: true
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  ws-opts:
+    headers:
+      Host: d2ex4nxd2e01ub.cloudfront.net
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G610M) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
+    path: /
+  xudp: true
+  servername: d2ex4nxd2e01ub.cloudfront.net
+- name: 🇵🇱 | @WhiteDNS | PL74|6.4MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 37.120.156.18
@@ -21,7 +41,26 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇵🇱 | @WhiteDNS | PL71|6.0MB/s|DNSOK|GPT⁺-PL
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇵🇱 | @WhiteDNS | PL75|6.2MB/s|DNSOK|GPT⁺-PL
+  network: ws
+  port: 443
+  server: 3.168.218.8
+  tls: true
+  type: vless
+  udp: true
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  ws-opts:
+    headers:
+      Host: d2ex4nxd2e01ub.cloudfront.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /
+  xudp: true
+  servername: d2ex4nxd2e01ub.cloudfront.net
+- name: 🇵🇱 | @WhiteDNS | PL76|6.0MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 37.120.156.34
@@ -32,8 +71,67 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: chrome
+  name: 🇵🇱 | @WhiteDNS | PL77|3.7MB/s|DNSOK|GPT⁺-PL
+  network: ws
+  port: 443
+  server: 3.168.217.190
+  tls: true
+  type: vless
+  udp: true
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  ws-opts:
+    headers:
+      Host: d2ex4nxd2e01ub.cloudfront.net
+      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/42.0.2311.135 Safari/537.36
+    path: /
+  xudp: true
+  servername: d2ex4nxd2e01ub.cloudfront.net
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
   encryption: none
-  name: 🇵🇱 | @WhiteDNS | PL72|5.4MB/s|DNSOK|GPT⁺-PL
+  name: 🇵🇱 | @WhiteDNS | PL78|1.9MB/s|DNSOK|GPT⁺-PL
+  network: ws
+  port: 443
+  server: 3.168.218.14
+  tls: true
+  type: vless
+  udp: true
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  ws-opts:
+    headers:
+      Host: d2ex4nxd2e01ub.cloudfront.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/40.0.2214.111 Safari/537.36
+    path: /
+  xudp: true
+  servername: d2ex4nxd2e01ub.cloudfront.net
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇵🇱 | @WhiteDNS | PL79|1.8MB/s|DNSOK|GPT⁺-PL
+  network: ws
+  port: 443
+  server: 3.168.218.7
+  tls: true
+  type: vless
+  udp: true
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  ws-opts:
+    headers:
+      Host: d2ex4nxd2e01ub.cloudfront.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/67.0.3396.87 Safari/537.36
+    path: /
+  xudp: true
+  servername: d2ex4nxd2e01ub.cloudfront.net
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇵🇱 | @WhiteDNS | PL80|1.7MB/s|DNSOK|GPT⁺-PL
   network: ws
   port: 443
   server: 3.168.217.188
@@ -44,14 +142,15 @@ proxies:
   ws-opts:
     headers:
       Host: d2ex4nxd2e01ub.cloudfront.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/31.0.1650.57 Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; Redmi Note 5A Build/N2G47H; wv)
+        AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile
+        Safari/537.36
     path: /
   xudp: true
   servername: d2ex4nxd2e01ub.cloudfront.net
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇵🇱 | @WhiteDNS | PL73|4.2MB/s|DNSOK|GPT⁺-PL
+  name: 🇵🇱 | @WhiteDNS | PL81|1.7MB/s|DNSOK|GPT⁺-PL
   port: 2083
   reality-opts:
     public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
@@ -64,69 +163,19 @@ proxies:
   uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
   network: tcp
   servername: www.apple.com
-- alpn:
-  - http/1.1
-  client-fingerprint: qq
-  encryption: none
-  name: 🇵🇱 | @WhiteDNS | PL74|1.5MB/s|DNSOK|GPT⁺-PL
-  network: ws
-  port: 443
-  server: 3.169.9.125
-  tls: true
-  type: vless
-  udp: true
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  ws-opts:
-    headers:
-      Host: d2ex4nxd2e01ub.cloudfront.net
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; de-DE) AppleWebKit/534.17
-        (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
-    path: /
-  xudp: true
-  servername: d2ex4nxd2e01ub.cloudfront.net
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇵🇱 | @WhiteDNS | PL75|1.4MB/s|DNSOK|GPT⁺-PL
-  network: tcp
-  port: 2083
-  reality-opts:
-    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
-    short-id: 0123456789abcdef
-  server: 20.215.66.17
-  tls: true
-  type: vless
-  udp: true
-  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
-  xudp: true
-  servername: www.apple.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇵🇱 | @WhiteDNS | PL76|984KB/s|DNSOK|GPT⁺
-  network: raw
-  port: 2083
-  reality-opts:
-    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
-    short-id: 0123456789abcdef
-  server: 20.215.66.17
-  tls: true
-  type: vless
-  udp: true
-  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
-  xudp: true
-  servername: www.apple.com
 proxy-groups:
 - name: PL-Auto
   type: url-test
   proxies:
-  - 🇵🇱 | @WhiteDNS | PL70|16.3MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL71|6.0MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL72|5.4MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL73|4.2MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL74|1.5MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL75|1.4MB/s|DNSOK|GPT⁺-PL
-  - 🇵🇱 | @WhiteDNS | PL76|984KB/s|DNSOK|GPT⁺
+  - 🇵🇱 | @WhiteDNS | PL73|18.2MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL74|6.4MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL75|6.2MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL76|6.0MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL77|3.7MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL78|1.9MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL79|1.8MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL80|1.7MB/s|DNSOK|GPT⁺-PL
+  - 🇵🇱 | @WhiteDNS | PL81|1.7MB/s|DNSOK|GPT⁺-PL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -15,7 +15,7 @@ dns:
 proxies:
 - down: ''
   fingerprint: ''
-  name: 🇯🇵 | @WhiteDNS | JP100|2.5MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP66|2.8MB/s|DNSOK|GPT⁺-JP
   obfs: ''
   obfs-password: ''
   password: 4ab7d1e3-f2a7-44ca-91bd-45d3c5f423d2
@@ -26,103 +26,45 @@ proxies:
   type: hysteria2
   up: ''
   disable-sni: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP101|1.7MB/s|DNSOK|GPT⁺-JP
-  port: 443
-  reality-opts:
-    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
-    short-id: 684c7531e599dec0
-  server: 158.101.151.157
+- down: ''
+  fingerprint: ''
+  name: 🇯🇵 | @WhiteDNS | JP67|1.9MB/s|DNSOK|GPT⁺-JP
+  obfs: ''
+  obfs-password: ''
+  password: 4d9bc232-dde6-47d0-9d7b-e453ac8e4130
+  port: 1987
+  server: 168.110.48.252
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
-  network: tcp
-  servername: www.microsoft.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP102|1.6MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
-    short-id: 684c7531e599dec0
-  server: 158.101.151.157
-  tls: true
-  type: vless
-  udp: true
-  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
-  xudp: true
-  servername: www.microsoft.com
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP103|1.3MB/s|DNSOK|GPT⁺-JP
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
-    short-id: 684c7531e599dec0
-  server: 158.101.151.157
-  tls: true
-  type: vless
-  udp: true
-  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
-  xudp: true
-  servername: www.microsoft.com
+  sni: ''
+  type: hysteria2
+  up: ''
+  disable-sni: true
 - cipher: aes-128-gcm
-  name: 🇯🇵 | @WhiteDNS | JP104|1.3MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP68|1.3MB/s|DNSOK|GPT⁺-JP
   password: Bwlqh7GcFB
   port: 53758
   server: 168.138.205.100
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  name: 🇯🇵 | @WhiteDNS | JP105|1020KB/s|DNSOK|GPT⁺-JP
-  password: Bwlqh7GcFB
-  port: 53758
-  server: jpa.123069.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP106|741KB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 8081
-  server: 168.110.63.247
-  type: vmess
-  udp: true
-  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
-  ws-opts:
-    path: /vless
-- name: 🇯🇵 | @WhiteDNS | JP107|651KB/s|DNSOK|GPT⁺-JP
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP69|1.0MB/s|DNSOK|GPT⁺-JP
   network: tcp
-  port: 47878
-  server: 152.69.195.67
+  port: 23169
+  server: djj.zjlo.top
+  tls: true
   type: vless
   udp: true
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-- name: 🇯🇵 | @WhiteDNS | JP108|626KB/s|DNSOK|GPT⁺-JP
-  port: 47878
-  server: 152.69.195.67
-  type: vless
-  udp: true
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-  network: tcp
+  uuid: 7318caa1-93d1-4a9d-c481-504599902700
+  servername: djj.zjlo.top
 proxy-groups:
 - name: JP-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP100|2.5MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP101|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP102|1.6MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP103|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP104|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP105|1020KB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP106|741KB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP107|651KB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP108|626KB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP66|2.8MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP67|1.9MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP68|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP69|1.0MB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

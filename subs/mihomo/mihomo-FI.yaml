@@ -1,54 +1,22 @@
 proxies:
-- client-fingerprint: chrome
+- alpn:
+  - h2
+  client-fingerprint: chrome
   encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI34|5.7MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 1155
-  reality-opts:
-    public-key: o6UTWdONnTOvDOWmhfxXUoeOEtlw7VUkoAWkmOk_FWI
-    short-id: 4e4aaad65cc07da8
-  server: s1.berluno.ir
+  fingerprint: CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E
+  name: 🇫🇮 | @WhiteDNS | FI26|6.8MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 443
+  server: 199.232.78.159
   tls: true
   type: vless
   udp: true
-  uuid: e0eb33db-f900-4918-a91e-e960549eb519
-  xudp: true
-  servername: tgju.org
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
-    headers: {}
-    path:
-    - /3x
-  name: 🇫🇮 | @WhiteDNS | FI35|974KB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 52080
-  server: 185.212.149.7
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
-  xudp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
+  uuid: 47ca7863-e665-4b0d-9508-60989a5fb640
+  ws-opts:
     headers:
-      Host:
-      - down-cdn.dingtalk.com
-    path:
-    - /3x
-  name: 🇫🇮 | @WhiteDNS | FI36|539KB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 2053
-  server: 185.212.149.7
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: aeb3c019-ae83-4677-af97-846baa787ad5
+      Host: cheezburger.global.ssl.fastly.net.
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.89 Safari/537.36
+    path: /
   xudp: true
+  servername: cdn.akamai.steamstatic.com
