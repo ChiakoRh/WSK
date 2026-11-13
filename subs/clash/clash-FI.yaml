@@ -1,0 +1,142 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI72|17.8MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 443
+  server: free.for.member.iiproxy.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
+  xudp: true
+  servername: free.for.member.iiproxy.com
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇮 | @WhiteDNS | FI73|6.3MB/s|DNSOK|GPT⁺-FI
+  password: Zpv2hwO4eWAy3MmFOvIm5jcEby7exKU4
+  port: 53731
+  server: fn1s.sublinkplas.ir
+  type: ss
+  udp: true
+- client-fingerprint: firefox
+  name: 🇫🇮 | @WhiteDNS | FI74|6.3MB/s|DNSOK|GPT⁺-FI
+  port: 443
+  server: 65.109.208.183
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
+  network: tcp
+  servername: free.for.member.iiproxy.com
+- client-fingerprint: chrome
+  name: 🇫🇮 | @WhiteDNS | FI75|6.2MB/s|DNSOK|GPT⁺-FI
+  port: 443
+  server: free.for.member.iiproxy.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
+  network: tcp
+  servername: free.for.member.iiproxy.com
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI76|6.1MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 443
+  server: 65.109.208.183
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
+  xudp: true
+  servername: free.for.member.iiproxy.com
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: lalibobi.tw.de1.Connect
+  name: 🇫🇮 | @WhiteDNS | FI77|4.4MB/s|DNSOK|GPT⁺-FI
+  network: grpc
+  port: 443
+  server: 188.225.46.162
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7d718630-7a1a-4af8-9332-aa0610634e8a
+  xudp: true
+  servername: filnex.baby
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    path:
+    - /3x
+  name: 🇫🇮 | @WhiteDNS | FI78|2.7MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 2053
+  server: 185.212.149.7
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: aeb3c019-ae83-4677-af97-846baa787ad5
+  xudp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    path:
+    - /3x
+  name: 🇫🇮 | @WhiteDNS | FI79|1.7MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 52080
+  server: 185.212.149.7
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
+  xudp: true
+proxy-groups:
+- name: FI-Auto
+  type: url-test
+  proxies:
+  - 🇫🇮 | @WhiteDNS | FI72|17.8MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI73|6.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI74|6.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI75|6.2MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI76|6.1MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI77|4.4MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI78|2.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI79|1.7MB/s|DNSOK|GPT⁺-FI
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,FI-Auto

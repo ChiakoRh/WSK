@@ -15,7 +15,7 @@ dns:
 proxies:
 - down: ''
   fingerprint: ''
-  name: 🇯🇵 | @WhiteDNS | JP85|3.1MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP255|2.7MB/s|DNSOK|GPT⁺-JP
   obfs: ''
   obfs-password: ''
   password: 4ab7d1e3-f2a7-44ca-91bd-45d3c5f423d2
@@ -28,7 +28,7 @@ proxies:
   disable-sni: true
 - down: ''
   fingerprint: ''
-  name: 🇯🇵 | @WhiteDNS | JP86|1.9MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP256|2.2MB/s|DNSOK|GPT⁺-JP
   obfs: ''
   obfs-password: ''
   password: 4d9bc232-dde6-47d0-9d7b-e453ac8e4130
@@ -39,9 +39,16 @@ proxies:
   type: hysteria2
   up: ''
   disable-sni: true
+- name: 🇯🇵 | @WhiteDNS | JP257|2.0MB/s|DNSOK|GPT⁺-JP
+  port: 47878
+  server: 152.69.195.67
+  type: vless
+  udp: true
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  network: tcp
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP87|1.8MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP258|1.8MB/s|DNSOK|GPT⁺-JP
   network: tcp
   port: 10018
   reality-opts:
@@ -54,33 +61,9 @@ proxies:
   uuid: d8fc873b-860d-4490-b2f0-300d6ae3c2d3
   xudp: true
   servername: www.ebay.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP88|1.6MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 23169
-  server: djj.zjlo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3eb053cb-d6f8-4b31-8180-222e1cc6f8ff
-  xudp: true
-  servername: djj.zjlo.top
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP89|1.5MB/s|DNSOK|GPT⁺-JP
-  port: 23169
-  server: djj.zjlo.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7318caa1-93d1-4a9d-c481-504599902700
-  network: tcp
-  servername: djj.zjlo.top
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP90|1.4MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP259|1.7MB/s|DNSOK|GPT⁺-JP
   network: tcp
   port: 443
   reality-opts:
@@ -93,8 +76,43 @@ proxies:
   uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
   xudp: true
   servername: www.microsoft.com
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP260|1.7MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: F3NzMNuYnG7akU2mSlBY
+  port: 8443
+  server: 193.123.160.109
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP261|1.7MB/s|DNSOK|GPT⁺-JP
+  password: F3NzMNuYnG7akU2mSlBY
+  port: 8443
+  server: 193.123.160.109
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP262|1.3MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 43149
+  reality-opts:
+    public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
+    short-id: 15aa0ad4
+  server: zfapi.zalolink.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  xudp: true
+  servername: psstatic.cdn.bcebos.com
 - encryption: none
-  name: 🇯🇵 | @WhiteDNS | JP91|1.4MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP263|1.0MB/s|DNSOK|GPT⁺-JP
   network: raw
   port: 47878
   server: 152.69.195.67
@@ -102,163 +120,27 @@ proxies:
   udp: true
   uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
   xudp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP92|1.4MB/s|DNSOK|GPT⁺-JP
+- name: 🇯🇵 | @WhiteDNS | JP264|903KB/s|DNSOK|GPT⁺-JP
   network: tcp
-  port: 23169
-  server: 155.248.175.201
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3eb053cb-d6f8-4b31-8180-222e1cc6f8ff
-  xudp: true
-  servername: djj.zjlo.top
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP93|1.3MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 23169
-  server: djj.zjlo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9da605d3-f5f7-4135-f806-450f036f9351
-  xudp: true
-  servername: djj.zjlo.top
-- name: 🇯🇵 | @WhiteDNS | JP94|1.3MB/s|DNSOK|GPT⁺-JP
   port: 47878
   server: 152.69.195.67
   type: vless
   udp: true
   uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-  network: tcp
-- name: 🇯🇵 | @WhiteDNS | JP95|1.3MB/s|DNSOK|GPT⁺-JP
-  password: ''
-  port: 10800
-  server: 180.222.187.50
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP96|1.2MB/s|DNSOK|GPT⁺-JP
-  port: 23169
-  server: djj.zjlo.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9da605d3-f5f7-4135-f806-450f036f9351
-  network: tcp
-  servername: djj.zjlo.top
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP97|1.2MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 23169
-  server: djj.zjlo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7318caa1-93d1-4a9d-c481-504599902700
-  xudp: true
-  servername: djj.zjlo.top
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP98|1.2MB/s|DNSOK|GPT⁺-JP
-  port: 23169
-  server: djj.zjlo.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: f67b1159-a61f-4ae4-9844-0701b716a290
-  network: tcp
-  servername: djj.zjlo.top
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP99|1.2MB/s|DNSOK|GPT⁺-JP
-  port: 23169
-  server: 155.248.175.201
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9da605d3-f5f7-4135-f806-450f036f9351
-  network: tcp
-  servername: djj.zjlo.top
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP100|1.2MB/s|DNSOK|GPT⁺-JP
-  port: 23169
-  server: 155.248.175.201
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7318caa1-93d1-4a9d-c481-504599902700
-  network: tcp
-  servername: djj.zjlo.top
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP101|1.0MB/s|DNSOK|GPT⁺
-  network: tcp
-  port: 23169
-  server: djj.zjlo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: f67b1159-a61f-4ae4-9844-0701b716a290
-  xudp: true
-  servername: djj.zjlo.top
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP102|1.0MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 23169
-  server: 155.248.175.201
-  tls: true
-  type: vless
-  udp: true
-  uuid: f67b1159-a61f-4ae4-9844-0701b716a290
-  xudp: true
-  servername: djj.zjlo.top
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP103|1.0MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 23169
-  server: 155.248.175.201
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7318caa1-93d1-4a9d-c481-504599902700
-  xudp: true
-  servername: djj.zjlo.top
 proxy-groups:
 - name: JP-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP85|3.1MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP86|1.9MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP87|1.8MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP88|1.6MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP89|1.5MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP90|1.4MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP91|1.4MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP92|1.4MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP93|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP94|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP95|1.3MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP96|1.2MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP97|1.2MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP98|1.2MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP99|1.2MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP100|1.2MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP101|1.0MB/s|DNSOK|GPT⁺
-  - 🇯🇵 | @WhiteDNS | JP102|1.0MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP103|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP255|2.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP256|2.2MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP257|2.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP258|1.8MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP259|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP260|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP261|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP262|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP263|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP264|903KB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

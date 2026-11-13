@@ -1,13 +1,23 @@
 proxies:
+- name: 🇮🇪 | @WhiteDNS | IE48|17.6MB/s|DNSOK|GPT⁺-IE
+  password: None
+  port: 443
+  server: 149.88.96.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 - alpn:
   - ''
   alterId: '0'
   cipher: auto
   http-opts:
-    headers: {}
+    headers:
+      Host:
+      - tms.dingtalk.com
     path:
     - /
-  name: 🇮🇪 | @WhiteDNS | IE7|6.1MB/s|DNSOK|GPT⁺-IE
+  name: 🇮🇪 | @WhiteDNS | IE49|16.3MB/s|DNSOK|GPT⁺-IE
   network: http
   port: 59236
   server: 54.229.151.97

@@ -13,82 +13,79 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB77|26.0MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 443
-  server: 49.13.34.140
-  tls: true
-  type: vless
-  udp: true
-  uuid: ade238d6-637e-4f6c-b1fc-268579b262f5
-  ws-opts:
-    headers:
-      Host: vless1.greewebservices.ir
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/49.0.2623.112 Safari/537.36
-    path: /timer/
-  xudp: true
-  servername: vless1.greewebservices.ir
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB78|24.6MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 443
-  server: vless1.greewebservices.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: ade238d6-637e-4f6c-b1fc-268579b262f5
-  ws-opts:
-    headers:
-      Host: vless1.greewebservices.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /timer/
-  xudp: true
-  servername: vless1.greewebservices.ir
 - cipher: aes-256-gcm
-  name: 🇬🇧 | @WhiteDNS | GB79|3.2MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB95|24.4MB/s|DNSOK|GPT⁺-GB
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 198.244.201.129
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: 🇬🇧 | @WhiteDNS | GB80|3.0MB/s|DNSOK|GPT⁺-GB
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 198.244.202.215
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 | @WhiteDNS | GB81|1.5MB/s|DNSOK|GPT⁺
-  password: fwxkzn0tmurzsvrw
-  port: 8080
-  server: 57.129.138.142
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 | @WhiteDNS | GB82|775KB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB96|22.4MB/s|DNSOK|GPT⁺-GB
   password: 8nrpt2il04ptci2j
   port: 8080
   server: 54.37.240.40
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB97|21.9MB/s|DNSOK|GPT⁺-GB
+  password: fwxkzn0tmurzsvrw
+  port: 8080
+  server: 57.129.138.142
+  type: ss
+  udp: true
+- name: 🇬🇧 | @WhiteDNS | GB98|20.5MB/s|DNSOK|GPT⁺-GB
+  password: None
+  port: 443
+  server: 212.102.63.31
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇬🇧 | @WhiteDNS | GB99|18.0MB/s|DNSOK|GPT⁺-GB
+  password: None
+  port: 9443
+  server: 37.120.233.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- cipher: aes-256-gcm
+  name: 🇬🇧 | @WhiteDNS | GB100|6.6MB/s|DNSOK|GPT⁺-GB
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 198.244.202.215
+  type: ss
+  udp: true
+- client-fingerprint: firefox
+  name: 🇬🇧 | @WhiteDNS | GB101|3.8MB/s|DNSOK|GPT⁺-GB
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: SQoAGnEQVi70chtRe5GwdjiiCVtYlHnp8GDiwNoa2VA
+    short-id: ef992706
+  server: 62.60.219.235
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8d7486d9-6365-4c84-830b-eb167c99c03a
+  xhttp-opts:
+    mode: auto
+    path: /game
+    x-padding-bytes: 100-1000
+  xudp: true
+  servername: www.aparat.com
 proxy-groups:
 - name: GB-Auto
   type: url-test
   proxies:
-  - 🇬🇧 | @WhiteDNS | GB77|26.0MB/s|DNSOK|GPT⁺-DE
-  - 🇬🇧 | @WhiteDNS | GB78|24.6MB/s|DNSOK|GPT⁺-DE
-  - 🇬🇧 | @WhiteDNS | GB79|3.2MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB80|3.0MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB81|1.5MB/s|DNSOK|GPT⁺
-  - 🇬🇧 | @WhiteDNS | GB82|775KB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB95|24.4MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB96|22.4MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB97|21.9MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB98|20.5MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB99|18.0MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB100|6.6MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB101|3.8MB/s|DNSOK|GPT⁺-GB
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

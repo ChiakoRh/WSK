@@ -12,11 +12,42 @@ dns:
   nameserver:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
-proxies: []
+proxies:
+- down: ''
+  fingerprint: ''
+  name: ❓ | @WhiteDNS | OT578|9.7MB/s|DNSOK|GPT⁺-NL
+  obfs: salamander
+  obfs-password: HysteriaHowdy
+  password: HowdyHysteria2023w0W
+  port: 8443
+  server: 51.15.19.206
+  skip-cert-verify: true
+  sni: vk.com
+  type: hysteria2
+  up: ''
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: ❓ | @WhiteDNS | OT579|3.2MB/s|DNSOK|GPT⁺-FR
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: 33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0
+    short-id: e6
+  server: 161.97.160.224
+  tls: true
+  type: vless
+  udp: true
+  uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
+  xudp: true
+  servername: passport.yandex.ru
 proxy-groups:
 - name: OT-Auto
   type: url-test
-  proxies: []
+  proxies:
+  - ❓ | @WhiteDNS | OT578|9.7MB/s|DNSOK|GPT⁺-NL
+  - ❓ | @WhiteDNS | OT579|3.2MB/s|DNSOK|GPT⁺-FR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
