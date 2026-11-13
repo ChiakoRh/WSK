@@ -1,7 +1,23 @@
 proxies:
 - client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT268|62.9MB/s|DNSOK|GPT⁺-IT
+  name: 🇮🇹 | @WhiteDNS | IT49|44.0MB/s|DNSOK|GPT⁺-IT
+  network: tcp
+  port: 2083
+  reality-opts:
+    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
+    short-id: 0123456789abcdef
+  server: 172.213.24.16
+  tls: true
+  type: vless
+  udp: true
+  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
+  xudp: true
+  servername: www.apple.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇮🇹 | @WhiteDNS | IT50|35.1MB/s|DNSOK|GPT⁺-IT
   network: raw
   port: 2083
   reality-opts:
@@ -14,39 +30,41 @@ proxies:
   uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
   xudp: true
   servername: www.apple.com
-- cipher: aes-256-gcm
-  name: 🇮🇹 | @WhiteDNS | IT269|50.6MB/s|DNSOK|GPT⁺-IT
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 202.50.253.72
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇮🇹 | @WhiteDNS | IT270|45.3MB/s|DNSOK|GPT⁺-IT
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 202.50.253.36
-  type: ss
-  udp: true
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT271|33.6MB/s|DNSOK|GPT⁺-IT
+  name: 🇮🇹 | @WhiteDNS | IT51|18.5MB/s|DNSOK|GPT⁺-IT
   network: tcp
-  port: 2083
+  port: 443
   reality-opts:
-    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
-    short-id: 0123456789abcdef
-  server: 172.213.24.16
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  server: 203.23.179.123
   tls: true
   type: vless
   udp: true
-  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
+  uuid: fa081e9f-7574-0002-8928-31aa5ac923c7
   xudp: true
-  servername: www.apple.com
+  servername: de1-b.sbcweb.net
+- cipher: aes-256-gcm
+  name: 🇮🇹 | @WhiteDNS | IT52|9.0MB/s|DNSOK|GPT⁺-IT
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.99
+  type: ss
+  udp: true
+- name: 🇮🇹 | @WhiteDNS | IT53|7.4MB/s|DNSOK|GPT⁺-IT
+  password: ''
+  port: 443
+  server: 185.183.105.146
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 - client-fingerprint: firefox
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT272|27.9MB/s|DNSOK|GPT⁺-IT
+  name: 🇮🇹 | @WhiteDNS | IT54|2.5MB/s|DNSOK|GPT⁺
   network: tcp
   port: 443
   reality-opts:
@@ -59,33 +77,18 @@ proxies:
   uuid: fa081e9f-7574-0001-8928-31aa5ac923c7
   xudp: true
   servername: de1-b.sbcweb.net
-- name: 🇮🇹 | @WhiteDNS | IT273|27.6MB/s|DNSOK|GPT⁺-IT
-  password: ''
-  port: 443
-  server: 185.183.105.146
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- cipher: aes-256-gcm
-  name: 🇮🇹 | @WhiteDNS | IT274|7.5MB/s|DNSOK|GPT⁺-IT
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 202.50.253.27
-  type: ss
-  udp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT275|6.3MB/s|DNSOK|GPT⁺-IT
-  network: tcp
+  name: 🇮🇹 | @WhiteDNS | IT55|1.6MB/s|DNSOK|GPT⁺-IT
   port: 443
   reality-opts:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
     short-id: 868419504747f6de
   server: 203.23.179.123
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: fa081e9f-7574-0002-8928-31aa5ac923c7
-  xudp: true
+  network: tcp
   servername: de1-b.sbcweb.net

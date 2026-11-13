@@ -13,28 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: aes-256-gcm
-  name: 🇬🇧 | @WhiteDNS | GB95|24.4MB/s|DNSOK|GPT⁺-GB
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 198.244.201.129
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 | @WhiteDNS | GB96|22.4MB/s|DNSOK|GPT⁺-GB
-  password: 8nrpt2il04ptci2j
-  port: 8080
-  server: 54.37.240.40
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 | @WhiteDNS | GB97|21.9MB/s|DNSOK|GPT⁺-GB
-  password: fwxkzn0tmurzsvrw
-  port: 8080
-  server: 57.129.138.142
-  type: ss
-  udp: true
-- name: 🇬🇧 | @WhiteDNS | GB98|20.5MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB60|21.2MB/s|DNSOK|GPT⁺-GB
   password: None
   port: 443
   server: 212.102.63.31
@@ -42,7 +21,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇬🇧 | @WhiteDNS | GB99|18.0MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB61|16.1MB/s|DNSOK|GPT⁺-GB
   password: None
   port: 9443
   server: 37.120.233.34
@@ -51,41 +30,27 @@ proxies:
   type: http
   username: ''
 - cipher: aes-256-gcm
-  name: 🇬🇧 | @WhiteDNS | GB100|6.6MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB62|1.4MB/s|DNSOK|GPT⁺-GB
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 198.244.202.215
   type: ss
   udp: true
-- client-fingerprint: firefox
-  name: 🇬🇧 | @WhiteDNS | GB101|3.8MB/s|DNSOK|GPT⁺-GB
-  network: xhttp
-  port: 443
-  reality-opts:
-    public-key: SQoAGnEQVi70chtRe5GwdjiiCVtYlHnp8GDiwNoa2VA
-    short-id: ef992706
-  server: 62.60.219.235
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB63|671KB/s|DNSOK|GPT⁺
+  password: 8nrpt2il04ptci2j
+  port: 8080
+  server: 54.37.240.40
+  type: ss
   udp: true
-  uuid: 8d7486d9-6365-4c84-830b-eb167c99c03a
-  xhttp-opts:
-    mode: auto
-    path: /game
-    x-padding-bytes: 100-1000
-  xudp: true
-  servername: www.aparat.com
 proxy-groups:
 - name: GB-Auto
   type: url-test
   proxies:
-  - 🇬🇧 | @WhiteDNS | GB95|24.4MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB96|22.4MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB97|21.9MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB98|20.5MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB99|18.0MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB100|6.6MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB101|3.8MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB60|21.2MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB61|16.1MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB62|1.4MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB63|671KB/s|DNSOK|GPT⁺
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
