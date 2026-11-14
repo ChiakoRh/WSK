@@ -13,7 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇹 | @WhiteDNS | IT40|38.5MB/s|DNSOK|GPT⁺-IT
+- name: 🇮🇹 | @WhiteDNS | IT40|43.4MB/s|DNSOK|GPT⁺-IT
   password: ''
   port: 443
   server: 185.183.105.130
@@ -21,19 +21,36 @@ proxies:
   tls: true
   type: http
   username: ''
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇹 | @WhiteDNS | IT41|6.5MB/s|DNSOK|GPT⁺-IT
-  password: n4uygjtq54pz1oiv
-  port: 8080
-  server: 57.131.21.102
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇮🇹 | @WhiteDNS | IT41|18.6MB/s|DNSOK|GPT⁺-IT
+  network: tcp
+  port: 2083
+  reality-opts:
+    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
+    short-id: 0123456789abcdef
+  server: 172.213.24.16
+  tls: true
+  type: vless
+  udp: true
+  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
+  xudp: true
+  servername: www.apple.com
+- cipher: aes-256-gcm
+  name: 🇮🇹 | @WhiteDNS | IT42|8.0MB/s|DNSOK|GPT⁺-IT
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.18
   type: ss
   udp: true
 proxy-groups:
 - name: IT-Auto
   type: url-test
   proxies:
-  - 🇮🇹 | @WhiteDNS | IT40|38.5MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT41|6.5MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT40|43.4MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT41|18.6MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT42|8.0MB/s|DNSOK|GPT⁺-IT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

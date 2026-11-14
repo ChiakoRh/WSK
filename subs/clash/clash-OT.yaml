@@ -12,24 +12,11 @@ dns:
   nameserver:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
-proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT628|1.0MB/s|DNSOK|GPT⁺
-  port: 23169
-  server: djj.zjlo.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3eb053cb-d6f8-4b31-8180-222e1cc6f8ff
-  network: tcp
-  servername: djj.zjlo.top
+proxies: []
 proxy-groups:
 - name: OT-Auto
   type: url-test
-  proxies:
-  - ❓ | @WhiteDNS | OT628|1.0MB/s|DNSOK|GPT⁺
+  proxies: []
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
