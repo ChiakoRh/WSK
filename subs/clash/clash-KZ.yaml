@@ -1,0 +1,40 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: livestreamcontent
+  name: 🇰🇿 | @WhiteDNS | KZ11|1.6MB/s|DNSOK|GPT⁺-KZ
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: PVlnR_I9tZ8hKhOHW6ySpSofhsaShcBQ_JV2-0TePVA
+    short-id: 7e47d44f1b532321
+  server: 194.58.60.217
+  tls: true
+  type: vless
+  udp: true
+  uuid: bbb918c0-a510-45f9-ac94-4d449aef6498
+  xudp: true
+  servername: node43.lmdscdn.ru
+proxy-groups:
+- name: KZ-Auto
+  type: url-test
+  proxies:
+  - 🇰🇿 | @WhiteDNS | KZ11|1.6MB/s|DNSOK|GPT⁺-KZ
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,KZ-Auto

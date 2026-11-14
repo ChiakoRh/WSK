@@ -1,0 +1,40 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- encryption: mlkem768x25519plus.native.0rtt.S9DT4aeuKkc1Qtf8kz7jjGxGkzpzsCArx1CFRpmx4FU
+  flow: xtls-rprx-vision
+  http-opts:
+    headers:
+      Host:
+      - dynu.com
+    path:
+    - /
+  name: 🇫🇮 | @WhiteDNS | FI36|6.4MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 47607
+  server: ivory9.fars-remen.ir
+  type: vless
+  udp: true
+  uuid: 86b62284-75fd-4653-ab37-2d2ccf73a695
+  xudp: true
+proxy-groups:
+- name: FI-Auto
+  type: url-test
+  proxies:
+  - 🇫🇮 | @WhiteDNS | FI36|6.4MB/s|DNSOK|GPT⁺-FI
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,FI-Auto
