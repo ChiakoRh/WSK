@@ -15,7 +15,7 @@ dns:
 proxies:
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP75|2.0MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP74|1.7MB/s|DNSOK|GPT⁺-JP
   network: raw
   port: 443
   reality-opts:
@@ -28,9 +28,39 @@ proxies:
   uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
   xudp: true
   servername: www.microsoft.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP75|1.3MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: DLYP4CSy4Ey15aYSzcYdwfW4XIuiw3_DuKunNLEDgS4
+    short-id: ''
+  server: 43.130.234.128
+  tls: true
+  type: vless
+  udp: true
+  uuid: a2d4ddd8-4d3f-49f5-b78b-bdb3eebab9a6
+  xudp: true
+  servername: www.microsoft.com
+- alterId: '0'
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP76|1.3MB/s|DNSOK|GPT⁺
+  network: ws
+  port: 8081
+  server: 168.110.63.247
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
+  ws-opts:
+    headers: {}
+    path: /vless
+  xudp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP76|1.7MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP77|1.3MB/s|DNSOK|GPT⁺-JP
   network: tcp
   port: 443
   reality-opts:
@@ -43,47 +73,52 @@ proxies:
   uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
   xudp: true
   servername: www.microsoft.com
-- client-fingerprint: firefox
-  encryption: none
-  name: 🇯🇵 | @WhiteDNS | JP77|1.6MB/s|DNSOK|GPT⁺-JP
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP78|1.0MB/s|DNSOK|GPT⁺-JP
   network: ws
-  port: 443
-  server: 13.140.248.125
-  tls: true
-  type: vless
+  port: 8081
+  server: 168.110.63.247
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-  uuid: 4f82d72b-9644-c39a-ac6b-abbf15a862aa
+  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
   ws-opts:
-    headers:
-      Host: xray-p1vi234h-lunar-forest-6.cloady.io
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/50.0.2661.102 Safari/537.36
-    path: /e3e2aa65089989f0
+    headers: {}
+    path: /vless
   xudp: true
-  servername: xray-p1vi234h-lunar-forest-6.cloady.io
-- cipher: aes-256-gcm
-  name: 🇯🇵 | @WhiteDNS | JP78|1.4MB/s|DNSOK|GPT⁺-JP
-  password: 3eOFeNssde7PYYMv
-  port: 80
-  server: 84.247.155.196
-  type: ss
-  udp: true
+  servername: 168.110.63.247
+- down: ''
+  fingerprint: ''
+  name: 🇯🇵 | @WhiteDNS | JP79|837KB/s|DNSOK|GPT⁺-JP
+  obfs: ''
+  obfs-password: ''
+  password: Yuike2026cat
+  port: 8443
+  server: 43.130.234.128
+  skip-cert-verify: false
+  sni: 43-130-234-128.sslip.io
+  type: hysteria2
+  up: ''
 - cipher: aes-128-gcm
-  name: 🇯🇵 | @WhiteDNS | JP79|983KB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP80|665KB/s|DNSOK|GPT⁺-JP
   password: Bwlqh7GcFB
   port: 53758
-  server: jpa.123069.xyz
+  server: 168.138.205.100
   type: ss
   udp: true
 proxy-groups:
 - name: JP-Auto
   type: url-test
   proxies:
-  - 🇯🇵 | @WhiteDNS | JP75|2.0MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP76|1.7MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP77|1.6MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP78|1.4MB/s|DNSOK|GPT⁺-JP
-  - 🇯🇵 | @WhiteDNS | JP79|983KB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP74|1.7MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP75|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP76|1.3MB/s|DNSOK|GPT⁺
+  - 🇯🇵 | @WhiteDNS | JP77|1.3MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP78|1.0MB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP79|837KB/s|DNSOK|GPT⁺-JP
+  - 🇯🇵 | @WhiteDNS | JP80|665KB/s|DNSOK|GPT⁺-JP
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
