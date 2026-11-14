@@ -14,20 +14,35 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇦 | @WhiteDNS | CA61|4.6MB/s|DNSOK|GPT⁺-CA
-  password: 2cvhpvdg4x7mvbps
-  port: 8080
-  server: 54.39.96.233
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦 | @WhiteDNS | CA62|3.0MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA74|4.3MB/s|DNSOK|GPT⁺-CA
   password: 3h3hb2gptqz6suyt
   port: 8080
   server: 198.100.154.175
   type: ss
   udp: true
-- name: 🇨🇦 | @WhiteDNS | CA63|2.9MB/s|DNSOK|GPT⁺-CA
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦 | @WhiteDNS | CA75|4.1MB/s|DNSOK|GPT⁺-CA
+  password: kxhnt5jtykd328cg
+  port: 8080
+  server: 15.235.57.6
+  type: ss
+  udp: true
+- name: 🇨🇦 | @WhiteDNS | CA76|3.9MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  port: 80
+  server: 15.156.199.163
+  type: vless
+  udp: true
+  uuid: 6daa0b95-9210-4f29-be40-8c6db00bc5bb
+  xudp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦 | @WhiteDNS | CA77|3.4MB/s|DNSOK|GPT⁺-CA
+  password: 575hiopq2h28yao6
+  port: 8080
+  server: 15.235.121.109
+  type: ss
+  udp: true
+- name: 🇨🇦 | @WhiteDNS | CA78|3.0MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 443
   server: 206.223.183.21
@@ -35,25 +50,26 @@ proxies:
   tls: true
   type: http
   username: ''
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦 | @WhiteDNS | CA64|2.9MB/s|DNSOK|GPT⁺
-  password: 575hiopq2h28yao6
-  port: 8080
-  server: 15.235.121.109
-  type: ss
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇦 | @WhiteDNS | CA79|1.8MB/s|DNSOK|GPT⁺-CA
+  network: ws
+  port: 16641
+  server: 162.19.192.89
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- name: 🇨🇦 | @WhiteDNS | CA65|2.5MB/s|DNSOK|GPT⁺-CA
+  uuid: 9d5c15a3-166c-4d65-8a0b-d7a7a7c8863a
+  ws-opts:
+    headers:
+      Host: 7d56482dc5251e2efaca623dcbc64e3d.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- name: 🇨🇦 | @WhiteDNS | CA80|1.7MB/s|DNSOK|GPT⁺-CA
   password: None
   port: 443
   server: 206.223.183.16
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇨🇦 | @WhiteDNS | CA66|1.7MB/s|DNSOK|GPT⁺-CA
-  password: None
-  port: 443
-  server: 206.223.183.13
   skip-cert-verify: true
   tls: true
   type: http
@@ -62,12 +78,13 @@ proxy-groups:
 - name: CA-Auto
   type: url-test
   proxies:
-  - 🇨🇦 | @WhiteDNS | CA61|4.6MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA62|3.0MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA63|2.9MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA64|2.9MB/s|DNSOK|GPT⁺
-  - 🇨🇦 | @WhiteDNS | CA65|2.5MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA66|1.7MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA74|4.3MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA75|4.1MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA76|3.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA77|3.4MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA78|3.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA79|1.8MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA80|1.7MB/s|DNSOK|GPT⁺-CA
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

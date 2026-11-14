@@ -13,43 +13,45 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇬🇧 | @WhiteDNS | GB71|20.5MB/s|DNSOK|GPT⁺-GB
-  password: ''
-  port: 443
-  server: 212.102.63.1
+- fingerprint: ''
+  name: 🇬🇧 | @WhiteDNS | GB61|17.0MB/s|DNSOK|GPT⁺-GB
+  password: b652305a-0c63-4527-8cb3-0ea582076124
+  port: 1443
+  server: 95.168.184.34
   skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+  sni: lon1.freeguard.org
+  type: anytls
+  udp: true
+  username: b652305a-0c63-4527-8cb3-0ea582076124
 - cipher: aes-256-gcm
-  name: 🇬🇧 | @WhiteDNS | GB72|4.8MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB62|10.0MB/s|DNSOK|GPT⁺-GB
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 198.244.201.129
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 | @WhiteDNS | GB73|2.1MB/s|DNSOK|GPT⁺-GB
-  password: 8nrpt2il04ptci2j
-  port: 8080
-  server: 54.37.240.40
-  type: ss
-  udp: true
 - cipher: aes-256-gcm
-  name: 🇬🇧 | @WhiteDNS | GB74|1.1MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB63|4.8MB/s|DNSOK|GPT⁺-GB
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 198.244.202.215
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB64|3.3MB/s|DNSOK|GPT⁺-GB
+  password: fwxkzn0tmurzsvrw
+  port: 8080
+  server: 57.129.138.142
   type: ss
   udp: true
 proxy-groups:
 - name: GB-Auto
   type: url-test
   proxies:
-  - 🇬🇧 | @WhiteDNS | GB71|20.5MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB72|4.8MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB73|2.1MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB74|1.1MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB61|17.0MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB62|10.0MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB63|4.8MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB64|3.3MB/s|DNSOK|GPT⁺-GB
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

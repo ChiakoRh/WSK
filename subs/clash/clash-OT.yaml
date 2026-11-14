@@ -13,49 +13,23 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT633|1.6MB/s|DNSOK|GPT⁺-JP
-  network: tcp
+  name: ❓ | @WhiteDNS | OT628|1.0MB/s|DNSOK|GPT⁺
   port: 23169
-  server: 155.248.175.201
-  tls: true
-  type: vless
-  udp: true
-  uuid: f67b1159-a61f-4ae4-9844-0701b716a290
-  xudp: true
-  servername: djj.zjlo.top
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT634|1.4MB/s|DNSOK|GPT⁺-JP
-  port: 23169
-  server: 155.248.175.201
+  server: djj.zjlo.top
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: f67b1159-a61f-4ae4-9844-0701b716a290
-  network: tcp
-  servername: djj.zjlo.top
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT635|1.1MB/s|DNSOK|GPT⁺-JP
-  port: 23169
-  server: 155.248.175.201
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7318caa1-93d1-4a9d-c481-504599902700
+  uuid: 3eb053cb-d6f8-4b31-8180-222e1cc6f8ff
   network: tcp
   servername: djj.zjlo.top
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT633|1.6MB/s|DNSOK|GPT⁺-JP
-  - ❓ | @WhiteDNS | OT634|1.4MB/s|DNSOK|GPT⁺-JP
-  - ❓ | @WhiteDNS | OT635|1.1MB/s|DNSOK|GPT⁺-JP
+  - ❓ | @WhiteDNS | OT628|1.0MB/s|DNSOK|GPT⁺
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

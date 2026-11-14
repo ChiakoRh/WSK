@@ -13,38 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT46|69.8MB/s|DNSOK|GPT⁺-IT
-  network: raw
-  port: 2083
-  reality-opts:
-    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
-    short-id: 0123456789abcdef
-  server: 172.213.24.16
-  tls: true
-  type: vless
-  udp: true
-  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
-  xudp: true
-  servername: www.apple.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT47|65.9MB/s|DNSOK|GPT⁺-IT
-  network: tcp
-  port: 2083
-  reality-opts:
-    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
-    short-id: 0123456789abcdef
-  server: 172.213.24.16
-  tls: true
-  type: vless
-  udp: true
-  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
-  xudp: true
-  servername: www.apple.com
-- name: 🇮🇹 | @WhiteDNS | IT48|18.7MB/s|DNSOK|GPT⁺-IT
+- name: 🇮🇹 | @WhiteDNS | IT40|38.5MB/s|DNSOK|GPT⁺-IT
   password: ''
   port: 443
   server: 185.183.105.130
@@ -52,54 +21,8 @@ proxies:
   tls: true
   type: http
   username: ''
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT49|7.5MB/s|DNSOK|GPT⁺-IT
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: 868419504747f6de
-  server: 203.23.179.123
-  tls: true
-  type: vless
-  udp: true
-  uuid: fa081e9f-7574-0001-8928-31aa5ac923c7
-  xudp: true
-  servername: de1-b.sbcweb.net
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT50|3.7MB/s|DNSOK|GPT⁺-IT
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: 868419504747f6de
-  server: 203.23.179.123
-  tls: true
-  type: vless
-  udp: true
-  uuid: fa081e9f-7574-0001-8928-31aa5ac923c7
-  xudp: true
-  servername: de1-b.sbcweb.net
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT51|2.8MB/s|DNSOK|GPT⁺-IT
-  port: 443
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: 868419504747f6de
-  server: 203.23.179.123
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: fa081e9f-7574-0002-8928-31aa5ac923c7
-  network: tcp
-  servername: de1-b.sbcweb.net
 - cipher: chacha20-ietf-poly1305
-  name: 🇮🇹 | @WhiteDNS | IT52|995KB/s|DNSOK|GPT⁺-IT
+  name: 🇮🇹 | @WhiteDNS | IT41|6.5MB/s|DNSOK|GPT⁺-IT
   password: n4uygjtq54pz1oiv
   port: 8080
   server: 57.131.21.102
@@ -109,13 +32,8 @@ proxy-groups:
 - name: IT-Auto
   type: url-test
   proxies:
-  - 🇮🇹 | @WhiteDNS | IT46|69.8MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT47|65.9MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT48|18.7MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT49|7.5MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT50|3.7MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT51|2.8MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT52|995KB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT40|38.5MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT41|6.5MB/s|DNSOK|GPT⁺-IT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

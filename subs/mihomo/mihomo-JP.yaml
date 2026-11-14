@@ -1,45 +1,60 @@
 proxies:
-- down: ''
-  fingerprint: ''
-  name: 🇯🇵 | @WhiteDNS | JP66|2.8MB/s|DNSOK|GPT⁺-JP
-  obfs: ''
-  obfs-password: ''
-  password: 4ab7d1e3-f2a7-44ca-91bd-45d3c5f423d2
-  port: 1985
-  server: 158.101.140.31
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP106|1.5MB/s|DNSOK|GPT⁺-JP
+  port: 443
+  reality-opts:
+    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
+    short-id: 684c7531e599dec0
+  server: 158.101.151.157
   skip-cert-verify: true
-  sni: ''
-  type: hysteria2
-  up: ''
-  disable-sni: true
-- down: ''
-  fingerprint: ''
-  name: 🇯🇵 | @WhiteDNS | JP67|1.9MB/s|DNSOK|GPT⁺-JP
-  obfs: ''
-  obfs-password: ''
-  password: 4d9bc232-dde6-47d0-9d7b-e453ac8e4130
-  port: 1987
-  server: 168.110.48.252
-  skip-cert-verify: true
-  sni: ''
-  type: hysteria2
-  up: ''
-  disable-sni: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
+  network: tcp
+  servername: www.microsoft.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP107|1.3MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
+    short-id: 684c7531e599dec0
+  server: 158.101.151.157
+  tls: true
+  type: vless
+  udp: true
+  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
+  xudp: true
+  servername: www.microsoft.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP108|1.3MB/s|DNSOK|GPT⁺-JP
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
+    short-id: 684c7531e599dec0
+  server: 158.101.151.157
+  tls: true
+  type: vless
+  udp: true
+  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
+  xudp: true
+  servername: www.microsoft.com
 - cipher: aes-128-gcm
-  name: 🇯🇵 | @WhiteDNS | JP68|1.3MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP109|1.2MB/s|DNSOK|GPT⁺-JP
+  password: Bwlqh7GcFB
+  port: 53758
+  server: jpa.123069.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇯🇵 | @WhiteDNS | JP110|1.2MB/s|DNSOK|GPT⁺-JP
   password: Bwlqh7GcFB
   port: 53758
   server: 168.138.205.100
   type: ss
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP69|1.0MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 23169
-  server: djj.zjlo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7318caa1-93d1-4a9d-c481-504599902700
-  servername: djj.zjlo.top

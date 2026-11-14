@@ -13,57 +13,39 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: aes-256-cfb
-  name: 🇰🇷 | @WhiteDNS | KR52|2.0MB/s|DNSOK|GPT⁺-KR
-  password: 1234!@#$
-  port: 1774
-  server: 49.254.204.134
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR53|1.7MB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 80
-  server: 132.145.80.230
-  skip-cert-verify: false
-  tls: false
+  name: 🇰🇷 | @WhiteDNS | KR48|2.0MB/s|DNSOK|GPT⁺-KR
+  port: 800
+  server: 129.154.61.196
   type: vmess
   udp: true
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  ws-opts:
-    headers:
-      Host: 'null'
-    path: /cctv13.m3u8
-  xudp: true
-  servername: 'null'
+  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
+  network: tcp
 - cipher: aes-256-cfb
-  name: 🇰🇷 | @WhiteDNS | KR54|1.7MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR49|1.7MB/s|DNSOK|GPT⁺-KR
   password: 1234!@#$
   port: 1774
   server: 49.254.204.133
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR55|1.7MB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 80
-  server: 132.145.80.230
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  ws-opts:
-    headers:
-      Host: 132.145.80.230
-    path: /cctv13.m3u8
-  xudp: true
-  servername: 132.145.80.230
 - alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR56|1.7MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR50|1.6MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  port: 800
+  server: 129.154.61.196
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
+  xudp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇰🇷 | @WhiteDNS | KR51|1.5MB/s|DNSOK|GPT⁺-KR
   network: ws
   port: 80
   server: 132.145.80.230
@@ -73,26 +55,11 @@ proxies:
   udp: true
   uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
   ws-opts:
-    headers:
-      Host: kr02.a0a.xyz
+    headers: {}
     path: /cctv13.m3u8
   xudp: true
-- name: 🇰🇷 | @WhiteDNS | KR57|1.0MB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 25555
-  server: 152.69.226.63
-  type: vless
-  udp: true
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  ws-opts:
-    headers:
-      Host: 152.69.226.63
-      User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; Redmi Note 5A Build/N2G47H; wv)
-        AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile
-        Safari/537.36
-    path: /
-  xudp: true
-- name: 🇰🇷 | @WhiteDNS | KR58|1.0MB/s|DNSOK|GPT⁺-KR
+  servername: kr02.a0a.xyz
+- name: 🇰🇷 | @WhiteDNS | KR52|1.3MB/s|DNSOK|GPT⁺-KR
   password: ''
   port: 443
   server: 152.69.230.221
@@ -100,49 +67,15 @@ proxies:
   tls: true
   type: http
   username: ''
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇰🇷 | @WhiteDNS | KR59|949KB/s|DNSOK|GPT⁺-KR
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 1HazPAvhO7sdmIloNjQEDXtjVP8i-Gn59doTSRVuiGY
-    short-id: a905935ed2d659fe
-  server: 43.155.182.152
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3567660e-d2a7-4a8a-b379-2ff61e7f52ba
-  xudp: true
-  servername: live.douyin.com
-- name: 🇰🇷 | @WhiteDNS | KR60|851KB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 25555
-  server: 152.69.226.63
-  type: vless
-  udp: true
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
-    path: /
-  xudp: true
-  servername: 152.69.226.63
 proxy-groups:
 - name: KR-Auto
   type: url-test
   proxies:
-  - 🇰🇷 | @WhiteDNS | KR52|2.0MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR53|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR54|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR55|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR56|1.7MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR57|1.0MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR58|1.0MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR59|949KB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR60|851KB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR48|2.0MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR49|1.7MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR50|1.6MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR51|1.5MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR52|1.3MB/s|DNSOK|GPT⁺-KR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
