@@ -13,19 +13,20 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: aes-256-gcm
-  name: 🇲🇽 | @WhiteDNS | MX10|2.4MB/s|DNSOK|GPT⁺-MX
-  password: BWyPPTusFKhGgzKh
-  port: 8388
-  server: 64.177.90.30
-  type: ss
-  udp: true
+- name: 🇧🇬 | @WhiteDNS | BG15|6.0MB/s|DNSOK|GPT⁺-BG
+  password: None
+  port: 443
+  server: 185.94.192.210
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 proxy-groups:
-- name: MX-Auto
+- name: BG-Auto
   type: url-test
   proxies:
-  - 🇲🇽 | @WhiteDNS | MX10|2.4MB/s|DNSOK|GPT⁺-MX
+  - 🇧🇬 | @WhiteDNS | BG15|6.0MB/s|DNSOK|GPT⁺-BG
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,MX-Auto
+- MATCH,BG-Auto
