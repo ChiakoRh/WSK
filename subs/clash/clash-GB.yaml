@@ -13,61 +13,18 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇬🇧 | @WhiteDNS | GB75|4.4MB/s|DNSOK|GPT⁺
-  password: ''
-  port: 9443
-  server: 84.233.178.33
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  encryption: mlkem768x25519plus.native.0rtt.cCpOxgCVxgLlIS_BaB3AZQBi1AXk1K-lRr2Uef3diG8
-  fingerprint: cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e
-  name: 🇬🇧 | @WhiteDNS | GB76|2.4MB/s|DNSOK|GPT⁺-GB
-  network: ws
-  port: 443
-  server: fastly.dunnexa.ir
-  tls: true
-  type: vless
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB57|18.0MB/s|DNSOK|GPT⁺-GB
+  password: 4vp76a+d3uu0YfRQKkFozoHjbnSYXHk1ILw7rEPpVx0=
+  port: 61312
+  server: 134.65.62.99
+  type: ss
   udp: true
-  uuid: cb024c9c-2a4b-4adf-a2b6-cc9c5077fc36
-  ws-opts:
-    headers:
-      Host: duvavuma223.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/69.0.3497.100 Safari/537.36
-    path: /
-  xudp: true
-  servername: cdn.akamai.steamstatic.com
-- client-fingerprint: chrome
-  encryption: none
-  fingerprint: CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E
-  name: 🇬🇧 | @WhiteDNS | GB77|2.0MB/s|DNSOK|GPT⁺-GB
-  network: ws
-  port: 443
-  server: 146.75.59.186
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8d2cbffd-43d0-458d-906b-7c54b7b51f38
-  ws-opts:
-    headers:
-      Host: ukoijji.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/70.0.3538.110 Safari/537.36
-    path: /
-  xudp: true
-  servername: cdn.akamai.steamstatic.com
 proxy-groups:
 - name: GB-Auto
   type: url-test
   proxies:
-  - 🇬🇧 | @WhiteDNS | GB75|4.4MB/s|DNSOK|GPT⁺
-  - 🇬🇧 | @WhiteDNS | GB76|2.4MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB77|2.0MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB57|18.0MB/s|DNSOK|GPT⁺-GB
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
