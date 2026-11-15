@@ -13,25 +13,47 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  name: 🇫🇮 | @WhiteDNS | FI27|6.7MB/s|DNSOK|GPT⁺-FI
-  network: xhttp
-  port: 443
-  server: 108.156.65.62
-  tls: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: none
+  http-opts:
+    headers:
+      Host:
+      - www.tno.nl
+    path:
+    - /
+  name: 🇫🇮 | @WhiteDNS | FI55|19.4MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 8880
+  server: free3.familysharing.ir
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 04cacf0a-46d5-81b3-874d-460d7a36c036
+  xudp: true
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - tgju.org
+    path:
+    - /@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---
+  name: 🇫🇮 | @WhiteDNS | FI56|5.9MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 45697
+  server: static.72.244.109.65.clients.your-server.de
   type: vless
   udp: true
-  uuid: 2e69b088-6ef3-417f-8247-125cf257fafd
-  xhttp-opts:
-    host: d1ivx1xk58pr8u.cloudfront.net
-    path: /cf
+  uuid: d4733b8c-4555-4332-a742-01d34f148dd6
   xudp: true
-  servername: d1ivx1xk58pr8u.cloudfront.net
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI27|6.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI55|19.4MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI56|5.9MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

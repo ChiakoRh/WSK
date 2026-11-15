@@ -15,7 +15,7 @@ dns:
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT29|54.9MB/s|DNSOK|GPT⁺-IT
+  name: 🇮🇹 | @WhiteDNS | IT34|41.9MB/s|DNSOK|GPT⁺-IT
   network: raw
   port: 2083
   reality-opts:
@@ -28,28 +28,27 @@ proxies:
   uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
   xudp: true
   servername: www.apple.com
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇮🇹 | @WhiteDNS | IT30|38.7MB/s|DNSOK|GPT⁺-IT
-  network: tcp
-  port: 2083
-  reality-opts:
-    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
-    short-id: 0123456789abcdef
-  server: 172.213.24.16
-  tls: true
-  type: vless
+- cipher: aes-256-gcm
+  name: 🇮🇹 | @WhiteDNS | IT35|8.0MB/s|DNSOK|GPT⁺-IT
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.18
+  type: ss
   udp: true
-  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
-  xudp: true
-  servername: www.apple.com
+- cipher: aes-256-gcm
+  name: 🇮🇹 | @WhiteDNS | IT36|8.0MB/s|DNSOK|GPT⁺-IT
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.90
+  type: ss
+  udp: true
 proxy-groups:
 - name: IT-Auto
   type: url-test
   proxies:
-  - 🇮🇹 | @WhiteDNS | IT29|54.9MB/s|DNSOK|GPT⁺-IT
-  - 🇮🇹 | @WhiteDNS | IT30|38.7MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT34|41.9MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT35|8.0MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT36|8.0MB/s|DNSOK|GPT⁺-IT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -1,5 +1,5 @@
 proxies:
-- name: 🇵🇱 | @WhiteDNS | PL69|6.1MB/s|DNSOK|GPT⁺-PL
+- name: 🇵🇱 | @WhiteDNS | PL75|19.7MB/s|DNSOK|GPT⁺-PL
   password: ''
   port: 443
   server: 37.120.156.34
@@ -7,11 +7,106 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇵🇱 | @WhiteDNS | PL70|1.0MB/s|DNSOK|GPT⁺-PL
-  password: ''
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇵🇱 | @WhiteDNS | PL76|18.4MB/s|DNSOK|GPT⁺-PL
+  network: xhttp
   port: 443
-  server: 151.115.54.133
+  server: 151.101.36.128
+  tls: true
+  type: vless
+  udp: true
+  uuid: ad9a885d-93bb-48e3-9937-57f1116b64e3
+  xhttp-opts:
+    host: ovd7.global.ssl.fastly.net
+    mode: auto
+    no-grpc-header: true
+    path: /
+    reuse-settings:
+      c-max-reuse-times: '0'
+      h-keep-alive-period: 0
+      h-max-request-times: 600-900
+      h-max-reusable-secs: 1800-3000
+      max-connections: '16'
+    x-padding-bytes: 100-1000
+  xudp: true
+  servername: accounts.fastly.com
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇵🇱 | @WhiteDNS | PL77|6.6MB/s|DNSOK|GPT⁺-PL
+  network: xhttp
+  port: 443
+  server: 151.101.36.253
+  tls: true
+  type: vless
+  udp: true
+  uuid: ad9a885d-93bb-48e3-9937-57f1116b64e3
+  xhttp-opts:
+    host: ovd9.global.ssl.fastly.net
+    mode: auto
+    no-grpc-header: true
+    path: /
+    reuse-settings:
+      c-max-reuse-times: '0'
+      h-keep-alive-period: 0
+      h-max-request-times: 600-900
+      h-max-reusable-secs: 1800-3000
+      max-connections: '16'
+    x-padding-bytes: 100-1000
+  xudp: true
+  servername: accounts.fastly.com
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇵🇱 | @WhiteDNS | PL78|6.5MB/s|DNSOK|GPT⁺-PL
+  network: xhttp
+  port: 443
+  server: 151.101.36.227
+  tls: true
+  type: vless
+  udp: true
+  uuid: ad9a885d-93bb-48e3-9937-57f1116b64e3
+  xhttp-opts:
+    host: oh1.global.ssl.fastly.net
+    mode: auto
+    no-grpc-header: true
+    path: /
+    reuse-settings:
+      c-max-reuse-times: '0'
+      h-keep-alive-period: 0
+      h-max-request-times: 600-900
+      h-max-reusable-secs: 1800-3000
+      max-connections: '16'
+    x-padding-bytes: 100-1000
+  xudp: true
+  servername: accounts.fastly.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇵🇱 | @WhiteDNS | PL79|2.7MB/s|DNSOK|GPT⁺-PL
+  network: tcp
+  port: 2083
+  reality-opts:
+    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
+    short-id: 0123456789abcdef
+  server: 20.215.66.17
+  tls: true
+  type: vless
+  udp: true
+  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
+  xudp: true
+  servername: www.apple.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇵🇱 | @WhiteDNS | PL80|1.7MB/s|DNSOK|GPT⁺-PL
+  port: 2083
+  reality-opts:
+    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
+    short-id: 0123456789abcdef
+  server: 20.215.66.17
   skip-cert-verify: true
   tls: true
-  type: http
-  username: ''
+  type: vless
+  udp: true
+  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
+  network: tcp
+  servername: www.apple.com
