@@ -1,10 +1,7 @@
 proxies:
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI32|5.8MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI24|3.5MB/s|DNSOK|GPT⁺-FI
   network: tcp
   port: 443
   server: 104.171.133.213
@@ -14,48 +11,9 @@ proxies:
   uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
   xudp: true
   servername: mirror-75.topp-con.xyz
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI33|5.4MB/s|DNSOK|GPT⁺-FI
-  port: 443
-  server: 104.171.133.213
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  network: tcp
-  servername: mirror-75.topp-con.xyz
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI34|4.8MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 443
-  server: 129.101.100.219
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  xudp: true
-  servername: db-28.topp-con.xyz
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI35|2.9MB/s|DNSOK|GPT⁺-FI
-  port: 443
-  server: 129.101.100.219
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  network: tcp
-  servername: db-28.topp-con.xyz
 - client-fingerprint: chrome
   encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI36|2.5MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI25|2.0MB/s|DNSOK|GPT⁺-FI
   network: xhttp
   port: 443
   server: 108.156.65.62
@@ -67,29 +25,30 @@ proxies:
     path: /cf
   xudp: true
   servername: d1ivx1xk58pr8u.cloudfront.net
-- client-fingerprint: chrome
-  name: 🇫🇮 | @WhiteDNS | FI37|1.8MB/s|DNSOK|GPT⁺-FI
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI26|1.2MB/s|DNSOK|GPT⁺-FI
   network: tcp
   port: 443
-  server: 176.109.101.18
+  server: 129.101.100.219
   tls: true
   type: vless
   udp: true
-  uuid: 52dc9262-08e0-0001-ab7e-83a68e7379c1
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
   xudp: true
-  servername: qyeep-ru-60sb.my-fade.cloud
-- encryption: none
-  http-opts:
-    headers:
-      Host:
-      - varzesh3.com
-    path:
-    - /
-  name: 🇫🇮 | @WhiteDNS | FI38|1.6MB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 46940
-  server: finland.starlink6.us
+  servername: db-28.topp-con.xyz
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI27|784KB/s|DNSOK|GPT⁺-FI
+  port: 443
+  server: 129.101.100.219
+  skip-cert-verify: true
+  tls: true
   type: vless
   udp: true
-  uuid: 907b446a-b42f-4678-bc40-24b4756abc3b
-  xudp: true
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  network: tcp
+  servername: db-28.topp-con.xyz

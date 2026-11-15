@@ -1,7 +1,19 @@
 proxies:
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP91|2.2MB/s|DNSOK|GPT⁺-JP
+  port: 23169
+  server: 155.248.175.201
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3eb053cb-d6f8-4b31-8180-222e1cc6f8ff
+  network: tcp
+  servername: djj.zjlo.top
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP82|1.5MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP92|2.0MB/s|DNSOK|GPT⁺-JP
   network: tcp
   port: 443
   reality-opts:
@@ -14,9 +26,19 @@ proxies:
   uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
   xudp: true
   servername: www.microsoft.com
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP93|1.7MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: F3NzMNuYnG7akU2mSlBY
+  port: 8443
+  server: 193.123.160.109
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: trojan
+  udp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP83|1.4MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP94|1.5MB/s|DNSOK|GPT⁺-JP
   port: 443
   reality-opts:
     public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
@@ -29,3 +51,21 @@ proxies:
   uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
   network: tcp
   servername: www.microsoft.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP95|1.5MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 23169
+  server: djj.zjlo.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7318caa1-93d1-4a9d-c481-504599902700
+  servername: djj.zjlo.top
+- cipher: aes-256-gcm
+  name: 🇯🇵 | @WhiteDNS | JP96|699KB/s|DNSOK|GPT⁺-JP
+  password: 3eOFeNssde7PYYMv
+  port: 443
+  server: 84.247.155.196
+  type: ss
+  udp: true
