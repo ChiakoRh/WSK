@@ -13,20 +13,28 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇻🇳 | @WhiteDNS | VN8|1.7MB/s|DNSOK|GPT⁺-VN
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇪🇬 | @WhiteDNS | EG2|4.6MB/s|DNSOK|GPT⁺-EG
   network: tcp
-  port: 2086
-  server: 150.95.109.109
+  port: 443
+  reality-opts:
+    public-key: tyklNbOfb-FctP-J1OQa1yUHPY9p4co70RyYuRe9nR8
+    short-id: f68db13f
+  server: 41.196.0.128
+  tls: true
   type: vless
   udp: true
-  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
   xudp: true
+  servername: eg1.gofizz.in
 proxy-groups:
-- name: VN-Auto
+- name: EG-Auto
   type: url-test
   proxies:
-  - 🇻🇳 | @WhiteDNS | VN8|1.7MB/s|DNSOK|GPT⁺-VN
+  - 🇪🇬 | @WhiteDNS | EG2|4.6MB/s|DNSOK|GPT⁺-EG
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,VN-Auto
+- MATCH,EG-Auto

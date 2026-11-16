@@ -1,14 +1,23 @@
 proxies:
 - cipher: aes-256-gcm
-  name: 🇩🇪 | @WhiteDNS | DE184|37.0MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE371|37.6MB/s|DNSOK|GPT⁺-DE
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 57.129.76.233
   type: ss
   udp: true
+- encryption: none
+  name: 🇩🇪 | @WhiteDNS | DE372|34.5MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 2474
+  server: 167.233.129.126
+  type: vless
+  udp: true
+  uuid: 287db857-de04-4212-bd69-5d14083e340e
+  xudp: true
 - alterId: 0
   cipher: aes-128-gcm
-  name: 🇩🇪 | @WhiteDNS | DE185|31.5MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE373|34.3MB/s|DNSOK|GPT⁺-DE
   port: 1234
   server: 141.95.65.9
   skip-cert-verify: true
@@ -18,23 +27,7 @@ proxies:
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   network: tcp
   servername: supervpn.super.com
-- name: 🇩🇪 | @WhiteDNS | DE186|29.7MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 9002
-  server: 158.173.154.5
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇩🇪 | @WhiteDNS | DE187|26.7MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 9002
-  server: 158.173.154.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇩🇪 | @WhiteDNS | DE188|23.7MB/s|DNSOK|GPT⁺-DE
+- name: 🇩🇪 | @WhiteDNS | DE374|33.0MB/s|DNSOK|GPT⁺-DE
   password: ''
   port: 443
   server: 213.109.163.119
@@ -44,7 +37,7 @@ proxies:
   username: ''
 - alterId: 0
   cipher: auto
-  name: 🇩🇪 | @WhiteDNS | DE189|19.9MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE375|32.8MB/s|DNSOK|GPT⁺-DE
   port: 1234
   server: 162.19.204.71
   skip-cert-verify: true
@@ -54,74 +47,185 @@ proxies:
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   network: tcp
   servername: supervpn.super.com
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE190|5.2MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 1020
-  reality-opts:
-    public-key: xwbp4EcOtus1W5Au4XCJJbCl9jCb4DwGgYQYEwUDqTY
-    short-id: 354e34396eaa89ab
-  server: p11real1.greewebservices.ir
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪 | @WhiteDNS | DE376|31.7MB/s|DNSOK|GPT⁺-DE
+  password: 03y5gbnyl4o1hc2n
+  port: 8080
+  server: 51.38.127.93
+  type: ss
+  udp: true
+- name: 🇩🇪 | @WhiteDNS | DE377|31.2MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 9002
+  server: 158.173.154.5
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: b0511969-f769-460b-963b-70c6b84b6967
-  xudp: true
-  servername: play.googleapis.com
-- encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE191|5.2MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 80
-  server: 170.114.46.6
-  type: vless
-  udp: true
-  uuid: f028d829-249a-4692-b45f-1b4cde8ef0c7
-  ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.com
-      User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
-    path: /
-  xudp: true
-- encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE192|3.2MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 80
-  server: support.zoom.us
-  type: vless
-  udp: true
-  uuid: f028d829-249a-4692-b45f-1b4cde8ef0c7
-  ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.com
-      User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko)
-        Chrome/12.0.742.100 Safari/534.30
-    path: /
-  xudp: true
+  type: http
+  username: ''
+- name: 🇩🇪 | @WhiteDNS | DE378|29.7MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 9002
+  server: 158.173.154.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 - alpn:
+  - h3
+  - h2
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE193|2.6MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE379|27.9MB/s|DNSOK|GPT⁺-DE
   network: ws
-  port: 8443
-  server: 104.17.70.206
+  port: 2083
+  server: 91.107.247.173
   tls: true
   type: vless
   udp: true
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
+  uuid: 0386df1b-7abd-4676-f3c6-d65d691023b9
   ws-opts:
     headers:
-      Host: free.sahanwickramasinghe.com
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like
-        Gecko) Chrome/26.0.1410.64 Safari/537.31
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
     path: /
   xudp: true
-  servername: free.sahanwickramasinghe.com
+  servername: sino.bestsellers1.site
+- name: 🇩🇪 | @WhiteDNS | DE380|25.6MB/s|DNSOK|GPT⁺-DE
+  port: 2474
+  server: 167.233.129.126
+  type: vless
+  udp: true
+  uuid: 287db857-de04-4212-bd69-5d14083e340e
+  network: tcp
+- name: 🇩🇪 | @WhiteDNS | DE381|17.3MB/s|DNSOK|GPT⁺-DE
+  port: 49313
+  server: 159.195.207.238
+  type: vless
+  udp: true
+  uuid: 855c7aaa-e7d6-463e-971e-d36032744428
+  network: tcp
+- name: 🇩🇪 | @WhiteDNS | DE382|7.7MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 49313
+  server: 159.195.207.238
+  type: vless
+  udp: true
+  uuid: 855c7aaa-e7d6-463e-971e-d36032744428
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  encryption: none
+  fingerprint: cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e
+  name: 🇩🇪 | @WhiteDNS | DE383|6.9MB/s|DNSOK|GPT⁺-DE
+  network: xhttp
+  port: 443
+  server: nice.iranapplecenter.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: b6111519-d248-4b81-b1d5-ad0ab76113d1
+  xhttp-opts:
+    host: www.tradingview.com
+    mode: auto
+    path: /
+  xudp: true
+  servername: بلانصبت،
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇩🇪 | @WhiteDNS | DE384|5.6MB/s|DNSOK|GPT⁺-DE
+  port: 443
+  server: 176.98.176.60
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  network: tcp
+  servername: mosaic.topp-con.xyz
+- client-fingerprint: chrome
+  name: 🇩🇪 | @WhiteDNS | DE385|5.3MB/s|DNSOK|GPT⁺-GB
+  network: ws
+  port: 443
+  server: wandering-river-cd33.mramezanian1375.workers.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 443b1e88-41fa-43bb-ff6c-982544254b74
+  ws-opts:
+    headers:
+      Host: wandering-river-cd33.mramezanian1375.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/40.0.2214.111 Safari/537.36
+    path: /87fab74555d6e093
+  xudp: true
+  servername: wandering-river-cd33.mramezanian1375.workers.dev
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇩🇪 | @WhiteDNS | DE386|4.4MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 443
+  server: 176.98.176.60
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  xudp: true
+  servername: mosaic.topp-con.xyz
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE194|2.5MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE387|4.3MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU
+    short-id: b9120cd53ffd7bba
+  server: 147.45.153.29
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  xudp: true
+  servername: patch-46.topp-con.xyz
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇩🇪 | @WhiteDNS | DE388|2.9MB/s|DNSOK|GPT⁺-FR
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0
+    short-id: e6
+  server: 161.97.160.224
+  tls: true
+  type: vless
+  udp: true
+  uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
+  xudp: true
+  servername: passport.yandex.ru
+- client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt._qY1MWcrBsC4vR5V1hzkHjMTNsnMIRvvkwWc_FBCUCI
+  name: 🇩🇪 | @WhiteDNS | DE389|1.7MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 443
+  server: www.thevicinityapp.cn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1af5253b-75e6-4e2c-8b9e-2b7b92dbb845
+  ws-opts:
+    headers:
+      Host: ded2http.samcdn.shop
+    path: /msn
+    v2ray-http-upgrade: true
+  servername: www.thevicinityapp.cn
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇩🇪 | @WhiteDNS | DE390|1.5MB/s|DNSOK|GPT⁺-DE
   port: 443
   reality-opts:
     public-key: LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU
@@ -136,92 +240,35 @@ proxies:
   servername: patch-46.topp-con.xyz
 - client-fingerprint: chrome
   encryption: none
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 🇩🇪 | @WhiteDNS | DE195|2.5MB/s|DNSOK|GPT⁺-DE
-  network: http
-  port: 8080
-  server: inexall.cloudvipgamefall.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9bb76a75-7ba1-4687-810e-b4dafa9948d7
-  xudp: true
-  servername: newnexip1.nexvpnfun.com
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE196|2.4MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 1030
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-    short-id: 9b60d3
-  server: p11real2.greewebservices.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: b0511969-f769-460b-963b-70c6b84b6967
-  xudp: true
-  servername: play.googleapis.com
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE197|1.9MB/s|DNSOK|GPT⁺-DE
-  network: tcp
+  name: 🇩🇪 | @WhiteDNS | DE391|1.5MB/s|DNSOK|GPT⁺
+  network: raw
   port: 443
   reality-opts:
-    public-key: LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU
-    short-id: b9120cd53ffd7bba
-  server: 147.45.153.29
+    public-key: 33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0
+    short-id: e6
+  server: 161.97.160.224
   tls: true
   type: vless
   udp: true
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
   xudp: true
-  servername: patch-46.topp-con.xyz
+  servername: passport.yandex.ru
 - client-fingerprint: chrome
   encryption: none
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 🇩🇪 | @WhiteDNS | DE198|1.7MB/s|DNSOK|GPT⁺-DE
-  network: http
-  port: 8080
-  server: inexall.cloudvipgamefall.ir
+  name: 🇩🇪 | @WhiteDNS | DE392|554KB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 3535
+  server: DETUN.PRIMESELL.IR
   tls: true
   type: vless
   udp: true
-  uuid: 01f93877-3307-4e73-ba4c-592d4489a9ea
+  uuid: 83e56eb0-0876-4647-8ff2-e408cf4247e3
+  ws-opts:
+    headers:
+      Host: ttuit.aitseller.ir
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /
   xudp: true
-  servername: newnexip1.nexvpnfun.com
-- name: 🇩🇪 | @WhiteDNS | DE199|1.5MB/s|DNSOK|GPT⁺-DE
-  port: 49313
-  server: 159.195.207.238
-  type: vless
-  udp: true
-  uuid: 855c7aaa-e7d6-463e-971e-d36032744428
-  network: tcp
-- cipher: aes-256-gcm
-  name: 🇩🇪 | @WhiteDNS | DE200|1.2MB/s|DNSOK|GPT⁺-DE
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 57.129.83.85
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪 | @WhiteDNS | DE201|1010KB/s|DNSOK|GPT⁺-DE
-  password: q3dqVZJi_Ugj6KLm5TOd47B69EkYVM-A
-  port: 2050
-  server: p1tun2.greewebservices.ir
-  type: ss
-  udp: true
-- name: 🇩🇪 | @WhiteDNS | DE202|848KB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 49313
-  server: 159.195.207.238
-  type: vless
-  udp: true
-  uuid: 855c7aaa-e7d6-463e-971e-d36032744428
-  xudp: true
+  servername: pars.aitseller.ir

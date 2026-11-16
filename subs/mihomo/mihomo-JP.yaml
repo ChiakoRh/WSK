@@ -1,19 +1,38 @@
 proxies:
+- name: 🇯🇵 | @WhiteDNS | JP323|1.9MB/s|DNSOK|GPT⁺-JP
+  port: 18453
+  server: 168.110.21.56
+  type: vless
+  udp: true
+  uuid: 1751bebc-1bf1-420c-8b9d-97157aad179b
+  network: tcp
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP91|2.2MB/s|DNSOK|GPT⁺-JP
-  port: 23169
-  server: 155.248.175.201
+  name: 🇯🇵 | @WhiteDNS | JP324|1.8MB/s|DNSOK|GPT⁺-JP
+  port: 443
+  reality-opts:
+    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
+    short-id: 684c7531e599dec0
+  server: 158.101.151.157
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 3eb053cb-d6f8-4b31-8180-222e1cc6f8ff
+  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
   network: tcp
-  servername: djj.zjlo.top
+  servername: www.microsoft.com
+- encryption: none
+  name: 🇯🇵 | @WhiteDNS | JP325|1.8MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 18453
+  server: 168.110.21.56
+  type: vless
+  udp: true
+  uuid: 1751bebc-1bf1-420c-8b9d-97157aad179b
+  xudp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP92|2.0MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP326|1.8MB/s|DNSOK|GPT⁺-JP
   network: tcp
   port: 443
   reality-opts:
@@ -26,8 +45,36 @@ proxies:
   uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
   xudp: true
   servername: www.microsoft.com
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP327|1.6MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: None
+    path: /cctv13.m3u8
+  xudp: true
+  servername: None
+- name: 🇯🇵 | @WhiteDNS | JP328|1.6MB/s|DNSOK|GPT⁺-JP
+  password: F3NzMNuYnG7akU2mSlBY
+  port: 8443
+  server: 193.123.160.109
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: trojan
+  udp: true
+  network: tcp
 - client-fingerprint: chrome
-  name: 🇯🇵 | @WhiteDNS | JP93|1.7MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP329|1.5MB/s|DNSOK|GPT⁺-JP
   network: tcp
   password: F3NzMNuYnG7akU2mSlBY
   port: 8443
@@ -36,36 +83,78 @@ proxies:
   sni: www.microsoft.com
   type: trojan
   udp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP94|1.5MB/s|DNSOK|GPT⁺-JP
-  port: 443
-  reality-opts:
-    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
-    short-id: 684c7531e599dec0
-  server: 158.101.151.157
-  skip-cert-verify: true
-  tls: true
-  type: vless
+- alterId: '0'
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP330|1.4MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
-  network: tcp
-  servername: www.microsoft.com
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: 168.138.43.75
+    path: /cctv13.m3u8
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP331|1.3MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 8081
+  server: 168.110.63.247
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
+  ws-opts:
+    headers: {}
+    path: /vless
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP332|1.2MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 2083
+  server: 104.21.50.177
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  ws-opts:
+    headers:
+      Host: or3.sfacg.uk
+    path: /or3
+  xudp: true
+  servername: or3.sfacg.uk
+- down: ''
+  fingerprint: ''
+  name: 🇯🇵 | @WhiteDNS | JP333|795KB/s|DNSOK|GPT⁺-JP
+  obfs: ''
+  obfs-password: ''
+  password: Yuike2026cat
+  port: 8443
+  server: 43.130.234.128
+  skip-cert-verify: false
+  sni: 43-130-234-128.sslip.io
+  type: hysteria2
+  up: ''
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP95|1.5MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP334|782KB/s|DNSOK|GPT⁺-JP
   network: tcp
-  port: 23169
-  server: djj.zjlo.top
+  port: 443
+  reality-opts:
+    public-key: DLYP4CSy4Ey15aYSzcYdwfW4XIuiw3_DuKunNLEDgS4
+    short-id: ''
+  server: 43.130.234.128
   tls: true
   type: vless
   udp: true
-  uuid: 7318caa1-93d1-4a9d-c481-504599902700
-  servername: djj.zjlo.top
-- cipher: aes-256-gcm
-  name: 🇯🇵 | @WhiteDNS | JP96|699KB/s|DNSOK|GPT⁺-JP
-  password: 3eOFeNssde7PYYMv
-  port: 443
-  server: 84.247.155.196
-  type: ss
-  udp: true
+  uuid: a2d4ddd8-4d3f-49f5-b78b-bdb3eebab9a6
+  xudp: true
+  servername: www.microsoft.com
