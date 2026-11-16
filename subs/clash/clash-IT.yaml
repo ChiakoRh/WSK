@@ -13,31 +13,111 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: random
-  encryption: none
-  name: 🇮🇹 | @WhiteDNS | IT64|44.4MB/s|DNSOK|GPT⁺-IT
-  network: ws
+- client-fingerprint: firefox
+  name: 🇮🇹 | @WhiteDNS | IT38|31.1MB/s|DNSOK|GPT⁺-IT
+  network: tcp
   port: 443
-  server: ct.877774.xyz
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  server: 48.103.120.3
   tls: true
   type: vless
   udp: true
-  uuid: 12d32e9b-d41f-4677-aa51-83e21d2837f2
-  ws-opts:
-    headers:
-      Host: it-mil.862400.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /announcement
-    early-data-header-name: Sec-WebSocket-Protocol
-    max-early-data: 2048
+  uuid: a30903dc-1bf0-0001-8b1b-603a3a56211c
   xudp: true
-  servername: it-mil.862400.xyz
+  servername: de1b.galioncc.com
+- client-fingerprint: firefox
+  name: 🇮🇹 | @WhiteDNS | IT39|29.9MB/s|DNSOK|GPT⁺-IT
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  server: 48.103.120.3
+  tls: true
+  type: vless
+  udp: true
+  uuid: a30903dc-1bf0-0001-8b1b-603a3a56211c
+  xudp: true
+  servername: de1b.galioncc.com
+- client-fingerprint: firefox
+  name: 🇮🇹 | @WhiteDNS | IT40|29.2MB/s|DNSOK|GPT⁺-IT
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  server: 48.103.120.3
+  tls: true
+  type: vless
+  udp: true
+  uuid: a30903dc-1bf0-0002-8b1b-603a3a56211c
+  xudp: true
+  servername: de1b.galioncc.com
+- client-fingerprint: firefox
+  name: 🇮🇹 | @WhiteDNS | IT41|27.7MB/s|DNSOK|GPT⁺-IT
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  server: 48.103.120.3
+  tls: true
+  type: vless
+  udp: true
+  uuid: a30903dc-1bf0-0002-8b1b-603a3a56211c
+  xudp: true
+  servername: de1b.galioncc.com
+- cipher: aes-256-gcm
+  name: 🇮🇹 | @WhiteDNS | IT42|6.3MB/s|DNSOK|GPT⁺-IT
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.45
+  type: ss
+  udp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇮🇹 | @WhiteDNS | IT43|2.6MB/s|DNSOK|GPT⁺-IT
+  network: raw
+  port: 2083
+  reality-opts:
+    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
+    short-id: 0123456789abcdef
+  server: 172.213.24.16
+  tls: true
+  type: vless
+  udp: true
+  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
+  xudp: true
+  servername: www.apple.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇮🇹 | @WhiteDNS | IT44|1.4MB/s|DNSOK|GPT⁺-IT
+  network: tcp
+  port: 2083
+  reality-opts:
+    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
+    short-id: 0123456789abcdef
+  server: 172.213.24.16
+  tls: true
+  type: vless
+  udp: true
+  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
+  xudp: true
+  servername: www.apple.com
 proxy-groups:
 - name: IT-Auto
   type: url-test
   proxies:
-  - 🇮🇹 | @WhiteDNS | IT64|44.4MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT38|31.1MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT39|29.9MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT40|29.2MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT41|27.7MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT42|6.3MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT43|2.6MB/s|DNSOK|GPT⁺-IT
+  - 🇮🇹 | @WhiteDNS | IT44|1.4MB/s|DNSOK|GPT⁺-IT
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

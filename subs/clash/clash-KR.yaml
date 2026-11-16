@@ -13,66 +13,74 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR46|2.0MB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 80
-  server: 132.145.80.230
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- cipher: aes-256-cfb
+  name: 🇰🇷 | @WhiteDNS | KR46|1.8MB/s|DNSOK|GPT⁺-KR
+  password: 1234!@#$
+  port: 1774
+  server: 49.254.204.134
+  type: ss
   udp: true
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  ws-opts:
-    headers: {}
-    path: /cctv13.m3u8
-  xudp: true
-  servername: kr02.a0a.xyz
-- alterId: 0
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR47|1.3MB/s|DNSOK|GPT⁺-KR
+- name: 🇰🇷 | @WhiteDNS | KR47|1.6MB/s|DNSOK|GPT⁺-KR
   network: ws
-  port: 80
-  server: 132.145.80.230
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+  port: 25555
+  server: 152.69.226.63
+  type: vless
   udp: true
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
   ws-opts:
     headers:
-      Host: 132.145.80.230
-    path: /cctv13.m3u8
+      Host: 152.69.226.63
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; A37fw Build/LMY47V) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+    path: /
   xudp: true
-  servername: 132.145.80.230
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 🇰🇷 | @WhiteDNS | KR48|1.1MB/s|DNSOK|GPT⁺-KR
-  network: http
-  port: 80
-  server: 217.142.138.61
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇰🇷 | @WhiteDNS | KR48|1.4MB/s|DNSOK|GPT⁺-KR
+  network: tcp
+  port: 2053
+  reality-opts:
+    public-key: DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms
+    short-id: 3c4041d3
+  server: 47.80.19.173
+  tls: true
+  type: vless
   udp: true
-  uuid: ac1b933d-afff-4487-93ef-f57130a55dff
+  uuid: 319d5ffb-57e8-4bbd-ac0c-5d55d0c253de
   xudp: true
+  servername: gateway.icloud.com
+- cipher: aes-256-cfb
+  name: 🇰🇷 | @WhiteDNS | KR49|1.3MB/s|DNSOK|GPT⁺-KR
+  password: 1234!@#$
+  port: 1774
+  server: 49.254.204.133
+  type: ss
+  udp: true
+- name: 🇰🇷 | @WhiteDNS | KR50|1.0MB/s|DNSOK|GPT⁺-KR
+  network: ws
+  port: 25555
+  server: 152.69.226.63
+  type: vless
+  udp: true
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/68.0.3440.106 Safari/537.36
+    path: /
+  xudp: true
+  servername: 152.69.226.63
 proxy-groups:
 - name: KR-Auto
   type: url-test
   proxies:
-  - 🇰🇷 | @WhiteDNS | KR46|2.0MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR47|1.3MB/s|DNSOK|GPT⁺-KR
-  - 🇰🇷 | @WhiteDNS | KR48|1.1MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR46|1.8MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR47|1.6MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR48|1.4MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR49|1.3MB/s|DNSOK|GPT⁺-KR
+  - 🇰🇷 | @WhiteDNS | KR50|1.0MB/s|DNSOK|GPT⁺-KR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

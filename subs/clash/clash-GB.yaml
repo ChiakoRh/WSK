@@ -13,58 +13,26 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 | @WhiteDNS | GB76|25.2MB/s|DNSOK|GPT⁺-DE
-  password: 03y5gbnyl4o1hc2n
-  port: 8080
-  server: 51.38.127.93
-  type: ss
-  udp: true
-- name: 🇬🇧 | @WhiteDNS | GB77|22.0MB/s|DNSOK|GPT⁺-GB
-  password: None
-  port: 9443
-  server: 84.17.50.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 - cipher: aes-256-gcm
-  name: 🇬🇧 | @WhiteDNS | GB78|7.1MB/s|DNSOK|GPT⁺-GB
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 198.244.202.215
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇬🇧 | @WhiteDNS | GB79|5.1MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB59|5.5MB/s|DNSOK|GPT⁺-GB
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 198.244.201.129
   type: ss
   udp: true
-- name: 🇬🇧 | @WhiteDNS | GB80|2.6MB/s|DNSOK|GPT⁺-FR
-  network: ws
-  port: 80
-  server: suh.cryptofront.uk
-  type: vless
+- cipher: aes-256-gcm
+  name: 🇬🇧 | @WhiteDNS | GB60|5.3MB/s|DNSOK|GPT⁺-GB
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 198.244.202.215
+  type: ss
   udp: true
-  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
-  ws-opts:
-    headers:
-      Host: suh.cryptofront.uk
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
-    path: /
-  xudp: true
 proxy-groups:
 - name: GB-Auto
   type: url-test
   proxies:
-  - 🇬🇧 | @WhiteDNS | GB76|25.2MB/s|DNSOK|GPT⁺-DE
-  - 🇬🇧 | @WhiteDNS | GB77|22.0MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB78|7.1MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB79|5.1MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB80|2.6MB/s|DNSOK|GPT⁺-FR
+  - 🇬🇧 | @WhiteDNS | GB59|5.5MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB60|5.3MB/s|DNSOK|GPT⁺-GB
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
