@@ -13,15 +13,22 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇭 | @WhiteDNS | CH49|31.3MB/s|DNSOK|GPT⁺-CH
-  password: ''
-  port: 443
-  server: 31.7.62.50
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇨🇭 | @WhiteDNS | CH48|40.3MB/s|DNSOK|GPT⁺-CH
+  port: 2083
+  reality-opts:
+    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
+    short-id: 0123456789abcdef
+  server: 74.161.152.237
   skip-cert-verify: true
   tls: true
-  type: http
-  username: ''
-- name: 🇨🇭 | @WhiteDNS | CH50|9.6MB/s|DNSOK|GPT⁺-CH
+  type: vless
+  udp: true
+  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
+  network: tcp
+  servername: www.apple.com
+- name: 🇨🇭 | @WhiteDNS | CH49|7.6MB/s|DNSOK|GPT⁺-CH
   password: ''
   port: 9443
   server: 149.88.27.46
@@ -29,12 +36,29 @@ proxies:
   tls: true
   type: http
   username: ''
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇨🇭 | @WhiteDNS | CH50|4.5MB/s|DNSOK|GPT⁺-CH
+  network: tcp
+  port: 2083
+  reality-opts:
+    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
+    short-id: 0123456789abcdef
+  server: 74.161.152.237
+  tls: true
+  type: vless
+  udp: true
+  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
+  xudp: true
+  servername: www.apple.com
 proxy-groups:
 - name: CH-Auto
   type: url-test
   proxies:
-  - 🇨🇭 | @WhiteDNS | CH49|31.3MB/s|DNSOK|GPT⁺-CH
-  - 🇨🇭 | @WhiteDNS | CH50|9.6MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH48|40.3MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH49|7.6MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH50|4.5MB/s|DNSOK|GPT⁺-CH
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -13,38 +13,31 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: 2022-blake3-chacha20-poly1305
-  name: 🇳🇱 | @WhiteDNS | NL397|33.2MB/s|DNSOK|GPT⁺-NL
-  password: fkw1W2oQj+k3UVZq5FrzPbNE0jCdYUvvluFTih3qSh8=
-  port: 45819
-  server: 158.180.15.158
-  type: ss
-  udp: true
-- name: 🇳🇱 | @WhiteDNS | NL398|29.8MB/s|DNSOK|GPT⁺-NL
-  password: ''
-  port: 443
-  server: 51.158.243.91
+- alterId: 0
+  cipher: auto
+  name: 🇳🇱 | @WhiteDNS | NL368|30.0MB/s|DNSOK|GPT⁺-NL
+  port: 1270
+  server: 188.166.81.135
   skip-cert-verify: true
   tls: true
-  type: http
-  username: ''
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇳🇱 | @WhiteDNS | NL399|27.4MB/s|DNSOK|GPT⁺-NL
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: OH9jKzqAqEg98VDxmxReqrC_jbJWNwr-ipj2cNRgazc
-    short-id: 2237b916
-  server: 81.171.14.72
-  tls: true
-  type: vless
+  type: vmess
   udp: true
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
-  xudp: true
-  servername: zovira.me
-- name: 🇳🇱 | @WhiteDNS | NL400|26.5MB/s|DNSOK|GPT⁺-NL
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  network: tcp
+  servername: 188.166.81.135
+- alterId: 0
+  cipher: auto
+  name: 🇳🇱 | @WhiteDNS | NL369|29.9MB/s|DNSOK|GPT⁺-NL
+  port: 1270
+  server: 209.38.42.238
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  network: tcp
+  servername: 209.38.42.238
+- name: 🇳🇱 | @WhiteDNS | NL370|27.1MB/s|DNSOK|GPT⁺-NL
   password: ''
   port: 19362
   server: 51.159.225.197
@@ -52,115 +45,112 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇳🇱 | @WhiteDNS | NL401|26.0MB/s|DNSOK|GPT⁺-NL
-  password: 'null'
-  port: 9002
-  server: 84.17.47.147
-  skip-cert-verify: true
+- alterId: '0'
+  cipher: auto
+  name: 🇳🇱 | @WhiteDNS | NL371|26.8MB/s|DNSOK|GPT⁺-NL
+  network: tcp
+  port: 1270
+  server: 188.166.81.135
+  skip-cert-verify: false
   tls: true
-  type: http
-  username: 'null'
+  type: vmess
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  xudp: true
+  servername: xmfhlpy.com
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇳🇱 | @WhiteDNS | NL402|25.2MB/s|DNSOK|GPT⁺-NL
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.20
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  servername: fuck.rkn
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇳🇱 | @WhiteDNS | NL403|24.3MB/s|DNSOK|GPT⁺-NL
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.25
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  servername: fuck.rkn
-- client-fingerprint: chrome
-  name: 🇳🇱 | @WhiteDNS | NL404|22.9MB/s|DNSOK|GPT⁺-NL
-  network: ws
+  name: 🇳🇱 | @WhiteDNS | NL372|26.5MB/s|DNSOK|GPT⁺-NL
+  network: raw
   port: 443
-  server: 172.67.184.45
-  tls: true
-  type: vless
-  udp: true
-  uuid: 82b279c6-5cba-3a96-f8bd-780a00000045
-  ws-opts:
-    headers:
-      Host: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/61.0.3163.100 Safari/537.36
-    path: /
-  xudp: true
-  servername: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: 🇳🇱 | @WhiteDNS | NL405|22.4MB/s|DNSOK|GPT⁺-NL
-  network: tcp
-  port: 23576
   reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: ''
-  server: 51.158.206.25
+    public-key: OH9jKzqAqEg98VDxmxReqrC_jbJWNwr-ipj2cNRgazc
+    short-id: 2237b916
+  server: 178.162.147.131
   tls: true
   type: vless
   udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
   xudp: true
-  servername: fuck.rkn
-- down: ''
-  fingerprint: ''
-  name: 🇳🇱 | @WhiteDNS | NL406|19.5MB/s|DNSOK|GPT⁺-NL
-  obfs: salamander
-  obfs-password: HysteriaHowdy
-  password: HowdyHysteria2023w0W
-  port: 8443
-  server: 51.15.19.206
-  skip-cert-verify: true
-  sni: sni-here.com
-  type: hysteria2
-  up: ''
-- down: ''
-  fingerprint: ''
-  name: 🇳🇱 | @WhiteDNS | NL407|16.3MB/s|DNSOK|GPT⁺-NL
-  obfs: salamander
-  obfs-password: HysteriaHowdy
-  password: HowdyHysteria2023w0W
-  port: 8443
-  server: 51.15.19.206
-  skip-cert-verify: true
-  sni: hysteria.udpgw.com
-  type: hysteria2
-  up: ''
-- name: 🇳🇱 | @WhiteDNS | NL408|13.8MB/s|DNSOK|GPT⁺-NL
+  servername: zovira.me
+- name: 🇳🇱 | @WhiteDNS | NL373|26.0MB/s|DNSOK|GPT⁺-NL
   password: ''
-  port: 23856
-  server: 51.159.225.196
+  port: 9002
+  server: 84.17.47.126
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
+- name: 🇳🇱 | @WhiteDNS | NL374|25.1MB/s|DNSOK|GPT⁺-NL
+  password: ''
+  port: 9002
+  server: 84.17.47.124
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇳🇱 | @WhiteDNS | NL375|25.0MB/s|DNSOK|GPT⁺-NL
+  password: ''
+  port: 9002
+  server: 84.17.47.125
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 🇳🇱 | @WhiteDNS | NL376|25.0MB/s|DNSOK|GPT⁺-NL
+  network: tcp
+  port: 1270
+  server: 209.38.42.238
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+- name: 🇳🇱 | @WhiteDNS | NL377|20.3MB/s|DNSOK|GPT⁺-NL
+  password: ''
+  port: 443
+  server: 51.158.243.91
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  name: 🇳🇱 | @WhiteDNS | NL378|17.4MB/s|DNSOK|GPT⁺-NL
+  network: tcp
+  port: 7443
+  reality-opts:
+    public-key: RY7zkFQ01lI92jxNAyCa8T33UBW1fgpJgg8ZEqMA10k
+    short-id: a09ff9f8
+  server: 138.16.141.59
+  tls: true
+  type: vless
+  udp: true
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  servername: ibm.com
+- alterId: '0'
+  cipher: auto
+  name: 🇳🇱 | @WhiteDNS | NL379|7.0MB/s|DNSOK|GPT⁺-NL
+  network: tcp
+  port: 1270
+  server: 209.38.42.238
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  xudp: true
+  servername: xmfhlpy.com
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: chrome
   encryption: none
   fingerprint: 67fa1e374feaeb232157317d6ace682475cb1a826e0cf8657151a254681aed62
-  name: 🇳🇱 | @WhiteDNS | NL409|12.8MB/s|DNSOK|GPT⁺-NL
+  name: 🇳🇱 | @WhiteDNS | NL380|6.0MB/s|DNSOK|GPT⁺-NL
   network: xhttp
   port: 443
   server: 94.241.172.107
@@ -173,164 +163,10 @@ proxies:
     path: /assets/nl02/
   xudp: true
   servername: 94.241.172.107
-- down: ''
-  fingerprint: ''
-  name: 🇳🇱 | @WhiteDNS | NL410|12.0MB/s|DNSOK|GPT⁺-NL
-  obfs: salamander
-  obfs-password: HysteriaHowdy
-  password: HowdyHysteria2023w0W
-  port: 8443
-  server: hysteria.udpgw.com
-  skip-cert-verify: true
-  sni: sni-here.com
-  type: hysteria2
-  up: ''
-- down: ''
-  fingerprint: ''
-  name: 🇳🇱 | @WhiteDNS | NL411|9.5MB/s|DNSOK|GPT⁺-NL
-  obfs: salamander
-  obfs-password: HysteriaHowdy
-  password: HowdyHysteria2023w0W
-  port: 8443
-  server: 51.15.19.206
-  skip-cert-verify: true
-  sni: vkvd127.mycdn.me
-  type: hysteria2
-  up: ''
-- down: ''
-  fingerprint: ''
-  name: 🇳🇱 | @WhiteDNS | NL412|7.1MB/s|DNSOK|GPT⁺-NL
-  obfs: salamander
-  obfs-password: HysteriaHowdy
-  password: HowdyHysteria2023w0W
-  port: 8443
-  server: 51.15.19.206
-  skip-cert-verify: true
-  sni: hysteria.udpgw.co
-  type: hysteria2
-  up: ''
-- name: 🇳🇱 | @WhiteDNS | NL413|6.8MB/s|DNSOK|GPT⁺-NL
-  password: ''
-  port: 9002
-  server: 84.17.47.124
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇳🇱 | @WhiteDNS | NL414|6.8MB/s|DNSOK|GPT⁺-NL
-  network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: ''
-  server: 51.158.206.20
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  xudp: true
-  servername: fuck.rkn
-- down: ''
-  fingerprint: ''
-  name: 🇳🇱 | @WhiteDNS | NL415|6.4MB/s|DNSOK|GPT⁺-NL
-  obfs: salamander
-  obfs-password: HysteriaHowdy
-  password: HowdyHysteria2023w0W
-  port: 8443
-  server: 51.15.19.206
-  skip-cert-verify: true
-  sni: t.me
-  type: hysteria2
-  up: ''
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇳🇱 | @WhiteDNS | NL416|6.1MB/s|DNSOK|GPT⁺-NL
-  network: raw
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.25
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  xudp: true
-  servername: fuck.rkn
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇳🇱 | @WhiteDNS | NL417|5.9MB/s|DNSOK|GPT⁺-NL
-  network: ws
-  port: 443
-  server: 172.67.155.222
-  tls: true
-  type: vless
-  udp: true
-  uuid: 82b279c6-5cba-3a96-f8bd-780a00000035
-  ws-opts:
-    headers:
-      Host: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/49.0.2623.112 Safari/537.36
-    path: /sync
-  xudp: true
-  servername: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
-- name: 🇳🇱 | @WhiteDNS | NL418|5.6MB/s|DNSOK|GPT⁺-NL
-  password: 'null'
-  port: 443
-  server: 103.97.88.154
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- down: ''
-  fingerprint: ''
-  name: 🇳🇱 | @WhiteDNS | NL419|5.3MB/s|DNSOK|GPT⁺-NL
-  obfs: salamander
-  obfs-password: HysteriaHowdy
-  password: HowdyHysteria2023w0W
-  port: 8443
-  server: hysteria.udpgw.com
-  skip-cert-verify: true
-  sni: hysteria.udpgw.com
-  type: hysteria2
-  up: ''
-- down: ''
-  fingerprint: ''
-  name: 🇳🇱 | @WhiteDNS | NL420|4.7MB/s|DNSOK|GPT⁺-NL
-  obfs: salamander
-  obfs-password: HysteriaHowdy
-  password: HowdyHysteria2023w0W
-  port: 8443
-  server: 51.15.19.206
-  skip-cert-verify: true
-  sni: vk.com
-  type: hysteria2
-  up: ''
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇳🇱 | @WhiteDNS | NL421|3.0MB/s|DNSOK|GPT⁺-NL
-  network: raw
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.20
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  xudp: true
-  servername: fuck.rkn
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇳🇱 | @WhiteDNS | NL422|3.0MB/s|DNSOK|GPT⁺-NL
+  name: 🇳🇱 | @WhiteDNS | NL381|5.1MB/s|DNSOK|GPT⁺-NL
   network: tcp
   port: 443
   reality-opts:
@@ -343,36 +179,59 @@ proxies:
   uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
   xudp: true
   servername: zovira.me
+- down: ''
+  fingerprint: ''
+  name: 🇳🇱 | @WhiteDNS | NL382|5.0MB/s|DNSOK|GPT⁺
+  obfs: salamander
+  obfs-password: HysteriaHowdy
+  password: HowdyHysteria2023w0W
+  port: 8443
+  server: 51.15.19.206
+  skip-cert-verify: true
+  sni: hysteria.udpgw.co
+  type: hysteria2
+  up: ''
+- down: ''
+  fingerprint: ''
+  name: 🇳🇱 | @WhiteDNS | NL383|3.2MB/s|DNSOK|GPT⁺-NL
+  obfs: salamander
+  obfs-password: HysteriaHowdy
+  password: HowdyHysteria2023w0W
+  port: 8443
+  server: hysteria.udpgw.com
+  skip-cert-verify: true
+  sni: sni-here.com
+  type: hysteria2
+  up: ''
+- name: 🇳🇱 | @WhiteDNS | NL384|1.3MB/s|DNSOK|GPT⁺-NL
+  password: 'null'
+  port: 443
+  server: 103.97.88.154
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
 proxy-groups:
 - name: NL-Auto
   type: url-test
   proxies:
-  - 🇳🇱 | @WhiteDNS | NL397|33.2MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL398|29.8MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL399|27.4MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL400|26.5MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL401|26.0MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL402|25.2MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL403|24.3MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL404|22.9MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL405|22.4MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL406|19.5MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL407|16.3MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL408|13.8MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL409|12.8MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL410|12.0MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL411|9.5MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL412|7.1MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL413|6.8MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL414|6.8MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL415|6.4MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL416|6.1MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL417|5.9MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL418|5.6MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL419|5.3MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL420|4.7MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL421|3.0MB/s|DNSOK|GPT⁺-NL
-  - 🇳🇱 | @WhiteDNS | NL422|3.0MB/s|DNSOK|GPT⁺-NL
+  - 🇳🇱 | @WhiteDNS | NL368|30.0MB/s|DNSOK|GPT⁺-NL
+  - 🇳🇱 | @WhiteDNS | NL369|29.9MB/s|DNSOK|GPT⁺-NL
+  - 🇳🇱 | @WhiteDNS | NL370|27.1MB/s|DNSOK|GPT⁺-NL
+  - 🇳🇱 | @WhiteDNS | NL371|26.8MB/s|DNSOK|GPT⁺-NL
+  - 🇳🇱 | @WhiteDNS | NL372|26.5MB/s|DNSOK|GPT⁺-NL
+  - 🇳🇱 | @WhiteDNS | NL373|26.0MB/s|DNSOK|GPT⁺-NL
+  - 🇳🇱 | @WhiteDNS | NL374|25.1MB/s|DNSOK|GPT⁺-NL
+  - 🇳🇱 | @WhiteDNS | NL375|25.0MB/s|DNSOK|GPT⁺-NL
+  - 🇳🇱 | @WhiteDNS | NL376|25.0MB/s|DNSOK|GPT⁺-NL
+  - 🇳🇱 | @WhiteDNS | NL377|20.3MB/s|DNSOK|GPT⁺-NL
+  - 🇳🇱 | @WhiteDNS | NL378|17.4MB/s|DNSOK|GPT⁺-NL
+  - 🇳🇱 | @WhiteDNS | NL379|7.0MB/s|DNSOK|GPT⁺-NL
+  - 🇳🇱 | @WhiteDNS | NL380|6.0MB/s|DNSOK|GPT⁺-NL
+  - 🇳🇱 | @WhiteDNS | NL381|5.1MB/s|DNSOK|GPT⁺-NL
+  - 🇳🇱 | @WhiteDNS | NL382|5.0MB/s|DNSOK|GPT⁺
+  - 🇳🇱 | @WhiteDNS | NL383|3.2MB/s|DNSOK|GPT⁺-NL
+  - 🇳🇱 | @WhiteDNS | NL384|1.3MB/s|DNSOK|GPT⁺-NL
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

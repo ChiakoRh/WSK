@@ -1,60 +1,6 @@
 proxies:
-- client-fingerprint: random
-  encryption: none
-  name: 🇸🇬 | @WhiteDNS | SG174|5.2MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 443
-  server: freev2.cloudflare.182682.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 12d32e9b-d41f-4677-aa51-83e21d2837f2
-  ws-opts:
-    headers:
-      Host: ap-south.862400.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/52.0.2743.116 Safari/537.36
-    path: /announcement
-    early-data-header-name: Sec-WebSocket-Protocol
-    max-early-data: 2048
-  xudp: true
-  servername: ap-south.862400.xyz
 - client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG175|3.3MB/s|DNSOK|GPT⁺-IN
-  network: ws
-  port: 443
-  server: small-forest-d3e9.sarahds.workers.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06a5afa1-2bbc-a5d1-1770-becd1089c636
-  ws-opts:
-    headers:
-      Host: small-forest-d3e9.sarahds.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /0175469f14317d82
-  xudp: true
-  servername: small-forest-d3e9.sarahds.workers.dev
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG176|2.6MB/s|DNSOK|GPT⁺-IN
-  network: ws
-  port: 443
-  server: xray-dmr3b3hy-calm-maple-7.cloady.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06a5afa1-2bbc-a5d1-1770-becd1089c636
-  ws-opts:
-    headers:
-      Host: xray-dmr3b3hy-calm-maple-7.cloady.io
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1610 Build/MMB29M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
-    path: /0175469f14317d82
-  xudp: true
-  servername: xray-dmr3b3hy-calm-maple-7.cloady.io
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG177|2.5MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG138|2.4MB/s|DNSOK|GPT⁺-SG
   port: 8443
   server: 207.148.124.12
   skip-cert-verify: true
@@ -64,39 +10,41 @@ proxies:
   uuid: bcdb425f-80bc-4ec8-92a5-8edf53639c01
   network: tcp
   servername: www.bing.com
-- cipher: rc4-md5
-  name: 🇸🇬 | @WhiteDNS | SG178|1.8MB/s|DNSOK|GPT⁺-SG
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.227.4
+- cipher: aes-256-gcm
+  name: 🇸🇬 | @WhiteDNS | SG139|2.4MB/s|DNSOK|GPT⁺-SG
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 15.235.164.133
   type: ss
   udp: true
-- cipher: 2022-blake3-aes-256-gcm
-  name: 🇸🇬 | @WhiteDNS | SG179|1.7MB/s|DNSOK|GPT⁺-SG
-  password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
-  port: 14384
-  server: 129.150.59.74
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG180|1.7MB/s|DNSOK|GPT⁺-SG
-  port: 10444
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  server: 147.93.173.45
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 | @WhiteDNS | SG140|2.0MB/s|DNSOK|GPT⁺-SG
+  port: 1270
+  server: 15.235.144.92
   skip-cert-verify: true
   tls: true
-  type: vless
+  type: vmess
   udp: true
-  uuid: 75c5f51b-d548-4eab-a26e-aa10fc3dbc7b
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   network: tcp
-  servername: video.yandex.ru
+  servername: xmfhlpy.com
+- alterId: '0'
+  cipher: auto
+  name: 🇸🇬 | @WhiteDNS | SG141|2.0MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  port: 1270
+  server: 15.235.144.92
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  xudp: true
+  servername: xmfhlpy.com
 - client-fingerprint: chrome
-  encryption: none
   flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG181|1.5MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG142|1.6MB/s|DNSOK|GPT⁺-SG
   network: tcp
   port: 10444
   reality-opts:
@@ -109,9 +57,31 @@ proxies:
   uuid: 75c5f51b-d548-4eab-a26e-aa10fc3dbc7b
   xudp: true
   servername: video.yandex.ru
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG143|1.6MB/s|DNSOK|GPT⁺-SG
+  port: 10444
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  server: 147.93.173.45
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 75c5f51b-d548-4eab-a26e-aa10fc3dbc7b
+  network: tcp
+  servername: video.yandex.ru
+- cipher: aes-256-gcm
+  name: 🇸🇬 | @WhiteDNS | SG144|1.5MB/s|DNSOK|GPT⁺-SG
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 15.235.182.183
+  type: ss
+  udp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG182|1.3MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG145|1.3MB/s|DNSOK|GPT⁺-SG
   network: raw
   port: 16709
   reality-opts:
@@ -124,16 +94,24 @@ proxies:
   uuid: 3c81494e-7168-4583-84e0-02310212102e
   xudp: true
   servername: itunes.apple.com
-- cipher: rc4-md5
-  name: 🇸🇬 | @WhiteDNS | SG183|1.3MB/s|DNSOK|GPT⁺-SG
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.227.236
-  type: ss
-  udp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG184|1.0MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG146|1.2MB/s|DNSOK|GPT⁺-SG
+  port: 16709
+  reality-opts:
+    public-key: 680Dfvs1S9eB2k9LS_jUELdt4TKnaHXfYErBWMgOlCM
+    short-id: 879a738590e3db33
+  server: 43.153.222.240
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3c81494e-7168-4583-84e0-02310212102e
+  network: tcp
+  servername: itunes.apple.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG147|1.2MB/s|DNSOK|GPT⁺-SG
   network: tcp
   port: 16709
   reality-opts:
@@ -146,3 +124,27 @@ proxies:
   uuid: 3c81494e-7168-4583-84e0-02310212102e
   xudp: true
   servername: itunes.apple.com
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG148|1.2MB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 443
+  server: 13.140.253.35
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06a5afa1-2bbc-a5d1-1770-becd1089c636
+  ws-opts:
+    headers:
+      Host: xray-dmr3b3hy-calm-maple-7.cloady.io
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/69.0.3497.100 Safari/537.36
+    path: /0175469f14317d82
+  xudp: true
+  servername: xray-dmr3b3hy-calm-maple-7.cloady.io
+- cipher: aes-256-gcm
+  name: 🇸🇬 | @WhiteDNS | SG149|1.1MB/s|DNSOK|GPT⁺-SG
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 51.79.228.131
+  type: ss
+  udp: true

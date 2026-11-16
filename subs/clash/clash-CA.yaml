@@ -1,0 +1,39 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦 | @WhiteDNS | CA77|2.5MB/s|DNSOK|GPT⁺-CA
+  password: kxhnt5jtykd328cg
+  port: 8080
+  server: 15.235.57.6
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦 | @WhiteDNS | CA78|2.2MB/s|DNSOK|GPT⁺-CA
+  password: 3h3hb2gptqz6suyt
+  port: 8080
+  server: 198.100.154.175
+  type: ss
+  udp: true
+proxy-groups:
+- name: CA-Auto
+  type: url-test
+  proxies:
+  - 🇨🇦 | @WhiteDNS | CA77|2.5MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA78|2.2MB/s|DNSOK|GPT⁺-CA
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,CA-Auto
