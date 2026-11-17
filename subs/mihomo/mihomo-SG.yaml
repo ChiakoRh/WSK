@@ -1,25 +1,6 @@
 proxies:
-- cipher: aes-256-gcm
-  name: 🇸🇬 | @WhiteDNS | SG142|2.8MB/s|DNSOK|GPT⁺-SG
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 15.235.182.183
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 | @WhiteDNS | SG143|2.6MB/s|DNSOK|GPT⁺-SG
-  port: 1270
-  server: 15.235.144.92
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  network: tcp
-  servername: xmfhlpy.com
 - client-fingerprint: firefox
-  name: 🇸🇬 | @WhiteDNS | SG144|2.6MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG140|2.6MB/s|DNSOK|GPT⁺-SG
   network: raw
   port: 443
   reality-opts:
@@ -33,7 +14,7 @@ proxies:
   xudp: true
   servername: net-cfg-api.galioncc.com
 - client-fingerprint: firefox
-  name: 🇸🇬 | @WhiteDNS | SG145|2.6MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG141|2.6MB/s|DNSOK|GPT⁺-SG
   network: tcp
   port: 443
   reality-opts:
@@ -46,49 +27,71 @@ proxies:
   uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
   xudp: true
   servername: net-cfg-api.galioncc.com
-- cipher: aes-256-gcm
-  name: 🇸🇬 | @WhiteDNS | SG146|2.4MB/s|DNSOK|GPT⁺-SG
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 15.235.164.133
+- client-fingerprint: firefox
+  name: 🇸🇬 | @WhiteDNS | SG142|2.5MB/s|DNSOK|GPT⁺-SG
+  port: 443
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  server: 172.255.210.24
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  network: tcp
+  servername: net-cfg-api.galioncc.com
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG143|2.3MB/s|DNSOK|GPT⁺-SG
+  port: 8443
+  server: 207.148.124.12
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: bcdb425f-80bc-4ec8-92a5-8edf53639c01
+  network: tcp
+  servername: www.bing.com
+- cipher: rc4-md5
+  name: 🇸🇬 | @WhiteDNS | SG144|2.0MB/s|DNSOK|GPT⁺-SG
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.236
   type: ss
   udp: true
-- alterId: '0'
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG145|1.8MB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 443
+  server: 13.140.253.35
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06a5afa1-2bbc-a5d1-1770-becd1089c636
+  ws-opts:
+    headers:
+      Host: xray-dmr3b3hy-calm-maple-7.cloady.io
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /0175469f14317d82
+  xudp: true
+  servername: xray-dmr3b3hy-calm-maple-7.cloady.io
+- alterId: 0
   cipher: auto
-  name: 🇸🇬 | @WhiteDNS | SG147|2.2MB/s|DNSOK|GPT⁺-SG
-  network: tcp
+  name: 🇸🇬 | @WhiteDNS | SG146|1.7MB/s|DNSOK|GPT⁺-SG
   port: 1270
   server: 15.235.144.92
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  xudp: true
+  network: tcp
   servername: xmfhlpy.com
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇸🇬 | @WhiteDNS | SG148|1.7MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 8443
-  server: news.zoom.us
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: bd67fcd2-ec34-40a6-aac6-67731f2d7011
-  ws-opts:
-    headers:
-      Host: matrix.phonicsindia.mobi
-    path: /
-  xudp: true
-  servername: matrix.phonicsindia.mobi
 - client-fingerprint: safari
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG149|1.5MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG147|1.7MB/s|DNSOK|GPT⁺-SG
   network: tcp
   port: 10444
   reality-opts:
@@ -101,19 +104,49 @@ proxies:
   uuid: 75c5f51b-d548-4eab-a26e-aa10fc3dbc7b
   xudp: true
   servername: video.yandex.ru
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG150|1.5MB/s|DNSOK|GPT⁺-SG
-  port: 8443
-  server: 207.148.124.12
-  skip-cert-verify: true
+- alterId: '0'
+  cipher: auto
+  name: 🇸🇬 | @WhiteDNS | SG148|1.4MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  port: 1270
+  server: 15.235.144.92
+  skip-cert-verify: false
   tls: true
+  type: vmess
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  xudp: true
+  servername: xmfhlpy.com
+- cipher: aes-256-gcm
+  name: 🇸🇬 | @WhiteDNS | SG149|1.4MB/s|DNSOK|GPT⁺-SG
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 15.235.164.133
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇸🇬 | @WhiteDNS | SG150|1.2MB/s|DNSOK|GPT⁺-SG
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 51.79.228.131
+  type: ss
+  udp: true
+- name: 🇸🇬 | @WhiteDNS | SG151|1.0MB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 14430
+  server: 13.140.56.100
   type: vless
   udp: true
-  uuid: bcdb425f-80bc-4ec8-92a5-8edf53639c01
-  network: tcp
-  servername: www.bing.com
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  ws-opts:
+    headers:
+      Host: 13.140.56.100
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.7
+        (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
+    path: /vless
+  xudp: true
 - client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG151|1.4MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG152|564KB/s|DNSOK|GPT⁺-SG
   network: tcp
   password: Z5lvhmLqSc
   port: 48994
@@ -122,67 +155,3 @@ proxies:
   sni: m.microsoft.com
   type: trojan
   udp: true
-- name: 🇸🇬 | @WhiteDNS | SG152|1.3MB/s|DNSOK|GPT⁺-SG
-  password: ''
-  port: 1088
-  server: 188.166.178.163
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- cipher: aes-256-gcm
-  name: 🇸🇬 | @WhiteDNS | SG153|1.3MB/s|DNSOK|GPT⁺-SG
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 51.79.228.131
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG154|1.2MB/s|DNSOK|GPT⁺-SG
-  network: raw
-  port: 16709
-  reality-opts:
-    public-key: 680Dfvs1S9eB2k9LS_jUELdt4TKnaHXfYErBWMgOlCM
-    short-id: 879a738590e3db33
-  server: 43.153.222.240
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3c81494e-7168-4583-84e0-02310212102e
-  xudp: true
-  servername: itunes.apple.com
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG155|986KB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 8443
-  server: 141.193.213.21
-  tls: true
-  type: vmess
-  udp: true
-  uuid: bd67fcd2-ec34-40a6-aac6-67731f2d7011
-  ws-opts:
-    headers:
-      Host: matrix.phonicsindia.mobi
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/41.0.2272.118 Safari/537.36
-    path: /
-  xudp: true
-  servername: matrix.phonicsindia.mobi
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG156|580KB/s|DNSOK|GPT⁺-SG
-  network: tcp
-  port: 16709
-  reality-opts:
-    public-key: 680Dfvs1S9eB2k9LS_jUELdt4TKnaHXfYErBWMgOlCM
-    short-id: 879a738590e3db33
-  server: 43.153.222.240
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3c81494e-7168-4583-84e0-02310212102e
-  xudp: true
-  servername: itunes.apple.com

@@ -1,17 +1,56 @@
 proxies:
-- cipher: aes-256-gcm
-  name: 🇸🇪 | @WhiteDNS | SE29|5.6MB/s|DNSOK|GPT⁺-SE
-  password: AxIYWtskJWIIaefW
-  port: 8388
-  server: 70.34.212.124
-  type: ss
+- client-fingerprint: firefox
+  encryption: none
+  fingerprint: CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E
+  name: 🇸🇪 | @WhiteDNS | SE29|7.0MB/s|DNSOK|GPT⁺-SE
+  network: xhttp
+  port: 443
+  server: tulip.amydoodles.com
+  tls: true
+  type: vless
   udp: true
+  uuid: 27b222f7-1119-4cbb-8c8d-996cec45af95
+  xhttp-opts:
+    host: wolfthenight.global.ssl.fastly.net
+    mode: auto
+    path: /setare
+    reuse-settings:
+      h-keep-alive-period: 20
+      h-max-request-times: 300-500
+      h-max-reusable-secs: 300-480
+      max-concurrency: 16-32
+    x-padding-bytes: 100-1000
+  xudp: true
+  servername: cdn.akamai.steamstatic.com
+- client-fingerprint: chrome
+  encryption: none
+  fingerprint: CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E
+  name: 🇸🇪 | @WhiteDNS | SE30|6.1MB/s|DNSOK|GPT⁺-SE
+  network: xhttp
+  port: 443
+  server: tulip.amydoodles.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 12a53b9b-5e33-4da5-a4fa-d4389e8b295f
+  xhttp-opts:
+    host: wolfthenight.global.ssl.fastly.net
+    mode: auto
+    path: /setare
+    reuse-settings:
+      h-keep-alive-period: 20
+      h-max-request-times: 300-500
+      h-max-reusable-secs: 300-480
+      max-concurrency: 16-32
+    x-padding-bytes: 100-1000
+  xudp: true
+  servername: cdn.akamai.steamstatic.com
 - alpn:
   - http/1.1
   client-fingerprint: unsafe
   encryption: mlkem768x25519plus.native.0rtt.vRXNL_XhxPdlqRnLXcf5tKBaB5t33oqSXWOtaK1mAAY
   flow: xtls-rprx-vision
-  name: 🇸🇪 | @WhiteDNS | SE30|5.5MB/s|DNSOK|GPT⁺-SE
+  name: 🇸🇪 | @WhiteDNS | SE31|1.3MB/s|DNSOK|GPT⁺-SE
   network: ws
   port: 443
   server: perplexity.com
@@ -22,8 +61,8 @@ proxies:
   ws-opts:
     headers:
       Host: new.exploring.cyou
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/56.0.2924.87 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
     path: /t.me-SubGift
   xudp: true
   servername: new.exploring.cyou
