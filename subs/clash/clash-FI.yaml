@@ -14,39 +14,28 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - client-fingerprint: chrome
-  encryption: none
+  encryption: mlkem768x25519plus.native.0rtt.9ifdcMCsJ-bMvc9ealWuadeq1_iASTHy8hetUix-nTM
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI36|17.2MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI73|14.8MB/s|DNSOK|GPT⁺-DE
   network: tcp
-  port: 49659
-  reality-opts:
-    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
-    short-id: 81959fce
-  server: 157.180.98.124
+  port: 29086
+  server: sv.fn.clients.fimrel.ir
   tls: true
   type: vless
   udp: true
-  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
+  uuid: e7cbfd86-ae39-4ecc-852d-89754c8823e9
   xudp: true
-  servername: apple.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI37|16.1MB/s|DNSOK|GPT⁺-FI
-  port: 49659
-  reality-opts:
-    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
-    short-id: 81959fce
-  server: 157.180.98.124
-  skip-cert-verify: true
-  tls: true
-  type: vless
+  servername: sv.fn.clients.fimrel.ir
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇮 | @WhiteDNS | FI74|6.9MB/s|DNSOK|GPT⁺-FI
+  password: j2-YonHunrTMlNMFlSY4u0UGsBaBgO4b
+  port: 53731
+  server: fn1s.sublinkplas.ir
+  type: ss
   udp: true
-  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
-  network: tcp
-  servername: apple.com
 - client-fingerprint: chrome
   encryption: none
-  name: 🇫🇮 | @WhiteDNS | FI38|6.3MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI75|6.7MB/s|DNSOK|GPT⁺-FI
   network: xhttp
   port: 443
   server: 108.156.65.62
@@ -60,21 +49,147 @@ proxies:
     path: /cf
   xudp: true
   servername: d1ivx1xk58pr8u.cloudfront.net
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇮 | @WhiteDNS | FI39|6.0MB/s|DNSOK|GPT⁺-FI
-  password: j2-YonHunrTMlNMFlSY4u0UGsBaBgO4b
-  port: 53731
-  server: fn1s.sublinkplas.ir
-  type: ss
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI76|6.5MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 8443
+  server: ip3.ipspanel.ir
+  tls: true
+  type: vless
   udp: true
+  uuid: 03cc39b9-0b75-4297-b284-8158cfbb959a
+  ws-opts:
+    headers:
+      Host: T.panel001.ir
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /@TurboVpn10
+  xudp: true
+  servername: T.panel001.ir
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI77|6.2MB/s|DNSOK|GPT⁺-FI
+  network: raw
+  port: 49659
+  reality-opts:
+    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
+    short-id: 81959fce
+  server: 157.180.98.124
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
+  xudp: true
+  servername: apple.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI78|6.0MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 49659
+  reality-opts:
+    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
+    short-id: 81959fce
+  server: 157.180.98.124
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
+  xudp: true
+  servername: apple.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI79|6.0MB/s|DNSOK|GPT⁺-FI
+  port: 49659
+  reality-opts:
+    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
+    short-id: 81959fce
+  server: 157.180.98.124
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
+  network: tcp
+  servername: apple.com
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI80|5.8MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 8443
+  server: Ip3.ipspanel.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 03cc39b9-0b75-4297-b284-8158cfbb959a
+  ws-opts:
+    headers:
+      Host: T.panel001.ir
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /@TurboVpn10
+  xudp: true
+  servername: T.panel001.ir
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    path:
+    - /3x
+  name: 🇫🇮 | @WhiteDNS | FI81|937KB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 52080
+  server: 185.212.149.7
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
+  xudp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    path:
+    - /3x
+  name: 🇫🇮 | @WhiteDNS | FI82|842KB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 2053
+  server: 185.212.149.7
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: aeb3c019-ae83-4677-af97-846baa787ad5
+  xudp: true
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI36|17.2MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI37|16.1MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI38|6.3MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI39|6.0MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI73|14.8MB/s|DNSOK|GPT⁺-DE
+  - 🇫🇮 | @WhiteDNS | FI74|6.9MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI75|6.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI76|6.5MB/s|DNSOK|GPT⁺-DE
+  - 🇫🇮 | @WhiteDNS | FI77|6.2MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI78|6.0MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI79|6.0MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI80|5.8MB/s|DNSOK|GPT⁺-DE
+  - 🇫🇮 | @WhiteDNS | FI81|937KB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI82|842KB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
