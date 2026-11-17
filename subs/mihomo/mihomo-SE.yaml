@@ -1,10 +1,17 @@
 proxies:
+- cipher: aes-256-gcm
+  name: 🇸🇪 | @WhiteDNS | SE29|5.6MB/s|DNSOK|GPT⁺-SE
+  password: AxIYWtskJWIIaefW
+  port: 8388
+  server: 70.34.212.124
+  type: ss
+  udp: true
 - alpn:
   - http/1.1
   client-fingerprint: unsafe
   encryption: mlkem768x25519plus.native.0rtt.vRXNL_XhxPdlqRnLXcf5tKBaB5t33oqSXWOtaK1mAAY
   flow: xtls-rprx-vision
-  name: 🇸🇪 | @WhiteDNS | SE39|5.5MB/s|DNSOK|GPT⁺-SE
+  name: 🇸🇪 | @WhiteDNS | SE30|5.5MB/s|DNSOK|GPT⁺-SE
   network: ws
   port: 443
   server: perplexity.com
@@ -15,15 +22,8 @@ proxies:
   ws-opts:
     headers:
       Host: new.exploring.cyou
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/56.0.2924.87 Safari/537.36
     path: /t.me-SubGift
   xudp: true
   servername: new.exploring.cyou
-- cipher: aes-256-gcm
-  name: 🇸🇪 | @WhiteDNS | SE40|2.2MB/s|DNSOK|GPT⁺
-  password: AxIYWtskJWIIaefW
-  port: 8388
-  server: 70.34.212.124
-  type: ss
-  udp: true

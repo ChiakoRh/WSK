@@ -1,32 +1,28 @@
 proxies:
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 🇰🇷 | @WhiteDNS | KR46|1.2MB/s|DNSOK|GPT⁺-KR
-  network: http
-  port: 80
-  server: 217.142.138.61
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- cipher: aes-256-cfb
+  name: 🇰🇷 | @WhiteDNS | KR43|1.4MB/s|DNSOK|GPT⁺-KR
+  password: 1234!@#$
+  port: 1774
+  server: 49.254.204.134
+  type: ss
   udp: true
-  uuid: ac1b933d-afff-4487-93ef-f57130a55dff
-  xudp: true
+- cipher: aes-256-cfb
+  name: 🇰🇷 | @WhiteDNS | KR44|1.3MB/s|DNSOK|GPT⁺-KR
+  password: 1234!@#$
+  port: 1774
+  server: 49.254.204.133
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR47|1.1MB/s|DNSOK|GPT⁺-KR
-  port: 443
-  server: 140.238.2.250
+  name: 🇰🇷 | @WhiteDNS | KR45|971KB/s|DNSOK|GPT⁺-KR
+  port: 800
+  server: 129.154.61.196
   type: vmess
   udp: true
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
   network: tcp
-- name: 🇰🇷 | @WhiteDNS | KR48|993KB/s|DNSOK|GPT⁺-KR
+- name: 🇰🇷 | @WhiteDNS | KR46|685KB/s|DNSOK|GPT⁺-KR
   network: ws
   port: 25555
   server: 152.69.226.63
@@ -36,22 +32,7 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.77 Safari/537.36
-    path: /
-  xudp: true
-  servername: 152.69.226.63
-- name: 🇰🇷 | @WhiteDNS | KR49|868KB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 25555
-  server: 152.69.226.63
-  type: vless
-  udp: true
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  ws-opts:
-    headers:
-      Host: 152.69.226.63
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/67.0.3396.87 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.103 Safari/537.36
     path: /
   xudp: true
