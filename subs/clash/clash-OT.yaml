@@ -12,32 +12,11 @@ dns:
   nameserver:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
-proxies:
-- cipher: chacha20-ietf-poly1305
-  name: ❓ | @WhiteDNS | OT671|3.5MB/s|DNSOK|GPT⁺-GB
-  password: 8nrpt2il04ptci2j
-  port: 8080
-  server: 54.37.240.40
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: ❓ | @WhiteDNS | OT672|1.0MB/s|DNSOK|GPT⁺-KR
-  network: none
-  port: 443
-  server: 140.238.2.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  xudp: true
+proxies: []
 proxy-groups:
 - name: OT-Auto
   type: url-test
-  proxies:
-  - ❓ | @WhiteDNS | OT671|3.5MB/s|DNSOK|GPT⁺-GB
-  - ❓ | @WhiteDNS | OT672|1.0MB/s|DNSOK|GPT⁺-KR
+  proxies: []
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -1,6 +1,47 @@
 proxies:
+- alterId: '0'
+  cipher: auto
+  name: 🇸🇬 | @WhiteDNS | SG134|2.8MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  port: 1270
+  server: 15.235.144.92
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  xudp: true
+  servername: xmfhlpy.com
 - client-fingerprint: firefox
-  name: 🇸🇬 | @WhiteDNS | SG138|2.6MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG135|2.6MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  server: 172.255.210.24
+  tls: true
+  type: vless
+  udp: true
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  xudp: true
+  servername: net-cfg-api.galioncc.com
+- client-fingerprint: firefox
+  name: 🇸🇬 | @WhiteDNS | SG136|2.5MB/s|DNSOK|GPT⁺-SG
+  port: 443
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  server: 172.255.210.24
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  network: tcp
+  servername: net-cfg-api.galioncc.com
+- client-fingerprint: firefox
+  name: 🇸🇬 | @WhiteDNS | SG137|2.4MB/s|DNSOK|GPT⁺-SG
   network: raw
   port: 443
   reality-opts:
@@ -13,67 +54,37 @@ proxies:
   uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
   xudp: true
   servername: net-cfg-api.galioncc.com
-- client-fingerprint: firefox
-  name: 🇸🇬 | @WhiteDNS | SG139|2.6MB/s|DNSOK|GPT⁺-SG
-  port: 443
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: 868419504747f6de
-  server: 172.255.210.24
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  network: tcp
-  servername: net-cfg-api.galioncc.com
-- client-fingerprint: firefox
-  name: 🇸🇬 | @WhiteDNS | SG140|2.5MB/s|DNSOK|GPT⁺-SG
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: 868419504747f6de
-  server: 172.255.210.24
-  tls: true
-  type: vless
-  udp: true
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  xudp: true
-  servername: net-cfg-api.galioncc.com
-- client-fingerprint: chrome
-  name: 🇸🇬 | @WhiteDNS | SG141|2.3MB/s|DNSOK|GPT⁺-SG
-  port: 8443
-  server: 207.148.124.12
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: bcdb425f-80bc-4ec8-92a5-8edf53639c01
-  network: tcp
-  servername: www.bing.com
 - cipher: aes-256-gcm
-  name: 🇸🇬 | @WhiteDNS | SG142|2.2MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG138|2.4MB/s|DNSOK|GPT⁺-SG
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 51.79.228.131
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇸🇬 | @WhiteDNS | SG139|2.3MB/s|DNSOK|GPT⁺-SG
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 15.235.164.133
   type: ss
   udp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇸🇬 | @WhiteDNS | SG143|2.2MB/s|DNSOK|GPT⁺-SG
-  network: tcp
-  port: 1270
-  server: 15.235.144.92
-  skip-cert-verify: false
-  tls: true
-  type: vmess
+- name: 🇸🇬 | @WhiteDNS | SG140|2.3MB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 14430
+  server: 13.140.56.100
+  type: vless
   udp: true
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  ws-opts:
+    headers:
+      Host: 13.140.56.100
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /vless
   xudp: true
-  servername: xmfhlpy.com
+  servername: 13.140.56.100
 - cipher: aes-256-gcm
-  name: 🇸🇬 | @WhiteDNS | SG144|2.2MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG141|1.9MB/s|DNSOK|GPT⁺-SG
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 15.235.182.183
@@ -81,7 +92,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 🇸🇬 | @WhiteDNS | SG145|1.7MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG142|1.7MB/s|DNSOK|GPT⁺-SG
   port: 1270
   server: 15.235.144.92
   skip-cert-verify: true
@@ -91,17 +102,9 @@ proxies:
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   network: tcp
   servername: xmfhlpy.com
-- cipher: aes-256-gcm
-  name: 🇸🇬 | @WhiteDNS | SG146|1.3MB/s|DNSOK|GPT⁺-SG
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 51.79.228.131
-  type: ss
-  udp: true
 - client-fingerprint: chrome
-  encryption: none
   flow: xtls-rprx-vision
-  name: 🇸🇬 | @WhiteDNS | SG147|659KB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG143|1.7MB/s|DNSOK|GPT⁺-SG
   network: tcp
   port: 10444
   reality-opts:
@@ -112,5 +115,51 @@ proxies:
   type: vless
   udp: true
   uuid: 75c5f51b-d548-4eab-a26e-aa10fc3dbc7b
-  xudp: true
   servername: video.yandex.ru
+- name: 🇸🇬 | @WhiteDNS | SG144|1.5MB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 14430
+  server: 13.140.56.100
+  type: vless
+  udp: true
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.3
+        (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
+    path: /vless
+  xudp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG145|1.2MB/s|DNSOK|GPT⁺-SG
+  port: 10444
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  server: 147.93.173.45
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 75c5f51b-d548-4eab-a26e-aa10fc3dbc7b
+  network: tcp
+  servername: video.yandex.ru
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG146|1.2MB/s|DNSOK|GPT⁺-SG
+  port: 8443
+  server: 207.148.124.12
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: bcdb425f-80bc-4ec8-92a5-8edf53639c01
+  network: tcp
+  servername: www.bing.com
+- name: 🇸🇬 | @WhiteDNS | SG147|1.0MB/s|DNSOK|GPT⁺-SG
+  password: '8888'
+  port: 1080
+  server: 47.236.168.243
+  skip-cert-verify: true
+  type: socks5
+  username: '8888'

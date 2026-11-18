@@ -1,23 +1,7 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR43|1.7MB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 80
-  server: 132.145.80.230
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  ws-opts:
-    headers:
-      Host: kr02.a0a.xyz
-    path: /cctv13.m3u8
-  xudp: true
 - alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR44|1.5MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR34|2.0MB/s|DNSOK|GPT⁺-KR
   network: tcp
   port: 800
   server: 129.154.61.196
@@ -27,7 +11,44 @@ proxies:
   udp: true
   uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
   xudp: true
-- name: 🇰🇷 | @WhiteDNS | KR45|1021KB/s|DNSOK|GPT⁺-KR
+- cipher: aes-256-cfb
+  name: 🇰🇷 | @WhiteDNS | KR35|1.6MB/s|DNSOK|GPT⁺-KR
+  password: 1234!@#$
+  port: 1774
+  server: 49.254.204.133
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇰🇷 | @WhiteDNS | KR36|1.3MB/s|DNSOK|GPT⁺-KR
+  port: 800
+  server: 129.154.61.196
+  type: vmess
+  udp: true
+  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
+  network: tcp
+- name: 🇰🇷 | @WhiteDNS | KR37|1.2MB/s|DNSOK|GPT⁺-KR
+  network: ws
+  port: 25555
+  server: 152.69.226.63
+  type: vless
+  udp: true
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G610M Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /
+  xudp: true
+- cipher: aes-256-cfb
+  name: 🇰🇷 | @WhiteDNS | KR38|1.0MB/s|DNSOK|GPT⁺-KR
+  password: 1234!@#$
+  port: 1774
+  server: 49.254.204.134
+  type: ss
+  udp: true
+- name: 🇰🇷 | @WhiteDNS | KR39|695KB/s|DNSOK|GPT⁺-KR
   network: ws
   port: 25555
   server: 152.69.226.63
@@ -38,7 +59,7 @@ proxies:
     headers:
       Host: ''
       User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/45.0.2454.85 Safari/537.36
+        Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0
     path: /
   xudp: true
   servername: 152.69.226.63
