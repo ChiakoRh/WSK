@@ -13,7 +13,71 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇦 | @WhiteDNS | CA37|2.4MB/s|DNSOK|GPT⁺-CA
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦 | @WhiteDNS | CA49|4.3MB/s|DNSOK|GPT⁺-CA
+  password: 2cvhpvdg4x7mvbps
+  port: 8080
+  server: 54.39.96.233
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦 | @WhiteDNS | CA50|4.2MB/s|DNSOK|GPT⁺-CA
+  password: 2cvhpvdg4x7mvbps
+  port: 8080
+  server: leviko-ca4638.shopingggg.ir
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇨🇦 | @WhiteDNS | CA51|4.1MB/s|DNSOK|GPT⁺-CA
+  password: itzvpn@321
+  port: 8388
+  server: 184.107.106.78
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇨🇦 | @WhiteDNS | CA52|4.1MB/s|DNSOK|GPT⁺-CA
+  password: itzvpn@321
+  port: 8388
+  server: 192.99.151.230
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇨🇦 | @WhiteDNS | CA53|4.0MB/s|DNSOK|GPT⁺-CA
+  password: itzvpn@321
+  port: 8388
+  server: 184.107.106.77
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦 | @WhiteDNS | CA54|3.7MB/s|DNSOK|GPT⁺-CA
+  password: 575hiopq2h28yao6
+  port: 8080
+  server: leviko-ca8416.shopingggg.ir
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦 | @WhiteDNS | CA55|2.3MB/s|DNSOK|GPT⁺-CA
+  password: 575hiopq2h28yao6
+  port: 8080
+  server: 15.235.121.109
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦 | @WhiteDNS | CA56|1.8MB/s|DNSOK|GPT⁺-CA
+  password: kxhnt5jtykd328cg
+  port: 8080
+  server: 15.235.57.6
+  type: ss
+  udp: true
+- name: 🇨🇦 | @WhiteDNS | CA57|1.7MB/s|DNSOK|GPT⁺-CA
+  password: ''
+  port: 9443
+  server: 198.44.142.27
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇦 | @WhiteDNS | CA58|1.7MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 9443
   server: 149.88.98.81
@@ -21,11 +85,28 @@ proxies:
   tls: true
   type: http
   username: ''
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦 | @WhiteDNS | CA59|1.6MB/s|DNSOK|GPT⁺-CA
+  password: 3h3hb2gptqz6suyt
+  port: 8080
+  server: 198.100.154.175
+  type: ss
+  udp: true
 proxy-groups:
 - name: CA-Auto
   type: url-test
   proxies:
-  - 🇨🇦 | @WhiteDNS | CA37|2.4MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA49|4.3MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA50|4.2MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA51|4.1MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA52|4.1MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA53|4.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA54|3.7MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA55|2.3MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA56|1.8MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA57|1.7MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA58|1.7MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA59|1.6MB/s|DNSOK|GPT⁺-CA
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

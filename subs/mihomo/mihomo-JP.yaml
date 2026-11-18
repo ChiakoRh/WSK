@@ -1,7 +1,63 @@
 proxies:
+- encryption: none
+  name: 🇯🇵 | @WhiteDNS | JP108|2.4MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 18453
+  server: 168.110.21.56
+  type: vless
+  udp: true
+  uuid: 1751bebc-1bf1-420c-8b9d-97157aad179b
+  xudp: true
+- name: 🇯🇵 | @WhiteDNS | JP109|2.0MB/s|DNSOK|GPT⁺-JP
+  password: F3NzMNuYnG7akU2mSlBY
+  port: 8443
+  server: 193.123.160.109
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: trojan
+  udp: true
+  network: tcp
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP93|1.7MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP110|2.0MB/s|DNSOK|GPT⁺-JP
+  port: 443
+  reality-opts:
+    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
+    short-id: 684c7531e599dec0
+  server: 158.101.151.157
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
+  network: tcp
+  servername: www.microsoft.com
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP111|2.0MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 8081
+  server: 168.110.63.247
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
+  ws-opts:
+    headers: {}
+    path: /vless
+  xudp: true
+  servername: 168.110.63.247
+- name: 🇯🇵 | @WhiteDNS | JP112|1.7MB/s|DNSOK|GPT⁺-JP
+  port: 18453
+  server: 168.110.21.56
+  type: vless
+  udp: true
+  uuid: 1751bebc-1bf1-420c-8b9d-97157aad179b
+  network: tcp
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP113|1.7MB/s|DNSOK|GPT⁺-JP
   network: tcp
   port: 443
   reality-opts:
@@ -15,45 +71,9 @@ proxies:
   xudp: true
   servername: www.microsoft.com
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP94|1.5MB/s|DNSOK|GPT⁺-JP
-  port: 23169
-  server: djj.zjlo.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9da605d3-f5f7-4135-f806-450f036f9351
-  network: tcp
-  servername: djj.zjlo.top
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP95|1.3MB/s|DNSOK|GPT⁺
-  network: tcp
-  port: 23169
-  server: 155.248.175.201
-  tls: true
-  type: vless
-  udp: true
-  uuid: f67b1159-a61f-4ae4-9844-0701b716a290
-  xudp: true
-  servername: djj.zjlo.top
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP96|1.3MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 23169
-  server: 155.248.175.201
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7318caa1-93d1-4a9d-c481-504599902700
-  xudp: true
-  servername: djj.zjlo.top
-- client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP97|1.3MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP114|1.7MB/s|DNSOK|GPT⁺-JP
   network: raw
   port: 443
   reality-opts:
@@ -66,78 +86,114 @@ proxies:
   uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
   xudp: true
   servername: www.microsoft.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP98|1.1MB/s|DNSOK|GPT⁺-JP
-  port: 23169
-  server: djj.zjlo.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3eb053cb-d6f8-4b31-8180-222e1cc6f8ff
-  network: tcp
-  servername: djj.zjlo.top
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP99|1.1MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP115|1.3MB/s|DNSOK|GPT⁺-JP
   port: 23169
   server: 155.248.175.201
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: f67b1159-a61f-4ae4-9844-0701b716a290
-  network: tcp
-  servername: djj.zjlo.top
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP100|1.1MB/s|DNSOK|GPT⁺-JP
-  network: tcp
-  port: 23169
-  server: djj.zjlo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3eb053cb-d6f8-4b31-8180-222e1cc6f8ff
-  xudp: true
-  servername: djj.zjlo.top
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP101|1.0MB/s|DNSOK|GPT⁺-JP
-  port: 443
-  reality-opts:
-    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
-    short-id: 684c7531e599dec0
-  server: 158.101.151.157
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
-  network: tcp
-  servername: www.microsoft.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP102|885KB/s|DNSOK|GPT⁺
-  port: 23169
-  server: djj.zjlo.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
   uuid: 7318caa1-93d1-4a9d-c481-504599902700
   network: tcp
   servername: djj.zjlo.top
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP116|1.3MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: 168.138.43.75
+    path: /cctv13.m3u8
+  xudp: true
+  servername: 168.138.43.75
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP117|1.3MB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 8081
+  server: 168.110.63.247
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
+  ws-opts:
+    headers: {}
+    path: /vless
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP118|1.0MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 23169
+  server: 155.248.175.201
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9da605d3-f5f7-4135-f806-450f036f9351
+  xudp: true
+  servername: djj.zjlo.top
+- cipher: aes-128-gcm
+  name: 🇯🇵 | @WhiteDNS | JP119|982KB/s|DNSOK|GPT⁺-JP
+  password: Bwlqh7GcFB
+  port: 53758
+  server: 168.138.205.100
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 🇯🇵 | @WhiteDNS | JP120|950KB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  password: F3NzMNuYnG7akU2mSlBY
+  port: 8443
+  server: 193.123.160.109
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP103|555KB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP121|750KB/s|DNSOK|GPT⁺-JP
   network: tcp
   port: 23169
   server: djj.zjlo.top
   tls: true
   type: vless
   udp: true
-  uuid: 7318caa1-93d1-4a9d-c481-504599902700
+  uuid: 9da605d3-f5f7-4135-f806-450f036f9351
   xudp: true
   servername: djj.zjlo.top
+- cipher: aes-128-gcm
+  name: 🇯🇵 | @WhiteDNS | JP122|653KB/s|DNSOK|GPT⁺-JP
+  password: Bwlqh7GcFB
+  port: 53758
+  server: jpa.123069.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 | @WhiteDNS | JP123|645KB/s|DNSOK|GPT⁺-JP
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: 168.138.43.75
+    path: /cctv13.m3u8
+  xudp: true

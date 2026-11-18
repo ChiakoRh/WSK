@@ -1,0 +1,43 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇵🇱 | @WhiteDNS | PL78|18.6MB/s|DNSOK|GPT⁺-PL
+  network: xhttp
+  port: 443
+  server: 141.11.203.165
+  tls: true
+  type: vless
+  udp: true
+  uuid: 003ec416-45f0-462a-8030-016fe0a71703
+  xhttp-opts:
+    host: 186.baklajann.ru
+    mode: auto
+    path: /
+  xudp: true
+  servername: 186.baklajann.ru
+proxy-groups:
+- name: PL-Auto
+  type: url-test
+  proxies:
+  - 🇵🇱 | @WhiteDNS | PL78|18.6MB/s|DNSOK|GPT⁺-PL
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,PL-Auto

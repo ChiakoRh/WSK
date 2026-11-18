@@ -13,80 +13,52 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: firefox
-  encryption: none
-  fingerprint: CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E
-  name: 🇸🇪 | @WhiteDNS | SE29|7.0MB/s|DNSOK|GPT⁺-SE
-  network: xhttp
-  port: 443
-  server: tulip.amydoodles.com
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇪 | @WhiteDNS | SE36|6.2MB/s|DNSOK|GPT⁺-SE
+  password: MoHM0PPMHJyDtxp8M8FIJZ-UquRdS3Lv
+  port: 45797
+  server: maxup937996mlm.maxup.tr
+  type: ss
   udp: true
-  uuid: 27b222f7-1119-4cbb-8c8d-996cec45af95
-  xhttp-opts:
-    host: wolfthenight.global.ssl.fastly.net
-    mode: auto
-    path: /setare
-    reuse-settings:
-      h-keep-alive-period: 20
-      h-max-request-times: 300-500
-      h-max-reusable-secs: 300-480
-      max-concurrency: 16-32
-    x-padding-bytes: 100-1000
-  xudp: true
-  servername: cdn.akamai.steamstatic.com
-- client-fingerprint: chrome
-  encryption: none
-  fingerprint: CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E
-  name: 🇸🇪 | @WhiteDNS | SE30|6.1MB/s|DNSOK|GPT⁺-SE
-  network: xhttp
-  port: 443
-  server: tulip.amydoodles.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 12a53b9b-5e33-4da5-a4fa-d4389e8b295f
-  xhttp-opts:
-    host: wolfthenight.global.ssl.fastly.net
-    mode: auto
-    path: /setare
-    reuse-settings:
-      h-keep-alive-period: 20
-      h-max-request-times: 300-500
-      h-max-reusable-secs: 300-480
-      max-concurrency: 16-32
-    x-padding-bytes: 100-1000
-  xudp: true
-  servername: cdn.akamai.steamstatic.com
+- down: ''
+  fingerprint: ''
+  name: 🇸🇪 | @WhiteDNS | SE37|1.0MB/s|DNSOK|GPT⁺-SE
+  obfs: salamander
+  obfs-password: vxvnmus9agdzduvz
+  password: Telegram--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X-
+  port: 26206
+  server: 185.164.72.192
+  skip-cert-verify: false
+  sni: config7x.de5.net
+  type: hysteria2
+  up: ''
 - alpn:
   - http/1.1
-  client-fingerprint: unsafe
-  encryption: mlkem768x25519plus.native.0rtt.vRXNL_XhxPdlqRnLXcf5tKBaB5t33oqSXWOtaK1mAAY
-  flow: xtls-rprx-vision
-  name: 🇸🇪 | @WhiteDNS | SE31|1.3MB/s|DNSOK|GPT⁺-SE
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇸🇪 | @WhiteDNS | SE38|782KB/s|DNSOK|GPT⁺-SE
   network: ws
   port: 443
-  server: perplexity.com
+  server: subgift.gcorecdn.com
   tls: true
   type: vless
   udp: true
-  uuid: 628347a0-6582-4202-9aa8-2eaa8140dc25
+  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
   ws-opts:
     headers:
-      Host: new.exploring.cyou
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+      Host: subgift.gcorecdn.com
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/41.0.2272.101 Safari/537.36
     path: /t.me-SubGift
   xudp: true
-  servername: new.exploring.cyou
+  servername: subgift.gcorecdn.com
 proxy-groups:
 - name: SE-Auto
   type: url-test
   proxies:
-  - 🇸🇪 | @WhiteDNS | SE29|7.0MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE30|6.1MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE31|1.3MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE36|6.2MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE37|1.0MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE38|782KB/s|DNSOK|GPT⁺-SE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
