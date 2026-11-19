@@ -12,11 +12,19 @@ dns:
   nameserver:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
-proxies: []
+proxies:
+- name: ❓ | @WhiteDNS | OT622|1.1MB/s|DNSOK|GPT⁺-DE
+  port: 2474
+  server: 167.233.129.126
+  type: vless
+  udp: true
+  uuid: 287db857-de04-4212-bd69-5d14083e340e
+  network: tcp
 proxy-groups:
 - name: OT-Auto
   type: url-test
-  proxies: []
+  proxies:
+  - ❓ | @WhiteDNS | OT622|1.1MB/s|DNSOK|GPT⁺-DE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
