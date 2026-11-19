@@ -1,7 +1,7 @@
 proxies:
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP69|2.0MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP82|2.0MB/s|DNSOK|GPT⁺-JP
   network: tcp
   port: 443
   reality-opts:
@@ -12,8 +12,16 @@ proxies:
   type: vless
   udp: true
   uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
+  xudp: true
   servername: www.microsoft.com
-- name: 🇯🇵 | @WhiteDNS | JP70|1.6MB/s|DNSOK|GPT⁺-JP
+- name: 🇯🇵 | @WhiteDNS | JP83|1.7MB/s|DNSOK|GPT⁺-JP
+  port: 18454
+  server: 168.110.21.56
+  type: vless
+  udp: true
+  uuid: ff8fc3f9-0c1b-4a6f-97cb-ed1cde4de62d
+  network: tcp
+- name: 🇯🇵 | @WhiteDNS | JP84|1.4MB/s|DNSOK|GPT⁺-JP
   password: F3NzMNuYnG7akU2mSlBY
   port: 8443
   server: 193.123.160.109
@@ -22,10 +30,32 @@ proxies:
   type: trojan
   udp: true
   network: tcp
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP85|1.3MB/s|DNSOK|GPT⁺-JP
+  port: 443
+  reality-opts:
+    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
+    short-id: 684c7531e599dec0
+  server: 158.101.151.157
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
+  network: tcp
+  servername: www.microsoft.com
+- name: 🇯🇵 | @WhiteDNS | JP86|1.3MB/s|DNSOK|GPT⁺-JP
+  port: 18453
+  server: 168.110.21.56
+  type: vless
+  udp: true
+  uuid: 1751bebc-1bf1-420c-8b9d-97157aad179b
+  network: tcp
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP71|1.5MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP87|1.3MB/s|DNSOK|GPT⁺-JP
   network: raw
   port: 443
   reality-opts:
@@ -38,51 +68,3 @@ proxies:
   uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
   xudp: true
   servername: www.microsoft.com
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP72|1.5MB/s|DNSOK|GPT⁺-JP
-  port: 443
-  reality-opts:
-    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
-    short-id: 684c7531e599dec0
-  server: 158.101.151.157
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
-  network: tcp
-  servername: www.microsoft.com
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP73|1.4MB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 8081
-  server: 168.110.63.247
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
-  ws-opts:
-    headers: {}
-    path: /vless
-  xudp: true
-  servername: 168.110.63.247
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP74|728KB/s|DNSOK|GPT⁺-JP
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: none
-    path: /cctv13.m3u8
-  xudp: true
-  servername: none

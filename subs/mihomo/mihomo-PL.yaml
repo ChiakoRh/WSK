@@ -1,24 +1,41 @@
 proxies:
-- client-fingerprint: chrome
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
   encryption: none
-  name: 🇵🇱 | @WhiteDNS | PL53|17.7MB/s|DNSOK|GPT⁺-PL
+  name: 🇵🇱 | @WhiteDNS | PL53|17.2MB/s|DNSOK|GPT⁺-PL
   network: xhttp
   port: 443
   server: 192.200.160.42
   tls: true
   type: vless
   udp: true
-  uuid: d890b69b-049a-4a3f-b429-eacec51644d6
+  uuid: a7e6450c-9300-44d7-8fd7-a933bb0d87d1
   xhttp-opts:
     host: mama542.baklajann.ru
     mode: auto
     path: /
-    reuse-settings:
-      c-max-reuse-times: '0'
-      h-keep-alive-period: 0
-      h-max-request-times: 600-900
-      h-max-reusable-secs: 1800-3000
-      max-concurrency: '0'
-      max-connections: '4'
   xudp: true
   servername: mama542.baklajann.ru
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇵🇱 | @WhiteDNS | PL54|6.2MB/s|DNSOK|GPT⁺-PL
+  network: xhttp
+  port: 443
+  server: 185.133.35.86
+  tls: true
+  type: vless
+  udp: true
+  uuid: a7e6450c-9300-44d7-8fd7-a933bb0d87d1
+  xhttp-opts:
+    host: mama511.baklajann.ru
+    mode: auto
+    path: /
+  xudp: true
+  servername: mama511.baklajann.ru

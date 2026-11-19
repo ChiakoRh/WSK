@@ -13,18 +13,18 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: ❓ | @WhiteDNS | OT622|1.1MB/s|DNSOK|GPT⁺-DE
-  port: 2474
-  server: 167.233.129.126
-  type: vless
-  udp: true
-  uuid: 287db857-de04-4212-bd69-5d14083e340e
-  network: tcp
+- name: ❓ | @WhiteDNS | OT604|1.4MB/s|DNSOK|GPT⁺-US
+  password: test123
+  port: 1080
+  server: 104.168.249.36
+  skip-cert-verify: true
+  type: socks5
+  username: test123
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT622|1.1MB/s|DNSOK|GPT⁺-DE
+  - ❓ | @WhiteDNS | OT604|1.4MB/s|DNSOK|GPT⁺-US
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

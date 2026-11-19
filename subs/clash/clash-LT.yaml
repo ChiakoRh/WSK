@@ -1,0 +1,35 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- client-fingerprint: chrome
+  name: 🇱🇹 | @WhiteDNS | LT16|716KB/s|DNSOK|GPT⁺-LT
+  network: tcp
+  port: 443
+  server: 81.163.22.109
+  tls: true
+  type: vless
+  udp: true
+  uuid: aae24578-9f15-0001-a5b1-4f46630e5ef8
+  xudp: true
+  servername: jissa-ru-wl-47sel.my-fade.cloud
+proxy-groups:
+- name: LT-Auto
+  type: url-test
+  proxies:
+  - 🇱🇹 | @WhiteDNS | LT16|716KB/s|DNSOK|GPT⁺-LT
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,LT-Auto
