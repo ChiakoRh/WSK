@@ -13,19 +13,20 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: aes-256-gcm
-  name: 🇨🇱 | @WhiteDNS | CL6|1.3MB/s|DNSOK|GPT⁺-CL
-  password: xBStBEVqvGwHPocc
-  port: 8388
-  server: 64.176.2.21
-  type: ss
-  udp: true
+- name: 🇨🇿 | @WhiteDNS | CZ14|2.7MB/s|DNSOK|GPT⁺-CZ
+  password: ''
+  port: 443
+  server: 185.216.35.66
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 proxy-groups:
-- name: CL-Auto
+- name: CZ-Auto
   type: url-test
   proxies:
-  - 🇨🇱 | @WhiteDNS | CL6|1.3MB/s|DNSOK|GPT⁺-CL
+  - 🇨🇿 | @WhiteDNS | CZ14|2.7MB/s|DNSOK|GPT⁺-CZ
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,CL-Auto
+- MATCH,CZ-Auto

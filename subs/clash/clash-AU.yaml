@@ -13,20 +13,24 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇵🇱 | @WhiteDNS | PL63|6.1MB/s|DNSOK|GPT⁺-PL
-  password: ''
-  port: 443
-  server: 37.120.156.18
+- down: ''
+  fingerprint: ''
+  name: 🇦🇺 | @WhiteDNS | AU18|1.8MB/s|DNSOK|GPT⁺-AU
+  obfs: ''
+  obfs-password: ''
+  password: linlin-2026
+  port: 36712
+  server: 13.55.52.44
   skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+  sni: 13.55.52.44
+  type: hysteria2
+  up: ''
 proxy-groups:
-- name: PL-Auto
+- name: AU-Auto
   type: url-test
   proxies:
-  - 🇵🇱 | @WhiteDNS | PL63|6.1MB/s|DNSOK|GPT⁺-PL
+  - 🇦🇺 | @WhiteDNS | AU18|1.8MB/s|DNSOK|GPT⁺-AU
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,PL-Auto
+- MATCH,AU-Auto
