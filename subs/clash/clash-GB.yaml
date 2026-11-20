@@ -20,7 +20,7 @@ proxies:
       - store.steampowered.com
     path:
     - /
-  name: 🇬🇧 | @WhiteDNS | GB61|31.1MB/s|DNSOK|GPT⁺-DE
+  name: 🇬🇧 | @WhiteDNS | GB54|29.9MB/s|DNSOK|GPT⁺-DE
   network: http
   port: 443
   server: 139.59.152.166
@@ -28,22 +28,20 @@ proxies:
   udp: true
   uuid: 40992c2a-513e-4837-9594-23411fd42afd
   xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇬🇧 | @WhiteDNS | GB62|22.9MB/s|DNSOK|GPT⁺-GB
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: a9O5evb8g385KJm77j9SKlB7MvHzUBGes6c8BAxyO1U
-    short-id: 5fd3245e96291c37
-  server: 164.37.110.126
-  tls: true
-  type: vless
+- cipher: aes-256-gcm
+  name: 🇬🇧 | @WhiteDNS | GB55|20.5MB/s|DNSOK|GPT⁺-GB
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 198.244.201.129
+  type: ss
   udp: true
-  uuid: f439541f-c4d2-43b3-9659-8d3515d7a64c
-  xudp: true
-  servername: 212.192.156.15
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB56|20.5MB/s|DNSOK|GPT⁺-GB
+  password: eAqTrby7a6ZOcClxTOl08kuthoCrZovFCmQj0BDqXB0=
+  port: 61312
+  server: 144.24.229.13
+  type: ss
+  udp: true
 - encryption: none
   http-opts:
     headers:
@@ -51,7 +49,7 @@ proxies:
       - fast.com
     path:
     - /
-  name: 🇬🇧 | @WhiteDNS | GB63|6.7MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB57|6.7MB/s|DNSOK|GPT⁺-GB
   network: http
   port: 443
   server: 161.35.37.106
@@ -60,43 +58,21 @@ proxies:
   uuid: 40992c2a-513e-4837-9594-23411fd42afd
   xudp: true
 - cipher: aes-256-gcm
-  name: 🇬🇧 | @WhiteDNS | GB64|6.3MB/s|DNSOK|GPT⁺-GB
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 198.244.201.129
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇬🇧 | @WhiteDNS | GB65|2.6MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB58|6.5MB/s|DNSOK|GPT⁺-GB
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 198.244.202.215
   type: ss
   udp: true
-- name: 🇬🇧 | @WhiteDNS | GB66|650KB/s|DNSOK|GPT⁺-FR
-  network: ws
-  port: 80
-  server: suh.cryptofront.uk
-  type: vless
-  udp: true
-  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
-  ws-opts:
-    headers:
-      Host: suh.cryptofront.uk
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J120M Build/LMY47X) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /
-  xudp: true
 proxy-groups:
 - name: GB-Auto
   type: url-test
   proxies:
-  - 🇬🇧 | @WhiteDNS | GB61|31.1MB/s|DNSOK|GPT⁺-DE
-  - 🇬🇧 | @WhiteDNS | GB62|22.9MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB63|6.7MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB64|6.3MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB65|2.6MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB66|650KB/s|DNSOK|GPT⁺-FR
+  - 🇬🇧 | @WhiteDNS | GB54|29.9MB/s|DNSOK|GPT⁺-DE
+  - 🇬🇧 | @WhiteDNS | GB55|20.5MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB56|20.5MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB57|6.7MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB58|6.5MB/s|DNSOK|GPT⁺-GB
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
