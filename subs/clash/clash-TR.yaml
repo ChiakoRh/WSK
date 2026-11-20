@@ -1,0 +1,31 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇷 | @WhiteDNS | TR11|4.2MB/s|DNSOK|GPT⁺-TR
+  password: o3-9Eg79umh4CaY8sWC7b3
+  port: 1080
+  server: 31.210.78.66
+  type: ss
+  udp: true
+proxy-groups:
+- name: TR-Auto
+  type: url-test
+  proxies:
+  - 🇹🇷 | @WhiteDNS | TR11|4.2MB/s|DNSOK|GPT⁺-TR
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,TR-Auto

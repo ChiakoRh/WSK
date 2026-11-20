@@ -17,39 +17,10 @@ proxies:
   http-opts:
     headers:
       Host:
-      - store.steampowered.com
-    path:
-    - /
-  name: 🇬🇧 | @WhiteDNS | GB54|29.9MB/s|DNSOK|GPT⁺-DE
-  network: http
-  port: 443
-  server: 139.59.152.166
-  type: vless
-  udp: true
-  uuid: 40992c2a-513e-4837-9594-23411fd42afd
-  xudp: true
-- cipher: aes-256-gcm
-  name: 🇬🇧 | @WhiteDNS | GB55|20.5MB/s|DNSOK|GPT⁺-GB
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 198.244.201.129
-  type: ss
-  udp: true
-- cipher: 2022-blake3-chacha20-poly1305
-  name: 🇬🇧 | @WhiteDNS | GB56|20.5MB/s|DNSOK|GPT⁺-GB
-  password: eAqTrby7a6ZOcClxTOl08kuthoCrZovFCmQj0BDqXB0=
-  port: 61312
-  server: 144.24.229.13
-  type: ss
-  udp: true
-- encryption: none
-  http-opts:
-    headers:
-      Host:
       - fast.com
     path:
     - /
-  name: 🇬🇧 | @WhiteDNS | GB57|6.7MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB59|24.1MB/s|DNSOK|GPT⁺-GB
   network: http
   port: 443
   server: 161.35.37.106
@@ -58,21 +29,49 @@ proxies:
   uuid: 40992c2a-513e-4837-9594-23411fd42afd
   xudp: true
 - cipher: aes-256-gcm
-  name: 🇬🇧 | @WhiteDNS | GB58|6.5MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB60|22.0MB/s|DNSOK|GPT⁺-GB
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 198.244.202.215
   type: ss
   udp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB61|21.4MB/s|DNSOK|GPT⁺-GB
+  password: hnNQ8YzI54GkTXwdVgU8e78Fdy4Wcn0ZspLH+yHOLIE=
+  port: 61312
+  server: 129.151.87.6
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇬🇧 | @WhiteDNS | GB62|6.0MB/s|DNSOK|GPT⁺-GB
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 198.244.201.129
+  type: ss
+  udp: true
+- name: 🇬🇧 | @WhiteDNS | GB63|5.1MB/s|DNSOK|GPT⁺-FR
+  network: ws
+  port: 80
+  server: suh.cryptofront.uk
+  type: vless
+  udp: true
+  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
+  ws-opts:
+    headers:
+      Host: suh.cryptofront.uk
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/59.0.3071.115 Safari/537.36
+    path: /
+  xudp: true
 proxy-groups:
 - name: GB-Auto
   type: url-test
   proxies:
-  - 🇬🇧 | @WhiteDNS | GB54|29.9MB/s|DNSOK|GPT⁺-DE
-  - 🇬🇧 | @WhiteDNS | GB55|20.5MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB56|20.5MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB57|6.7MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB58|6.5MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB59|24.1MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB60|22.0MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB61|21.4MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB62|6.0MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB63|5.1MB/s|DNSOK|GPT⁺-FR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
