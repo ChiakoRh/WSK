@@ -13,7 +13,44 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇦 | @WhiteDNS | CA46|1.7MB/s|DNSOK|GPT⁺-CA
+- cipher: aes-256-gcm
+  name: 🇨🇦 | @WhiteDNS | CA75|3.9MB/s|DNSOK|GPT⁺-CA
+  password: itzvpn@321
+  port: 8388
+  server: 192.99.151.230
+  type: ss
+  udp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA76|2.9MB/s|DNSOK|GPT⁺-CA
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: FZvOenkKu_0DspnZA7Nc7xgWhR0_Z0MvqhntPqPchV4
+    short-id: 40a4615253b8f75d
+  server: 184.107.179.150
+  tls: true
+  type: vless
+  udp: true
+  uuid: e45b8261-88c9-4181-aab4-72093dfae6b9
+  xudp: true
+  servername: www.kpn.com
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA77|2.9MB/s|DNSOK|GPT⁺-CA
+  network: raw
+  port: 8443
+  reality-opts:
+    public-key: FZvOenkKu_0DspnZA7Nc7xgWhR0_Z0MvqhntPqPchV4
+    short-id: 40a4615253b8f75d
+  server: 184.107.179.150
+  tls: true
+  type: vless
+  udp: true
+  uuid: e45b8261-88c9-4181-aab4-72093dfae6b9
+  xudp: true
+  servername: www.kpn.com
+- name: 🇨🇦 | @WhiteDNS | CA78|2.9MB/s|DNSOK|GPT⁺-CA
   password: ''
   port: 9443
   server: 149.88.98.81
@@ -21,11 +58,30 @@ proxies:
   tls: true
   type: http
   username: ''
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇨🇦 | @WhiteDNS | CA79|2.4MB/s|DNSOK|GPT⁺-CA
+  port: 8443
+  reality-opts:
+    public-key: FZvOenkKu_0DspnZA7Nc7xgWhR0_Z0MvqhntPqPchV4
+    short-id: 40a4615253b8f75d
+  server: 184.107.179.150
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e45b8261-88c9-4181-aab4-72093dfae6b9
+  network: tcp
+  servername: www.kpn.com
 proxy-groups:
 - name: CA-Auto
   type: url-test
   proxies:
-  - 🇨🇦 | @WhiteDNS | CA46|1.7MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA75|3.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA76|2.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA77|2.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA78|2.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA79|2.4MB/s|DNSOK|GPT⁺-CA
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

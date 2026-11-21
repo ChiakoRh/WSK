@@ -1,36 +1,6 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI63|16.9MB/s|DNSOK|GPT⁺-FI
-  port: 49659
-  reality-opts:
-    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
-    short-id: 81959fce
-  server: 157.180.98.124
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
-  network: tcp
-  servername: apple.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI64|6.6MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 49659
-  reality-opts:
-    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
-    short-id: 81959fce
-  server: 157.180.98.124
-  tls: true
-  type: vless
-  udp: true
-  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
-  xudp: true
-  servername: apple.com
 - cipher: chacha20-ietf-poly1305
-  name: 🇫🇮 | @WhiteDNS | FI65|6.1MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI61|19.4MB/s|DNSOK|GPT⁺-FI
   password: C8ZJ7R4p_HHJ32cst7ilT-0Zi2F22hAc
   port: 25565
   server: static.28.210.29.2.clients.your-server.de
@@ -39,7 +9,7 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI66|5.7MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI62|6.1MB/s|DNSOK|GPT⁺-FI
   network: raw
   port: 49659
   reality-opts:
@@ -52,18 +22,53 @@ proxies:
   uuid: 88a558b1-9645-42f3-89e5-341570d8486d
   xudp: true
   servername: apple.com
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI67|4.2MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI63|6.0MB/s|DNSOK|GPT⁺-FI
   network: tcp
-  port: 443
-  server: 65.109.252.58
+  port: 49659
+  reality-opts:
+    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
+    short-id: 81959fce
+  server: 157.180.98.124
   tls: true
   type: vless
   udp: true
-  uuid: 2b696acb-1311-4ab7-b832-b376d29dca27
+  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
+  servername: apple.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI64|5.6MB/s|DNSOK|GPT⁺-FI
+  port: 49659
+  reality-opts:
+    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
+    short-id: 81959fce
+  server: 157.180.98.124
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
+  network: tcp
+  servername: apple.com
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers: {}
+    path:
+    - /3x
+  name: 🇫🇮 | @WhiteDNS | FI65|975KB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 52080
+  server: 185.212.149.7
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
   xudp: true
-  servername: static.170.55.238.62.clients.your-server.de
 - alpn:
   - ''
   alterId: '0'
@@ -74,7 +79,7 @@ proxies:
       - down-cdn.dingtalk.com
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI68|1006KB/s|DNSOK|GPT⁺
+  name: 🇫🇮 | @WhiteDNS | FI66|641KB/s|DNSOK|GPT⁺-FI
   network: http
   port: 2053
   server: 185.212.149.7
