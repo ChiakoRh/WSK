@@ -14,25 +14,22 @@ dns:
     - https://8.8.8.8/dns-query
 proxies:
 - client-fingerprint: chrome
-  encryption: none
+  encryption: mlkem768x25519plus.native.0rtt.9ifdcMCsJ-bMvc9ealWuadeq1_iASTHy8hetUix-nTM
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI62|6.2MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI40|12.7MB/s|DNSOK|GPT⁺-DE
   network: tcp
-  port: 49659
-  reality-opts:
-    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
-    short-id: 81959fce
-  server: 157.180.98.124
+  port: 29086
+  server: sv.fn.clients.fimrel.ir
   tls: true
   type: vless
   udp: true
-  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
+  uuid: 748fd766-274b-4026-8bfe-034ed4ffe58f
   xudp: true
-  servername: apple.com
+  servername: sv.fn.clients.fimrel.ir
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI63|6.1MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI41|12.5MB/s|DNSOK|GPT⁺-FI
   network: raw
   port: 49659
   reality-opts:
@@ -45,9 +42,32 @@ proxies:
   uuid: 88a558b1-9645-42f3-89e5-341570d8486d
   xudp: true
   servername: apple.com
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇮 | @WhiteDNS | FI42|6.5MB/s|DNSOK|GPT⁺-FI
+  password: C8ZJ7R4p_HHJ32cst7ilT-0Zi2F22hAc
+  port: 25565
+  server: static.28.210.29.2.clients.your-server.de
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI43|6.0MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 49659
+  reality-opts:
+    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
+    short-id: 81959fce
+  server: 157.180.98.124
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
+  xudp: true
+  servername: apple.com
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI64|5.3MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI44|5.6MB/s|DNSOK|GPT⁺-FI
   port: 49659
   reality-opts:
     public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
@@ -60,13 +80,81 @@ proxies:
   uuid: 88a558b1-9645-42f3-89e5-341570d8486d
   network: tcp
   servername: apple.com
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    path:
+    - /3x
+  name: 🇫🇮 | @WhiteDNS | FI45|2.7MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 2053
+  server: 185.212.149.7
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: aeb3c019-ae83-4677-af97-846baa787ad5
+  xudp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI46|1.8MB/s|DNSOK|GPT⁺-FI
+  port: 443
+  server: static.58.252.109.65.clients.your-server.de
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2b696acb-1311-4ab7-b832-b376d29dca27
+  network: tcp
+  servername: static.170.55.238.62.clients.your-server.de
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers: {}
+    path:
+    - /3x
+  name: 🇫🇮 | @WhiteDNS | FI47|1.7MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 52080
+  server: 185.212.149.7
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
+  xudp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI48|1.3MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 443
+  server: 65.109.252.58
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2b696acb-1311-4ab7-b832-b376d29dca27
+  xudp: true
+  servername: static.170.55.238.62.clients.your-server.de
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI62|6.2MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI63|6.1MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI64|5.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI40|12.7MB/s|DNSOK|GPT⁺-DE
+  - 🇫🇮 | @WhiteDNS | FI41|12.5MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI42|6.5MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI43|6.0MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI44|5.6MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI45|2.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI46|1.8MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI47|1.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI48|1.3MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
