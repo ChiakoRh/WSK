@@ -13,34 +13,18 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇷🇴 | @WhiteDNS | RO9|5.2MB/s|DNSOK|GPT⁺-RO
+- name: 🇷🇴 | @WhiteDNS | RO8|4.5MB/s|DNSOK|GPT⁺-RO
+  password: ''
+  port: 9002
+  server: 193.176.84.24
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇷🇴 | @WhiteDNS | RO9|1.3MB/s|DNSOK|GPT⁺-RO
   password: ''
   port: 9002
   server: 193.176.84.32
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇷🇴 | @WhiteDNS | RO10|4.7MB/s|DNSOK|GPT⁺-RO
-  password: 'null'
-  port: 9002
-  server: 193.176.84.26
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 🇷🇴 | @WhiteDNS | RO11|4.7MB/s|DNSOK|GPT⁺-RO
-  password: ''
-  port: 9002
-  server: 193.176.84.26
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇷🇴 | @WhiteDNS | RO12|2.7MB/s|DNSOK|GPT⁺-RO
-  password: ''
-  port: 9002
-  server: 193.176.84.34
   skip-cert-verify: true
   tls: true
   type: http
@@ -49,10 +33,8 @@ proxy-groups:
 - name: RO-Auto
   type: url-test
   proxies:
-  - 🇷🇴 | @WhiteDNS | RO9|5.2MB/s|DNSOK|GPT⁺-RO
-  - 🇷🇴 | @WhiteDNS | RO10|4.7MB/s|DNSOK|GPT⁺-RO
-  - 🇷🇴 | @WhiteDNS | RO11|4.7MB/s|DNSOK|GPT⁺-RO
-  - 🇷🇴 | @WhiteDNS | RO12|2.7MB/s|DNSOK|GPT⁺-RO
+  - 🇷🇴 | @WhiteDNS | RO8|4.5MB/s|DNSOK|GPT⁺-RO
+  - 🇷🇴 | @WhiteDNS | RO9|1.3MB/s|DNSOK|GPT⁺-RO
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
