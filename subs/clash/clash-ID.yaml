@@ -13,17 +13,10 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇮🇩 | @WhiteDNS | ID48|2.5MB/s|DNSOK|GPT⁺-ID
-  password: ''
-  port: 8080
-  server: 114.141.54.2
-  skip-cert-verify: true
-  type: http
-  username: ''
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇮🇩 | @WhiteDNS | ID49|1.6MB/s|DNSOK|GPT⁺-ID
+  name: 🇮🇩 | @WhiteDNS | ID11|1.7MB/s|DNSOK|GPT⁺-ID
   network: tcp
   port: 443
   reality-opts:
@@ -40,8 +33,7 @@ proxy-groups:
 - name: ID-Auto
   type: url-test
   proxies:
-  - 🇮🇩 | @WhiteDNS | ID48|2.5MB/s|DNSOK|GPT⁺-ID
-  - 🇮🇩 | @WhiteDNS | ID49|1.6MB/s|DNSOK|GPT⁺-ID
+  - 🇮🇩 | @WhiteDNS | ID11|1.7MB/s|DNSOK|GPT⁺-ID
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

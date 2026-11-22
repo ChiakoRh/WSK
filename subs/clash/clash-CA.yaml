@@ -13,16 +13,9 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: aes-256-gcm
-  name: 🇨🇦 | @WhiteDNS | CA246|4.8MB/s|DNSOK|GPT⁺-CA
-  password: itzvpn@321
-  port: 8388
-  server: 184.107.106.78
-  type: ss
-  udp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA247|4.0MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA83|3.9MB/s|DNSOK|GPT⁺-CA
   port: 8443
   reality-opts:
     public-key: FZvOenkKu_0DspnZA7Nc7xgWhR0_Z0MvqhntPqPchV4
@@ -38,7 +31,7 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA248|2.8MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA84|3.0MB/s|DNSOK|GPT⁺-CA
   network: raw
   port: 8443
   reality-opts:
@@ -51,17 +44,9 @@ proxies:
   uuid: e45b8261-88c9-4181-aab4-72093dfae6b9
   xudp: true
   servername: www.kpn.com
-- name: 🇨🇦 | @WhiteDNS | CA249|2.5MB/s|DNSOK|GPT⁺-CA
-  password: ''
-  port: 9443
-  server: 149.88.98.81
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇨🇦 | @WhiteDNS | CA250|2.1MB/s|DNSOK|GPT⁺-CA
+  name: 🇨🇦 | @WhiteDNS | CA85|2.9MB/s|DNSOK|GPT⁺-CA
   network: tcp
   port: 8443
   reality-opts:
@@ -72,25 +57,14 @@ proxies:
   type: vless
   udp: true
   uuid: e45b8261-88c9-4181-aab4-72093dfae6b9
-  xudp: true
   servername: www.kpn.com
-- cipher: aes-256-gcm
-  name: 🇨🇦 | @WhiteDNS | CA251|1.2MB/s|DNSOK|GPT⁺-CA
-  password: itzvpn@321
-  port: 8388
-  server: 192.99.151.230
-  type: ss
-  udp: true
 proxy-groups:
 - name: CA-Auto
   type: url-test
   proxies:
-  - 🇨🇦 | @WhiteDNS | CA246|4.8MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA247|4.0MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA248|2.8MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA249|2.5MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA250|2.1MB/s|DNSOK|GPT⁺-CA
-  - 🇨🇦 | @WhiteDNS | CA251|1.2MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA83|3.9MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA84|3.0MB/s|DNSOK|GPT⁺-CA
+  - 🇨🇦 | @WhiteDNS | CA85|2.9MB/s|DNSOK|GPT⁺-CA
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

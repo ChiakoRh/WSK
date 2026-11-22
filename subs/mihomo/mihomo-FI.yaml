@@ -1,24 +1,56 @@
 proxies:
-- client-fingerprint: chrome
-  encryption: none
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇮 | @WhiteDNS | FI59|21.3MB/s|DNSOK|GPT⁺-FI
+  password: C8ZJ7R4p_HHJ32cst7ilT-0Zi2F22hAc
+  port: 25565
+  server: static.28.210.29.2.clients.your-server.de
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇮 | @WhiteDNS | FI60|19.0MB/s|DNSOK|GPT⁺-FI
+  password: C8ZJ7R4p_HHJ32cst7ilT-0Zi2F22hAc
+  port: 25565
+  server: 2.29.210.28
+  type: ss
+  udp: true
+- name: 🇫🇮 | @WhiteDNS | FI61|13.4MB/s|DNSOK|GPT⁺-FI
+  password: ''
+  port: 1080
+  server: 65.108.151.224
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI67|6.4MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI62|6.1MB/s|DNSOK|GPT⁺-FI
   network: tcp
+  port: 8443
+  server: 2.29.125.167
+  tls: true
+  type: vless
+  udp: true
+  uuid: b2505fa2-f7c4-40d2-8c4a-1f6336bd37f1
+  xudp: true
+  servername: static.162.97.119.168.clients.your-server.de
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI63|5.8MB/s|DNSOK|GPT⁺-FI
   port: 49659
   reality-opts:
     public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
     short-id: 81959fce
   server: 157.180.98.124
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: 88a558b1-9645-42f3-89e5-341570d8486d
-  xudp: true
+  network: tcp
   servername: apple.com
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI68|5.4MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI64|5.8MB/s|DNSOK|GPT⁺-FI
   network: raw
   port: 49659
   reality-opts:
@@ -32,63 +64,25 @@ proxies:
   xudp: true
   servername: apple.com
 - client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI69|5.0MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI65|5.7MB/s|DNSOK|GPT⁺-FI
+  network: tcp
   port: 49659
   reality-opts:
     public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
     short-id: 81959fce
   server: 157.180.98.124
-  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: 88a558b1-9645-42f3-89e5-341570d8486d
-  network: tcp
+  xudp: true
   servername: apple.com
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI70|2.8MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 8443
-  server: 2.29.125.167
-  tls: true
-  type: vless
-  udp: true
-  uuid: b2505fa2-f7c4-40d2-8c4a-1f6336bd37f1
-  xudp: true
-  servername: static.162.97.119.168.clients.your-server.de
-- name: 🇫🇮 | @WhiteDNS | FI71|2.6MB/s|DNSOK|GPT⁺-FI
-  password: ''
-  port: 1080
-  server: 65.108.151.224
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - down-cdn.dingtalk.com
-    path:
-    - /3x
-  name: 🇫🇮 | @WhiteDNS | FI72|2.5MB/s|DNSOK|GPT⁺-FI
-  network: http
-  port: 2053
-  server: 185.212.149.7
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: aeb3c019-ae83-4677-af97-846baa787ad5
-  xudp: true
 - client-fingerprint: chrome
   encryption: mlkem768x25519plus.native.0rtt.9ifdcMCsJ-bMvc9ealWuadeq1_iASTHy8hetUix-nTM
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI73|1.5MB/s|DNSOK|GPT⁺-DE
+  name: 🇫🇮 | @WhiteDNS | FI66|5.0MB/s|DNSOK|GPT⁺-DE
   network: tcp
   port: 29086
   server: sv.fn.clients.fimrel.ir
@@ -103,10 +97,30 @@ proxies:
   alterId: '0'
   cipher: auto
   http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    path:
+    - /3x
+  name: 🇫🇮 | @WhiteDNS | FI67|1.6MB/s|DNSOK|GPT⁺-FI
+  network: http
+  port: 2053
+  server: 185.212.149.7
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: aeb3c019-ae83-4677-af97-846baa787ad5
+  xudp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
     headers: {}
     path:
     - /3x
-  name: 🇫🇮 | @WhiteDNS | FI74|1.3MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI68|1.3MB/s|DNSOK|GPT⁺-FI
   network: http
   port: 52080
   server: 185.212.149.7
