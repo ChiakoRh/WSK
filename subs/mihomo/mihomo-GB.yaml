@@ -6,7 +6,7 @@ proxies:
       - store.steampowered.com
     path:
     - /
-  name: 🇬🇧 | @WhiteDNS | GB68|45.7MB/s|DNSOK|GPT⁺-DE
+  name: 🇬🇧 | @WhiteDNS | GB97|46.6MB/s|DNSOK|GPT⁺-DE
   network: http
   port: 443
   server: 68.183.212.173
@@ -21,21 +21,14 @@ proxies:
       - store.steampowered.com
     path:
     - /
-  name: 🇬🇧 | @WhiteDNS | GB69|32.6MB/s|DNSOK|GPT⁺-DE
+  name: 🇬🇧 | @WhiteDNS | GB98|34.4MB/s|DNSOK|GPT⁺-DE
   network: http
   port: 443
-  server: 164.92.205.25
+  server: 159.89.13.245
   type: vless
   udp: true
   uuid: 40992c2a-513e-4837-9594-23411fd42afd
   xudp: true
-- cipher: aes-256-gcm
-  name: 🇬🇧 | @WhiteDNS | GB70|6.5MB/s|DNSOK|GPT⁺-GB
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 198.244.202.215
-  type: ss
-  udp: true
 - encryption: none
   http-opts:
     headers:
@@ -43,7 +36,7 @@ proxies:
       - store.steampowered.com
     path:
     - /
-  name: 🇬🇧 | @WhiteDNS | GB71|3.5MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB99|23.1MB/s|DNSOK|GPT⁺-GB
   network: http
   port: 443
   server: 178.62.115.140
@@ -51,13 +44,59 @@ proxies:
   udp: true
   uuid: 40992c2a-513e-4837-9594-23411fd42afd
   xudp: true
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - fast.com
+    path:
+    - /
+  name: 🇬🇧 | @WhiteDNS | GB100|22.1MB/s|DNSOK|GPT⁺-GB
+  network: http
+  port: 443
+  server: 46.101.41.222
+  type: vless
+  udp: true
+  uuid: 40992c2a-513e-4837-9594-23411fd42afd
+  xudp: true
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - store.steampowered.com
+    path:
+    - /
+  name: 🇬🇧 | @WhiteDNS | GB101|6.8MB/s|DNSOK|GPT⁺-DE
+  network: http
+  port: 443
+  server: 164.92.205.25
+  type: vless
+  udp: true
+  uuid: 40992c2a-513e-4837-9594-23411fd42afd
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇬🇧 | @WhiteDNS | GB102|5.9MB/s|DNSOK|GPT⁺-GB
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: U6FtussjhSb81ka0z9IDf1n80syjsczIDrRTdmzyeGM
+    short-id: 5a6f99962a27cdbc
+  server: 8.208.101.215
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3112c3f2-7172-417d-bce6-d168135d1603
+  xudp: true
+  servername: www.ebay.com
 - alpn:
   - http/1.1
   - h2
   - h3
   client-fingerprint: chrome
   encryption: none
-  name: 🇬🇧 | @WhiteDNS | GB72|3.4MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB103|4.8MB/s|DNSOK|GPT⁺-GB
   network: xhttp
   port: 8443
   server: chatgpt.com
@@ -71,10 +110,19 @@ proxies:
     x-padding-bytes: 100-1000
   xudp: true
   servername: sinavm2.soft10.ir
-- cipher: aes-256-gcm
-  name: 🇬🇧 | @WhiteDNS | GB73|2.7MB/s|DNSOK|GPT⁺-GB
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 198.244.201.129
-  type: ss
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB104|2.8MB/s|DNSOK|GPT⁺-GB
+  network: xhttp
+  port: 8443
+  server: 172.64.155.209
+  tls: true
+  type: vless
   udp: true
+  uuid: e88c423d-9f23-4d25-aef0-940571858d58
+  xhttp-opts:
+    mode: auto
+    path: /
+    x-padding-bytes: 100-1000
+  xudp: true
+  servername: sinavm2.soft10.ir

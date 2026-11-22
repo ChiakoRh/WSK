@@ -1,0 +1,40 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇹🇭 | @WhiteDNS | TH28|1.6MB/s|DNSOK|GPT⁺-TH
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: P3MHfKzFZhV5TRjdEj2r43fUr24iijLqB_k7rbSR2Bg
+    short-id: 4446248c38c846e6
+  server: 47.81.32.116
+  tls: true
+  type: vless
+  udp: true
+  uuid: 33330382-a046-428d-9e95-9aae8bd6b90e
+  xudp: true
+  servername: www.amazon.com
+proxy-groups:
+- name: TH-Auto
+  type: url-test
+  proxies:
+  - 🇹🇭 | @WhiteDNS | TH28|1.6MB/s|DNSOK|GPT⁺-TH
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,TH-Auto
