@@ -13,9 +13,25 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇷 | @WhiteDNS | FR65|23.8MB/s|DNSOK|GPT⁺-FR
+  network: raw
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.10
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  xudp: true
+  servername: fuck.rkn
 - alterId: 0
   cipher: auto
-  name: 🇫🇷 | @WhiteDNS | FR78|21.1MB/s|DNSOK|GPT⁺-FR
+  name: 🇫🇷 | @WhiteDNS | FR66|20.7MB/s|DNSOK|GPT⁺-FR
   port: 1270
   server: 79.137.99.183
   skip-cert-verify: true
@@ -25,75 +41,40 @@ proxies:
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   network: tcp
   servername: xmfhlpy.com
-- alterId: 0
-  cipher: auto
-  name: 🇫🇷 | @WhiteDNS | FR79|20.8MB/s|DNSOK|GPT⁺-FR
-  port: 1270
-  server: 46.105.222.157
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  network: tcp
-  servername: xmfhlpy.com
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇷 | @WhiteDNS | FR80|20.4MB/s|DNSOK|GPT⁺-FR
-  network: xhttp
-  port: 443
-  server: 192.200.160.42
-  tls: true
-  type: vless
-  udp: true
-  uuid: d795a9ec-5ed0-4309-ba6c-edc09b818669
-  xhttp-opts:
-    host: newmama.baklajann.ru
-    mode: auto
-    path: /
-    reuse-settings:
-      c-max-reuse-times: '0'
-      h-keep-alive-period: 0
-      h-max-request-times: 600-900
-      h-max-reusable-secs: 1800-3000
-      max-concurrency: '0'
-      max-connections: '4'
-  xudp: true
-  servername: newmama.baklajann.ru
-- alterId: 0
-  cipher: auto
-  name: 🇫🇷 | @WhiteDNS | FR81|20.2MB/s|DNSOK|GPT⁺-FR
-  port: 1270
-  server: 91.134.35.72
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  network: tcp
-  servername: xmfhlpy.com
 - client-fingerprint: chrome
-  name: 🇫🇷 | @WhiteDNS | FR82|19.6MB/s|DNSOK|GPT⁺-FR
+  encryption: none
+  name: 🇫🇷 | @WhiteDNS | FR67|20.7MB/s|DNSOK|GPT⁺-FR
   network: xhttp
-  port: 443
-  server: 31.43.179.196
+  port: 32202
+  reality-opts:
+    public-key: bGe_-nAtOq6_w_2mv6pcmD8RzJP65Tti-vyMP2hAwDc
+    short-id: f57d8f26
+  server: 62.210.24.143
   tls: true
   type: vless
   udp: true
-  uuid: d795a9ec-5ed0-4309-ba6c-edc09b818669
+  uuid: 28148be2-61a7-4f36-8adb-030cc9f82bd0
   xhttp-opts:
-    host: mama51.baklajann.ru
     mode: auto
-    path: /
+    path: /G3EEoH63
   xudp: true
-  servername: mama51.baklajann.ru
+  servername: www.amazon.com
 - alterId: '0'
   cipher: auto
-  name: 🇫🇷 | @WhiteDNS | FR83|19.6MB/s|DNSOK|GPT⁺-FR
+  name: 🇫🇷 | @WhiteDNS | FR68|19.3MB/s|DNSOK|GPT⁺-FR
+  network: tcp
+  port: 1270
+  server: 79.137.99.183
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  xudp: true
+  servername: xmfhlpy.com
+- alterId: '0'
+  cipher: auto
+  name: 🇫🇷 | @WhiteDNS | FR69|19.3MB/s|DNSOK|GPT⁺-FR
   network: tcp
   port: 1270
   server: 162.19.82.57
@@ -104,24 +85,41 @@ proxies:
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   xudp: true
   servername: xmfhlpy.com
-- client-fingerprint: chrome
-  name: 🇫🇷 | @WhiteDNS | FR84|18.8MB/s|DNSOK|GPT⁺-FR
-  network: xhttp
-  port: 443
-  server: 89.116.46.150
+- alterId: '0'
+  cipher: auto
+  name: 🇫🇷 | @WhiteDNS | FR70|6.9MB/s|DNSOK|GPT⁺-FR
+  network: tcp
+  port: 1270
+  server: 91.134.35.72
+  skip-cert-verify: false
   tls: true
-  type: vless
+  type: vmess
   udp: true
-  uuid: d795a9ec-5ed0-4309-ba6c-edc09b818669
-  xhttp-opts:
-    host: 145.baklajann.ru
-    mode: auto
-    path: /
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   xudp: true
-  servername: 145.baklajann.ru
+  servername: xmfhlpy.com
+- cipher: aes-256-gcm
+  name: 🇫🇷 | @WhiteDNS | FR71|6.9MB/s|DNSOK|GPT⁺-FR
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 79.137.99.183
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇫🇷 | @WhiteDNS | FR72|6.7MB/s|DNSOK|GPT⁺-FR
+  port: 1270
+  server: 46.105.222.155
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  network: tcp
+  servername: xmfhlpy.com
 - client-fingerprint: firefox
   encryption: mlkem768x25519plus.native.0rtt.I5ge5qOTUhKE8xpufKI84yktvqqG9qkViwYe20uFZUyGwbnK7QMv6Tih0subInSmZTyem1QFG1CDFvGfgMBu3Yw1ryNJfGjMnALAqZawBoukaROcTzxXmFAzuejDalyhxxfNJkeUefW3biOHIzcu_AairYSvJ8l_iHJpKVEKXZWPQWiq-tm_nPJz_oDDhFElaCHKnCslodSen2M6afQQ0HYKc6nKZmZwc1cHG1GKW9xHx6CBfLhFVOhT62tCvbxShul1NJgL-shELnovAtS1aHBFQKDOIiJYC7Ww0awUfsyGIFhnJIhdnqFHnkG7sOcdiWiH-ZkQ11p065zAWEQ14HTOi-aqCAsnWNwdRxwj1_qlArYd3nNF1dXKARRikbMFutC5GyyvSJxk7XwHRGWoK_q6_zK2amtIrsin6tov5kKs3UqywFJMJ2rMtgYZXpvK_TdXumLGUimIq9vFW7idpbMlv9F84NY8UbtrkyB87IQwdKqbtnuOMzxkYik-i9N5vaKcXLSdOGRpMgAKSMt5NbSyllcEh6qUTZoVb_h8ZmYij8csvbGWxodCj1WvOGoRtGGnTSpWMdG3X3ZxXlhNQ6tpIPGTfxkzjPtRjHQDcqm0fgrLjWONnkGxMQRO-Wi50vzNPzW9Vuy5BlZszdGqpjLNRLGw24JTAYKXpxiUkTxUxhO3LRC8kMvGVBgxjImwmwev1IqfPiVIMSwhV0FAMNw27nALh0qyPnNLbFpbTFuTL6V83YypFDl1yahns_AE86ufKnSAaSs_0PwMM_ZDfkhE7nRKCygaD9UjWWygRWq6fZarZahcTAqrZUYPXWxqDsrE7VRYO3ch70AHi6ZXTyKR1YcyM0Kiw3S0kxpjbtWReOJ3lXwry-BjcusDKhRsAxErDIBD6IFuY5ucRTtpfPoNgiq7rSFG8SFNvTe-_wh39Bwjj3JeRnw6kzujiKgxGiAH9GYm6LVvG2ljdWacJjSyoDE6mbFwgRCGdDh4h6eMCPs7hjQmNByx76lb0PYt-BuD9xCfiEFMoKJzTjWUvOy1gbmOrjY5xtkkByo8PCS40YRqXiYQ0Me9U5t_lsdxrvO6f7ajFHBNp_IiQOAstWu9UKC2hiABnVWbHaTFeQSp0tAx9rm5vehC0_a3EAHByGzGFUQ-QWpUO5mvGzZKpPVQrgovg2GsgepxgOMymOgv2CbLNKiwAJJyjDe5d5yXiueH3ZdppJqepXrOGuGOn3e-8RKVu3I-nCp-aMS769Yl5mmS8BYOpxW3HseSzZZMIta4hjsa7hqSgmycflvLV5x-8bM9iBFZ7iOey9oYyEkEbFN-6-Alh2dQfopjE2QNFqW6KatBKHXKHNVoayoc4ZegDKPNAEnAo9wIHkBpDFC-fVoCkGMDcRSeNbF67keruuE0xfMA8ltaklEyRwMcxVQwMhILq6vKlzpJF9OJMGVg5amP_-i4NAsKEfC8Ayp61gByykoWKTWkuLAEAYtXXNIfQ9BPvZca1BITgpC69lapO4SH1UAZ4KRxOTVtbHES_GsjM_lkTv940p3IDkG7jfvxIfY_Q9C3QVbkilRpPvg
-  name: 🇫🇷 | @WhiteDNS | FR85|18.5MB/s|DNSOK|GPT⁺-FR
+  name: 🇫🇷 | @WhiteDNS | FR73|6.6MB/s|DNSOK|GPT⁺-FR
   network: xhttp
   port: 37783
   reality-opts:
@@ -136,46 +134,9 @@ proxies:
     path: /OCrp5Ajs
   xudp: true
   servername: www.yahoo.com
-- name: 🇫🇷 | @WhiteDNS | FR86|18.3MB/s|DNSOK|GPT⁺-FR
-  password: ''
-  port: 3128
-  server: 54.36.150.233
-  skip-cert-verify: true
-  type: http
-  username: ''
-- client-fingerprint: chrome
-  name: 🇫🇷 | @WhiteDNS | FR87|7.2MB/s|DNSOK|GPT⁺-FR
-  network: xhttp
-  port: 443
-  server: 188.42.89.118
-  tls: true
-  type: vless
-  udp: true
-  uuid: d795a9ec-5ed0-4309-ba6c-edc09b818669
-  xhttp-opts:
-    host: mama1455.baklajann.ru
-    mode: auto
-    path: /
-  xudp: true
-  servername: mama1455.baklajann.ru
-- client-fingerprint: chrome
-  name: 🇫🇷 | @WhiteDNS | FR88|6.6MB/s|DNSOK|GPT⁺-FR
-  network: xhttp
-  port: 443
-  server: 185.18.250.147
-  tls: true
-  type: vless
-  udp: true
-  uuid: d795a9ec-5ed0-4309-ba6c-edc09b818669
-  xhttp-opts:
-    host: 19.baklajann.ru
-    mode: auto
-    path: /
-  xudp: true
-  servername: 19.baklajann.ru
 - alterId: '0'
   cipher: auto
-  name: 🇫🇷 | @WhiteDNS | FR89|6.4MB/s|DNSOK|GPT⁺-FR
+  name: 🇫🇷 | @WhiteDNS | FR74|6.3MB/s|DNSOK|GPT⁺-FR
   network: tcp
   port: 1270
   server: 46.105.222.155
@@ -188,7 +149,7 @@ proxies:
   servername: xmfhlpy.com
 - alterId: '0'
   cipher: auto
-  name: 🇫🇷 | @WhiteDNS | FR90|6.2MB/s|DNSOK|GPT⁺-FR
+  name: 🇫🇷 | @WhiteDNS | FR75|6.1MB/s|DNSOK|GPT⁺-FR
   network: tcp
   port: 1270
   server: 46.105.222.157
@@ -199,34 +160,9 @@ proxies:
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   xudp: true
   servername: xmfhlpy.com
-- alterId: '0'
-  cipher: auto
-  name: 🇫🇷 | @WhiteDNS | FR91|5.8MB/s|DNSOK|GPT⁺-FR
-  network: tcp
-  port: 1270
-  server: 91.134.35.72
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  xudp: true
-  servername: xmfhlpy.com
 - alterId: 0
   cipher: auto
-  name: 🇫🇷 | @WhiteDNS | FR92|5.6MB/s|DNSOK|GPT⁺-FR
-  port: 1270
-  server: 46.105.222.155
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  network: tcp
-  servername: xmfhlpy.com
-- alterId: 0
-  cipher: auto
-  name: 🇫🇷 | @WhiteDNS | FR93|5.0MB/s|DNSOK|GPT⁺-FR
+  name: 🇫🇷 | @WhiteDNS | FR76|5.2MB/s|DNSOK|GPT⁺-FR
   port: 1270
   server: 162.19.82.57
   skip-cert-verify: true
@@ -236,11 +172,42 @@ proxies:
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   network: tcp
   servername: xmfhlpy.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇷 | @WhiteDNS | FR77|4.2MB/s|DNSOK|GPT⁺-FR
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: ''
+  server: 62.210.91.10
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  xudp: true
+  servername: fuck.rkn
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇫🇷 | @WhiteDNS | FR78|2.3MB/s|DNSOK|GPT⁺-FR
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.10
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  servername: fuck.rkn
 - alpn:
   - ''
   alterId: '0'
   cipher: auto
-  name: 🇫🇷 | @WhiteDNS | FR94|4.5MB/s|DNSOK|GPT⁺-FR
+  name: 🇫🇷 | @WhiteDNS | FR79|545KB/s|DNSOK|GPT⁺-FR
   network: ws
   port: 80
   server: 145.239.55.210
@@ -254,84 +221,25 @@ proxies:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
     path: /
   xudp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇫🇷 | @WhiteDNS | FR95|2.4MB/s|DNSOK|GPT⁺-PL
-  network: ws
-  port: 80
-  server: 54.37.131.126
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1e55beca-3c69-4fa7-fb1f-15c1b767435f
-  ws-opts:
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-    path: /
-  xudp: true
-- client-fingerprint: chrome
-  name: 🇫🇷 | @WhiteDNS | FR96|2.4MB/s|DNSOK|GPT⁺-FR
-  network: ws
-  port: 443
-  server: 3.169.218.2
-  tls: true
-  type: vless
-  udp: true
-  uuid: d795a9ec-5ed0-4309-ba6c-edc09b818669
-  ws-opts:
-    headers:
-      Host: d1aedflfr97jes.cloudfront.net
-      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/57.0.2987.133 Safari/537.36
-    path: /
-  xudp: true
-  servername: d1aedflfr97jes.cloudfront.net
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇫🇷 | @WhiteDNS | FR97|1.6MB/s|DNSOK|GPT⁺-PL
-  network: ws
-  port: 80
-  server: 54.37.131.126
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1e55beca-3c69-4fa7-fb1f-15c1b767435f
-  ws-opts:
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-    path: /
-  xudp: true
-  servername: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 proxy-groups:
 - name: FR-Auto
   type: url-test
   proxies:
-  - 🇫🇷 | @WhiteDNS | FR78|21.1MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR79|20.8MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR80|20.4MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR81|20.2MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR82|19.6MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR83|19.6MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR84|18.8MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR85|18.5MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR86|18.3MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR87|7.2MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR88|6.6MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR89|6.4MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR90|6.2MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR91|5.8MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR92|5.6MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR93|5.0MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR94|4.5MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR95|2.4MB/s|DNSOK|GPT⁺-PL
-  - 🇫🇷 | @WhiteDNS | FR96|2.4MB/s|DNSOK|GPT⁺-FR
-  - 🇫🇷 | @WhiteDNS | FR97|1.6MB/s|DNSOK|GPT⁺-PL
+  - 🇫🇷 | @WhiteDNS | FR65|23.8MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR66|20.7MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR67|20.7MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR68|19.3MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR69|19.3MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR70|6.9MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR71|6.9MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR72|6.7MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR73|6.6MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR74|6.3MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR75|6.1MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR76|5.2MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR77|4.2MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR78|2.3MB/s|DNSOK|GPT⁺-FR
+  - 🇫🇷 | @WhiteDNS | FR79|545KB/s|DNSOK|GPT⁺-FR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

@@ -13,21 +13,26 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- client-fingerprint: chrome
-  name: ❓ | @WhiteDNS | OT559|1.4MB/s|DNSOK|GPT⁺-JP
-  password: 4FM15SpbYAoy6GIzquvBRjPHsK07aJOT
-  port: 443
-  server: 161.33.45.134
-  skip-cert-verify: true
-  sni: www.apple.com
-  type: trojan
-  udp: true
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: ❓ | @WhiteDNS | OT677|4.3MB/s|DNSOK|GPT⁺-DE
   network: tcp
+  port: 443
+  server: 176.98.176.60
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  xudp: true
+  servername: mosaic.topp-con.xyz
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT559|1.4MB/s|DNSOK|GPT⁺-JP
+  - ❓ | @WhiteDNS | OT677|4.3MB/s|DNSOK|GPT⁺-DE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
