@@ -13,26 +13,42 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: ❓ | @WhiteDNS | OT677|4.3MB/s|DNSOK|GPT⁺-DE
-  network: tcp
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - store.steampowered.com
+    path:
+    - /
+  name: ❓ | @WhiteDNS | OT662|17.6MB/s|DNSOK|GPT⁺-DE
+  network: http
   port: 443
-  server: 176.98.176.60
-  tls: true
+  server: 164.92.205.25
   type: vless
   udp: true
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  uuid: 40992c2a-513e-4837-9594-23411fd42afd
   xudp: true
-  servername: mosaic.topp-con.xyz
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - fast.com
+    path:
+    - /
+  name: ❓ | @WhiteDNS | OT663|1.8MB/s|DNSOK|GPT⁺-GB
+  network: http
+  port: 443
+  server: 159.65.23.143
+  type: vless
+  udp: true
+  uuid: 40992c2a-513e-4837-9594-23411fd42afd
+  xudp: true
 proxy-groups:
 - name: OT-Auto
   type: url-test
   proxies:
-  - ❓ | @WhiteDNS | OT677|4.3MB/s|DNSOK|GPT⁺-DE
+  - ❓ | @WhiteDNS | OT662|17.6MB/s|DNSOK|GPT⁺-DE
+  - ❓ | @WhiteDNS | OT663|1.8MB/s|DNSOK|GPT⁺-GB
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

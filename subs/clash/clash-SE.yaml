@@ -13,8 +13,8 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- encryption: mlkem768x25519plus.native.0rtt.beTW_jdNvFQVpegzyf_foGfgRBsHkf7VrtnC14NTe1s
-  name: 🇸🇪 | @WhiteDNS | SE18|6.7MB/s|DNSOK|GPT⁺-SE
+- encryption: none
+  name: 🇸🇪 | @WhiteDNS | SE24|6.4MB/s|DNSOK|GPT⁺-SE
   network: ws
   port: 443
   server: sajed.kdns.fr
@@ -24,15 +24,16 @@ proxies:
   ws-opts:
     headers:
       Host: sajed.kdns.fr
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
     path: /@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe
   xudp: true
+  servername: sajed.kdns.fr
 - alpn:
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: 🇸🇪 | @WhiteDNS | SE19|5.9MB/s|DNSOK|GPT⁺-SE
+  name: 🇸🇪 | @WhiteDNS | SE25|5.8MB/s|DNSOK|GPT⁺-SE
   network: ws
   port: 443
   server: subgift.gcorecdn.com
@@ -43,8 +44,8 @@ proxies:
   ws-opts:
     headers:
       Host: subgift.gcorecdn.com
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.102 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/52.0.2743.116 Safari/537.36
     path: /t.me-SubGift
   xudp: true
   servername: subgift.gcorecdn.com
@@ -53,7 +54,7 @@ proxies:
   client-fingerprint: unsafe
   encryption: mlkem768x25519plus.native.0rtt.X9-4gwVzZ7FvRTt7StLvPErFueO4ES_hSlXtloPrkmA
   flow: xtls-rprx-vision
-  name: 🇸🇪 | @WhiteDNS | SE20|5.1MB/s|DNSOK|GPT⁺-SE
+  name: 🇸🇪 | @WhiteDNS | SE26|4.8MB/s|DNSOK|GPT⁺-SE
   network: ws
   port: 443
   server: perplexity.ai
@@ -64,8 +65,9 @@ proxies:
   ws-opts:
     headers:
       Host: test.subgift.cyou
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; CAM-L21 Build/HUAWEICAM-L21; wv)
+        AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile
+        Safari/537.36
     path: /t.me-SubGift
   xudp: true
   servername: test.subgift.cyou
@@ -73,9 +75,9 @@ proxy-groups:
 - name: SE-Auto
   type: url-test
   proxies:
-  - 🇸🇪 | @WhiteDNS | SE18|6.7MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE19|5.9MB/s|DNSOK|GPT⁺-SE
-  - 🇸🇪 | @WhiteDNS | SE20|5.1MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE24|6.4MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE25|5.8MB/s|DNSOK|GPT⁺-SE
+  - 🇸🇪 | @WhiteDNS | SE26|4.8MB/s|DNSOK|GPT⁺-SE
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
