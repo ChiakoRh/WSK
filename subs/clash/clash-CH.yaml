@@ -1,0 +1,145 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- name: 🇨🇭 | @WhiteDNS | CH74|32.8MB/s|DNSOK|GPT⁺-CH
+  password: None
+  port: 443
+  server: 31.7.62.50
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH75|27.9MB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 9443
+  server: 37.120.213.210
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH76|1.2MB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 12020
+  server: 147.161.246.34
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH77|1.2MB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 10448
+  server: 147.161.246.34
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH78|1.1MB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 10002
+  server: 147.161.246.34
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH79|1.1MB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 11525
+  server: 147.161.246.34
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH80|1.0MB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 10011
+  server: 147.161.246.34
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH81|1.0MB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 11195
+  server: 147.161.246.34
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH82|1020KB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 12458
+  server: 147.161.246.34
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH83|1018KB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 11153
+  server: 147.161.246.34
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH84|1007KB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 11092
+  server: 147.161.246.34
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH85|890KB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 80
+  server: 147.161.246.34
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH86|684KB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 10821
+  server: 147.161.246.34
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH87|562KB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 11597
+  server: 147.161.246.34
+  skip-cert-verify: true
+  type: http
+  username: ''
+- name: 🇨🇭 | @WhiteDNS | CH88|560KB/s|DNSOK|GPT⁺-CH
+  password: ''
+  port: 12556
+  server: 147.161.246.34
+  skip-cert-verify: true
+  type: http
+  username: ''
+proxy-groups:
+- name: CH-Auto
+  type: url-test
+  proxies:
+  - 🇨🇭 | @WhiteDNS | CH74|32.8MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH75|27.9MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH76|1.2MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH77|1.2MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH78|1.1MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH79|1.1MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH80|1.0MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH81|1.0MB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH82|1020KB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH83|1018KB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH84|1007KB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH85|890KB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH86|684KB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH87|562KB/s|DNSOK|GPT⁺-CH
+  - 🇨🇭 | @WhiteDNS | CH88|560KB/s|DNSOK|GPT⁺-CH
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,CH-Auto
