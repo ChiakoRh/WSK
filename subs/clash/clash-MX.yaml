@@ -1,0 +1,39 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇲🇽 | @WhiteDNS | MX16|1.7MB/s|DNSOK|GPT⁺-MX
+  network: tcp
+  port: 61503
+  reality-opts:
+    public-key: U7t4RFE9MSMtC-o1DoJ8pYzKMfgVpTg6ZhTTknBrVkU
+    short-id: 1f2519bb96e5589c
+  server: 40.233.1.77
+  tls: true
+  type: vless
+  udp: true
+  uuid: 04bcfbb8-06d1-4922-ad5a-54ab28b1afda
+  xudp: true
+  servername: www.cloudflare.com
+proxy-groups:
+- name: MX-Auto
+  type: url-test
+  proxies:
+  - 🇲🇽 | @WhiteDNS | MX16|1.7MB/s|DNSOK|GPT⁺-MX
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,MX-Auto
