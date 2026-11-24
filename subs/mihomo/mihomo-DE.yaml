@@ -1,29 +1,27 @@
 proxies:
-- name: 🇩🇪 | @WhiteDNS | DE288|32.3MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 9002
-  server: 158.173.154.5
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇩🇪 | @WhiteDNS | DE289|30.8MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 9002
-  server: 158.173.154.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇩🇪 | @WhiteDNS | DE290|28.8MB/s|DNSOK|GPT⁺-DE
-  password: 'null'
-  port: 443
-  server: 159.69.94.125
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 🇩🇪 | @WhiteDNS | DE291|6.7MB/s|DNSOK|GPT⁺-DE
+- name: 🇩🇪 | @WhiteDNS | DE184|33.0MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 8880
+  server: 128.140.24.48
+  type: vless
+  udp: true
+  uuid: 784ebf31-d7aa-469e-b780-e7d469527b8b
+  xudp: true
+- cipher: aes-256-gcm
+  name: 🇩🇪 | @WhiteDNS | DE185|26.3MB/s|DNSOK|GPT⁺-DE
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 57.129.76.233
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇩🇪 | @WhiteDNS | DE186|26.0MB/s|DNSOK|GPT⁺-DE
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 57.129.83.85
+  type: ss
+  udp: true
+- name: 🇩🇪 | @WhiteDNS | DE187|23.3MB/s|DNSOK|GPT⁺-DE
   password: None
   port: 443
   server: 149.36.50.1
@@ -31,57 +29,68 @@ proxies:
   tls: true
   type: http
   username: ''
-- cipher: aes-256-gcm
-  name: 🇩🇪 | @WhiteDNS | DE292|6.5MB/s|DNSOK|GPT⁺-DE
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 57.129.76.233
-  type: ss
-  udp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇩🇪 | @WhiteDNS | DE293|5.8MB/s|DNSOK|GPT⁺-DE
-  network: tcp
+- name: 🇩🇪 | @WhiteDNS | DE188|18.3MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 9002
+  server: 158.173.154.5
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- client-fingerprint: chrome
+  name: 🇩🇪 | @WhiteDNS | DE189|6.9MB/s|DNSOK|GPT⁺-DE
+  network: xhttp
   port: 443
-  server: 176.98.176.60
+  server: d06e.noirex.ir
   tls: true
   type: vless
   udp: true
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  uuid: 2e0cb375-a5f3-4536-bcbc-6504fc5e79e4
+  xhttp-opts:
+    host: bc8.n9ne.net.tr
+    mode: packet-up
+    path: /p/kqt1kt/
+    reuse-settings:
+      h-keep-alive-period: 25
+    x-padding-bytes: 50-250
   xudp: true
-  servername: mosaic.topp-con.xyz
-- cipher: aes-256-gcm
-  name: 🇩🇪 | @WhiteDNS | DE294|5.2MB/s|DNSOK|GPT⁺-DE
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 57.129.83.85
-  type: ss
+  servername: bc8.n9ne.net.tr
+- client-fingerprint: firefox
+  encryption: mlkem768x25519plus.native.0rtt.N1YARVQLfhGHkJqK_JWjqchjZ8t6HyP0_9YWmYw47n4
+  name: 🇩🇪 | @WhiteDNS | DE190|3.8MB/s|DNSOK|GPT⁺-DE
+  network: ws
+  port: 443
+  server: www.thevicinityapp.cn
+  tls: true
+  type: vless
   udp: true
+  uuid: c1788162-2ad9-48f4-b7a1-717c58938dba
+  ws-opts:
+    headers:
+      Host: d2h.irandoc.info
+    path: /up
+    v2ray-http-upgrade: true
+  servername: www.thevicinityapp.cn
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇩🇪 | @WhiteDNS | DE191|1.0MB/s|DNSOK|GPT⁺-FR
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0
+    short-id: e6
+  server: ww3.levikogjgfdd.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
+  xudp: true
+  servername: passport.yandex.ru
 - encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE295|4.3MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE192|614KB/s|DNSOK|GPT⁺-DE
   network: tcp
   port: 50955
   server: 152.53.120.90
-  type: vless
-  udp: true
-  uuid: 5ab065b0-2c7a-45a0-829d-9af9af7d8e05
-  xudp: true
-- name: 🇩🇪 | @WhiteDNS | DE296|1.4MB/s|DNSOK|GPT⁺-DE
-  network: raw
-  port: 50955
-  server: 152.53.120.90
-  type: vless
-  udp: true
-  uuid: 5ab065b0-2c7a-45a0-829d-9af9af7d8e05
-  xudp: true
-- encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE297|967KB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 50955
-  server: leviko-de1011.shopingggg.ir
   type: vless
   udp: true
   uuid: 5ab065b0-2c7a-45a0-829d-9af9af7d8e05

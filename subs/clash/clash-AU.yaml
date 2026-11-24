@@ -15,19 +15,33 @@ dns:
 proxies:
 - down: ''
   fingerprint: ''
-  name: 🇦🇺 | @WhiteDNS | AU13|2.2MB/s|DNSOK|GPT⁺-AU
+  name: 🇦🇺 | @WhiteDNS | AU12|1.9MB/s|DNSOK|GPT⁺-AU
   obfs: ''
   obfs-password: ''
   password: linlin-2026
   port: 36712
-  server: 3.106.35.101
+  server: 13.55.52.44
   skip-cert-verify: true
-  sni: 3.106.35.101
+  sni: ''
   type: hysteria2
   up: ''
+  disable-sni: true
 - down: ''
   fingerprint: ''
-  name: 🇦🇺 | @WhiteDNS | AU14|2.2MB/s|DNSOK|GPT⁺-AU
+  name: 🇦🇺 | @WhiteDNS | AU13|1.8MB/s|DNSOK|GPT⁺-AU
+  obfs: ''
+  obfs-password: ''
+  password: linlin-2026
+  port: 36712
+  server: 13.237.192.121
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+  up: ''
+  disable-sni: true
+- down: ''
+  fingerprint: ''
+  name: 🇦🇺 | @WhiteDNS | AU14|1.8MB/s|DNSOK|GPT⁺-AU
   obfs: ''
   obfs-password: ''
   password: linlin-2026
@@ -44,7 +58,7 @@ proxies:
   obfs-password: ''
   password: linlin-2026
   port: 36712
-  server: 3.106.35.101
+  server: 13.55.52.44
   skip-cert-verify: true
   sni: ''
   type: hysteria2
@@ -57,7 +71,7 @@ proxies:
   obfs-password: ''
   password: linlin-2026
   port: 36712
-  server: 13.55.52.44
+  server: 13.237.192.121
   skip-cert-verify: true
   sni: ''
   type: hysteria2
@@ -72,28 +86,60 @@ proxies:
   port: 36712
   server: 13.237.192.121
   skip-cert-verify: true
+  sni: 13.237.192.121
+  type: hysteria2
+  up: ''
+- down: ''
+  fingerprint: ''
+  name: 🇦🇺 | @WhiteDNS | AU18|1.7MB/s|DNSOK|GPT⁺-AU
+  obfs: ''
+  obfs-password: ''
+  password: linlin-2026
+  port: 36712
+  server: 3.106.35.101
+  skip-cert-verify: true
   sni: ''
   type: hysteria2
   up: ''
   disable-sni: true
-- name: 🇦🇺 | @WhiteDNS | AU18|1.8MB/s|DNSOK|GPT⁺-AU
-  password: ''
-  port: 443
-  server: 103.62.50.130
+- down: ''
+  fingerprint: ''
+  name: 🇦🇺 | @WhiteDNS | AU19|1.6MB/s|DNSOK|GPT⁺-AU
+  obfs: ''
+  obfs-password: ''
+  password: linlin-2026
+  port: 36712
+  server: 3.106.35.101
   skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+  sni: 3.106.35.101
+  type: hysteria2
+  up: ''
+- down: ''
+  fingerprint: ''
+  name: 🇦🇺 | @WhiteDNS | AU20|1.3MB/s|DNSOK|GPT⁺-AU
+  obfs: ''
+  obfs-password: ''
+  password: linlin-2026
+  port: 36712
+  server: 3.106.35.101
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+  up: ''
+  disable-sni: true
 proxy-groups:
 - name: AU-Auto
   type: url-test
   proxies:
-  - 🇦🇺 | @WhiteDNS | AU13|2.2MB/s|DNSOK|GPT⁺-AU
-  - 🇦🇺 | @WhiteDNS | AU14|2.2MB/s|DNSOK|GPT⁺-AU
+  - 🇦🇺 | @WhiteDNS | AU12|1.9MB/s|DNSOK|GPT⁺-AU
+  - 🇦🇺 | @WhiteDNS | AU13|1.8MB/s|DNSOK|GPT⁺-AU
+  - 🇦🇺 | @WhiteDNS | AU14|1.8MB/s|DNSOK|GPT⁺-AU
   - 🇦🇺 | @WhiteDNS | AU15|1.8MB/s|DNSOK|GPT⁺-AU
   - 🇦🇺 | @WhiteDNS | AU16|1.8MB/s|DNSOK|GPT⁺-AU
   - 🇦🇺 | @WhiteDNS | AU17|1.8MB/s|DNSOK|GPT⁺-AU
-  - 🇦🇺 | @WhiteDNS | AU18|1.8MB/s|DNSOK|GPT⁺-AU
+  - 🇦🇺 | @WhiteDNS | AU18|1.7MB/s|DNSOK|GPT⁺-AU
+  - 🇦🇺 | @WhiteDNS | AU19|1.6MB/s|DNSOK|GPT⁺-AU
+  - 🇦🇺 | @WhiteDNS | AU20|1.3MB/s|DNSOK|GPT⁺-AU
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

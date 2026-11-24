@@ -12,51 +12,11 @@ dns:
   nameserver:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
-proxies:
-- encryption: none
-  http-opts:
-    headers:
-      Host:
-      - store.steampowered.com
-    path:
-    - /
-  name: ❓ | @WhiteDNS | OT423|23.8MB/s|DNSOK|GPT⁺-GB
-  network: http
-  port: 443
-  server: 178.62.115.66
-  type: vless
-  udp: true
-  uuid: 40992c2a-513e-4837-9594-23411fd42afd
-  xudp: true
-- encryption: none
-  http-opts:
-    headers:
-      Host:
-      - store.steampowered.com
-    path:
-    - /
-  name: ❓ | @WhiteDNS | OT424|7.8MB/s|DNSOK|GPT⁺
-  network: http
-  port: 443
-  server: 68.183.212.173
-  type: vless
-  udp: true
-  uuid: 40992c2a-513e-4837-9594-23411fd42afd
-  xudp: true
-- name: ❓ | @WhiteDNS | OT425|1.8MB/s|DNSOK|GPT⁺
-  password: ''
-  port: 9090
-  server: 167.99.74.174
-  skip-cert-verify: true
-  type: http
-  username: ''
+proxies: []
 proxy-groups:
 - name: OT-Auto
   type: url-test
-  proxies:
-  - ❓ | @WhiteDNS | OT423|23.8MB/s|DNSOK|GPT⁺-GB
-  - ❓ | @WhiteDNS | OT424|7.8MB/s|DNSOK|GPT⁺
-  - ❓ | @WhiteDNS | OT425|1.8MB/s|DNSOK|GPT⁺
+  proxies: []
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

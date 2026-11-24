@@ -17,18 +17,18 @@ proxies:
   http-opts:
     headers:
       Host:
-      - fast.com
+      - store.steampowered.com
     path:
     - /
-  name: 🇬🇧 | @WhiteDNS | GB63|24.2MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB51|44.9MB/s|DNSOK|GPT⁺-DE
   network: http
   port: 443
-  server: 178.62.58.181
+  server: 207.154.222.113
   type: vless
   udp: true
   uuid: 40992c2a-513e-4837-9594-23411fd42afd
   xudp: true
-- name: 🇬🇧 | @WhiteDNS | GB64|22.5MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB52|21.1MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
   server: 212.102.63.31
@@ -36,20 +36,95 @@ proxies:
   tls: true
   type: http
   username: ''
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - fast.com
+    path:
+    - /
+  name: 🇬🇧 | @WhiteDNS | GB53|8.2MB/s|DNSOK|GPT⁺-DE
+  network: http
+  port: 443
+  server: 164.90.182.247
+  type: vless
+  udp: true
+  uuid: 40992c2a-513e-4837-9594-23411fd42afd
+  xudp: true
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - store.steampowered.com
+    path:
+    - /
+  name: 🇬🇧 | @WhiteDNS | GB54|7.6MB/s|DNSOK|GPT⁺-DE
+  network: http
+  port: 443
+  server: 164.90.213.166
+  type: vless
+  udp: true
+  uuid: 40992c2a-513e-4837-9594-23411fd42afd
+  xudp: true
 - cipher: aes-256-gcm
-  name: 🇬🇧 | @WhiteDNS | GB65|19.0MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB55|6.5MB/s|DNSOK|GPT⁺-GB
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 198.244.202.215
   type: ss
   udp: true
+- cipher: aes-256-gcm
+  name: 🇬🇧 | @WhiteDNS | GB56|6.3MB/s|DNSOK|GPT⁺-GB
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 198.244.201.129
+  type: ss
+  udp: true
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - store.steampowered.com
+    path:
+    - /
+  name: 🇬🇧 | @WhiteDNS | GB57|4.8MB/s|DNSOK|GPT⁺-GB
+  network: http
+  port: 443
+  server: 209.97.130.43
+  type: vless
+  udp: true
+  uuid: 40992c2a-513e-4837-9594-23411fd42afd
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇬🇧 | @WhiteDNS | GB58|527KB/s|DNSOK|GPT⁺-GB
+  network: ws
+  port: 443
+  server: chatgpt.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55b3fd10-3658-40a2-8951-ec90932d1d30
+  ws-opts:
+    headers:
+      Host: sinavm2.soft10.ir
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/49.0.2623.112 Safari/537.36
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+  xudp: true
+  servername: sinavm2.soft10.ir
 proxy-groups:
 - name: GB-Auto
   type: url-test
   proxies:
-  - 🇬🇧 | @WhiteDNS | GB63|24.2MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB64|22.5MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB65|19.0MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB51|44.9MB/s|DNSOK|GPT⁺-DE
+  - 🇬🇧 | @WhiteDNS | GB52|21.1MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB53|8.2MB/s|DNSOK|GPT⁺-DE
+  - 🇬🇧 | @WhiteDNS | GB54|7.6MB/s|DNSOK|GPT⁺-DE
+  - 🇬🇧 | @WhiteDNS | GB55|6.5MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB56|6.3MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB57|4.8MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB58|527KB/s|DNSOK|GPT⁺-GB
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
