@@ -1,8 +1,26 @@
 proxies:
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇰🇷 | @WhiteDNS | KR48|2.0MB/s|DNSOK|GPT⁺-KR
+  network: http
+  port: 80
+  server: 217.142.138.61
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ac1b933d-afff-4487-93ef-f57130a55dff
+  xudp: true
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇰🇷 | @WhiteDNS | KR43|1.8MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR49|1.6MB/s|DNSOK|GPT⁺-KR
   network: tcp
   port: 443
   reality-opts:
@@ -15,65 +33,3 @@ proxies:
   uuid: 4ded3111-b418-475a-93de-0360932508b2
   xudp: true
   servername: www.samsung.com
-- cipher: aes-256-cfb
-  name: 🇰🇷 | @WhiteDNS | KR44|1.6MB/s|DNSOK|GPT⁺-KR
-  password: 1234!@#$
-  port: 1774
-  server: 49.254.204.133
-  type: ss
-  udp: true
-- name: 🇰🇷 | @WhiteDNS | KR45|1.5MB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 25555
-  server: 152.69.226.63
-  type: vless
-  udp: true
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; de-de; SAMSUNG GT-I9195 Build/KOT49H)
-        AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile
-        Safari/537.36
-    path: /
-  xudp: true
-  servername: 152.69.226.63
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 🇰🇷 | @WhiteDNS | KR46|1.4MB/s|DNSOK|GPT⁺-KR
-  network: http
-  port: 80
-  server: 43.155.199.22
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3722ad16-f3e1-4406-b04a-929b529d8e0d
-  xudp: true
-- cipher: aes-256-cfb
-  name: 🇰🇷 | @WhiteDNS | KR47|1.3MB/s|DNSOK|GPT⁺-KR
-  password: 1234!@#$
-  port: 1774
-  server: 49.254.204.134
-  type: ss
-  udp: true
-- name: 🇰🇷 | @WhiteDNS | KR48|696KB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 25555
-  server: 152.69.226.63
-  type: vless
-  udp: true
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/48.0.2564.109 Safari/537.36
-    path: /
-  xudp: true
