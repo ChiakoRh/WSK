@@ -12,11 +12,68 @@ dns:
   nameserver:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
-proxies: []
+proxies:
+- name: ❓ | @WhiteDNS | OT448|3.2MB/s|DNSOK|GPT⁺
+  network: ws
+  port: 80
+  server: ov-germany1.09vpn.com
+  type: vless
+  udp: true
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  ws-opts:
+    headers:
+      Host: ov-germany1.09vpn.com
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /vless/
+  xudp: true
+  servername: ov-germany1.09vpn.com
+- name: ❓ | @WhiteDNS | OT449|2.0MB/s|DNSOK|GPT⁺-AE
+  network: ws
+  port: 22573
+  server: 84.235.244.108
+  type: vless
+  udp: true
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  ws-opts:
+    headers:
+      Host: uae.unixzone.us
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/61.0.3163.79 Safari/537.36
+    path: /
+  xudp: true
+- name: ❓ | @WhiteDNS | OT450|1.8MB/s|DNSOK|GPT⁺-SG
+  password: ''
+  port: 9090
+  server: 167.172.76.176
+  skip-cert-verify: true
+  type: http
+  username: ''
+- alterId: 0
+  cipher: auto
+  name: ❓ | @WhiteDNS | OT451|1.5MB/s|DNSOK|GPT⁺
+  network: ws
+  port: 80
+  server: 57.129.132.223
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  ws-opts:
+    headers:
+      Host: viber.com
+    path: /vmess/
+  xudp: true
+  servername: viber.com
 proxy-groups:
 - name: OT-Auto
   type: url-test
-  proxies: []
+  proxies:
+  - ❓ | @WhiteDNS | OT448|3.2MB/s|DNSOK|GPT⁺
+  - ❓ | @WhiteDNS | OT449|2.0MB/s|DNSOK|GPT⁺-AE
+  - ❓ | @WhiteDNS | OT450|1.8MB/s|DNSOK|GPT⁺-SG
+  - ❓ | @WhiteDNS | OT451|1.5MB/s|DNSOK|GPT⁺
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

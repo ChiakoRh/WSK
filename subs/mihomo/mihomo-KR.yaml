@@ -1,27 +1,20 @@
 proxies:
 - alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR52|2.3MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR48|1.9MB/s|DNSOK|GPT⁺-KR
   network: tcp
-  port: 443
-  server: 140.238.2.250
+  port: 800
+  server: 129.154.61.196
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
   xudp: true
-- cipher: aes-256-cfb
-  name: 🇰🇷 | @WhiteDNS | KR53|1.8MB/s|DNSOK|GPT⁺-KR
-  password: 1234!@#$
-  port: 1774
-  server: 49.254.204.133
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇰🇷 | @WhiteDNS | KR54|1.8MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR49|1.8MB/s|DNSOK|GPT⁺-KR
   network: tcp
   port: 443
   reality-opts:
@@ -38,7 +31,23 @@ proxies:
   - ''
   alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR55|1.7MB/s|DNSOK|GPT⁺-KR
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇰🇷 | @WhiteDNS | KR50|1.8MB/s|DNSOK|GPT⁺-KR
+  network: http
+  port: 80
+  server: 217.142.138.61
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ac1b933d-afff-4487-93ef-f57130a55dff
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 🇰🇷 | @WhiteDNS | KR51|1.6MB/s|DNSOK|GPT⁺-KR
   network: ws
   port: 80
   server: 132.145.80.230
@@ -52,58 +61,19 @@ proxies:
       Host: kr02.a0a.xyz
     path: /cctv13.m3u8
   xudp: true
-  servername: kr02.a0a.xyz
-- name: 🇰🇷 | @WhiteDNS | KR56|1.5MB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 25555
-  server: 152.69.226.63
-  type: vless
-  udp: true
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/49.0.2623.110 Safari/537.36
-    path: /
-  xudp: true
-  servername: 152.69.226.63
 - alterId: 0
   cipher: auto
   country: 🇰🇷KR
   h2-opts: {}
   http-opts: {}
-  name: 🇰🇷 | @WhiteDNS | KR57|1.5MB/s|DNSOK|GPT⁺-KR
+  name: 🇰🇷 | @WhiteDNS | KR52|1.4MB/s|DNSOK|GPT⁺-KR
   network: none
   port: 443
   server: 140.238.2.250
   skip-cert-verify: true
   type: vmess
   uuid: 41a7089a-040b-4538-8b8d-010902405bde
-- cipher: aes-256-cfb
-  name: 🇰🇷 | @WhiteDNS | KR58|1.3MB/s|DNSOK|GPT⁺-KR
-  password: 1234!@#$
-  port: 1774
-  server: 49.254.204.134
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR59|1.3MB/s|DNSOK|GPT⁺-KR
-  network: ws
-  port: 80
-  server: 132.145.80.230
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  ws-opts:
-    headers:
-      Host: kr02.a0a.xyz
-    path: /cctv13.m3u8
-  xudp: true
-- name: 🇰🇷 | @WhiteDNS | KR60|1.3MB/s|DNSOK|GPT⁺-KR
+- name: 🇰🇷 | @WhiteDNS | KR53|1.3MB/s|DNSOK|GPT⁺-KR
   network: ws
   port: 25555
   server: 152.69.226.63
@@ -113,14 +83,21 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.71 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/61.0.3163.79 Safari/537.36
     path: /
   xudp: true
-- alterId: 0
+- name: 🇰🇷 | @WhiteDNS | KR54|1.1MB/s|DNSOK|GPT⁺-KR
+  password: ''
+  port: 1080
+  server: 43.155.128.61
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- alterId: '0'
   cipher: auto
-  name: 🇰🇷 | @WhiteDNS | KR61|1.1MB/s|DNSOK|GPT⁺-KR
-  network: raw
+  name: 🇰🇷 | @WhiteDNS | KR55|1.1MB/s|DNSOK|GPT⁺-KR
+  network: tcp
   port: 443
   server: 140.238.2.250
   skip-cert-verify: false
@@ -129,3 +106,11 @@ proxies:
   udp: true
   uuid: 41a7089a-040b-4538-8b8d-010902405bde
   xudp: true
+- name: 🇰🇷 | @WhiteDNS | KR56|910KB/s|DNSOK|GPT⁺-KR
+  password: ''
+  port: 443
+  server: 152.69.230.221
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''

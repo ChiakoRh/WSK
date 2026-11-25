@@ -1,0 +1,59 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- name: 🇷🇴 | @WhiteDNS | RO15|4.4MB/s|DNSOK|GPT⁺-RO
+  password: ''
+  port: 9002
+  server: 193.176.84.26
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇷🇴 | @WhiteDNS | RO16|4.1MB/s|DNSOK|GPT⁺-RO
+  password: ''
+  port: 9002
+  server: 193.176.84.24
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇷🇴 | @WhiteDNS | RO17|2.4MB/s|DNSOK|GPT⁺-RO
+  password: ''
+  port: 9002
+  server: 193.176.84.36
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇷🇴 | @WhiteDNS | RO18|1.8MB/s|DNSOK|GPT⁺-RO
+  password: ''
+  port: 9002
+  server: 193.176.84.37
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+proxy-groups:
+- name: RO-Auto
+  type: url-test
+  proxies:
+  - 🇷🇴 | @WhiteDNS | RO15|4.4MB/s|DNSOK|GPT⁺-RO
+  - 🇷🇴 | @WhiteDNS | RO16|4.1MB/s|DNSOK|GPT⁺-RO
+  - 🇷🇴 | @WhiteDNS | RO17|2.4MB/s|DNSOK|GPT⁺-RO
+  - 🇷🇴 | @WhiteDNS | RO18|1.8MB/s|DNSOK|GPT⁺-RO
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,RO-Auto
