@@ -13,51 +13,35 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- encryption: none
-  http-opts:
-    headers:
-      Host:
-      - store.steampowered.com
-    path:
-    - /
-  name: 🇬🇧 | @WhiteDNS | GB44|38.7MB/s|DNSOK|GPT⁺-DE
-  network: http
-  port: 443
-  server: 164.90.213.166
-  type: vless
-  udp: true
-  uuid: 40992c2a-513e-4837-9594-23411fd42afd
-  xudp: true
 - cipher: aes-256-gcm
-  name: 🇬🇧 | @WhiteDNS | GB45|20.9MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB45|23.3MB/s|DNSOK|GPT⁺-GB
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 198.244.202.215
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇬🇧 | @WhiteDNS | GB46|23.2MB/s|DNSOK|GPT⁺-GB
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 198.244.201.129
+  type: ss
+  udp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇬🇧 | @WhiteDNS | GB47|21.9MB/s|DNSOK|GPT⁺-GB
+  password: L35ZoQjjihDmVI3YcDK0UMgcjpoxdMtVDStV2NH74xw=
+  port: 61312
+  server: 129.151.82.249
   type: ss
   udp: true
 - encryption: none
   http-opts:
     headers:
       Host:
-      - fast.com
-    path:
-    - /
-  name: 🇬🇧 | @WhiteDNS | GB46|16.8MB/s|DNSOK|GPT⁺-DE
-  network: http
-  port: 443
-  server: 164.90.182.247
-  type: vless
-  udp: true
-  uuid: 40992c2a-513e-4837-9594-23411fd42afd
-  xudp: true
-- encryption: none
-  http-opts:
-    headers:
-      Host:
       - store.steampowered.com
     path:
     - /
-  name: 🇬🇧 | @WhiteDNS | GB47|8.3MB/s|DNSOK|GPT⁺-DE
+  name: 🇬🇧 | @WhiteDNS | GB48|7.8MB/s|DNSOK|GPT⁺-DE
   network: http
   port: 443
   server: 207.154.222.113
@@ -65,13 +49,6 @@ proxies:
   udp: true
   uuid: 40992c2a-513e-4837-9594-23411fd42afd
   xudp: true
-- cipher: aes-256-gcm
-  name: 🇬🇧 | @WhiteDNS | GB48|6.6MB/s|DNSOK|GPT⁺-GB
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 198.244.201.129
-  type: ss
-  udp: true
 - encryption: none
   http-opts:
     headers:
@@ -79,24 +56,32 @@ proxies:
       - store.steampowered.com
     path:
     - /
-  name: 🇬🇧 | @WhiteDNS | GB49|4.6MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB49|7.4MB/s|DNSOK|GPT⁺-DE
   network: http
   port: 443
-  server: 209.97.130.43
+  server: 164.90.213.166
   type: vless
   udp: true
   uuid: 40992c2a-513e-4837-9594-23411fd42afd
   xudp: true
+- name: 🇬🇧 | @WhiteDNS | GB50|5.1MB/s|DNSOK|GPT⁺-GB
+  password: ''
+  port: 443
+  server: 212.102.63.31
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
 proxy-groups:
 - name: GB-Auto
   type: url-test
   proxies:
-  - 🇬🇧 | @WhiteDNS | GB44|38.7MB/s|DNSOK|GPT⁺-DE
-  - 🇬🇧 | @WhiteDNS | GB45|20.9MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB46|16.8MB/s|DNSOK|GPT⁺-DE
-  - 🇬🇧 | @WhiteDNS | GB47|8.3MB/s|DNSOK|GPT⁺-DE
-  - 🇬🇧 | @WhiteDNS | GB48|6.6MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB49|4.6MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB45|23.3MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB46|23.2MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB47|21.9MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB48|7.8MB/s|DNSOK|GPT⁺-DE
+  - 🇬🇧 | @WhiteDNS | GB49|7.4MB/s|DNSOK|GPT⁺-DE
+  - 🇬🇧 | @WhiteDNS | GB50|5.1MB/s|DNSOK|GPT⁺-GB
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
