@@ -16,7 +16,23 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI30|17.5MB/s|DNSOK|GPT⁺-FI
+  name: 🇫🇮 | @WhiteDNS | FI24|6.3MB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 49659
+  reality-opts:
+    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
+    short-id: 81959fce
+  server: 157.180.98.124
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
+  xudp: true
+  servername: apple.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇫🇮 | @WhiteDNS | FI25|6.3MB/s|DNSOK|GPT⁺-FI
   network: raw
   port: 49659
   reality-opts:
@@ -29,87 +45,12 @@ proxies:
   uuid: 88a558b1-9645-42f3-89e5-341570d8486d
   xudp: true
   servername: apple.com
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 🇫🇮 | @WhiteDNS | FI31|13.3MB/s|DNSOK|GPT⁺-DE
-  network: ws
-  port: 2053
-  server: Ip4.ipspanel.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: 37df2d23-a4d0-40ca-9dd0-c791d1ff94be
-  ws-opts:
-    headers:
-      Host: T.panel001.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/57.0.2987.133 Safari/537.36
-    path: /@TurboVpn10
-  xudp: true
-  servername: T.panel001.ir
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI32|6.2MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 49659
-  reality-opts:
-    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
-    short-id: 81959fce
-  server: 157.180.98.124
-  tls: true
-  type: vless
-  udp: true
-  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
-  xudp: true
-  servername: apple.com
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI33|6.0MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 2087
-  server: 65.109.253.200
-  tls: true
-  type: vless
-  udp: true
-  uuid: 90ff5ee6-e8f0-4b27-89bd-4bc2c76ee71c
-  xudp: true
-  servername: static.200.253.109.65.clients.your-server.de
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI34|6.0MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 2087
-  server: 65.109.248.20
-  tls: true
-  type: vless
-  udp: true
-  uuid: 90ff5ee6-e8f0-4b27-89bd-4bc2c76ee71c
-  xudp: true
-  servername: static.20.248.109.65.clients.your-server.de
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇫🇮 | @WhiteDNS | FI35|5.7MB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 2087
-  server: 95.216.183.196
-  tls: true
-  type: vless
-  udp: true
-  uuid: 90ff5ee6-e8f0-4b27-89bd-4bc2c76ee71c
-  xudp: true
-  servername: static.196.183.216.95.clients.your-server.de
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI30|17.5MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI31|13.3MB/s|DNSOK|GPT⁺-DE
-  - 🇫🇮 | @WhiteDNS | FI32|6.2MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI33|6.0MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI34|6.0MB/s|DNSOK|GPT⁺-FI
-  - 🇫🇮 | @WhiteDNS | FI35|5.7MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI24|6.3MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI25|6.3MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

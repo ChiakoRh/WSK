@@ -15,10 +15,10 @@ dns:
 proxies:
 - client-fingerprint: firefox
   encryption: none
-  name: 🇦🇪 | @WhiteDNS | AE5|1.7MB/s|DNSOK|GPT⁺-AE
+  name: 🇱🇻 | @WhiteDNS | LV11|3.8MB/s|DNSOK|GPT⁺-LV
   network: ws
-  port: 8459
-  server: 213.183.41.31
+  port: 8450
+  server: 213.183.45.23
   tls: true
   type: vless
   udp: true
@@ -26,17 +26,17 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/53.0.2785.143 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
     path: /ws
   xudp: true
-  servername: photos.plumstatic.com
+  servername: fonts.plumstatic.com
 proxy-groups:
-- name: AE-Auto
+- name: LV-Auto
   type: url-test
   proxies:
-  - 🇦🇪 | @WhiteDNS | AE5|1.7MB/s|DNSOK|GPT⁺-AE
+  - 🇱🇻 | @WhiteDNS | LV11|3.8MB/s|DNSOK|GPT⁺-LV
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,AE-Auto
+- MATCH,LV-Auto

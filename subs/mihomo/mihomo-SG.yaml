@@ -1,7 +1,14 @@
 proxies:
+- cipher: aes-256-gcm
+  name: 🇸🇬 | @WhiteDNS | SG96|2.4MB/s|DNSOK|GPT⁺-SG
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 15.235.164.133
+  type: ss
+  udp: true
 - alterId: '0'
   cipher: auto
-  name: 🇸🇬 | @WhiteDNS | SG89|2.0MB/s|DNSOK|GPT⁺-SG
+  name: 🇸🇬 | @WhiteDNS | SG97|1.9MB/s|DNSOK|GPT⁺-SG
   network: tcp
   port: 1270
   server: 15.235.144.92
@@ -12,61 +19,67 @@ proxies:
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   xudp: true
   servername: xmfhlpy.com
-- cipher: aes-256-gcm
-  name: 🇸🇬 | @WhiteDNS | SG90|1.8MB/s|DNSOK|GPT⁺-SG
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 15.235.164.133
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇸🇬 | @WhiteDNS | SG91|1.7MB/s|DNSOK|GPT⁺-SG
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 15.235.182.183
-  type: ss
-  udp: true
-- client-fingerprint: firefox
-  encryption: none
-  name: 🇸🇬 | @WhiteDNS | SG92|1.7MB/s|DNSOK|GPT⁺-SG
-  network: ws
-  port: 8444
-  server: 213.183.45.23
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG98|1.7MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  port: 10444
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  server: 147.93.173.45
   tls: true
   type: vless
   udp: true
-  uuid: eb62cabf-5901-403a-aa0c-b1d9ed1b346d
+  uuid: 75c5f51b-d548-4eab-a26e-aa10fc3dbc7b
+  servername: video.yandex.ru
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇸🇬 | @WhiteDNS | SG99|1.7MB/s|DNSOK|GPT⁺-SG
+  network: ws
+  port: 8443
+  server: 141.193.213.21
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4d8d9640-7cc7-4c55-ba54-6ce0d1709541
   ws-opts:
     headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1606 Build/MMB29M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
-    path: /ws
+      Host: matrix.learnpodedu.com
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /
   xudp: true
-  servername: media.plumstatic.com
-- alterId: 0
-  cipher: auto
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 🇸🇬 | @WhiteDNS | SG93|1.3MB/s|DNSOK|GPT⁺-SG
-  network: http
-  port: 59121
-  server: 129.226.157.220
-  type: vmess
+  servername: matrix.learnpodedu.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇸🇬 | @WhiteDNS | SG100|1.3MB/s|DNSOK|GPT⁺-SG
+  network: tcp
+  port: 16709
+  reality-opts:
+    public-key: 680Dfvs1S9eB2k9LS_jUELdt4TKnaHXfYErBWMgOlCM
+    short-id: 879a738590e3db33
+  server: 43.153.222.240
+  tls: true
+  type: vless
   udp: true
-  uuid: d9865d63-d95c-454b-ba07-8e88b838a801
+  uuid: 3c81494e-7168-4583-84e0-02310212102e
   xudp: true
-- down: ''
-  fingerprint: ''
-  name: 🇸🇬 | @WhiteDNS | SG94|1.0MB/s|DNSOK|GPT⁺-SG
-  obfs: ''
-  obfs-password: ''
+  servername: itunes.apple.com
+- client-fingerprint: chrome
+  name: 🇸🇬 | @WhiteDNS | SG101|1.2MB/s|DNSOK|GPT⁺-SG
   password: WvH8ooM9hom4KOOJHFJz1x5umE0aV4R0
-  port: 8443
+  port: 443
   server: 43.156.36.253
   skip-cert-verify: true
   sni: 43.156.36.253
-  type: hysteria2
-  up: ''
+  type: trojan
+  udp: true
+  network: tcp
+- cipher: 2022-blake3-aes-256-gcm
+  name: 🇸🇬 | @WhiteDNS | SG102|1017KB/s|DNSOK|GPT⁺-SG
+  password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
+  port: 14384
+  server: 129.150.59.74
+  type: ss
+  udp: true
