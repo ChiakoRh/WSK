@@ -1,7 +1,7 @@
 proxies:
-- alterId: 0
+- alterId: '0'
   cipher: auto
-  name: 🇹🇭 | @WhiteDNS | TH22|2.1MB/s|DNSOK|GPT⁺-TH
+  name: 🇹🇭 | @WhiteDNS | TH19|2.1MB/s|DNSOK|GPT⁺-TH
   network: raw
   port: 18565
   server: 8.213.211.160
@@ -11,36 +11,31 @@ proxies:
   udp: true
   uuid: 853a251f-de85-40cc-84a6-ab8748c7258c
   xudp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇹🇭 | @WhiteDNS | TH23|2.0MB/s|DNSOK|GPT⁺-TH
-  network: tcp
-  port: 18565
-  server: 47.81.36.173
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- client-fingerprint: firefox
+  encryption: none
+  grpc-opts:
+    grpc-service-name: livestreamcontent
+  name: 🇹🇭 | @WhiteDNS | TH20|834KB/s|DNSOK|GPT⁺-TH
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: PVlnR_I9tZ8hKhOHW6ySpSofhsaShcBQ_JV2-0TePVA
+    short-id: b8abb26d3cfadcfb
+  server: 195.58.46.231
+  tls: true
+  type: vless
   udp: true
-  uuid: 853a251f-de85-40cc-84a6-ab8748c7258c
+  uuid: bbb945a6-7d16-4099-b802-d3a7ccebd3ca
   xudp: true
-- alterId: '0'
+  servername: node43.lmdscdn.ru
+- alpn:
+  - ''
+  alterId: '0'
   cipher: auto
-  name: 🇹🇭 | @WhiteDNS | TH24|2.0MB/s|DNSOK|GPT⁺-TH
+  name: 🇹🇭 | @WhiteDNS | TH21|531KB/s|DNSOK|GPT⁺-TH
   network: tcp
   port: 18565
-  server: 47.87.64.133
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 853a251f-de85-40cc-84a6-ab8748c7258c
-  xudp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇹🇭 | @WhiteDNS | TH25|1.8MB/s|DNSOK|GPT⁺-TH
-  network: tcp
-  port: 18565
-  server: 47.87.64.133
+  server: 8.213.211.160
   skip-cert-verify: false
   tls: false
   type: vmess
