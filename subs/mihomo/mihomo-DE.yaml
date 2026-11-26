@@ -1,28 +1,12 @@
 proxies:
 - cipher: aes-256-gcm
-  name: 🇩🇪 | @WhiteDNS | DE142|37.2MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE127|32.8MB/s|DNSOK|GPT⁺-DE
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 57.129.83.85
   type: ss
   udp: true
-- name: 🇩🇪 | @WhiteDNS | DE143|31.0MB/s|DNSOK|GPT⁺-DE
-  password: None
-  port: 9002
-  server: 158.173.154.4
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇩🇪 | @WhiteDNS | DE144|23.1MB/s|DNSOK|GPT⁺-DE
-  password: ''
-  port: 9002
-  server: 158.173.154.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇩🇪 | @WhiteDNS | DE145|23.0MB/s|DNSOK|GPT⁺-DE
+- name: 🇩🇪 | @WhiteDNS | DE128|29.0MB/s|DNSOK|GPT⁺-DE
   password: ''
   port: 9002
   server: 158.173.154.5
@@ -30,14 +14,64 @@ proxies:
   tls: true
   type: http
   username: ''
+- name: 🇩🇪 | @WhiteDNS | DE129|26.0MB/s|DNSOK|GPT⁺-DE
+  password: None
+  port: 9002
+  server: 158.173.154.4
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪 | @WhiteDNS | DE130|24.4MB/s|DNSOK|GPT⁺-DE
+  network: xhttp
+  port: 443
+  server: gcore.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 41bcd5ea-f90c-4227-ab6f-23de50b0a226
+  xhttp-opts:
+    host: my-site-9bzpe6v5.gcorecdn.com
+    mode: auto
+    path: /
+    x-padding-bytes: 100-1000
+  xudp: true
+  servername: gcore.com
 - cipher: aes-256-gcm
-  name: 🇩🇪 | @WhiteDNS | DE146|6.9MB/s|DNSOK|GPT⁺-DE
+  name: 🇩🇪 | @WhiteDNS | DE131|11.2MB/s|DNSOK|GPT⁺-DE
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 57.129.76.233
   type: ss
   udp: true
-- name: 🇩🇪 | @WhiteDNS | DE147|5.1MB/s|DNSOK|GPT⁺-DE
+- client-fingerprint: firefox
+  name: 🇩🇪 | @WhiteDNS | DE132|8.3MB/s|DNSOK|GPT⁺-DE
+  network: xhttp
+  port: 443
+  server: 92.223.84.84
+  tls: true
+  type: vless
+  udp: true
+  uuid: 41bcd5ea-f90c-4227-ab6f-23de50b0a226
+  xhttp-opts:
+    host: my-site-9bzpe6v5.gcorecdn.com
+    mode: auto
+    x-padding-bytes: 100-1000
+  xudp: true
+  servername: gcore.com
+- name: 🇩🇪 | @WhiteDNS | DE133|7.5MB/s|DNSOK|GPT⁺-DE
+  password: ''
+  port: 9002
+  server: 158.173.154.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇩🇪 | @WhiteDNS | DE134|7.0MB/s|DNSOK|GPT⁺-DE
   password: None
   port: 443
   server: 149.36.50.1
@@ -45,12 +79,115 @@ proxies:
   tls: true
   type: http
   username: ''
-- encryption: none
-  name: 🇩🇪 | @WhiteDNS | DE148|2.5MB/s|DNSOK|GPT⁺-DE
-  network: tcp
-  port: 12182
-  server: 2.28.142.127
+- client-fingerprint: firefox
+  name: 🇩🇪 | @WhiteDNS | DE135|3.0MB/s|DNSOK|GPT⁺-DE
+  network: xhttp
+  port: 5566
+  reality-opts:
+    public-key: h0x6NgjJ74LUvMlu3Iz7QsFYNjTG9LzZ3sdNalmJrwY
+    short-id: ef7377a43eb6a6d4
+  server: 109.95.66.119
+  tls: true
   type: vless
   udp: true
-  uuid: e840f7e9-0606-45dd-82d0-6c78838c7d1a
+  uuid: 41bcd5ea-f90c-4227-ab6f-23de50b0a226
+  xhttp-opts:
+    host: aparat.com
+    mode: auto
+  xudp: true
+  servername: aparat.com
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪 | @WhiteDNS | DE136|2.8MB/s|DNSOK|GPT⁺-DE
+  network: xhttp
+  port: 5556
+  reality-opts:
+    public-key: JgGE6qaoYh6lQY-pZa7OD9HS3xHCTgfnnwJYpiiRHks
+    short-id: a1788b9d2bef8630
+  server: test03.electrowizard.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 41bcd5ea-f90c-4227-ab6f-23de50b0a226
+  xhttp-opts:
+    host: aparat.com
+    mode: auto
+    path: /
+  xudp: true
+  servername: aparat.com
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪 | @WhiteDNS | DE137|2.8MB/s|DNSOK|GPT⁺-DE
+  network: xhttp
+  port: 5565
+  reality-opts:
+    public-key: MYqLevTK85yKyNkMGnghN3oFxOiRv8NGu8Jy6q9VICc
+    short-id: 2436862e3af52511
+  server: test02.electrowizard.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 41bcd5ea-f90c-4227-ab6f-23de50b0a226
+  xhttp-opts:
+    host: aparat.com
+    mode: auto
+    path: /
+  xudp: true
+  servername: aparat.com
+- client-fingerprint: firefox
+  name: 🇩🇪 | @WhiteDNS | DE138|2.5MB/s|DNSOK|GPT⁺-DE
+  network: xhttp
+  port: 5565
+  reality-opts:
+    public-key: MYqLevTK85yKyNkMGnghN3oFxOiRv8NGu8Jy6q9VICc
+    short-id: 2436862e3af52511
+  server: 81.12.34.74
+  tls: true
+  type: vless
+  udp: true
+  uuid: 41bcd5ea-f90c-4227-ab6f-23de50b0a226
+  xhttp-opts:
+    host: aparat.com
+    mode: auto
+  xudp: true
+  servername: aparat.com
+- alpn:
+  - h2%2Chttp/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇩🇪 | @WhiteDNS | DE139|2.5MB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 443
+  server: 176.98.176.60
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  xudp: true
+  servername: mosaic.topp-con.xyz
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇩🇪 | @WhiteDNS | DE140|2.3MB/s|DNSOK|GPT⁺-FR
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: 33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0
+    short-id: e6
+  server: 161.97.160.224
+  tls: true
+  type: vless
+  udp: true
+  uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
+  xudp: true
+  servername: passport.yandex.ru
+- encryption: mlkem768x25519plus.native.0rtt.deywwZA3p0j7HoIWdGDoQdbUglXI4dyKHAOujCvK-Vk
+  name: 🇩🇪 | @WhiteDNS | DE141|562KB/s|DNSOK|GPT⁺-DE
+  network: tcp
+  port: 443
+  server: 176.114.95.251
+  type: vless
+  udp: true
+  uuid: 9a591702-24c7-4abf-9f14-ac59438a64e6
   xudp: true

@@ -13,20 +13,30 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- encryption: mlkem768x25519plus.native.0rtt.qEKrRW8oFo0AhLw9WhLF6YGkf2YKZC9-GnKlsiG5Dlg
-  name: 🇫🇮 | @WhiteDNS | FI26|6.1MB/s|DNSOK|GPT⁺-FI
+- encryption: mlkem768x25519plus.native.0rtt.x8try52PFaTDSgZvj01fbRsH43gXD5Dx0S3yX1QkuB8
+  name: 🇫🇮 | @WhiteDNS | FI28|744KB/s|DNSOK|GPT⁺-FI
   network: tcp
-  port: 44446
-  server: finland.samdownloadwr.ir
+  port: 3036
+  server: SUR.Deev-Guard.ir
   type: vless
   udp: true
-  uuid: e840f7e9-0606-45dd-82d0-6c78838c7d1a
+  uuid: d1ec39e3-ad7b-4b65-9f65-813696f9a04e
+  xudp: true
+- encryption: mlkem768x25519plus.native.0rtt.x8try52PFaTDSgZvj01fbRsH43gXD5Dx0S3yX1QkuB8
+  name: 🇫🇮 | @WhiteDNS | FI29|722KB/s|DNSOK|GPT⁺-FI
+  network: tcp
+  port: 3036
+  server: SUQmci.Deev-Guard.ir
+  type: vless
+  udp: true
+  uuid: d1ec39e3-ad7b-4b65-9f65-813696f9a04e
   xudp: true
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI26|6.1MB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI28|744KB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI29|722KB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

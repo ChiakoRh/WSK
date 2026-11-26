@@ -1,16 +1,44 @@
 proxies:
 - cipher: aes-256-gcm
-  name: 🇯🇵 | @WhiteDNS | JP125|2.3MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP124|2.0MB/s|DNSOK|GPT⁺-JP
   password: '123456'
   port: 5555
-  server: 47.91.2.13
+  server: 8.216.8.176
   type: ss
   udp: true
-- alpn:
-  - ''
-  alterId: '0'
+- cipher: aes-256-gcm
+  name: 🇯🇵 | @WhiteDNS | JP125|1.9MB/s|DNSOK|GPT⁺-JP
+  password: '123456'
+  port: 5555
+  server: 8.209.236.2
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇯🇵 | @WhiteDNS | JP126|1.7MB/s|DNSOK|GPT⁺-JP
+  password: '123456'
+  port: 5555
+  server: 8.216.9.151
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇯🇵 | @WhiteDNS | JP127|1.7MB/s|DNSOK|GPT⁺-JP
+  password: '123456'
+  port: 5555
+  server: 47.245.42.226
+  type: ss
+  udp: true
+- country: 🇺🇸US
+  name: 🇯🇵 | @WhiteDNS | JP128|1.7MB/s|DNSOK|GPT⁺-JP
+  password: F3NzMNuYnG7akU2mSlBY
+  port: 8443
+  server: 193.123.160.109
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  network: tcp
+- alterId: 0
   cipher: auto
-  name: 🇯🇵 | @WhiteDNS | JP126|2.0MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP129|1.6MB/s|DNSOK|GPT⁺-JP
   network: ws
   port: 80
   server: 168.138.43.75
@@ -20,57 +48,52 @@ proxies:
   udp: true
   uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
   ws-opts:
-    headers:
-      Host: None
+    headers: {}
     path: /cctv13.m3u8
   xudp: true
-  servername: None
+  servername: 168.138.43.75
 - cipher: aes-256-gcm
-  name: 🇯🇵 | @WhiteDNS | JP127|1.9MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP130|1.6MB/s|DNSOK|GPT⁺-JP
   password: '123456'
   port: 5555
-  server: 8.209.245.25
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇯🇵 | @WhiteDNS | JP128|1.9MB/s|DNSOK|GPT⁺-JP
-  password: '123456'
-  port: 5555
-  server: 8.216.18.173
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇯🇵 | @WhiteDNS | JP129|1.9MB/s|DNSOK|GPT⁺-JP
-  password: '123456'
-  port: 5555
-  server: 8.216.17.189
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇯🇵 | @WhiteDNS | JP130|1.9MB/s|DNSOK|GPT⁺-JP
-  password: '123456'
-  port: 5555
-  server: 8.216.9.154
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇯🇵 | @WhiteDNS | JP131|1.7MB/s|DNSOK|GPT⁺-JP
-  password: '123456'
-  port: 5555
-  server: 47.91.18.202
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇯🇵 | @WhiteDNS | JP132|1.7MB/s|DNSOK|GPT⁺-JP
-  password: '123456'
-  port: 5555
-  server: 8.216.5.230
+  server: 8.216.18.139
   type: ss
   udp: true
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP133|1.7MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP131|1.3MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
+    short-id: 684c7531e599dec0
+  server: 158.101.151.157
+  tls: true
+  type: vless
+  udp: true
+  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
+  xudp: true
+  servername: www.microsoft.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP132|1.3MB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: HtrHyKJvjeh9xNVlNXidqFra8n_DhlL8EGu4ERst8QI
+    short-id: d493b199be265162
+  server: jp3.oh-node.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4159303d-25f1-45ff-98f9-7875dd291fbc
+  xudp: true
+  servername: www.bandainamcoent.co.jp
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP133|1.3MB/s|DNSOK|GPT⁺-JP
   network: raw
   port: 443
   reality-opts:
@@ -83,52 +106,47 @@ proxies:
   uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
   xudp: true
   servername: www.microsoft.com
-- cipher: aes-256-gcm
-  name: 🇯🇵 | @WhiteDNS | JP134|1.7MB/s|DNSOK|GPT⁺-JP
-  password: '123456'
-  port: 5555
-  server: 8.209.222.150
+- cipher: aes-128-gcm
+  name: 🇯🇵 | @WhiteDNS | JP134|1.1MB/s|DNSOK|GPT⁺-JP
+  password: Bwlqh7GcFB
+  port: 53758
+  server: jpa.123069.xyz
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: 🇯🇵 | @WhiteDNS | JP135|1.7MB/s|DNSOK|GPT⁺-JP
-  password: '123456'
-  port: 5555
-  server: 8.216.18.189
+- cipher: aes-128-gcm
+  name: 🇯🇵 | @WhiteDNS | JP135|1.0MB/s|DNSOK|GPT⁺-JP
+  password: Bwlqh7GcFB
+  port: 53758
+  server: 168.138.205.100
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: 🇯🇵 | @WhiteDNS | JP136|1.7MB/s|DNSOK|GPT⁺-JP
-  password: '123456'
-  port: 5555
-  server: 8.216.18.167
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇯🇵 | @WhiteDNS | JP137|1.6MB/s|DNSOK|GPT⁺-JP
-  password: '123456'
-  port: 5555
-  server: 8.216.9.142
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇯🇵 | @WhiteDNS | JP138|1.6MB/s|DNSOK|GPT⁺-JP
-  password: '123456'
-  port: 5555
-  server: 8.209.197.190
-  type: ss
-  udp: true
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇯🇵 | @WhiteDNS | JP139|1.3MB/s|DNSOK|GPT⁺-JP
+  name: 🇯🇵 | @WhiteDNS | JP136|991KB/s|DNSOK|GPT⁺-JP
   network: tcp
   port: 443
   reality-opts:
-    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
-    short-id: 684c7531e599dec0
-  server: 158.101.151.157
+    public-key: qkSw1mYeebLzLGFAxnSu0CuNaSQXdhR-doksZoqEniA
+    short-id: d493b199be265162
+  server: jp4.oh-node.com
   tls: true
   type: vless
   udp: true
-  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
-  servername: www.microsoft.com
+  uuid: 4159303d-25f1-45ff-98f9-7875dd291fbc
+  xudp: true
+  servername: www.bandainamcoent.co.jp
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵 | @WhiteDNS | JP137|960KB/s|DNSOK|GPT⁺-JP
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 3yorIs_psiYbIeESwMdne5mPe2JVzeNOpDa2IJxQ-Es
+    short-id: d493b199be265162
+  server: jp2.oh-node.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4159303d-25f1-45ff-98f9-7875dd291fbc
+  xudp: true
+  servername: www.capcom.co.jp

@@ -13,20 +13,19 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇧🇬 | @WhiteDNS | BG15|5.9MB/s|DNSOK|GPT⁺-BG
-  password: ''
-  port: 443
-  server: 185.94.192.210
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+- cipher: aes-256-gcm
+  name: 🇨🇦 | @WhiteDNS | CA47|808KB/s|DNSOK|GPT⁺-CA
+  password: itzvpn@321
+  port: 8388
+  server: 184.107.106.77
+  type: ss
+  udp: true
 proxy-groups:
-- name: BG-Auto
+- name: CA-Auto
   type: url-test
   proxies:
-  - 🇧🇬 | @WhiteDNS | BG15|5.9MB/s|DNSOK|GPT⁺-BG
+  - 🇨🇦 | @WhiteDNS | CA47|808KB/s|DNSOK|GPT⁺-CA
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,BG-Auto
+- MATCH,CA-Auto
