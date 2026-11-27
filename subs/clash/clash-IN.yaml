@@ -1,0 +1,37 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇮🇳 | @WhiteDNS | IN45|2.6MB/s|DNSOK|GPT⁺-IN
+  password: 806a291d6fa98489025802ae1285df63811ed499011dcf35
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: india.astroapps.io
+    mode: websocket
+    path: /d282ea66de9394f68a3e792e
+    tls: true
+  port: 443
+  server: india.astroapps.io
+  type: ss
+  udp: true
+proxy-groups:
+- name: IN-Auto
+  type: url-test
+  proxies:
+  - 🇮🇳 | @WhiteDNS | IN45|2.6MB/s|DNSOK|GPT⁺-IN
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- MATCH,IN-Auto
