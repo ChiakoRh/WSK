@@ -13,20 +13,31 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- encryption: mlkem768x25519plus.native.0rtt.x8try52PFaTDSgZvj01fbRsH43gXD5Dx0S3yX1QkuB8
-  name: 🇫🇮 | @WhiteDNS | FI25|554KB/s|DNSOK|GPT⁺-FI
-  network: tcp
-  port: 3036
-  server: SUQmci.Deev-Guard.ir
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇮 | @WhiteDNS | FI19|7.6MB/s|DNSOK|GPT⁺-FI
+  network: ws
+  port: 993
+  server: ifi1.modemjibi.com
+  tls: true
   type: vless
   udp: true
-  uuid: d1ec39e3-ad7b-4b65-9f65-813696f9a04e
+  uuid: 17ead557-8407-42ae-b9a1-f11a869f99c6
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; SM-G7102 Build/KOT49H) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+    path: /
   xudp: true
+  servername: ifi1.modemjibi.com.
 proxy-groups:
 - name: FI-Auto
   type: url-test
   proxies:
-  - 🇫🇮 | @WhiteDNS | FI25|554KB/s|DNSOK|GPT⁺-FI
+  - 🇫🇮 | @WhiteDNS | FI19|7.6MB/s|DNSOK|GPT⁺-FI
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:

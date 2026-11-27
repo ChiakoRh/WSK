@@ -13,24 +13,44 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇳 | @WhiteDNS | IN45|2.6MB/s|DNSOK|GPT⁺-IN
-  password: 806a291d6fa98489025802ae1285df63811ed499011dcf35
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: india.astroapps.io
-    mode: websocket
-    path: /d282ea66de9394f68a3e792e
-    tls: true
-  port: 443
-  server: india.astroapps.io
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇮🇳 | @WhiteDNS | IN35|1.9MB/s|DNSOK|GPT⁺
+  network: ws
+  port: 80
+  server: 152.67.8.205
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  ws-opts:
+    headers: {}
+    path: /
+  xudp: true
+  servername: in-152.67.8.205-0242
+- alterId: 0
+  cipher: auto
+  name: 🇮🇳 | @WhiteDNS | IN36|645KB/s|DNSOK|GPT⁺
+  network: ws
+  port: 80
+  server: 152.67.8.205
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  ws-opts:
+    headers: {}
+    path: /
+  xudp: true
+  servername: in-152.67.8.205-0202
 proxy-groups:
 - name: IN-Auto
   type: url-test
   proxies:
-  - 🇮🇳 | @WhiteDNS | IN45|2.6MB/s|DNSOK|GPT⁺-IN
+  - 🇮🇳 | @WhiteDNS | IN35|1.9MB/s|DNSOK|GPT⁺
+  - 🇮🇳 | @WhiteDNS | IN36|645KB/s|DNSOK|GPT⁺
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
