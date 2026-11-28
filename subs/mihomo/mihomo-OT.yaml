@@ -1,24 +1,17 @@
 proxies:
-- name: ❓ | @WhiteDNS | OT386|1.5MB/s|DNSOK|GPT⁺-SG
-  password: ''
-  port: 9090
-  server: 159.223.41.216
-  skip-cert-verify: true
-  type: http
-  username: ''
-- alterId: 0
-  cipher: auto
-  name: ❓ | @WhiteDNS | OT387|905KB/s|DNSOK|GPT⁺-IN
-  network: ws
-  port: 80
-  server: 152.67.8.205
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: ❓ | @WhiteDNS | OT368|920KB/s|DNSOK|GPT⁺
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: 33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0
+    short-id: e6
+  server: 161.97.160.224
+  tls: true
+  type: vless
   udp: true
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  ws-opts:
-    headers: {}
-    path: /
+  uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
   xudp: true
-  servername: in-152.67.8.205-0200
+  servername: passport.yandex.ru

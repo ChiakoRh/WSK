@@ -15,7 +15,7 @@ dns:
 proxies:
 - alterId: 0
   cipher: auto
-  name: 🇮🇳 | @WhiteDNS | IN35|1.9MB/s|DNSOK|GPT⁺
+  name: 🇮🇳 | @WhiteDNS | IN41|2.1MB/s|DNSOK|GPT⁺
   network: ws
   port: 80
   server: 152.67.8.205
@@ -28,10 +28,10 @@ proxies:
     headers: {}
     path: /
   xudp: true
-  servername: in-152.67.8.205-0242
+  servername: 🇮🇳in-152.67.8.205-0265 | 0.048mb
 - alterId: 0
   cipher: auto
-  name: 🇮🇳 | @WhiteDNS | IN36|645KB/s|DNSOK|GPT⁺
+  name: 🇮🇳 | @WhiteDNS | IN42|1.4MB/s|DNSOK|GPT⁺
   network: ws
   port: 80
   server: 152.67.8.205
@@ -44,13 +44,30 @@ proxies:
     headers: {}
     path: /
   xudp: true
-  servername: in-152.67.8.205-0202
+  servername: 🇮🇳in-152.67.8.205-0173 | 3.966mb
+- alterId: 0
+  cipher: auto
+  name: 🇮🇳 | @WhiteDNS | IN43|1006KB/s|DNSOK|GPT⁺-IN
+  network: ws
+  port: 80
+  server: 152.67.8.205
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  ws-opts:
+    headers: {}
+    path: /
+  xudp: true
+  servername: 🇮🇳in-152.67.8.205-0279 | 3.849mb
 proxy-groups:
 - name: IN-Auto
   type: url-test
   proxies:
-  - 🇮🇳 | @WhiteDNS | IN35|1.9MB/s|DNSOK|GPT⁺
-  - 🇮🇳 | @WhiteDNS | IN36|645KB/s|DNSOK|GPT⁺
+  - 🇮🇳 | @WhiteDNS | IN41|2.1MB/s|DNSOK|GPT⁺
+  - 🇮🇳 | @WhiteDNS | IN42|1.4MB/s|DNSOK|GPT⁺
+  - 🇮🇳 | @WhiteDNS | IN43|1006KB/s|DNSOK|GPT⁺-IN
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
