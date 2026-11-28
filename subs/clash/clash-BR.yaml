@@ -13,20 +13,27 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- name: 🇻🇳 | @WhiteDNS | VN11|1.7MB/s|DNSOK|GPT⁺-VN
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇧🇷 | @WhiteDNS | BR10|1.6MB/s|DNSOK|GPT⁺-BR
   network: tcp
-  port: 2086
-  server: 150.95.109.109
+  port: 64552
+  reality-opts:
+    public-key: U7t4RFE9MSMtC-o1DoJ8pYzKMfgVpTg6ZhTTknBrVkU
+    short-id: 1f2519bb96e5589c
+  server: 172.233.27.145
+  tls: true
   type: vless
   udp: true
-  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
+  uuid: 504b7143-71e0-4cf0-909b-5ff271bd03d6
   xudp: true
+  servername: www.cloudflare.com
 proxy-groups:
-- name: VN-Auto
+- name: BR-Auto
   type: url-test
   proxies:
-  - 🇻🇳 | @WhiteDNS | VN11|1.7MB/s|DNSOK|GPT⁺-VN
+  - 🇧🇷 | @WhiteDNS | BR10|1.6MB/s|DNSOK|GPT⁺-BR
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
-- MATCH,VN-Auto
+- MATCH,BR-Auto

@@ -13,14 +13,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 proxies:
-- cipher: aes-256-gcm
-  name: 🇬🇧 | @WhiteDNS | GB68|6.6MB/s|DNSOK|GPT⁺-GB
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 198.244.202.215
-  type: ss
-  udp: true
-- name: 🇬🇧 | @WhiteDNS | GB69|6.5MB/s|DNSOK|GPT⁺-GB
+- name: 🇬🇧 | @WhiteDNS | GB60|19.5MB/s|DNSOK|GPT⁺-GB
   password: ''
   port: 443
   server: 212.102.63.31
@@ -29,62 +22,39 @@ proxies:
   type: http
   username: ''
 - cipher: aes-256-gcm
-  name: 🇬🇧 | @WhiteDNS | GB70|6.3MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB61|13.2MB/s|DNSOK|GPT⁺-GB
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 198.244.202.215
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇬🇧 | @WhiteDNS | GB62|5.3MB/s|DNSOK|GPT⁺-GB
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 198.244.201.129
   type: ss
   udp: true
-- name: 🇬🇧 | @WhiteDNS | GB71|1.7MB/s|DNSOK|GPT⁺-FR
-  network: ws
-  port: 80
-  server: suh.cryptofront.uk
-  type: vless
-  udp: true
-  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
-  ws-opts:
-    headers:
-      Host: suh.cryptofront.uk
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/63.0.3239.84 Safari/537.36
-    path: /
-  xudp: true
 - alterId: '0'
   cipher: auto
-  name: 🇬🇧 | @WhiteDNS | GB72|1.6MB/s|DNSOK|GPT⁺-GB
+  name: 🇬🇧 | @WhiteDNS | GB63|1.3MB/s|DNSOK|GPT⁺-GB
   network: tcp
   port: 2040
-  server: Ir.wbzo.ir
+  server: ir.wbzo.ir
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
   uuid: b7e3e8af-d1ca-45da-a95f-8b9ad77398b1
   xudp: true
-- name: 🇬🇧 | @WhiteDNS | GB73|1.4MB/s|DNSOK|GPT⁺-FR
-  network: ws
-  port: 80
-  server: 188.114.99.137
-  type: vless
-  udp: true
-  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
-  ws-opts:
-    headers:
-      Host: suh.cryptofront.uk
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; CPH1607 Build/MMB29M; wv) AppleWebKit/537.36
-        (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36
-    path: /
-  xudp: true
 proxy-groups:
 - name: GB-Auto
   type: url-test
   proxies:
-  - 🇬🇧 | @WhiteDNS | GB68|6.6MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB69|6.5MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB70|6.3MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB71|1.7MB/s|DNSOK|GPT⁺-FR
-  - 🇬🇧 | @WhiteDNS | GB72|1.6MB/s|DNSOK|GPT⁺-GB
-  - 🇬🇧 | @WhiteDNS | GB73|1.4MB/s|DNSOK|GPT⁺-FR
+  - 🇬🇧 | @WhiteDNS | GB60|19.5MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB61|13.2MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB62|5.3MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB63|1.3MB/s|DNSOK|GPT⁺-GB
   url: http://www.gstatic.com/generate_204
   interval: 300
 rules:
